@@ -76,11 +76,6 @@ hasChildren = true
 
   [[menu.main]]
   parent = "Pages"
-  name = "scholarship"
-  URL = "scholarship"
-
-  [[menu.main]]
-  parent = "Pages"
   name = "research"
   URL = "research"
   
@@ -96,10 +91,6 @@ weight = 5
 
 
 # footer menu
-
-[[menu.footer]]
-name = "teacher"
-URL = "teacher"
 
 [[menu.footer]]
 name = "notice"
@@ -118,8 +109,8 @@ URL = "research"
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "This is meta description"
-author = "Themefisher"
+description = "Association to promote OpenPGP technologies"
+#author = "Themefisher"
 # contact info
 #address = "9567 Turner Trace Apt. BC C3G8A4"
 #mobile = "+211234565523"

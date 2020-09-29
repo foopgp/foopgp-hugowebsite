@@ -110,10 +110,6 @@ name = "event"
 URL = "event"
 
 [[menu.footer]]
-name = "scholarship"
-URL = "scholarship"
-
-[[menu.footer]]
 name = "research"
 URL = "research"
 

@@ -26,7 +26,7 @@ slider:
         link : "contact"
 
     # slider item loop
-    - title : "Coordonées les initiatives et solutions utilisant OpenPGP"
+    - title : "Accompagner les initiatives et solutions utilisant OpenPGP"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exer"
       animation_in : "left"
       animation_out : "right"

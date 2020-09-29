@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://test.foopgp.org"
+baseURL = "http://foopgp.org"
 title = "Friends of OpenPGP"
 theme = "educenter"
 # post pagination

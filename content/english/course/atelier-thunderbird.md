@@ -9,20 +9,20 @@ category: "Email"
 duration: "3 hours"
 level: "Easy"
 fee: "libre price"
-apply_url : "/contact"
+apply_url: "/contact"
 ---
 
 # About the workshop
 
-Learn to sign and encrypt your emails with [Mozilla Thunderbird] (https://www.thunderbird.net).
+Learn to sign and encrypt your emails with [Mozilla Thunderbird](https://www.thunderbird.net).
 
-Discover the concept of [web of trust] (https://fr.wikipedia.org/wiki/Toile_de_confiance).
+Discover the concept of [web of trust](https://fr.wikipedia.org/wiki/Toile_de_confiance).
 
 Learn how to certify your circle of friends.
 
 ### What do I need?
 
 * **A computer.**
-* ** Internet access. **
-* Possibly a [NitroKey] (https://www.nitrokey.com) or [YubiKey] (https://www.yubico.com) USB token.
+* **Internet access.**
+* Possibly a [NitroKey](https://www.nitrokey.com) or [YubiKey](https://www.yubico.com) USB token.
 

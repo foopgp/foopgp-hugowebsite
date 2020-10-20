@@ -9,9 +9,8 @@ category: "Courriel"
 duration: "3 heures"
 level: "Facile"
 fee: "prix libre"
-apply_url : "/fr/contact"
+apply_url: "/fr/contact"
 ---
-
 
 ### À propos de l'atelier
 

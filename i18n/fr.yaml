@@ -112,14 +112,29 @@
 - id: About
   translation: À propos
 
+- id: us
+  translation: nous
+
+- id: members
+  translation: membres
+
+- id: friends
+  translation: amis
+
+- id: themes
+  translation: thèmes
+
+- id: meet
+  translation: rencontres
+
+- id: training
+  translation: formations
+
 - id: course
   translation: Cours
 
 - id: Pages
   translation: Pages
-
-#- id: teacher
-#  translation: Enseignant·e
 
 - id: notice
   translation: notice

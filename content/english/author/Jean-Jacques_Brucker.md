@@ -7,7 +7,7 @@ description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
 # Not the used one, but the one for gravatar
 email: ""
 # portrait
-image: "images/members/avatar_jjb128.jpg"
+image: "images/friends/avatar_jjb128.jpg"
 social:
   - icon : "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
     link : "https://twitter.com/Open_UDC"

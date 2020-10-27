@@ -3,7 +3,7 @@ title: "Jean-Jacques Brucker"
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "Ingénieur logiciel plutôt discret."
 # Not the used one, but the one for gravatar
 email: ""
 # portrait
@@ -15,5 +15,5 @@ social:
     link : "https://github.com/jbar"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida. Nam suscipit vitae purus et laoreet.
-Donec nisi dolor, consequat vel pretium id, auctor in dui. Nam iaculis, neque ac ullamcorper.
+15 ans d'expérience dans les systèmes Linux (GNU et embarqués), les réseaux,
+l'architecture ou la sécurité (mais pas tout en même temps).

@@ -45,39 +45,44 @@ link = "plugins/filterizr/jquery.filterizr.min.js"
 
 # main menu
 [[menu.main]]
-name = "About"
-URL = "about"
 weight = 1
+name = "About"
+hasChildren = true
+
+  [[menu.main]]
+  parent = "About"
+  name = "us"
+  URL = "about"
+
+  [[menu.main]]
+  parent = "About"
+  name = "members"
+  URL = "teacher"
+
+  [[menu.main]]
+  parent = "About"
+  name = "friends"
+  URL = "author"
 
 [[menu.main]]
-name = "course"
-URL = "course"
+name = "themes"
+URL = "research"
 weight = 2
 
 [[menu.main]]
 weight = 3
-name = "Pages"
+name = "meet"
 hasChildren = true
 
   [[menu.main]]
-  parent = "Pages"
-  name = "teacher"
-  URL = "teacher"
-
-  [[menu.main]]
-  parent = "Pages"
-  name = "notice"
-  URL = "notice"
-
-  [[menu.main]]
-  parent = "Pages"
+  parent = "meet"
   name = "event"
   URL = "event"
 
   [[menu.main]]
-  parent = "Pages"
-  name = "research"
-  URL = "research"
+  parent = "meet"
+  name = "training"
+  URL = "course"
   
 [[menu.main]]
 name = "blog"
@@ -177,7 +182,7 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"
+copyright = "Copyright &copy; 2020. Tanks to [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
 
 
 ################################### French language #####################################
@@ -188,4 +193,4 @@ contentDir = "content/french"
 weight = 2
 home = "Accueil"
 # copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"
+copyright = "Copyright &copy; 2020. Généré grâce à [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"

@@ -112,14 +112,32 @@
 - id: About
   translation: About
 
+- id: us
+  translation: us
+
+- id: members
+  translation: members
+
+- id: friends
+  translation: friends
+
+- id: themes
+  translation: themes
+
+- id: meet
+  translation: meet up
+
+- id: training
+  translation: training
+
+- id: course
+  translation: course
+
 - id: course
   translation: course
 
 - id: Pages
   translation: Pages
-
-#- id: teacher
-#  translation: teacher
 
 - id: notice
   translation: notice

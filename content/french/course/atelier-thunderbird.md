@@ -7,7 +7,7 @@ description : "Apprendre à signer et chiffrer ses courriels avec Mozilla Thunde
 image: "images/courses/thunderbird-256.png"
 category: "Courriel"
 duration: "3 heures"
-level: "Facile"
+audience: "pour tout le monde"
 fee: "prix libre"
 apply_url: "/fr/contact"
 ---

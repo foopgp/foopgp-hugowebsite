@@ -160,3 +160,14 @@
 - id: latest_documents
   translation: derniers documents
 
+- id: where
+  translation: où
+
+- id: when
+  translation: quand
+
+- id: who
+  translation: qui
+
+- id: how_much
+  translation: combien

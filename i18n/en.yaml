@@ -159,3 +159,15 @@
 
 - id: latest_documents
   translation: latest documents
+
+- id: where
+  translation: where
+
+- id: when
+  translation: when
+
+- id: who
+  translation: who
+
+- id: how_much
+  translation: how much

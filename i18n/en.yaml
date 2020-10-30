@@ -85,12 +85,6 @@
 - id: links
   translation: links
 
-- id: courses
-  translation: Courses
-
-- id: new_notice
-  translation: new notice
-
 - id: call
   translation: call
 
@@ -127,14 +121,11 @@
 - id: meet
   translation: meet up
 
-- id: training
-  translation: training
+- id: trainings
+  translation: trainings
 
-- id: course
-  translation: course
-
-- id: course
-  translation: course
+- id: workshops
+  translation: workshops
 
 - id: Pages
   translation: Pages
@@ -142,8 +133,8 @@
 - id: notice
   translation: notice
 
-- id: event
-  translation: event
+- id: events
+  translation: events
 
 - id: scholarship
   translation: scholarship
@@ -156,3 +147,15 @@
 
 - id: contact
   translation: contact
+
+- id: organization
+  translation: organization
+
+- id: fundation
+  translation: fundation
+
+- id: documents
+  translation: documents
+
+- id: latest_documents
+  translation: latest documents

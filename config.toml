@@ -76,12 +76,12 @@ hasChildren = true
 
   [[menu.main]]
   parent = "meet"
-  name = "event"
+  name = "events"
   URL = "event"
 
   [[menu.main]]
   parent = "meet"
-  name = "training"
+  name = "trainings"
   URL = "course"
   
 [[menu.main]]
@@ -98,16 +98,12 @@ weight = 5
 # footer menu
 
 [[menu.footer]]
-name = "notice"
+name = "documents"
 URL = "notice"
 
 [[menu.footer]]
-name = "event"
+name = "events"
 URL = "event"
-
-[[menu.footer]]
-name = "research"
-URL = "research"
 
 
 #################### default parameters ################################

@@ -57,7 +57,7 @@ hasChildren = true
   [[menu.main]]
   parent = "About"
   name = "members"
-  URL = "teacher"
+  URL = "member"
 
   [[menu.main]]
   parent = "About"

@@ -47,12 +47,8 @@ link = "plugins/filterizr/jquery.filterizr.min.js"
 [[menu.main]]
 weight = 1
 name = "About"
+URL = "about"
 hasChildren = true
-
-  [[menu.main]]
-  parent = "About"
-  name = "us"
-  URL = "about"
 
   [[menu.main]]
   parent = "About"

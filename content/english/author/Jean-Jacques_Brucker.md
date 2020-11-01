@@ -15,5 +15,5 @@ social:
     link : "https://github.com/jbar"
 ---
 
-15 years of experience in Linux systems (GNU and embedded), networks,
+More than 15 years of experience in Linux systems (GNU and embedded), networks,
 architecture or security (but not all at the same time).

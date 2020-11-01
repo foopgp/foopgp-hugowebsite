@@ -15,5 +15,5 @@ social:
     link : "https://github.com/jbar"
 ---
 
-15 ans d'expérience dans les systèmes Linux (GNU et embarqués), les réseaux,
+Plus de 15 ans d'expérience dans les systèmes Linux (GNU et embarqués), les réseaux,
 l'architecture ou la sécurité (mais pas tout en même temps).

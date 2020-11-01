@@ -1,14 +1,14 @@
 ---
-title: "Alex Rook"
+title: "Clark Malik"
 draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
-# teacher portrait
-image: "images/teachers/teacher-2.jpg"
+# member portrait
+image: "images/members/member-1.jpg"
 # course
-course: "Vlogging"
+course: "Computer Science"
 # biography
 bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque accusamus tenetur ea harum delectus ab consequatur excepturi, odit qui in quo quia voluptate nam optio, culpa aspernatur. Error placeat iusto officia voluptas quae."
 # interest
@@ -51,10 +51,10 @@ contact:
     link : "#"
 
 # type
-type: "teacher"
+type: "member"
 ---
 
-### About Me
+### À propos de moi
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.

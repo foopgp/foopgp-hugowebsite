@@ -39,28 +39,28 @@ slider:
 
 ############################### Banner feature ###############################
 banner_feature:
-  enable : false
-  image : "images/banner/banner-feature.png"
+  enable : true
+  image : ""
   feature_item:
     # feature item loop
-    - name : "Scholorship News"
+    - name : "Transparency"
       icon : "ti-book" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+      content : "We want to be as transparent as possible in our communication to avoid fears and preconceptions, and in the source codes of our tools so that everyone can know what they are using and, if necessary, help us improve."
 
     # feature item loop
-    - name : "Our Notice Board"
+    - name : "Benevolence"
       icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+      content : "We attach particular importance to the egalitarian dimension and benevolence in our social relations in general, and more particularly in the context of relations between collaborators and partners, whatever their level of involvement."
 
     # feature item loop
-    - name : "Our Achievements"
+    - name : "Sharing"
       icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+      content : "We want to share our skills in the use of solutions by training individuals, volunteers and employees. We want everyone to be able to develop their skills and autonomy, and that no one is essential."
 
     # feature item loop
-    - name : "Admission Now"
+    - name : "Proximity"
       icon : "ti-write" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+      content : "Friends Of OpenPGP is an international project, but we want our vision and our goals to be able to be shared and evolve everywhere and with everyone. This is why we invite all local initiatives linked to OpenPGP to join together warmly in this common space."
 
 
 ############################## about ##################################

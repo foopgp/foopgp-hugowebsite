@@ -85,12 +85,6 @@
 - id: links
   translation: liens
 
-- id: courses
-  translation: Cours
-
-- id: new_notice
-  translation: nouvelle notice
-
 - id: call
   translation: appeler
 
@@ -127,11 +121,11 @@
 - id: meet
   translation: rencontres
 
-- id: training
+- id: trainings
   translation: formations
 
-- id: course
-  translation: Cours
+- id: workshops
+  translation: ateliers
 
 - id: Pages
   translation: Pages
@@ -139,8 +133,8 @@
 - id: notice
   translation: notice
 
-- id: event
-  translation: Évènement
+- id: events
+  translation: Évènements
 
 - id: scholarship
   translation: Cursus
@@ -154,3 +148,26 @@
 - id: contact
   translation: Contact
 
+- id: organization
+  translation: organisation
+
+- id: fundation
+  translation: fondation
+
+- id: documents
+  translation: documents
+
+- id: latest_documents
+  translation: derniers documents
+
+- id: where
+  translation: où
+
+- id: when
+  translation: quand
+
+- id: who
+  translation: qui
+
+- id: how_much
+  translation: combien

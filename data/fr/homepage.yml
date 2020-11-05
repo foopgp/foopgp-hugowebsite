@@ -68,6 +68,7 @@ about:
   enable : true
   title : "À propos des Amis d'OpenPGP"
   image : "images/about/about-us.jpg"
+  vignette_1 : "images/about/vignette_videos_open_pgp.png"
   content : "Friends Of OpenPGP (foopgp) vise à être une association à but non lucratif d'organisations qui utilisent ou développent des solutions basées sur le standard OpenPGP.
    Les objectifs sont de promouvoir et de faciliter son adoption et de soutenir sa croissance.
    Pour les atteindre, l'association aide à organiser des événements, des ateliers et des formations. Il peut également héberger et promouvoir le développement collaboratif de projets logiciels liés à OpenPGP."

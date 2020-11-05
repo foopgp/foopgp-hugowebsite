@@ -12,11 +12,11 @@ description : "Dans le cadre de la 3ème édition du du Campus du libre le Confi
 # Event image
 image: "https://mobilizon.fr/media/bb4c5503baefd29ac4ea9c105d305b8a6a5c27aade1b5a7ef444fd4761802c05.png"
 # location
-location: "Internet. Lien BBB bientôt communiqué"
+location: "[mobilizon.fr](https://mobilizon.fr/events/a6063a77-93f1-4d2c-98b0-6176e2839633)"
 # expected attendees
-audience: "for everyone"
+audience: "pour tout le monde"
 # entry fee
-fee: "none"
+fee: "libre sans collecte"
 # apply url
 apply_url : "https://mobilizon.fr/events/a6063a77-93f1-4d2c-98b0-6176e2839633/participate"
 # event speaker

@@ -40,7 +40,7 @@ slider:
 ############################### Banner feature ###############################
 banner_feature:
   enable : true
-  image : ""
+  image : "images/about/our_value.png"
   feature_item:
     # feature item loop
     - name : "Transparence"
@@ -98,6 +98,7 @@ cta:
 success_story:
   enable : false
   bg_image : "images/backgrounds/success-story.jpg"
+  vignette_1 : "images/about/vignette_videos_open_pgp.png"
   title : "Histoires de réussites"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat.
             

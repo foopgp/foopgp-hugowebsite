@@ -171,3 +171,9 @@
 
 - id: how_much
   translation: combien
+
+- id: title_our_values
+  translation: "Nos Valeurs"
+
+- id: text_our_values
+  translation: ""

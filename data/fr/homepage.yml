@@ -53,7 +53,7 @@ banner_feature:
       content : "Nous accordons une importance particulière à la dimension égalitaire et de bienveillance dans nos relations sociales en général, et plus particulièrementdans le cadre des relations entre collaborateurs et partenaires, quelque soit leur niveau d’implication."
 
     # feature item loop
-    - name : "Partage"
+    - name : "Coopération"
       icon : "ti-rss-alt" # icon pack : https://themify.me/themify-icons
       content : "Nous souhaitons partager nos compétences dans l’utilisation des solutions en formant particuliers, bénévoles et salariés. Nous souhaitons que chacun puisse monter en compétence et en autonomie, et que personne ne soit indispensable."
 

@@ -53,7 +53,7 @@ banner_feature:
       content : "We attach particular importance to the egalitarian dimension and benevolence in our social relations in general, and more particularly in the context of relations between collaborators and partners, whatever their level of involvement."
 
     # feature item loop
-    - name : "Sharing"
+    - name : "Cooperation"
       icon : "ti-rss-alt" # icon pack : https://themify.me/themify-icons
       content : "We want to share our skills in the use of solutions by training individuals, volunteers and employees. We want everyone to be able to develop their skills and autonomy, and that no one is essential."
 

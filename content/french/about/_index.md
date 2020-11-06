@@ -2,9 +2,9 @@
 title: "À propos de nous"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/about/about-page.jpg"
 # about image
-image: "images/about/about-page.jpg"
+image: ""
 # meta description
 description : "Friends Of OpenPGP (foopgp) vise à rassembler tous ceux qui utilisent ou développent des solutions basées sur le standard OpenPGP.
    Les objectifs sont de promouvoir et de faciliter l'adoption de ces technologies et de soutenir leur croissance.

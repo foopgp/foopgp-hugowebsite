@@ -39,28 +39,28 @@ slider:
 
 ############################### Banner feature ###############################
 banner_feature:
-  enable : false
-  image : "images/banner/banner-feature.png"
+  enable : true
+  image : "images/about/our_value.png"
   feature_item:
     # feature item loop
-    - name : "Bourses académiques"
-      icon : "ti-book" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+    - name : "Transparence"
+      icon : "ti-eye" # icon pack : https://themify.me/themify-icons
+      content : "Nous voulons être le plus transparents possible dans notre communication pour éviter les peurs et les a priori, et dans les codes sources de nos outils pour que chacun puisse savoir ce qu’il utilise et le cas échéant nous aider à nous améliorer."
 
     # feature item loop
-    - name : "Notre bureau"
-      icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+    - name : "Bienveillance"
+      icon : "ti-heart" # icon pack : https://themify.me/themify-icons
+      content : "Nous accordons une importance particulière à la dimension égalitaire et de bienveillance dans nos relations sociales en général, et plus particulièrementdans le cadre des relations entre collaborateurs et partenaires, quelque soit leur niveau d’implication."
 
     # feature item loop
-    - name : "Nos accomplissements"
-      icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+    - name : "Partage"
+      icon : "ti-rss-alt" # icon pack : https://themify.me/themify-icons
+      content : "Nous souhaitons partager nos compétences dans l’utilisation des solutions en formant particuliers, bénévoles et salariés. Nous souhaitons que chacun puisse monter en compétence et en autonomie, et que personne ne soit indispensable."
 
     # feature item loop
-    - name : "Admission"
-      icon : "ti-write" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+    - name : "Proximité"
+      icon : "ti-world" # icon pack : https://themify.me/themify-icons
+      content : "Friends Of OpenPGP est un projet international, mais nous souhaitons que notre vision et nos objectifs puissent se partager et évoluer partout et avec tout le monde. C'est pourquoi nous invitons toutes les initiatives locales et liées à OpenPGP à se rejoindre chaleureusement en cet espace commun."
 
 
 ############################## about ##################################
@@ -68,6 +68,7 @@ about:
   enable : true
   title : "À propos des Amis d'OpenPGP"
   image : "images/about/about-us.jpg"
+  vignette_1 : "images/about/vignette_videos_open_pgp.png"
   content : "Friends Of OpenPGP (foopgp) vise à être une association à but non lucratif d'organisations qui utilisent ou développent des solutions basées sur le standard OpenPGP.
    Les objectifs sont de promouvoir et de faciliter son adoption et de soutenir sa croissance.
    Pour les atteindre, l'association aide à organiser des événements, des ateliers et des formations. Il peut également héberger et promouvoir le développement collaboratif de projets logiciels liés à OpenPGP."
@@ -98,6 +99,7 @@ cta:
 success_story:
   enable : false
   bg_image : "images/backgrounds/success-story.jpg"
+  vignette_1 : "images/about/vignette_videos_open_pgp.png"
   title : "Histoires de réussites"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat.
             

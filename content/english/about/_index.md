@@ -6,10 +6,12 @@ bg_image: "images/backgrounds/page-title.jpg"
 # about image
 image: "images/about/about-page.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "Friends Of OpenPGP (foopgp) aims to bring together people who use or develop solutions based on the OpenPGP standard.
+   The objectives are to promote and facilitate the adoption of such technologies and to support their growth.
+   To reach them, the association helps organize events, workshops and training. It may also host and promote the collaborative development of software projects related to OpenPGP."
 ---
 
-## ABOUT OUR JOURNY
+### ABOUT OUR JOURNY
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
 et.dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet consectetur,

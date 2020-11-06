@@ -44,22 +44,22 @@ banner_feature:
   feature_item:
     # feature item loop
     - name : "Transparence"
-      icon : "ti-book" # icon pack : https://themify.me/themify-icons
+      icon : "ti-eye" # icon pack : https://themify.me/themify-icons
       content : "Nous voulons être le plus transparents possible dans notre communication pour éviter les peurs et les a priori, et dans les codes sources de nos outils pour que chacun puisse savoir ce qu’il utilise et le cas échéant nous aider à nous améliorer."
 
     # feature item loop
     - name : "Bienveillance"
-      icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
+      icon : "ti-heart" # icon pack : https://themify.me/themify-icons
       content : "Nous accordons une importance particulière à la dimension égalitaire et de bienveillance dans nos relations sociales en général, et plus particulièrementdans le cadre des relations entre collaborateurs et partenaires, quelque soit leur niveau d’implication."
 
     # feature item loop
     - name : "Partage"
-      icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
+      icon : "ti-rss-alt" # icon pack : https://themify.me/themify-icons
       content : "Nous souhaitons partager nos compétences dans l’utilisation des solutions en formant particuliers, bénévoles et salariés. Nous souhaitons que chacun puisse monter en compétence et en autonomie, et que personne ne soit indispensable."
 
     # feature item loop
     - name : "Proximité"
-      icon : "ti-write" # icon pack : https://themify.me/themify-icons
+      icon : "ti-world" # icon pack : https://themify.me/themify-icons
       content : "Friends Of OpenPGP est un projet international, mais nous souhaitons que notre vision et nos objectifs puissent se partager et évoluer partout et avec tout le monde. C'est pourquoi nous invitons toutes les initiatives locales et liées à OpenPGP à se rejoindre chaleureusement en cet espace commun."
 
 

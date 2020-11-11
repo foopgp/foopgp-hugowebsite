@@ -8,4 +8,4 @@ git stash
 git pull --rebase --recurse-submodules
 git stash pop
 
-[[ $(git rev-parse HEAD) == $head ]] || hugo
+[[ $(git rev-parse HEAD) == $head ]] || hugo -D

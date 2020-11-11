@@ -113,7 +113,7 @@ success_story:
 ############################# event ################################
 event:
   enable : true
-  title : "Événements à venir"
+  title : "Événements"
   # event item comes from "content/**/event" folder.
 
   

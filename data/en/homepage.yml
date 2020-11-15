@@ -147,3 +147,12 @@ blog:
   enable : true
   title : "Blog"
   # blog item comes from "content/**/blog" folder.
+
+
+
+############################# donate ################################
+donate:
+  enable : true
+  title : "Donate"
+  june_logo : "images/donate/logo_g1_flare_512.png"
+  june_link : "https://monnaie-libre.fr/la-g1-june/"

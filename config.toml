@@ -53,16 +53,25 @@ hasChildren = true
   parent = "About"
   name = "us"
   URL = "about"
+  weight = 1
 
   [[menu.main]]
   parent = "About"
   name = "members"
   URL = "member"
+  weight = 2
 
   [[menu.main]]
   parent = "About"
   name = "friends"
   URL = "author"
+  weight = 3
+
+  [[menu.main]]
+  parent = "About"
+  name = "donate"
+  URL = "donate"
+  weight = 4
 
 [[menu.main]]
 name = "themes"

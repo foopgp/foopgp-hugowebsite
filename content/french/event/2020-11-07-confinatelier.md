@@ -1,4 +1,5 @@
 ---
+id: "2"
 type: "event"
 title: "Confin’atelier #3"
 publishDate: "2020-11-03"
@@ -19,6 +20,8 @@ audience: "pour tout le monde"
 fee: "libre sans collecte"
 # apply url
 apply_url : "https://mobilizon.fr/events/a6063a77-93f1-4d2c-98b0-6176e2839633/participate"
+# Event language
+event_language : "fr"
 # event speaker
 speaker:
   - name : "Philippe Leduigou"

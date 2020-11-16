@@ -11,7 +11,9 @@ description : "Friends Of OpenPGP (foopgp) aims to bring together people who use
    To reach them, the association helps organize events, workshops and training. It may also host and promote the collaborative development of software projects related to OpenPGP."
 ---
 
-### Why a pug ?
+![pugs puppies](/images/about/about-us.jpg)
+
+### Why the pug ?
 
 Many of us were in associations that contributed to the success of the Linux kernel and free or open source software. These associations are often called LUG (*Linux User Group*).
 

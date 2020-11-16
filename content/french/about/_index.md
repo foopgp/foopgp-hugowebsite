@@ -11,6 +11,8 @@ description : "Friends Of OpenPGP (foopgp) vise à rassembler tous ceux qui util
    Pour les atteindre, l'association aide à organiser des événements, des ateliers et des formations. Elle peut également héberger et promouvoir le développement collaboratif de projets logiciels liés à OpenPGP."
 ---
 
+![pugs puppies](/images/about/about-us.jpg)
+
 ### Pourquoi ce chien ?
 
 Ce chien est un carlin, qui se traduit par "**pug**" en anglais.

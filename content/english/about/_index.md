@@ -11,15 +11,17 @@ description : "Friends Of OpenPGP (foopgp) aims to bring together people who use
    To reach them, the association helps organize events, workshops and training. It may also host and promote the collaborative development of software projects related to OpenPGP."
 ---
 
-### ABOUT OUR JOURNY
+### Why a pug ?
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-et.dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet consectetur,
-adipisicing elit. Saepe ipsa illo quod veritatis, magni debitis fugiat dolore voluptates! Consequatur,
-aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat perferendis sint optio similique.
-Et amet magni facilis vero corporis quos.
+Many of us were in associations that contributed to the success of the Linux kernel and free or open source software. These associations are often called LUG (*Linux User Group*).
 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum, dolor sit amet consectetur
-adipisicing elit. Ipsum a, facere fugit error accusamus est officiis vero in, nostrum laboriosam corrupti
-explicabo, cumque repudiandae deleniti perspiciatis quae consectetur enim. Laboriosam!
+From our smartphones to the routers and servers that run the Internet, including our cars and all connected objects, Linux is today the core of most of the operating systems around us.
+
+Linux now rules the world. The challenge that awaits us now is to make the world more fair and warmhearted.
+
+For this we must be able to protect our privacy and avoid pyramid hierarchies as much as possible. This is exactly the vision and the goal of the men who invented OpenPGP.
+
+PGP stands for *Pretty Good Privacy*, and today its most widely used implementation is GPG, which stands for *Gnu Privacy Guard*.
+
+We then almost baptized ourselves PUG, which would have meant *Privacy User Group(s)*. At the end that acronym was gone, but the watchdog of our privacy remained.
+

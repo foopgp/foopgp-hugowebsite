@@ -121,26 +121,22 @@ funfacts:
   enable : true
   funfact_item:
     # funfact item loop
-    - name : "Since"
-      count : "1990"
+    - name : "PGP birth"
+      count : "1991"
 
-    # funfact item loop
-    - name : "OpenPGP Users"
+    - count : "1997"
+      name : "OpenPGP becomes an IETF standard"
+
+    - name : "OpenPGP related projects"
+      count : "100"
+      unit : "+"
+
+    - name : "OpenPGP users"
       #nocount : "250k"
       count : "250"
       unit : "000+"
 
-    # funfact item loop
-    - name : "FOOPGP Members"
-      count : "3"
-
-    # funfact item loop
-    - name : "ĝune Members"
-      count : "2700"
-
 # funfact is for about page
-
-
 
 ############################# blog ################################
 blog:

@@ -5,36 +5,36 @@ slider:
   slider_item:
     # slider item loop
     - title : "Promote the OpenPGP technology"
-      content : ""
+      content : "among businesses and citizens."
       animation_in : "left"
       animation_out : "right"
       # available animation : left, right, up, down
       button:
-        enable : false
-        label : "Apply now"
-        link : "contact"
+        enable : true
+        label : "Events"
+        link : "event"
 
     # slider item loop
     - title : "Ease OpenPGP adoption for everyone"
-      content : ""
+      content : "organizing training and workshops."
       animation_in : "left"
       animation_out : "right"
       # available animation : left, right, up, down
       button:
-        enable : false
-        label : "Apply now"
-        link : "contact"
+        enable : true
+        label : "Training & Workshops"
+        link : "course"
 
     # slider item loop
     - title : "Support OpenPGP solutions and initiatives"
-      content : ""
+      content : "collecting and redistributing donations."
       animation_in : "left"
       animation_out : "right"
       # available animation : left, right, up, down
       button:
-        enable : false
-        label : "Apply now"
-        link : "contact"
+        enable : true
+        label : "Donations"
+        link : "donate"
 
 
 ############################### Banner feature ###############################

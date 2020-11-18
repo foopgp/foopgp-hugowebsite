@@ -5,36 +5,36 @@ slider:
   slider_item:
     # slider item loop
     - title : "Promote the OpenPGP technology"
-      content : ""
+      content : "among businesses and citizens."
       animation_in : "left"
       animation_out : "right"
       # available animation : left, right, up, down
       button:
-        enable : false
-        label : "Apply now"
-        link : "contact"
+        enable : true
+        label : "Events"
+        link : "event"
 
     # slider item loop
     - title : "Ease OpenPGP adoption for everyone"
-      content : ""
+      content : "organizing training and workshops."
       animation_in : "left"
       animation_out : "right"
       # available animation : left, right, up, down
       button:
-        enable : false
-        label : "Apply now"
-        link : "contact"
+        enable : true
+        label : "Training & Workshops"
+        link : "course"
 
     # slider item loop
     - title : "Support OpenPGP solutions and initiatives"
-      content : ""
+      content : "collecting and redistributing donations."
       animation_in : "left"
       animation_out : "right"
       # available animation : left, right, up, down
       button:
-        enable : false
-        label : "Apply now"
-        link : "contact"
+        enable : true
+        label : "Donations"
+        link : "donate"
 
 
 ############################### Banner feature ###############################
@@ -53,7 +53,7 @@ banner_feature:
       content : "We attach particular importance to the egalitarian dimension and benevolence in our social relations in general, and more particularly in the context of relations between collaborators and partners, whatever their level of involvement."
 
     # feature item loop
-    - name : "Sharing"
+    - name : "Cooperation"
       icon : "ti-rss-alt" # icon pack : https://themify.me/themify-icons
       content : "We want to share our skills in the use of solutions by training individuals, volunteers and employees. We want everyone to be able to develop their skills and autonomy, and that no one is essential."
 
@@ -68,9 +68,9 @@ about:
   enable : true
   title : "About Friends Of OpenPGP"
   image : "images/about/about-us.jpg"
-  content : "Friends Of OpenPGP (foopgp) aims to be a non-profit association of organizations which use or develop solutions based on the OpenPGP standard.
-  The objectives are to promote and ease its adoption, and to support its growth.
-  The reach them, the association helps organize events, workshop, and training. It may also hosts and promotes the collaborative development of software projects related to OpenPGP."
+  content : "Friends Of OpenPGP (foopgp) aims to bring together people who use or develop solutions based on the OpenPGP standard.
+   The objectives are to promote and facilitate the adoption of such technologies and to support their growth.
+   To reach them, the association helps organize events, workshops and training. It may also host and promote the collaborative development of software projects related to OpenPGP."
   button:
     enable : true
     label : "Learn more"
@@ -80,7 +80,7 @@ about:
 ############################# Course ################################
 course:
   enable : true
-  title : "Trainings & Workshops"
+  title : "Training & Workshops"
   # course item comes from "content/**/course" folder.
 
 ########################## Call to action ############################
@@ -112,7 +112,7 @@ success_story:
 ############################# event ################################
 event:
   enable : true
-  title : "Upcoming Events"
+  title : "Events"
   # event item comes from "content/**/event" folder.
 
   
@@ -121,29 +121,34 @@ funfacts:
   enable : true
   funfact_item:
     # funfact item loop
-    - name : "Since"
-      count : "1990"
+    - name : "PGP birth"
+      count : "1991"
 
-    # funfact item loop
-    - name : "OpenPGP Users"
+    - count : "1997"
+      name : "OpenPGP becomes an IETF standard"
+
+    - name : "OpenPGP related projects"
+      count : "100"
+      unit : "+"
+
+    - name : "OpenPGP users"
       #nocount : "250k"
       count : "250"
       unit : "000+"
 
-    # funfact item loop
-    - name : "FOOPGP Members"
-      count : "3"
-
-    # funfact item loop
-    - name : "ĝune Members"
-      count : "2700"
-
 # funfact is for about page
-
-
 
 ############################# blog ################################
 blog:
   enable : true
   title : "Blog"
   # blog item comes from "content/**/blog" folder.
+
+
+
+############################# donate ################################
+donate:
+  enable : true
+  title : "Donate"
+  june_logo : "images/donate/logo_g1_flare_512.png"
+  june_link : "https://monnaie-libre.fr/la-g1-june/"

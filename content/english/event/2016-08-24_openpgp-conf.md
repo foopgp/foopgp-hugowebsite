@@ -1,4 +1,5 @@
 ---
+id: "1"
 type: "event"
 title: "OpenPGP (technical) conference"
 publishDate: "2016-08-24"
@@ -19,6 +20,8 @@ audience: "for engineers & hackers"
 fee: "100€ to 450€"
 # apply url
 apply_url : "https://openpgp-conf.org/registration.html"
+# Event language
+event_language : "en"
 # event speaker
 speaker:
   - name : "Werner Koch"

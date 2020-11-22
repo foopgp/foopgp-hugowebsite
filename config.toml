@@ -73,8 +73,14 @@ hasChildren = true
   URL = "donate"
   weight = 4
 
+  [[menu.main]]
+  parent = "About"
+  name = "contact"
+  URL = "contact"
+  weight = 5
+
 [[menu.main]]
-name = "themes"
+name = "solutions"
 URL = "research"
 weight = 2
 

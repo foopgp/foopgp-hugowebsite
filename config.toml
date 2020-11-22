@@ -161,7 +161,7 @@ enable = false
 [[params.social]]
 title = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "https://twitter.com/Open_UDC"
+link = "https://twitter.com/foopgp"
 
 #[[params.social]]
 #title = "instagram"
@@ -171,7 +171,7 @@ link = "https://twitter.com/Open_UDC"
 [[params.social]]
 title = "github"
 icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "https://github.com/Open-UDC"
+link = "https://github.com/foopgp"
 
 #[[params.social]]
 #title = "linkedin"

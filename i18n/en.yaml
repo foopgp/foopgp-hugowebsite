@@ -113,7 +113,7 @@
   translation: us
 
 - id: members
-  translation: members
+  translation: partners
 
 - id: friends
   translation: friends
@@ -121,8 +121,11 @@
 - id: themes
   translation: themes
 
+- id: solutions
+  translation: solutions
+
 - id: meet
-  translation: meet up
+  translation: Activities
 
 - id: trainings
   translation: training
@@ -189,3 +192,6 @@
 
 - id: donate_texte_type
   translation: ""
+  
+- id: langue
+  translation: "LANGUAGE"

@@ -1,5 +1,5 @@
 ---
-title: "Thunderbird"
+title: "Thunderbird test"
 #date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/page-title.jpg"
@@ -9,7 +9,7 @@ category: "Email"
 duration: "3 hours"
 audience: "for everyone"
 fee: "libre price"
-clanguage: "fr"
+clanguage: "en"
 apply_url: "/contact"
 ---
 

@@ -193,7 +193,7 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Copyright &copy; 2020. Tanks to [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
+copyright = "Copyright &copy; 2020. [Thanks](https://github.com/foopgp/foopgp-hugowebsite) to [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
 
 
 ################################### French language #####################################
@@ -204,4 +204,4 @@ contentDir = "content/french"
 weight = 2
 home = "Accueil"
 # copyright
-copyright = "Copyright &copy; 2020. Généré grâce à [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
+copyright = "Copyright &copy; 2020. [Généré](https://github.com/foopgp/foopgp-hugowebsite) grâce à [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"

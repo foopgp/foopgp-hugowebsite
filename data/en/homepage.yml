@@ -63,6 +63,32 @@ banner_feature:
       content : "Friends Of OpenPGP is an international project, but we want our vision and our goals to be able to be shared and evolve everywhere and with everyone. This is why we invite all local initiatives linked to OpenPGP to join together warmly in this common space."
 
 
+
+############################### Banner against_value ###############################
+banner_against_value:
+  enable : true
+  image : "images/about/our_value.png"
+  feature_item:
+    # feature item loop
+    - name : "Transparency"
+      icon : "ti-eye" # icon pack : https://themify.me/themify-icons
+      content : "We want to be as transparent as possible in our communication to avoid fears and preconceptions, and in the source codes of our tools so that everyone can know what they are using and, if necessary, help us improve."
+
+    # feature item loop
+    - name : "Benevolence"
+      icon : "ti-heart" # icon pack : https://themify.me/themify-icons
+      content : "We attach particular importance to the egalitarian dimension and benevolence in our social relations in general, and more particularly in the context of relations between collaborators and partners, whatever their level of involvement."
+
+    # feature item loop
+    - name : "Cooperation"
+      icon : "ti-rss-alt" # icon pack : https://themify.me/themify-icons
+      content : "We want to share our skills in the use of solutions by training individuals, volunteers and employees. We want everyone to be able to develop their skills and autonomy, and that no one is essential."
+
+    # feature item loop
+    - name : "Proximity"
+      icon : "ti-world" # icon pack : https://themify.me/themify-icons
+      content : "Friends Of OpenPGP is an international project, but we want our vision and our goals to be able to be shared and evolve everywhere and with everyone. This is why we invite all local initiatives linked to OpenPGP to join together warmly in this common space."
+
 ############################## about ##################################
 about:
   enable : true

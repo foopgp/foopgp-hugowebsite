@@ -184,6 +184,12 @@
 - id: text_our_values
   translation: ""
 
+- id: title_our_against_values
+  translation: "Contre Valeurs"
+
+- id: text_our_against_values
+  translation: ""
+
 - id: donate_titre_main
   translation: "Faire un don à Foopgp"
   

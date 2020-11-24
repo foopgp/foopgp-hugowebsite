@@ -22,10 +22,10 @@ Our suggestion of email clients that do support OpenPGP:
 
 - Pour l'ordinateur (Mac, Windows ou GNU/Linux…)&nbsp;:
   - [Thunderbird](https://www.thunderbird.net/fr/): À partir de la version 78 le support d'OpenPGP est intégré. Fonctionne sur tous les systèmes courants.
-  - [Claws Mail](https://claws-mail.org/) (Windows)
+  - [Claws Mail](https://claws-mail.org/) (Windows, GNU/Linux)
 
 - Sur Android&nbsp;:
-  - [FairEmail](https://email.faircode.eu/)
+  - [FairEmail](https://email.faircode.eu/) + [OpenKeychain](https://www.openkeychain.org/)
   - [K9 Mail](https://k9mail.github.io/) + [OpenKeychain](https://www.openkeychain.org/)
 
 

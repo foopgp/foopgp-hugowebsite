@@ -13,6 +13,6 @@ You can contact us in several ways:
 
 Subscribing to [the mailing list](https://framalistes.org/sympa/info/foopgp) will keep you informed regularly and allows you to contact other subscribers.
 
-### Mail
+### organization
 
-You can reach the organization directly by mail: [info at foopgp.org](mailto:info%20at%20foopgp.org)
+You can reach the organization directly:

@@ -13,6 +13,6 @@ Plusieurs moyens sont à votre disposition pour nous contacter&nbsp;:
 
 Une [liste de discussion](https://framalistes.org/sympa/info/fr.foopgp) vous permet de recevoir des informations régulièrement et contacter les autres inscrits.
 
-### Mél
+### Organisation
 
-Vous pouvez écrire à l'organisation directement par mail&nbsp;: [info at foopgp.org](mailto:info%20at%20foopgp.org)
+Vous pouvez contacter l'organisation directement:

@@ -7,7 +7,7 @@ bg_image: "images/backgrounds/page-title.jpg"
 description : "Canaux de contact."
 ---
 
-Plusieurs _moyens sont à votre disposition pour nous contacter&nbsp;:
+Plusieurs moyens sont à votre disposition pour nous contacter&nbsp;:
 
 ### Liste de discussion
 

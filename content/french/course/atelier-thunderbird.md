@@ -1,5 +1,6 @@
 ---
 title: "Thunderbird"
+lang: fr
 #date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/page-title.jpg"
@@ -9,7 +10,6 @@ category: "Courriel"
 duration: "3 heures"
 audience: "pour tout le monde"
 fee: "prix libre"
-clanguage: "fr" 
 apply_url: "/fr/contact"
 ---
 

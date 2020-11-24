@@ -17,7 +17,7 @@ description : "Friends Of OpenPGP (foopgp) aims to bring together people who use
 
 Many of us were in associations that contributed to the success of the Linux kernel and free or open source software. These associations are often called LUG (*Linux User Group*).
 
-From our smartphones to the routers and servers that run the Internet, including our cars and all connected objects, Linux is today the core of most of the operating systems around us.
+From our smartphones to the routers and servers that run the Internet, including our cars and connected objects, Linux is today the core of most of the operating systems that surround our lives.
 
 Linux now rules the world. The challenge that awaits us now is to make the world more fair and warmhearted.
 

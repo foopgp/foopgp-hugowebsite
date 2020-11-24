@@ -63,6 +63,27 @@ banner_feature:
       content : "Friends Of OpenPGP is an international project, but we want our vision and our goals to be able to be shared and evolve everywhere and with everyone. This is why we invite all local initiatives linked to OpenPGP to join together warmly in this common space."
 
 
+
+############################### Banner against_value ###############################
+banner_against_value:
+  enable : true
+  image : "https://i.redd.it/rtt7bv8c02611.jpg"
+  feature_item:
+    # feature item loop
+    - name : "Cupidity"
+      icon : "ti-money" # icon pack : https://themify.me/themify-icons
+      content : ""
+
+    # feature item loop
+    - name : "Vainglory"
+      icon : "ti-star" # icon pack : https://themify.me/themify-icons
+      content : ""
+
+    # feature item loop
+    - name : "Ideology"
+      icon : "ti-rocket" # icon pack : https://themify.me/themify-icons
+      content : ""
+
 ############################## about ##################################
 about:
   enable : true

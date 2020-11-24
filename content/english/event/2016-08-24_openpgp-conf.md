@@ -19,9 +19,9 @@ audience: "for engineers & hackers"
 # entry fee
 fee: "100€ to 450€"
 # apply url
-apply_url : "https://openpgp-conf.org/registration.html"
+apply_url: "https://openpgp-conf.org/registration.html"
 # Event language
-event_language : "en"
+lang: en
 # event speaker
 speaker:
   - name : "Werner Koch"

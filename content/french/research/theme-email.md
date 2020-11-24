@@ -3,19 +3,39 @@ title: "Courriel"
 date: 2019-07-06T15:27:17+06:00
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/backgrounds/puzzle.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "Solutions pour le courriel."
 # Research image
 image: "images/research/mail-scryptmail-logo_large.png"
 # type
 type: "research"
 ---
 
-### pour les courriel
+### pour le courriel
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+(TODO)
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+### Clients mail compatibles OpenPGP
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
+Our suggestion of email clients that do support OpenPGP:
+
+- Pour l'ordinateur (Mac, Windows ou GNU/Linux…)&nbsp;:
+  - [Thunderbird](https://www.thunderbird.net/fr/): À partir de la version 78 le support d'OpenPGP est intégré. Fonctionne sur tous les systèmes courants.
+  - [Claws Mail](https://claws-mail.org/) (Windows, GNU/Linux)
+
+- Sur Android&nbsp;:
+  - [FairEmail](https://email.faircode.eu/) + [OpenKeychain](https://www.openkeychain.org/)
+  - [K9 Mail](https://k9mail.github.io/) + [OpenKeychain](https://www.openkeychain.org/)
+
+
+De nombreux autres clients mails sont compatibles OpenPGP, vous en trouverez ici&nbsp;:
+
+- https://www.openpgp.org/software/
+- [sur Framalibre](https://framalibre.org/recherche-par-crit-res?keys=pgp+OR+gpg) (la requête ne cherche pas que les clients mails).
+
+---
+
+Cette page est toujours en cours d'écriture, vous pouvez nous aider [en contribuant sur GitHub](https://github.com/foopgp/foopgp-hugowebsite/blob/test/content/french/research/theme-email.md).
+
+![Bientôt…](/images/comingsoon.jpg)

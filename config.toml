@@ -73,8 +73,14 @@ hasChildren = true
   URL = "donate"
   weight = 4
 
+  [[menu.main]]
+  parent = "About"
+  name = "contact"
+  URL = "contact"
+  weight = 5
+
 [[menu.main]]
-name = "themes"
+name = "solutions"
 URL = "research"
 weight = 2
 
@@ -161,7 +167,7 @@ enable = false
 [[params.social]]
 title = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "https://twitter.com/Open_UDC"
+link = "https://twitter.com/foopgp"
 
 #[[params.social]]
 #title = "instagram"
@@ -171,7 +177,7 @@ link = "https://twitter.com/Open_UDC"
 [[params.social]]
 title = "github"
 icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "https://github.com/Open-UDC"
+link = "https://github.com/foopgp"
 
 #[[params.social]]
 #title = "linkedin"
@@ -187,7 +193,7 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Copyright &copy; 2020. Tanks to [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
+copyright = "Copyright &copy; 2020. [Thanks](https://github.com/foopgp/foopgp-hugowebsite) to [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
 
 
 ################################### French language #####################################
@@ -198,4 +204,4 @@ contentDir = "content/french"
 weight = 2
 home = "Accueil"
 # copyright
-copyright = "Copyright &copy; 2020. Généré grâce à [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
+copyright = "Copyright &copy; 2020. [Généré](https://github.com/foopgp/foopgp-hugowebsite) grâce à [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"

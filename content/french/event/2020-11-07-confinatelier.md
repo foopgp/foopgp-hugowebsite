@@ -19,9 +19,9 @@ audience: "pour tout le monde"
 # entry fee
 fee: "libre sans collecte"
 # apply url
-apply_url : "https://mobilizon.fr/events/a6063a77-93f1-4d2c-98b0-6176e2839633/participate"
+apply_url: "https://mobilizon.fr/events/a6063a77-93f1-4d2c-98b0-6176e2839633/participate"
 # Event language
-event_language : "fr"
+lang: fr
 # event speaker
 speaker:
   - name : "Philippe Leduigou"

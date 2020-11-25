@@ -68,7 +68,10 @@
   translation: frais d’entrée
 
 - id: event_speaker
-  translation: Présentat(eur|rice)s*
+  translation: Présentat(eur|rice)
+
+- id: event_speakers
+  translation: Présentat(eur|rice)s
 
 - id: more_event
   translation: Plus d’événements

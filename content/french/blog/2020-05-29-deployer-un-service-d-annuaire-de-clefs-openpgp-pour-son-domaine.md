@@ -1,10 +1,23 @@
-URL:     https://linuxfr.org/users/gouttegd/journaux/deployer-un-service-d-annuaire-de-clefs-openpgp-pour-son-domaine
+---
+#URL:     https://linuxfr.org/users/gouttegd/journaux/deployer-un-service-d-annuaire-de-clefs-openpgp-pour-son-domaine
 Title:   Déployer un service d’annuaire de clefs OpenPGP pour son domaine
 Authors: gouttegd
 Date:    2020-05-29T23:55:02+02:00
 License: CC By-SA
-Tags:    wkd et openpgp
-Score:   39
+Tags:    [ "wkd", "openpgp" ]
+categories: ["keyserver", "guide"]
+draft: false
+author: "Damien Goutte-Gattat"
+description : "Comment mettre en place un *Web Key Service*."
+bg_image: "images/backgrounds/page-title.jpg"
+image: "images/blog/TerraceHouseKey.jpg"
+type: "post"
+---
+
+*This article was originaly posted by [gouttegd](https://incenp.org/) on [LinuxFR.org](https://linuxfr.org/users/gouttegd/journaux/deployer-un-service-d-annuaire-de-clefs-openpgp-pour-son-domaine).*
+
+---
+
 
 
 Depuis quelques années, les développeurs de GnuPG proposent un nouveau mécanisme de distribution et de découverte des clefs OpenPGP. Au lieu de se reposer sur un réseau de serveurs de clefs où tout le monde peut librement déposer des clefs, le principe est de confier la distribution aux opérateurs de messagerie électronique, chaque opérateur devenant responsable de la distribution des clefs pour les adresses de son propre domaine (_i.e._, l’opérateur de `example.org` a la charge de distribuer les clefs pour les adresses en `@example.org`).

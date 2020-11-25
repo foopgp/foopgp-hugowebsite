@@ -1,5 +1,4 @@
 ---
-id: "1"
 type: "event"
 title: "OpenPGP (technical) conference"
 publishDate: "2016-08-24"

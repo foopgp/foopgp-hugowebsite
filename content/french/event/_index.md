@@ -1,4 +1,5 @@
 ---
+Lastmod: 2020-11-25T23:40:21+01:00 # MANAGED BY update_lastmod.sh
 title: "Événements"
 draft: false
 # page title background image

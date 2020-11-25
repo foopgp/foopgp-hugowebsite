@@ -124,6 +124,21 @@
 - id: solutions
   translation: solutions
 
+- id: authentication
+  translation: authentification
+
+- id: encryption
+  translation: chiffrement
+
+- id: identity
+  translation: identité
+
+- id: vote
+  translation: vote
+
+- id: currency
+  translation: monnaie
+
 - id: meet
   translation: activités
 

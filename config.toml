@@ -81,33 +81,65 @@ hasChildren = true
 
 [[menu.main]]
 name = "solutions"
+hasChildren = true
 URL = "research"
 weight = 2
 
+  [[menu.main]]
+  parent = "solutions"
+  name = "authentication"
+  URL = "research/theme-authentication"
+  weight = 1
+
+  [[menu.main]]
+  parent = "solutions"
+  name = "encryption"
+  URL = "research/encryption"
+  weight = 2
+
+  [[menu.main]]
+  parent = "solutions"
+  name = "email"
+  URL = "research/theme-email"
+  weight = 3
+
+  [[menu.main]]
+  parent = "solutions"
+  name = "identity"
+  URL = "research/theme-identity"
+  weight = 4
+
+  [[menu.main]]
+  parent = "solutions"
+  name = "vote"
+  URL = "research/theme-vote"
+  weight = 5
+
+  [[menu.main]]
+  parent = "solutions"
+  name = "currency"
+  URL = "research/theme-currency"
+  weight = 6
+
 [[menu.main]]
+name = "trainings"
+URL = "course"
 weight = 3
-name = "meet"
-hasChildren = true
 
-  [[menu.main]]
-  parent = "meet"
-  name = "events"
-  URL = "event"
+[[menu.main]]
+weight = 4
+name = "events"
+URL = "event"
 
-  [[menu.main]]
-  parent = "meet"
-  name = "trainings"
-  URL = "course"
-  
 [[menu.main]]
 name = "blog"
 URL = "blog"
-weight = 4
+weight = 5
   
 [[menu.main]]
 name = "Contact"
 URL = "contact"
-weight = 5
+weight = 6
 
 
 # footer menu

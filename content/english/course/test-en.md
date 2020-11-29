@@ -2,10 +2,10 @@
 title: "test english"
 lang: en
 date: 2019-07-06T15:27:17+06:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/page-title.jpg"
 description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
-image: "images/courses/course-1.jpg"
+image: "images/courses/thunderbird-256.png"
 category: "Photography"
 duration : "06 Month"
 audience: "Clark Malik"

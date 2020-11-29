@@ -4,6 +4,7 @@ date: 2018-05-12T15:27:17+06:00
 draft: true
 bg_image: "images/backgrounds/page-title.jpg"
 description : "How to use your OpenPGP key for the better."
+lang: en
 image: ""
 author: "Michał Górny"
 categories: ["certificate", "guide"]

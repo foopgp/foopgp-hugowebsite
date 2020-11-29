@@ -8,6 +8,11 @@ description : "Web developer"
 email: ""
 # portrait
 image: "images/friends/avatar_ste128.jpg"
+social:
+  - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
+    link : "https://github.com/seinfo"
+  - icon : "ti-key"
+    link : "keys/OpenPGP_0xC26D5A9F99A8CFFF.asc"
 
 ---
 

@@ -23,14 +23,15 @@ When you choose a language in the menu bar, you switch content and should transl
 
 Fortunately our readers use to read multiple languages, and for the more dynamic
 part of content, which are blog, events and training pages, the theme manage the
-**lang:** field of the [yaml
-header](https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html).
+**lang** field present in [yaml
+headers](https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html).
 
 Then if you want a page written in English, to be displayed in the "French"
 website, just create a symlink from the French part, to this English page. Or
 vice versa.
 
 > $ cd content/french/blog/
+
 > $ ln -s ../../english/blog/1970-01-01-my-first-article.md
 
 ## Develop and test this website at home

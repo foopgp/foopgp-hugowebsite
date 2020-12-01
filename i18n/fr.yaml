@@ -217,5 +217,5 @@
 - id: donate_texte_type
   translation: ""
 
-- id: langue
-  translation: "LANGUE"
+- id: language
+  translation: "langue"

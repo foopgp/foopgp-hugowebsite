@@ -68,7 +68,10 @@
   translation: frais d’entrée
 
 - id: event_speaker
-  translation: Présentateur•trice·s
+  translation: Présentat(eur|rice)
+
+- id: event_speakers
+  translation: Présentat(eur|rice)s
 
 - id: more_event
   translation: Plus d’événements
@@ -123,6 +126,21 @@
 
 - id: solutions
   translation: solutions
+
+- id: authentication
+  translation: authentification
+
+- id: encryption
+  translation: chiffrement
+
+- id: identity
+  translation: identité
+
+- id: vote
+  translation: vote
+
+- id: currency
+  translation: monnaie
 
 - id: meet
   translation: activités
@@ -199,5 +217,5 @@
 - id: donate_texte_type
   translation: ""
 
-- id: langue
-  translation: "LANGUE"
+- id: language
+  translation: "langue"

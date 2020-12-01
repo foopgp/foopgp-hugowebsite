@@ -68,6 +68,9 @@
   translation: entry fee
 
 - id: event_speaker
+  translation: Event Speaker
+
+- id: event_speakers
   translation: Event Speakers
 
 - id: more_event
@@ -123,6 +126,21 @@
 
 - id: solutions
   translation: solutions
+
+- id: authentication
+  translation: authentication
+
+- id: encryption
+  translation: encryption
+
+- id: identity
+  translation: identity
+
+- id: vote
+  translation: vote
+
+- id: currency
+  translation: currency
 
 - id: meet
   translation: Activities
@@ -199,5 +217,5 @@
 - id: donate_texte_type
   translation: ""
   
-- id: langue
-  translation: "LANGUAGE"
+- id: language
+  translation: "language"

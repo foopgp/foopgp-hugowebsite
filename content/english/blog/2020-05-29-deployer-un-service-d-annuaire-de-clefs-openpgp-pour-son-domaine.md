@@ -1,0 +1,1 @@
+../../french/blog/2020-05-29-deployer-un-service-d-annuaire-de-clefs-openpgp-pour-son-domaine.md

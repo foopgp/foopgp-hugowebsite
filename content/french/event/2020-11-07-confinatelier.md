@@ -1,9 +1,8 @@
 ---
-id: "2"
 type: "event"
 title: "Confin’atelier #3"
 publishDate: "2020-11-03"
-date: "2020-11-07T14:00:00+02:00"
+date: "2020-11-07T14:00:00+01:00"
 # post save as draft
 draft: false
 # page title background image

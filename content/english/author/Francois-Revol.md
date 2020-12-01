@@ -13,6 +13,8 @@ social:
     link : "https://twitter.com/mmu_man"
   - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
     link : "https://github.com/mmuman"
+  - icon : "ti-key"
+    link : "keys/74B4AC35E66471743D1CF67D53FEAF55939ED4D7.asc"
 ---
 
 I contributed to many Free Software / OpenSource projects, including the Haiku Operating System. I know I'm a total noob at security, but I'm progressing.

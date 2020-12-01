@@ -3,17 +3,15 @@ title: "Philippe Le Duigou"
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "Chef de projet informatique option finance, à la retraite."
 # Not the used one, but the one for gravatar
 email: "philippe.leduigou@gmail.com"
 # portrait
 image: ""
 social:
-  - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
-    link : "https://github.com/leduigou"
   - icon : "ti-key"
     link : "keys/OpenPGP_0x1FF16B664B6D79EE.asc"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida. Nam suscipit vitae purus et laoreet.
-Donec nisi dolor, consequat vel pretium id, auctor in dui. Nam iaculis, neque ac ullamcorper.
+Passionné des monnaies alternatives. Président du SEL de Valence "Valensel". Membre fondateur de la monnaie locale Bel Monnaie. Animateur de groupes locaux de la monnaie libre Ğ1. Chef de projet informatique option finance, à la retraite.
+

@@ -20,7 +20,7 @@ fee: "100€ to 450€"
 # apply url
 apply_url: "https://openpgp-conf.org/registration.html"
 # Event language
-lang: en
+lang: en_DE
 # event speaker
 speaker:
   - name : "Werner Koch"

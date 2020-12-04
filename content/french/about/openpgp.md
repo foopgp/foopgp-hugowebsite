@@ -20,10 +20,10 @@ Il est basé sur le logiciel original [PGP](https://fr.wikipedia.org/wiki/Pretty
 
 À partir de 1997, le groupe de travail OpenPGP a été formé au sein de l'Internet Engineering Task Force (IETF) pour standardiser ce qui était un produit propriétaire depuis 1991.
 
-Au cours de la dernière décennie, PGP, et plus tard OpenPGP, sont devenus la norme pour presque tous les e-mails signés ou chiffrés dans le monde.
+Au cours de la dernière décennie, PGP, et plus tard OpenPGP, sont devenus la norme pour presque tous les [courriels](/fr/research/theme-email/) [signés](/fr/research/theme-authentication/) ou [chiffrés](/fr/research/encryption/) dans le monde.
 
-Mais OpenPGP peut également être utilisé pour de nombreuses autres [applications](/research/), comme
-l'[Authentification sur Internet](/research/theme-authentication/) ou le [vote électronique](/recherche/theme-vote/).
+Mais OpenPGP peut également être utilisé pour de nombreuses autres [applications](/fr/research/), comme
+l'[Authentification sur Internet](/fr/research/theme-authentication/) ou le [vote électronique](/fr/research/theme-vote/).
 
 Le format et les utilisations d'OpenPGP sont aujourd'hui spécifiés dans de nombreux [RFCs et brouillons IETF](https://www.ietf.org/standards/rfcs/)[^ rfcs]. Ces normes peuvent donc être implémentées par n'importe quelle entreprise, sans payer de frais de licence à quiconque.
 

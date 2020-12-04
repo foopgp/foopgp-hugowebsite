@@ -6,9 +6,9 @@ bg_image: "images/about/about-page.jpg"
 # about image
 image: ""
 # meta description
-description : "Friends Of OpenPGP (foopgp) vise à rassembler tous ceux qui utilisent ou développent des solutions basées sur les normes OpenPGP.
+description : "Friends Of [OpenPGP](/fr/about/openpgp/) (foopgp) vise à rassembler tous ceux qui utilisent ou développent des solutions basées sur les normes [OpenPGP](/fr/about/openpgp/).
    Les objectifs sont de promouvoir et de faciliter l'adoption de ces technologies et de soutenir leur croissance.
-   Pour les atteindre, l'association aide à organiser des événements, des ateliers et des formations. Elle peut également héberger et promouvoir le développement collaboratif de projets logiciels liés à OpenPGP."
+   Pour les atteindre, l'association aide à organiser des événements, des ateliers et des formations. Elle peut également héberger et promouvoir le développement collaboratif de projets logiciels liés à [OpenPGP](/fr/about/openpgp/)."
 ---
 
 ![pugs puppies](/images/about/about-us.jpg)
@@ -23,7 +23,7 @@ De nos smartphones aux routeurs et serveurs qui font tourner Internet, en passan
 
 Linux a désormais conquis le monde. Le défi qui nous attend maintenant est de rendre le monde plus juste et plus chaleureux.
 
-Pour cela nous devons pouvoir proteger notre vie privée et éviter autant que possible les hierarchies pyramidales. C'est exactement la vision et le but des hommes qui ont inventé OpenPGP.
+Pour cela nous devons pouvoir proteger notre vie privée et éviter autant que possible les hierarchies pyramidales. C'est exactement la vision et le but des hommes qui ont inventé [OpenPGP](/fr/about/openpgp/).
 
 PGP signifie *Pretty Good Privacy*, et aujourd'hui son implémentation la plus utilisée est GPG, qui signifie *Gnu Privacy Guard*.
 

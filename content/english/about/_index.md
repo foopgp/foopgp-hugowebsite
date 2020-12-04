@@ -6,9 +6,9 @@ bg_image: "images/about/about-page.jpg"
 # about image
 image: ""
 # meta description
-description : "Friends Of OpenPGP (foopgp) aims to bring together people who use or develop solutions based on the OpenPGP standards.
+description : "Friends Of [OpenPGP](/about/openpgp/) (foopgp) aims to bring together people who use or develop solutions based on the [OpenPGP](/about/openpgp/) standards.
    The objectives are to promote and facilitate the adoption of such technologies and to support their growth.
-   To reach them, the association helps organize events, workshops and training. It may also host and promote the collaborative development of software projects related to OpenPGP."
+   To reach them, the association helps organize events, workshops and training. It may also host and promote the collaborative development of software projects related to [OpenPGP](/about/openpgp/)."
 ---
 
 ![pugs puppies](/images/about/about-us.jpg)
@@ -21,7 +21,7 @@ From our smartphones to the routers and servers that run the Internet, including
 
 Linux now rules the world. The challenge that awaits us now is to make the world more fair and warmhearted.
 
-For this we must be able to protect our privacy and avoid pyramid hierarchies as much as possible. This is exactly the vision and the goal of the men who invented OpenPGP.
+For this we must be able to protect our privacy and avoid pyramid hierarchies as much as possible. This is exactly the vision and the goal of the men who invented [OpenPGP](/about/openpgp/).
 
 PGP stands for *Pretty Good Privacy*, and today its most widely used implementation is GPG, which stands for *Gnu Privacy Guard*.
 

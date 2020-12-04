@@ -4,8 +4,8 @@ Title:   Déployer un service d’annuaire de clefs OpenPGP pour son domaine
 Authors: gouttegd
 Date:    2020-05-29T23:55:02+02:00
 License: CC By-SA
-Tags:    [ "wkd", "openpgp" ]
-categories: ["keyserver", "guide"]
+Tags:    [ "wkd", "openpgp", "keyserver" ]
+categories: [ "guide" ]
 draft: false
 author: "Damien Goutte-Gattat"
 description : "Comment mettre en place un *Web Key Service*."

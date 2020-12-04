@@ -27,5 +27,5 @@ Pour cela nous devons pouvoir proteger notre vie privée et éviter autant que p
 
 PGP signifie *Pretty Good Privacy*, et aujourd'hui son implémentation la plus utilisée est GPG, qui signifie *Gnu Privacy Guard*.
 
-Nous avons alors failli nous baptiser PUG, qui aurait signifié *Privacy User Group(s)*. Finalement cette acronyme est parti, mais le chien qui garde notre vie privée est resté.
+Nous avons alors failli nous baptiser PUG, qui aurait signifié *Privacy User Group(s)*. Finalement cet acronyme est parti, mais le chien qui garde notre vie privée est resté.
 

@@ -50,7 +50,7 @@ banner_feature:
     # feature item loop
     - name : "Bienveillance"
       icon : "ti-heart" # icon pack : https://themify.me/themify-icons
-      content : "Nous accordons une importance particulière à la dimension égalitaire et de bienveillance dans nos relations sociales en général, et plus particulièrementdans le cadre des relations entre collaborateurs et partenaires, quelque soit leur niveau d’implication."
+      content : "Nous accordons une importance particulière à la dimension égalitaire et de bienveillance dans nos relations sociales en général, et plus particulièrement dans le cadre des relations entre collaborateurs et partenaires, quelque soit leur niveau d’implication."
 
     # feature item loop
     - name : "Coopération"

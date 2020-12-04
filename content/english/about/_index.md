@@ -6,7 +6,7 @@ bg_image: "images/about/about-page.jpg"
 # about image
 image: ""
 # meta description
-description : "Friends Of OpenPGP (foopgp) aims to bring together people who use or develop solutions based on the OpenPGP standard.
+description : "Friends Of OpenPGP (foopgp) aims to bring together people who use or develop solutions based on the OpenPGP standards.
    The objectives are to promote and facilitate the adoption of such technologies and to support their growth.
    To reach them, the association helps organize events, workshops and training. It may also host and promote the collaborative development of software projects related to OpenPGP."
 ---

@@ -89,7 +89,7 @@ about:
   enable : true
   title : "About Friends Of OpenPGP"
   image : "images/about/about-us.jpg"
-  content : "Friends Of OpenPGP (foopgp) aims to bring together people who use or develop solutions based on the OpenPGP standard.
+  content : "Friends Of OpenPGP (foopgp) aims to bring together people who use or develop solutions based on the OpenPGP standards.
    The objectives are to promote and facilitate the adoption of such technologies and to support their growth.
    To reach them, the association helps organize events, workshops and training. It may also host and promote the collaborative development of software projects related to OpenPGP."
   button:

@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://foopgp.org"
+baseURL = "/"
 title = "Friends of OpenPGP"
 theme = "educenter"
 # post pagination
@@ -219,7 +219,7 @@ link = "https://github.com/foopgp"
 
 ################################### English language #####################################
 [Languages.en]
-languageName = "En"
+languageName = "en 🇺🇸 🇬🇧 🇨🇦 🇦🇺 ..."
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
@@ -230,7 +230,7 @@ copyright = "Copyright &copy; 2020. [Thanks](https://github.com/foopgp/foopgp-hu
 
 ################################### French language #####################################
 [Languages.fr]
-languageName = "Fr"
+languageName = "fr 🇫🇷 🇨🇩 🇨🇦 🇧🇪 ..."
 languageCode = "fr-fr"
 contentDir = "content/french"
 weight = 2

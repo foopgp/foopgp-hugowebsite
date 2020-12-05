@@ -1,6 +1,6 @@
 ---
 title: "test english"
-lang: en
+lang: en_US
 date: 2019-07-06T15:27:17+06:00
 draft: true
 bg_image: "images/backgrounds/page-title.jpg"

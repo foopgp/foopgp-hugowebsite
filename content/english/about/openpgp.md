@@ -2,7 +2,7 @@
 title: "OpenPGP"
 lang: en
 #date: 2019-07-06T15:27:17+06:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "About OpenPGP."
 image: "images/research/enigma.png"

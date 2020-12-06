@@ -72,17 +72,17 @@ banner_against_value:
     # feature item loop
     - name : "Cupidity"
       icon : "ti-money" # icon pack : https://themify.me/themify-icons
-      content : ""
+      content : "Greed is a tremendous engine... to waste energies and run into the wall of injustice. Above all, we seek to create value. Above all, we don't want to capture more than what we create."
 
     # feature item loop
     - name : "Vainglory"
       icon : "ti-star" # icon pack : https://themify.me/themify-icons
-      content : ""
+      content : "Not only, we want everyone to be able to put themselves in the shoes of the others. But we also want everyone to want anyone to be able to take their place."
 
     # feature item loop
     - name : "Ideology"
       icon : "ti-rocket" # icon pack : https://themify.me/themify-icons
-      content : ""
+      content : "Constantly, we must ensure that our convictions do not erase the scientific rigor."
 
 ############################## about ##################################
 about:

@@ -1,5 +1,5 @@
 ---
-Lastmod: 2020-12-08T11:21:21+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2020-12-08T11:21:21+01:00 # MANAGED by --enableGitInfo
 title: "Blog"
 draft: false
 # page title background image

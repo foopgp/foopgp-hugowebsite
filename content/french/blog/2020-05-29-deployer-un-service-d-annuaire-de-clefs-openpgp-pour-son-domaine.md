@@ -10,7 +10,7 @@ draft: false
 author: "Damien Goutte-Gattat"
 description : "Comment mettre en place un *Web Key Service*."
 lang: fr
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/backgrounds/library.jpg"
 image: "images/blog/TerraceHouseKey.jpg"
 type: "post"
 ---

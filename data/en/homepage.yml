@@ -77,12 +77,12 @@ banner_against_value:
     # feature item loop
     - name : "Vainglory"
       icon : "ti-star" # icon pack : https://themify.me/themify-icons
-      content : "Not only, we want everyone to be able to put themselves in the shoes of the others. But we also want everyone to want anyone to be able to take their place."
+      content : "Not only, we want everyone to be able to put themselves in the shoes of the others. But we also want everyone to help so that anyone can take their place."
 
     # feature item loop
     - name : "Ideology"
       icon : "ti-rocket" # icon pack : https://themify.me/themify-icons
-      content : "Constantly, we must ensure that our convictions do not erase the scientific rigor."
+      content : "Constantly, we must ensure that our convictions do not undermine scientific rigor."
 
 ############################## about ##################################
 about:

@@ -76,12 +76,12 @@ banner_against_value:
     # feature item loop
     - name : "Vanité"
       icon : "ti-star" # icon pack : https://themify.me/themify-icons
-      content : "Non seulement nous souhaitons que chacun puisse se mettre à la place des autres. Mais nous voulons aussi que chacun veuille que quiconque puisse prendre sa place."
+      content : "Non seulement nous souhaitons que chacun puisse se mettre à la place des autres. Mais nous voulons aussi que chacun aide à ce que quiconque puisse prendre sa place."
 
     # feature item loop
     - name : "Idéologie"
       icon : "ti-rocket" # icon pack : https://themify.me/themify-icons
-      content : "Sans cesse, nous devons veiller à ce que nos convictions n'effacent pas la rigueur scientifique."
+      content : "Sans cesse, nous devons veiller à ce que la rigueur scientifique prime sur nos convictions."
 
 
 ############################## about ##################################

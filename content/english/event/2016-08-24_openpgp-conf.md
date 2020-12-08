@@ -12,7 +12,7 @@ description : "about latest developments of OpenPGP aware applications and techn
 # Event image
 image: "images/events/openpgp-conf.svg"
 # location
-location: "[Cologne, Germany](https://www.openstreetmap.org/way/248521498#map=19/50.92733/6.90366)"
+location: "[Köln  🇩🇪 ](https://www.openstreetmap.org/way/248521498#map=19/50.92733/6.90366)"
 # expected attendees
 audience: "for engineers & hackers"
 # entry fee
@@ -20,7 +20,7 @@ fee: "100€ to 450€"
 # apply url
 apply_url: "https://openpgp-conf.org/registration.html"
 # Event language
-lang: en_DE
+lang: en
 # event speaker
 speaker:
   - name : "Werner Koch"

@@ -2,7 +2,7 @@
 title: "Contact"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/backgrounds/world.jpg"
 # meta description
 description : "Contact channels."
 ---

@@ -71,17 +71,17 @@ banner_against_value:
     # feature item loop
     - name : "Cupidité"
       icon : "ti-money" # icon pack : https://themify.me/themify-icons
-      content : ""
+      content : "La cupidité est un formidable moteur... pour gaspiller les énergies et foncer dans le mur de l'injustice. Nous cherchons avant tout à créer de la valeurs. Nous ne voulons surtout pas en capter plus que ce que nous créons."
 
     # feature item loop
     - name : "Vanité"
       icon : "ti-star" # icon pack : https://themify.me/themify-icons
-      content : ""
+      content : "Non seulement nous souhaitons que chacun puisse se mettre à la place des autres. Mais nous voulons aussi que chacun aide à ce que quiconque puisse prendre sa place."
 
     # feature item loop
     - name : "Idéologie"
       icon : "ti-rocket" # icon pack : https://themify.me/themify-icons
-      content : ""
+      content : "Sans cesse, nous devons veiller à ce que la rigueur scientifique prime sur nos convictions."
 
 
 ############################## about ##################################
@@ -119,7 +119,7 @@ cta:
 ######################## Success story #############################
 success_story:
   enable : false
-  bg_image : "images/backgrounds/success-story.jpg"
+  bg_image : "images/backgrounds/library.jpg"
   vignette_1 : "images/about/vignette_videos_open_pgp.png"
   title : "Histoires de réussites"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat.

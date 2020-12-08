@@ -2,7 +2,7 @@
 title: "À propos de nous"
 draft: false
 # page title background image
-bg_image: "images/about/about-page.jpg"
+bg_image: "images/backgrounds/world.jpg"
 # about image
 image: ""
 # meta description

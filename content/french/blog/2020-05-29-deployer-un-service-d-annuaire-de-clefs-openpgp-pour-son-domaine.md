@@ -10,12 +10,12 @@ draft: false
 author: "Damien Goutte-Gattat"
 description : "Comment mettre en place un *Web Key Service*."
 lang: fr
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/backgrounds/library.jpg"
 image: "images/blog/TerraceHouseKey.jpg"
 type: "post"
 ---
 
-*This article was originaly posted by [gouttegd](https://incenp.org/) on [LinuxFR.org](https://linuxfr.org/users/gouttegd/journaux/deployer-un-service-d-annuaire-de-clefs-openpgp-pour-son-domaine).*
+*Article initialement publié par [gouttegd](https://incenp.org/) sur [LinuxFR.org](https://linuxfr.org/users/gouttegd/journaux/deployer-un-service-d-annuaire-de-clefs-openpgp-pour-son-domaine).*
 
 ---
 

@@ -219,8 +219,8 @@ link = "https://github.com/foopgp"
 
 ################################### English language #####################################
 [Languages.en]
-languageName = "en 🇺🇸 🇬🇧 🇨🇦 🇦🇺 ..."
-languageCode = "en-us"
+languageName = "en 🇺🇸 🇬🇧 ..."
+languageCode = "en_US"
 contentDir = "content/english"
 weight = 1
 home = "Home"
@@ -230,8 +230,8 @@ copyright = "Copyright &copy; 2020. [Thanks](https://github.com/foopgp/foopgp-hu
 
 ################################### French language #####################################
 [Languages.fr]
-languageName = "fr 🇫🇷 🇨🇩 🇨🇦 🇧🇪 ..."
-languageCode = "fr-fr"
+languageName = "fr 🇫🇷 🇨🇩 ..."
+languageCode = "fr_FR"
 contentDir = "content/french"
 weight = 2
 home = "Accueil"

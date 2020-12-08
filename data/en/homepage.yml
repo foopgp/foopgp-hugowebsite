@@ -72,17 +72,17 @@ banner_against_value:
     # feature item loop
     - name : "Cupidity"
       icon : "ti-money" # icon pack : https://themify.me/themify-icons
-      content : ""
+      content : "Greed is a tremendous engine... to waste energies and run into the wall of injustice. Above all, we seek to create value. Above all, we don't want to capture more than what we create."
 
     # feature item loop
     - name : "Vainglory"
       icon : "ti-star" # icon pack : https://themify.me/themify-icons
-      content : ""
+      content : "Not only, we want everyone to be able to put themselves in the shoes of the others. But we also want everyone to help so that anyone can take their place."
 
     # feature item loop
     - name : "Ideology"
       icon : "ti-rocket" # icon pack : https://themify.me/themify-icons
-      content : ""
+      content : "Constantly, we must ensure that our convictions do not undermine scientific rigor."
 
 ############################## about ##################################
 about:
@@ -118,7 +118,7 @@ cta:
 ######################## Success story #############################
 success_story:
   enable : false
-  bg_image : "images/backgrounds/success-story.jpg"
+  bg_image : "images/backgrounds/library.jpg"
   vignette_1 : "images/about/vignette_videos_open_pgp.png"
   title : "Success Stories"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat.

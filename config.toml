@@ -51,15 +51,21 @@ hasChildren = true
 
   [[menu.main]]
   parent = "About"
-  name = "us"
-  URL = "about"
+  name = "OpenPGP"
+  URL = "about/openpgp"
   weight = 1
+
+  [[menu.main]]
+  parent = "About"
+  name = "FOOPGP"
+  URL = "about"
+  weight = 2
 
   [[menu.main]]
   parent = "About"
   name = "members"
   URL = "member"
-  weight = 2
+  weight = 4
 
   [[menu.main]]
   parent = "About"
@@ -71,13 +77,13 @@ hasChildren = true
   parent = "About"
   name = "donate"
   URL = "donate"
-  weight = 4
+  weight = 5
 
   [[menu.main]]
   parent = "About"
   name = "contact"
   URL = "contact"
-  weight = 5
+  weight = 6
 
 [[menu.main]]
 name = "solutions"

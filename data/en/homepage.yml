@@ -4,7 +4,7 @@ slider:
   bg_image : "images/banner/banner-1.jpg"
   slider_item:
     # slider item loop
-    - title : "Promote the [OpenPGP](/about/openpgp/) technology"
+    - title : "Promote the [OpenPGP](/about/openpgp/) technologies"
       content : "among businesses and citizens."
       animation_in : "left"
       animation_out : "right"

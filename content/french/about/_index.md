@@ -19,11 +19,11 @@ Ce chien est un carlin, qui se traduit par "**pug**" en anglais.
 
 Beaucoup d'entre nous étions dans des associations qui ont contribué au succès du noyau Linux et des logiciels libres ou open source. Ces associations sont souvent appelées LUG (*Linux User Group*).
 
-De nos smartphones aux routeurs et serveurs qui font tourner Internet, en passant par nos voitures et les objets connectés, Linux est aujourd'hui au coeur de la plupart des systèmes d'exploitations qui entourent nos vies.
+De nos smartphones aux routeurs et serveurs qui font tourner Internet, en passant par nos voitures et les objets connectés, Linux est aujourd'hui au cœur de la plupart des systèmes d'exploitations qui entourent nos vies.
 
 Linux a désormais conquis le monde. Le défi qui nous attend maintenant est de rendre le monde plus juste et plus chaleureux.
 
-Pour cela nous devons pouvoir proteger notre vie privée et éviter autant que possible les hierarchies pyramidales. C'est exactement la vision et le but des hommes qui ont inventé [OpenPGP](/fr/about/openpgp/).
+Pour cela nous devons pouvoir protéger notre vie privée et éviter autant que possible les hiérarchies pyramidales. C'est exactement la vision et le but des hommes qui ont inventé [OpenPGP](/fr/about/openpgp/).
 
 PGP signifie *Pretty Good Privacy*, et aujourd'hui son implémentation la plus utilisée est GPG, qui signifie *Gnu Privacy Guard*.
 

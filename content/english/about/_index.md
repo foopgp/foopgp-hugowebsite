@@ -19,7 +19,7 @@ Many of us were in associations that contributed to the success of the Linux ker
 
 From our smartphones to the routers and servers that run the Internet, including our cars and connected objects, Linux is today the core of most of the operating systems that surround our lives.
 
-Linux now rules the world. The challenge that awaits us now is to make the world more fair and warmhearted.
+Linux now rules the world. The challenge that awaits us today is to make the world more fair and warmhearted.
 
 For this we must be able to protect our privacy and avoid pyramid hierarchies as much as possible. This is exactly the vision and the goal of the men who invented [OpenPGP](/about/openpgp/).
 

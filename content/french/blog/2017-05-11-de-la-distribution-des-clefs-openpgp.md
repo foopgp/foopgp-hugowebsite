@@ -1,4 +1,5 @@
 ---
+Lastmod: 2020-12-11T12:35:02+01:00 # MANAGED BY update_lastmod.sh
 #URL:     https://linuxfr.org/users/gouttegd/journaux/de-la-distribution-des-clefs-openpgp
 Title:   De la distribution des clefs OpenPGP
 Authors: gouttegd

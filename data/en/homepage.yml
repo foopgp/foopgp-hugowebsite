@@ -60,7 +60,7 @@ banner_feature:
     # feature item loop
     - name : "Proximity"
       icon : "ti-world" # icon pack : https://themify.me/themify-icons
-      content : "Friends Of [OpenPGP](/about/openpgp/) is an international project, but we want our vision and our goals to be able to be shared and evolve everywhere and with everyone. This is why we invite all local initiatives linked to [OpenPGP](/about/openpgp/) to join together warmly in this common space."
+      content : "Friends Of OpenPGP is an international project, but we want our vision and our goals to be able to be shared and evolve everywhere and with everyone. This is why we invite all local initiatives linked to [OpenPGP](/about/openpgp/) to join together warmly in this common space."
 
 
 
@@ -87,9 +87,9 @@ banner_against_value:
 ############################## about ##################################
 about:
   enable : true
-  title : "About Friends Of [OpenPGP](/about/openpgp/)"
+  title : "About Friends Of OpenPGP"
   image : "images/about/about-us.jpg"
-  content : "Friends Of [OpenPGP](/about/openpgp/) (foopgp) aims to bring together people who use or develop solutions based on the [OpenPGP](/about/openpgp/) standards.
+  content : "Friends Of OpenPGP (foopgp) aims to bring together people who use or develop solutions based on the [OpenPGP](/about/openpgp/) standards.
    The objectives are to promote and facilitate the adoption of such technologies and to support their growth.
    To reach them, the association helps organize events, workshops and training. It may also host and promote the collaborative development of software projects related to [OpenPGP](/about/openpgp/)."
   button:

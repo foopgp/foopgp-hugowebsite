@@ -1,14 +1,15 @@
 ---
 title: "On OpenPGP (GnuPG) key management"
 date: 2018-05-12T15:27:17+06:00
-draft: true
+draft: false
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
 bg_image: "images/backgrounds/library.jpg"
 description : "How to use your OpenPGP key for the better."
 lang: en
 image: "images/blog/OrigamiKeychain.jpg"
-author: "Michał Górny"
+#author: "Michał Górny"
 categories: ["guide"]
-tags: ["OpenPGP", "gpg"]
+tags: ["OpenPGP", "gnupg"]
 type: "post"
 ---
 

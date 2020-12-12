@@ -7,30 +7,35 @@ slider:
     - title : "Promote the [OpenPGP](/about/openpgp/) technologies"
       content : "among businesses and citizens."
       animation_in : "left"
-      animation_out : "right"
+      animation_out : "up"
       # available animation : left, right, up, down
       button:
         enable : true
         label : "Events"
         link : "event"
 
-    # slider item loop
     - title : "Ease [OpenPGP](/about/openpgp/) adoption for everyone"
-      content : "organizing training and workshops."
-      animation_in : "left"
-      animation_out : "right"
-      # available animation : left, right, up, down
+      content : "by organizing training and workshops."
+      animation_in : "up"
+      animation_out : "left"
       button:
         enable : true
         label : "Training & Workshops"
         link : "course"
 
-    # slider item loop
+    - title : "Monitor evolutions related to [OpenPGP](/about/openpgp/)"
+      content : "by providing relevant information."
+      animation_in : "right"
+      animation_out : "down"
+      button:
+        enable : true
+        label : "blog"
+        link : "blog"
+
     - title : "Support [OpenPGP](/about/openpgp/) solutions and initiatives"
-      content : "collecting and redistributing donations."
-      animation_in : "left"
+      content : "by collecting and redistributing donations."
+      animation_in : "down"
       animation_out : "right"
-      # available animation : left, right, up, down
       button:
         enable : true
         label : "Donations"

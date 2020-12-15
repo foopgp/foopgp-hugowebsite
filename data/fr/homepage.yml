@@ -24,7 +24,7 @@ slider:
         link : "course"
 
     - title : "Suivre les évolutions liées à [OpenPGP](/fr/about/openpgp/)"
-      content : "en fournissant des informations de qualité."
+      content : "en relayant des informations de qualité."
       animation_in : "right"
       animation_out : "down"
       button:

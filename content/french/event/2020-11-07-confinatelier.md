@@ -14,7 +14,7 @@ image: "https://mobilizon.fr/media/bb4c5503baefd29ac4ea9c105d305b8a6a5c27aade1b5
 # location
 location: "[mobilizon.fr](https://mobilizon.fr/events/a6063a77-93f1-4d2c-98b0-6176e2839633)"
 # expected attendees
-audience: "pour tout le monde"
+audience: "🎖️ pour tout le monde"
 # entry fee
 fee: "libre sans collecte"
 # apply url

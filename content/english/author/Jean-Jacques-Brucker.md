@@ -1,7 +1,7 @@
 ---
 title: "Jean-Jacques Brucker"
 # page title background image"
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/friends/banner_jjb.jpg"
 # meta description
 description : "Rather inconspicuous software engineer"
 # Not the used one, but the one for gravatar

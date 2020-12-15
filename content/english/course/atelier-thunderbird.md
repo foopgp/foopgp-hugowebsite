@@ -8,7 +8,7 @@ description : "Learn to sign and encrypt your emails with Mozilla Thunderbird"
 image: "images/courses/thunderbird-256.png"
 category: "Email"
 duration: "3 hours"
-audience: "for everyone"
+audience: "🎖️ for everyone"
 fee: "libre price"
 apply_url: "/contact"
 ---

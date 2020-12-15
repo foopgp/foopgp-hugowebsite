@@ -14,7 +14,7 @@ image: "images/events/openpgp-conf.svg"
 # location
 location: "[Köln  🇩🇪 ](https://www.openstreetmap.org/way/248521498#map=19/50.92733/6.90366)"
 # expected attendees
-audience: "for engineers & hackers"
+audience: "🎖️🎖️🎖️ for engineers & hackers"
 # entry fee
 fee: "100€ to 450€"
 # apply url

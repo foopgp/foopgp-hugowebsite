@@ -1,0 +1,1 @@
+../../french/blog/2017-05-11-de-la-distribution-des-clefs-openpgp.md

@@ -8,7 +8,7 @@ description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
 image: "images/courses/thunderbird-256.png"
 category: "Photography"
 duration : "06 Month"
-audience: "Clark Malik"
+audience: "🎖️🎖️ Clark Malik"
 weekly : "03 hours"
 fee : "From: $699"
 apply_url : "#"

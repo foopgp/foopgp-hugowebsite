@@ -7,30 +7,35 @@ slider:
     - title : "Promouvoir les utilisations de la technologie [OpenPGP](/fr/about/openpgp/)"
       content : "auprès des entreprises, particuliers, et responsables politiques."
       animation_in : "left"
-      animation_out : "right"
+      animation_out : "up"
       # available animation : left, right, up, down
       button:
         enable : true
         label : "Événements"
         link : "event"
 
-    # slider item loop
     - title : "Faciliter l'adoption d'[OpenPGP](/fr/about/openpgp/) par le plus grand nombre"
       content : "en organisant des formations et ateliers."
-      animation_in : "left"
-      animation_out : "right"
-      # available animation : left, right, up, down
+      animation_in : "up"
+      animation_out : "left"
       button:
         enable : true
         label : "Formations & Ateliers"
         link : "course"
 
-    # slider item loop
+    - title : "Suivre les évolutions liées à [OpenPGP](/fr/about/openpgp/)"
+      content : "en relayant des informations de qualité."
+      animation_in : "right"
+      animation_out : "down"
+      button:
+        enable : true
+        label : "blog"
+        link : "blog"
+
     - title : "Accompagner les initiatives et solutions utilisant [OpenPGP](/fr/about/openpgp/)"
       content : "en récoltant et redistribuant des donations."
-      animation_in : "left"
+      animation_in : "down"
       animation_out : "right"
-      # available animation : left, right, up, down
       button:
         enable : true
         label : "Donations"
@@ -60,7 +65,7 @@ banner_feature:
     # feature item loop
     - name : "Proximité"
       icon : "ti-world" # icon pack : https://themify.me/themify-icons
-      content : "Friends Of [OpenPGP](/fr/about/openpgp/) est un projet international, mais nous souhaitons que notre vision et nos objectifs puissent se partager et évoluer partout et avec tout le monde. C'est pourquoi nous invitons toutes les initiatives locales et liées à [OpenPGP](/fr/about/openpgp/) à se rejoindre chaleureusement en cet espace commun."
+      content : "Friends Of OpenPGP est un projet international, mais nous souhaitons que notre vision et nos objectifs puissent se partager et évoluer partout et avec tout le monde. C'est pourquoi nous invitons toutes les initiatives locales et liées à [OpenPGP](/fr/about/openpgp/) à se rejoindre chaleureusement en cet espace commun."
 
 
 ############################### Banner against_value ###############################
@@ -71,7 +76,7 @@ banner_against_value:
     # feature item loop
     - name : "Cupidité"
       icon : "ti-money" # icon pack : https://themify.me/themify-icons
-      content : "La cupidité est un formidable moteur... pour gaspiller les énergies et foncer dans le mur de l'injustice. Nous cherchons avant tout à créer de la valeurs. Nous ne voulons surtout pas en capter plus que ce que nous créons."
+      content : "La cupidité est un formidable moteur... pour gaspiller les énergies ou pour foncer dans le mur de l'injustice. Nous cherchons avant tout à créer de la valeurs. Nous ne voulons surtout pas en capter plus que ce que nous créons."
 
     # feature item loop
     - name : "Vanité"
@@ -90,7 +95,7 @@ about:
   title : "À propos des Amis d'OpenPGP"
   image : "images/about/about-us.jpg"
   vignette_1 : "images/about/vignette_videos_open_pgp.png"
-  content : "Friends Of [OpenPGP](/fr/about/openpgp/) (foopgp) vise à rassembler tous ceux qui utilisent ou développent des solutions basées sur les normes [OpenPGP](/fr/about/openpgp/).
+  content : "Friends Of OpenPGP (foopgp) vise à rassembler tous ceux qui utilisent ou développent des solutions basées sur les normes [OpenPGP](/fr/about/openpgp/).
    Les objectifs sont de promouvoir et de faciliter l'adoption de ces technologies et de soutenir leur croissance.
    Pour les atteindre, l'association aide à organiser des événements, des ateliers et des formations. Elle peut également héberger et promouvoir le développement collaboratif de projets logiciels liés à [OpenPGP](/fr/about/openpgp/)."
   button:

@@ -145,12 +145,12 @@ weight = 5
 # footer menu
 
 [[menu.footer]]
-name = "documents"
-URL = "notice"
+name = "about"
+URL = "about"
 
 [[menu.footer]]
-name = "events"
-URL = "event"
+name = "contact"
+URL = "contact"
 
 
 #################### default parameters ################################

@@ -7,13 +7,14 @@ This is a static website made with [hugo](https://gohugo.io).
 
 Almost all pages are in the [content/{language}](content/) subdirectories.
 
-The translations are in the [i18n](i18n/) subdirectory.
+Some translations belong to the website and are in the [i18n](i18n/)
+subdirectory, while some others belong to the theme (and are within it).
 
 The theme(s) are in the [themes](themes/) subdirectory (and they should be git submodules).
 
-(Alas maybe) There are some interdependencies between the themes and the hugo website and
+(Alas) There are still some interdependencies between the themes and the hugo website and
 its content :
- * the theme use the website translations.
+ * the theme use the website images.
  * Some descriptions are in the theme while they could have been in the website,
    or vice versa.
 

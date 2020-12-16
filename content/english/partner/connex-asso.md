@@ -5,8 +5,8 @@ draft: false
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "FOSS Association"
-# member portrait
-image: "images/members/association-connex-200x200.png"
+# partner portrait
+image: "images/partners/association-connex-200x200.png"
 # course
 course: "Association"
 # biography
@@ -30,7 +30,7 @@ contact:
     link : "https://www.openstreetmap.org/#map=19/44.94194/4.91766"
 
 # type
-type: "member"
+type: "partner"
 ---
 
 Association editing [SeliWeb](https://www.seliweb.net/), a software solution for [local exchange trading systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system).

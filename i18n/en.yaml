@@ -1,170 +1,8 @@
-- id: read_more
-  translation: Read More
-
-- id: contact_form
-  translation: Contact Form
-
-- id: send
-  translation: send message
-
-- id: contact_info
-  translation: Contact Info
-
-- id: subscribe_newsletter
-  translation: Subscribe Newsletter
-
-- id: subscribe
-  translation: Subscribe
-
-- id: contact_us
-  translation: Contact Us
-
-- id: latest_article
-  translation: Latest content
-
-- id: categories
-  translation: Categories
-
-- id: tags
-  translation: Tags
-
-- id: see_all
-  translation: See all
-
-- id: apply_now
-  translation: Apply now
-
-- id: posted_by
-  translation: Posted by
-
-- id: date
-  translation: Date
-
-- id: time
-  translation: time
-
-- id: category
-  translation: Category
-
-- id: related_course
-  translation: Related Course
-
-- id: duration
-  translation: duration
-
-- id: weekly
-  translation: weekly
-
-- id: fee
-  translation: fee
-
-- id: teacher
-  translation: teacher
-
-- id: location
-  translation: location
-
-- id: entry_fee
-  translation: entry fee
-
-- id: event_speaker
-  translation: Event Speaker
-
-- id: event_speakers
-  translation: Event Speakers
-
-- id: more_event
-  translation: More Events
-
-- id: join
-  translation: Join
-  
-- id: enter_email
-  translation: Enter your email…
-
-- id: company
-  translation: company
-
-- id: links
-  translation: links
-
-- id: call
-  translation: call
-
-- id: email
-  translation: email
-
-- id: all
-  translation: All
-
-- id: interest
-  translation: SUMMARY OF ACTIVITIES/INTERESTS
-
-- id: our_teachers
-  translation: Our Teachers
-
-- id: download
-  translation: Download
-
-- id: About
-  translation: About
-
-- id: donate
-  translation: donate
-
-- id: us
-  translation: us
-
-- id: members
-  translation: partners
-
-- id: friends
-  translation: friends
-
-- id: themes
-  translation: themes
-
-- id: solutions
-  translation: solutions
+- id: about
+  translation: about
 
 - id: authentication
   translation: authentication
-
-- id: encryption
-  translation: encryption
-
-- id: identity
-  translation: identity
-
-- id: vote
-  translation: vote
-
-- id: currency
-  translation: currency
-
-- id: meet
-  translation: Activities
-
-- id: trainings
-  translation: training
-
-- id: workshops
-  translation: workshops
-
-- id: Pages
-  translation: Pages
-
-- id: notice
-  translation: notice
-
-- id: events
-  translation: events
-
-- id: scholarship
-  translation: scholarship
-
-- id: research
-  translation: research
 
 - id: blog
   translation: blog
@@ -172,50 +10,39 @@
 - id: contact
   translation: contact
 
-- id: organization
-  translation: organization
-
-- id: fundation
-  translation: fundation
+- id: currency
+  translation: currency
 
 - id: documents
   translation: documents
 
-- id: latest_documents
-  translation: latest documents
+- id: donate
+  translation: donate
 
-- id: where
-  translation: where
+- id: email
+  translation: email
 
-- id: when
-  translation: when
+- id: encryption
+  translation: encryption
 
-- id: who
-  translation: who
+- id: events
+  translation: events
 
-- id: how_much
-  translation: how much
+- id: friends
+  translation: friends
 
-- id: title_our_values
-  translation: "Our Values"
+- id: identity
+  translation: identity
 
-- id: text_our_values
-  translation: ""
+- id: members
+  translation: partners
 
-- id: title_our_against_values
-  translation: "Against Values"
+- id: solutions
+  translation: solutions
 
-- id: text_our_against_values
-  translation: ""
+- id: trainings
+  translation: training
 
-- id: donate_titre_main
-  translation: "Donate to Foopgp"
+- id: vote
+  translation: vote
 
-- id: donate_texte_main
-  translation: ""
-
-- id: donate_texte_type
-  translation: ""
-  
-- id: language
-  translation: "language"

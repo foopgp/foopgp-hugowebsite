@@ -46,41 +46,41 @@ link = "plugins/filterizr/jquery.filterizr.min.js"
 # main menu
 [[menu.main]]
 weight = 1
-name = "About"
+name = "about"
 hasChildren = true
 
   [[menu.main]]
-  parent = "About"
+  parent = "about"
   name = "OpenPGP"
   URL = "about/openpgp"
   weight = 1
 
   [[menu.main]]
-  parent = "About"
+  parent = "about"
   name = "FOOPGP"
   URL = "about"
   weight = 2
 
   [[menu.main]]
-  parent = "About"
+  parent = "about"
   name = "members"
   URL = "member"
   weight = 4
 
   [[menu.main]]
-  parent = "About"
+  parent = "about"
   name = "friends"
   URL = "author"
   weight = 3
 
   [[menu.main]]
-  parent = "About"
+  parent = "about"
   name = "donate"
   URL = "donate"
   weight = 5
 
   [[menu.main]]
-  parent = "About"
+  parent = "about"
   name = "contact"
   URL = "contact"
   weight = 6
@@ -141,12 +141,6 @@ URL = "event"
 name = "blog"
 URL = "blog"
 weight = 5
-  
-[[menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 6
-
 
 # footer menu
 

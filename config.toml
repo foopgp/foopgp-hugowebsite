@@ -63,8 +63,8 @@ hasChildren = true
 
   [[menu.main]]
   parent = "about"
-  name = "members"
-  URL = "member"
+  name = "partners"
+  URL = "partner"
   weight = 4
 
   [[menu.main]]

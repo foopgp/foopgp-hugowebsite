@@ -3,12 +3,13 @@ title: "Test français"
 lang: fr
 date: 2019-07-06T15:27:17+06:00
 draft: true
+partner: "Connex"
 bg_image: "images/backgrounds/page-title.jpg"
 description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
 image: "images/courses/thunderbird-256.png"
 category: "Photography"
 duration: "06 mois"
-audience: "🎖️ 🎖️ 🎖️ Clark Malik"
+audience: "🎖️ 🎖️ 🎖️ Experts"
 weekly: "03 heures"
 fee: "À partir de 699$"
 apply_url : "#"

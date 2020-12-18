@@ -176,5 +176,5 @@ blog:
 donate:
   enable : true
   title : "Donate"
-  june_logo : "images/donate/logo_g1_flare_512.png"
+  june_logo : "images/comingsoon.jpg"
   june_link : "https://monnaie-libre.fr/la-g1-june/"

@@ -205,6 +205,11 @@ icon = "ti-github" # themify icon : https://themify.me/themify-icons
 link = "https://github.com/foopgp"
 
 [[params.social]]
+title = "donate"
+icon = "ti-heart"
+link = "/donate"
+
+[[params.social]]
 title = "follow us"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
 link = "https://twitter.com/foopgp"

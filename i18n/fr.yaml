@@ -10,6 +10,9 @@
 - id: contact
   translation: contact
 
+- id: contribute
+  translation: contribuer
+
 - id: currency
   translation: monnaie
 
@@ -26,13 +29,19 @@
   translation: chiffrement
 
 - id: events
-  translation: Évènements
+  translation: évènements
+
+- id: "follow us"
+  translation: nous suivre
 
 - id: friends
   translation: amis
 
 - id: identity
   translation: identité
+
+- id: "join us"
+  translation: nous rejoindre
 
 - id: partners
   translation: partenaires

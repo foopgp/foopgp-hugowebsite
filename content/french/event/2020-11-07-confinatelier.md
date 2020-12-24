@@ -10,9 +10,9 @@ bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "Dans le cadre de la 3ème édition du du Campus du libre le Confin’atelier #3 aura lieu le samedi 7 novembre 2020, de 14h à 17h et en ligne !"
 # Event image
-image: "https://mobilizon.fr/media/bb4c5503baefd29ac4ea9c105d305b8a6a5c27aade1b5a7ef444fd4761802c05.png"
+image: "images/events/bb4c5503baefd29ac4ea9c105d305b8a6a5c27aade1b5a7ef444fd4761802c05.png"
 # location
-location: "[mobilizon.fr](https://mobilizon.fr/events/a6063a77-93f1-4d2c-98b0-6176e2839633)"
+location: "[mobilizon.fr](https://mobilizon.fr/events/a6063a77-93f1-4d2c-98b0-6176e2839633) 🌐"
 # expected attendees
 audience: "🎖️ pour tout le monde"
 # entry fee

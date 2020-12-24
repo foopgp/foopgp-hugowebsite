@@ -10,6 +10,9 @@
 - id: contact
   translation: contact
 
+- id: contribute
+  translation: contribute
+
 - id: currency
   translation: currency
 
@@ -28,11 +31,17 @@
 - id: events
   translation: events
 
+- id: "follow us"
+  translation: follow us
+
 - id: friends
   translation: friends
 
 - id: identity
   translation: identity
+
+- id: "join us"
+  translation: join us
 
 - id: partners
   translation: partners

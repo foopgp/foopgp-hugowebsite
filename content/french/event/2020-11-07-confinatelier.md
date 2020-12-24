@@ -1,4 +1,5 @@
 ---
+Lastmod: 2020-12-24T15:35:22+00:00 # MANAGED BY update_lastmod.sh
 type: "event"
 title: "Confin’atelier #3"
 publishDate: "2020-11-03"

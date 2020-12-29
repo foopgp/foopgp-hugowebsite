@@ -10,7 +10,7 @@ email: "philippe.leduigou@gmail.com"
 image: ""
 social:
   - icon : "ti-key"
-    link : "keys/OpenPGP_0x1FF16B664B6D79EE.asc"
+    link : "/keys/OpenPGP_0x1FF16B664B6D79EE.asc"
 ---
 
 Passionate about alternative currencies. President of "Valensel", the Valence LETS. Founding member of the Bel Monnaie local currency. Animator for the local groups of the libre currency Ğ1. Retired software project manager for finance applications.

@@ -10,7 +10,7 @@ email: "philippe.leduigou@gmail.com"
 image: ""
 social:
   - icon : "ti-key"
-    link : "keys/OpenPGP_0x1FF16B664B6D79EE.asc"
+    link : "/keys/OpenPGP_0x1FF16B664B6D79EE.asc"
 ---
 
 Passionné des monnaies alternatives. Président du SEL de Valence "Valensel". Membre fondateur de la monnaie locale Bel Monnaie. Animateur de groupes locaux de la monnaie libre Ğ1. Chef de projet informatique option finance, à la retraite.

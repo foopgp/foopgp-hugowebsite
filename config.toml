@@ -11,7 +11,8 @@ summaryLength = "10"
 # disable language
 disableLanguages = [] # desable language from here
 
-
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 ############################# Plugins ##############################
 
 # CSS Plugins

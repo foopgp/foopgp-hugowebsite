@@ -76,7 +76,7 @@ banner_against_value:
     # feature item loop
     - name : "Cupidité"
       icon : "ti-money" # icon pack : https://themify.me/themify-icons
-      content : "La cupidité est un formidable moteur... pour gaspiller les énergies ou pour foncer dans le mur de l'injustice. Nous cherchons avant tout à créer de la valeurs. Nous ne voulons surtout pas en capter plus que ce que nous créons."
+      content : "La cupidité est un formidable moteur... pour gaspiller les énergies ou pour foncer dans le mur de l'injustice. Nous cherchons avant tout à créer de la valeur. Nous ne voulons surtout pas en capter plus que ce que nous créons."
 
     # feature item loop
     - name : "Vanité"

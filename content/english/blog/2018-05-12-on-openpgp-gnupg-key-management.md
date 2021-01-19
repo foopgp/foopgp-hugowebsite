@@ -7,7 +7,7 @@ bg_image: "images/backgrounds/library.jpg"
 description : "How to use your OpenPGP key for the better."
 lang: en
 image: "images/blog/OrigamiKeychain.jpg"
-#author: "Michał Górny"
+author: "Michał Górny"
 categories: ["guide"]
 tags: ["OpenPGP", "gnupg"]
 type: "post"

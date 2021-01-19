@@ -1,4 +1,5 @@
 ---
+Lastmod: 2021-01-19T22:46:04+01:00 # MANAGED BY update_lastmod.sh
 title: "On OpenPGP (GnuPG) key management"
 date: 2018-05-12T15:27:17+06:00
 draft: false

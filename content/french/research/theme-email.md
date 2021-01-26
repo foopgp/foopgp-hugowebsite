@@ -18,7 +18,7 @@ type: "research"
 
 ### Clients mail compatibles OpenPGP
 
-Our suggestion of email clients that do support OpenPGP:
+Nos suggestions de clients email supportant OpenPGP&nbsp;:
 
 - Pour l'ordinateur (Mac, Windows ou GNU/Linux…)&nbsp;:
   - [Thunderbird](https://www.thunderbird.net/fr/): À partir de la version 78 le support d'OpenPGP est intégré. Fonctionne sur tous les systèmes courants.

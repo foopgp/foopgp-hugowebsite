@@ -9,7 +9,7 @@ description : "À propos d'OpenPGP."
 image: "images/solutions/enigma.png"
 #author: "Jean-Jacques Brucker"
 categories: ["about"]
-tags: ["OpenPGP", "RFC4880"]
+tags: ["Specification"]
 type: "post"
 ---
 

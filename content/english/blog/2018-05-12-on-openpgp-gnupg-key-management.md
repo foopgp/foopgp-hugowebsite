@@ -10,7 +10,7 @@ lang: en
 image: "images/blog/OrigamiKeychain.jpg"
 author: "Michał Górny"
 categories: ["guide"]
-tags: ["OpenPGP", "gnupg"]
+tags: ["Experience", "gnupg"]
 type: "post"
 ---
 

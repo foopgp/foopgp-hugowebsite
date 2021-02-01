@@ -5,7 +5,7 @@ Title:   De la distribution des clefs OpenPGP
 Authors: gouttegd
 Date:    2017-05-11T17:35:38+02:00
 License: CC By-SA
-Tags:    [ "wkd", "ldap", "hkp", "gnupg", "openpgp", "keyserver" ]
+Tags:    [ "wkd", "ldap", "hkp", "gnupg", "keyserver" ]
 categories: [ "study" ]
 draft: false
 author: "Damien Goutte-Gattat"

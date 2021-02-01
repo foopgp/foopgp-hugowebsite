@@ -5,7 +5,7 @@ Title:   "Bien démarrer avec GnuPG"
 Authors: gouttegd, Davy Defaud, Benoît Sibaud, patrick_g et Ysabeau
 Date:    2020-05-23T20:49:38+02:00
 License: CC By-SA
-Tags:    [ "gnupg", "openpgp", "keyserver" ]
+Tags:    [ "gnupg", "keyserver" ]
 categories: [ "Guide" ]
 draft: false
 author: [ "Damien Goutte-Gattat" , "Davy Defaud", "Benoît Sibaud", "patrick_g", "Ysabeau"]

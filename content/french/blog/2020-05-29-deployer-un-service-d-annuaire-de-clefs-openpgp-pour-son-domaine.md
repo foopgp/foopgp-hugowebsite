@@ -23,7 +23,7 @@ type: "post"
 
 Depuis quelques années, les développeurs de GnuPG proposent un nouveau mécanisme de distribution et de découverte des clefs OpenPGP. Au lieu de se reposer sur un réseau de serveurs de clefs où tout le monde peut librement déposer des clefs, le principe est de confier la distribution aux opérateurs de messagerie électronique, chaque opérateur devenant responsable de la distribution des clefs pour les adresses de son propre domaine (_i.e._, l’opérateur de `example.org` a la charge de distribuer les clefs pour les adresses en `@example.org`).
 
-Le mécanisme proposé s’appelle _Web Key Directory_ ou _WKD_ et est décrit dans un [brouillon IETF](https://tools.ietf.org/html/draft-koch-openpgp-webkey-service-10). J’en avais déjà parlé brièvement dans un [journal précédent](https://linuxfr.org/users/gouttegd/journaux/de-la-distribution-des-clefs-openpgp#le-protocole-openpgp-web-key-service). Ici, je vais décrire plus en détail la mise en œuvre du protocole côté serveur. Cet article s’adresse donc davantage aux opérateurs de serveurs de courrier électronique qu’aux utilisateurs.</para>
+Le mécanisme proposé s’appelle _Web Key Directory_ ou _WKD_ et est décrit dans un [brouillon IETF](https://tools.ietf.org/html/draft-koch-openpgp-webkey-service-10). J’en avais déjà parlé brièvement dans un [journal précédent](https://linuxfr.org/users/gouttegd/journaux/de-la-distribution-des-clefs-openpgp#le-protocole-openpgp-web-key-service). Ici, je vais décrire plus en détail la mise en œuvre du protocole côté serveur. Cet article s’adresse donc davantage aux opérateurs de serveurs de courrier électronique qu’aux utilisateurs.
 
 
 # Vue d’ensemble du protocole

@@ -1,5 +1,5 @@
 ---
-Lastmod: 2021-02-01T18:01:47+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2021-02-01T18:01:47+01:00 # MANAGED by --enableGitInfo
 #URL:     https://linuxfr.org/users/gouttegd/journaux/deployer-un-service-d-annuaire-de-clefs-openpgp-pour-son-domaine
 Title:   Déployer un service d’annuaire de clefs OpenPGP pour son domaine
 Authors: gouttegd

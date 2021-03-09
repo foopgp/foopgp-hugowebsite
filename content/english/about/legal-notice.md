@@ -39,12 +39,12 @@ The accounts of each community are separated from the other communities.
 
 The foopgp.org website does not use any cookie or database.
 
-You can check and even host this website yourself: all the code and its content is open and accessible on [a git repository](//github.com/foopgp/foopgp-hugowebsite).
+You can check and even host this website yourself: all the code and its content is open and accessible on [a git repository](https://github.com/foopgp/foopgp-hugowebsite).
 
-In order to adapt the site to the demands of our visitors, however, we analyze the traffic with [GoAccess](//goaccess.io/). The
+In order to adapt the site to the demands of our visitors, however, we analyze the traffic with [GoAccess](https://goaccess.io/). The
 data collected (IP address, User-Agent…) are [accessible to all](/goaccess/last.html). If so much transparency
-bothers you, we advise you to use [TOR](//en.wikipedia.org/wiki/Tor_%28anonymity_network%29) or to modify your [User-Agent](//www.howtogeek.com/113439/how-to-change-your-browsers-user-agent-without-installing-any-extensions/).
+bothers you, we advise you to use [TOR](https://en.wikipedia.org/wiki/Tor_%28anonymity_network%29) or to modify your [User-Agent](https://www.howtogeek.com/113439/how-to-change-your-browsers-user-agent-without-installing-any-extensions/).
 
 ## Intellectual property
 
-Combining these two terms [is nonsense](//www.april.org/emploi-de-lexpression-propriete-intellectuelle-richard-stallman-albert-jacquard). That said, unless otherwise stated, all content is under the [CC BY SA 4.0 License](//creativecommons.org/licenses/by-sa/4.0/).
+Combining these two terms [is nonsense](https://www.gnu.org/philosophy/not-ipr.en.html). That said, unless otherwise stated, all content is under the [CC BY SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/).

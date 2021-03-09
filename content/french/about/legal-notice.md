@@ -5,7 +5,7 @@ lang: fr
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Mentions et conditions d'utilisations"
-image: "images/logo.png"
+image: "images/logos/logo-black-pgp.png"
 categories: ["about"]
 #tags: [""]
 type: "post"

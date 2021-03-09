@@ -5,7 +5,7 @@ lang: en
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Legal Notice"
-image: "images/logo.png"
+image: "images/logos/logo-black-pgp.png"
 categories: ["about"]
 #tags: [""]
 type: "post"

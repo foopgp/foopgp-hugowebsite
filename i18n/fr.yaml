@@ -43,6 +43,9 @@
 - id: "join us"
   translation: nous rejoindre
 
+- id: "legal notice"
+  translation: mentions légales
+
 - id: partners
   translation: partenaires
 

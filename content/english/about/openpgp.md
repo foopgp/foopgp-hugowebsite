@@ -7,7 +7,7 @@ bg_image: "images/backgrounds/puzzle.jpg"
 description : "About OpenPGP."
 image: "images/research/enigma.png"
 #author: "Jean-Jacques Brucker"
-categories: ["terminology"]
+categories: ["about"]
 tags: ["OpenPGP", "RFC4880"]
 type: "post"
 ---

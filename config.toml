@@ -153,6 +153,10 @@ URL = "about"
 name = "contact"
 URL = "contact"
 
+[[menu.footer]]
+name = "legal notice"
+URL = "about/legal-notice"
+
 
 #################### default parameters ################################
 [params]

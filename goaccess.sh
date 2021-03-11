@@ -10,11 +10,16 @@ ACCESSLOG="$(readlink -f "$ACCESSLOG")"
 
 cd "$(dirname "$0")"
 
-mkdir -p "public/goaccess"
+mkdir -p {public,static}"/goaccess"
 
-fw="public/goaccess/$(date "+%Gw%V")-$(basename "$PWD").html"
-set -x
-[ "$(find "$fw"  -cmin -60)" ] || goaccess $(find "$ACCESSLOG"* -not -name "*.gz") <(zcat "$ACCESSLOG"*.gz) --log-format=COMBINED -a -o "$fw"
+dw="public/goaccess/"
+fw="$(date "+%Gw%V")-$(basename "$PWD").html"
+set +e
+if ! [ "$(find "$dw$fw"  -cmin -60)" ] ; then
+	goaccess $(find "$ACCESSLOG"* -not -name "*.gz") <(zcat "$ACCESSLOG"*.gz) --log-format=COMBINED -a -o "$dw$fw" && cp {public,static}"/goaccess/$fw"
+	unlink public/goaccess/last2w.html
+	ln -s "$fw"  public/goaccess/last2w.html
+fi
 
-goaccess $(find "$ACCESSLOG"* -not -name "*.gz") --log-format=COMBINED -a -o public/goaccess/last.html
+goaccess --no-progress $(find "$ACCESSLOG"* -not -name "*.gz") --log-format=COMBINED -a -o public/goaccess/last.html
 

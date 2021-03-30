@@ -1,4 +1,5 @@
 ---
+Lastmod: 2021-03-30T16:09:57+02:00 # MANAGED BY update_lastmod.sh
 title: "OpenPGP"
 lang: en
 #date: 2019-07-06T15:27:17+06:00

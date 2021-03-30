@@ -42,7 +42,7 @@ Le site internet foopgp.org n'utilise aucun cookie, aucune base de donnée.
 Vous pouvez vérifier et même héberger par vous même ce site internet : l'intégralité du code et de son contenu est ouvert et accessible sur [un dépôt git](https://github.com/foopgp/foopgp-hugowebsite).
 
 En vue d’adapter le site aux demandes de nos visiteurs, nous analysons cependant le trafic avec [GoAccess](https://goaccess.io/). Les
-données recueillies (adresse IP, User-Agent…) sont [accessibles à tous](/goaccess/last.html). Si autant de transparence
+données recueillies (adresse IP, User-Agent…) sont [accessibles à tous](/goaccess/last2w.html). Si autant de transparence
 vous dérange, nous vous conseillons d'utiliser [TOR](https://fr.wikipedia.org/wiki/Tor_%28r%C3%A9seau%29) ou de modifier votre [User-Agent](https://www.howtogeek.com/113439/how-to-change-your-browsers-user-agent-without-installing-any-extensions/).
 
 ## Propriété intellectuelle

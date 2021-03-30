@@ -42,7 +42,7 @@ The foopgp.org website does not use any cookie or database.
 You can check and even host this website yourself: all the code and its content is open and accessible on [a git repository](https://github.com/foopgp/foopgp-hugowebsite).
 
 In order to adapt the site to the demands of our visitors, however, we analyze the traffic with [GoAccess](https://goaccess.io/). The
-data collected (IP address, User-Agent…) are [accessible to all](/goaccess/last.html). If so much transparency
+data collected (IP address, User-Agent…) are [accessible to all](/goaccess/last2w.html). If so much transparency
 bothers you, we advise you to use [TOR](https://en.wikipedia.org/wiki/Tor_%28anonymity_network%29) or to modify your [User-Agent](https://www.howtogeek.com/113439/how-to-change-your-browsers-user-agent-without-installing-any-extensions/).
 
 ## Intellectual property

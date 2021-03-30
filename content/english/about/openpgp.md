@@ -5,7 +5,7 @@ lang: en
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "About OpenPGP."
-image: "images/research/enigma.png"
+image: "images/solutions/enigma.png"
 #author: "Jean-Jacques Brucker"
 categories: ["about"]
 tags: ["OpenPGP", "RFC4880"]
@@ -21,11 +21,11 @@ It is based on the original [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Priv
 
 Beginning in 1997, the OpenPGP Working Group was formed in the Internet Engineering Task Force (IETF) to define this standard that had formerly been a proprietary product since 1991.
 
-Over the past decades, PGP, and later OpenPGP, has become the standard for nearly all of the world's [signed](/research/theme-authentication/) or [encrypted](/research/encryption/) [email](/research/theme-email/).
+Over the past decades, PGP, and later OpenPGP, has become the standard for nearly all of the world's [signed](/solutions/theme-authentication/) or [encrypted](/solutions/encryption/) [email](/solutions/theme-email/).
 
-But OpenPGP may also be use for many other [applications](/research/), like
-[Internet Authentication](/research/theme-authentication/) or [Electronic
-Votes](/research/theme-vote/).
+But OpenPGP may also be use for many other [applications](/solutions/), like
+[Internet Authentication](/solutions/theme-authentication/) or [Electronic
+Votes](/solutions/theme-vote/).
 
 OpenPGP format and uses are now specified in many [IETF RFCs and drafts](https://www.ietf.org/standards/rfcs/)[^rfcs], so these standards can be implemented by any company without paying any licensing fees to anyone.
 

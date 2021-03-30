@@ -1,15 +1,15 @@
 ---
 title: "Courriel"
-date: 2019-07-06T15:27:17+06:00
+#date: 2019-07-06T15:27:17+06:00
 draft: false
 # page title background image
 bg_image: "images/backgrounds/puzzle.jpg"
 # meta description
 description : "Solutions pour le courriel."
 # Research image
-image: "images/research/mail-scryptmail-logo_large.png"
-# type
-type: "research"
+image: "images/solutions/mail-scryptmail-logo_large.png"
+categories: ["solution"]
+type: "post"
 ---
 
 ### pour le courriel
@@ -36,6 +36,6 @@ De nombreux autres clients mails sont compatibles OpenPGP, vous en trouverez ici
 
 ---
 
-Cette page est toujours en cours d'écriture, vous pouvez nous aider [en contribuant sur GitHub](https://github.com/foopgp/foopgp-hugowebsite/blob/test/content/french/research/theme-email.md).
+Cette page est toujours en cours d'écriture, vous pouvez nous aider [en contribuant sur GitHub](https://github.com/foopgp/foopgp-hugowebsite/blob/test/content/french/solutions/theme-email.md).
 
 ![Bientôt…](/images/comingsoon.jpg)

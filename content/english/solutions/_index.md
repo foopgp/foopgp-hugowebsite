@@ -1,5 +1,5 @@
 ---
-Lastmod: 2021-03-30T16:09:57+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2021-03-30T16:09:57+02:00 # MANAGED by --enableGitInfo
 title: "Solutions"
 draft: false
 # page title background image

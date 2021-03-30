@@ -91,43 +91,43 @@ hasChildren = true
 [[menu.main]]
 name = "solutions"
 hasChildren = true
-URL = "research"
+URL = "solutions"
 weight = 2
 
   [[menu.main]]
   parent = "solutions"
   name = "authentication"
-  URL = "research/theme-authentication"
+  URL = "solutions/theme-authentication"
   weight = 1
 
   [[menu.main]]
   parent = "solutions"
   name = "encryption"
-  URL = "research/encryption"
+  URL = "solutions/encryption"
   weight = 2
 
   [[menu.main]]
   parent = "solutions"
   name = "email"
-  URL = "research/theme-email"
+  URL = "solutions/theme-email"
   weight = 3
 
   [[menu.main]]
   parent = "solutions"
   name = "identity"
-  URL = "research/theme-identity"
+  URL = "solutions/theme-identity"
   weight = 4
 
   [[menu.main]]
   parent = "solutions"
   name = "vote"
-  URL = "research/theme-vote"
+  URL = "solutions/theme-vote"
   weight = 5
 
   [[menu.main]]
   parent = "solutions"
   name = "currency"
-  URL = "research/theme-currency"
+  URL = "solutions/theme-currency"
   weight = 6
 
 [[menu.main]]

@@ -5,7 +5,7 @@ lang: fr
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "À propos d'OpenPGP."
-image: "images/research/enigma.png"
+image: "images/solutions/enigma.png"
 #author: "Jean-Jacques Brucker"
 categories: ["about"]
 tags: ["OpenPGP", "RFC4880"]
@@ -20,10 +20,10 @@ Il est basé sur le logiciel original [PGP](https://fr.wikipedia.org/wiki/Pretty
 
 À partir de 1997, le groupe de travail OpenPGP a été formé au sein de l'Internet Engineering Task Force (IETF) pour standardiser ce qui était un produit propriétaire depuis 1991.
 
-Au cours des dernières décennies, PGP, et plus tard OpenPGP, sont devenus la norme pour presque tous les [courriels](/fr/research/theme-email/) [signés](/fr/research/theme-authentication/) ou [chiffrés](/fr/research/encryption/) dans le monde.
+Au cours des dernières décennies, PGP, et plus tard OpenPGP, sont devenus la norme pour presque tous les [courriels](/fr/solutions/theme-email/) [signés](/fr/solutions/theme-authentication/) ou [chiffrés](/fr/solutions/encryption/) dans le monde.
 
-Mais OpenPGP peut également être utilisé pour de nombreuses autres [applications](/fr/research/), comme
-l'[Authentification sur Internet](/fr/research/theme-authentication/) ou le [vote électronique](/fr/research/theme-vote/).
+Mais OpenPGP peut également être utilisé pour de nombreuses autres [applications](/fr/solutions/), comme
+l'[Authentification sur Internet](/fr/solutions/theme-authentication/) ou le [vote électronique](/fr/solutions/theme-vote/).
 
 Le format et les utilisations d'OpenPGP sont aujourd'hui spécifiés dans de nombreux [RFCs et brouillons IETF](https://www.ietf.org/standards/rfcs/)[^ rfcs]. Ces normes peuvent donc être implémentées par n'importe quelle entreprise, sans payer de frais de licence à quiconque.
 

@@ -10,6 +10,8 @@ summaryLength = "10"
 #disqusShortname = "educenter" # get your shortname form here : https://disqus.com
 # disable language
 disableLanguages = [] # desable language from here
+# limit RSS feeds to 50 entries
+rssLimit = 50
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

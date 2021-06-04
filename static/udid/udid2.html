@@ -674,7 +674,7 @@ function generateudid2() {
 	    } else if (!(/^[+-][0-9][0-9][0-9][.][0-9][0-9]$/.test(lon))) {
 		setMessageAfterElement("location", "Could not parse longitude: " + lon);
 	    } else {
-		documentElement("verifylocation").href = "http://www.openstreetmap.org/#map=15/" + lat + "/" + lon;
+		documentElement("verifylocation").href = "//www.openstreetmap.org/#map=15/" + lat + "/" + lon;
 		setTextContent(documentElement("verifylocation"), "Verify with openstreetmap");
 		setMessageAfterElement("location");
 		ll = lat + "" + lon;
@@ -737,7 +737,7 @@ function generateudid2() {
 	    var n = 0;
 	    try {
 		// For compatibility with Internet Explorer's default security settings, the json request to geonames.org should be proxied by a PHP script in the local domain
-		jsonquery("http://api.geonames.org/search?q="+encodeURIComponent(place)+"&type=json&featureClass=P&username=rev22", function (j) {
+		jsonquery("//api.geonames.org/search?q="+encodeURIComponent(place)+"&type=json&featureClass=P&username=rev22", function (j) {
 		    try {
 			var g = j.geonames;
 			if (g.length == 0) {
@@ -836,7 +836,7 @@ input, select {
     </style>
   </head>
   <body style="text-align:center">
-    <div class=info><a href="http://www.openudc.org">OpenUDC</a>: currency based on Universal Dividend and Consensus</div>
+    <div class=info><a href="//www.openudc.org">OpenUDC</a>: currency based on Universal Dividend and Consensus</div>
     <h3>Your information:</h3>
     <form class=centered style="display:inline-table" action="nojavascript.html" method="get">
       <div class=info>This form allows you to create the unique ID recognized by OpenUDC applications (aka. UDID2).</div>
@@ -929,7 +929,7 @@ input, select {
 		<span title="Latitude of your birth location, in decimal form"><input id=lat style="text-align:center" size=6 type=text><sub>(lat)</sub></span>
 		<span title="Longitude of your birth location, in decimal form"><input id=lon style="text-align:center" size=5 type=text><sub>(lon)</sub></span>
 	      </span>
-	      <a class=secondary id=verifylocation href="http://geonames.org/">Find on geonames.org</a>
+	      <a class=secondary id=verifylocation href="//geonames.org/">Find on geonames.org</a>
 	    </div>
 	  </td>
 	</tr>
@@ -942,7 +942,7 @@ input, select {
     <input id=udid2clear style="font-family:fixed,courier" size=70 title="Your clear UDID2" type=text><br>
     <input id=udid2hashed style="font-family:fixed,courier" size=70 title="Your hashed UDID2" type=text>
     </div>
-    <div class=info>Your <a href="http://openudc.org/Specifications/OpenpgpIndividualCertification">UDID2</a> is an identification code that allows you to take part in the OpenUDC monetary community.</div>
+    <div class=info>Your <a href="//openudc.org/Specifications/OpenpgpIndividualCertification">UDID2</a> is an identification code that allows you to take part in the OpenUDC monetary community.</div>
     <div class=info>Your information on this form is processed by your web-browser; your birthplace is processed via geonames.org.</div>
     <div class=info>Internet Explorer users may need to enable accessing data sources across domains.</div>
     <div class=info>This application requires Javascript.</div>

@@ -1,0 +1,1396 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+    Copyright (c) 2021 Jean-Jacques Brucker udid4:sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76
+    Copyright (c) 2012, 2013 Michele Bini <michele.bini@gmail.com>
+    Copyright (c) Chris Veness 2002-2010
+  
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+  
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+  
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+ The SHA-1 implementation was obtained from 
+ http://www.movable-type.co.uk/scripts/sha1.html
+ and is licensed with Creative Commons Attribution License 3.0
+-->
+
+<html>
+  <head>
+    <title>UDID4 - Create your International Identifier</title>
+    <script type="text/javascript">
+      <!--
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/*  md5 implementation in JavaScript | (c) 2014-2017 Chen, Yi-Cyuan [emn178@gmail.com] xx|        */
+/*   - see https://github.com/emn178/js-md5  MIT License                                          */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+(function () {
+  'use strict';
+
+  var ERROR = 'input is invalid type';
+  var WINDOW = typeof window === 'object';
+  var root = WINDOW ? window : {};
+  if (root.JS_MD5_NO_WINDOW) {
+    WINDOW = false;
+  }
+  var WEB_WORKER = !WINDOW && typeof self === 'object';
+  root = self;
+  var COMMON_JS = !root.JS_MD5_NO_COMMON_JS && typeof module === 'object' && module.exports;
+  var AMD = typeof define === 'function' && define.amd;
+  var ARRAY_BUFFER = !root.JS_MD5_NO_ARRAY_BUFFER && typeof ArrayBuffer !== 'undefined';
+  var HEX_CHARS = '0123456789abcdef'.split('');
+  var EXTRA = [128, 32768, 8388608, -2147483648];
+  var SHIFT = [0, 8, 16, 24];
+  var OUTPUT_TYPES = ['hex', 'array', 'digest', 'buffer', 'arrayBuffer', 'base64'];
+  var BASE64_ENCODE_CHAR = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'.split('');
+
+  var blocks = [], buffer8;
+  if (ARRAY_BUFFER) {
+    var buffer = new ArrayBuffer(68);
+    buffer8 = new Uint8Array(buffer);
+    blocks = new Uint32Array(buffer);
+  }
+
+  if (root.JS_MD5_NO_NODE_JS || !Array.isArray) {
+    Array.isArray = function (obj) {
+      return Object.prototype.toString.call(obj) === '[object Array]';
+    };
+  }
+
+  if (ARRAY_BUFFER && (root.JS_MD5_NO_ARRAY_BUFFER_IS_VIEW || !ArrayBuffer.isView)) {
+    ArrayBuffer.isView = function (obj) {
+      return typeof obj === 'object' && obj.buffer && obj.buffer.constructor === ArrayBuffer;
+    };
+  }
+
+   var createOutputMethod = function (outputType) {
+    return function (message) {
+      return new Md5(true).update(message)[outputType]();
+    };
+  };
+
+  var createMethod = function () {
+    var method = createOutputMethod('hex');
+    method.create = function () {
+      return new Md5();
+    };
+    method.update = function (message) {
+      return method.create().update(message);
+    };
+    for (var i = 0; i < OUTPUT_TYPES.length; ++i) {
+      var type = OUTPUT_TYPES[i];
+      method[type] = createOutputMethod(type);
+    }
+    return method;
+  };
+
+  /**
+   * Md5 class
+   * @class Md5
+   * @description This is internal class.
+   * @see {@link md5.create}
+   */
+  function Md5(sharedMemory) {
+    if (sharedMemory) {
+      blocks[0] = blocks[16] = blocks[1] = blocks[2] = blocks[3] =
+      blocks[4] = blocks[5] = blocks[6] = blocks[7] =
+      blocks[8] = blocks[9] = blocks[10] = blocks[11] =
+      blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
+      this.blocks = blocks;
+      this.buffer8 = buffer8;
+    } else {
+      if (ARRAY_BUFFER) {
+        var buffer = new ArrayBuffer(68);
+        this.buffer8 = new Uint8Array(buffer);
+        this.blocks = new Uint32Array(buffer);
+      } else {
+        this.blocks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+      }
+    }
+    this.h0 = this.h1 = this.h2 = this.h3 = this.start = this.bytes = this.hBytes = 0;
+    this.finalized = this.hashed = false;
+    this.first = true;
+  }
+
+  /**
+   * @method update
+   * @memberof Md5
+   * @instance
+   * @description Update hash
+   * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
+   * @returns {Md5} Md5 object.
+   * @see {@link md5.update}
+   */
+  Md5.prototype.update = function (message) {
+    if (this.finalized) {
+      return;
+    }
+
+    var notString, type = typeof message;
+    if (type !== 'string') {
+      if (type === 'object') {
+        if (message === null) {
+          throw ERROR;
+        } else if (ARRAY_BUFFER && message.constructor === ArrayBuffer) {
+          message = new Uint8Array(message);
+        } else if (!Array.isArray(message)) {
+          if (!ARRAY_BUFFER || !ArrayBuffer.isView(message)) {
+            throw ERROR;
+          }
+        }
+      } else {
+        throw ERROR;
+      }
+      notString = true;
+    }
+    var code, index = 0, i, length = message.length, blocks = this.blocks;
+    var buffer8 = this.buffer8;
+
+    while (index < length) {
+      if (this.hashed) {
+        this.hashed = false;
+        blocks[0] = blocks[16];
+        blocks[16] = blocks[1] = blocks[2] = blocks[3] =
+        blocks[4] = blocks[5] = blocks[6] = blocks[7] =
+        blocks[8] = blocks[9] = blocks[10] = blocks[11] =
+        blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
+      }
+
+      if (notString) {
+        if (ARRAY_BUFFER) {
+          for (i = this.start; index < length && i < 64; ++index) {
+            buffer8[i++] = message[index];
+          }
+        } else {
+          for (i = this.start; index < length && i < 64; ++index) {
+            blocks[i >> 2] |= message[index] << SHIFT[i++ & 3];
+          }
+        }
+      } else {
+        if (ARRAY_BUFFER) {
+          for (i = this.start; index < length && i < 64; ++index) {
+            code = message.charCodeAt(index);
+            if (code < 0x80) {
+              buffer8[i++] = code;
+            } else if (code < 0x800) {
+              buffer8[i++] = 0xc0 | (code >> 6);
+              buffer8[i++] = 0x80 | (code & 0x3f);
+            } else if (code < 0xd800 || code >= 0xe000) {
+              buffer8[i++] = 0xe0 | (code >> 12);
+              buffer8[i++] = 0x80 | ((code >> 6) & 0x3f);
+              buffer8[i++] = 0x80 | (code & 0x3f);
+            } else {
+              code = 0x10000 + (((code & 0x3ff) << 10) | (message.charCodeAt(++index) & 0x3ff));
+              buffer8[i++] = 0xf0 | (code >> 18);
+              buffer8[i++] = 0x80 | ((code >> 12) & 0x3f);
+              buffer8[i++] = 0x80 | ((code >> 6) & 0x3f);
+              buffer8[i++] = 0x80 | (code & 0x3f);
+            }
+          }
+        } else {
+          for (i = this.start; index < length && i < 64; ++index) {
+            code = message.charCodeAt(index);
+            if (code < 0x80) {
+              blocks[i >> 2] |= code << SHIFT[i++ & 3];
+            } else if (code < 0x800) {
+              blocks[i >> 2] |= (0xc0 | (code >> 6)) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+            } else if (code < 0xd800 || code >= 0xe000) {
+              blocks[i >> 2] |= (0xe0 | (code >> 12)) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | ((code >> 6) & 0x3f)) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+            } else {
+              code = 0x10000 + (((code & 0x3ff) << 10) | (message.charCodeAt(++index) & 0x3ff));
+              blocks[i >> 2] |= (0xf0 | (code >> 18)) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | ((code >> 12) & 0x3f)) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | ((code >> 6) & 0x3f)) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+            }
+          }
+        }
+      }
+      this.lastByteIndex = i;
+      this.bytes += i - this.start;
+      if (i >= 64) {
+        this.start = i - 64;
+        this.hash();
+        this.hashed = true;
+      } else {
+        this.start = i;
+      }
+    }
+    if (this.bytes > 4294967295) {
+      this.hBytes += this.bytes / 4294967296 << 0;
+      this.bytes = this.bytes % 4294967296;
+    }
+    return this;
+  };
+
+  Md5.prototype.finalize = function () {
+    if (this.finalized) {
+      return;
+    }
+    this.finalized = true;
+    var blocks = this.blocks, i = this.lastByteIndex;
+    blocks[i >> 2] |= EXTRA[i & 3];
+    if (i >= 56) {
+      if (!this.hashed) {
+        this.hash();
+      }
+      blocks[0] = blocks[16];
+      blocks[16] = blocks[1] = blocks[2] = blocks[3] =
+      blocks[4] = blocks[5] = blocks[6] = blocks[7] =
+      blocks[8] = blocks[9] = blocks[10] = blocks[11] =
+      blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
+    }
+    blocks[14] = this.bytes << 3;
+    blocks[15] = this.hBytes << 3 | this.bytes >>> 29;
+    this.hash();
+  };
+
+  Md5.prototype.hash = function () {
+    var a, b, c, d, bc, da, blocks = this.blocks;
+
+    if (this.first) {
+      a = blocks[0] - 680876937;
+      a = (a << 7 | a >>> 25) - 271733879 << 0;
+      d = (-1732584194 ^ a & 2004318071) + blocks[1] - 117830708;
+      d = (d << 12 | d >>> 20) + a << 0;
+      c = (-271733879 ^ (d & (a ^ -271733879))) + blocks[2] - 1126478375;
+      c = (c << 17 | c >>> 15) + d << 0;
+      b = (a ^ (c & (d ^ a))) + blocks[3] - 1316259209;
+      b = (b << 22 | b >>> 10) + c << 0;
+    } else {
+      a = this.h0;
+      b = this.h1;
+      c = this.h2;
+      d = this.h3;
+      a += (d ^ (b & (c ^ d))) + blocks[0] - 680876936;
+      a = (a << 7 | a >>> 25) + b << 0;
+      d += (c ^ (a & (b ^ c))) + blocks[1] - 389564586;
+      d = (d << 12 | d >>> 20) + a << 0;
+      c += (b ^ (d & (a ^ b))) + blocks[2] + 606105819;
+      c = (c << 17 | c >>> 15) + d << 0;
+      b += (a ^ (c & (d ^ a))) + blocks[3] - 1044525330;
+      b = (b << 22 | b >>> 10) + c << 0;
+    }
+
+    a += (d ^ (b & (c ^ d))) + blocks[4] - 176418897;
+    a = (a << 7 | a >>> 25) + b << 0;
+    d += (c ^ (a & (b ^ c))) + blocks[5] + 1200080426;
+    d = (d << 12 | d >>> 20) + a << 0;
+    c += (b ^ (d & (a ^ b))) + blocks[6] - 1473231341;
+    c = (c << 17 | c >>> 15) + d << 0;
+    b += (a ^ (c & (d ^ a))) + blocks[7] - 45705983;
+    b = (b << 22 | b >>> 10) + c << 0;
+    a += (d ^ (b & (c ^ d))) + blocks[8] + 1770035416;
+    a = (a << 7 | a >>> 25) + b << 0;
+    d += (c ^ (a & (b ^ c))) + blocks[9] - 1958414417;
+    d = (d << 12 | d >>> 20) + a << 0;
+    c += (b ^ (d & (a ^ b))) + blocks[10] - 42063;
+    c = (c << 17 | c >>> 15) + d << 0;
+    b += (a ^ (c & (d ^ a))) + blocks[11] - 1990404162;
+    b = (b << 22 | b >>> 10) + c << 0;
+    a += (d ^ (b & (c ^ d))) + blocks[12] + 1804603682;
+    a = (a << 7 | a >>> 25) + b << 0;
+    d += (c ^ (a & (b ^ c))) + blocks[13] - 40341101;
+    d = (d << 12 | d >>> 20) + a << 0;
+    c += (b ^ (d & (a ^ b))) + blocks[14] - 1502002290;
+    c = (c << 17 | c >>> 15) + d << 0;
+    b += (a ^ (c & (d ^ a))) + blocks[15] + 1236535329;
+    b = (b << 22 | b >>> 10) + c << 0;
+    a += (c ^ (d & (b ^ c))) + blocks[1] - 165796510;
+    a = (a << 5 | a >>> 27) + b << 0;
+    d += (b ^ (c & (a ^ b))) + blocks[6] - 1069501632;
+    d = (d << 9 | d >>> 23) + a << 0;
+    c += (a ^ (b & (d ^ a))) + blocks[11] + 643717713;
+    c = (c << 14 | c >>> 18) + d << 0;
+    b += (d ^ (a & (c ^ d))) + blocks[0] - 373897302;
+    b = (b << 20 | b >>> 12) + c << 0;
+    a += (c ^ (d & (b ^ c))) + blocks[5] - 701558691;
+    a = (a << 5 | a >>> 27) + b << 0;
+    d += (b ^ (c & (a ^ b))) + blocks[10] + 38016083;
+    d = (d << 9 | d >>> 23) + a << 0;
+    c += (a ^ (b & (d ^ a))) + blocks[15] - 660478335;
+    c = (c << 14 | c >>> 18) + d << 0;
+    b += (d ^ (a & (c ^ d))) + blocks[4] - 405537848;
+    b = (b << 20 | b >>> 12) + c << 0;
+    a += (c ^ (d & (b ^ c))) + blocks[9] + 568446438;
+    a = (a << 5 | a >>> 27) + b << 0;
+    d += (b ^ (c & (a ^ b))) + blocks[14] - 1019803690;
+    d = (d << 9 | d >>> 23) + a << 0;
+    c += (a ^ (b & (d ^ a))) + blocks[3] - 187363961;
+    c = (c << 14 | c >>> 18) + d << 0;
+    b += (d ^ (a & (c ^ d))) + blocks[8] + 1163531501;
+    b = (b << 20 | b >>> 12) + c << 0;
+    a += (c ^ (d & (b ^ c))) + blocks[13] - 1444681467;
+    a = (a << 5 | a >>> 27) + b << 0;
+    d += (b ^ (c & (a ^ b))) + blocks[2] - 51403784;
+    d = (d << 9 | d >>> 23) + a << 0;
+    c += (a ^ (b & (d ^ a))) + blocks[7] + 1735328473;
+    c = (c << 14 | c >>> 18) + d << 0;
+    b += (d ^ (a & (c ^ d))) + blocks[12] - 1926607734;
+    b = (b << 20 | b >>> 12) + c << 0;
+    bc = b ^ c;
+    a += (bc ^ d) + blocks[5] - 378558;
+    a = (a << 4 | a >>> 28) + b << 0;
+    d += (bc ^ a) + blocks[8] - 2022574463;
+    d = (d << 11 | d >>> 21) + a << 0;
+    da = d ^ a;
+    c += (da ^ b) + blocks[11] + 1839030562;
+    c = (c << 16 | c >>> 16) + d << 0;
+    b += (da ^ c) + blocks[14] - 35309556;
+    b = (b << 23 | b >>> 9) + c << 0;
+    bc = b ^ c;
+    a += (bc ^ d) + blocks[1] - 1530992060;
+    a = (a << 4 | a >>> 28) + b << 0;
+    d += (bc ^ a) + blocks[4] + 1272893353;
+    d = (d << 11 | d >>> 21) + a << 0;
+    da = d ^ a;
+    c += (da ^ b) + blocks[7] - 155497632;
+    c = (c << 16 | c >>> 16) + d << 0;
+    b += (da ^ c) + blocks[10] - 1094730640;
+    b = (b << 23 | b >>> 9) + c << 0;
+    bc = b ^ c;
+    a += (bc ^ d) + blocks[13] + 681279174;
+    a = (a << 4 | a >>> 28) + b << 0;
+    d += (bc ^ a) + blocks[0] - 358537222;
+    d = (d << 11 | d >>> 21) + a << 0;
+    da = d ^ a;
+    c += (da ^ b) + blocks[3] - 722521979;
+    c = (c << 16 | c >>> 16) + d << 0;
+    b += (da ^ c) + blocks[6] + 76029189;
+    b = (b << 23 | b >>> 9) + c << 0;
+    bc = b ^ c;
+    a += (bc ^ d) + blocks[9] - 640364487;
+    a = (a << 4 | a >>> 28) + b << 0;
+    d += (bc ^ a) + blocks[12] - 421815835;
+    d = (d << 11 | d >>> 21) + a << 0;
+    da = d ^ a;
+    c += (da ^ b) + blocks[15] + 530742520;
+    c = (c << 16 | c >>> 16) + d << 0;
+    b += (da ^ c) + blocks[2] - 995338651;
+    b = (b << 23 | b >>> 9) + c << 0;
+    a += (c ^ (b | ~d)) + blocks[0] - 198630844;
+    a = (a << 6 | a >>> 26) + b << 0;
+    d += (b ^ (a | ~c)) + blocks[7] + 1126891415;
+    d = (d << 10 | d >>> 22) + a << 0;
+    c += (a ^ (d | ~b)) + blocks[14] - 1416354905;
+    c = (c << 15 | c >>> 17) + d << 0;
+    b += (d ^ (c | ~a)) + blocks[5] - 57434055;
+    b = (b << 21 | b >>> 11) + c << 0;
+    a += (c ^ (b | ~d)) + blocks[12] + 1700485571;
+    a = (a << 6 | a >>> 26) + b << 0;
+    d += (b ^ (a | ~c)) + blocks[3] - 1894986606;
+    d = (d << 10 | d >>> 22) + a << 0;
+    c += (a ^ (d | ~b)) + blocks[10] - 1051523;
+    c = (c << 15 | c >>> 17) + d << 0;
+    b += (d ^ (c | ~a)) + blocks[1] - 2054922799;
+    b = (b << 21 | b >>> 11) + c << 0;
+    a += (c ^ (b | ~d)) + blocks[8] + 1873313359;
+    a = (a << 6 | a >>> 26) + b << 0;
+    d += (b ^ (a | ~c)) + blocks[15] - 30611744;
+    d = (d << 10 | d >>> 22) + a << 0;
+    c += (a ^ (d | ~b)) + blocks[6] - 1560198380;
+    c = (c << 15 | c >>> 17) + d << 0;
+    b += (d ^ (c | ~a)) + blocks[13] + 1309151649;
+    b = (b << 21 | b >>> 11) + c << 0;
+    a += (c ^ (b | ~d)) + blocks[4] - 145523070;
+    a = (a << 6 | a >>> 26) + b << 0;
+    d += (b ^ (a | ~c)) + blocks[11] - 1120210379;
+    d = (d << 10 | d >>> 22) + a << 0;
+    c += (a ^ (d | ~b)) + blocks[2] + 718787259;
+    c = (c << 15 | c >>> 17) + d << 0;
+    b += (d ^ (c | ~a)) + blocks[9] - 343485551;
+    b = (b << 21 | b >>> 11) + c << 0;
+
+    if (this.first) {
+      this.h0 = a + 1732584193 << 0;
+      this.h1 = b - 271733879 << 0;
+      this.h2 = c - 1732584194 << 0;
+      this.h3 = d + 271733878 << 0;
+      this.first = false;
+    } else {
+      this.h0 = this.h0 + a << 0;
+      this.h1 = this.h1 + b << 0;
+      this.h2 = this.h2 + c << 0;
+      this.h3 = this.h3 + d << 0;
+    }
+  };
+
+  /**
+   * @method hex
+   * @memberof Md5
+   * @instance
+   * @description Output hash as hex string
+   * @returns {String} Hex string
+   * @see {@link md5.hex}
+   * @example
+   * hash.hex();
+   */
+  Md5.prototype.hex = function () {
+    this.finalize();
+
+    var h0 = this.h0, h1 = this.h1, h2 = this.h2, h3 = this.h3;
+
+    return HEX_CHARS[(h0 >> 4) & 0x0F] + HEX_CHARS[h0 & 0x0F] +
+      HEX_CHARS[(h0 >> 12) & 0x0F] + HEX_CHARS[(h0 >> 8) & 0x0F] +
+      HEX_CHARS[(h0 >> 20) & 0x0F] + HEX_CHARS[(h0 >> 16) & 0x0F] +
+      HEX_CHARS[(h0 >> 28) & 0x0F] + HEX_CHARS[(h0 >> 24) & 0x0F] +
+      HEX_CHARS[(h1 >> 4) & 0x0F] + HEX_CHARS[h1 & 0x0F] +
+      HEX_CHARS[(h1 >> 12) & 0x0F] + HEX_CHARS[(h1 >> 8) & 0x0F] +
+      HEX_CHARS[(h1 >> 20) & 0x0F] + HEX_CHARS[(h1 >> 16) & 0x0F] +
+      HEX_CHARS[(h1 >> 28) & 0x0F] + HEX_CHARS[(h1 >> 24) & 0x0F] +
+      HEX_CHARS[(h2 >> 4) & 0x0F] + HEX_CHARS[h2 & 0x0F] +
+      HEX_CHARS[(h2 >> 12) & 0x0F] + HEX_CHARS[(h2 >> 8) & 0x0F] +
+      HEX_CHARS[(h2 >> 20) & 0x0F] + HEX_CHARS[(h2 >> 16) & 0x0F] +
+      HEX_CHARS[(h2 >> 28) & 0x0F] + HEX_CHARS[(h2 >> 24) & 0x0F] +
+      HEX_CHARS[(h3 >> 4) & 0x0F] + HEX_CHARS[h3 & 0x0F] +
+      HEX_CHARS[(h3 >> 12) & 0x0F] + HEX_CHARS[(h3 >> 8) & 0x0F] +
+      HEX_CHARS[(h3 >> 20) & 0x0F] + HEX_CHARS[(h3 >> 16) & 0x0F] +
+      HEX_CHARS[(h3 >> 28) & 0x0F] + HEX_CHARS[(h3 >> 24) & 0x0F];
+  };
+
+  /**
+   * @method toString
+   * @memberof Md5
+   * @instance
+   * @description Output hash as hex string
+   * @returns {String} Hex string
+   * @see {@link md5.hex}
+   * @example
+   * hash.toString();
+   */
+  Md5.prototype.toString = Md5.prototype.hex;
+
+  /**
+   * @method digest
+   * @memberof Md5
+   * @instance
+   * @description Output hash as bytes array
+   * @returns {Array} Bytes array
+   * @see {@link md5.digest}
+   * @example
+   * hash.digest();
+   */
+  Md5.prototype.digest = function () {
+    this.finalize();
+
+    var h0 = this.h0, h1 = this.h1, h2 = this.h2, h3 = this.h3;
+    return [
+      h0 & 0xFF, (h0 >> 8) & 0xFF, (h0 >> 16) & 0xFF, (h0 >> 24) & 0xFF,
+      h1 & 0xFF, (h1 >> 8) & 0xFF, (h1 >> 16) & 0xFF, (h1 >> 24) & 0xFF,
+      h2 & 0xFF, (h2 >> 8) & 0xFF, (h2 >> 16) & 0xFF, (h2 >> 24) & 0xFF,
+      h3 & 0xFF, (h3 >> 8) & 0xFF, (h3 >> 16) & 0xFF, (h3 >> 24) & 0xFF
+    ];
+  };
+
+  /**
+   * @method array
+   * @memberof Md5
+   * @instance
+   * @description Output hash as bytes array
+   * @returns {Array} Bytes array
+   * @see {@link md5.array}
+   * @example
+   * hash.array();
+   */
+  Md5.prototype.array = Md5.prototype.digest;
+
+  /**
+   * @method arrayBuffer
+   * @memberof Md5
+   * @instance
+   * @description Output hash as ArrayBuffer
+   * @returns {ArrayBuffer} ArrayBuffer
+   * @see {@link md5.arrayBuffer}
+   * @example
+   * hash.arrayBuffer();
+   */
+  Md5.prototype.arrayBuffer = function () {
+    this.finalize();
+
+    var buffer = new ArrayBuffer(16);
+    var blocks = new Uint32Array(buffer);
+    blocks[0] = this.h0;
+    blocks[1] = this.h1;
+    blocks[2] = this.h2;
+    blocks[3] = this.h3;
+    return buffer;
+  };
+
+  /**
+   * @method buffer
+   * @deprecated This maybe confuse with Buffer in node.js. Please use arrayBuffer instead.
+   * @memberof Md5
+   * @instance
+   * @description Output hash as ArrayBuffer
+   * @returns {ArrayBuffer} ArrayBuffer
+   * @see {@link md5.buffer}
+   * @example
+   * hash.buffer();
+   */
+  Md5.prototype.buffer = Md5.prototype.arrayBuffer;
+
+  /**
+   * @method base64
+   * @memberof Md5
+   * @instance
+   * @description Output hash as base64 string
+   * @returns {String} base64 string
+   * @see {@link md5.base64}
+   * @example
+   * hash.base64();
+   */
+  Md5.prototype.base64 = function () {
+    var v1, v2, v3, base64Str = '', bytes = this.array();
+    for (var i = 0; i < 15;) {
+      v1 = bytes[i++];
+      v2 = bytes[i++];
+      v3 = bytes[i++];
+      base64Str += BASE64_ENCODE_CHAR[v1 >>> 2] +
+        BASE64_ENCODE_CHAR[(v1 << 4 | v2 >>> 4) & 63] +
+        BASE64_ENCODE_CHAR[(v2 << 2 | v3 >>> 6) & 63] +
+        BASE64_ENCODE_CHAR[v3 & 63];
+    }
+    v1 = bytes[i];
+    base64Str += BASE64_ENCODE_CHAR[v1 >>> 2] +
+      BASE64_ENCODE_CHAR[(v1 << 4) & 63];
+    return base64Str;
+  };
+
+  var exports = createMethod();
+
+  if (COMMON_JS) {
+    module.exports = exports;
+  } else {
+    /**
+     * @method md5
+     * @description Md5 hash function, export to global in browsers.
+     * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
+     * @returns {String} md5 hashes
+     * @example
+     * md5(''); // d41d8cd98f00b204e9800998ecf8427e
+     * md5('The quick brown fox jumps over the lazy dog'); // 9e107d9d372bb6826bd81d3542a419d6
+     * md5('The quick brown fox jumps over the lazy dog.'); // e4d909c290d0fb1ca068ffaddf22cbd0
+     *
+     * // It also supports UTF-8 encoding
+     * md5('中文'); // a7bac2239fcdcb3a067903d8077c4a07
+     *
+     * // It also supports byte `Array`, `Uint8Array`, `ArrayBuffer`
+     * md5([]); // d41d8cd98f00b204e9800998ecf8427e
+     * md5(new Uint8Array([])); // d41d8cd98f00b204e9800998ecf8427e
+     */
+    root.md5 = exports;
+    if (AMD) {
+      define(function () {
+        return exports;
+      });
+    }
+  }
+})();
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/*  Utf8 class: encode / decode between multi-byte Unicode characters and UTF-8 multiple          */
+/*              single-byte character encoding (c) Chris Veness 2002-2010                         */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+var Utf8 = {};  // Utf8 namespace
+
+/**
+ * Encode multi-byte Unicode string into utf-8 multiple single-byte characters 
+ * (BMP / basic multilingual plane only)
+ *
+ * Chars in range U+0080 - U+07FF are encoded in 2 chars, U+0800 - U+FFFF in 3 chars
+ *
+ * @param {String} strUni Unicode string to be encoded as UTF-8
+ * @returns {String} encoded string
+ */
+Utf8.encode = function(strUni) {
+  // use regular expressions & String.replace callback function for better efficiency 
+  // than procedural approaches
+  var strUtf = strUni.replace(
+      /[\u0080-\u07ff]/g,  // U+0080 - U+07FF => 2 bytes 110yyyyy, 10zzzzzz
+      function(c) { 
+        var cc = c.charCodeAt(0);
+        return String.fromCharCode(0xc0 | cc>>6, 0x80 | cc&0x3f); }
+    );
+  strUtf = strUtf.replace(
+      /[\u0800-\uffff]/g,  // U+0800 - U+FFFF => 3 bytes 1110xxxx, 10yyyyyy, 10zzzzzz
+      function(c) { 
+        var cc = c.charCodeAt(0); 
+        return String.fromCharCode(0xe0 | cc>>12, 0x80 | cc>>6&0x3F, 0x80 | cc&0x3f); }
+    );
+  return strUtf;
+}
+
+/**
+ * Decode utf-8 encoded string back into multi-byte Unicode characters
+ *
+ * @param {String} strUtf UTF-8 string to be decoded back to Unicode
+ * @returns {String} decoded string
+ */
+Utf8.decode = function(strUtf) {
+  // note: decode 3-byte chars first as decoded 2-byte strings could appear to be 3-byte char!
+  var strUni = strUtf.replace(
+      /[\u00e0-\u00ef][\u0080-\u00bf][\u0080-\u00bf]/g,  // 3-byte chars
+      function(c) {  // (note parentheses for precence)
+        var cc = ((c.charCodeAt(0)&0x0f)<<12) | ((c.charCodeAt(1)&0x3f)<<6) | ( c.charCodeAt(2)&0x3f); 
+        return String.fromCharCode(cc); }
+    );
+  strUni = strUni.replace(
+      /[\u00c0-\u00df][\u0080-\u00bf]/g,                 // 2-byte chars
+      function(c) {  // (note parentheses for precence)
+        var cc = (c.charCodeAt(0)&0x1f)<<6 | c.charCodeAt(1)&0x3f;
+        return String.fromCharCode(cc); }
+    );
+  return strUni;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+// Copyright (c) 2012 Michele Bini
+
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the version 3 of the GNU General Public License
+// as published by the Free Software Foundation.
+
+// This program is distributed in the hope that it will be useful, but
+// WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+// General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+function emptyElement(e) {
+    while (e.firstChild!==null)
+        e.removeChild(e.firstChild);
+}
+
+function insertElementAfter(e, w) {
+    w.parentNode.insertBefore(e, w.nextSibling);
+}
+
+function setTextContent(element, text) {
+    emptyElement(element);
+    if (text != null) {
+	var node = document.createTextNode(text);
+	element.appendChild(node);
+    }
+}
+
+function documentElement(id) {
+    return document.getElementById(id);
+}
+
+function setMessageAfterElement(elementName, message) {
+    var msgid = elementName + ".msg";
+    var msg = documentElement(msgid);
+    if (msg == null) {
+	msg = document.createElement("span");
+	msg.className = "message";
+	documentElement(elementName).parentNode.appendChild(msg);
+	msg.id = msgid;
+    }
+    setTextContent(msg, message);
+}
+
+function resetform() {
+    try {
+	if (!confirm("Do you really want to reset the form?")) return false;
+	documentElement("firstname").value  = "";
+	documentElement("lastname").value   = "";
+	documentElement("day").value  = "";
+	documentElement("month").value   = "";
+	documentElement("year").value  = "";
+	documentElement("lastname").value   = "";
+	documentElement("place").value   = "";
+	documentElement("lat").value   = "";
+	documentElement("lon").value   = "";
+	documentElement("udid4").value = "";
+	documentElement("tohash").value = "";
+	documentElement("coordmethod").value = "geonamesorg";
+	setMessageAfterElement("firstname");
+	setMessageAfterElement("lastname");
+	setMessageAfterElement("day");
+	setMessageAfterElement("geonameslist");
+	setMessageAfterElement("location");
+	setMessageAfterElement("place");
+	documentElement("placecell").className = "";
+	documentElement("coordmethodcell").className = "hidden";
+	documentElement("geonameslistcell").className = "hidden";
+	documentElement("locationcell").className = "hidden";
+	documentElement("generated").className = "hidden";
+	emptyElement(documentElement("geonameslist"));
+	documentElement("lat").disabled    = false;
+	documentElement("lon").disabled    = false;
+	documentElement("place").disabled  = false;
+	return false;
+   } catch (err) {
+       alert("An error occurred: " + err.message);
+       return false;
+   }
+}
+
+// Convert number to fixed point with at least 2 decimal places
+// Keep any extra precision, useful to verify the location with a map
+function fixCoord(x) {
+  return parseFloat(x)
+    .toFixed(8)
+    .match(/^[+-]?[0-9]*[.][0-9][0-9]([0-9]*[1-9])?/)[0];
+}
+
+function normalizeSign(n) {
+    if (!(/^[+-]/.test(n))) {
+	n = "+" + n;
+    }
+    return n;
+}
+
+function normalizeSpaces(n) {
+    n = n.replace(/^\s\s*/, "");
+    n = n.replace(/\s\s*$/, "");
+    n = n.replace(/\s\s*/g, " ");
+    return n;
+}
+
+function selectlatlon() {
+    documentElement("place").value = "";
+    documentElement("coordmethod").value = "latlon";
+    documentElement("coordmethodcell").className = "";
+    documentElement("locationcell").className = "";
+    documentElement("lat").disabled = false;
+    documentElement("lon").disabled = false;
+    documentElement("placecell").className = "hidden";
+    documentElement("geonameslistcell").className = "hidden";
+}
+
+function addoption(x, o) {
+    try {
+	// for IE earlier than version 8
+	x.add(o,x.options[null]);
+    } catch (e) {
+	x.add(o,null);
+    }
+}
+
+function showlatlon() {
+    var x = documentElement("coordmethod");
+    if (x.length > 2) {
+	x.remove(2);
+    }
+    var o = document.createElement("option");
+    o.text = "Use coordinates found via geonames.org";
+    o.value = "usefound";
+    addoption(x, o);
+    x.value = "usefound";
+    documentElement("coordmethodcell").className = "";
+    documentElement("locationcell").className = "";
+    documentElement("place").disabled = true;
+    documentElement("lat").disabled = true;
+    documentElement("lon").disabled = true;
+}
+
+function fullgeoname(t) {
+    var n = (t.toponymName === undefined) ? t.name : t.toponymName;
+    var v = function (x) { return ((x !== undefined) && (x !== "")  && (x != n)); };
+    if (v(t.adminName5))   n += " (" + t.adminName5 + ")";
+    if (v(t.adminName4))   n += " (" + t.adminName4 + ")";
+    if (v(t.adminName3))   n += " (" + t.adminName3 + ")";
+    if (v(t.adminName2))   n += " (" + t.adminName2 + ")";
+    if (v(t.adminName1))   n += " (" + t.adminName1 + ")";
+    if (v(t.countryName))  n += ", " + t.countryName;
+    return n;
+}
+
+function showgeonameslist() {
+    setMessageAfterElement("geonameslist", "Select your birthplace");
+    documentElement("geonameslistcell").className = "";
+    documentElement("coordmethodcell").className = "";
+    documentElement("placecell").className = "hidden";
+    documentElement("locationcell").className = "hidden";
+}
+
+function addselectlistoption(s) {
+    if (s == null) s = documentElement("coordmethod");
+    var o = document.createElement("option");
+    o.text = "Select location found via geonames.org";
+    o.value = "selectlist";
+    o.name = "selectlist";
+    addoption(s, o);
+}
+
+function setgeonameslist(l) {
+    var i;
+    var s = l.length;
+    var sel = documentElement("geonameslist");
+    var first;
+    emptyElement(sel);
+    for (i = 0; i < s; i++) {
+	var t = l[i];
+	var o = document.createElement("option");
+	o.text = fullgeoname(t);
+	o.value = t.geonameId + " " + fixCoord(t.lat) + " " + fixCoord(t.lng);
+	if (first == null) first = o.value;
+	addoption(sel, o);
+    }
+    sel.value = first;
+    var x = documentElement("coordmethod");
+    if (x.length > 2) {
+	x.remove(2);
+    }
+    addselectlistoption(x);
+    x.value = "selectlist";
+    showgeonameslist();
+}
+
+function selectgeonamesorg() {
+    documentElement("place").disabled = false;
+    documentElement("lat").value = "";
+    documentElement("lon").value = "";
+    documentElement("placecell").className = "";
+    documentElement("coordmethodcell").className = "";
+    documentElement("locationcell").className = "hidden";
+    documentElement("geonameslistcell").className = "hidden";
+}
+
+function removeusefoundoption() {
+    var x = documentElement("coordmethod");
+    if ((x.length > 2) && (x.options[2].value == "usefound")) {
+	x.remove(2);
+	if (documentElement("geonameslist").firstChild != null)
+	    addselectlistoption();
+    }
+}
+
+function coordmethodselect() {
+    var x = documentElement("coordmethod");
+    x = x.options[x.selectedIndex].value;
+    if (x == "geonamesorg") {
+	removeusefoundoption();
+	selectgeonamesorg();
+	return true;
+    } else if (x == "latlon") {
+	removeusefoundoption();
+	selectlatlon();
+	return true;
+    } else if (x == "selectlist") {
+	showgeonameslist();
+	return true;
+    }
+    return false;
+}
+
+function showcoordmethod() {
+    documentElement("coordmethodcell").className = "";
+}
+
+function geonamesclearmsg() {
+    setMessageAfterElement("geonameslist");
+    return true;
+}
+
+function useselectedgeoname() {
+    geonamesclearmsg();
+    setMessageAfterElement("location");
+    var l = documentElement("geonameslist");
+    var o = l.options[l.selectedIndex];
+    var x = o.value.split(/ /g);
+    var lat = x[1];
+    var lon = x[2];
+    documentElement("place").value = o.text;
+    documentElement("lat").value = lat;
+    documentElement("lon").value = lon;
+    showlatlon();
+}
+
+function geonameselect() {
+    try {
+	useselectedgeoname();
+	return true;
+    } catch (err) {
+	setMessageAfterElement("geonameslist", "An error occurred: " + err.message);
+	return false;
+    }
+}
+
+function jsonquery(u, f, p, e) {
+    var r = new XMLHttpRequest;
+    r.open("GET", u, true);
+    r.send(null);
+    r.onreadystatechange = function () {
+	if (r.readyState == 4) {
+	    if (r.status == 200) {
+		f(JSON.parse(r.responseText));
+	    } else {
+		e(r);
+	    }
+	} else if (r.readyState == 3) {
+	    p(r);
+	}
+    };
+}
+
+function birthplacechanged() {
+    if (documentElement("coordmethod").value != "geonamesorg") {
+        documentElement("coordmethodcell").className = "";
+    }
+    documentElement("lat").value   = "";
+    documentElement("lon").value   = "";
+    documentElement("coordmethod").value = "geonamesorg";    
+    return true;
+}
+
+function generateudid2() {
+    var no_focusing = false; // Set this in json callbacks, so we don't change focus asynchronously from user input
+    var to_focus = null;
+
+    var foc = function (id) {
+	if (to_focus == null) to_focus = documentElement(id);
+    };
+
+    var checkfirstname = function (id) {
+	var name =  documentElement(id).value;
+	name = normalizeSpaces(name);
+	name = name.toUpperCase();
+	name = name.replace(/[;, -]+/g, "<") + "<<";
+	var matches = name.match(/[^<A-Z]/);
+	if (matches != null) {
+	    setMessageAfterElement(id, "Invalid character: " + matches.join(", "));
+	    foc(id);
+	    return null;
+	}
+	var name = name.match(/[A-Z]+<[A-Z]*</);
+	if (name.length == 0) {
+	    setMessageAfterElement(id, "Insert given names");
+	    foc(id);
+	    return null;
+	}
+	setMessageAfterElement(id); // Clear any message
+	return name;
+    };
+    var checklastname = function (id) {
+	var name =  documentElement(id).value;
+	name = normalizeSpaces(name);
+	name = name.toUpperCase();
+	name = name.replace(/[;, -]+/g, "<") ;
+	var matches = name.match(/[^<A-Z]/);
+	if (matches != null) {
+	    setMessageAfterElement(id, "Invalid character: " + matches.join(", "));
+	    foc(id);
+	    return null;
+	}
+	var name = name.match(/[A-Z]+$/);
+	if (name.length == 0) {
+	    setMessageAfterElement(id, "Insert surname/family name");
+	    foc(id);
+	    return null;
+	}
+	setMessageAfterElement(id); // Clear any message
+	return name;
+    };
+
+    var firstname  = checkfirstname("firstname");
+    var lastname    = checklastname("lastname");
+
+    var year   = documentElement("year").value;
+    var month  = documentElement("month").value;
+    var day    = documentElement("day").value;
+    var date   = null;
+    // Possible error conditions:
+    // Missing date
+    // Invalid date.
+    // Incomplete date.
+
+    if ((year == "") && (month == "") && (day == "")) {
+	setMessageAfterElement("day", "Specify date");
+	foc("day");
+    } else if (day == "") {
+	setMessageAfterElement("day", "Specify day");
+	foc("day");
+    } else if (month == "") {
+	setMessageAfterElement("day", "Specify month");
+	foc("month");
+    } else if (year == "") {
+	setMessageAfterElement("day", "Specify year");
+	foc("year");
+    } else {
+	var currentdatemax = new Date;
+	currentdatemax.setDate((new Date).getDate() + 1);
+	var maxyear = currentdatemax.getFullYear();
+	if (!(/^[12][0-9][0-9][0-9]$/.test(year))
+	    || (year < 1880)
+	    || (year > (currentdatemax.getFullYear()))) {
+	    setMessageAfterElement("day", "Year should be a number between 1880 and " + maxyear);
+	} else {
+	    var birthdate = new Date(year, month-1, day);
+	    if ((birthdate == null)
+		|| (birthdate > currentdatemax)) {
+		setMessageAfterElement("day", "Invalid date");
+	    } else {
+		if ((birthdate.getDate() != day)
+		    || (birthdate.getMonth() != (month-1))
+		    || (birthdate.getFullYear() != (year))) {
+		    setMessageAfterElement("day", "Invalid date");
+		} else {
+		    setMessageAfterElement("day");
+		    date = year + "-" + month + "-" + day;
+		}
+	    }
+	}
+    }
+
+    var continuewithlatlon = function (lat, lon) {
+	var ll = null;
+
+	// Possible error conditions:
+	if ((lat == "") && (lon == "")) {
+	    setMessageAfterElement("location", "Specify latitude and longitude");
+	    foc("lat");
+	} else if (lat == "") {
+	    setMessageAfterElement("location", "Specify latitude");
+	    foc("lat");
+	} else if (!(/^[+-]?[0-9][0-9]*/.test(lat))) {
+	    setMessageAfterElement("location", "Latitude should have the format (+/-)N.NN");	
+	    foc("lat");
+	} else if (!(/^[+-]?[0-9][0-9]*[.][0-9][0-9]/.test(lat))) {
+	    setMessageAfterElement("location", "Latitude should have at least two decimal places");
+	    foc("lat");
+	} else if (!(/^[+-]?[0-9][0-9]*[.][0-9][0-9][0-9]*$/.test(lat))) {
+	    setMessageAfterElement("location", "Latitude has invalid format");
+	    foc("lat");
+	} else if ((lat > 90) || (lat < -90)) {
+	    setMessageAfterElement("location", "Latitude should be between +90 and -90");
+	    foc("lat");
+	} else if (lon == "") {
+	    setMessageAfterElement("location", "Specify longitude");
+	    foc("lon");
+	} else if (!(/^[+-]?[0-9][0-9]*/.test(lon))) {
+	    setMessageAfterElement("location", "Longitude should have the format (+/-)N.NN");	
+	    foc("lon");
+	} else if (!(/^[+-]?[0-9][0-9]*[.][0-9][0-9]/.test(lon))) {
+	    setMessageAfterElement("location", "Longitude should have at least two decimal places: " + lon);
+	    foc("lon");
+	} else if (!(/^[+-]?[0-9][0-9]*[.][0-9][0-9][0-9]*$/.test(lon))) {
+	    setMessageAfterElement("location", "Longitude has invalid format");
+	    foc("lon");
+	} else if ((lon > 180) || (lon <= -180)) {
+	    setMessageAfterElement("location", "Longitude should be between +180.00 and -179.99");
+	    foc("lon");
+	} else {
+	    // Add sign and extra zeroes, round latitude and longitude
+	    lat = normalizeSign(parseFloat(lat).toFixed(2));
+	    lon = normalizeSign(parseFloat(lon).toFixed(2));
+	    
+	    // Remove extra leading zeroes
+	    lat = lat.replace(/^[+]0*/, "+");
+	    lat = lat.replace(/^[-]0*/, "-");
+	    
+	    // Add back zeroes
+	    if (/^[+-][.]/.test(lat)) {
+		lat = lat.substring(0, 1) + "0" + lat.substring(1);
+	    }
+	    if (/^[+-][0-9][.]/.test(lat)) {
+		lat = lat.substring(0, 1) + "0" + lat.substring(1);
+	    }
+	    if (/^[+-][.]/.test(lon)) {
+		lon = lon.substring(0, 1) + "0" + lon.substring(1);
+	    }
+	    if (/^[+-][0-9][.]/.test(lon)) {
+		lon = lon.substring(0, 1) + "0" + lon.substring(1);
+	    }
+	    if (/^[+-][0-9][0-9][.]/.test(lon)) {
+		lon = lon.substring(0, 1) + "0" + lon.substring(1);
+	    }
+
+	    // Check correctness of the format
+	    if (!(/^[+-][0-9][0-9][.][0-9][0-9]$/.test(lat))) {
+		setMessageAfterElement("location", "Could not parse latitude: " + lat);
+	    } else if (!(/^[+-][0-9][0-9][0-9][.][0-9][0-9]$/.test(lon))) {
+		setMessageAfterElement("location", "Could not parse longitude: " + lon);
+	    } else {
+		documentElement("verifylocation").href = "http://www.openstreetmap.org/#map=15/" + lat + "/" + lon;
+		setTextContent(documentElement("verifylocation"), "Verify with openstreetmap");
+		setMessageAfterElement("location");
+		ll = lat + "" + lon;
+	    }
+	}
+
+	if ((firstname !== null) && (lastname !== null) && (ll !== null) && (date !== null)) {
+	    documentElement("generated").className = "";
+	    documentElement("tohash").value   = lastname + "<<" + firstname + date ;
+	    documentElement("udid4").value  = "udid4;" + md5.base64(lastname + "<<" + firstname + date).replace(/[+]/g, "-").replace(/[/]/g, "_") + "e" + ll.replace(/[+]/g, "_");
+	    documentElement("udid4").scrollIntoView(false);
+	    documentElement("tohash").readOnly = true;
+	    documentElement("udid4").readOnly = true;
+	    return true;
+	} else {
+	    documentElement("tohash").readOnly = false;
+	    documentElement("udid4").readOnly = false;
+	    documentElement("tohash").value    = "";
+	    documentElement("udid4").value   = "";
+	    if (!no_focusing) {
+		if (to_focus !== null) {
+		    to_focus.focus();
+		}
+	    }
+	    return false;
+	}
+    };
+
+    if (documentElement("coordmethod").value == "geonamesorg") {
+	var place = normalizeSpaces(documentElement("place").value);
+	if (place == "") {
+	    setMessageAfterElement("place", "Specify your birthplace");
+	    foc("place");
+	} else if (
+	    // Detect when the user is inputting numerical coordinates
+	    (!(/[^-+0-9 .,;][^-+0-9 .,;]/.test(place))) &&
+		(/[0-9][.]/.test(place))
+	) {
+	    // Try to different ways to split the string into latitude and longitude
+	    var lat, lon, x;
+	    if         ((x = place.split(/;\s*/g)).length == 2) {
+		lat = x[0]; lon = x[1];
+	    } else if  ((x = place.split(/;\s*/g)).length == 2) {
+		lat = x[0]; lon = x[1];
+	    } else if  ((x = place.split(/,\s\s*/g)).length == 2) {
+		lat = x[0]; lon = x[1];
+	    } else if  ((x = place.split(/\s/g)).length == 2) {
+		lat = x[0]; lon = x[1];
+	    } else if  ((x = place.split(/,/g)).length == 2) {
+		lat = x[0]; lon = x[1];
+	    } else if  ((x = place.match(/[+-]?[0-9][0-9]*[.][0-9][0-9][0-9]*/g)) && (x.length == 2)) {
+		lat = x[0]; lon = x[1];
+	    } else {
+		lat = place; lon = "";
+	    }
+	    selectlatlon();
+	    documentElement("lat").value = lat;
+	    documentElement("lon").value = lon;
+	} else {
+	    var n = 0;
+	    try {
+		// For compatibility with Internet Explorer's default security settings, the json request to geonames.org should be proxied by a PHP script in the local domain
+		jsonquery("http://api.geonames.org/search?q="+encodeURIComponent(place)+"&type=json&featureClass=P&username=rev22", function (j) {
+		    try {
+			var g = j.geonames;
+			if (g.length == 0) {
+			    setMessageAfterElement("place", "Location not found (in geonames.org)");
+			} else if (g.length == 1) {
+			    setMessageAfterElement("place", "Location found");
+			    var t = g[0];
+			    var lat = fixCoord(t.lat);
+			    var lon = fixCoord(t.lng);
+			    documentElement("place").value = fullgeoname(t);
+			    documentElement("lat").value = lat;
+			    documentElement("lon").value = lon;
+			    showlatlon();
+			    continuewithlatlon(lat, lon);
+			} else {
+			    setMessageAfterElement("place");
+			    setgeonameslist(g);
+			}
+		    } catch (err) {
+			setMessageAfterElement("place", "Error processing geonames response: " + err.message);
+		    }
+		}, function (r) {
+		    setMessageAfterElement("place", "Looking up in geonames.org.." + (((n%1)==0)?"":"."));
+		    n++;
+		}, function (r) {
+		    setMessageAfterElement("place", "Error contacting geonames.org: (" + r.status + ") " + r.responseText);
+		});
+		setMessageAfterElement("place", "Looking up in geonames.org...");
+		foc("generate");
+	    } catch (err) {
+		setMessageAfterElement("place", "Could not access geonames.org: " + err.message);
+		showcoordmethod();
+		foc("coordmethod");
+	    }
+	}
+    } else if (documentElement("coordmethod").value == "selectlist") {
+	useselectedgeoname();
+	foc("generate");
+    }
+    
+    continuewithlatlon(normalizeSpaces(documentElement("lat").value),
+		       normalizeSpaces(documentElement("lon").value));
+}
+	  -->
+    </script>
+    <style type="text/css">
+      <!--
+body {
+    background: #eef;
+}
+
+h1,h2,h3 {
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    font-weight: bold;
+    font-family: helvetica,arial;
+    color: #9999bb;
+    border-bottom: 1px solid #99b;
+}
+
+.message {
+    color: #0000dd;
+    font-weight: bold;
+}
+
+.centered {
+    text-align:center;
+}
+
+.hidden {
+    display:none;
+}
+
+.info {
+    color: #444455;
+}
+
+.inputcell {
+    text-align:left;
+}
+
+.secondary {
+    opacity: 0.8;
+    font-size: 75%;
+}
+
+.primary {
+    font-weight: bold;
+}
+
+input, select {
+    font-weight: normal;
+    font-size: 100%;
+}
+-->
+    </style>
+  </head>
+  <body style="text-align:center">
+    <div class=info><a href="https://www.openudc.org">OpenUDC</a>: open protocols for Universal Dividend Currencies</div>
+    <h3>Your information:</h3>
+    <form class=centered style="display:inline-table" action="nojavascript.html" method="get">
+      <div class=info>This form allows you to create a unique string to identify yourself (aka. UDID4).</div>
+      <table>
+	<tr>
+	  <td>(All) your given names at birth:</td>
+	  <td class=inputcell>
+	    <input id=firstname size=30 type=text>
+	  </td>
+	</tr><tr>
+	  <td>Your surname/family name at birth:</td>
+	  <td class=inputcell>
+	    <input id=lastname size=30 type=text>
+	  </td>
+	</tr><tr>
+	  <td>Your birth date:</td>
+	  <td class=inputcell>
+	    <select title="The day of the month in which you were born (1-31)"
+		    id="day" name="day">
+	      <option value="">Day</option>
+	      <option value="01">1</option>
+	      <option value="02">2</option>
+	      <option value="03">3</option>
+	      <option value="04">4</option>
+	      <option value="05">5</option>
+	      <option value="06">6</option>
+	      <option value="07">7</option>
+	      <option value="08">8</option>
+	      <option value="09">9</option>
+	      <option value="10">10</option>
+	      <option value="11">11</option>
+	      <option value="12">12</option>
+	      <option value="13">13</option>
+	      <option value="14">14</option>
+	      <option value="15">15</option>
+	      <option value="16">16</option>
+	      <option value="17">17</option>
+	      <option value="18">18</option>
+	      <option value="19">19</option>
+	      <option value="20">20</option>
+	      <option value="21">21</option>
+	      <option value="22">22</option>
+	      <option value="23">23</option>
+	      <option value="24">24</option>
+	      <option value="25">25</option>
+	      <option value="26">26</option>
+	      <option value="27">27</option>
+	      <option value="28">28</option>
+	      <option value="29">29</option>
+	      <option value="30">30</option>
+	      <option value="31">31</option>
+	    </select>
+	    <select title="The month in which you were born"
+		    id=month name="month">
+	      <option value="">Month</option>
+	      <option value="01">January</option>
+	      <option value="02">February</option>
+	      <option value="03">March</option>
+	      <option value="04">April</option>
+	      <option value="05">May</option>
+	      <option value="06">June</option>
+	      <option value="07">July</option>
+	      <option value="08">August</option>
+	      <option value="09">September</option>
+	      <option value="10">October</option>
+	      <option value="11">November</option>
+	      <option value="12">December</option>
+	    </select>
+	    <input title="The year in which you were born"
+		   size=4 id=year name=year type=text>
+	    <!-- <input style="text-align:center" size=2 type=text>/<input style="text-align:center" size=2 type=text>/<input style="text-align:center" size=4 type=text> -->
+	  </td>
+	</tr><tr>
+	  <td>Your birthplace:</td>
+	  <td class=inputcell>
+	    <div class=hidden id="coordmethodcell">
+              <select class=secondary id="coordmethod" name="coordmethod" onChange="coordmethodselect()">
+		<option value="geonamesorg">Find earth coordinates via geonames.org</option>
+		<option value="latlon">Specify latitude/longitude</option>
+              </select>
+	    </div>
+	    <div id=placecell><input id=place name=place size=30 type=text onChange="birthplacechanged()"></div>
+	    <div class=hidden id=geonameslistcell>
+	      <select style="width:19em" id=geonameslist name=geonameslist onChange="geonameselect()" onMouseDown="geonamesclearmsg()">
+		<option></option>
+	      </select>
+	    </div>
+	    <div class=hidden id=locationcell>
+	      <span id=location>
+		<span title="Latitude of your birth location, in decimal form"><input id=lat style="text-align:center" size=6 type=text><sub>(lat)</sub></span>
+		<span title="Longitude of your birth location, in decimal form"><input id=lon style="text-align:center" size=5 type=text><sub>(lon)</sub></span>
+	      </span>
+	      <a class=secondary id=verifylocation href="http://geonames.org/">Find on geonames.org</a>
+	    </div>
+	  </td>
+	</tr>
+      </table>
+      <input class=secondary id=reset type=button value="Reset" onClick="resetform()">
+      <input class=primary id=generate type=submit value="Generate your UDID4" onClick="try { generateudid2() } catch (err) { alert('An error occurred in this page: ' + err.message ); };return false">
+    </form>
+    <div class=hidden id=generated>
+    <input id=tohash style="font-family:fixed,courier" size=50 title="Data hidden by the UDID4" type=text><br>
+    <h3>Your Unique Identifier (UDID4):</h3>
+    <input id=udid4 style="font-family:fixed,courier" size=50 title="Your UDID4" type=text>
+    </div>
+    <div class=info><p>Your UDID4 is an identification code that allows everyone to be identified <b>once</b>, <b>worldwide</b>, and <b>without giving your real name</b>.</p></div>
+    <div class=info>Your information on this form is processed by your web-browser; your birthplace is processed via geonames.org.</div>
+    <div class=info>This application requires Javascript.</div>
+  </body>
+</html>
+
+

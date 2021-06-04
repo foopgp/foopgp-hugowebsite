@@ -23,7 +23,7 @@
 -->
 
 <html>
-  <head>
+  <head><meta charset="utf-8"/>
     <title>UDID2 - Create your OpenUDC ID</title>
     <script type="text/javascript">
       <!--
@@ -737,7 +737,7 @@ function generateudid2() {
 	    var n = 0;
 	    try {
 		// For compatibility with Internet Explorer's default security settings, the json request to geonames.org should be proxied by a PHP script in the local domain
-		jsonquery("//api.geonames.org/search?q="+encodeURIComponent(place)+"&type=json&featureClass=P&username=rev22", function (j) {
+		jsonquery("//secure.geonames.org/search?q="+encodeURIComponent(place)+"&type=json&featureClass=P&username=rev22", function (j) {
 		    try {
 			var g = j.geonames;
 			if (g.length == 0) {

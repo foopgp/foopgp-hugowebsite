@@ -1061,7 +1061,7 @@ function generateudid2() {
 	    setMessageAfterElement("location", "Specify latitude");
 	    foc("lat");
 	} else if (!(/^[+-]?[0-9][0-9]*/.test(lat))) {
-	    setMessageAfterElement("location", "Latitude should have the format (+/-)N.NN");	
+	    setMessageAfterElement("location", "Latitude should have the format (+/-)N.NN");
 	    foc("lat");
 	} else if (!(/^[+-]?[0-9][0-9]*[.][0-9][0-9]/.test(lat))) {
 	    setMessageAfterElement("location", "Latitude should have at least two decimal places");

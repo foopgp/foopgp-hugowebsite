@@ -16,8 +16,12 @@ var fuseOptions = {
   ]
 };
 
-
 var searchQuery = param("s");
+
+var jsonfile = document.currentScript.dataset.jsonfile;
+if (typeof jsonfile === "undefined" ) {
+   var jsonfile = "/index.json";
+}
 
 if(searchQuery){
     // searchQuery = $("#search-query").val(searchQuery);
@@ -25,7 +29,7 @@ if(searchQuery){
   inputBox.value = searchQuery || "";
   executeSearch(searchQuery, false);
 } else {
-  $('#search-results').append("<p class=\"search-results-empty\">Please enter a word or phrase above, or see <a href=\"/tags/\">all tags</a>.</p>");
+  $('#search-results').append("<p class=\"search-results-empty\">Please enter a word above, or see <a href=\"/tags/\">all tags</a>.</p>");
 }
 
 
@@ -38,12 +42,12 @@ function executeInlineSearch(){
     if(query){
         executeSearch(query, true);
     }else {
-        $('#search-results').append("<p class=\"search-results-empty\">Please enter a word or phrase above, or see <a href=\"/tags/\">all tags</a>.</p>");
+        $('#search-results').append("<p class=\"search-results-empty\">Please enter a word above. Or see <a href=\"/tags/\">all tags</a>.</p>");
     }
 }
 
 function executeSearch(searchQuery, clear_list){
-  $.getJSON( "/index.json", function( data ) {
+  $.getJSON( jsonfile, function( data ) {
     var pages = data;
     var fuse = new Fuse(pages, fuseOptions);
     var result = fuse.search(searchQuery);

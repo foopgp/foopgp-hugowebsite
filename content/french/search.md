@@ -1,5 +1,6 @@
 ---
-title: "Search Results"
+title: "Recherche locale"
+draft: true
 sitemap:
   priority : 0.1
 layout: "search"

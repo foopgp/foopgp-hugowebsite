@@ -1,5 +1,6 @@
 ---
-title: "Search Results"
+title: "Local search"
+draft: true
 sitemap:
   priority : 0.1
 layout: "search"

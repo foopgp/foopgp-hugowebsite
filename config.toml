@@ -79,7 +79,7 @@ hasChildren = true
   [[menu.main]]
   parent = "about"
   name = "donate"
-  URL = "donate"
+  URL = "about/donate"
   weight = 5
 
   [[menu.main]]
@@ -214,7 +214,7 @@ link = "https://github.com/foopgp"
 [[params.social]]
 title = "donate"
 icon = "ti-heart"
-link = "/donate"
+link = "/about/donate"
 
 [[params.social]]
 title = "follow us"

@@ -179,7 +179,7 @@ top_header = false
 
 # Preloader
 [params.preloader]
-enable = true
+enable = false
 preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 
 # Subscription
@@ -196,7 +196,7 @@ enable = false
 #map_latitude = "51.5223477"
 #map_longitude = "-0.1622023"
 #map_marker = "images/marker.png" # marker size 37*55 px
-  
+
 ############################# social site ########################
 #icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
 #icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons

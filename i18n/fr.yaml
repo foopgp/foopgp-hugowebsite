@@ -37,6 +37,9 @@
 - id: friends
   translation: amis
 
+- id: home
+  translation: accueil
+
 - id: identity
   translation: identité
 

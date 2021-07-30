@@ -42,6 +42,8 @@ link = "plugins/venobox/venobox.min.js"
 link = "plugins/filterizr/jquery.filterizr.min.js"
 #[[params.plugins.js]]
 #link = "plugins/google-map/gmap.js"
+[[params.plugins.js]]
+link = "plugins/fuse/fuse.js"
 
 
 ############################## navigation ###############################
@@ -176,6 +178,7 @@ contact_form_action = "#" # contact form works with https://formspree.io
 google_analitycs_id = "" # your id
 # top header
 top_header = false
+searchURL = "/search"
 
 # Preloader
 [params.preloader]
@@ -200,6 +203,11 @@ enable = false
 ############################# social site ########################
 #icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
 #icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
+
+[[params.social]]
+title = "home"
+icon = "ti-home" # themify icon : https://themify.me/themify-icons
+link = "/"
 
 [[params.social]]
 title = "contact"

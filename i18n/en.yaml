@@ -37,6 +37,9 @@
 - id: friends
   translation: friends
 
+- id: home
+  translation: home
+
 - id: identity
   translation: identity
 

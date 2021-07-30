@@ -178,7 +178,7 @@ contact_form_action = "#" # contact form works with https://formspree.io
 google_analitycs_id = "" # your id
 # top header
 top_header = false
-searchURL = "/search"
+searchURL = "search"
 
 # Preloader
 [params.preloader]

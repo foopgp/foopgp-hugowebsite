@@ -39,7 +39,7 @@ slider:
       button:
         enable : true
         label : "Donations"
-        link : "donate"
+        link : "about/donate"
 
 
 ############################### Banner feature ###############################

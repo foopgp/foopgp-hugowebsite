@@ -71,7 +71,7 @@ banner_feature:
 ############################### Banner against_value ###############################
 banner_against_value:
   enable : true
-  image : "https://i.redd.it/rtt7bv8c02611.jpg"
+  image : "images/about/our_against_value.jpg"
   feature_item:
     # feature item loop
     - name : "Cupidité"

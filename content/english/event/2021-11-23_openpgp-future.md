@@ -2,7 +2,7 @@
 type: "event"
 title: "NGI webinar on future of OpenPGP"
 publishDate: "2016-08-24"
-date: "2021-11-23T10:00:00+00:00"
+date: "2021-11-23T10:00:00+01:00"
 # post save as draft
 draft: false
 # page title background image

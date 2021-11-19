@@ -1,6 +1,7 @@
 
 
-This is a static website made with [hugo](https://gohugo.io).
+This is the website of the [Friends of Open PGP](https://foopgp.org) (https://foopgp.org),
+made with love and [hugo](https://gohugo.io).
 
 
 ## Structure

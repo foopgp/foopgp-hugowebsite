@@ -1,4 +1,5 @@
 ---
+Lastmod: 2021-11-19T11:34:47+01:00 # MANAGED BY update_lastmod.sh
 type: "event"
 title: "NGI webinar on future of OpenPGP"
 publishDate: "2016-08-24"

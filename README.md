@@ -1,6 +1,6 @@
 
 
-This is the website of the [Friends of Open PGP](https://foopgp.org) (https://foopgp.org),
+This is the website of the [Friends of Open PGP](https://foopgp.org) ([FoOPGP](https://foopgp.org) for those in the know),
 made with love and [hugo](https://gohugo.io).
 
 

@@ -1,3 +1,6 @@
 [submodule "themes/educenter"]
 	path = themes/educenter
 	url = git@github.com:foopgp/foopgp-hugotheme.git
+[submodule "static/largefiles"]
+	path = static/largefiles
+	url = git@github.com:foopgp/foopgp-largefiles.git

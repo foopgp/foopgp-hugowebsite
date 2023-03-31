@@ -1,4 +1,5 @@
 ---
+Lastmod: 2023-03-31T14:54:37+02:00 # MANAGED BY update_lastmod.sh
 title: "Fred Zwikel"
 # page title background image
 bg_image: "images/banner/banner-1.jpg"

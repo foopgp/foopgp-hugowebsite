@@ -22,7 +22,7 @@ Dans nos sociétés, entretenant au travers de notre système économique, le [p
 
 Ainsi pour vendre toujours plus de produits comme d'opinions politiques, nous sommes submergés de communications cherchant à se faire passer pour de l'information. Cette confusion délibérée, autrefois cantonné à la publicité, s'est développé avec le marketing débridé inhérent à notre société de (sur)consommation, lui même indissociable de notre système économique et monétaire, basé sur une croissance perpétuelle.
 
-La résistance à la pollution informationnelle perdait déjà du terrain, lorsque, le 30 Novembre 2022, [OpenAI](https://fr.wikipedia.org/wiki/OpenAI) lança [ChatGPT](https://fr.wikipedia.org/wiki/ChatGPT) son agent conversationnel qui alla marquer les esprits, en générant, à des millions d'utilisateurs, plus de textes que ne pourraient produire une armée d'un million de lycéens.
+La résistance à la pollution informationnelle perdait déjà du terrain, lorsque, le 30 Novembre 2022, [OpenAI](https://fr.wikipedia.org/wiki/OpenAI) lança [ChatGPT](https://fr.wikipedia.org/wiki/ChatGPT) son agent conversationnel qui alla marquer les esprits, en générant, à des millions d'utilisateurs, plus de textes que ne pourrait produire une armée d'un million de lycéens.
 
 Très vite l'outil fut utilisé pour produire en quelques minutes des rédactions de plusieurs pages, lesquelles étaient copiés-collés dans des emails, des devoirs d'étudiants, ou des contenus pour nourrir des sites web (et ainsi améliorer leur référencement).
 
@@ -64,7 +64,7 @@ Mais cela ne nous dit pas si la donnée a bien été produite par ladite personn
 Pour compléter le tableau et enfin lutter efficacement contre la pollution
 informationnelle, retrouver nos singularités humaines :
 
-* toute donnée devrait être accompagné d'un contexte (histoire résumé de la donnée).
+* toute donnée devrait être accompagné d'un contexte (résumé de son histoire).
 * donnée et contexte doivent être signé par une personne bien identifiée.
 * chaque personne doit pouvoir être libre d'associer et de partager des réputations à
   chaque personne.

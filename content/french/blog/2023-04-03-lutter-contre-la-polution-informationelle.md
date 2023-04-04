@@ -62,17 +62,50 @@ Grâce à la [la signature numérique](https://fr.wikipedia.org/wiki/Signature_n
 Mais cela ne nous dit pas si la donnée a bien été produite par ladite personne.
 
 Pour compléter le tableau et enfin lutter efficacement contre la pollution
-informationnelle, retrouver nos singularités humaines :
+informationnelle :
 
-* toute donnée devrait être accompagné d'un contexte (résumé de son histoire).
-* donnée et contexte doivent être signé par une personne bien identifiée.
-* chaque personne doit pouvoir être libre d'associer et de partager des réputations à
+* 1 - Toute donnée devrait être accompagné d'un contexte (résumé de son histoire).
+* 2 - Donnée et contexte doivent être signé par une personne bien identifiée.
+* 3 - Chaque personne doit pouvoir être libre d'associer et de partager des réputations à
   chaque personne.
-* chaque personne doit être libre d'accorder plus ou moins de crédits aux
+* 4 - Chaque personne doit être libre d'accorder plus ou moins de crédits aux
   réputations partagées par autrui.
 
+Notons que la première règle est déjà appliquée par les nombreuses personnes qui
+savent utiliser des [logiciels de gestion de
+versions](https://fr.wikipedia.org/wiki/Logiciel_de_gestion_de_versions), tel
+que [Git](https://fr.wikipedia.org/wiki/Git) ou
+[Mercurial](https://fr.wikipedia.org/wiki/Mercurial).
 
-Voilà là où s'étaient un peu arrêté les [spécifications
-OpenPGP](https://datatracker.ietf.org/wg/openpgp/charter/) (et
-[Philip Zimmermann](https://fr.wikipedia.org/wiki/Philip_Zimmermann))).
+La deuxième règle est aussi appliquée lorsque les publications sont signées par
+une personne reconnue dans une toile de confiance OpenPGP.
+
+L'article que vous lisez est lui-même une donnée qui respecte ces deux premières
+règles. En effet le texte brut de cette page web est stocké dans un dépôt git,
+lui même rempli uniquement par des publications itératives (la blockchain n'a
+rien inventé !).
+
+Vous pouvez consulter son contexte historique en dupliquant [ce dépôt](https://github.com/foopgp/foopgp-hugowebsite/) sur votre ordinateur, ou bien en utilisant quelque service web possédant une copie. Par exemple : <https://github.com/foopgp/foopgp-hugowebsite/commits/test/content/french/blog/2023-04-03-lutter-contre-la-polution-informationelle.md>.
+
+Vous pouvez enfin commencer à appliquer la troisième règle en me prêtant une
+excellente réputation pour traiter ce genre de sujet. Par contre il n'existe pas
+encore de solution aboutie, notamment décentralisée, vous permettant de la partager
+au monde entier 😋.
+
+## Conclusion
+
+Pour ne pas perdre notre singularité humaine, je ne vois que deux voies :
+
+* Refuser le progrès. C'est à dire [interdire](https://www.numerama.com/tech/1324324-litalie-reclame-larret-de-chatgpt-au-nom-du-rgpd.html) au travers de [lois toujours plus complexes et imparfaites](https://www.europarl.europa.eu/news/fr/headlines/society/20201015STO89417/regles-sur-l-ia-ce-que-veut-le-parlement-europeen).
+* Poursuivre les travaux de [Philip Zimmermann](https://fr.wikipedia.org/wiki/Philip_Zimmermann) ou [Linus Torvalds](https://fr.wikipedia.org/wiki/Linus_Torvalds) pour pouvoir appliquer l'ensemble des quatre règles énoncées plus haut.
+
+Tandis que la plupart de nos décideurs s'efforcent dans une impasse quasi certaine,
+d'autres essayent de [construire](https://datatracker.ietf.org/wg/openpgp/charter/) un futur
+durable...
+
+
+---
+
+*Si cette article vous a plu, n'hésitez pas à rejoindre ou financer
+[foopgp](/about/legal-notice/).*
 

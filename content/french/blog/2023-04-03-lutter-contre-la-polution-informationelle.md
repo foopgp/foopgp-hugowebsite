@@ -24,9 +24,9 @@ Ainsi pour nous forcer à acheter toujours plus, tout devient produit ([même no
 
 La résistance à la [pollution informationnelle](https://fr.wikipedia.org/wiki/Pollution_informationnelle) perdait déjà du terrain, lorsque, le 30 Novembre 2022, [OpenAI](https://fr.wikipedia.org/wiki/OpenAI) lança [ChatGPT](https://fr.wikipedia.org/wiki/ChatGPT) son agent conversationnel qui alla marquer les esprits, en générant, à des millions d'utilisateurs, plus de textes que ne pourrait produire une armée d'un million de lycéens.
 
-Très vite l'outil fut utilisé pour produire en quelques minutes des rédactions de plusieurs pages, lesquelles étaient copiés-collés dans des emails, des devoirs d'étudiants, ou des contenus pour nourrir des sites web (et ainsi améliorer leur référencement).
+Très vite l'outil fut utilisé pour produire en quelques minutes des rédactions de plusieurs pages, lesquelles étaient copiées-collées dans des emails, des devoirs d'étudiants, ou des contenus pour nourrir des sites web.
 
-Si une certaine pertinence peut-être au rendez-vous, GPT, Midjourney et [autres intelligences artificielles](https://fr.wikipedia.org/wiki/Art_g%C3%A9n%C3%A9ratif) semblent pouvoir marquer la fin de l'ensemble des originalités et singularités humaines, remplacées par une poignée de "cerveaux" numériques reflétant une partie de ceux de leur poignée de créateurs. D'autant plus froids et uniformes, qu'ils sont bridés pour heurter le moins de sensibilités.
+Si une certaine pertinence peut-être au rendez-vous, GPT, Midjourney et [autres intelligences artificielles](https://fr.wikipedia.org/wiki/Art_g%C3%A9n%C3%A9ratif) semblent pouvoir marquer la fin de l'ensemble des originalités et singularités humaines, remplacées par une poignée de "cerveaux" numériques, froids et uniformes, reflétant seulement quelques parties, bridées pour heurter le moins de sensibilités, de l'intelligence collective désignée par celle des ingénieurs créateurs.
 
 Demain nous serons peut-être plus nombreux à pouvoir éduquer nos propres intelligences numériques ; petits bouts d'éternité ; au même titre que nos enfants biologiques.
 
@@ -37,9 +37,9 @@ Demain nous serons peut-être plus nombreux à pouvoir éduquer nos propres inte
 Pour toutes nos données numérisées, la solution existe pourtant depuis longtemps : [les signatures numériques](https://fr.wikipedia.org/wiki/Signature_num%C3%A9rique).
 
 Hélas ces dernières sont encore très peu utilisées. Et quand elles le sont, c'est
-souvent au travers de solutions inutiles car [fermés](https://fr.wikipedia.org/wiki/Logiciel_propri%C3%A9taire) ou au travers de [PKI](https://fr.wikipedia.org/wiki/Infrastructure_%C3%A0_cl%C3%A9s_publiques) dangereuses car centralisées.
+souvent au travers de solutions inutiles car [fermées](https://fr.wikipedia.org/wiki/Logiciel_propri%C3%A9taire) ou au travers de [PKI](https://fr.wikipedia.org/wiki/Infrastructure_%C3%A0_cl%C3%A9s_publiques) dangereuses car centralisées.
 
-En effet, il ne suffit pas qu'une donnée soit signée, pour que l'on puisse être sûr que la personne qui l'a signée est bien qui elle prétend être.
+En effet, il ne suffit pas qu'une donnée soit signée, pour que l'on puisse être sûr que la personne qui l'a signée est bien celle qu'elle prétend être.
 
 Je pourrais par exemple signer un document "Emmanuel Macron", si vous n'avez pas récupéré la [clé publique](https://fr.wikipedia.org/wiki/Cryptographie_asym%C3%A9trique) permettant de vérifier la signature numérique par un canal sûr (par exemple en main propre), alors vous ne savez absolument pas de quel Emmanuel Macron il s'agit, ni même si il s'agit bien d'un certain "Emmanuel Macron".
 

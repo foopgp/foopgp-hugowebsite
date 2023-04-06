@@ -1,7 +1,7 @@
 ---
 Title:   GPT - Fin de Partie
 Date:    2023-04-03T01:30:00+02:00
-Lastmod:    2023-04-03T10:30:00+02:00
+Lastmod:    2023-04-06T17:30:00+02:00
 License: CC By-SA
 Tags:    [ "openpgp", "AI" ]
 categories: [ "Opinion" ]
@@ -50,22 +50,22 @@ pouvez encore une fois pas être sûr qu'elle est bien qui elle prétend être, 
 encore moins qu'elle ne signe pas n'importe quoi n'importe comment.
 
 C'est toute la faille des [PKI](https://fr.wikipedia.org/wiki/Infrastructure_%C3%A0_cl%C3%A9s_publiques) centralisées, sur lesquelles reposent aussi bien
-nos documents d'identités, que l'ensemble des sites web soit disant "sécurisés"...
+nos documents d'identités, que l'ensemble des sites web dits "sécurisés"...
 
 Faille que n'ont pas les [toiles de confiance
 OpenPGP](https://fr.wikipedia.org/wiki/Toile_de_confiance).
 
 ## Réputation
 
-Grâce à la [la signature numérique](https://fr.wikipedia.org/wiki/Signature_num%C3%A9rique), et aux [toiles de confiance OpenPGP](https://fr.wikipedia.org/wiki/Toile_de_confiance), nous pouvons être sûr qu'une donnée a bien été endossé par une personne bien identifiée.
+Grâce à la [la signature numérique](https://fr.wikipedia.org/wiki/Signature_num%C3%A9rique), et aux [toiles de confiance OpenPGP](https://fr.wikipedia.org/wiki/Toile_de_confiance), nous pouvons être sûrs qu'une donnée a bien été endossée par une personne bien identifiée.
 
 Mais cela ne nous dit pas si la donnée a bien été produite par ladite personne.
 
 Pour compléter le tableau et enfin lutter efficacement contre la pollution
 informationnelle :
 
-* 1 - Toute donnée devrait être accompagné d'un contexte (résumé de son histoire).
-* 2 - Donnée et contexte doivent être signé par une personne bien identifiée.
+* 1 - Toute donnée devrait être accompagnée d'un contexte (résumé de son histoire).
+* 2 - Donnée et contexte doivent être signés par une personne bien identifiée.
 * 3 - Chaque personne doit pouvoir être libre d'associer et de partager des réputations à
   chaque personne.
 * 4 - Chaque personne doit être libre d'accorder plus ou moins de crédits aux
@@ -88,7 +88,7 @@ la "blockchain"...](https://netfuture.ch/2022/02/git-pgp-blockchain-comparison/)
 Vous pouvez consulter son contexte historique en dupliquant [ce dépôt](https://github.com/foopgp/foopgp-hugowebsite/) sur votre ordinateur, ou bien en utilisant quelque service web possédant une copie. Par exemple : <https://github.com/foopgp/foopgp-hugowebsite/commits/test/content/french/blog/2023-04-03-lutter-contre-la-polution-informationelle.md>.
 
 Vous pouvez enfin commencer à appliquer la troisième règle en me prêtant une
-excellente réputation pour traiter ce genre de sujet. Par contre il n'existe pas
+excellente réputation pour traiter ce genre de sujet. Cependant il n'existe pas
 encore de solution aboutie, notamment décentralisée, vous permettant de partager
 cette recommandation à tous les individus du monde 😋.
 

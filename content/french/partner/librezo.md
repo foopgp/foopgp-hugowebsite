@@ -1,4 +1,5 @@
 ---
+Lastmod: 2023-04-06T18:00:00+02:00 # MANAGED BY update_lastmod.sh
 title: "Librezo"
 draft: false
 bg_image: "images/backgrounds/page-title.jpg"

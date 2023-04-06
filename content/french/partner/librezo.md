@@ -6,7 +6,7 @@ description : "Solutions d'auto-hébergement"
 image: "images/partners/logoliobrezo2cwhite-200x200.png"
 course: "Entreprise"
 bio : "Services informatiques"
-interest: ["Auto-hébergement", "Debian", "NextCloud", "Odoo"]
+interest: ["Auto-hébergement", "Debian", "NextCloud"] 
 contact:
   # contact item loop
   # icon pack : https://themify.me/themify-icons

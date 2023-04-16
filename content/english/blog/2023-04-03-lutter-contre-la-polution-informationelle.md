@@ -9,7 +9,7 @@ draft: false
 author: [ "Jean-Jacques Brucker", "DeepL Translator" ]
 description: "How to fight against information pollution"
 lang: en
-bg_image: "images/blog/2023/dalle-e-1.png"
+bg_image: "images/blog/2023/dalle-e-1.jpg"
 image: "images/blog/2023/tomfishburne-ai.jpg"
 type: "post"
 ---
@@ -76,7 +76,7 @@ rules. Indeed the raw text of this web page is stored in a git repository,
 itself filled only by iterative publications ([concept taken over by
 the "blockchain"...](https://netfuture.ch/2022/02/git-pgp-blockchain-comparison/)).
 
-You can view its historical context by duplicating [this repository](https://github.com/foopgp/foopgp-hugowebsite/) on your computer, or by using some web service with a copy. For example: <https://github.com/foopgp/foopgp-hugowebsite/commits/test/content/french/blog/2023-04-03-lutter-contre-la-polution-informationelle.md>.
+You can view its historical context by duplicating [this repository](https://github.com/foopgp/foopgp-hugowebsite/) on your computer, or by using [some web service like github](https://github.com/foopgp/foopgp-hugowebsite/commits/test/content/english/blog/2023-04-03-lutter-contre-la-polution-informationelle.md).
 
 You can finally start applying the third rule by giving me an
 excellent reputation for dealing with this kind of subject. However there is not yet a complete solution, especially a decentralized one, that would allow you to share

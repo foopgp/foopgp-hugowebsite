@@ -9,7 +9,7 @@ draft: false
 author: [ "Jean-Jacques Brucker" ]
 description : "Comment lutter contre la pollution informationnelle"
 lang: fr
-bg_image: "images/blog/2023/dalle-e-1.png"
+bg_image: "images/blog/2023/dalle-e-1.jpg"
 image: "images/blog/2023/tomfishburne-ai.jpg"
 type: "post"
 ---
@@ -85,7 +85,7 @@ règles. En effet le texte brut de cette page web est stocké dans un dépôt gi
 lui même rempli uniquement par des publications itératives ([concept repris par
 la "blockchain"...](https://netfuture.ch/2022/02/git-pgp-blockchain-comparison/)).
 
-Vous pouvez consulter son contexte historique en dupliquant [ce dépôt](https://github.com/foopgp/foopgp-hugowebsite/) sur votre ordinateur, ou bien en utilisant quelque service web possédant une copie. Par exemple : <https://github.com/foopgp/foopgp-hugowebsite/commits/test/content/french/blog/2023-04-03-lutter-contre-la-polution-informationelle.md>.
+Vous pouvez consulter son contexte historique en dupliquant [ce dépôt](https://github.com/foopgp/foopgp-hugowebsite/) sur votre ordinateur, ou bien en utilisant des [service web comme github](https://github.com/foopgp/foopgp-hugowebsite/commits/test/content/french/blog/2023-04-03-lutter-contre-la-polution-informationelle.md).
 
 Vous pouvez enfin commencer à appliquer la troisième règle en me prêtant une
 excellente réputation pour traiter ce genre de sujet. Cependant il n'existe pas

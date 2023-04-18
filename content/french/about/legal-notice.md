@@ -13,27 +13,15 @@ type: "post"
 
 ## Éditeur
 
-FoOPGP n'est pas encore constitué en association. C'est prévu mais les initiateurs de ce groupe préfèrent attendre qu'il y ait suffisamment de membres afin que cette association soit créée collectivement, avec les membres présents. L'idée est que les statuts correspondent exactement aux besoins des membres impliqués au moment de la création.
+"Friends of OpenPGP" (foOpgp) est [né en France](/documents/JOAFE_PDF_Unitaire_20230015_00088.pdf) sous le statut d'association. Numéro RNA : W052008166.
 
-En attendant FoOPGP est porté provisoirement par l'association Connex.
+[Ses statuts](/documents/20230320%20V2%20STATUTS%20association%20foopgp.pdf) stipulent son objet :
 
-Connex est une association d'informatique qui défend le logiciel libre et dont les statuts prévoient de regrouper et de porter différentes communautés autour des logiciels libres qu'ils utilisent.
+> rassembler toutes personnes physiques ou morales qui utilisent ou développent des solutions technologiques basées sur les normes OpenPGP, selon les valeurs portées par l'association qui sont la transparence, la bienveillance, la coopération et la proximité ; promouvoir et faciliter l'adoption de ces technologies et soutenir leur croissance et leur utilisation.
 
-Les statuts de Connex stipulent que son objet est de favoriser
-* la gestion de communautés autour de logiciels favorisant l'existence et la gestion de ces communautés.
-* La mise en relation de personnes ayant des objectifs communs afin de produire ou d'améliorer une informatique adaptée à leurs besoins.
-* La production d'outils informatiques favorisant les activités de réseau telles que l'économie collaborative.
+Siège social :
 
-La comptabilité de chaque communauté est séparée des autres communautés.
-
-
-> Association CONNEX
-> Chez M Philippe LE DUIGOU – 3, av de Romans 26000 Valence
-
-> RNA : W263007083 préfecture de la Drôme.
-> https://www.connex-asso.net
-
-> Le président 2021 est M Philippe LE DUIGOU
+> 75, impasse Serre des Isnards - 05000 Pelleautier.
 
 ## Vie privée
 

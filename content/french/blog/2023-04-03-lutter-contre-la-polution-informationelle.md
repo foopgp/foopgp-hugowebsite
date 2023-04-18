@@ -20,13 +20,13 @@ type: "post"
 
 Dans nos sociétés, entretenant au travers de notre système économique, le [postulat d'une vision pessimiste de la nature humaine](https://fr.wikipedia.org/wiki/Homo_homini_lupus_est), nous sommes tous encouragés à prélever, produire et vendre toujours plus ; avec pour seules limites, celles de [lois de plus en plus complexes, et toujours imparfaites](https://fr.wikipedia.org/wiki/L%C3%A9viathan_%28Thomas_Hobbes%29).
 
-Ainsi pour nous forcer à acheter toujours plus, tout devient produit ([même nos opinions](https://fr.wikipedia.org/wiki/Scandale_Facebook-Cambridge_Analytica)), et nous sommes submergés de communications cherchant à se faire passer pour de l'information. Cette confusion, autrefois cantonné à la publicité, s'est développé avec le marketing débridé inhérent à notre [société de surconsommation](https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_de_consommation), lui même indissociable de notre système économique et monétaire, basé sur une [croissance infinie](https://fr.wikipedia.org/wiki/Technocratie).
+Ainsi pour nous forcer à acheter toujours plus, tout devient produit ([même nos opinions](https://fr.wikipedia.org/wiki/Scandale_Facebook-Cambridge_Analytica)), et nous sommes submergés de communications cherchant à se faire passer pour de l'information. Cette confusion, autrefois cantonnée à la publicité, s'est développée avec le marketing débridé inhérent à notre [société de surconsommation](https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_de_consommation), lui même indissociable de notre système économique et monétaire, basé sur une [croissance infinie](https://fr.wikipedia.org/wiki/Technocratie).
 
 La résistance à la [pollution informationnelle](https://fr.wikipedia.org/wiki/Pollution_informationnelle) perdait déjà du terrain, lorsque, le 30 Novembre 2022, [OpenAI](https://fr.wikipedia.org/wiki/OpenAI) lança [ChatGPT](https://fr.wikipedia.org/wiki/ChatGPT) son agent conversationnel qui alla marquer les esprits, en générant, à des millions d'utilisateurs, plus de textes que ne pourrait produire une armée d'un million de lycéens.
 
 Très vite l'outil fut utilisé pour produire en quelques minutes des rédactions de plusieurs pages, lesquelles étaient copiées-collées dans des emails, des devoirs d'étudiants, ou des contenus pour nourrir des sites web.
 
-Si une certaine pertinence peut-être au rendez-vous, GPT, Midjourney et [autres intelligences artificielles](https://fr.wikipedia.org/wiki/Art_g%C3%A9n%C3%A9ratif) semblent pouvoir marquer la fin de l'ensemble des originalités et singularités humaines, remplacées par une poignée de "cerveaux" numériques, froids et uniformes, reflétant seulement quelques parties, bridées pour heurter le moins de sensibilités, de l'intelligence collective désignée par celle des ingénieurs créateurs.
+Si une certaine pertinence peut être au rendez-vous, GPT, Midjourney et [autres intelligences artificielles](https://fr.wikipedia.org/wiki/Art_g%C3%A9n%C3%A9ratif) semblent pouvoir marquer la fin de l'ensemble des originalités et singularités humaines, remplacées par une poignée de "cerveaux" numériques, froids et uniformes, reflétant seulement quelques parties, bridées pour heurter le moins de sensibilités, de l'intelligence collective désignée par celle des ingénieurs créateurs.
 
 Demain nous serons peut-être plus nombreux à pouvoir éduquer nos propres intelligences numériques ; petits bouts d'éternité ; au même titre que nos enfants biologiques.
 
@@ -96,7 +96,7 @@ cette recommandation à tous les individus du monde 😋.
 
 Pour ne pas perdre notre singularité humaine, deux voies se dégagent :
 
-* Refuser le progrès. C'est à dire [interdire](https://www.numerama.com/tech/1324324-litalie-reclame-larret-de-chatgpt-au-nom-du-rgpd.html), au travers de [lois toujours plus complexes et imparfaites](https://www.europarl.europa.eu/news/fr/headlines/society/20201015STO89417/regles-sur-l-ia-ce-que-veut-le-parlement-europeen).
+* Refuser le progrès. C'est-à-dire [interdire](https://www.numerama.com/tech/1324324-litalie-reclame-larret-de-chatgpt-au-nom-du-rgpd.html), au travers de [lois toujours plus complexes et imparfaites](https://www.europarl.europa.eu/news/fr/headlines/society/20201015STO89417/regles-sur-l-ia-ce-que-veut-le-parlement-europeen).
 * Poursuivre les travaux de [Philip Zimmermann](https://fr.wikipedia.org/wiki/Philip_Zimmermann) ou [Linus Torvalds](https://fr.wikipedia.org/wiki/Linus_Torvalds) pour pouvoir appliquer l'ensemble des quatre règles énoncées plus haut.
 
 Tandis que certains semblent s'efforcer dans la première voie,
@@ -106,6 +106,6 @@ durable...
 
 ---
 
-*Si cette article vous a plu, n'hésitez pas à rejoindre ou financer
+*Si cet article vous a plu, n'hésitez-pas à rejoindre ou financer
 [foopgp](/about/legal-notice/).*
 

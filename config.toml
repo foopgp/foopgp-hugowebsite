@@ -126,7 +126,7 @@ weight = 2
 
   [[menu.main]]
   parent = "solutions"
-  name = "currency"
+  name = "payment"
   URL = "solutions/theme-currency"
   weight = 6
 

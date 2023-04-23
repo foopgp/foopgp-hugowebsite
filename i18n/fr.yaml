@@ -52,6 +52,9 @@
 - id: partners
   translation: partenaires
 
+- id: payment
+  translation: paiement
+
 - id: solutions
   translation: solutions
 

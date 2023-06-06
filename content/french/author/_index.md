@@ -1,5 +1,5 @@
 ---
-Lastmod: 2023-06-06T22:17:21+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2023-06-06T22:17:21+02:00 # MANAGED by --enableGitInfo
 title: "Amis"
 draft: false
 # page title background image

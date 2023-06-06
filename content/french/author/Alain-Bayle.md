@@ -3,7 +3,7 @@ title: "Alain BAYLE"
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Professionnel indépendant des organisations civiques et sociales"
+description : "Cypherpunk désabusé et cynique, mais déterminé et résolu"
 # Not the used one, but the one for gravatar
 email: "abayle@foopgp.org"
 # portrait

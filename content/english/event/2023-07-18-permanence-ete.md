@@ -1,0 +1,1 @@
+../../french/event/2023-07-18-permanence-ete.md

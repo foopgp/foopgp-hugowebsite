@@ -1129,7 +1129,7 @@ function generateudid2() {
 	if ((firstname !== null) && (lastname !== null) && (ll !== null) && (date !== null)) {
 	    documentElement("generated").className = "";
 	    documentElement("tohash").value   = lastname + "<<" + firstname + date ;
-	    documentElement("udid4").value  = "udid4;" + md5.base64(lastname + "<<" + firstname + date).replace(/[+]/g, "-").replace(/[/]/g, "_") + "e" + ll.replace(/[+]/g, "_");
+	    documentElement("udid4").value  = "udid4=" + md5.base64(lastname + "<<" + firstname + date).replace(/[+]/g, "-").replace(/[/]/g, "_") + "e" + ll.replace(/[+]/g, "_");
 	    documentElement("udid4").scrollIntoView(false);
 	    documentElement("tohash").readOnly = true;
 	    documentElement("udid4").readOnly = true;

@@ -22,7 +22,7 @@ apply_url: "mailto:info@foopgp.org"
 lang: fr
 ---
 
-**Du Mardi 18 juillet au Mardi 8 Août 2023**, l'association **foOpgp** tiendra sa permanence
+**Du mardi 18 juillet au mardi 8 août 2023**, l'association **foOpgp** tiendra sa permanence
 d'été.
 
 L'occasion de
@@ -55,6 +55,8 @@ organisation un début d'inertie :
 
 ---
 
+Pour signaler vos dates de passage (et permettre aux autres de savoir quand vous
+rencontrer ou vous éviter 😄) : -> https://framadate.org/EBcI87uhD4L7Upbv <-
+
 *Petit à petit, l'oiseau fait son nid.*
 
-Mot d'ordre: **SYNERGIES 😊**

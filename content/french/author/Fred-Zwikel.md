@@ -13,4 +13,4 @@ social:
     link : "https://kl0ud.fr/oz/"
 ---
 
-Carré & professionel.
+Carré & professionnel.

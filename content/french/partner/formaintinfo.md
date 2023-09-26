@@ -18,13 +18,13 @@ contact:
     icon : "ti-location-pin" # icon pack : https://themify.me/themify-icons
     link : "https://www.openstreetmap.org/node/7375918682"
 
-  - name : "Tel : 04.92.52.05.90"
+  - name : "Tel : 04.92.43.52.14"
     icon : "ti-user" # icon pack : https://themify.me/themify-icons
-    link : "tel:+33492520590"
+    link : "tel:+33492435214"
 
-  - name : "contact@sun-valley-systems.fr"
+  - name : "info@formaintinfo.com"
     icon : "ti-email" # icon pack : https://themify.me/themify-icons
-    link : "maito:contact@sun-valley-systems.fr"
+    link : "maito:info@formaintinfo.com"
 
 type: "partner"
 ---

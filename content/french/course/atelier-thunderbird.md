@@ -9,7 +9,7 @@ image: "images/courses/thunderbird-256.png"
 category: "Courriel"
 duration: "2 heures"
 audience: "🎖️ tout public, toutes structures."
-fee: "~ 38€"
+fee: "suivant modalités"
 apply_url: "/fr/partner/formaintinfo/"
 ---
 
@@ -35,8 +35,8 @@ apply_url: "/fr/partner/formaintinfo/"
 * À domicile ;
 * Dans les locaux de votre structure.
 
-#### Modalité
+#### Modalités
 
-* Individuel ou Groupe de 5 personnes maximum ;
+* Individuel ou groupe de 5 personnes maximum ;
 * Pour voir les possibilités de prise en charge de la formation, [merci de contacter notre partenaire](/fr/partner/formaintinfo/).
 

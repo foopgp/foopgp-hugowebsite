@@ -2,7 +2,7 @@
 title: "Thunderbird"
 lang: en
 #date: 2019-07-06T15:27:17+06:00
-draft: false
+draft: true
 bg_image: "images/backgrounds/page-title.jpg"
 description : "Learn to sign and encrypt your emails with Mozilla Thunderbird"
 image: "images/courses/thunderbird-256.png"

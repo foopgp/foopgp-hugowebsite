@@ -7,23 +7,36 @@ bg_image: "images/backgrounds/page-title.jpg"
 description : "Apprendre à signer et chiffrer ses courriels avec Mozilla Thunderbird"
 image: "images/courses/thunderbird-256.png"
 category: "Courriel"
-duration: "3 heures"
-audience: "🎖️ pour tout le monde"
-fee: "prix libre"
-apply_url: "/fr/contact"
+duration: "2 heures"
+audience: "🎖️ tout public, toutes structures."
+fee: "suivant modalités"
+apply_url: "/fr/partner/formaintinfo/"
 ---
 
-### À propos de l'atelier
+### À propos de la formation
 
-Apprendre à signer et chiffrer ses emails grâce à [Mozilla Thunderbird](https://www.thunderbird.net).
+---
 
-Découvrir le concept de [toile de confiance](https://fr.wikipedia.org/wiki/Toile_de_confiance).
+#### Objectifs
 
-Apprendre à certifier votre cercle d'amis.
+* Comprendre l’intérêt d’une signature OpenPGP et du chiffrement d’un courriel ;
+* Créer une paire de clés OpenPGP dans Mozilla Thunderbird ;
+* Partager une clé publique sur un serveur ;
+* Paramétrer la gestion par défaut de cette clé ;
+* Rédiger un courriel et le chiffrer (ou pas) en fonction du destinataire.
 
-### De quoi ai-je besoin ?
+#### Prérequis
 
-* **Un ordinateur.**
-* **Un accès Internet.**
-* Éventuellement un token USB [NitroKey](https://www.nitrokey.com) ou [YubiKey](https://www.yubico.com).
+* Un ordinateur avec Mozilla Thunderbird déjà installé et au moins une adresse courriel configurée.
+
+#### Localisation
+
+* Dans les locaux de l’association FoOPGP ;
+* À domicile ;
+* Dans les locaux de votre structure.
+
+#### Modalités
+
+* Individuel ou groupe de 5 personnes maximum ;
+* Pour voir les possibilités de prise en charge de la formation, [merci de contacter notre partenaire](/fr/partner/formaintinfo/).
 

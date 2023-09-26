@@ -18,6 +18,14 @@ contact:
     icon : "ti-location-pin" # icon pack : https://themify.me/themify-icons
     link : "https://www.openstreetmap.org/node/7375918682"
 
+  - name : "Tel : 04.92.52.05.90"
+    icon : "ti-user" # icon pack : https://themify.me/themify-icons
+    link : "tel:+33492520590"
+
+  - name : "contact@sun-valley-systems.fr"
+    icon : "ti-email" # icon pack : https://themify.me/themify-icons
+    link : "maito:contact@sun-valley-systems.fr"
+
 type: "partner"
 ---
 

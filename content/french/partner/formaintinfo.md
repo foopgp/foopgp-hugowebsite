@@ -1,4 +1,5 @@
 ---
+Lastmod: 2023-09-26T21:45:50+02:00 # MANAGED BY update_lastmod.sh
 title: "Formaint'info"
 draft: false
 bg_image: "images/backgrounds/page-title.jpg"

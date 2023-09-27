@@ -31,7 +31,7 @@ Les membres actifs doivent s'acquitter d'une cotisation annuelle, noté *fee*
 
 Le montant et la nature de celle-ci est fixé par le Conseil d'Administration qui le soumet avant chaque exercice à l'approbation de l’Assemblée Générale.
 
-**Pour l’année 2023, le montant de la cotisation est fixé à 1 euro**. Le versement de la cotisation doit être effectué par virement (IBAN: FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association
+**Pour l’année 2023, le montant de la cotisation est fixé à 1 euro**. Le versement de la cotisation doit être effectué de préférence par virement (IBAN: FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.
 
 Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un membre en cours d’année.
 
@@ -120,15 +120,15 @@ Toute personne physique peut posséder des portefeuilles secondaires, éventuell
 Ces portefeuilles sont notés « W ».
 
 
-### Article 8 – Impôt associatif universel (confer article 10bis des Statuts)
+### Article 7 – Impôt associatif universel (confer article 10bis des Statuts)
 
 À chaque exercice,tous les portefeuilles enregistrés dans l’association doivent exécuter, au bénéfice de l’association, un virement égal à un pourcentage de la valeur moyenne du portefeuille durant l’exercice précédent.
 
-Ce pourcentage est appelé impôt associatif et est noté « I » (à ne pas confondre avec le facteur d’inflation « i »). Il est révisable à chaque exercice.
+Ce pourcentage est appelé impôt associatif et est noté « *taxe* ». Il est révisable à chaque exercice.
 
 Tant que cet impôt associatif n’est pas réglé, les membres associés à ces portefeuilles n’ont pas accès aux droits des membres actifs.
 
-### Article 9 – Vote quadratique (confer article 10bis des Statuts)
+### Article 8 – Vote quadratique (confer article 10bis des Statuts)
 
 Durant chaque exercice, les membres actifs pourront exprimer leur voix pour valider, ou non, certaines résolutions prises par le conseil d’administration.
 
@@ -147,7 +147,7 @@ Avec :
 * *sharp*=1/2=0.5 équivaut à un vote quadratique où v est la racine carré de j (v=√j)
 
 
-### Article 10 – Expression et Vote quadratique (confer article 10bis des Statuts)
+### Article 9 – Expression de la volonté des membres (confer article 10bis des Statuts)
 
 À chaque fin d’exercice, les membres actifs pourront exprimer leur voix pour définir, parmi des valeurs proposés par le conseil d’administration certains paramètres de l’exercice suivant :
 
@@ -157,13 +157,12 @@ Avec :
 * l’exposant de pouvoir « *sharp* »
 * la proportion de chaque enveloppe budgétaire (en euros ou en jetons, confer article 2 des statuts)
 
-
-Cette expression pourra utiliser la méthode de Condorcet telle qu’appliquée aujourd’hui par la communauté Debian.
+Cette expression pourra utiliser la méthode de Condorcet telle qu’[appliquée par la communauté Debian](https://www.debian.org/vote/).
 
 ---
 
 Notes, pour l'année 2023 :
 * *growth*=0%, ce qui inhibe l'article 5.
-* *taxe*=0%, ce qui inhibe l'article 8.
-* *sharp*=1, ce qui inhibe l'article 9.
+* *taxe*=0%, ce qui inhibe l'article 7.
+* *sharp*=1, ce qui inhibe l'article 8.
 

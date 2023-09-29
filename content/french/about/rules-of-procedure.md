@@ -59,10 +59,8 @@ Avec :
 
 La définition du facteur d’inflation « i » est réservé exclusivement au conseil d'administration, dans la limite de 5 points au-dessus de l'inflation définie par le ministère de l’économie de la République Française.
 
-*Explication :* en choisissant systématiquement un
-facteur d'inflation légèrement supérieur à celui calculé pour la zone euro (eg: eurostat)
-nous pouvons créer un léger « [Fear Of Missing
-Opportunity](https://fr.wikipedia.org/wiki/Syndrome_FOMO) ».
+*Explication :* en choisissant un facteur d'inflation supérieur à ceux calculés en zone euro (eg: eurostat)
+nous pouvons créer un léger « [Fear Of Missing Opportunity](https://fr.wikipedia.org/wiki/Syndrome_FOMO) ».
 
 Chaque don étant compté à titre individuel, tout nouveau don donne droit à de nouveaux jetons suivant la formule :
 

@@ -139,13 +139,13 @@ pour cette année l'effet du présent article 7.
 
 Durant chaque exercice, les membres actifs pourront exprimer leur voix pour valider, ou non, certaines résolutions prises par le conseil d’administration.
 
-Le nombre de voix de chaque membre actif dépend de la quantité de jetons de pouvoir en leur possession, suivant la formule :
+Le nombre de voix de chaque membre actif dépend de la quantité moyenne de jetons de pouvoir en leur possession, suivant la formule :
 
 **v = j^*sharp* = jˢʰᵃʳᵖ**
 
 Avec :
 * v : le nombre de voix
-* j : la quantité de jetons enregistrés en leur possession au moment du vote
+* j : la quantité moyenne de jetons enregistrés en leur possession depuis le début de l'exercice
 * *sharp* : l’exposant de pouvoir, compris entre 0 et 1 : 0 ≤ p ≤ 1
 
 *Explication:*
@@ -169,6 +169,7 @@ pour cette année l'effet du présent article 8.
 
 Cette expression pourra utiliser la méthode de Condorcet telle qu’[appliquée par la communauté Debian](https://www.debian.org/vote/).
 
+
 ### Article 10 - Autres valeurs acceptées et taux de changes
 
 L'euro (€) est la seule unité de mesure reconnue à l'extérieur de l'association.
@@ -179,10 +180,35 @@ que cela soit pour régler la cotisation (cf. article 3), ou en tant que dons (c
 Pour chaque exercice, l'association tiendra donc une liste de ces valeurs avec,
 pour chacune, un taux d'équivalence en euros.
 
-La définition de cette liste et de ses taux d'équivalence est reservée exclusivement au conseil d'administration.
+La définition de cette liste et de ses taux d'équivalence est réservée exclusivement au conseil d'administration.
 
 **Pour l’année 2023, l'association accepte la june (Ğ1), avec un taux
 d'équivalence de 1000 Ğ1 pour 1 €.**
+
+
+### Article 11 - Support physique pour jetons
+
+Tout membre pourra émettre des supports physiques liés à des jetons en sa
+possession, c'est-à-dire sur l'un de ses portefeuilles.
+
+Tout membre pourra détruire n'importe lequel de ces supports, et récupérer à ce
+moment là, pour lui, les jetons qui y sont liés ; c'est-à-dire pour l'un de ses portefeuilles.
+
+Le membre émetteur de support doit s'assurer que les processus de
+fabrication et de destruction soient suffisamment sécurisés pour éviter l'occurrence
+de possibles litiges. Il pourra sinon en être tenu responsable.
+
+
+### Article 12 - Gestion des litiges et incohérences.
+
+Si, lors d'échange de jetons, des litiges ou incohérence apparaissent, tout membre pourra saisir le conseil d'administration.
+
+Ce dernier devra a minima répondre dans les 15 jours.
+
+Au maximum le conseil d'administration pourra prononcer des
+sanctions allant jusqu'à la radiation pour motif grave (après enquête et
+discussions, confer article 8 des
+statuts).
 
 ---
 

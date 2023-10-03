@@ -73,14 +73,14 @@ Sont membres actifs ceux qui, à chaque exercice, ont versé la somme fixée par
 
 La qualité de membre se perd par :
 
-* La démission;
-* Le décès;
+* La démission ;
+* La radiation prononcée par le conseil d'administration pour motif grave, l'intéressé ayant été
+invité par tout moyen à fournir des explications devant le bureau et/ou par écrit.
 
 La qualité de membre actif se perd par :
 
-* La radiation prononcée par le conseil d'administration pour motif grave, l'intéressé ayant été
-invité par tout moyen à fournir des explications devant le bureau et/ou par écrit ;
-* Le non-payement de la somme fixée par le règlement intérieur à titre de cotisation.
+* Le décès ;
+* Le non-payement des sommes fixées par le règlement intérieur, telle la cotisation.
 
 ### Article 9 - AFFILIATION
 
@@ -126,7 +126,7 @@ Le trésorier rend compte de sa gestion et soumet les comptes de l'année civile
 l'assemblée.
 
 L’assemblée générale fixe la valeur des paramètres de fonctionnement définis par le règlement intérieur.
-Tel le montant cotisation à verser par les membres.
+Tel le montant de la cotisation à verser par les membres.
 
 Ne peuvent être abordés que les points inscrits à l'ordre du jour.
 

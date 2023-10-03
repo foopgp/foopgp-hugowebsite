@@ -28,7 +28,7 @@ L'association foopgp est composée de membres : personnes physiques, et de parte
 
 ### Article 2 - Modification du règlement intérieur
 
-Le règlement intérieur de l’association foopgp est établi parle conseil d’administration conformément à l'article 15 des statuts.
+Le règlement intérieur de l’association foopgp est établi par le conseil d’administration conformément à l'article 15 des statuts.
 
 Il peut être modifié par le conseil d’administration sur proposition d'un de ses membres.
 
@@ -43,12 +43,12 @@ Le montant et les natures de celle-ci sont fixés par le Conseil d'Administratio
 
 Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un membre en cours d’année.
 
-**Pour l’année 2023, le montant de la cotisation est fixé à 1 euro.** Le versement de la cotisation doit être effectué de préférence par virement (IBAN: FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.
+**Pour l’année 2023, le montant de la cotisation est fixé à 1 euro.** Le versement de la cotisation doit être effectué de préférence par virement (IBAN : FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.
 
 
 ### Article 4 - Modalités relatives aux jetons de pouvoir (confer article 10bis des Statuts)
 
-Tous les dons à l'association reçus à titre individuel (personne physique) donnent droit à des jetons de pouvoir.
+Tous les dons à l'association reçus à titre individuel (personne physique) donnent droit à des jetons de pouvoir,
 suivant la formule :
 
 **j = i×ln(d+1)/ln(2)**
@@ -59,7 +59,7 @@ Avec :
 * i : le facteur d'inflation défini par le Conseil d'administration
 * ln() : la fonction logarithme naturel (aussi appelé logarithme népérien)
 
-La définition du facteur d’inflation « i » est réservé exclusivement au conseil d'administration, dans la limite de 5 points au-dessus de l'inflation définie par le ministère de l’économie de la République Française.
+La définition du facteur d’inflation « i » est réservée au conseil d'administration, dans la limite de 5 points au-dessus de l'inflation définie par le ministère de l’économie de la République Française.
 
 *Explication :* en choisissant un facteur d'inflation supérieur à ceux calculés en zone euro (eg: eurostat)
 nous pouvons créer un léger « [Fear Of Missing Opportunity](https://fr.wikipedia.org/wiki/Syndrome_FOMO) ».
@@ -100,7 +100,7 @@ Ainsi, dans le cas où le facteur d'inflation est figé à 1 :
 
 À chaque exercice, de nouveaux jetons sont émis à quantité égale pour chaque personne physique membre de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
 
-Ainsi, périodiquement, chaque membre actif de l’association, c’est à dire à jour de sa cotisation et de son impôt associatif (cf. article 6) recevra, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
+Ainsi, périodiquement, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de son impôt associatif (cf. articles 3 et 7) recevra, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
 
 **jₛ= *growth* × Mₜ ∕ N**
 
@@ -119,14 +119,14 @@ Tout jeton doit être associé à un et un seul portefeuille.
 
 Toute personne physique membre de l’association doit posséder au moins un portefeuille individuel.
 
-Toute personne physique peut posséder des portefeuilles secondaires, éventuellement partageables, en proportion égal, avec d’autres personnes physiques.
+Toute personne physique peut posséder des portefeuilles secondaires, éventuellement partageables, en proportion égale, avec d’autres personnes physiques.
 
 Ces portefeuilles sont notés « W ».
 
 
 ### Article 7 – Impôt associatif universel (confer article 10bis des Statuts)
 
-À chaque exercice,tous les portefeuilles enregistrés dans l’association doivent exécuter, au bénéfice de l’association, un virement égal à un pourcentage de la valeur moyenne du portefeuille durant l’exercice précédent.
+À chaque exercice, tous les portefeuilles enregistrés dans l’association doivent exécuter, au bénéfice de l’association, un virement égal à un pourcentage de la valeur moyenne du portefeuille durant l’exercice précédent.
 
 Ce pourcentage est appelé impôt associatif et est noté « *taxe* ». Il est révisable à chaque exercice.
 
@@ -148,7 +148,7 @@ Avec :
 * j : la quantité de jetons enregistrés en leur possession au moment du vote
 * *sharp* : l’exposant de pouvoir, compris entre 0 et 1 : 0 ≤ p ≤ 1
 
-*Explication:*
+*Explication :*
 * *sharp*=0 équivaut à « *Une personne, une voix* »
 * *sharp*=1 équivaut à « *Un jeton, une voix* »
 * *sharp*=1/2=0.5 équivaut à un vote quadratique où v est la racine carré de j (v=√j)

@@ -125,8 +125,8 @@ de l'association.
 Le trésorier rend compte de sa gestion et soumet les comptes de l'année civile échue à l'approbation de
 l'assemblée.
 
-L’assemblée générale fixe le montant des cotisations annuelles et du droit d’entrée à verser par les
-différentes catégories de membres.
+L’assemblée générale fixe la valeur des paramètres de fonctionnement définis par le règlement intérieur.
+Tel le montant cotisation à verser par les membres.
 
 Ne peuvent être abordés que les points inscrits à l'ordre du jour.
 
@@ -141,7 +141,7 @@ Les décisions des assemblées générales s’imposent à tous les membres, y c
 
 Si besoin est, ou sur la demande de la moitié plus un des membres inscrits, le président peut convoquer
 une assemblée générale extraordinaire, suivant les modalités prévues aux présents statuts et uniquement
-pour modification des statuts ou la dissolution ou pour des actes portant sur des immeubles.
+pour modification des statuts ou règlement intérieur, ou la dissolution ou pour des actes portant sur des immeubles.
 
 Les modalités de convocation sont les mêmes que pour l’assemblée générale ordinaire.
 
@@ -159,14 +159,14 @@ membres ainsi élus prennent fin à l'expiration le mandat des membres remplacé
 
 Le conseil d'administration se réunit sur convocation du président.
 
-Les décisions sont prises à la majorité des voix; en cas de partage, la voix du président est prépondérante.
+Les décisions sont prises à la majorité des voix; en cas de partage, les voix du président sont prépondérantes.
 
 Le trésorier, avec le président en signature conjointe, sont les seules personnes habilitées à engager
 l'association sur ses deniers (signature d'un bail, ouverture de compte bancaire et opérations bancaires).
 
 ### Article 14 – INDEMNITÉS
 
-Toutes les fonctions, y compris celles des membres du conseil d’administration, sont gratuites et bénévoles.
+Toutes les fonctions de direction, y compris celles des membres du conseil d’administration, sont bénévoles.
 
 Seuls les frais occasionnés par l’accomplissement de leur mandat sont remboursés sur justificatifs. Le
 rapport financier présenté à l’assemblée générale ordinaire présente, par bénéficiaire, les remboursements

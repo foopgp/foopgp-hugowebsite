@@ -17,23 +17,25 @@ type: "post"
 
 Ce règlement intérieur a pour objectif de préciser les statuts de l'association foopgp, dont l'objet est de rassembler toutes les personnes physiques ou morales qui utilisent ou développent des solutions technologiques basées sur les normes OpenPGP.
 
-Il sera remis à l'ensemble des membres ainsi qu'à chaque nouvel adhérent.
+Le règlement intérieur en vigueur devrait être remis à chaque nouvel adhérent,
+et il doit être consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-of-procedure/ .
 
-Il est également consultable sur le site Internet de l’association https://foopgp.org/
 
 ### Article 1er – Composition
 
 L'association foopgp est composée de membres : personnes physiques, et de partenaires : personnes morales.
 
+
 ### Article 2 – Cotisation
 
-Les membres actifs doivent s'acquitter d'une cotisation annuelle, noté *fee*
+Pour chaque exercice, les membres actifs doivent s'acquitter d'une cotisation, notée *fee*.
 
-Le montant et la nature de celle-ci est fixé par le Conseil d'Administration qui le soumet avant chaque exercice à l'approbation de l’Assemblée Générale.
-
-**Pour l’année 2023, le montant de la cotisation est fixé à 1 euro**. Le versement de la cotisation doit être effectué de préférence par virement (IBAN: FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.
+Le montant et les natures de celle-ci sont fixés par le Conseil d'Administration qui le soumet avant chaque exercice à l'approbation de l’Assemblée Générale.
 
 Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un membre en cours d’année.
+
+**Pour l’année 2023, le montant de la cotisation est fixé à 1 euro.** Le versement de la cotisation doit être effectué de préférence par virement (IBAN: FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.
+
 
 ### Article 3 - Modification du règlement intérieur
 
@@ -41,7 +43,7 @@ Le règlement intérieur de l’association foopgp est établi parle conseil d�
 
 Il peut être modifié par le conseil d’administration sur proposition d'un de ses membres.
 
-Le règlement intérieur en vigueur doit être accessible sur le site Web de l'association.
+Toute modification doit se faire approuver par l'assemblée générale.
 
 
 ### Article 4 - Modalités relatives aux jetons de pouvoir (confer article 10bis des Statuts)
@@ -91,6 +93,8 @@ Ainsi, dans le cas où le facteur d'inflation est figé à 1 :
 | 1023€ | 10 |
 | ... | ... |
 
+**Pour l’année 2023, le facteur d'inflation fixé à 1 euro.**
+
 
 ### Article 5 – Émission universelle de nouveaux jetons (confer article 10bis des Statuts)
 
@@ -106,6 +110,8 @@ Avec :
 * Mₜ : la masse totale de l’ensemble des jetons (avant cette émission universelle)
 * N : Le nombre de membres actifs sur la période
 
+**Pour l’année 2023, le paramètre *growth* est fixé à 0%.** Ce qui inhibe
+pour cette année l'effet du présent article 5.
 
 ### Article 6 – Portefeuilles
 
@@ -126,6 +132,9 @@ Ce pourcentage est appelé impôt associatif et est noté « *taxe* ». Il est r
 
 Tant que cet impôt associatif n’est pas réglé, les membres associés à ces portefeuilles n’ont pas accès aux droits des membres actifs.
 
+**Pour l’année 2023, le paramètre *taxe* est fixé à 0%.** Ce qui inhibe
+pour cette année l'effet du présent article 7.
+
 ### Article 8 – Vote quadratique (confer article 10bis des Statuts)
 
 Durant chaque exercice, les membres actifs pourront exprimer leur voix pour valider, ou non, certaines résolutions prises par le conseil d’administration.
@@ -144,8 +153,11 @@ Avec :
 * *sharp*=1 équivaut à « *Un jeton, une voix* »
 * *sharp*=1/2=0.5 équivaut à un vote quadratique où v est la racine carré de j (v=√j)
 
+**Pour l’année 2023, le paramètre *sharp* est fixé à 1.** Ce qui inhibe
+pour cette année l'effet du présent article 8.
 
-### Article 9 – Expression de la volonté des membres (confer article 10bis des Statuts)
+
+### Article 9 – Expression de la volonté des membres (confer article 10bis et article 11 des Statuts)
 
 À chaque fin d’exercice, les membres actifs pourront exprimer leur voix pour définir, parmi des valeurs proposés par le conseil d’administration certains paramètres de l’exercice suivant :
 
@@ -158,9 +170,4 @@ Avec :
 Cette expression pourra utiliser la méthode de Condorcet telle qu’[appliquée par la communauté Debian](https://www.debian.org/vote/).
 
 ---
-
-Notes, pour l'année 2023 :
-* *growth*=0%, ce qui inhibe l'article 5.
-* *taxe*=0%, ce qui inhibe l'article 7.
-* *sharp*=1, ce qui inhibe l'article 8.
 

@@ -98,9 +98,9 @@ Ainsi, dans le cas où le facteur d'inflation est figé à 1 :
 
 ### Article 5 – Émission universelle de nouveaux jetons (confer article 10bis des Statuts)
 
-À chaque exercice, de nouveaux jetons sont émis à quantité égale pour chaque personne physique membre de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
+À chaque exercice, de nouveaux jetons sont émis à quantité égale pour chaque personne physique au sein de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
 
-Ainsi, périodiquement, chaque membre actif de l’association, c’est à dire à jour de sa cotisation et de son impôt associatif (cf. article 6) recevra, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
+Ainsi, périodiquement, chaque membre actif de l’association, c’est à dire à jour de sa cotisation (cf. article 3) et de son impôt associatif (cf. article 7) recevra, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
 
 **jₛ= *growth* × Mₜ ∕ N**
 
@@ -168,6 +168,21 @@ pour cette année l'effet du présent article 8.
 * la proportion de chaque enveloppe budgétaire (en euros ou en jetons, confer article 2 des statuts)
 
 Cette expression pourra utiliser la méthode de Condorcet telle qu’[appliquée par la communauté Debian](https://www.debian.org/vote/).
+
+### Article 10 - Autres valeurs acceptées et taux de changes
+
+L'euro (€) est la seule unité de mesure reconnue à l'extérieur de l'association.
+
+Cependant l'association pourra accepter de recevoir d'autres valeurs que l'euro (€),
+que cela soit pour régler la cotisation (cf. article 3), ou en tant que dons (cf. article 4).
+
+Pour chaque exercice, l'association tiendra donc une liste de ces valeurs avec,
+pour chacune, un taux d'équivalence en euros.
+
+La définition de cette liste et de ses taux d'équivalence est reservée exclusivement au conseil d'administration.
+
+**Pour l’année 2023, l'association accepte la june (Ğ1), avec un taux
+d'équivalence de 1000 Ğ1 pour 1 €.**
 
 ---
 

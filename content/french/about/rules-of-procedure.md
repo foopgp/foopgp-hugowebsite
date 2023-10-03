@@ -26,7 +26,16 @@ et il doit être consultable sur le site Web de l'association : https://foopgp.o
 L'association foopgp est composée de membres : personnes physiques, et de partenaires : personnes morales.
 
 
-### Article 2 – Cotisation
+### Article 2 - Modification du règlement intérieur
+
+Le règlement intérieur de l’association foopgp est établi parle conseil d’administration conformément à l'article 15 des statuts.
+
+Il peut être modifié par le conseil d’administration sur proposition d'un de ses membres.
+
+Toute modification doit se faire approuver par l'assemblée générale.
+
+
+### Article 3 – Cotisation
 
 Pour chaque exercice, les membres actifs doivent s'acquitter d'une cotisation, notée *fee*.
 
@@ -35,15 +44,6 @@ Le montant et les natures de celle-ci sont fixés par le Conseil d'Administratio
 Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un membre en cours d’année.
 
 **Pour l’année 2023, le montant de la cotisation est fixé à 1 euro.** Le versement de la cotisation doit être effectué de préférence par virement (IBAN: FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.
-
-
-### Article 3 - Modification du règlement intérieur
-
-Le règlement intérieur de l’association foopgp est établi parle conseil d’administration conformément à l'article 15 des statuts.
-
-Il peut être modifié par le conseil d’administration sur proposition d'un de ses membres.
-
-Toute modification doit se faire approuver par l'assemblée générale.
 
 
 ### Article 4 - Modalités relatives aux jetons de pouvoir (confer article 10bis des Statuts)
@@ -159,12 +159,12 @@ pour cette année l'effet du présent article 8.
 
 ### Article 9 – Expression de la volonté des membres (confer article 10bis et article 11 des Statuts)
 
-À chaque fin d’exercice, les membres actifs pourront exprimer leur voix pour définir, parmi des valeurs proposés par le conseil d’administration certains paramètres de l’exercice suivant :
+À chaque fin d’exercice, les membres actifs pourront exprimer leurs voix pour définir, parmi des valeurs proposées par le conseil d’administration certains paramètres de l’exercice suivant :
 
-* le montant de la cotisation « *fee* »
-* le coefficient de croissance « *growth* »
-* l’impôt associatif « *taxe* »
-* l’exposant de pouvoir « *sharp* »
+* le montant de la cotisation « *fee* » (confer article 3 du présent règlement intérieur)
+* le coefficient de croissance « *growth* » (confer article 5 du présent règlement intérieur)
+* l’impôt associatif « *taxe* » (confer article 7 du présent règlement intérieur)
+* l’exposant de pouvoir « *sharp* » (confer article 8 du présent règlement intérieur)
 * la proportion de chaque enveloppe budgétaire (en euros ou en jetons, confer article 2 des statuts)
 
 Cette expression pourra utiliser la méthode de Condorcet telle qu’[appliquée par la communauté Debian](https://www.debian.org/vote/).

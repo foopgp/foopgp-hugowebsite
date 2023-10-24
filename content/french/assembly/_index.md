@@ -1,4 +1,5 @@
 ---
+Lastmod: 2023-10-24T02:34:26+00:00 # MANAGED BY update_lastmod.sh
 title: "Vie interne de l'association"
 draft: false
 # page title background image

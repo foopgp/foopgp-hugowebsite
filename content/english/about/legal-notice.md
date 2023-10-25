@@ -15,7 +15,7 @@ type: "post"
 
 "Friends of OpenPGP" (foOpgp) is [born in France](/documents/JOAFE_PDF_Unitaire_20230015_00088.pdf) under the status of association. RNA Number: W052008166.
 
-[Its statutes](/documents/20230320%20V2%20STATUTS%20association%20foopgp.pdf) stipulate its object:
+[Its statutes](/fr/about/status/) stipulate its object:
 
 > to bring together all individuals or legal entities that use or develop technological solutions based on OpenPGP standards, according to the values carried by the association which are transparency, benevolence, cooperation and proximity; to promote and facilitate the adoption of these technologies and to support their growth and use.
 

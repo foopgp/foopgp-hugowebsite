@@ -19,8 +19,8 @@ Réunie sur convocation envoyé par courriel le 4 octobre 2023 à 19h35.
 
 ### Ordre du jour
 
-1. 1: Approbation modifications des statuts.
-2. 2: (si 1 est approuvé) Approbation nouveau règlement intérieur.
+1. 1: Approbation modifications des [statuts](../status/).
+2. 2: (si 1 est approuvé) Approbation nouveau [règlement intérieur](../rules-of-procedure/).
 3. 3: (Si 1 & 2 sont approuvés) Distribution rétroactive des jetons de pouvoir.
 4. 4: Intégration de Laurent CEARD au conseil d'administration.
 
@@ -55,19 +55,19 @@ Président et secrétaire de séance : Jean-Jacques BRUCKER
 
 *Note : un membre présent a du s'absenter par obligation externe au moment des votes*
 
-### 1ère résolution : modification des statuts
+### 1ère résolution : modification des [statuts](../status/)
 
-Les nouveaux statuts sont adoptés à 7 voix contre 0 ; 1 abstention.
+Les nouveaux [statuts](../status/) sont adoptés à 7 voix contre 0 ; 1 abstention.
 
-### 2ème résolution : règlement intérieur
+### 2ème résolution : [règlement intérieur](../rules-of-procedure/)
 
-Le règlement intérieur (nouveau) est adopté à 7 voix contre 0 ; 1 abstention.
+Le [règlement intérieur](../rules-of-procedure/) (nouveau) est adopté à 7 voix contre 0 ; 1 abstention.
 
 ### 3ème résolution : distribution des jetons de pouvoir
 
 La distribution rétroactive des jetons de pouvoir est adoptée à 7 voix contre 0 ; 1 abstention.
 
-Ainsi, suivant les articles 3, 4 et 8 du règlement intérieur :
+Ainsi, suivant les articles 3, 4 et 8 du [règlement intérieur](../rules-of-procedure/) :
 
 * Les (8) membres qui ont réglé 16€ se voient donc offrir 4 jetons de pouvoirs, qui leur donneront 4 voix pour les prochains votes.
 * Les (3) membres qui ont réglé 512€ se voient donc offrir 9 jetons de pouvoirs, qui leur donneront 9 voix pour les prochains votes.
@@ -76,9 +76,9 @@ Ainsi, suivant les articles 3, 4 et 8 du règlement intérieur :
 
 L'intégration de Laurent CEARD au conseil d'administration est adopté à 43 voix contre 0 ; 4 abstentions.
 
-### Déliberations
+### Discussions
 
-Les déliberations à l'issue du vote ont portés sur :
+Les discussions à l'issue du vote ont portés sur :
 * les possibles evolutions futures du règlement interieur
 * la possibilité de formations rémunérées au bénéfice de l'association
 * la necessité d'améliorer notre communication et les discours et moyens à mettre en oeuvre (brochure, ...)

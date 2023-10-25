@@ -1,10 +1,10 @@
 ---
-title: "Friends Of OpenPGP (foopgp)"
+title: "Réglement intérieur foopgp"
 lang: fr
 ###date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-description : "Réglement interieur de l'association"
+description : "Réglement intérieur de l'association foopgp"
 image: "images/logos/logo-black-pgp.png"
 categories: ["about"]
 ###tags: [""]
@@ -15,7 +15,7 @@ type: "post"
 
 ---
 
-Ce règlement intérieur a pour objectif de préciser les statuts de l'association foopgp, dont l'objet est de rassembler toutes les personnes physiques ou morales qui utilisent ou développent des solutions technologiques basées sur les normes OpenPGP.
+Ce règlement intérieur a pour objectif de préciser [les statuts](../status/) de l'association foopgp, dont l'objet est de rassembler toutes les personnes physiques ou morales qui utilisent ou développent des solutions technologiques basées sur les normes OpenPGP.
 
 Le règlement intérieur en vigueur devrait être remis à chaque nouvel adhérent,
 et il doit être consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-of-procedure/ .
@@ -28,7 +28,7 @@ L'association foopgp est composée de membres : personnes physiques, et de parte
 
 ### Article 2 - Modification du règlement intérieur
 
-Le règlement intérieur de l’association foopgp est établi par le conseil d’administration conformément à l'article 15 des statuts.
+Le règlement intérieur de l’association foopgp est établi par le conseil d’administration conformément à l'article 15 des [statuts](../status/).
 
 Il peut être modifié par le conseil d’administration sur proposition d'un de ses membres.
 
@@ -165,9 +165,10 @@ pour cette année l'effet du présent article 8.
 * le coefficient de croissance « *growth* » (confer article 5 du présent règlement intérieur)
 * l’impôt associatif « *taxe* » (confer article 7 du présent règlement intérieur)
 * l’exposant de pouvoir « *sharp* » (confer article 8 du présent règlement intérieur)
-* la proportion de chaque enveloppe budgétaire (en euros ou en jetons, confer article 2 des statuts)
+* la proportion de chaque enveloppe budgétaire (en euros ou en jetons, confer article 2 des [statuts](../status/))
 
 Cette expression pourra utiliser la méthode de Condorcet telle qu’[appliquée par la communauté Debian](https://www.debian.org/vote/).
 
 ---
 
+*Adopté par [l'assemblée générale extraordinaire du dimanche 22 octobre 2023 à Pelleautier](/fr/assembly/2023-10-22-report-age/).*

@@ -19,8 +19,8 @@ Réunie sur convocation envoyé par courriel le 4 octobre 2023 à 19h35.
 
 ### Ordre du jour
 
-1. 1: Approbation modifications des [statuts](../status/).
-2. 2: (si 1 est approuvé) Approbation nouveau [règlement intérieur](../rules-of-procedure/).
+1. 1: Approbation modifications des [statuts](../../about/status/).
+2. 2: (si 1 est approuvé) Approbation nouveau [règlement intérieur](../../about/rules-of-procedures/).
 3. 3: (Si 1 & 2 sont approuvés) Distribution rétroactive des jetons de pouvoir.
 4. 4: Intégration de Laurent CEARD au conseil d'administration.
 
@@ -55,19 +55,19 @@ Président et secrétaire de séance : Jean-Jacques BRUCKER
 
 *Note : un membre présent a du s'absenter par obligation externe au moment des votes*
 
-### 1ère résolution : modification des [statuts](../status/)
+### 1ère résolution : modification des [statuts](../../about/status/)
 
-Les nouveaux [statuts](../status/) sont adoptés à 7 voix contre 0 ; 1 abstention.
+Les nouveaux [statuts](../../about/status/) sont adoptés à 7 voix contre 0 ; 1 abstention.
 
-### 2ème résolution : [règlement intérieur](../rules-of-procedure/)
+### 2ème résolution : [règlement intérieur](../../about/rules-of-procedures/)
 
-Le [règlement intérieur](../rules-of-procedure/) (nouveau) est adopté à 7 voix contre 0 ; 1 abstention.
+Le [règlement intérieur](../../about/rules-of-procedures/) (nouveau) est adopté à 7 voix contre 0 ; 1 abstention.
 
 ### 3ème résolution : distribution des jetons de pouvoir
 
 La distribution rétroactive des jetons de pouvoir est adoptée à 7 voix contre 0 ; 1 abstention.
 
-Ainsi, suivant les articles 3, 4 et 8 du [règlement intérieur](../rules-of-procedure/) :
+Ainsi, suivant les articles 3, 4 et 8 du [règlement intérieur](../../about/rules-of-procedures/) :
 
 * Les (8) membres qui ont réglé 16€ se voient donc offrir 4 jetons de pouvoirs, qui leur donneront 4 voix pour les prochains votes.
 * Les (3) membres qui ont réglé 512€ se voient donc offrir 9 jetons de pouvoirs, qui leur donneront 9 voix pour les prochains votes.

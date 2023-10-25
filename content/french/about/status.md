@@ -67,7 +67,7 @@ chacune de ses réunions, sur les demandes d'admission présentées.
 
 ### Article 7 - MEMBRES – COTISATIONS
 
-Sont membres actifs ceux qui, à chaque exercice, ont versé la somme fixée par [le règlement intérieur](../rules-of-procedure/) à titre de cotisation.
+Sont membres actifs ceux qui, à chaque exercice, ont versé la somme fixée par [le règlement intérieur](../rules-of-procedures/) à titre de cotisation.
 
 ### Article 8 - RADIATIONS
 
@@ -80,7 +80,7 @@ invité par tout moyen à fournir des explications devant le bureau et/ou par é
 La qualité de membre actif se perd par :
 
 * Le décès ;
-* Le non-payement des sommes fixées par [le règlement intérieur](../rules-of-procedure/), telle la cotisation.
+* Le non-payement des sommes fixées par [le règlement intérieur](../rules-of-procedures/), telle la cotisation.
 
 ### Article 9 - AFFILIATION
 
@@ -105,7 +105,7 @@ les financements participatifs.
 
 Ce mécanisme vise à récompenser les donateurs, tout en offrant une source de financement supplémentaire à l'association.
 
-Le conseil d'administration détermine au sein d'un [règlement intérieur](../rules-of-procedure/) *ad hoc* les modalités de l'offre aux membres des jetons de pouvoir, leurs caractéristiques (pseudonymat, incompressibilité, fongibilité, (dé)matérialisation, (dé)centralisation) et les quantités logarithmiques de jetons de pouvoir en fonction des dons.
+Le conseil d'administration détermine au sein d'un [règlement intérieur](../rules-of-procedures/) *ad hoc* les modalités de l'offre aux membres des jetons de pouvoir, leurs caractéristiques (pseudonymat, incompressibilité, fongibilité, (dé)matérialisation, (dé)centralisation) et les quantités logarithmiques de jetons de pouvoir en fonction des dons.
 
 Le conseil d'administration détermine aussi, le cas échéant, le coefficient de croissance du nombre de jetons de pouvoir au sein de l'association, ainsi que le montant de l'impôt associatif dû en raison du nombre de jetons de pouvoir détenus, et avec les modalités de lissage polynomial des jetons de pouvoir pour pallier aux inégalités de fait.
 
@@ -125,7 +125,7 @@ de l'association.
 Le trésorier rend compte de sa gestion et soumet les comptes de l'année civile échue à l'approbation de
 l'assemblée.
 
-L’assemblée générale fixe la valeur des paramètres de fonctionnement définis par [le règlement intérieur](../rules-of-procedure/).
+L’assemblée générale fixe la valeur des paramètres de fonctionnement définis par [le règlement intérieur](../rules-of-procedures/).
 Tel le montant de la cotisation à verser par les membres.
 
 Ne peuvent être abordés que les points inscrits à l'ordre du jour.
@@ -174,7 +174,7 @@ de frais de mission, de déplacement ou de représentation.
 
 ### Article 15 - RÈGLEMENT INTÉRIEUR
 
-Un [règlement intérieur](../rules-of-procedure/) est établi par le conseil d'administration, toute modification doit se faire approuver par
+Un [règlement intérieur](../rules-of-procedures/) est établi par le conseil d'administration, toute modification doit se faire approuver par
 l'assemblée générale.
 
 Ce règlement éventuel est destiné à fixer les divers points non prévus par les présents statuts, notamment

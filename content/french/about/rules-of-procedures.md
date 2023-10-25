@@ -18,7 +18,7 @@ type: "post"
 Ce règlement intérieur a pour objectif de préciser [les statuts](../status/) de l'association foopgp, dont l'objet est de rassembler toutes les personnes physiques ou morales qui utilisent ou développent des solutions technologiques basées sur les normes OpenPGP.
 
 Le règlement intérieur en vigueur devrait être remis à chaque nouvel adhérent,
-et il doit être consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-of-procedure/ .
+et il doit être consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-of-procedures/ .
 
 
 ### Article 1er – Composition

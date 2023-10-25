@@ -15,7 +15,7 @@ type: "post"
 
 Au siège social de l'association : 75 impasse serre des isnards, 05000 Pelleautier.
 
-Réunie sur convocation envoyé par courriel le 4 octobre 2023 à 19h35.
+Réunie sur convocation envoyée par courriel le 4 octobre 2023 à 19h35.
 
 ### Ordre du jour
 

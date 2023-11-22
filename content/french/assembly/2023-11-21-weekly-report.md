@@ -1,13 +1,13 @@
 ---
 title: "Rapport Hebdomadaire S47 2023"
 lang: fr
-###date: 2019-07-06T15:27:17+06:00
+####date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "CR visio du Mardi 21 novembre 2023"
 image: "images/logos/logo-black-pgp.png"
-###categories: [""]
-###tags: [""]
+####categories: [""]
+####tags: [""]
 type: "post"
 ---
 
@@ -15,12 +15,12 @@ type: "post"
 Zwikel.*
 
 
-## Chiffres de l'association :
+### Chiffres de l'association :
 
 * Membres actifs : 15 (+2)
 * Nombre total de jetons : 74,4093909361377 (+10,32192809488736).
 
-## Revue de presse :
+### Revue de presse :
 
 * [RSA : E. MACRON DÉCLARE LA GUERRE AUX PAUVRES - YouTube](https://www.youtube.com/watch?v=ZQ8hNH3OOrE)
 * [Google Chrome will limit ad blockers starting June 2024 | Ars Technica](https://arstechnica.com/gadgets/2023/11/google-chrome-will-limit-ad-blockers-starting-june-2024/)
@@ -28,9 +28,9 @@ Zwikel.*
 * [There's no money in free software](https://werd.io/2023/theres-no-money-in-free-software)
 
 
-## Activité récente
+### Activité récente
 
-### Retour du Capitole du libre à Toulouse
+#### Retour du Capitole du libre à Toulouse
 
 Jean-Jacques :
 
@@ -81,13 +81,13 @@ François:
 
 Étaient également présents à cet évènement : Frédéric Renault et Manutopik.
 
-## Actions à mener
+### Actions à mener
 
 * Réfléchir sur le contenu d'une éventuelle plaquette de présentation de l'association
 * Faire et envoyer notre première facture avec dolibarr ! (F Renault & F Zwikel)
 * Inscrire l'association à un Lighting Talk pour le [FOSDEM 2024](https://fosdem.org/2024/news/2023-11-20-call-for-presentations/) (JJ Brucker)
 
-## Agenda
+### Agenda
 
 * 6 décembre 2023 : [OSXP_Paris](https://www.opensource-experience.com/)
 * 3 février 2024 : [FOSDEM 2024](https://fosdem.org/2024/)

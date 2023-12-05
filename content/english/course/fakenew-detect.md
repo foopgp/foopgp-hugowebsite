@@ -1,0 +1,1 @@
+../../french/course/fakenew-detect.md

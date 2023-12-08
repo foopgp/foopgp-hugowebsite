@@ -3,7 +3,7 @@ title: "Jean-Jacques Brucker"
 # page title background image"
 bg_image: "images/friends/banner_jjb.jpg"
 # meta description
-description : "Rather inconspicuous software engineer"
+description : "Rather inconspicuous software sorcerer"
 # Not the used one, but the one for gravatar
 email: ""
 # portrait

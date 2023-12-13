@@ -3,7 +3,7 @@ title: "Didier Loyens"
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Engineer"
+description : "Artisan of another economic model"
 # Not the used one, but the one for gravatar
 email: ""
 # portrait

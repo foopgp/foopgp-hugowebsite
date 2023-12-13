@@ -1,4 +1,5 @@
 ---
+Lastmod: 2023-12-13T19:42:28+01:00 # MANAGED BY update_lastmod.sh
 title: "Didier Loyens"
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"

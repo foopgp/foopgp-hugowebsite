@@ -43,7 +43,10 @@ Le montant et les natures de celle-ci sont fixés par le Conseil d'Administratio
 
 Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un membre en cours d’année.
 
-**Pour l’année 2023, le montant de la cotisation est fixé à 1 euro.** Le versement de la cotisation doit être effectué de préférence par virement (IBAN : FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.
+**Le montant de la cotisation *fee* fixé par lors de la dernière assemblée
+générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/ **
+
+Le versement de la cotisation doit être effectué de préférence par virement (IBAN : FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.
 
 
 ### Article 4 - Modalités relatives aux jetons de pouvoir (confer article 10bis des Statuts)
@@ -51,57 +54,43 @@ Toute cotisation versée à l'association est définitivement acquise. Aucun rem
 Tous les dons à l'association reçus à titre individuel (personne physique) donnent droit à des jetons de pouvoir,
 suivant la formule :
 
-**j = i×log₂(d+1)**
+**j = log₂(d+1) / *stingynalty* **
 
 Avec :
 * j : la quantité de jetons
 * d : le montant total du don en équivalent euro (€)
-* i : le facteur d'inflation défini par le Conseil d'administration
+* *stingynalty* : le facteur d'inflation
 * log₂() : la fonction logarithme binaire. C'est à dire de base 2 :
-  log₂(x)=ln(x)/ln(2)
+  log₂(x) = ln(x) / ln(2)
 
-La définition du facteur d’inflation « i » est réservée au conseil d'administration, dans la limite de 5 points au-dessus de l'inflation définie par le ministère de l’économie de la République Française.
+où *stingynalty* croît automatiquement de 5 pour mille (5 ‰) le premier jour de chaque mois, à 0h00.
+
+**stingynaltyₙ = stingynaltyₙ₋₁ + 0.005 × stingynaltyₙ₋₁ **
+
+En cas d'inflation significative de la zone euro, un ajustement du paramètre *stingynalty* pourra être effectué lors de l'assemblée générale.
 
 *Explication :* en choisissant un facteur d'inflation supérieur à ceux calculés en zone euro (eg: eurostat)
 nous pouvons créer un léger « [Fear Of Missing Opportunity](https://fr.wikipedia.org/wiki/Syndrome_FOMO) ».
 
 Chaque don étant compté à titre individuel, tout nouveau don donne droit à de nouveaux jetons suivant la formule :
 
-**jₙ = iₙ×log₂( (dₙ+dₜ) + 1 ) – jₜ**
+**jₙ = log₂( (dₙ+dₜ) + 1 ) / *stingynaltyₙ* – jₜ**
 
 Avec :
 * jₙ : la quantité de jetons supplémentaires
 * jₜ : la quantité totale de jetons issue des dons précédents (jₜ = jₙ₋₁ + jₙ₋₂ + ... + j₀)
 * dₙ : le montant du nième don
 * dₜ : le montant total des dons précédents (dₜ = dₙ₋₁ + dₙ₋₂ + ... + d₀ )
-* iₙ : le facteur d'inflation à la période du nième don
+* *stingynaltyₙ* : le facteur d'inflation à la période du nième don
 
-Ainsi, dans le cas où le facteur d'inflation est figé à 1 :
-
-**jₙ = log₂( dₙ/(dT+1) +1 )**
-
-| dons total en € | nombre de jetons |
-|---|---|
-| 1€ | 1 |
-| 3€ | 2 |
-| 7€ | 3 |
-| 15€ | 4 |
-| 31€ | 5 |
-| 63€ | 6 |
-| 127€ | 7 |
-| 255€ | 8 |
-| 511€ | 9 |
-| 1023€ | 10 |
-| ... | ... |
-
-**Pour l’année 2023, le facteur d'inflation fixé à 1 euro.**
+**Pour l’année 2023, le facteur d'inflation fixé à 1**
 
 
 ### Article 5 – Émission universelle de nouveaux jetons (confer article 10bis des Statuts)
 
 À chaque exercice, de nouveaux jetons sont émis à quantité égale pour chaque personne physique membre de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
 
-Ainsi, périodiquement, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de son impôt associatif (cf. articles 3 et 7) recevra, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
+Ainsi, périodiquement, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de son impôt associatif (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
 
 **jₛ= *growth* × Mₜ ∕ N**
 
@@ -163,6 +152,7 @@ pour cette année l'effet du présent article 8.
 À chaque fin d’exercice, les membres actifs pourront exprimer leurs voix pour définir, parmi des valeurs proposées par le conseil d’administration certains paramètres de l’exercice suivant :
 
 * le montant de la cotisation « *fee* » (confer article 3 du présent règlement intérieur)
+* le facteur d'inflation *stingynalty* (confer article 4 du présent règlement intérieur)
 * le coefficient de croissance « *growth* » (confer article 5 du présent règlement intérieur)
 * l’impôt associatif « *taxe* » (confer article 7 du présent règlement intérieur)
 * l’exposant de pouvoir « *sharp* » (confer article 8 du présent règlement intérieur)

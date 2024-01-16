@@ -168,7 +168,9 @@ pour cette année l'effet du présent article 8.
 * l’exposant de pouvoir « *sharp* » (confer article 8 du présent règlement intérieur)
 * la proportion de chaque enveloppe budgétaire (en euros ou en jetons, confer article 2 des [statuts](../status/))
 
-Cette expression pourra utiliser la méthode de Condorcet telle qu’[appliquée par la communauté Debian](https://www.debian.org/vote/).
+Cette expression pourra utiliser la [méthode de Schulze](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Schulze).
+
+*Explication :* la [méthode de Schulze](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Schulze) est une [méthode de Condorcet](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Condorcet). L'inspiration vient ici [de la communauté Debian](https://www.debian.org/vote/).
 
 ---
 

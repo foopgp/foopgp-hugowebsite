@@ -51,13 +51,14 @@ Toute cotisation versée à l'association est définitivement acquise. Aucun rem
 Tous les dons à l'association reçus à titre individuel (personne physique) donnent droit à des jetons de pouvoir,
 suivant la formule :
 
-**j = i×ln(d+1)/ln(2)**
+**j = i×log₂(d+1)**
 
 Avec :
 * j : la quantité de jetons
 * d : le montant total du don en équivalent euro (€)
 * i : le facteur d'inflation défini par le Conseil d'administration
-* ln() : la fonction logarithme naturel (aussi appelé logarithme népérien)
+* log₂() : la fonction logarithme binaire. C'est à dire de base 2 :
+  log₂(x)=ln(x)/ln(2)
 
 La définition du facteur d’inflation « i » est réservée au conseil d'administration, dans la limite de 5 points au-dessus de l'inflation définie par le ministère de l’économie de la République Française.
 
@@ -66,7 +67,7 @@ nous pouvons créer un léger « [Fear Of Missing Opportunity](https://fr.wikipe
 
 Chaque don étant compté à titre individuel, tout nouveau don donne droit à de nouveaux jetons suivant la formule :
 
-**jₙ = iₙ×ln( (dₙ+dₜ) + 1 )/ln(2) – jₜ**
+**jₙ = iₙ×log₂( (dₙ+dₜ) + 1 ) – jₜ**
 
 Avec :
 * jₙ : la quantité de jetons supplémentaires
@@ -77,7 +78,7 @@ Avec :
 
 Ainsi, dans le cas où le facteur d'inflation est figé à 1 :
 
-**jₙ = ln( dₙ/(dT+1) +1 ) / ln(2)**
+**jₙ = log₂( dₙ/(dT+1) +1 )**
 
 | dons total en € | nombre de jetons |
 |---|---|

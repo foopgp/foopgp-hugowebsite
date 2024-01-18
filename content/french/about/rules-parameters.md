@@ -17,19 +17,19 @@ type: "post"
 
 Ce document a pour objectif de rassembler tous les paramètres régissant le
 fonctionnement de l'association foopgp, notamment ceux décrits dans son
-[règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/).
+[règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/).
 
 
 ### Valeurs en vigueur depuis le 22 octobre 2023
 
 | Paramètre  | valeur | description
 |---|---|---|
-| *fee* | 1€ | Cotisation, confer article 3 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/). |
-| *stingynalty*  | 1 | facteur d'inflation, confer article 4 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/). |
-| *growthc* | 1 | coefficient de croissance, confer article 5 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/). |
-| *growth* | 0% | croissance autonome de la quantité de jetons, confer article 5 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/). |
-| *taxe* | 0% | impôt associatif, confer article 7 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/). |
-| *sharp*  | 1 | exposant de pouvoir, confer article 8 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/). |
+| *fee* | 1€ | Cotisation, confer article 3 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
+| *stingynalty*  | 1 | facteur d'inflation, confer article 4 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
+| *growthc* | 1 | coefficient de croissance, confer article 5 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
+| *growth* | 0% | croissance autonome de la quantité de jetons, confer article 5 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
+| *taxe* | 0% | impôt associatif, confer article 7 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
+| *sharp*  | 1 | exposant de pouvoir, confer article 8 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
 
 
 ### Nombre de jetons pour un don initial

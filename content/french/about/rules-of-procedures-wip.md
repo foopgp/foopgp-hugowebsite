@@ -43,8 +43,8 @@ Le montant et les natures de celle-ci sont fixés par le Conseil d'Administratio
 
 Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un membre en cours d’année.
 
-**Le montant de la cotisation *fee* fixé par lors de la dernière assemblée
-générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/ **
+**Le montant de la cotisation *fee* défini lors de la dernière assemblée
+générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
 
 Le versement de la cotisation doit être effectué de préférence par virement (IBAN : FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.
 
@@ -54,7 +54,7 @@ Le versement de la cotisation doit être effectué de préférence par virement 
 Tous les dons à l'association reçus à titre individuel (personne physique) donnent droit à des jetons de pouvoir,
 suivant la formule :
 
-**j = log₂(d+1) / *stingynalty* **
+**j = log₂(d+1) / *stingynalty***
 
 Avec :
 * j : la quantité de jetons
@@ -65,7 +65,7 @@ Avec :
 
 où *stingynalty* croît automatiquement de 5 pour mille (5 ‰) le premier jour de chaque mois, à 0h00.
 
-**stingynaltyₙ = stingynaltyₙ₋₁ + 0.005 × stingynaltyₙ₋₁ **
+**stingynaltyₙ = stingynaltyₙ₋₁ + 0.005 × stingynaltyₙ₋₁**
 
 En cas d'inflation significative de la zone euro, un ajustement du paramètre *stingynalty* pourra être effectué lors de l'assemblée générale.
 
@@ -83,7 +83,8 @@ Avec :
 * dₜ : le montant total des dons précédents (dₜ = dₙ₋₁ + dₙ₋₂ + ... + d₀ )
 * *stingynaltyₙ* : le facteur d'inflation à la période du nième don
 
-**Pour l’année 2023, le facteur d'inflation fixé à 1**
+**Les tableaux de correspondance entre dons et jetons, en fonction des facteurs d'inflations *stingynalty* actuels et à venir,
+sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
 
 
 ### Article 5 – Émission universelle de nouveaux jetons (confer article 10bis des Statuts)
@@ -92,16 +93,16 @@ Avec :
 
 Ainsi, périodiquement, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de son impôt associatif (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
 
-**jₛ= *growth* × Mₜ ∕ N**
+**jₛ= *growthc* × Mₜ ∕ N**
 
 Avec :
 * jₛ : la quantité de jetons supplémentaires issue de cette émission
-* *growth* : un coefficient de croissance de la masse totale de l’ensemble des jetons
+* *growthc* : un coefficient de croissance de la masse totale de l’ensemble des jetons
 * Mₜ : la masse totale de l’ensemble des jetons (avant cette émission universelle)
 * N : Le nombre de membres actifs sur la période
 
-**Pour l’année 2023, le paramètre *growth* est fixé à 0%.** Ce qui inhibe
-pour cette année l'effet du présent article 5.
+**Le coefficient de croissance *growthc* défini lors de la dernière assemblée
+générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
 
 ### Article 6 – Portefeuilles
 
@@ -122,8 +123,8 @@ Ce pourcentage est appelé impôt associatif et est noté « *taxe* ». Il est r
 
 Tant que cet impôt associatif n’est pas réglé, les membres associés à ces portefeuilles n’ont pas accès aux droits des membres actifs.
 
-**Pour l’année 2023, le paramètre *taxe* est fixé à 0%.** Ce qui inhibe
-pour cette année l'effet du présent article 7.
+**Le pourcentage d'imposition *taxe* défini lors de la dernière assemblée
+générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
 
 ### Article 8 – Vote quadratique (confer article 10bis des Statuts)
 
@@ -143,13 +144,13 @@ Avec :
 * *sharp*=1 équivaut à « *Un jeton, une voix* »
 * *sharp*=1/2=0.5 équivaut à un vote quadratique où v est la racine carré de j (v=√j)
 
-**Pour l’année 2023, le paramètre *sharp* est fixé à 1.** Ce qui inhibe
-pour cette année l'effet du présent article 8.
+**L'exposant de pouvoir *sharp* défini lors de la dernière assemblée
+générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
 
 
 ### Article 9 – Expression de la volonté des membres (confer article 10bis et article 11 des Statuts)
 
-À chaque fin d’exercice, les membres actifs pourront exprimer leurs voix pour définir, parmi des valeurs proposées par le conseil d’administration certains paramètres de l’exercice suivant :
+À chaque fin d’exercice, les membres actifs pourront exprimer leurs voix pour redéfinir, parmi des valeurs proposées par le conseil d’administration certains paramètres de l’exercice suivant :
 
 * le montant de la cotisation « *fee* » (confer article 3 du présent règlement intérieur)
 * le facteur d'inflation *stingynalty* (confer article 4 du présent règlement intérieur)

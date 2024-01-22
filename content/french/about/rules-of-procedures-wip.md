@@ -63,11 +63,11 @@ Avec :
 * log₂() : la fonction logarithme binaire. C'est à dire de base 2 :
   log₂(x) = ln(x) / ln(2)
 
-où *stingynalty* croît automatiquement de 5 pour mille (5 ‰) le premier jour de chaque mois, à 0h00.
+où *stingynalty* croît automatiquement de 5 pour mille (5 ‰) le premier jour de chaque mois, à 0h00 :
 
 **stingynaltyₙ = stingynaltyₙ₋₁ + 0.005 × stingynaltyₙ₋₁**
 
-En cas d'inflation significative de la zone euro, un ajustement du paramètre *stingynalty* pourra être effectué lors de l'assemblée générale.
+En cas d'inflation significative de la zone euro, un ajustement du paramètre *stingynalty* pourra être décidé en assemblée générale.
 
 *Explication :* en choisissant un facteur d'inflation supérieur à ceux calculés en zone euro (eg: eurostat)
 nous pouvons créer un léger « [Fear Of Missing Opportunity](https://fr.wikipedia.org/wiki/Syndrome_FOMO) ».
@@ -82,6 +82,8 @@ Avec :
 * dₙ : le montant du nième don
 * dₜ : le montant total des dons précédents (dₜ = dₙ₋₁ + dₙ₋₂ + ... + d₀ )
 * *stingynaltyₙ* : le facteur d'inflation à la période du nième don
+
+*Note :* jₙ ne peut être négatif. Si le nième don ne comble pas la croissance du facteur d'inflation, alors le don est compté mais jₙ est nul.
 
 **Les tableaux de correspondance entre dons et jetons, en fonction des facteurs d'inflations *stingynalty* actuels et à venir,
 sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**

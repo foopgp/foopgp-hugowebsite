@@ -17,27 +17,32 @@ type: "post"
 
 Ce document a pour objectif de rassembler tous les paramètres régissant le
 fonctionnement de l'association foopgp, notamment ceux décrits dans son
-[règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/).
+[règlement intérieur](/fr/about/rules-of-procedures-wip/).
 
 
 ### Valeurs en vigueur depuis le 22 octobre 2023
 
 | Paramètre  | valeur | description
 |---|---|---|
-| *fee* | 1€ | Cotisation, confer article 3 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
-| *stingynalty*  | 1 | facteur d'inflation, confer article 4 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
-| *growthc* | 1 | coefficient de croissance, confer article 5 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
-| *growth* | 0% | croissance autonome de la quantité de jetons, confer article 5 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
-| *taxe* | 0% | impôt associatif, confer article 7 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
-| *sharp*  | 1 | exposant de pouvoir, confer article 8 du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures-wip/). |
+| *fee* | 1€ | Cotisation, confer article 3 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
+| *stingynalty*  | 1 | facteur d'inflation, confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
+| *growthc* | 1 | coefficient de croissance, confer article 5 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
+| *growth* | 0% | croissance autonome de la quantité de jetons, confer article 5 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
+| *taxe* | 0% | impôt associatif, confer article 7 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
+| *sharp*  | 1 | exposant de pouvoir, confer article 8 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
 
 
 ### Nombre de jetons pour un don initial
 
 Ces tableaux permettent d'appréhender la quantité de jetons crée par don initial.
 
-Cette quantité dépend du facteur d'inflation *stingynalty* dont la réevaluation sera effective à l'issue de la prochaine assemblée génarale.
+Cette quantité dépend du facteur d'inflation *stingynalty* dont la réevaluation sera effective à l'issue de la prochaine assemblée générale.
 
+Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures-wip/).
+
+*Note :* le mot *stingynalty* est la contraction des mots anglais *stingy* et
+*penalty*. Ce facteur d'inflation pouvant être éventuellement considéré comme un malus
+à l'avarice.
 
 #### actuellement
 
@@ -73,7 +78,7 @@ Jusqu'à la prochaine assemblée générale : ***stingynalty* = 1**
 
 #### prochainement
 
-Suivant le règlement intérieur en vigueur, et [les chiffres utilisés par le ministère de l'économie](https://www.insee.fr/fr/statistiques/2122401),
+Suivant l'article 4 du [règlement intérieur en vigueur](../rules-of-procedures), et [les chiffres utilisés par le ministère de l'économie](https://www.insee.fr/fr/statistiques/2122401),
 le conseil d'administration devrait décider d'un facteur d'inflation compris entre 4,9% et 9,9%.
 
 C'est à dire qu'à l'issue de la prochaine assemblée générale, *stingynalty* sera
@@ -82,7 +87,7 @@ compris entre les valeurs 1.049 et 1.099.
 Voici donc quelques tableaux pour appréhender ce changement :
 
 
-##### *stingynalty* = 1.05*
+***stingynalty* = 1.05*
 
 | dons initial en € | quantité de jetons |
 |---|---|
@@ -112,7 +117,7 @@ Voici donc quelques tableaux pour appréhender ce changement :
 |    6207.38€ | 12.000000 |
 
 
-##### *stingynalty* = 1.075*
+***stingynalty* = 1.075*
 
 | dons initial en € | quantité de jetons |
 |---|---|
@@ -142,7 +147,7 @@ Voici donc quelques tableaux pour appréhender ce changement :
 |    7642.41€ | 12.000000 |
 
 
-##### *stingynalty* = 1.1*
+***stingynalty* = 1.1*
 
 | dons initial en € | quantité de jetons |
 |---|---|

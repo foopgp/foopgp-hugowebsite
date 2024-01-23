@@ -87,7 +87,7 @@ compris entre les valeurs 1.049 et 1.099.
 Voici donc quelques tableaux pour appréhender ce changement :
 
 
-***stingynalty* = 1.05*
+* ***stingynalty* = 1.05**
 
 | dons initial en € | quantité de jetons |
 |---|---|
@@ -116,8 +116,9 @@ Voici donc quelques tableaux pour appréhender ce changement :
 |    5000.00€ | 11.702857 |
 |    6207.38€ | 12.000000 |
 
+---
 
-***stingynalty* = 1.075*
+* ***stingynalty* = 1.075**
 
 | dons initial en € | quantité de jetons |
 |---|---|
@@ -146,8 +147,9 @@ Voici donc quelques tableaux pour appréhender ce changement :
 |    5000.00€ | 11.430698 |
 |    7642.41€ | 12.000000 |
 
+---
 
-***stingynalty* = 1.1*
+* ***stingynalty* = 1.1**
 
 | dons initial en € | quantité de jetons |
 |---|---|

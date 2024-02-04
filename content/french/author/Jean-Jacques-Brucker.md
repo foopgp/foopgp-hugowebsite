@@ -15,6 +15,8 @@ social:
     link : "https://github.com/jbar"
   - icon : "ti-key"
     link : "/keys/C84015DC278AE33927FB07DEA3983A40D1458443.asc"
+  - icon : "ti-key"
+    link : "/keys/OpenPGP_0xD6BFFE1349E747CF1896.asc"
 ---
 
 Plus de 15 ans d'expérience dans les systèmes Linux (GNU et embarqués), les réseaux,

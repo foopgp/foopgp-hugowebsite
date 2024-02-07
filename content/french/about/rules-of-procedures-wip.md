@@ -167,4 +167,4 @@ Cette expression pourra utiliser la [méthode de Schulze](https://fr.wikipedia.o
 
 ---
 
-*Adopté par [l'assemblée générale extraordinaire du dimanche 22 octobre 2023 à Pelleautier](/fr/assembly/2023-10-22-report-age/).*
+*Draft en cours de travail, pour soumission à l'assemblée générale ordinaire prévue le dimanche 24 mars 2024 à Pelleautier.*

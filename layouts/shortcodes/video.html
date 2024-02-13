@@ -1,0 +1,7 @@
+{{- $video_src := .Get "src" -}}
+{{- $width := "100%" -}}
+<video class="video-shortcode" {{ if ne (.Get "controls") "false" }}controls {{ end }}preload="auto" width="{{ or (.Get "width") $width }}" {{ with .Get "height" }}height="{{.}}"{{ end }} {{ if eq (.Get "autoplay") "true" }}autoplay {{ end }}{{ if eq (.Get "loop") "true" }}loop {{ end }}{{ if eq (.Get "muted") "true" }}muted {{ end }}{{ with .Get "poster" }}poster="{{ .RelPermalink }}" {{ end }}playsinline >
+    <source src="{{ $video_src }}" type="{{ .Get "type" }}">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>

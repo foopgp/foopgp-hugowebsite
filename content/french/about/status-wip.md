@@ -67,7 +67,11 @@ chacune de ses réunions, sur les demandes d'admission présentées.
 
 ### Article 7 - MEMBRES – COTISATIONS
 
-Sont membres actifs ceux qui, à chaque exercice, ont versé la somme fixée par [le règlement intérieur](../rules-of-procedures/) à titre de cotisation.
+Sont membres actifs ceux qui sont à jour du paiement des sommes fixées par [le règlement intérieur](../rules-of-procedures/), telle la cotisation.
+
+Seuls les membres actifs peuvent :
+* exprimer leurs voix
+* recevoir des jetons de pouvoir supplémentaires (confer article 10bis)
 
 ### Article 8 - RADIATIONS
 
@@ -192,6 +196,5 @@ fonctionnement desdits établissements.
 
 ---
 
-*Adopté par [l'assemblée générale extraordinaire du dimanche 22 octobre 2023 à Pelleautier](/fr/assembly/2023-10-22-report-age/).*
-
+*Draft pour soumission à la prochaine assemblée générale.*
 

@@ -26,9 +26,10 @@ fonctionnement de l'association foopgp, notamment ceux décrits dans son
 |---|---|---|
 | *fee* | 1€ | Cotisation, confer article 3 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
 | *stingynalty*  | 1 | facteur d'inflation, confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
-| *growthc* | 1 | coefficient de croissance, confer article 5 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
-| *growth* | 0% | croissance autonome de la quantité de jetons, confer article 5 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
-| *taxe* | 0% | impôt associatif, confer article 7 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
+| *growth* | 0% | taux de croissance autonome de la quantité de jetons, confer article 5 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
+| *growthp* | 1 an | periodicité d'application du taux de croissance *growth*. |
+| *taxe* | 0% | taux d'impôt associatif, confer article 7 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
+| *taxp* | 1 an | periodicité d'application du taux d'impôt associatif *taxe*. |
 | *sharp*  | 1 | exposant de pouvoir, confer article 8 du [règlement intérieur](/fr/about/rules-of-procedures-wip/). |
 
 

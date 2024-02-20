@@ -39,7 +39,7 @@ Toute modification doit se faire approuver par l'assemblée générale.
 
 Pour chaque exercice, les membres actifs doivent s'acquitter d'une cotisation, notée *fee*.
 
-Le montant et les natures de celle-ci sont fixés par le Conseil d'Administration qui le soumet avant chaque exercice à l'approbation de l’Assemblée Générale.
+Le montant et les natures de celle-ci sont fixés par le Conseil d'Administration qui soumet chaque changement à l'approbation de l’Assemblée Générale.
 
 Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un membre en cours d’année.
 
@@ -91,20 +91,19 @@ sont consultables sur le site Web de l'association : https://foopgp.org/fr/about
 
 ### Article 5 – Émission universelle de nouveaux jetons (confer article 10bis des Statuts)
 
-À chaque exercice, de nouveaux jetons sont émis à quantité égale pour chaque personne physique membre de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
+Périodiquement, de nouveaux jetons sont émis à quantité égale pour chaque personne physique membre active de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
 
-Ainsi, périodiquement, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de son impôt associatif (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
+Ainsi, pour chacune de ces periodes, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de son impôt associatif (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
 
-**jₛ= *growthc* × Mₜ ∕ N**
+**jₛ= *growth* × Mₜ ∕ N**
 
 Avec :
 * jₛ : la quantité de jetons supplémentaires issue de cette émission
-* *growthc* : un coefficient de croissance de la masse totale de l’ensemble des jetons
+* *growth* : un taux de croissance de la masse totale de l’ensemble des jetons
 * Mₜ : la masse totale de l’ensemble des jetons (avant cette émission universelle)
 * N : Le nombre de membres actifs sur la période
 
-**Le coefficient de croissance *growthc* défini lors de la dernière assemblée
-générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
+**Le taux de croissance *growth* et sa periodicité *growthp* définis lors de la dernière assemblée générale sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
 
 ### Article 6 – Portefeuilles
 
@@ -119,14 +118,13 @@ Ces portefeuilles sont notés « W ».
 
 ### Article 7 – Impôt associatif universel (confer article 10bis des Statuts)
 
-À chaque exercice, tous les portefeuilles enregistrés dans l’association doivent exécuter, au bénéfice de l’association, un virement égal à un pourcentage de la valeur moyenne du portefeuille durant l’exercice précédent.
+Périodiquement, tous les portefeuilles enregistrés dans l’association doivent exécuter, au bénéfice de l’association, un virement égal à une part de la valeur de chaque portefeuille à la fin de la periode précédente.
 
-Ce pourcentage est appelé impôt associatif et est noté « *taxe* ». Il est révisable à chaque exercice.
+Cette part est appelée impôt associatif et son taux est noté « *taxe* ». Il est révisable en assemblée générale.
 
 Tant que cet impôt associatif n’est pas réglé, les membres associés à ces portefeuilles n’ont pas accès aux droits des membres actifs.
 
-**Le pourcentage d'imposition *taxe* défini lors de la dernière assemblée
-générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
+**Le taux d'imposition *taxe* et sa periodicité *taxep* définis lors de la dernière assemblée générale sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
 
 ### Article 8 – Vote quadratique (confer article 10bis des Statuts)
 
@@ -152,12 +150,12 @@ générale est consultable sur le site Web de l'association : https://foopgp.org
 
 ### Article 9 – Expression de la volonté des membres (confer article 10bis et article 11 des Statuts)
 
-À chaque fin d’exercice, les membres actifs pourront exprimer leurs voix pour redéfinir, parmi des valeurs proposées par le conseil d’administration certains paramètres de l’exercice suivant :
+À chaque assemblée générale, les membres actifs pourront exprimer leurs voix pour redéfinir, parmi des valeurs proposées par le conseil d’administration certains paramètres du présent réglement intérieur :
 
 * le montant de la cotisation « *fee* » (confer article 3 du présent règlement intérieur)
 * le facteur d'inflation *stingynalty* (confer article 4 du présent règlement intérieur)
-* le coefficient de croissance « *growth* » (confer article 5 du présent règlement intérieur)
-* l’impôt associatif « *taxe* » (confer article 7 du présent règlement intérieur)
+* le taux de croissance « *growth* » ainsi que sa périodicité « *growthp* » (confer article 5 du présent règlement intérieur)
+* le taux d'impôt associatif « *taxe* » ainsi que sa périodicité « *taxep* » (confer article 7 du présent règlement intérieur)
 * l’exposant de pouvoir « *sharp* » (confer article 8 du présent règlement intérieur)
 * la proportion de chaque enveloppe budgétaire (en euros ou en jetons, confer article 2 des [statuts](../status/))
 

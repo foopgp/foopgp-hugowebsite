@@ -25,6 +25,7 @@ lang: fr
 **Le week-end du 23&24 mars 2024**, les membres de l'association **foopgp** sont invités à Pelleautier et [en visio](https://meet.jit.si/foopgp) :
 
 * **Samedi 23 mars**, pour se faire des petites sessions :
+    * Monnaie et transition écologique - présenté par Jean-Jacques Brucker.
     * NitroKey/Yubikey - présenté par Jean-Jacques Brucker.
     * Thunderbird SuperNova - présenté par Laurent Céard.
     * DietPI - présenté par Frederic Zwikel.

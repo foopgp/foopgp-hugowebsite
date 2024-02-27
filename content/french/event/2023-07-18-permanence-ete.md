@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-02-27T19:12:48+01:00 # MANAGED BY update_lastmod.sh
 type: "event"
 title: "Permanence d'été"
 publishDate: "2023-06-27"

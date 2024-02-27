@@ -11,7 +11,7 @@ image: "images/logos/logo-black-pgp.png"
 type: "post"
 ---
 
-*Présents : Jean-Jacques Brucker, François Revol, Laurent Céard, Frédéric Zwikel.*
+*Présents : Jean-Jacques Brucker, François Revol, Laurent Céard, Didier Loyens, Patrice Roux.*
 
 
 ### Chiffres de l'association :

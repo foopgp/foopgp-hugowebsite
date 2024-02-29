@@ -14,7 +14,7 @@ image: "images/events/IMG_20230626_134912Z.jpg"
 # location
 location: "[Pelleautier  🇫🇷](https://www.openstreetmap.org/relation/971979)"
 # expected attendees
-audience: "🎖️Pour ceux qui maîtrisent déjà un peu les ordinateurs."
+audience: "🎖️Pour tous les curieux."
 # entry fee
 fee: "Cotisation."
 apply_url: "mailto:info@foopgp.org"

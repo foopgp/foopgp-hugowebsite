@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body {background-color: black;}
+pre {
+	font-weight: normal;
+	color: #bbb;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+b {font-weight: normal}
+b.BOLD {color: #fff}
+b.ITA {font-style: italic}
+b.UND {text-decoration: underline}
+b.STR {text-decoration: line-through}
+b.UNDSTR {text-decoration: underline line-through}
+b.BLK {color: #000000}
+b.RED {color: #aa0000}
+b.GRN {color: #00aa00}
+b.YEL {color: #aa5500}
+b.BLU {color: #0000aa}
+b.MAG {color: #aa00aa}
+b.CYN {color: #00aaaa}
+b.WHI {color: #aaaaaa}
+b.HIK {color: #555555}
+b.HIR {color: #ff5555}
+b.HIG {color: #55ff55}
+b.HIY {color: #ffff55}
+b.HIB {color: #5555ff}
+b.HIM {color: #ff55ff}
+b.HIC {color: #55ffff}
+b.HIW {color: #ffffff}
+b.BBLK {background-color: #000000}
+b.BRED {background-color: #aa0000}
+b.BGRN {background-color: #00aa00}
+b.BYEL {background-color: #aa5500}
+b.BBLU {background-color: #0000aa}
+b.BMAG {background-color: #aa00aa}
+b.BCYN {background-color: #00aaaa}
+b.BWHI {background-color: #aaaaaa}
+</style>
+</head>
+<body>
+<pre><b class=RED>--- rules-of-procedures.md	2024-01-16 14:55:10.363853917 +0100</b>
+<b class=GRN>+++ rules-of-procedures-wip.md	2024-03-05 19:37:31.022061053 +0100</b>
+<b class=CYN>@@ -39,11 +39,14 @@</b>
+ 
+ Pour chaque exercice, les membres actifs doivent s'acquitter d'une cotisation, notée *fee*.
+ 
+<b class=RED>-Le montant et les natures de celle-ci sont fixés par le Conseil d'Administration qui le soumet avant chaque exercice à l'approbation de l’Assemblée Générale.</b>
+<b class=GRN>+Le montant et les natures de celle-ci sont fixés par le Conseil d'Administration qui soumet chaque changement à l'approbation de l’Assemblée Générale.</b>
+ 
+ Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un membre en cours d’année.
+ 
+<b class=RED>-**Pour l’année 2023, le montant de la cotisation est fixé à 1 euro.** Le versement de la cotisation doit être effectué de préférence par virement (IBAN : FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.</b>
+<b class=GRN>+**Le montant de la cotisation *fee* défini lors de la dernière assemblée</b>
+<b class=GRN>+générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**</b>
+<b class=GRN>+</b>
+<b class=GRN>+Le versement de la cotisation doit être effectué de préférence par virement (IBAN : FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.</b>
+ 
+ 
+ ### Article 4 - Modalités relatives aux jetons de pouvoir (confer article 10bis des Statuts)
+<b class=CYN>@@ -51,67 +54,56 @@</b>
+ Tous les dons à l'association reçus à titre individuel (personne physique) donnent droit à des jetons de pouvoir,
+ suivant la formule :
+ 
+<b class=RED>-**j = i×ln(d+1)/ln(2)**</b>
+<b class=GRN>+**j = log₂(d+1) / *stingynalty***</b>
+ 
+ Avec :
+ * j : la quantité de jetons
+ * d : le montant total du don en équivalent euro (€)
+<b class=RED>-* i : le facteur d'inflation défini par le Conseil d'administration</b>
+<b class=RED>-* ln() : la fonction logarithme naturel (aussi appelé logarithme népérien)</b>
+<b class=GRN>+* *stingynalty* : le facteur d'inflation</b>
+<b class=GRN>+* log₂() : la fonction logarithme binaire. C'est à dire de base 2 :</b>
+<b class=GRN>+  log₂(x) = ln(x) / ln(2)</b>
+<b class=GRN>+</b>
+<b class=GRN>+où *stingynalty* croît automatiquement de 5 pour mille (5 ‰) le premier jour de chaque mois, à 0h00 :</b>
+ 
+<b class=RED>-La définition du facteur d’inflation « i » est réservée au conseil d'administration, dans la limite de 5 points au-dessus de l'inflation définie par le ministère de l’économie de la République Française.</b>
+<b class=GRN>+**stingynaltyₙ = stingynaltyₙ₋₁ + 0.005 × stingynaltyₙ₋₁**</b>
+<b class=GRN>+</b>
+<b class=GRN>+En cas d'inflation significative de la zone euro, un ajustement du paramètre *stingynalty* pourra être décidé en assemblée générale.</b>
+ 
+ *Explication :* en choisissant un facteur d'inflation supérieur à ceux calculés en zone euro (eg: eurostat)
+ nous pouvons créer un léger « [Fear Of Missing Opportunity](https://fr.wikipedia.org/wiki/Syndrome_FOMO) ».
+ 
+ Chaque don étant compté à titre individuel, tout nouveau don donne droit à de nouveaux jetons suivant la formule :
+ 
+<b class=RED>-**jₙ = iₙ×ln( (dₙ+dₜ) + 1 )/ln(2) – jₜ**</b>
+<b class=GRN>+**jₙ = log₂( (dₙ+dₜ) + 1 ) / *stingynaltyₙ* – jₜ**</b>
+ 
+ Avec :
+ * jₙ : la quantité de jetons supplémentaires
+ * jₜ : la quantité totale de jetons issue des dons précédents (jₜ = jₙ₋₁ + jₙ₋₂ + ... + j₀)
+ * dₙ : le montant du nième don
+ * dₜ : le montant total des dons précédents (dₜ = dₙ₋₁ + dₙ₋₂ + ... + d₀ )
+<b class=RED>-* iₙ : le facteur d'inflation à la période du nième don</b>
+<b class=RED>-</b>
+<b class=RED>-Ainsi, dans le cas où le facteur d'inflation est figé à 1 :</b>
+<b class=GRN>+* *stingynaltyₙ* : le facteur d'inflation à la période du nième don</b>
+ 
+<b class=RED>-**jₙ = ln( dₙ/(dT+1) +1 ) / ln(2)**</b>
+<b class=GRN>+*Note :* jₙ ne peut être négatif. Si le nième don ne comble pas la croissance du facteur d'inflation, alors le don est compté mais jₙ est nul.</b>
+ 
+<b class=RED>-| dons total en € | nombre de jetons |</b>
+<b class=RED>-|---|---|</b>
+<b class=RED>-| 1€ | 1 |</b>
+<b class=RED>-| 3€ | 2 |</b>
+<b class=RED>-| 7€ | 3 |</b>
+<b class=RED>-| 15€ | 4 |</b>
+<b class=RED>-| 31€ | 5 |</b>
+<b class=RED>-| 63€ | 6 |</b>
+<b class=RED>-| 127€ | 7 |</b>
+<b class=RED>-| 255€ | 8 |</b>
+<b class=RED>-| 511€ | 9 |</b>
+<b class=RED>-| 1023€ | 10 |</b>
+<b class=RED>-| ... | ... |</b>
+<b class=RED>-</b>
+<b class=RED>-**Pour l’année 2023, le facteur d'inflation fixé à 1 euro.**</b>
+<b class=GRN>+**Les tableaux de correspondance entre dons et jetons, en fonction des facteurs d'inflations *stingynalty* actuels et à venir,</b>
+<b class=GRN>+sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**</b>
+ 
+ 
+ ### Article 5 – Émission universelle de nouveaux jetons (confer article 10bis des Statuts)
+ 
+<b class=RED>-À chaque exercice, de nouveaux jetons sont émis à quantité égale pour chaque personne physique membre de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**</b>
+<b class=GRN>+Périodiquement, de nouveaux jetons sont émis à quantité égale pour chaque personne physique membre active de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**</b>
+ 
+<b class=RED>-Ainsi, périodiquement, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de son impôt associatif (cf. articles 3 et 7) recevra, avant la fin de la dite période, une quantité de nouveaux jetons égales à :</b>
+<b class=GRN>+Ainsi, pour chacune de ces periodes, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de ses contributions obligatoires (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :</b>
+ 
+ **jₛ= *growth* × Mₜ ∕ N**
+ 
+ Avec :
+ * jₛ : la quantité de jetons supplémentaires issue de cette émission
+<b class=RED>-* *growth* : un coefficient de croissance de la masse totale de l’ensemble des jetons</b>
+<b class=GRN>+* *growth* : un taux de croissance de la masse totale de l’ensemble des jetons</b>
+ * Mₜ : la masse totale de l’ensemble des jetons (avant cette émission universelle)
+ * N : Le nombre de membres actifs sur la période
+ 
+<b class=RED>-**Pour l’année 2023, le paramètre *growth* est fixé à 0%.** Ce qui inhibe</b>
+<b class=RED>-pour cette année l'effet du présent article 5.</b>
+<b class=GRN>+**Le taux de croissance *growth* et sa periodicité *growthp* définis lors de la dernière assemblée générale sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**</b>
+ 
+ ### Article 6 – Portefeuilles
+ 
+<b class=CYN>@@ -124,18 +116,21 @@</b>
+ Ces portefeuilles sont notés « W ».
+ 
+ 
+<b class=RED>-### Article 7 – Impôt associatif universel (confer article 10bis des Statuts)</b>
+<b class=GRN>+### Article 7 – Contributions obligatoires (confer article 10bis des Statuts)</b>
+<b class=GRN>+</b>
+<b class=GRN>+Des contributions obligatoires en jetons pourront être décidés en assemblée générale.</b>
+ 
+<b class=RED>-À chaque exercice, tous les portefeuilles enregistrés dans l’association doivent exécuter, au bénéfice de l’association, un virement égal à un pourcentage de la valeur moyenne du portefeuille durant l’exercice précédent.</b>
+<b class=GRN>+Ces contributions correspondront à un pourcentage de la valeur de chaque portefeuille à la fin de la periode précédente. Elles sont révisables en assemblée générale.</b>
+ 
+<b class=RED>-Ce pourcentage est appelé impôt associatif et est noté « *taxe* ». Il est révisable à chaque exercice.</b>
+<b class=GRN>+La somme de ces contributions est appelée impôt associatif et son taux est noté « *taxe* ».</b>
+ 
+<b class=RED>-Tant que cet impôt associatif n’est pas réglé, les membres associés à ces portefeuilles n’ont pas accès aux droits des membres actifs.</b>
+<b class=GRN>+Aussi, elles pourront être réglées en une seule fois, au bénéfice de l'association.</b>
+ 
+<b class=RED>-**Pour l’année 2023, le paramètre *taxe* est fixé à 0%.** Ce qui inhibe</b>
+<b class=RED>-pour cette année l'effet du présent article 7.</b>
+<b class=GRN>+Tant que ces contributions ne seront pas réglés, les membres associés à ces portefeuilles n’ont pas accès aux droits des membres actifs.</b>
+ 
+<b class=RED>-### Article 8 – Vote quadratique (confer article 10bis des Statuts)</b>
+<b class=GRN>+**Le taux total de contributions *taxe* et sa periodicité *taxep* définis lors de la dernière assemblée générale sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**</b>
+<b class=GRN>+</b>
+<b class=GRN>+### Article 8 – Lissage polynomial des quantitées de pouvoir (confer article 10bis des Statuts)</b>
+ 
+ Durant chaque exercice, les membres actifs pourront exprimer leur voix pour valider, ou non, certaines résolutions prises par le conseil d’administration.
+ 
+<b class=CYN>@@ -153,22 +148,24 @@</b>
+ * *sharp*=1 équivaut à « *Un jeton, une voix* »
+ * *sharp*=1/2=0.5 équivaut à un vote quadratique où v est la racine carré de j (v=√j)
+ 
+<b class=RED>-**Pour l’année 2023, le paramètre *sharp* est fixé à 1.** Ce qui inhibe</b>
+<b class=RED>-pour cette année l'effet du présent article 8.</b>
+<b class=GRN>+**L'exposant de pouvoir *sharp* défini lors de la dernière assemblée</b>
+<b class=GRN>+générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**</b>
+ 
+ 
+ ### Article 9 – Expression de la volonté des membres (confer article 10bis et article 11 des Statuts)
+ 
+<b class=RED>-À chaque fin d’exercice, les membres actifs pourront exprimer leurs voix pour définir, parmi des valeurs proposées par le conseil d’administration certains paramètres de l’exercice suivant :</b>
+<b class=GRN>+À chaque assemblée générale, les membres actifs pourront exprimer leurs voix pour redéfinir, parmi des valeurs proposées par le conseil d’administration certains paramètres du présent réglement intérieur :</b>
+ 
+ * le montant de la cotisation « *fee* » (confer article 3 du présent règlement intérieur)
+<b class=RED>-* le coefficient de croissance « *growth* » (confer article 5 du présent règlement intérieur)</b>
+<b class=RED>-* l’impôt associatif « *taxe* » (confer article 7 du présent règlement intérieur)</b>
+<b class=GRN>+* le facteur d'inflation *stingynalty* (confer article 4 du présent règlement intérieur)</b>
+<b class=GRN>+* le taux de croissance « *growth* » ainsi que sa périodicité « *growthp* » (confer article 5 du présent règlement intérieur)</b>
+<b class=GRN>+* les taux de contributions obligatoires et donc le taux d'impôt associatif « *taxe* » ainsi que sa périodicité « *taxep* » (confer article 7 du présent règlement intérieur)</b>
+ * l’exposant de pouvoir « *sharp* » (confer article 8 du présent règlement intérieur)
+<b class=RED>-* la proportion de chaque enveloppe budgétaire (en euros ou en jetons, confer article 2 des [statuts](../status/))</b>
+ 
+<b class=RED>-Cette expression pourra utiliser la méthode de Condorcet telle qu’[appliquée par la communauté Debian](https://www.debian.org/vote/).</b>
+<b class=GRN>+Cette expression pourra utiliser la [méthode de Schulze](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Schulze).</b>
+<b class=GRN>+</b>
+<b class=GRN>+*Explication :* la [méthode de Schulze](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Schulze) est une [méthode de Condorcet](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Condorcet). L'inspiration vient ici [de la communauté Debian](https://www.debian.org/vote/).</b>
+ 
+ ---
+ 
+<b class=RED>-*Adopté par [l'assemblée générale extraordinaire du dimanche 22 octobre 2023 à Pelleautier](/fr/assembly/2023-10-22-report-age/).*</b>
+<b class=GRN>+*Draft en cours de travail, pour soumission à l'assemblée générale ordinaire prévue le dimanche 24 mars 2024 à Pelleautier.*</b>
+</pre>
+</body>
+</html>

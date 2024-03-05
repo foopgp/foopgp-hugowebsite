@@ -111,7 +111,7 @@ Ce mécanisme vise à récompenser les donateurs, tout en offrant une source de 
 
 Le conseil d'administration détermine au sein d'un [règlement intérieur](../rules-of-procedures/) *ad hoc* les modalités de l'offre aux membres des jetons de pouvoir, leurs caractéristiques (pseudonymat, incompressibilité, fongibilité, (dé)matérialisation, (dé)centralisation) et les quantités logarithmiques de jetons de pouvoir en fonction des dons.
 
-Le conseil d'administration détermine aussi, le cas échéant, le coefficient de croissance du nombre de jetons de pouvoir au sein de l'association, ainsi que le montant de l'impôt associatif dû en raison du nombre de jetons de pouvoir détenus, et avec les modalités de lissage polynomial des jetons de pouvoir pour pallier aux inégalités de fait.
+Le conseil d'administration détermine aussi, le cas échéant, le coefficient de croissance du nombre de jetons de pouvoir au sein de l'association, ainsi que les contributions obligatoires dû en raison du nombre de jetons de pouvoir détenus, et avec les modalités de lissage polynomial des jetons de pouvoir pour pallier aux inégalités de fait.
 
 ### Article 11 - ASSEMBLÉE GÉNÉRALE ORDINAIRE
 

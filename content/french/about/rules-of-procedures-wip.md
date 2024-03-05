@@ -93,7 +93,7 @@ sont consultables sur le site Web de l'association : https://foopgp.org/fr/about
 
 Périodiquement, de nouveaux jetons sont émis à quantité égale pour chaque personne physique membre active de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
 
-Ainsi, pour chacune de ces periodes, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de son impôt associatif (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
+Ainsi, pour chacune de ces periodes, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de ses contributions obligatoires (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
 
 **jₛ= *growth* × Mₜ ∕ N**
 
@@ -116,17 +116,21 @@ Toute personne physique peut posséder des portefeuilles secondaires, éventuell
 Ces portefeuilles sont notés « W ».
 
 
-### Article 7 – Impôt associatif universel (confer article 10bis des Statuts)
+### Article 7 – Contributions obligatoires (confer article 10bis des Statuts)
 
-Périodiquement, tous les portefeuilles enregistrés dans l’association doivent exécuter, au bénéfice de l’association, un virement égal à une part de la valeur de chaque portefeuille à la fin de la periode précédente.
+Des contributions obligatoires en jetons pourront être décidés en assemblée générale.
 
-Cette part est appelée impôt associatif et son taux est noté « *taxe* ». Il est révisable en assemblée générale.
+Ces contributions correspondront à un pourcentage de la valeur de chaque portefeuille à la fin de la periode précédente. Elles sont révisables en assemblée générale.
 
-Tant que cet impôt associatif n’est pas réglé, les membres associés à ces portefeuilles n’ont pas accès aux droits des membres actifs.
+La somme de ces contributions est appelée impôt associatif et son taux est noté « *taxe* ».
 
-**Le taux d'imposition *taxe* et sa periodicité *taxep* définis lors de la dernière assemblée générale sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
+Aussi, elles pourront être réglées en une seule fois, au bénéfice de l'association.
 
-### Article 8 – Vote quadratique (confer article 10bis des Statuts)
+Tant que ces contributions ne seront pas réglés, les membres associés à ces portefeuilles n’ont pas accès aux droits des membres actifs.
+
+**Le taux total de contributions *taxe* et sa periodicité *taxep* définis lors de la dernière assemblée générale sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
+
+### Article 8 – Lissage polynomial des quantitées de pouvoir (confer article 10bis des Statuts)
 
 Durant chaque exercice, les membres actifs pourront exprimer leur voix pour valider, ou non, certaines résolutions prises par le conseil d’administration.
 
@@ -155,9 +159,8 @@ générale est consultable sur le site Web de l'association : https://foopgp.org
 * le montant de la cotisation « *fee* » (confer article 3 du présent règlement intérieur)
 * le facteur d'inflation *stingynalty* (confer article 4 du présent règlement intérieur)
 * le taux de croissance « *growth* » ainsi que sa périodicité « *growthp* » (confer article 5 du présent règlement intérieur)
-* le taux d'impôt associatif « *taxe* » ainsi que sa périodicité « *taxep* » (confer article 7 du présent règlement intérieur)
+* les taux de contributions obligatoires et donc le taux d'impôt associatif « *taxe* » ainsi que sa périodicité « *taxep* » (confer article 7 du présent règlement intérieur)
 * l’exposant de pouvoir « *sharp* » (confer article 8 du présent règlement intérieur)
-* la proportion de chaque enveloppe budgétaire (en euros ou en jetons, confer article 2 des [statuts](../status/))
 
 Cette expression pourra utiliser la [méthode de Schulze](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Schulze).
 

@@ -16,29 +16,38 @@ location: "[Pelleautier  🇫🇷](https://www.openstreetmap.org/relation/971979
 # expected attendees
 audience: "🎖️Pour tous les curieux."
 # entry fee
-fee: "Cotisation."
+fee: "1€ (cotisation)"
 apply_url: "mailto:info@foopgp.org"
 # Event language
 lang: fr
 ---
 
-**Le week-end du 23&24 mars 2024**, les membres de l'association **foopgp** sont invités à Pelleautier et [en visio](https://meet.jit.si/foopgp) :
+**Le week-end du 23&24 mars 2024**, les curieux ou membres de l'association **foopgp** sont invités à Pelleautier et [en visio](https://meet.jit.si/foopgp) :
 
-* **Samedi 23 mars**, pour se faire des petites sessions :
-    * Monnaie et transition écologique - présenté par Jean-Jacques Brucker.
-    * NitroKey/Yubikey - présenté par Jean-Jacques Brucker.
-    * Thunderbird SuperNova - présenté par Laurent Céard.
-    * DietPI - présenté par Frederic Zwikel.
-    * ... *N'hésitez pas à soumettre d'autres propositions*..
 
-* **Dimanche 24 mars à 14h30**, pour notre assemblée générale annuelle :
-    * Présentation bilan moral de l'association.
-    * Présentation bilan financier de l'association.
-    * changements (mineurs) des statuts de l'association.
-    * améliorations du réglement intérieur l'association.
-    * choix des paramètres liés à nos jetons de pouvoir : *growth*, *taxe* et *sharp*..
+### **Samedi 23 mars** : Partage de connaissances et d'intelligences *("master classes")*
+
+* **11h :** Monnaie et transition écologique *(par Jean-Jacques Brucker)*.
+* **12h :** Apéro + repas partagé.
+* **14h :** Enjeux des paramètres *growth*, *taxe* et *sharp* de
+  l'association *(par Jean-Jacques Brucker)*.
+* **15h :** Nouveautés [SuperNova](https://www.thunderbird.net/fr/thunderbird/115.0/whatsnew/) du client mail Thunderbird *(par Laurent Céard)*.
+* **16h :** Utilisation d'OpenPGP avec les NitroKey/Yubikey *(par Jean-Jacques Brucker)*.
+* **17h :** Projet [DietPI](https://dietpi.com/) - *(par Frederic Zwikel)*.
+* **17h30 :** Apéro + jeux.
+
+### **Dimanche 24 mars à 14h30** : Assemblée Générale
+
+* changements (mineurs) des statuts de l'association.
+* améliorations du réglement intérieur l'association.
+* Présentation bilan moral de l'association.
+* Présentation bilan financier de l'association.
+* choix des paramètres liés à nos jetons de pouvoir : *growth*, *taxe* et *sharp*.
+
+*Détails et ordre du jour de l'assemblée générale :
+https://foopgp.org/event/2024-03-24-ag/*
 
 ---
 
-*Le programme peut encore s'affiner, n'hésitez pas à faire des propositions par courriels, ou lors de [nos visios du mardi soir à 21h30](https://meet.jit.si/foopgp).*
+**N'hésitez pas à partager ce programme !**
 

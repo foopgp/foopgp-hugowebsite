@@ -6,11 +6,11 @@ date: "2024-03-23T11:00:00+02:00"
 # post save as draft
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/events/IMG_20230626_134912Z.jpg"
 # meta description
 description : "Partage de connaissances et d'intelligences."
 # Event image
-image: "images/events/IMG_20230626_134912Z.jpg"
+image: "images/blog/2024/party-rehearsal-dinner-meal-leisure-tradition-1561863-3256076730.jpg"
 # location
 location: "[Pelleautier  🇫🇷](https://www.openstreetmap.org/note/4144472#map=14/44.5146/6.0222&layers=N)"
 # expected attendees
@@ -35,6 +35,8 @@ lang: fr
 * **16h :** Utilisation d'OpenPGP avec les NitroKey/Yubikey *(par [Jean-Jacques Brucker](../../author/jean-jacques-brucker/))*.
 * **17h :** Projet [DietPI](https://dietpi.com/) *(par [Frederic Zwikel](../../author/fred-zwikel/))*.
 * **17h30 :** Apéro + jeux.
+
+Pour l'organisation de Samedi, veuillez [vous inscrire **ici**](https://www.qui-quoi.fr/evenements/DG4m8e53782Xy6WMYnEQ).
 
 ### **Dimanche 24 mars à 14h30** : Assemblée Générale
 

@@ -12,7 +12,7 @@ description : "Partage de connaissances et d'intelligences."
 # Event image
 image: "images/events/IMG_20230626_134912Z.jpg"
 # location
-location: "[Pelleautier  🇫🇷](https://www.openstreetmap.org/relation/971979)"
+location: "[Pelleautier  🇫🇷](https://www.openstreetmap.org/note/4144472#map=14/44.5146/6.0222&layers=N)"
 # expected attendees
 audience: "🎖️Pour tous les curieux."
 # entry fee
@@ -22,7 +22,7 @@ apply_url: "mailto:info@foopgp.org"
 lang: fr
 ---
 
-**Le week-end du 23&24 mars 2024**, les curieux ou membres de l'association **foopgp** sont invités à Pelleautier et [en visio](https://meet.jit.si/foopgp) :
+**Le week-end du 23&24 mars 2024**, les curieux ou membres de l'association **foopgp** sont invités à Pelleautier ( [imp. Serre des Isnards](https://www.openstreetmap.org/note/4144472#map=14/44.5146/6.0222&layers=N) ) et [en visio](https://meet.jit.si/foopgp) :
 
 
 ### **Samedi 23 mars** : Partage de connaissances et d'intelligences *("master classes")*

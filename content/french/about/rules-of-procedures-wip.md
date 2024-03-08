@@ -118,7 +118,7 @@ Ces portefeuilles sont notés « W ».
 
 ### Article 7 – Contributions obligatoires (confer article 10bis des Statuts)
 
-Des contributions obligatoires en jetons pourront être décidés en assemblée générale.
+Des contributions obligatoires en jetons pourront être décidées en assemblée générale.
 
 Ces contributions correspondront à un pourcentage de la valeur de chaque portefeuille à la fin de la periode précédente. Elles sont révisables en assemblée générale.
 

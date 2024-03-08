@@ -1,6 +1,6 @@
 ---
 type: "event"
-title: "Partage de connaissances"
+title: "Master Classes"
 publishDate: "2023-02-27"
 date: "2024-03-23T11:00:00+02:00"
 # post save as draft
@@ -8,7 +8,7 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Retours d'experience et petites formations."
+description : "Partage de connaissances et d'intelligences."
 # Event image
 image: "images/events/IMG_20230626_134912Z.jpg"
 # location
@@ -27,13 +27,13 @@ lang: fr
 
 ### **Samedi 23 mars** : Partage de connaissances et d'intelligences *("master classes")*
 
-* **11h :** Monnaie et transition écologique *(par Jean-Jacques Brucker)*.
+* **11h :** Monnaie et transition écologique *(par [Jean-Jacques Brucker](../author/jean-jacques-brucker/))*.
 * **12h :** Apéro + repas partagé.
 * **14h :** Enjeux des paramètres *growth*, *taxe* et *sharp* de
-  l'association *(par Jean-Jacques Brucker)*.
-* **15h :** Nouveautés [SuperNova](https://www.thunderbird.net/fr/thunderbird/115.0/whatsnew/) du client mail Thunderbird *(par Laurent Céard)*.
-* **16h :** Utilisation d'OpenPGP avec les NitroKey/Yubikey *(par Jean-Jacques Brucker)*.
-* **17h :** Projet [DietPI](https://dietpi.com/) - *(par Frederic Zwikel)*.
+  l'association *(par [Jean-Jacques Brucker](../author/jean-jacques-brucker/))*.
+* **15h :** Nouveautés [SuperNova](https://www.thunderbird.net/fr/thunderbird/115.0/whatsnew/) du client mail Thunderbird *(par [Laurent Céard](../author/laurent-ceard/))*.
+* **16h :** Utilisation d'OpenPGP avec les NitroKey/Yubikey *(par [Jean-Jacques Brucker](../author/jean-jacques-brucker/))*.
+* **17h :** Projet [DietPI](https://dietpi.com/) *(par [Frederic Zwikel](../author/fred-zwikel/))*.
 * **17h30 :** Apéro + jeux.
 
 ### **Dimanche 24 mars à 14h30** : Assemblée Générale

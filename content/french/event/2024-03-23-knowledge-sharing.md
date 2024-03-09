@@ -27,7 +27,7 @@ lang: fr
 
 ### **Samedi 23 mars** : Partage de connaissances et d'intelligences *("master classes")*
 
-* **11h :** Monnaie et transition écologique *(par [Jean-Jacques Brucker](../../author/jean-jacques-brucker/))*.
+* **11h :** Monnaie et réchauffement climatique *(par [Jean-Jacques Brucker](../../author/jean-jacques-brucker/))*.
 * **12h :** Apéro + repas partagé.
 * **14h :** Enjeux des paramètres *growth*, *taxe* et *sharp* de
   l'association *(par [Jean-Jacques Brucker](../../author/jean-jacques-brucker/))*.

@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-03-09T09:39:16+01:00 # MANAGED BY update_lastmod.sh
 type: "event"
 title: "Master Classes"
 publishDate: "2023-02-27"

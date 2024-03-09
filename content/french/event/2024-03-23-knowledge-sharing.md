@@ -17,7 +17,7 @@ location: "[Pelleautier  🇫🇷](https://www.openstreetmap.org/note/4144472#ma
 audience: "🎖️Pour tous les curieux."
 # entry fee
 fee: "1€ (cotisation)"
-apply_url: "mailto:info@foopgp.org"
+apply_url: "https://www.qui-quoi.fr/evenements/DG4m8e53782Xy6WMYnEQ"
 # Event language
 lang: fr
 ---

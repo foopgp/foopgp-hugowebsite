@@ -67,7 +67,7 @@ où *stingynalty* croît automatiquement de 5 pour mille (5 ‰) le premier jour
 
 **stingynaltyₙ = stingynaltyₙ₋₁ + 0.005 × stingynaltyₙ₋₁**
 
-En cas d'inflation significative de la zone euro, un ajustement du paramètre *stingynalty* pourra être décidé en assemblée générale.
+En cas d'inflation significative de la zone euro, un ajustement du paramètre *stingynalty* pourra être determiné par le conseil d'administration puis adopté en assemblée générale.
 
 *Explication :* en choisissant un facteur d'inflation supérieur à ceux calculés en zone euro (eg: eurostat)
 nous pouvons créer un léger « [Fear Of Missing Opportunity](https://fr.wikipedia.org/wiki/Syndrome_FOMO) ».
@@ -91,9 +91,9 @@ sont consultables sur le site Web de l'association : https://foopgp.org/fr/about
 
 ### Article 5 – Émission universelle de nouveaux jetons (confer article 10bis des Statuts)
 
-Périodiquement, de nouveaux jetons sont émis à quantité égale pour chaque personne physique membre active de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
+Mensuellement, de nouveaux jetons sont émis à quantité égale pour chaque personne physique membre active de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
 
-Ainsi, pour chacune de ces periodes, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de ses contributions obligatoires (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
+Ainsi, pour chacune de ces périodes mensuelles, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de ses contributions obligatoires (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
 
 **jₛ= *growth* × Mₜ ∕ N**
 
@@ -103,7 +103,7 @@ Avec :
 * Mₜ : la masse totale de l’ensemble des jetons (avant cette émission universelle)
 * N : Le nombre de membres actifs sur la période
 
-**Le taux de croissance *growth* et sa periodicité *growthp* définis lors de la dernière assemblée générale sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
+**Le taux de croissance *growth* adopté lors de la dernière assemblée générale sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
 
 ### Article 6 – Portefeuilles
 
@@ -118,7 +118,7 @@ Ces portefeuilles sont notés « W ».
 
 ### Article 7 – Contributions obligatoires (confer article 10bis des Statuts)
 
-Des contributions obligatoires en jetons pourront être décidées en assemblée générale.
+Des contributions obligatoires en jetons pourront être déterminé par le conseil d'administration puis adopté en assemblée générale.
 
 Ces contributions correspondront à un pourcentage de la valeur de chaque portefeuille à la fin de la periode précédente. Elles sont révisables en assemblée générale.
 

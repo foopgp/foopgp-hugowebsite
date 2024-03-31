@@ -4,7 +4,7 @@ lang: fr
 ###date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-description : "CR visio du Mardi 20 mars 2024"
+description : "CR visio du mardi 19 mars 2024"
 image: "images/logos/logo-black-pgp.png"
 ###categories: [""]
 ###tags: [""]

@@ -60,7 +60,7 @@ Les Statuts ont été initialement adoptés en assemblée générale constitutiv
 Il sera procédé à la transmission au Greffe des associations et à la publication au JOAFE des Statuts modifiés à la suite de la présente assemblée générale extraordinaire.*
 
 
-### 1ère résolution : Approbation des [changements (mineurs) du texte des Statuts](../../about/2024-03-24-status.diff.html/)
+### 1ère résolution : Approbation des [changements (mineurs) du texte des Statuts](../../about/2024-03-24-status.diff.html)
 
 Jean-Jacques BRUCKER présente les propositions de modifications aux Statuts.
 
@@ -68,7 +68,7 @@ Après discussions, et amendements, les Statuts modifiés sont adoptés à l’u
 
 Les Statuts modifiés sont joints en annexe au présent procès-verbal ; contresignés par les président et secrétaire de séance pour leur diffusion et publication.
 
-### 2ème résolution : Approbation des [changements du texte du Règlement intérieur](../../about/2024-03-24-rules-of-procedures.diff.html/)
+### 2ème résolution : Approbation des [changements du texte du Règlement intérieur](../../about/2024-03-24-rules-of-procedures.diff.html)
 
 Jean-Jacques BRUCKER présente les propositions de modifications au Règlement intérieur.
 

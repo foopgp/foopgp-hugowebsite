@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-05-09T19:45:29+02:00 # MANAGED BY update_lastmod.sh
 title: "Friends Of OpenPGP (foopgp)"
 lang: fr
 ###date: 2019-07-06T15:27:17+06:00

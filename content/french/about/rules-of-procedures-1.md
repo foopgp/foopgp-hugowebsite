@@ -173,5 +173,5 @@ Cette expression pourra utiliser la méthode de Condorcet telle qu’[appliquée
 
 *Adopté par [l'assemblée générale extraordinaire du dimanche 22 octobre 2023 à Pelleautier](/fr/assembly/2023-10-22-report-age/).*
 
-*[Modifié et remplacé](../rules-of-procedures-2.md) en [assemblée générale extraordinaire le dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-age/).*
+*[Modifié et remplacé](../rules-of-procedures-2/) en [assemblée générale extraordinaire le dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-age/).*
 

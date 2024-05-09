@@ -56,11 +56,11 @@ Secrétaire de séance : Alain BAYLE
 Une assemblée tenue le 29 mai 2023 avait passé en revue les Statuts et discuté des potentielles évolutions.
 Les Statuts ont été initialement adoptés en assemblée générale constitutive du 20 mars 2023 (in memoriam Marcelle-Christianne FONTANA-BRUCKER)*
 
-*Les Statuts ont fait l’objet d’une première et unique publication au Journal officiel des associations et fondations d'entreprise (JOAFE), annonce n° 88, parution n° 20230015 en date du 11 avril 2023  https://www.journal-officiel.gouv.fr/pages/associations-detail-annonce-carte/?q.id=id:202300150088.
+*Les Statuts ont fait l’objet d’une première et unique publication au [Journal officiel des associations et fondations d'entreprise (JOAFE), annonce n° 88, parution n° 20230015 en date du 11 avril 2023](https://www.journal-officiel.gouv.fr/pages/associations-detail-annonce-carte/?q.id=id:202300150088).
 Il sera procédé à la transmission au Greffe des associations et à la publication au JOAFE des Statuts modifiés à la suite de la présente assemblée générale extraordinaire.*
 
 
-### 1ère résolution : Approbation des changements (mineurs) du texte des [Statuts](../../about/status/)
+### 1ère résolution : Approbation des [changements (mineurs) du texte des Statuts](../../about/2024-03-24-status.diff.html/)
 
 Jean-Jacques BRUCKER présente les propositions de modifications aux Statuts.
 
@@ -68,7 +68,7 @@ Après discussions, et amendements, les Statuts modifiés sont adoptés à l’u
 
 Les Statuts modifiés sont joints en annexe au présent procès-verbal ; contresignés par les président et secrétaire de séance pour leur diffusion et publication.
 
-### 2ème résolution : Approbation des changements du texte du [Règlement intérieur](../../about/rules-of-procedures/).
+### 2ème résolution : Approbation des [changements du texte du Règlement intérieur](../../about/2024-03-24-rules-of-procedures.diff.html/).
 
 Jean-Jacques BRUCKER présente les propositions de modifications au Règlement intérieur.
 
@@ -78,8 +78,7 @@ Le Règlement intérieur modifié est joint en annexe au présent procès-verbal
 
 ### 3ème résolution : Paramètres de fonctionnement définis par le Règlement intérieur.
 
-La réalité de ces paramètres et les enjeux des choix respectifs proposés ont pu faire l’objet d’échanges la veille, le samedi 23 mars 2024.
-https://foopgp.org/event/2024-03-23-knowledge-sharing/
+La réalité de ces paramètres et les enjeux des choix respectifs proposés ont pu faire [l’objet d’échanges la veille, le samedi 23 mars 2024](/fr/event/2024-03-23-knowledge-sharing/).
 
 Jean-Jacques BRUCKER présente les choix proposés par le conseil d’administration, pour chacun des paramètres concernés :
 * cotisation (1€)
@@ -108,7 +107,7 @@ Les participants se remercient et la séance est clôturée à 18h05.
 ---
 
 Trois (3) annexes au présent procès-verbal :
-_Statuts modifiés
-_Règlement intérieur modifié
-_Tableau récapitulatif des valeurs des paramètres de fonctionnement
+* [Statuts modifiés](../../about/status-2/)
+* [Règlement intérieur modifié](../../about/rules-of-procedures-2/)
+* [Tableau récapitulatif des valeurs des paramètres de fonctionnement](../../about/rules-parameters-2/)
 

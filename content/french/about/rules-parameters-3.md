@@ -30,5 +30,5 @@ fonctionnement de l'association foopgp, notamment ceux décrits dans son
 
 *Brouillon en cours, pour soumission à la prochaine assemblée générale.*
 
-*[Paramètres en vigueur](rules-parameters-2.md).*
+*[Paramètres en vigueur](rules-parameters-2/).*
 

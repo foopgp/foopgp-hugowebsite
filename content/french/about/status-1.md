@@ -194,4 +194,4 @@ fonctionnement desdits établissements.
 
 *Adopté en [assemblée générale extraordinaire le dimanche 22 octobre 2023 à Pelleautier](/fr/assembly/2023-10-22-report-age/).*
 
-*[Modifié et remplacé](../status-2.md) en [assemblée générale extraordinaire le dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-age/).*
+*[Modifié et remplacé](../status-2/) en [assemblée générale extraordinaire le dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-age/).*

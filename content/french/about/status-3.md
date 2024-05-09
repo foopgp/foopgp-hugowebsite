@@ -198,4 +198,4 @@ fonctionnement desdits établissements.
 
 *Brouillon pour soumission éventuelle à la prochaine assemblée générale extraordinaire.*
 
-*Remplacera donc éventuellement [les Statuts vigueur](status-2.md).*
+*Remplacera donc éventuellement [les Statuts vigueur](status-2/).*

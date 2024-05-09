@@ -198,5 +198,5 @@ fonctionnement desdits établissements.
 
 *Adopté en [assemblée générale extraordinaire le dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-age/), et en vigueur à partir de cette date et jusqu'à nouvel ordre.*
 
-*[Statuts précédents](../status-1.md)*
+*[Statuts précédents](../status-1/)*
 

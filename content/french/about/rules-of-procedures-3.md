@@ -170,4 +170,4 @@ Cette expression pourra utiliser la [méthode de Schulze](https://fr.wikipedia.o
 
 *Brouillon en cours, pour soumission éventuelle à la prochaine assemblée générale.*
 
-*Remplacera donc éventuellement [le Réglement intérieur en vigueur](rules-of-procedures-2.md).*
+*Remplacera donc éventuellement [le Réglement intérieur en vigueur](rules-of-procedures-2/).*

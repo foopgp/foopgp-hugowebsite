@@ -20,7 +20,7 @@ fonctionnement de l'association foopgp, notamment ceux décrits dans son
 [règlement intérieur](/fr/about/rules-of-procedures-2/).
 
 
-### Valeurs en vigueur jusqu'au 1er juillet 2024 (cf. AGE du 22 octobre 2023)
+### Valeurs en vigueur jusqu'au 30 juin 2024 (cf. [AGE du 22 octobre 2023](/fr/assembly/2023-10-22-report-age/))
 
 | Paramètre  | valeur | description
 |---|---|---|
@@ -31,7 +31,7 @@ fonctionnement de l'association foopgp, notamment ceux décrits dans son
 | *sharp*  | 1 | exposant de pouvoir, confer article 8 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 
 
-### Valeurs en vigueur à partir du 1er juillet 2024 (cf. AGE du 24 mars 2024)
+### Valeurs en vigueur à partir du 1er juillet 2024 (cf. [AGE du 24 mars 2024](/fr/assembly/2024-03-24-report-age/))
 
 | Paramètre  | valeur | description
 |---|---|---|

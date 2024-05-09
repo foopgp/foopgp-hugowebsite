@@ -165,7 +165,7 @@ pour cette année l'effet du présent article 8.
 * le coefficient de croissance « *growth* » (confer article 5 du présent règlement intérieur)
 * l’impôt associatif « *taxe* » (confer article 7 du présent règlement intérieur)
 * l’exposant de pouvoir « *sharp* » (confer article 8 du présent règlement intérieur)
-* la proportion de chaque enveloppe budgétaire (en euros ou en jetons, confer article 2 des [statuts](../status/))
+* la proportion de chaque enveloppe budgétaire (en euros ou en jetons, confer article 2 des [statuts](../status-1/))
 
 Cette expression pourra utiliser la méthode de Condorcet telle qu’[appliquée par la communauté Debian](https://www.debian.org/vote/).
 
@@ -173,5 +173,5 @@ Cette expression pourra utiliser la méthode de Condorcet telle qu’[appliquée
 
 *Adopté par [l'assemblée générale extraordinaire du dimanche 22 octobre 2023 à Pelleautier](/fr/assembly/2023-10-22-report-age/).*
 
-*[Modifié et remplacé](../rules-of-procedures-2.md) en [assemblée générale extraordinaire le dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-AGE/).*
+*[Modifié et remplacé](../rules-of-procedures-2.md) en [assemblée générale extraordinaire le dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-age/).*
 

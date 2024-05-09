@@ -168,7 +168,7 @@ Cette expression pourra utiliser la [méthode de Schulze](https://fr.wikipedia.o
 
 ---
 
-*Adopté en [assemblée générale extraordinaire du dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-AGE/) et en vigueur depuis cette date et jusqu'à nouvel ordre.*
+*Adopté en [assemblée générale extraordinaire du dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-age/) et en vigueur depuis cette date et jusqu'à nouvel ordre.*
 
 *[Réglement intérieur précédent](../rules-of-procedures-1.md)*
 

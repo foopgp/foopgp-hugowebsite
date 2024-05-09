@@ -1,5 +1,5 @@
 ---
-title: "Paramètres généraux de l'association foopgp."
+title: "Paramètres généraux de l'association foopgp (ancien)"
 lang: fr
 ###date: 2019-07-06T15:27:17+06:00
 draft: false
@@ -11,7 +11,7 @@ categories: ["about"]
 type: "post"
 ---
 
-## Paramètres généraux de l'association foopgp
+## Paramètres généraux de l'association foopgp (ancien)
 
 ---
 

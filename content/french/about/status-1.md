@@ -4,14 +4,14 @@ lang: fr
 ###date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-description : "Statuts de l'association"
+description : "(Anciens) Statuts de l'association (n°1)"
 image: "images/logos/logo-black-pgp.png"
 categories: ["about"]
 ###tags: [""]
 type: "post"
 ---
 
-## Statuts de l'association déclarée en France par application de la loi du 1er juillet 1901 et du décret du 16 août 1901.
+## (Anciens) Statuts de l'association déclarée en France par application de la loi du 1er juillet 1901 et du décret du 16 août 1901.
 
 ---
 

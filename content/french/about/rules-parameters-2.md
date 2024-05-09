@@ -27,7 +27,7 @@ fonctionnement de l'association foopgp, notamment ceux décrits dans son
 | *fee* | 1€ | Cotisation, confer article 3 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 | *stingynalty*  | 1 | facteur d'inflation, confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 | *growth* | 0% | taux de croissance autonome de la quantité de jetons, confer article 5 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
-| *taxe* | 0% | taux d'impôt associatif, confer article 7 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
+| *taxe* | 0% | contributions obligatoires, confer article 7 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 | *sharp*  | 1 | exposant de pouvoir, confer article 8 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 
 
@@ -38,6 +38,7 @@ fonctionnement de l'association foopgp, notamment ceux décrits dans son
 | *fee* | 1€ | Cotisation, confer article 3 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 | *stingynalty*  | 1 + 5‰/mois | facteur d'inflation, confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 | *growth* | 4‰/mois | taux de croissance autonome de la quantité de jetons, confer article 5 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
+| *taxe* | 1%/ans | contributions obligatoires, confer article 7 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 | *sharp*  | 3/4 = 0.75 | exposant de pouvoir, confer article 8 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 
 
@@ -454,6 +455,8 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures-2/).
 |    6840.68 € | 12.000000 Ɉ |
 
 ---
+
+*Note pour générer ces tableaux :*
 
 ```
 git clone https://github.com/foopgp/bash-libs/

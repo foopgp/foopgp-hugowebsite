@@ -1,17 +1,17 @@
 ---
-title: "Réglement intérieur foopgp"
+title: "(Ancien) Réglement intérieur foopgp (n°1)"
 lang: fr
 ###date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-description : "Réglement intérieur de l'association foopgp"
+description : "(Ancien) Réglement intérieur de l'association foopgp"
 image: "images/logos/logo-black-pgp.png"
 categories: ["about"]
 ###tags: [""]
 type: "post"
 ---
 
-## Règlement intérieur foopgp
+## (Ancien) Règlement intérieur foopgp (n°1)
 
 ---
 

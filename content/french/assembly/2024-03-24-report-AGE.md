@@ -68,7 +68,7 @@ Après discussions, et amendements, les Statuts modifiés sont adoptés à l’u
 
 Les Statuts modifiés sont joints en annexe au présent procès-verbal ; contresignés par les président et secrétaire de séance pour leur diffusion et publication.
 
-### 2ème résolution : Approbation des [changements du texte du Règlement intérieur](../../about/2024-03-24-rules-of-procedures.diff.html/).
+### 2ème résolution : Approbation des [changements du texte du Règlement intérieur](../../about/2024-03-24-rules-of-procedures.diff.html/)
 
 Jean-Jacques BRUCKER présente les propositions de modifications au Règlement intérieur.
 
@@ -76,7 +76,7 @@ Après discussions, et amendements, le Règlement intérieur modifié est adopt�
 
 Le Règlement intérieur modifié est joint en annexe au présent procès-verbal ; contresigné par les président et secrétaire de séance pour sa diffusion et publication.
 
-### 3ème résolution : Paramètres de fonctionnement définis par le Règlement intérieur.
+### 3ème résolution : Paramètres de fonctionnement définis par le Règlement intérieur
 
 La réalité de ces paramètres et les enjeux des choix respectifs proposés ont pu faire [l’objet d’échanges la veille, le samedi 23 mars 2024](/fr/event/2024-03-23-knowledge-sharing/).
 

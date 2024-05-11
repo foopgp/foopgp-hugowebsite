@@ -33,6 +33,6 @@ Nous avons alors failli nous baptiser PUG, qui aurait signifié *Privacy User Gr
 
 Bien que nous n'aimions pas les contraintes, nous reconnaissons qu'une société ne
 peut fonctionner sans un minimum de règles :
-* [Statuts](../status/)
-* [Règlement intérieur](../rules-of-procedures/)
+* [Statuts](status/)
+* [Règlement intérieur](rules-of-procedures/)
 

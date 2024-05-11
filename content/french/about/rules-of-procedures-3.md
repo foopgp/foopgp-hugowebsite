@@ -1,5 +1,5 @@
 ---
-title: "Réglement intérieur foopgp"
+title: "(en travaux) Réglement intérieur foopgp"
 lang: fr
 ###date: 2019-07-06T15:27:17+06:00
 draft: false
@@ -11,7 +11,7 @@ categories: ["about"]
 type: "post"
 ---
 
-## Règlement intérieur foopgp
+## (en travaux) Règlement intérieur foopgp
 
 ---
 

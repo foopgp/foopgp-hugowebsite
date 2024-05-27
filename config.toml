@@ -207,7 +207,7 @@ link = "mailto:info@foopgp.org"
 [[params.social]]
 title = "contribute"
 icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "https://github.com/foopgp"
+link = "https://codeberg.org/foopgp"
 
 [[params.social]]
 title = "donate"
@@ -232,7 +232,7 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Copyright &copy; 2020. [Thanks](https://github.com/foopgp/foopgp-hugowebsite) to [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
+copyright = "Copyright &copy; 2024. [Thanks](https://github.com/foopgp/foopgp-hugowebsite) to [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
 
 
 ################################### French language #####################################
@@ -243,4 +243,4 @@ contentDir = "content/french"
 weight = 2
 home = "Accueil"
 # copyright
-copyright = "Copyright &copy; 2020. [Généré](https://github.com/foopgp/foopgp-hugowebsite) grâce à [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
+copyright = "Copyright &copy; 2024. [Généré](https://github.com/foopgp/foopgp-hugowebsite) grâce à [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"

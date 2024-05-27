@@ -43,11 +43,12 @@ Laurent Céard, Frédéric Renault.*
 * Structuration formations
 * Réfléchir sur la pertinence d'une soumission éventuelle au [contrat d'engagement républicain](https://www.associations.gouv.fr/le-contrat-d-engagement-republicain-le-guide-pratique.html)
 -> plutôt non, tant que possible.
+* Brainstorming sur le contenu d'une éventuelle plaquette de présentation de l'association -> https://mensuel.framapad.org/p/foopgp-sexy-presentation
 
 ### Actions à mener
 
-* "Industrialisation" du process de recrutement et "on-boarding".
-* Développement de nos premières offres réservées au membres :
+* "Industrialisation" du processus de recrutement et "on-boarding".
+* Développement de nos premières offres réservées aux membres :
   * service mail
   * prêt de laptop Debian GNU/Linux customisés
 

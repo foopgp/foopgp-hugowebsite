@@ -16,7 +16,7 @@ location: "[Pelleautier  🇫🇷](https://www.openstreetmap.org/relation/971979
 # expected attendees
 audience: "🎖️🎖️ pour tous les (futurs) membres."
 # entry fee
-fee: "cotisation"
+fee: "Cotisation."
 apply_url: "mailto:info@foopgp.org"
 # Event language
 lang: fr

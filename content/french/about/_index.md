@@ -29,3 +29,10 @@ PGP signifie *Pretty Good Privacy*, et aujourd'hui son implémentation la plus u
 
 Nous avons alors failli nous baptiser PUG, qui aurait signifié *Privacy User Group(s)*. Finalement cet acronyme est parti, mais le chien qui garde notre vie privée est resté.
 
+### Comment nous fonctionnons ?
+
+Bien que nous n'aimions pas les contraintes, nous reconnaissons qu'une société ne
+peut fonctionner sans un minimum de règles :
+* [Statuts](status/)
+* [Règlement intérieur](rules-of-procedures/)
+

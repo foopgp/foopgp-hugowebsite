@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-05-28T16:38:58+02:00 # MANAGED BY update_lastmod.sh
 
 title: "Jacques Moussali"
 # page title background image"

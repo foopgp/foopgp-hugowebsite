@@ -1,15 +1,14 @@
-
 ---
-title: "Rapport Hebdomadaire 2024 S11"
+title: "2024 S11 Rapport Hebdomadaire"
 lang: fr
-###date: 2019-07-06T15:27:17+06:00
+date: 2024-03-13T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "CR visio du Mardi 13 mars 2024"
 image: "images/logos/logo-black-pgp.png"
 ###categories: [""]
 ###tags: [""]
-type: "post"
+type: "meeting"
 ---
 
 *Présents : Jean-Jacques Brucker, François Revol, Laurent Céard, Didier Loyens.*

@@ -1,14 +1,14 @@
 ---
-title: "PV AGE 22 octobre 2023"
+title: "2023 S42 PV AGE 22 octobre"
 lang: fr
-###date: 2019-07-06T15:27:17+06:00
+date: 2023-10-22T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Procès-verbal d'assemblée générale extraordinaire"
 image: "images/logos/logo-black-pgp.png"
 ###categories: [""]
 ###tags: [""]
-type: "post"
+type: "meeting"
 ---
 
 ## Procès-verbal de l'assemblée générale extraordinaire du 22 octobre 2023

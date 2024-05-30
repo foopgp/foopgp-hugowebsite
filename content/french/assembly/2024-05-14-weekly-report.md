@@ -1,14 +1,14 @@
 ---
-title: "Rapport Hebdomadaire 2024 S20"
+title: "2024 S20 Rapport Hebdomadaire"
 lang: fr
-###date: 2019-07-06T15:27:17+06:00
+date: 2024-05-14T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "CR visio du Mardi 14 mai 2024"
 image: "images/logos/logo-black-pgp.png"
 ###categories: [""]
 ###tags: [""]
-type: "post"
+type: "meeting"
 ---
 
 *Présents : Jean-Jacques Brucker, Laurent Céard, Frederic Zwikel.*

@@ -1,14 +1,14 @@
 ---
-title: "Rapport Hebdomadaire 2024 S8"
+title: "2024 S08 Rapport Hebdomadaire"
 lang: fr
-###date: 2019-07-06T15:27:17+06:00
+date: 2024-02-20T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "CR visio du Mardi 20 février 2024"
 image: "images/logos/logo-black-pgp.png"
 ###categories: [""]
 ###tags: [""]
-type: "post"
+type: "meeting"
 ---
 
 *Présents : Jean-Jacques Brucker, François Revol, Laurent Céard, Didier Loyens, Patrice Roux.*

@@ -1,14 +1,14 @@
 ---
-title: "PV AGE 24 mars 2024"
+title: "2024 S12 PV AGE 24 mars"
 lang: fr
-###date: 2019-07-06T15:27:17+06:00
+date: 2024-03-24T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Procès-verbal d'assemblée générale extraordinaire"
 image: "images/logos/logo-black-pgp.png"
 ###categories: [""]
 ###tags: [""]
-type: "post"
+type: "meeting"
 ---
 
 ## Procès-verbal de l'assemblée générale extraordinaire du 24 mars 2024 de FRIENDS OF OPENPGP (foopgp)

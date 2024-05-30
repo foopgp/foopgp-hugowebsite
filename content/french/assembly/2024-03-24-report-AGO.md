@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-05-30T10:57:02+02:00 # MANAGED BY update_lastmod.sh
 title: "2024 S12 PV AGO 24 mars"
 lang: fr
 date: 2024-03-24T15:27:17+06:00

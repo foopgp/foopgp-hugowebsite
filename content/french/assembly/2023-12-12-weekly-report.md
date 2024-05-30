@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-05-30T10:57:02+02:00 # MANAGED BY update_lastmod.sh
 title: "2023 S50 Rapport Hebdomadaire"
 lang: fr
 date: 2023-12-12T15:27:17+06:00

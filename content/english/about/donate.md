@@ -11,5 +11,15 @@ image: "images/donate/logo_g1_flare_512.png"
 #type: "post"
 ---
 
-![Soon…](/images/comingsoon.jpg)
+
+ **⚠ Please note that this is approximate English traduction and there may be some misinterpretation. [French version](/fr/about/donate/) ⚠**
+
+---
+
+Please fill out this form to make a donation.
+
+If you are not yet a member of the association, one euro of your donation will be used for your annual membership fee.
+
+{{< foopgp_form_register_en >}}
+
 

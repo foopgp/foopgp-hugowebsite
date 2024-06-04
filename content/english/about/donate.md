@@ -4,21 +4,19 @@ lang: en
 #date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-description : "Donate to The FooPgp to support open source communities."
-image: "images/donate/logo_g1_flare_512.png"
+description : "Register or donate to support our community."
+image: "images/logos/logo-foopgp-token-0.png"
 #categories: ["about"]
 #tags: [""]
 #type: "post"
 ---
 
 
- **⚠ Please note that this is approximate English traduction and there may be some misinterpretation. [French version](/fr/about/donate/) ⚠**
+Please, fill in this form to become a member or make a donation.
 
----
+To become or remain an active member of the association, the annual fee is one euro (1€); see [association parameters](https://foopgp.org/fr/about/rules-parameters/).
 
-Please fill out this form to make a donation.
-
-If you are not yet a member of the association, one euro of your donation will be used for your annual membership fee.
+In addition to this fee, you can make a donation, which may entitle you to power tokens, in order to participate in the governance of the association, in accordance with our [rules of procedure](/en/about/rules-of-procedures/).
 
 {{< foopgp_form_register_en >}}
 

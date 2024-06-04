@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-06-04T15:04:27+02:00 # MANAGED BY update_lastmod.sh
 title: "About Us"
 draft: false
 # page title background image

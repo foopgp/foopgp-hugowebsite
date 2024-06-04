@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-06-04T15:04:27+02:00 # MANAGED BY update_lastmod.sh
 title: "Réglement intérieur foopgp"
 lang: en
 ###date: 2019-07-06T15:27:17+06:00

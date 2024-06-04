@@ -27,3 +27,10 @@ PGP stands for *Pretty Good Privacy*, and today its most widely used implementat
 
 We then almost baptized ourselves PUG, which would have meant *Privacy User Group(s)*. At the end that acronym was gone, but the watchdog of our privacy remained.
 
+### How do we operate?
+
+Although we do not like constraints, we recognize that a society
+cannot function without a minimum of rules:
+
+* [Status](status/)
+* [Rules of procedures](rules-of-procedures/)

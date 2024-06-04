@@ -1,1 +1,1 @@
-../../french/about/rules-of-procedures.md
+rules-of-procedures-2.md

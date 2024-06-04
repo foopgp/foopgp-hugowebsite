@@ -1,1 +1,1 @@
-../../french/about/status.md
+status-2.md

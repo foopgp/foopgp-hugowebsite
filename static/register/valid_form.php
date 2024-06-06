@@ -140,7 +140,8 @@ if($_POST['ident_known']=='0')
 		if(is_array($rMembers) && isset($rMembers[0]->id))
 		{
 			$member = $rMembers[0];
-			if($member->array_options->options_udid4 != str_replace('udid4=','',$_POST['udid4']))
+			// Comparing Geo coordinates are not necessary as long as there a not enough udid4 generated to meet a collision.
+			if( substr("udid4=".$member->array_options->options_udid4,0,28) != substr($_POST['udid4'],0,28) )
 				return_with_error(array("Member found with this email address but with a different and udid4 !"));
 			if($member->typeid != constant('INTERDOLI_DOLIMBRTYPE_'.$_POST['origine_income']))
 				return_with_error(array("Member found with this email address but with a different type !"));

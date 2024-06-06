@@ -1,5 +1,5 @@
 ---
-Lastmod: 2024-06-06T09:25:28+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-06-06T09:25:28+02:00 # MANAGED by --enableGitInfo
 title: "General parameters of the foopgp association."
 lang: fr
 ###date: 2019-07-06T15:27:17+06:00

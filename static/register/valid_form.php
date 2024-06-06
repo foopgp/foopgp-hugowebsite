@@ -27,6 +27,7 @@ Redirect to stripe url
 require_once(dirname(__FILE__).'/config.php');
 require_once(dirname(__FILE__).'/dolibarr.class.php');
 
+$lang = $_GET['lang']??'en';
 
 /**************************************/
 
@@ -35,7 +36,7 @@ function return_with_error($errors)
 
 	if(empty($_SERVER['HTTP_REFERER']))
 	{
-		echo '<!DOCTYPE html><html lang="en"><body><h2>Errors occured</h2><ul><li>';
+		echo '<!DOCTYPE html><html lang="'.$lang.'"><body><h2>Errors occured</h2><ul><li>';
 		echo implode('</li><li>', $errors);
 		echo '</li></ul></body></html>';
 	}
@@ -166,7 +167,7 @@ if($_POST['ident_known']=='0')
 			}
 			if(intval($member->public) != intval($_POST['acceptcite']))
 			{
-				$member->public = $_POST['acceptcite'];
+				$member->public = intval($_POST['acceptcite']);
 				$changes[]="Accept cite corrected! ";
 			}
 			if(count($changes)>0)

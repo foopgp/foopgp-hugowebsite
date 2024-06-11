@@ -11,6 +11,8 @@ image: "images/friends/avatar_ml128.jpg"
 social:
   - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
     link : "https://github.com/maelBTS"
+  - icon : "ti-key"
+    link : "/keys/OpenPGP_0x93BFA79156DCA5328B65F272AEC4DE20717E5094.asc"
 
 ---
 

@@ -11,7 +11,9 @@ image: "images/friends/avatar_ef128.jpg"
 social:
   - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
     link : "https://github.com/Hankloche"
+  - icon : "ti-key"
+    link : "/keys/OpenPGP_0x07D89A3CCCD686BB7D62E8C035D48E8F48CB16A6.asc"
 
 ---
 
-My name is Evyn FAURE, I am 19 years old, and I am currently enrolled in a BTS SIO program at Lycée Dominique Villars in Gap. I am passionate about computer science, particularly programming, which is why I chose the SLAM option.
+My name is Evyn FAURE, I am 19 years old, and I am currently enrolled in a BTS SIO program at Lycée Dominique Villars in Gap. I am passionate about computer science, particularly programming, which is why I chose the SLAM option. 

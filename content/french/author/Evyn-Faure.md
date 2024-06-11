@@ -11,6 +11,8 @@ image: "images/friends/avatar_ef128.jpg"
 social:
   - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
     link : "https://github.com/Hankloche"
+  - icon : "ti-key"
+    link : "/keys/OpenPGP_0x07D89A3CCCD686BB7D62E8C035D48E8F48CB16A6.asc"
 
 ---
 

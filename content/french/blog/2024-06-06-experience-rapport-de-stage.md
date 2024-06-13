@@ -56,8 +56,12 @@ L'association utilise principalement Linux, ce qui nous a amenés à utiliser fr
 ---
 
 ### Codeberg
-Nous avons utilisé Codeberg de manière préliminaire, car l'association prévoit de migrer vers ce système de gestion de code source. Nous y avons également ajouté nos clés PGP et SSH. Codeberg, étant une alternative open source à GitHub, nous a donné un aperçu des différentes plateformes de gestion de code source.
+Nous avons utilisé Codeberg de manière préliminaire, car l'association est en train de migrer vers ce système de gestion de code source. Nous y avons également ajouté nos clés PGP et SSH. Codeberg, étant une alternative open source à GitHub, nous a donné un aperçu des différentes plateformes de gestion de code source.
 [Codeberg](https://codeberg.org/)
+
+Voici un exemple de notre configuration :
+
+![Clé PGP et SSH doce berg Maël](/images/blog/2024/cle_pgp_ssh_codeberg_mael.jpg)
 
 ---
 

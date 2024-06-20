@@ -24,67 +24,27 @@ Nous sommes deux étudiants en première année de BTS SIO (Services Informatiqu
 
 Pendant notre stage, nous avons travaillé avec diverses technologies et outils, ce qui a grandement enrichi notre apprentissage et notre expérience pratique :
 
-* [GitHub](./#github)
-* [Hugo](./#hugo)
-* [Shell](./#shell)
-* [Codeberg](./#codeberg)
-* [Dolibarr](./#dolibarr)
-* [OpenPGP](./#openpgp)
-* [Pgpid](./#pgpid)
-* [Evolution](./#evolution)
-* [YubiKey](./#yubikey)
-* [Nitrokey](./#nitrokey)
-* [Résumé](./#resume)
-* [Avis personnel](./#avis_personnel)
-
----
-
-### GitHub
-![logogithub](/images/blog/2024/github.png)
-
-Sur [GitHub](https://github.com/), nous avons hébergé notre portfolio et ajouté nos clés PGP et SSH. Cela nous a permis de comprendre l'importance de la gestion de versions et de la sécurité des clés. GitHub nous a également aidés à collaborer efficacement sur divers projets.
-
-Voici un exemple de notre configuration :
-![Clé PGP et SSH Maël](/images/blog/2024/cle_pgp_ssh_mael.png)
-
----
-
-### Hugo
-![logohugo](/images/blog/2024/logohugo.png)
-
-Le site web de l'association est développé avec [Hugo](https://gohugo.io/), un générateur de sites statiques en Go. Nous avons appris ce langage pour modifier, ajouter ou supprimer divers éléments sur le site. Hugo nous a permis de créer des pages web dynamiques et rapides, tout en nous initiant aux bases de la programmation en Go.
-
----
-
-### Shell
-![logoshell](/images/blog/2024/logoshell.png)
-
-L'association utilise principalement Linux, ce qui nous a amenés à utiliser fréquemment le shell. Nous avons renforcé nos compétences en scripting, acquises lors de nos cours de BTS. Le shell s'est avéré être un outil puissant pour automatiser les tâches répétitives et gérer efficacement les systèmes Linux.  
-[En savoir plus sur le shell](https://fr.wikipedia.org/wiki/Shellcode)
-
----
-
-### Codeberg
-![logocodeberg](/images/blog/2024/logocodeberg.png)
-
-Nous avons utilisé [Codeberg](https://codeberg.org/) de manière préliminaire, car l'association est en train de migrer vers ce système de gestion de code source. Nous y avons également ajouté nos clés PGP et SSH. Codeberg, étant une alternative open source à GitHub, nous a donné un aperçu des différentes plateformes de gestion de code source.
-
-Voici un exemple de notre configuration :
-![Clé PGP et SSH Codeberg Maël](/images/blog/2024/cle_pgp_ssh_codeberg_mael.jpg)
-
----
-
-### Dolibarr
-![logodolibarr](/images/blog/2024/logodolibarr.png)
-
-[Dolibarr](https://www.dolibarr.org) est un logiciel de gestion open source idéal pour les associations. Il permet de gérer les adhésions, les membres, les dons, les événements et la comptabilité de manière simple et efficace. Travailler avec Dolibarr nous a donné une perspective précieuse sur la gestion d'association et l'importance des outils de gestion intégrés.
+* [**OpenPGP**](./#openpgp)
+* [**Pgpid**](./#pgpid)
+* [**Clé PGP**](./#yubikey)
+  * [YubiKey](./#YubiKey)
+  * [Nitrokey](./#nitrokey)
+* [**Couriel**](./#couriel)
+  * [Evolution](./#evolution)
+  * [K9mail](./#k9mail)
+* [**GitHub**](./#github)
+* [**Hugo**](./#hugo)
+* [**Codeberg**](./#codeberg)
+* [**Dolibarr**](./#dolibarr)
+* [**Résumé**](./#resume)
+* [**Avis personnel**](./#avis_personnel)
 
 ---
 
 ### OpenPGP
 ![logoopenpgp](/images/blog/2024/logopgp.png)
 
-[OpenPGP](https://www.openpgp.org/) est un format de cryptographie qui sert, par exemple, au chiffrement et à l'authentification du courrier électronique.
+[OpenPGP](https://www.openpgp.org/) est un format de cryptographie qui sert, par exemple, au chiffrement, à l'authentification et a la signature du courrier électronique.
 
 #### Clé publique
 
@@ -98,7 +58,7 @@ Voici un exemple de notre configuration :
 
 - **Sécurité** :
   - La clé publique ne permet pas de déchiffrer les messages. Seule la clé privée correspondante peut effectuer cette tâche.
-  - Même si un tiers accède à la clé publique, il ne peut pas lire les messages chiffrés à l'aide de cette clé.
+  - Permet de créer des signatures quasiment infalsifiables et de ce passe de mots de passe.
 
 #### Clé privée
 
@@ -113,6 +73,8 @@ Voici un exemple de notre configuration :
 - **Sécurité** :
   - Si la clé privée est compromise, un attaquant pourrait déchiffrer les messages destinés au détenteur de la clé privée et signer des messages en se faisant passer pour lui.
   - Il est crucial de stocker la clé privée dans un endroit sécurisé et de la sauvegarder de manière appropriée.
+
+Pour en savoir plus sur [Openpgp](/fr/about/openpgp/) 
 
 ---
 
@@ -140,6 +102,31 @@ Voici un exemple des QR codes utilisés :
 
 ---
 
+### YubiKey
+![visuelyubikey](/images/blog/2024/yubikey_image.jpeg)
+
+La [YubiKey](https://www.yubico.com/la-cle-yubikey/?lang=fr) est un dispositif de sécurité matériel utilisé pour protéger l'accès aux comptes en ligne. Nous avons appris à l'utiliser pour améliorer la sécurité de nos authentifications. Cet outil nous a montré l'importance de la sécurité matérielle dans la protection des données sensibles.
+
+![code_clepgp_mael](/images/blog/2024/mdp_yubikey_mael.jpg)
+
+Ceci est un message de l'application K-9 Mail qui demande ici le jeton (Yubikey) pour ouvrir le mail chiffré.
+![k-9 mail](/images/blog/2024/K-9_mail.jpg)
+
+----
+manée nu
+
+----
+
+---
+
+### Nitrokey
+![visuelnitrokey](/images/blog/2024/nitrokey_image.jpeg)
+
+Les [NitroKeys](https://www.nitrokey.com/) offrent une solution complète et sécurisée pour protéger les identités numériques et les données sensibles. Leur utilisation permet de renforcer significativement la sécurité des systèmes et des informations, tout en restant pratiques et accessibles pour les utilisateurs. Elles sont presque identiques à la YubiKey.
+
+
+---
+
 ### Evolution
 ![logoevolution](/images/blog/2024/logoevolution.jpeg)
 
@@ -153,22 +140,67 @@ On les sélectionne en ouvrant les options et en cochant 'Signer avec PGP' et 'C
 
 ---
 
-### YubiKey
-![visuelyubikey](/images/blog/2024/yubikey_image.jpeg)
+### K9 Mail
+![logok9mail](/images/blog/2024/logok9mail.jpeg)
 
-La [YubiKey](https://www.yubico.com/la-cle-yubikey/?lang=fr) est un dispositif de sécurité matériel utilisé pour protéger l'accès aux comptes en ligne. Nous avons appris à l'utiliser pour améliorer la sécurité de nos authentifications. Cet outil nous a montré l'importance de la sécurité matérielle dans la protection des données sensibles.
+[K-9 Mail](https://k9mail.app/) est un client de messagerie open source pour Android, reconnu pour ses fonctionnalités avancées et sa confidentialité des utilisateurs. Créé par Jesse Vincent, l'application a été intégrée à la famille Thunderbird en 2022. Cette collaboration vise à améliorer K-9 Mail avec des fonctionnalités comme une meilleure configuration des comptes, la gestion des dossiers et la synchronisation avec Thunderbird sur bureau. K-9 Mail sera progressivement renommé Thunderbird sur Android​ (K-9 Mail)​​ (The Thunderbird Blog)​​ (K-9 Mail)​.
 
-![code_clepgp_mael](/images/blog/2024/mdp_yubikey_mael.jpg)
+Pour plus de détails, visitez le site officiel de [K-9 Mail](https://k9mail.app/about.html) et le [blog de Thunderbird](https://blog.thunderbird.net/fr/).
 
-Ceci est un message de l'application K-9 Mail qui demande ici le jeton (Yubikey) pour ouvrir le mail chiffré.
-![k-9 mail](/images/blog/2024/K-9_mail.jpg)
+Dans l'appliction on va utiliser dans cette exemple une yubikey tout dabord il faut cliquer "Utiliser un jeton de sécurité." puis quand la clé est scanner il va la verifier.
+
+| ![k9mail](/images/blog/2024/K-9_Mail_1.jpg) | ![k9mail](/images/blog/2024/K-9_Mail_2.jpg) |
+|---|---|
+
+Pour envoyer un mail chiffrer il suffit  de cliquer sur le cadena en haut a droite.
+
+![k9mail](/images/blog/2024/K-9_Mail_cadena.jpg)
+
+Et pour lire les mail chiffrer il faut utiliser un message apparait :
+
+![k9mail](/images/blog/2024/K-9_Mail_3.jpg)
 
 ---
 
-### Nitrokey
-![visuelnitrokey](/images/blog/2024/nitrokey_image.jpeg)
+### GitHub
+![logogithub](/images/blog/2024/github.png)
 
-Les [NitroKeys](https://www.nitrokey.com/) offrent une solution complète et sécurisée pour protéger les identités numériques et les données sensibles. Leur utilisation permet de renforcer significativement la sécurité des systèmes et des informations, tout en restant pratiques et accessibles pour les utilisateurs. Elles sont presque identiques à la YubiKey.
+Sur [GitHub](https://github.com/), nous avons hébergé notre portfolio et ajouté nos clés PGP et SSH. Cela nous a permis de comprendre l'importance de la gestion de versions et de la sécurité des clés. GitHub nous a également aidés à collaborer efficacement sur divers projets.
+
+Voici un exemple de notre configuration :
+![Clé PGP et SSH Maël](/images/blog/2024/cle_pgp_ssh_mael.png)
+
+---
+
+### Codeberg
+![logocodeberg](/images/blog/2024/logocodeberg.png)
+
+Nous avons utilisé [Codeberg](https://codeberg.org/) de manière préliminaire, car l'association est en train de migrer vers ce système de gestion de code source. Nous y avons également ajouté nos clés PGP et SSH. Codeberg, étant une alternative open source à GitHub, nous a donné un aperçu des différentes plateformes de gestion de code source.
+
+Voici un exemple de notre configuration :
+![Clé PGP et SSH Codeberg Maël](/images/blog/2024/cle_pgp_ssh_codeberg_mael.jpg)
+
+---
+
+### Hugo
+![logohugo](/images/blog/2024/logohugo.png)
+
+Le site web de l'association est développé avec [Hugo](https://gohugo.io/), un générateur de sites statiques en Go. Nous avons appris ce langage pour modifier, ajouter ou supprimer divers éléments sur le site. Hugo nous a permis de créer des pages web dynamiques et rapides, tout en nous initiant aux bases de la programmation en Go.
+
+---
+
+### Shell
+![logoshell](/images/blog/2024/logoshell.png)
+
+L'association utilise principalement Linux, ce qui nous a amenés à utiliser fréquemment le shell. Nous avons renforcé nos compétences en scripting, acquises lors de nos cours de BTS. Le shell s'est avéré être un outil puissant pour automatiser les tâches répétitives et gérer efficacement les systèmes Linux.  
+[En savoir plus sur le shell](https://fr.wikipedia.org/wiki/Shellcode)
+
+---
+
+### Dolibarr
+![logodolibarr](/images/blog/2024/logodolibarr.png)
+
+[Dolibarr](https://www.dolibarr.org) est un logiciel de gestion open source idéal pour les associations. Il permet de gérer les adhésions, les membres, les dons, les événements et la comptabilité de manière simple et efficace. Travailler avec Dolibarr nous a donné une perspective précieuse sur la gestion d'association et l'importance des outils de gestion intégrés.
 
 ---
 

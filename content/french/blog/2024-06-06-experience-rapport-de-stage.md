@@ -26,7 +26,7 @@ Pendant notre stage, nous avons travaillé avec diverses technologies et outils,
 
 * [**OpenPGP**](./#openpgp)
 * [**Pgpid**](./#pgpid)
-* [**Clé PGP**](./#yubikey)
+* [**Clé de sécurité**](./#clé-de-sécurité)
   * [YubiKey](./#YubiKey)
   * [Nitrokey](./#nitrokey)
 * [**Couriel**](./#couriel)

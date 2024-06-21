@@ -22,7 +22,7 @@ Le vote Debian est un mécanisme formel utilisé par la communauté Debian pour 
 
 ### La Méthode de Vote Schulze
 
-La méthode de vote Schulze, aussi connue sous le nom de méthode de Condorcet-Schulze, est un algorithme utilisé pour déterminer le vainqueur d'une élection où il y a plus de deux options. Elle est particulièrement appréciée pour sa capacité à refléter fidèlement les préférences des électeurs dans des scénarios complexes.
+La méthode de vote Schulze, aussi connue sous le nom de méthode de Condorcet-Schulze, est un algorithme utilisé pour déterminer le vainqueur d'une élection où il y a plus de deux options. Elle est particulièrement appréciée pour sa capacité à refléter fidèlement les préférences des électeurs dans des scénarios complexes. 
 
 #### Principe de la Méthode Schulze
 

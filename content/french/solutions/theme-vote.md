@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-06-21T16:36:48+02:00 # MANAGED BY update_lastmod.sh
 title: "Vote"
 #date: 2019-07-06T15:27:17+06:00
 draft: false

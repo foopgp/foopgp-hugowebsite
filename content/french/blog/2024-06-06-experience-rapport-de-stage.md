@@ -81,19 +81,21 @@ Pour en savoir plus sur [Openpgp](/fr/about/openpgp/)
 ### Pgpid
 ![logopgpid](/images/logos/foopgp_square.png)
 
-Le PGP ID est un identifiant unique associé à une clé PGP (Pretty Good Privacy), utilisée pour le chiffrement et la déchiffrement des communications.
+[PgpId](https://codeberg.org/foopgp/pgpid) est une suite logiciel qui permet de créer, sauvegarder sur support physique et récupérer des identités numériques uniques basées sur le standard OpenPGP (Pretty Good Privacy), lesquelles peuvent être utilisées pour
+* signer vos données numériques.
+* chiffrer et déchiffrer vos données et communications numériques.
+* vous authentifier auprès de services numériques
+* et bientôt voter et payer (fonctionnalités en cours de développement par
+  certaines communautés des logiciels libres, dont l'association foopgp).
 
-Fonctionnement du PGP ID
+**En résumé, [pgpid](https://codeberg.org/foopgp/pgpid) aide à gérer et utiliser les clés PGP pour des utilisations numériques sécurisées.**
 
-  - Création : Généré automatiquement lors de la création d'une paire de clés PGP.
-  - Recherche : Utilisé pour trouver et partager des clés publiques.
-  - Serveurs de clés : Enregistré sur des serveurs publics pour faciliter l'échange sécurisé de messages.
+Dans l'association, Jean-Jacques a mis en place ce système innovant. Il fonctionne de la manière suivante : lorsque vous créez votre identité numérique,
+celle-ci est [repartie](https://fr.wikipedia.org/wiki/Secret_r%C3%A9parti) en trois QR codes distincts. Ces QR codes sont ensuite imprimés pour une utilisation pratique.
 
-En résumé, le PGP ID aide à gérer et utiliser les clés PGP pour des communications sécurisées.
+Pour accéder à votre identité numérique, il suffit de scanner ces trois QR codes. Une fois scannés, les principales clés privées associées à votre certificat OpenPGP sont reconstruites. Elle peuvent alors être poussées dans des clés de sécurité comme la [YubiKey](./#YubiKey) ou la [Nitrokey](./#nitrokey).
 
-Dans l'association, Jean-Jacques a mis en place un système innovant basé sur des QR codes. Ce système fonctionne de la manière suivante : lorsque vous créez votre identité numérique, celle-ci est convertie en trois QR codes distincts. Ces QR codes sont ensuite imprimés pour une utilisation pratique.
-
-Pour accéder à votre identité numérique, il suffit de scanner ces trois QR codes dans l'ordre correct. Une fois scannés dans la séquence appropriée, ils vous donnent un accès sécurisé à votre identité numérique.
+Ces clés de sécurité permettent d'utiliser les clés privés de votre identité numérique, sans permettre aucun accès direct à ces dernières. À chaque utilisation, un code PIN peut-être demandé. Au bout de 3 erreurs successives de code PIN, la clé se bloque. Elle peut être débloqué avec un autre code (PUK), sinon elle efface ses données. Il faudra alors la réinitialiser pour recommencer le scan des qrcodes.
 
 Voici un exemple des QR codes utilisés :
 

@@ -6,15 +6,12 @@ draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 # meta description
 description : "Solutions de chiffrement."
+image: "images/solutions/encryption.png"
 # Research image
 categories: ["solution"]
 type: "post"
 ---
 
-![test](/images/solutions/encryption.png)
-
-
----
 ### Chiffrement Général
 
 Le chiffrement est une technique de sécurité utilisée pour protéger les informations en les transformant en un format illisible pour les personnes non autorisées. Il utilise des algorithmes mathématiques et des clés de chiffrement pour coder les données, assurant ainsi la confidentialité et l'intégrité des informations. Les deux principaux types de chiffrement sont le chiffrement symétrique et le chiffrement asymétrique :

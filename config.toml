@@ -93,11 +93,10 @@ name = "solutions"
 hasChildren = true
 URL = "solutions"
 weight = 2
-
   [[menu.main]]
   parent = "solutions"
-  name = "authentication"
-  URL = "solutions/theme-authentication"
+  name = "Signature"
+  URL = "solutions/signature"
   weight = 1
 
   [[menu.main]]
@@ -108,27 +107,33 @@ weight = 2
 
   [[menu.main]]
   parent = "solutions"
+  name = "authentication"
+  URL = "solutions/theme-authentication"
+  weight = 3
+
+  [[menu.main]]
+  parent = "solutions"
   name = "email"
   URL = "solutions/theme-email"
-  weight = 3
+  weight = 4
 
   [[menu.main]]
   parent = "solutions"
   name = "identity"
   URL = "solutions/theme-identity"
-  weight = 4
+  weight = 5
 
   [[menu.main]]
   parent = "solutions"
   name = "vote"
   URL = "solutions/theme-vote"
-  weight = 5
+  weight = 6
 
   [[menu.main]]
   parent = "solutions"
   name = "payment"
   URL = "solutions/theme-currency"
-  weight = 6
+  weight = 7
 
 [[menu.main]]
 name = "trainings"

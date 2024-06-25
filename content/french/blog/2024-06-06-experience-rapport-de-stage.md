@@ -82,8 +82,8 @@ Pour en savoir plus sur [Openpgp](/fr/about/openpgp/)
 ![logopgpid](/images/logos/foopgp_square.png)
 
 [PgpId](https://codeberg.org/foopgp/pgpid) est une suite logiciel qui permet de créer, sauvegarder sur support physique et récupérer des identités numériques uniques basées sur le standard OpenPGP (Pretty Good Privacy), lesquelles peuvent être utilisées pour
-* signer vos données numériques.
-* chiffrer et déchiffrer vos données et communications numériques.
+* signer vos données numériques
+* chiffrer et déchiffrer vos données et communications numériques
 * vous authentifier auprès de services numériques
 * et bientôt voter et payer (fonctionnalités en cours de développement par
   certaines communautés des logiciels libres, dont l'association foopgp).
@@ -95,7 +95,7 @@ celle-ci est [repartie](https://fr.wikipedia.org/wiki/Secret_r%C3%A9parti) en tr
 
 Pour accéder à votre identité numérique, il suffit de scanner ces trois QR codes. Une fois scannés, les principales clés privées associées à votre certificat OpenPGP sont reconstruites. Elle peuvent alors être poussées dans des clés de sécurité comme la [YubiKey](./#YubiKey) ou la [Nitrokey](./#nitrokey).
 
-Ces clés de sécurité permettent d'utiliser les clés privés de votre identité numérique, sans permettre aucun accès direct à ces dernières. À chaque utilisation, un code PIN peut-être demandé. Au bout de 3 erreurs successives de code PIN, la clé se bloque. Elle peut être débloqué avec un autre code (PUK), sinon elle efface ses données. Il faudra alors la réinitialiser pour recommencer le scan des qrcodes.
+Ces clés de sécurité permettent d'utiliser les clés privés de votre identité numérique, sans permettre aucun accès direct à ces dernières. À chaque utilisation, un code PIN peut-être demandé. Au bout de 3 erreurs successives de code PIN, la clé se bloque. Elle peut être débloquée avec un autre code (PUK), sinon elle efface ses données. Il faudra alors la réinitialiser pour recommencer le scan des QR codes.
 
 Voici un exemple des QR codes utilisés :
 
@@ -114,10 +114,6 @@ La [YubiKey](https://www.yubico.com/la-cle-yubikey/?lang=fr) est un dispositif d
 Ceci est un message de l'application K-9 Mail qui demande ici le jeton (Yubikey) pour ouvrir le mail chiffré.
 ![k-9 mail](/images/blog/2024/K-9_mail.jpg)
 
-----
-manée nu
-
-----
 
 ---
 
@@ -169,9 +165,6 @@ Et pour lire les mail chiffrer il faut utiliser un message apparait :
 
 Sur [GitHub](https://github.com/), nous avons hébergé notre portfolio et ajouté nos clés PGP et SSH. Cela nous a permis de comprendre l'importance de la gestion de versions et de la sécurité des clés. GitHub nous a également aidés à collaborer efficacement sur divers projets.
 
-Voici un exemple de notre configuration :
-![Clé PGP et SSH Maël](/images/blog/2024/cle_pgp_ssh_mael.png)
-
 ---
 
 ### Codeberg
@@ -194,15 +187,16 @@ Le site web de l'association est développé avec [Hugo](https://gohugo.io/), un
 ### Shell
 ![logoshell](/images/blog/2024/logoshell.png)
 
-L'association utilise principalement Linux, ce qui nous a amenés à utiliser fréquemment le shell. Nous avons renforcé nos compétences en scripting, acquises lors de nos cours de BTS. Le shell s'est avéré être un outil puissant pour automatiser les tâches répétitives et gérer efficacement les systèmes Linux.  
-[En savoir plus sur le shell](https://fr.wikipedia.org/wiki/Shellcode)
+L'association utilise principalement GNU/Linux, ce qui nous a amenés à utiliser fréquemment le shell. Nous avons [renforcé nos compétences](https://github.com/phyver/GameShell) en scripting, acquises lors de nos cours de BTS. Le shell s'est avéré être un outil puissant pour automatiser les tâches répétitives et gérer efficacement les systèmes Linux.
+
+[En savoir plus sur le shell](https://fr.wikipedia.org/wiki/Shell_Unix).
 
 ---
 
 ### Dolibarr
 ![logodolibarr](/images/blog/2024/logodolibarr.png)
 
-[Dolibarr](https://www.dolibarr.org) est un logiciel de gestion open source idéal pour les associations. Il permet de gérer les adhésions, les membres, les dons, les événements et la comptabilité de manière simple et efficace. Travailler avec Dolibarr nous a donné une perspective précieuse sur la gestion d'association et l'importance des outils de gestion intégrés.
+[Dolibarr](https://www.dolibarr.org) est un logiciel de gestion open source idéal pour les associations comme pour les PME. Il permet de gérer les adhésions, les membres, les dons, les événements et la comptabilité de manière simple et efficace. Travailler avec Dolibarr nous a donné une perspective précieuse sur la gestion d'entreprise et l'importance des outils de gestion intégrés.
 
 ---
 

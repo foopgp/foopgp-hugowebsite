@@ -156,17 +156,31 @@ Les délibérations sont prises à la majorité des suffrages exprimés par les 
 L'association est dirigée par un conseil d'administration d'au moins 2 membres (président et trésorier), élus
 pour 3 années par l'assemblée générale. Les membres sont rééligibles.
 
-En cas de vacances, le conseil d'administration pourvoit provisoirement au remplacement de ses membres.
+En cas de vacance, le conseil pourvoit provisoirement au remplacement de ses membres jusqu'à la prochaine assemblée générale.
 
-Il est procédé à leur remplacement définitif par la plus prochaine assemblée générale. Les pouvoirs des
-membres ainsi élus prennent fin à l'expiration le mandat des membres remplacés.
+Le conseil d'administration se réunit par visioconférence tous les mardis
+soir. Ces réunions sont ouvertes à tous les membres et aux invités, dans la
+limite d'un invité par membre. À chaque réunion un compte rendu sera publié,
+au plus tard avant la réunion suivante.
 
-Le conseil d'administration se réunit sur convocation du président.
+Les décisions sont prises par recherche du consentement sur au moins deux réunions.
 
-Les décisions sont prises à la majorité des voix; en cas de partage, les voix du président sont prépondérantes.
+Si des objections perdurent, le président convoquera l'ensemble des membres du conseil
+d'administration, et les décisions seront prise à la majorité qualifié des deux tiers des voix exprimées.
 
-Le trésorier, avec le président en signature conjointe, sont les seules personnes habilitées à engager
-l'association sur ses deniers (signature d'un bail, ouverture de compte bancaire et opérations bancaires).
+Si la majorité qualifié n'est pas obtenue au sein du conseil d'administration,
+les decisions concernées pourront être soumises à l'ensemble des membres, lors d'une prochaine
+assemblé générale ou d'un vote par correspondance.
+
+En cas de partage égal des voix, le président dispose d’une voix prépondérante.
+
+Le trésorier et le président sont les seules personnes habilitées à engager
+l'association sur ses deniers.
+
+Les signatures du trésorier et du président devront être conjointes pour toutes opérations importantes, notamment :
+* signature d'un bail
+* ouverture de compte bancaire
+* opérations bancaires, ou somme d'opérations bancaires sur un mois, de montant supérieur à 10% du chiffre d'affaire établi.
 
 ### Article 14 – INDEMNITÉS
 

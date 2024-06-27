@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-06-27T15:31:47+02:00 # MANAGED BY update_lastmod.sh
 title: "Signature"
 #date: 2019-07-06T15:27:17+06:00
 draft: false

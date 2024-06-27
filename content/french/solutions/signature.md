@@ -7,11 +7,10 @@ bg_image: "images/backgrounds/puzzle.jpg"
 # meta description
 description : "Solutions de signature."
 # Research image
+image: "images/solutions/signature.png"
 categories: ["solution"]
 type: "post"
 ---
-
-![test](/images/solutions/signature.png)
 
 
 ---

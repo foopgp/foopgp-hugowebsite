@@ -12,10 +12,6 @@ categories: ["solution"]
 type: "post"
 ---
 
-### pour le courriel
-
-(TODO)
-
 ### Clients mail compatibles OpenPGP
 
 Nos suggestions de clients email supportant OpenPGP&nbsp;:

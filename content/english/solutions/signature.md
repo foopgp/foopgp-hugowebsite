@@ -7,11 +7,11 @@ bg_image: "images/backgrounds/puzzle.jpg"
 # meta description
 description: "Signature solutions."
 # Research image
+image: "images/solutions/signature.png"
 categories: ["solution"]
 type: "post"
 ---
 
-![test](/images/solutions/signature.png)
 
 ---
 PGP (Pretty Good Privacy) signatures are a common method for encrypting and decrypting electronic communications to ensure the confidentiality and authenticity of messages. Here is a detailed description of PGP signatures, specifically applied to emails:

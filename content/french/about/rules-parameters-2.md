@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-06-28T12:22:45+02:00 # MANAGED BY update_lastmod.sh
 title: "Paramètres généraux de l'association foopgp."
 lang: fr
 ###date: 2019-07-06T15:27:17+06:00

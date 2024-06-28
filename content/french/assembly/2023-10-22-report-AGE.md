@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-06-28T12:22:10+02:00 # MANAGED BY update_lastmod.sh
 title: "2023 S42 PV AGE 22 octobre"
 lang: fr
 date: 2023-10-22T15:27:17+06:00

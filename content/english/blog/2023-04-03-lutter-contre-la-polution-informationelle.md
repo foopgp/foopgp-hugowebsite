@@ -1,7 +1,7 @@
 ---
 Title:   GPT - Game Over
 Date:    2023-04-03T01:30:00+02:00
-Lastmod:    2024-06-28T17:30:00+02:00
+Lastmod: 2024-06-28T12:22:10+02:00 # MANAGED BY update_lastmod.sh
 License: CC By-SA
 Tags:    [ "openpgp", "AI" ]
 categories: [ "Opinion" ]

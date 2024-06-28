@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-06-28T12:22:10+02:00 # MANAGED BY update_lastmod.sh
 title: "2024 S04 Rapport Hebdomadaire"
 lang: fr
 date: 2024-01-23T15:27:17+06:00

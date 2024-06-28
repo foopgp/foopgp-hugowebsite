@@ -1,7 +1,7 @@
 ---
 Title:   GPT - Game Over
 Date:    2023-04-03T01:30:00+02:00
-Lastmod:    2023-04-16T17:30:00+02:00
+Lastmod:    2024-06-28T17:30:00+02:00
 License: CC By-SA
 Tags:    [ "openpgp", "AI" ]
 categories: [ "Opinion" ]
@@ -76,7 +76,7 @@ rules. Indeed the raw text of this web page is stored in a git repository,
 itself filled only by iterative publications ([concept taken over by
 the "blockchain"...](https://netfuture.ch/2022/02/git-pgp-blockchain-comparison/)).
 
-You can view its historical context by duplicating [this repository](https://github.com/foopgp/foopgp-hugowebsite/) on your computer, or by using [some web service like github](https://github.com/foopgp/foopgp-hugowebsite/commits/test/content/english/blog/2023-04-03-lutter-contre-la-polution-informationelle.md).
+You can view its historical context by duplicating [this repository](https://codeberg.org/foopgp/foopgp-hugowebsite/) on your computer, or by using [some web service like codeberg](https://codeberg.org/foopgp/foopgp-hugowebsite/commits/test/content/english/blog/2023-04-03-lutter-contre-la-polution-informationelle.md).
 
 You can finally start applying the third rule by giving me an
 excellent reputation for dealing with this kind of subject. However there is not yet a complete solution, especially a decentralized one, that would allow you to share

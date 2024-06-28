@@ -40,7 +40,7 @@ type: "meeting"
 ### Activité récente
 
 * Participation à la rencontre [NEC 05 du 20 février à Gap](https://framaforms.org/numerique-en-communs-mardi-20-fevrier-2024-gap-1705328108)
-* https://github.com/foopgp/foopgp-hugowebsite/commit/9b035d01e726fc62fe443625a10958280fef045c
+* https://codeberg.org/foopgp/foopgp-hugowebsite/commit/9b035d01e726fc62fe443625a10958280fef045c
 
 ### En cours
 

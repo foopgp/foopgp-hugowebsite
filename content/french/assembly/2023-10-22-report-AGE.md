@@ -24,7 +24,7 @@ Réunie sur convocation envoyée par courriel le 4 octobre 2023 à 19h35.
 3. 3: (Si 1 & 2 sont approuvés) Distribution rétroactive des jetons de pouvoir.
 4. 4: Intégration de Laurent CEARD au conseil d'administration.
 
-Les textes soumis au vote sont identifés et signés sous le commit [8c8df4db3e6149e34f11ba30d9bc8b6f8d1ab1b9](https://github.com/foopgp/foopgp-hugowebsite/commit/8c8df4db3e6149e34f11ba30d9bc8b6f8d1ab1b9) du [dépot git de notre site Internet](https://github.com/foopgp/foopgp-hugowebsite/).
+Les textes soumis au vote sont identifés et signés sous le commit [8c8df4db3e6149e34f11ba30d9bc8b6f8d1ab1b9](https://codeberg.org/foopgp/foopgp-hugowebsite/commit/8c8df4db3e6149e34f11ba30d9bc8b6f8d1ab1b9) du [dépot git de notre site Internet](https://codeberg.org/foopgp/foopgp-hugowebsite/).
 
 
 ### Participation

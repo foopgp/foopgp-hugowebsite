@@ -23,7 +23,7 @@ Assemblée générale réunie sur convocation envoyée par courriel le 06/03/202
 2. 2: Approbation des changements du texte du Règlement intérieur.
 3. 3: Paramètres de fonctionnement définis par le Règlement intérieur.
 
-Les textes soumis au vote sont identifés et signés sous le commit [1f39e9759b04bafe3a90e587a2a044db3a91253f](https://github.com/foopgp/foopgp-hugowebsite/commit/1f39e9759b04bafe3a90e587a2a044db3a91253f) du [dépot git de notre site Internet](https://github.com/foopgp/foopgp-hugowebsite/).
+Les textes soumis au vote sont identifés et signés sous le commit [1f39e9759b04bafe3a90e587a2a044db3a91253f](https://codeberg.org/foopgp/foopgp-hugowebsite/commit/1f39e9759b04bafe3a90e587a2a044db3a91253f) du [dépot git de notre site Internet](https://codeberg.org/foopgp/foopgp-hugowebsite/).
 
 ### Participation
 

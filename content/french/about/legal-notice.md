@@ -27,7 +27,7 @@ Siège social :
 
 Le site internet foopgp.org n'utilise aucun cookie, aucune base de donnée.
 
-Vous pouvez vérifier et même héberger par vous même ce site internet : l'intégralité du code et de son contenu est ouvert et accessible sur [un dépôt git](https://github.com/foopgp/foopgp-hugowebsite).
+Vous pouvez vérifier et même héberger par vous même ce site internet : l'intégralité du code et de son contenu est ouvert et accessible sur [un dépôt git](https://codeberg.org/foopgp/foopgp-hugowebsite).
 
 En vue d’adapter le site aux demandes de nos visiteurs, nous analysons cependant le trafic avec [GoAccess](https://goaccess.io/). Les
 données recueillies (adresse IP, User-Agent…) sont [accessibles à tous](/goaccess/last2w.html). Si autant de transparence

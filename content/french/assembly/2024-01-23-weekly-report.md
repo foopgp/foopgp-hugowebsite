@@ -41,7 +41,7 @@ https://www.lemonde.fr/pixels/article/2024/01/19/cookies-la-cnil-inflige-a-yahoo
 
 ### Activité récente
 
-* https://github.com/foopgp/bash-libs/commit/47807cd67324f7470e5be4e2ff1d6159cba677b4
+* https://codeberg.org/foopgp/bash-libs/commit/47807cd67324f7470e5be4e2ff1d6159cba677b4
 * https://radio13r.z-k-l.net/ (Stream musical de notre dévoué F. Zwikel)
 * https://foopgp.org/fr/about/rules-of-procedures-wip/
 * https://foopgp.org/fr/about/rules-parameters/

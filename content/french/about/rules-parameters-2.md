@@ -459,7 +459,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures-2/).
 *Note pour générer ces tableaux :*
 
 ```
-git clone https://github.com/foopgp/bash-libs/
+git clone https://codeberg.org/foopgp/bash-libs/
 
 cd bash-libs
 

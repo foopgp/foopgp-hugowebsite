@@ -49,7 +49,7 @@ type: "meeting"
 
 ### Activité récente
 
-* Les deux stagiaires de 1ère BTS Info ont fait leur premier commit sur github en utilisant les yubikeys que nous avons configurés ensemble : https://github.com/foopgp/foopgp-hugowebsite/commit/08c38d958f89d7e833c699bcdc3455f7a45fc985
+* Les deux stagiaires de 1ère BTS Info ont fait leur premier commit sur github en utilisant les yubikeys que nous avons configurés ensemble : https://codeberg.org/foopgp/foopgp-hugowebsite/commit/08c38d958f89d7e833c699bcdc3455f7a45fc985
 * Sun Valley Systems (deuxième structure de Laurent CEARD) est référencé comme distributeur Nitrokey, Kubii et Mouser Electronics (attention frais de change en dollars).
 * Commande des 40+10 Nitrokeys livrée très bientôt. ( Surprise : OpenPGP ne fonctionne pas via NFC :-( https://github.com/Nitrokey/nitrokey-3-firmware/issues/270#issuecomment-1640167182 )
 * NB: Les anciennes nitrokeys sont démontables et personnalisables. Probablement que les nouvelles (NFC) le seront aussi ^^.

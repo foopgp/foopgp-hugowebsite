@@ -24,7 +24,7 @@ Et les seules PKI libres et décentralisées qui existent aujourd'hui, sont des 
 
 ## PGPID
 
-[pgpid](https://github.com/foopgp/pgpid) est un petit projet développé par l'association [foopgp](https://foopgp.org) afin de gérer au mieux les clés privés de nos [certificats](https://fr.wikipedia.org/wiki/Certificat_%C3%A9lectronique) [OpenPGP](https://www.openpgp.org/).
+[pgpid](https://codeberg.org/foopgp/pgpid) est un petit projet développé par l'association [foopgp](https://foopgp.org) afin de gérer au mieux les clés privés de nos [certificats](https://fr.wikipedia.org/wiki/Certificat_%C3%A9lectronique) [OpenPGP](https://www.openpgp.org/).
 
 Il se compose de 2 outils principaux : pgpid-gen et pgpid-qrscan.
 

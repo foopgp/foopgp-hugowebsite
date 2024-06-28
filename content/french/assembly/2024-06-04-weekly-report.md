@@ -46,7 +46,7 @@ type: "meeting"
 
 ### Activité récente
 
-* Les deux stagiaires de 1ère BTS Info prennent leurs marques avec OpenPGP, les yubikeys, notre site web et dolibarr (cf https://github.com/foopgp/foopgp-hugowebsite/commits/test/)
+* Les deux stagiaires de 1ère BTS Info prennent leurs marques avec OpenPGP, les yubikeys, notre site web et dolibarr (cf https://codeberg.org/foopgp/foopgp-hugowebsite/commits/branch/test/)
 * Les 40 nitrokeys ont été livrées. ( TODO: vérifier qu'OpenPGP ne fonctionne pas via NFC :-( https://github.com/Nitrokey/nitrokey-3-firmware/issues/270#issuecomment-1640167182 )
 * Explication détaillé par [Jean-Pierre](befox.fr) de son travail, en présence des stagiaires.
 * Ces nitrokeys (NFC) ne sont pas aussi démontables et personnalisables que l'étaient les précédentes, principalement à cause des antennes NFC et du bouton FIDO2/WebAuthn.

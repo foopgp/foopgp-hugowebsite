@@ -46,7 +46,7 @@ type: "meeting"
 
 #### Au coeur de la réunion
 
-* Propositions de modification de l'article 13 de nos statuts : https://github.com/foopgp/foopgp-hugowebsite/commit/0e95e1612377642f201bf921b669493b08244c15
+* Propositions de modification de l'article 13 de nos statuts : https://codeberg.org/foopgp/foopgp-hugowebsite/commit/0e95e1612377642f201bf921b669493b08244c15
 * Discussion sur le "notariat" nécessaire pour stocker et ressortir les parties de clés privés (des identités numériques), et sur https://fr.wikipedia.org/wiki/Partage_de_cl%C3%A9_secr%C3%A8te_de_Shamir 
 * Didier Loyens et Jean-Jacques Brucker s'engagent à établir une liste de tâches qui pourraient être confiées à des stagiaires ou des prestataires (internes ou externes)
 * Laurent Céard a etabli une liste de propositions de corrections ou amélioration à destination des stagiaires de BTS.

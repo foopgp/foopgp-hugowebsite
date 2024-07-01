@@ -74,7 +74,7 @@ Pendant notre stage, nous avons travaillé avec diverses technologies et outils,
   - Si la clé privée est compromise, un attaquant pourrait déchiffrer les messages destinés au détenteur de la clé privée et signer des messages en se faisant passer pour lui.
   - Il est crucial de stocker la clé privée dans un endroit sécurisé et de la sauvegarder de manière appropriée.
 
-Pour en savoir plus sur [Openpgp](/fr/about/openpgp/) 
+Pour en savoir plus sur [Openpgp](/fr/about/openpgp/)
 
 ---
 

@@ -14,69 +14,63 @@ type: "post"
 
 ### Identité numérique
 
-L'identité numérique est un ensemble de données permettant d'identifier une personne ou une entité sur Internet et dans les systèmes informatiques. Elle est composée de divers éléments qui peuvent inclure des informations personnelles, des attributs de vérification et des certificats de sécurité. Voici une description détaillée de ce qu'elle consiste et de quoi elle est créée :
+L'identité numérique est un ensemble de données permettant d'identifier une personne ou une entité sur Internet et dans les systèmes informatiques. Elle est composée de divers éléments qui peuvent inclure des informations personnelles, des attributs de vérification et des certificats de sécurité.
 
----
+OpenPGP est un format ouvert qui a été pensé pour créer et gérer des identités numériques.
+De plus, son évolutivité lui permet d'utiliser, depuis toujours, les meilleurs algorithmes cryptographiques du moment.
+Il offre ainsi un niveau de sécurité inégalé.
 
-### En quoi consiste l'identité numérique :
+### A quoi peut servir une identité numérique ?
 
-1. **Informations personnelles** : 
-   - Nom, prénom
-   - Adresse électronique
-   - Numéro de téléphone
-   - Adresse postale
+* **S'identifier sur des sites de commerces en ligne.**
 
-2. **Identifiants de connexion** :
-   - Noms d'utilisateur
-   - Mots de passe
+* **S'identifier sur des réseaux sociaux.**
 
-3. **Attributs biométriques** (dans certains cas) :
-   - Empreintes digitales
-   - Reconnaissance faciale
-   - Scan de l'iris
+* **S'identifier auprès de services tels :**
+  * assurance santé
+  * assurance chomâge
+  * assurances privées
+  * services municipaux
+  * ...
 
-4. **Attributs de vérification** :
-   - Numéros de sécurité sociale
-   - Numéros de carte d'identité ou de passeport
-   - Permis de conduire
+* **Éviter les usurpations d'identité.**
 
-5. **Certificats de sécurité** :
-   - Certificats numériques
-   - Clés cryptographiques (publique et privée)
-   - PGP (Pretty Good Privacy) ID : Utilisé pour le chiffrement des communications et la signature numérique, le PGPID permet d'assurer l'authenticité des messages échangés en ligne.
+* **Enregistrer des qualifications, par exemple :**
+  * permis de conduire
+  * diplômes
+  * ...
+* **Lutter contre les informations trompeuses.**
 
-6. **Historique et activités en ligne** :
-   - Historique des achats
-   - Historique de navigation
-   - Activités sur les réseaux sociaux
+* **Lutter contre les abus d'intelligence artificielle.**
 
----
+### pgpid
 
-### Avec quoi elle est créée :
+Afin de gérer aux mieux ces identités, et les clés privés associées,
+l'association foopgp a développé [pgpid](https://codeberg.org/foopgp/pgpid). Cet outil permet de :
 
-1. **Documents d'identification officiels** :
-   - Passeports
-   - Cartes d'identité nationales
-   - Permis de conduire
+* Créer une identité numérique OpenPGP unique
+  * En partant de zéro
+  * Ou bien d'un passport international (aux normes [ICAO](https://fr.wikipedia.org/wiki/Organisation_de_l%27aviation_civile_internationale))
+* Générer les clés privés des certificats OpenPGP associés.
+* Chiffrer et répartir ces clés privés sur au moins 3 documents (QR codes)
+  imprimés.
+* Sauvegarder de manière ultra-sécurisée ces clés privés. Puisque [réparties](https://fr.wikipedia.org/wiki/Secret_r%C3%A9parti) et en dehors de tout réseau informatique.
+* Déchiffrer ces sauvegardes pour pousser les clés (numériques) privés dans des clés (physiques) de sécurité comme la [YubiKey](https://www.yubico.com/?lang=fr) ou la [Nitrokey](https://www.nitrokey.com/products/nitrokeys).
 
-2. **Technologies de cryptographie** :
-   - Paires de clés cryptographiques (clés publiques et privées)
-   - Certificats SSL/TLS
+Voici un exemple de sauvegarde papier d'une identité numérique pgpid :
 
-3. **Services et plateformes numériques** :
-   - Services de messagerie électronique
-   - Réseaux sociaux
-   - Plateformes de commerce électronique
+| ![qrcode1](/images/blog/2024/qrcode/qrcode1.jpg) | ![qrcode2](/images/blog/2024/qrcode/qrcode2.jpg) | ![qrcode3](/images/blog/2024/qrcode/qrcode3.jpg) |
+|---|---|---|
 
-4. **Systèmes de gestion des identités** :
-   - Systèmes de gestion des accès et des identités (IAM)
-   - Services d'authentification unique (SSO)
 
-5. **Applications biométriques** :
-   - Capteurs d'empreintes digitales
-   - Caméras pour la reconnaissance faciale
-   - Scanners d'iris
+### Bref,
 
 L'identité numérique permet de sécuriser les transactions en ligne, d'accéder à divers services numériques et de vérifier l'identité des utilisateurs de manière fiable. Elle joue un rôle crucial dans la cybersécurité et la protection des données personnelles.
+
+**Quand d'autres vous vendent des technologies qui vous asservissent, foopgp
+permet à tous de nous approprier des technologies qui nous servent.**
+
+**Des technologies plus sûres et entièrement souveraines.**
+
 
 ---

@@ -5,7 +5,7 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/puzzle.jpg"
 # meta description
-description : "Solutions pour la gestion de l'identité numérique."
+description : "Solutions pour la gestion d'identités numériques."
 # Research image
 image: "images/solutions/identity.png"
 categories: ["solution"]
@@ -39,9 +39,11 @@ Il offre ainsi un niveau de sécurité inégalé.
   * permis de conduire
   * diplômes
   * ...
-* **Lutter contre les informations trompeuses.**
+* **[Lutter contre les informations
+  trompeuses](/fr/blog/2023-04-03-lutter-contre-la-polution-informationelle/).**
 
-* **Lutter contre les abus d'intelligence artificielle.**
+* **[Lutter contre les abus d'intelligence
+  artificielle](/fr/blog/2023-04-03-lutter-contre-la-polution-informationelle/).**
 
 ### pgpid
 
@@ -49,13 +51,13 @@ Afin de gérer aux mieux ces identités, et les clés privés associées,
 l'association foopgp a développé [pgpid](https://codeberg.org/foopgp/pgpid). Cet outil permet de :
 
 * Créer une identité numérique OpenPGP unique
-  * En partant de zéro
-  * Ou bien d'un passport international (aux normes [ICAO](https://fr.wikipedia.org/wiki/Organisation_de_l%27aviation_civile_internationale))
-* Générer les clés privés des certificats OpenPGP associés.
+  * en partant de zéro
+  * ou bien d'un passport international (aux normes [ICAO](https://fr.wikipedia.org/wiki/Organisation_de_l%27aviation_civile_internationale))
+* Générer les clés privées des certificats OpenPGP associés.
 * Chiffrer et répartir ces clés privés sur au moins 3 documents (QR codes)
   imprimés.
-* Sauvegarder de manière ultra-sécurisée ces clés privés. Puisque [réparties](https://fr.wikipedia.org/wiki/Secret_r%C3%A9parti) et en dehors de tout réseau informatique.
-* Déchiffrer ces sauvegardes pour pousser les clés (numériques) privés dans des clés (physiques) de sécurité comme la [YubiKey](https://www.yubico.com/?lang=fr) ou la [Nitrokey](https://www.nitrokey.com/products/nitrokeys).
+* Sauvegarder de manière ultra-sécurisée ces clés privés : [secrets répartis](https://fr.wikipedia.org/wiki/Secret_r%C3%A9parti) et en dehors de tout réseau informatique.
+* Déchiffrer ces sauvegardes pour pousser les clés (numériques) privées dans des clés (physiques) de sécurité comme la [YubiKey](https://www.yubico.com/?lang=fr) ou la [Nitrokey](https://www.nitrokey.com/products/nitrokeys).
 
 Voici un exemple de sauvegarde papier d'une identité numérique pgpid :
 
@@ -68,9 +70,7 @@ Voici un exemple de sauvegarde papier d'une identité numérique pgpid :
 L'identité numérique permet de sécuriser les transactions en ligne, d'accéder à divers services numériques et de vérifier l'identité des utilisateurs de manière fiable. Elle joue un rôle crucial dans la cybersécurité et la protection des données personnelles.
 
 **Quand d'autres vous vendent des technologies qui vous asservissent, foopgp
-permet à tous de nous approprier des technologies qui nous servent.**
-
-**Des technologies plus sûres et entièrement souveraines.**
+permet à tous de nous approprier des technologies qui nous servent.** Des technologies plus sûres et entièrement souveraines.
 
 
 ---

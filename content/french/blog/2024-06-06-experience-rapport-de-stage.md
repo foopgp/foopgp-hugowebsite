@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-07-01T12:47:56+02:00 # MANAGED BY update_lastmod.sh
 title: "Résumé de stage"
 date: 2024-06-06T10:30:00+02:00
 draft: false

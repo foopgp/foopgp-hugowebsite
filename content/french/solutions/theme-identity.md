@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-07-01T16:03:42+02:00 # MANAGED BY update_lastmod.sh
 title: "Identité"
 #date: 2019-07-06T15:27:17+06:00
 draft: false

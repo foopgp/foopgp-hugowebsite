@@ -211,7 +211,7 @@ link = "mailto:info@foopgp.org"
 
 [[params.social]]
 title = "contribute"
-icon = "ti-github" # themify icon : https://themify.me/themify-icons
+icon = "ti-codeberg" # themify icon : https://themify.me/themify-icons
 link = "https://codeberg.org/foopgp"
 
 [[params.social]]

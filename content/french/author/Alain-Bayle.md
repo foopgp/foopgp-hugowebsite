@@ -9,9 +9,9 @@ email: "abayle@foopgp.org"
 # portrait
 image: "images/friends/avatar_ab128.jpg"
 social:
-  - icon : "ti-key"
+  - icon : "ti-gnupg"
     link : "/keys/OpenPGP_0x1A9DB6350C2C9099.asc"
-  - icon : "ti-key"
+  - icon : "ti-gnupg"
     link : "/keys/OpenPGP_0xFA1B11688392C41E.asc"
 ---
 

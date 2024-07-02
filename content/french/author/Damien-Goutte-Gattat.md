@@ -13,7 +13,7 @@ social:
     link : "https://twitter.com/gouttegd"
   - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
     link : "https://github.com/gouttegd"
-  - icon : "ti-key"
+  - icon : "ti-gnupg"
     link : "/keys/4FA2082362FE73AD03B88830A8DC7067E25FBABB.asc"
 ---
 

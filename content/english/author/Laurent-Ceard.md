@@ -9,7 +9,7 @@ email: "formaintinfo@foopgp.org"
 # portrait
 image: "images/friends/avatar_lc128.jpg"
 social:
-  - icon : "ti-key"
+  - icon : "ti-gnupg"
     link : "/keys/OpenPGP_0x0D41742ADD46D7DF.asc"
 ---
 

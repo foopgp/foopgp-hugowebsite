@@ -32,7 +32,7 @@ De nombreux autres clients mails sont compatibles OpenPGP, vous en trouverez ici
 
 ---
 
-Cette page est toujours en cours d'écriture, vous pouvez nous aider [en contribuant sur GitHub](https://github.com/foopgp/foopgp-hugowebsite/blob/test/content/french/solutions/theme-email.md).
+Cette page est toujours en cours d'écriture, vous pouvez nous aider [en contribuant sur Codeberg](https://codeberg.org/foopgp/foopgp-hugowebsite/_edit/test/content/french/solutions/theme-email.md).
 
 
 ### Evolution

@@ -15,6 +15,6 @@ type: "post"
 ### Digital Identity
 
 
-This page is not yet written, you can help by [contributing on GitHub](https://github.com/foopgp/foopgp-hugowebsite/blob/test/content/english/solutions/theme-identity.md).
+This page is not yet written, you can help by [contributing on Codeberg](https://codeberg.org/foopgp/foopgp-hugowebsite/_edit/test/content/english/solutions/theme-identity.md).
 
 ![Bientôt…](/images/comingsoon.jpg)

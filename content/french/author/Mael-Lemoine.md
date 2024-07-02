@@ -1,4 +1,5 @@
 ---
+Lastmod: 2024-07-02T16:35:00+02:00 # MANAGED BY update_lastmod.sh
 title: "Maël Lemoine"
 # page title background image
 bg_image: "images/friends/banner_jjb.jpg"

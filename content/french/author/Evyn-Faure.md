@@ -14,16 +14,6 @@ social:
     link : "https://github.com/Hankloche"
   - icon : "ti-gnupg"
     link : "/keys/OpenPGP_0x07D89A3CCCD686BB7D62E8C035D48E8F48CB16A6.asc"
-  - icon : "ti-foopgp"
-    link : "/keys/OpenPGP_0x07D89A3CCCD686BB7D62E8C035D48E8F48CB16A6.asc"
-  - icon : "ti-codeberg"
-    link : "/keys/OpenPGP_0x07D89A3CCCD686BB7D62E8C035D48E8F48CB16A6.asc"
-  - icon : "ti-bluesky"
-    link : "/keys/OpenPGP_0x07D89A3CCCD686BB7D62E8C035D48E8F48CB16A6.asc"
-  - icon : "ti-debian"
-    link : "/keys/OpenPGP_0x07D89A3CCCD686BB7D62E8C035D48E8F48CB16A6.asc"
-  - icon : "ti-gnupg"
-    link : "/keys/OpenPGP_0x07D89A3CCCD686BB7D62E8C035D48E8F48CB16A6.asc"
 
 ---
 

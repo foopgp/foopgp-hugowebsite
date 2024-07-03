@@ -178,7 +178,7 @@ Voici un exemple de notre configuration :
 ### Hugo
 ![logohugo](/images/blog/2024/logohugo.png)
 
-Le site web de l'association est développé avec [Hugo](https://gohugo.io/), un générateur de sites statiques en Go. Nous avons appris ce langage pour modifier, ajouter ou supprimer divers éléments sur le site. Hugo nous a permis de créer des pages web dynamiques et rapides, tout en nous initiant aux bases de la programmation en Go.
+Le site web de l'association est développé avec [Hugo](https://gohugo.io/), un générateur de sites statiques en Go. Nous avons appris ce langage pour modifier, ajouter ou supprimer divers éléments sur le site. Hugo nous a permis de créer des pages web statiques, tout en nous initiant aux bases de la programmation en Go.
 
 ---
 

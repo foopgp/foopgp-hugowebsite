@@ -18,9 +18,10 @@ find "${@:-content/}" -type f -name "*.md" | while read file ; do
 	fi
 	if git diff --quiet -- "$file" ; then
 		echo "${me}: unchanged ${file}" >&2
-		continue
+	else
+		echo "${me}: $lastauthordate <- $file" >&2
+		echo "$lastauthordate $file"
 	fi
-	continue
-	git add -- "$file"
-	git commit --date=${lastauthordate} --message="${me}: $file" --message="$lastmod -> $lastauthordate"
-done
+	#git add -- "$file"
+	#git commit --date=${lastauthordate} --message="${me}: $file" --message="$lastmod -> $lastauthordate"
+done | sort | while read date file ; do git add -v -- "$file"; if [[ "$dp" == $date ]] ; then amend="--amend" ; else amend="" ; dp="$date" ; fi ; git commit $amend --date="$date" --message="Update lastmod entry for file(s) last modified $date" ; done

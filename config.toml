@@ -12,6 +12,8 @@ summaryLength = "10"
 disableLanguages = [] # desable language from here
 # limit RSS feeds to 50 entries
 rssLimit = 50
+# used notably by urlize function cf. https://gohugo.io/getting-started/configuration/#removepathaccents
+removePathAccents = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

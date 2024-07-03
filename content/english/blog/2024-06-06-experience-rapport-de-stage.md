@@ -8,8 +8,8 @@ description: "Internship summary of Evyn Faure and Maël Lemoine"
 lang: en
 image: "/images/blog/2024/rds.avif"
 author: ["Evyn Faure", "Maël Lemoine"]
-categories: ["guide"]
-tags: ["Internship", "SLAM"]
+categories: ["study"]
+tags: ["Internship", "Experience"]
 type: "post"
 ---
 

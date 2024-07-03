@@ -8,8 +8,8 @@ description: "Résumé de stage d'Evyn Faure et Maël Lemoine"
 lang: fr
 image: "/images/blog/2024/rds.avif"
 author: ["Evyn Faure", "Maël Lemoine"]
-categories: ["guide"]
-tags: ["Stage", "SLAM"]
+categories: ["study"]
+tags: ["Internship", "Experience"]
 type: "post"
 ---
 

@@ -2,7 +2,7 @@
 Lastmod: 2024-07-02T16:35:00+02:00 # MANAGED BY update_lastmod.sh
 title: "Alain BAYLE"
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/backgrounds/world.jpg"
 # meta description
 description : "Cypherpunk désabusé et cynique, mais déterminé et résolu"
 # Not the used one, but the one for gravatar

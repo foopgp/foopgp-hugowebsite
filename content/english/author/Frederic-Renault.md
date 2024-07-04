@@ -2,7 +2,7 @@
 Lastmod: 2024-01-10T15:56:30+01:00 # MANAGED BY update_lastmod.sh
 title: "Frédéric Renault"
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/backgrounds/world.jpg"
 # meta description
 description : "Web Doctor"
 # Not the used one, but the one for gravatar

@@ -2,7 +2,7 @@
 Lastmod: 2023-12-13T19:42:28+01:00 # MANAGED BY update_lastmod.sh
 title: "Didier Loyens"
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/backgrounds/world.jpg"
 # meta description
 description : "Artisan of another economic model"
 # Not the used one, but the one for gravatar

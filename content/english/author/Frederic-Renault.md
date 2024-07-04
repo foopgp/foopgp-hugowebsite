@@ -1,5 +1,5 @@
 ---
-Lastmod: 2024-01-10T15:56:30+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-07-04T15:26:48+02:00 # MANAGED by --enableGitInfo
 title: "Frédéric Renault"
 # page title background image
 bg_image: "images/backgrounds/world.jpg"

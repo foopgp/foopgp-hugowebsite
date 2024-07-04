@@ -1,5 +1,5 @@
 ---
-Lastmod: 2024-05-28T16:38:58+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-07-04T15:26:48+02:00 # MANAGED by --enableGitInfo
 title: "Jacques Moussali"
 # page title background image"
 bg_image: "images/backgrounds/world.jpg"

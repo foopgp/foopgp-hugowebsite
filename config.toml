@@ -223,7 +223,7 @@ link = "/about/donate"
 
 [[params.social]]
 title = "follow us"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+icon = "ti-bluesky" # themify icon : https://themify.me/themify-icons
 link = "https://twitter.com/foopgp"
 
 [[params.social]]

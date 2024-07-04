@@ -10,12 +10,14 @@ email: ""
 # portrait
 image: "images/friends/avatar_jjb128.jpg"
 social:
-  - icon : "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-    link : "https://twitter.com/Open_UDC"
+  - icon : "ti-bluesky"
+    link : "https://bsky.app/profile/bmorane.bsky.social"
   - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
     link : "https://github.com/jbar"
-  - icon : "ti-gnupg"
-    link : "/keys/C84015DC278AE33927FB07DEA3983A40D1458443.asc"
+  - icon : "ti-codeberg"
+    link : "https://codeberg.org/jbar"
+  - icon : "ti-world"
+    link : "https://domesticserver.org/myresume/"
   - icon : "ti-gnupg"
     link : "/keys/OpenPGP_0xD6BFFE1349E747CF1896.asc"
 ---

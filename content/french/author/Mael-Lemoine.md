@@ -12,12 +12,11 @@ image: "images/friends/avatar_ml128.jpg"
 social:
   - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
     link : "https://github.com/maelBTS"
+  - icon : "ti-codeberg"
+    link : "https://codeberg.org/mael"
   - icon : "ti-gnupg"
     link : "/keys/OpenPGP_0x93BFA79156DCA5328B65F272AEC4DE20717E5094.asc"
-
 ---
 
-Actuelement en BTS sio (Service Informatique aux Organisation) en option SLAM, J'ai 18 ans je fait mon stage de premier années dans l'association foopgp
-
---- 
+Dans le cadre de mes études en BTS SIO (Service Informatique aux Organisation), option SLAM, j'ai fait mon stage de première année dans l'association foopgp.
 

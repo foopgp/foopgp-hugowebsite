@@ -28,12 +28,12 @@ L'authentification Internet est le processus permettant de vérifier l'identité
    - **Identifiant et mot de passe** : La méthode la plus courante où l'utilisateur entre son nom d'utilisateur et un mot de passe associé.
    - **Authentification multifacteur (MFA)** : Ajoute une couche de sécurité supplémentaire en demandant une deuxième forme d'identification en plus du mot de passe.
    - **Biométrie** : Utilise des attributs physiques uniques tels que les empreintes digitales ou la reconnaissance faciale.
-   - **Mot de passe à usage unique basé sur le temps (TOTP)** : Dispositifs physiques ou logiciels générant des codes temporaires pour la vérification.
 
 2. **Types d'authentification multifacteur (MFA)** :
    - **SMS/Email** : Envoi de codes de vérification via SMS ou email.
-   - **Applications d'authentification** : Génération de codes temporaires via des applications telles que Google Authenticator ou Authy.
-   - **Clés de sécurité matérielles** : Utilisation de dispositifs physiques tels que les YubiKey.
+   - **Mot de passe à usage unique basé sur le temps (TOTP)** : Dispositifs physiques ou logiciels générant des codes temporaires pour la vérification.
+   - **Cryptographie asymétrique** : Utilisation d'une paire de clés, l'une publique et l'autre privée. [Utilisé notamment](https://www.laulem.com/config/authentification-ssh-cle-privee.html) par [ssh](https://fr.wikipedia.org/wiki/Secure_Shell).
+   - **Clés de sécurité matérielles** : Utilisation de [dispositifs physiques](https://en.wikipedia.org/wiki/OpenPGP_card) tels que les YubiKeys, lesquels exploitent au plus haut niveau de sécurité, la cryptographie asymétrique.
 
 ---
 

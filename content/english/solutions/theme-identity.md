@@ -5,6 +5,7 @@ title: "Identity"
 draft: false
 # page title background image
 bg_image: "images/backgrounds/puzzle.jpg"
+author: [ "Deepl Translate" ]
 # meta description
 description : "Solutions for digital identity."
 # Research image

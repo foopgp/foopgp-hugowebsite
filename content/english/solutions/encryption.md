@@ -5,6 +5,7 @@ title: "Encryption"
 draft: false
 # page title background image
 bg_image: "images/backgrounds/puzzle.jpg"
+author: [ "Deepl Translate" ]
 # meta description
 description : "Encryption solutions."
 image: "images/solutions/encryption.png"

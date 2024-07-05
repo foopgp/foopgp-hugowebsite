@@ -5,6 +5,7 @@ title: "Signature"
 draft: false
 # page title background image
 bg_image: "images/backgrounds/puzzle.jpg"
+author: [ "Deepl Translate" ]
 # meta description
 description: "Signature solutions."
 # Research image

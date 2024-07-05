@@ -9,6 +9,7 @@ bg_image: "images/backgrounds/puzzle.jpg"
 description : "Solutions pour le vote électronique."
 # Research image
 image: "images/solutions/vote.png"
+tags: ["Vote"]
 categories: ["solution"]
 type: "post"
 ---
@@ -19,11 +20,11 @@ Le projet Debian est une initiative communautaire qui développe un système d'e
 
 ### Le Vote Debian
 
-Le vote Debian est un mécanisme formel utilisé par la communauté Debian pour décider sur des sujets variés, allant de l'élection du chef de projet Debian (DPL) à l'approbation des résolutions générales. Les membres du projet Debian, appelés développeurs Debian, ont le droit de vote. Les votes sont généralement conduits de manière électronique pour assurer une participation large et efficace.
+Le vote Debian est un mécanisme formel utilisé par la communauté Debian pour décider sur des sujets variés, allant de l'élection du chef de projet Debian (DPL) à l'approbation des résolutions générales. Les membres du projet Debian, appelés développeurs Debian, ont le droit de vote. Les votes sont généralement conduits de manière électronique en utilisant OpenPGP pour assurer une participation large et efficace.
 
 ### La Méthode de Vote Schulze
 
-La méthode de vote Schulze, aussi connue sous le nom de méthode de Condorcet-Schulze, est un algorithme utilisé pour déterminer le vainqueur d'une élection où il y a plus de deux options. Elle est particulièrement appréciée pour sa capacité à refléter fidèlement les préférences des électeurs dans des scénarios complexes. 
+La méthode de vote Schulze, aussi connue sous le nom de méthode de Condorcet-Schulze, est un algorithme utilisé pour déterminer le vainqueur d'une élection où il y a plus de deux options. Elle est particulièrement appréciée pour sa capacité à refléter fidèlement les préférences des électeurs dans des scénarios complexes.
 
 #### Principe de la Méthode Schulze
 
@@ -37,6 +38,6 @@ La méthode de Schulze est largement utilisée dans les systèmes où il est imp
 
 ### Application dans Debian
 
-Debian utilise la méthode de vote Schulze pour ses élections et résolutions générales afin de garantir que les décisions reflètent au mieux la volonté collective de la communauté. Ce système permet d'assurer une élection juste et démocratique, respectant les préférences de la majorité tout en étant robuste face aux éventuelles manipulations électorales.
+Debian utilise OpenPGP et la méthode de vote Schulze pour ses élections et résolutions générales afin de garantir que les décisions reflètent au mieux la volonté collective de la communauté. Ce système permet d'assurer une élection juste et démocratique, respectant les préférences de la majorité tout en étant robuste face aux éventuelles manipulations électorales.
 
 En résumé, le vote Debian et la méthode Schulze sont des éléments clés pour le fonctionnement démocratique du projet Debian, assurant des décisions justes et équitables en se basant sur des préférences structurées et une analyse rigoureuse.

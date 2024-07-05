@@ -9,6 +9,7 @@ author: [ "Jean-Jacques Brucker" ]
 # meta description
 description : "Solutions de chiffrement."
 image: "images/solutions/encryption.png"
+tags: ["Encryption", "pgpid"]
 categories: ["solution"]
 type: "post"
 ---

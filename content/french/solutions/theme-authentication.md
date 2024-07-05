@@ -1,5 +1,5 @@
 ---
-Lastmod: 2024-07-05T02:03:09+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-07-05T10:53:23+02:00 # MANAGED by --enableGitInfo
 title: "Authentification"
 #date: 2019-07-06T15:27:17+06:00
 draft: false

@@ -13,9 +13,8 @@ categories: ["solution"]
 type: "post"
 ---
 
-### Digital payments
+### Digital Payments
 
+This page is under construction, and you can help [by contributing on Codeberg](https://codeberg.org/foopgp/foopgp-hugowebsite/_edit/test/content/french/solutions/theme-currency.md).
 
-This page is not yet written, you can help by [contributing on Codeberg](https://codeberg.org/foopgp/foopgp-hugowebsite/_edit/test/content/english/solutions/theme-currency.md).
-
-![Bientôt…](/images/comingsoon.jpg)
+![Coming Soon…](/images/comingsoon.jpg)

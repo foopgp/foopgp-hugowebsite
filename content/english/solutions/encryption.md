@@ -15,7 +15,7 @@ type: "post"
 
 ### General Encryption
 
-Encryption is a security technique used to protect information by transforming it into an unreadable format for unauthorized individuals. It uses mathematical algorithms and encryption keys to encode data, ensuring the confidentiality and integrity of the information. The two main types of encryption are symmetric encryption and asymmetric encryption:
+Encryption is a cryptographic process that makes a document incomprehensible to unauthorized persons. Encrypting involves using mathematical algorithms with short data called *"keys"*, to encode other data. The two main types of encryption are symmetric encryption and asymmetric encryption:
 
 1. **Symmetric Encryption**:
    - Uses the same key to encrypt and decrypt data.
@@ -29,53 +29,52 @@ Encryption is a security technique used to protect information by transforming i
 
 ---
 
-### PGP (Pretty Good Privacy) Encryption
+### OpenPGP (Pretty Good Privacy)
 
-Pretty Good Privacy (PGP) is a data encryption system developed by Phil Zimmermann in 1991. It combines symmetric and asymmetric encryption techniques to ensure the confidentiality, integrity, and authenticity of digital communications.
-
------
-
-#### What PGP Encryption Involves:
-
-1. **Confidentiality**:
-   - PGP encrypts messages and files to ensure that only authorized recipients can read them.
-   - Uses the recipient's public key to encrypt data, ensuring that only the holder of the corresponding private key can decrypt it.
-
-2. **Authenticity**:
-   - PGP uses digital signatures to verify the sender's identity.
-   - Signatures are created by encrypting a hash of the message with the sender's private key.
-
-3. **Integrity**:
-   - Digital signatures and cryptographic hashes ensure that messages have not been altered during transmission.
+OpenPGP is [a set of specifications](https://www.openpgp.org/about/standard/) defined primarily by a [dedicated working group](https://datatracker.ietf.org/wg/openpgp/charter/) within the [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force). These specifications combine symmetric and asymmetric encryption techniques to ensure the confidentiality, integrity, and authenticity of digital communications.
 
 -----
 
-#### How PGP Works:
+#### How OpenPGP Encryption Works:
 
 1. **Key Generation**:
-   - Each user generates a pair of keys: a public key shared with correspondents and a private key kept secret.
-
+   - With [pgpid](https://codeberg.org/foopgp/pgpid), each user generates three pairs of keys: the public keys are shared at a minimum with correspondents. The private keys are kept secret and should never be on any connected system, other than security keys such as YubiKeys or NitroKeys.
+   
 2. **Data Encryption**:
    - The message is encrypted with a randomly generated symmetric session key.
-   - The session key is then encrypted with the recipient's public key.
-   - The encrypted message and the encrypted session key are sent to the recipient.
+   - The session key is then encrypted with the recipient's dedicated public key.
+   - The symmetrically encrypted message and the asymmetrically encrypted session key are sent to the recipient.
 
 3. **Data Decryption**:
-   - The recipient first decrypts the session key with their private key.
-   - Then, they use this session key to decrypt the message.
-
-4. **Digital Signature**:
-   - The sender creates a hash of the message and encrypts it with their private key to generate a digital signature.
-   - The recipient can verify the signature by decrypting the hash with the sender's public key and comparing the resulting hash to the one generated from the received message.
+   - The recipient uses their security key (e.g., YubiKey) to decrypt the session key using their dedicated private key.
+   - The session key is used by the application (e.g., email client) to decrypt the message.
 
 ---
 
-### PGP Applications:
+### Applications Using OpenPGP Encryption with Security Keys
 
-1. **Secure Messaging**: PGP is commonly used to encrypt emails, ensuring their confidentiality and integrity.
-2. **File Encryption**: Users can protect sensitive files by encrypting them with PGP.
-3. **Digital Signatures**: PGP allows for the digital signing of documents, attesting to their authenticity and integrity.
+#### Linux
+  * [Claws Mail](https://www.openpgp.org/software/claws/)
+  * [Evolution: Seahorse](https://www.openpgp.org/software/seahorse/)
+  * [KMail: Kleopatra](https://www.openpgp.org/software/kleopatra/)
+  * [Mutt](https://www.openpgp.org/software/mutt/)
 
-PGP remains a powerful tool for securing communications and data in a digital world increasingly threatened by cyberattacks.
+#### Mac OS
+  * [Apple Mail: GPGTools](https://www.openpgp.org/software/gpgtools/)
+  * [Mutt](https://www.openpgp.org/software/mutt/)
+
+#### Windows
+  * [Claws Mail](https://www.openpgp.org/software/claws/) ***⚠ untested ⚠***
+  * [Gpg4win](https://www.openpgp.org/software/gpg4win/) ***⚠ untested ⚠***
+  * [Postbox](https://www.openpgp.org/software/postbox/) using [Enigmail](https://www.openpgp.org/software/enigmail/) ***⚠ untested ⚠***
+
+#### Android
+  * [K-9 Mail: OpenKeychain](https://www.openpgp.org/software/openkeychain/)
+  * [FlowCrypt](https://www.openpgp.org/software/flowcrypt/) ***⚠ untested ⚠***
+
+#### iOS
+  * [FlowCrypt](https://www.openpgp.org/software/flowcrypt/) ***⚠ untested ⚠***
 
 ---
+
+**Applications that use and comply with OpenPGP specifications are powerful tools for securing communications and digital data in a world increasingly threatened by cyberattacks.**

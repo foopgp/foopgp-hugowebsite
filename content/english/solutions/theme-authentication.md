@@ -15,7 +15,7 @@ type: "post"
 
 ### Internet Authentication
 
-Internet authentication is the process of verifying a user's identity before granting access to online resources. It plays a crucial role in securing accounts and protecting personal data. Here is a detailed description of what it involves and the technologies used, with a particular emphasis on the concept of [security keys](https://en.wikipedia.org/wiki/OpenPGP_card):
+Internet authentication is the process of verifying a user's identity before granting access to online resources. It plays a crucial role in securing accounts and protecting personal data. Here is a detailed description of what it involves and the technologies used, with a particular emphasis on the concept of [security devices](https://en.wikipedia.org/wiki/OpenPGP_card):
 
 ---
 
@@ -30,7 +30,7 @@ Internet authentication is the process of verifying a user's identity before gra
    - **SMS/Email**: Sending verification codes via SMS or email.
    - **Time-Based One-Time Password (TOTP)**: Physical or software devices generating temporary codes for verification.
    - **Asymmetric Cryptography**: Uses a pair of keys, one public and one private. [Commonly used](https://www.laulem.com/config/authentification-ssh-cle-privee.html) by [SSH](https://en.wikipedia.org/wiki/Secure_Shell).
-   - **Hardware Security Keys**: Use of [physical devices](https://en.wikipedia.org/wiki/OpenPGP_card) like YubiKeys, which leverage asymmetric cryptography for the highest level of security.
+   - **Hardware security devices**: Use of [physical devices](https://en.wikipedia.org/wiki/OpenPGP_card) like YubiKeys, which leverage asymmetric cryptography for the highest level of security.
 
 ---
 

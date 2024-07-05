@@ -38,7 +38,7 @@ OpenPGP is [a set of specifications](https://www.openpgp.org/about/standard/) de
 #### How OpenPGP Encryption Works:
 
 1. **Key Generation**:
-   - With [pgpid](https://codeberg.org/foopgp/pgpid), each user generates three pairs of keys: the public keys are shared at a minimum with correspondents. The private keys are kept secret and should never be on any connected system, other than security keys such as YubiKeys or NitroKeys.
+   - With [pgpid](https://codeberg.org/foopgp/pgpid), each user generates three pairs of keys: the public keys are shared at a minimum with correspondents. The private keys are kept secret and should never be on any connected system, other than security devices such as YubiKeys or NitroKeys.
    
 2. **Data Encryption**:
    - The message is encrypted with a randomly generated symmetric session key.
@@ -46,12 +46,12 @@ OpenPGP is [a set of specifications](https://www.openpgp.org/about/standard/) de
    - The symmetrically encrypted message and the asymmetrically encrypted session key are sent to the recipient.
 
 3. **Data Decryption**:
-   - The recipient uses their security key (e.g., YubiKey) to decrypt the session key using their dedicated private key.
+   - The recipient uses their security device (e.g., YubiKey) to decrypt the session key using their dedicated private key.
    - The session key is used by the application (e.g., email client) to decrypt the message.
 
 ---
 
-### Applications Using OpenPGP Encryption with Security Keys
+### Applications Using OpenPGP Encryption with security devices
 
 #### Linux
   * [Claws Mail](https://www.openpgp.org/software/claws/)

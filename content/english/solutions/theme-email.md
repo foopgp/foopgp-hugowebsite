@@ -36,7 +36,7 @@ Many other email clients are compatible with OpenPGP. You can find them here:
 
 ### Evolution
 
-[**Evolution**](https://help.gnome.org/users/evolution/stable/index.html.fr) allows you to manage your emails, contacts, tasks, and calendars. Through GnuPG, it supports OpenPGP security keys to secure emails.
+[**Evolution**](https://help.gnome.org/users/evolution/stable/index.html.fr) allows you to manage your emails, contacts, tasks, and calendars. Through GnuPG, it supports OpenPGP security devices to secure emails.
 
 #### Evolution PGP Features
 
@@ -59,7 +59,7 @@ Many other email clients are compatible with OpenPGP. You can find them here:
 
 ### K-9 Mail
 
-[**K-9 Mail**](https://k9mail.app/) is an open-source email client for Android that uses security keys via OpenKeychain, an OpenPGP key management application for Android.
+[**K-9 Mail**](https://k9mail.app/) is an open-source email client for Android that uses security devices via OpenKeychain, an OpenPGP key management application for Android.
 
 #### K-9 Mail PGP Features
 
@@ -67,16 +67,16 @@ Many other email clients are compatible with OpenPGP. You can find them here:
    - K-9 Mail, in combination with OpenKeychain, allows you to encrypt emails using the recipient's certificate. Encrypted emails ensure that only intended recipients can read the message.
 
 2. **Email Decryption**:
-   - When receiving an encrypted email, K-9 Mail uses OpenKeychain to prompt your security key (YubiKey, Nitrokey, etc.) to decrypt the message, allowing you to read its content.
+   - When receiving an encrypted email, K-9 Mail uses OpenKeychain to prompt your security device (YubiKey, Nitrokey, etc.) to decrypt the message, allowing you to read its content.
 
 3. **Digital Signature**:
-   - You can digitally sign your emails with K-9 Mail and OpenKeychain. By using your security key (YubiKey, Nitrokey, etc.), you can add a digital signature to your messages, ensuring their authenticity and integrity.
+   - You can digitally sign your emails with K-9 Mail and OpenKeychain. By using your security device (YubiKey, Nitrokey, etc.), you can add a digital signature to your messages, ensuring their authenticity and integrity.
 
 4. **Signature Verification**:
    - K-9 Mail, with the help of OpenKeychain, verifies the digital signatures of received emails using the sender's certificate. This confirms that the message is authentic and has not been altered.
 
 5. **Key Management**:
-   - OpenKeychain manages OpenPGP for K-9 Mail. You can import, export, and manage OpenPGP certificates and your security keys from the OpenKeychain application.
+   - OpenKeychain manages OpenPGP for K-9 Mail. You can import, export, and manage OpenPGP certificates and your security devices from the OpenKeychain application.
 
 ### Comparison between Evolution and K-9 Mail
 

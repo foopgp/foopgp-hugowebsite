@@ -53,7 +53,7 @@ To better manage these identities and the associated private keys, the foopgp as
 * Generate private keys for the associated OpenPGP certificates.
 * Encrypt and distribute these private keys across at least three printed documents (QR codes).
 * Securely store these private keys: [secret sharing](https://en.wikipedia.org/wiki/Secret_sharing) and entirely offline.
-* Decrypt these backups to transfer the private keys into physical security keys like [YubiKey](https://www.yubico.com/) or [Nitrokey](https://www.nitrokey.com/products/nitrokeys).
+* Decrypt these backups to transfer the private keys into physical security devices like [YubiKey](https://www.yubico.com/) or [Nitrokey](https://www.nitrokey.com/products/nitrokeys).
 
 Here is an example of a paper backup of a pgpid digital identity:
 

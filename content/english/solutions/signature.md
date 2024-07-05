@@ -35,7 +35,7 @@ OpenPGP digital signatures are a common method to ensure the authenticity of dat
    - Users must install compatible OpenPGP software (such as [K9-Mail](/fr/solutions/theme-email/./#k9-mail), FairEmail, [Evolution](/fr/solutions/theme-email/./#evolution), Thunderbird, ...).
    - Generate private keys and a public certificate with **pgpid-gen**.
    - Share or publish the public certificate.
-   - Import private keys into a security key (YubiKey, NitroKey, ...) with **pgpid-qrscan**.
+   - Import private keys into a security device (YubiKey, NitroKey, ...) with **pgpid-qrscan**.
 
 2. **Sending Signed Data**
    - Add a digital signature using the sender's private key.
@@ -63,7 +63,7 @@ Signatures with OpenPGP keys in LibreOffice ensure the authenticity and integrit
    - Go to **File**, then click **Digital Signatures**.
      ![Digital Signature 1](/images/solutions/signaturelibreoffice1.jpg)
 
-2. **Connect Your Security Key:**
+2. **Connect Your security device:**
    - Connect your YubiKey or NitroKey to your computer and log in.
      ![Digital Signature 2](/images/solutions/signaturelibreoffice2.jpg)
 
@@ -94,7 +94,7 @@ Although code signing is not yet systematic, it could effectively combat certain
 All Git users should adopt the process recommended by the association:
 
 * Generate public certificates and private keys with **pgpid-gen**.
-* Import private keys into security keys (YubiKey, NitroKey, ...) with **pgpid-qrscan**.
+* Import private keys into security devices (YubiKey, NitroKey, ...) with **pgpid-qrscan**.
 * Configure Git to sign all changes in shared repositories:
 
 ```bash

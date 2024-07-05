@@ -8,6 +8,7 @@ bg_image: "images/backgrounds/puzzle.jpg"
 # meta description
 description : "Encryption solutions."
 image: "images/solutions/encryption.png"
+tags: ["Encryption", "pgpid"]
 # Research image
 categories: ["solution"]
 type: "post"

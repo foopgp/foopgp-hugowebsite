@@ -9,6 +9,7 @@ bg_image: "images/backgrounds/puzzle.jpg"
 description: "Signature solutions."
 # Research image
 image: "images/solutions/signature.png"
+tags: ["Signature", "pgpid"]
 categories: ["solution"]
 type: "post"
 ---

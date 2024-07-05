@@ -9,6 +9,7 @@ bg_image: "images/backgrounds/puzzle.jpg"
 description: "Authentication solutions."
 # Research image
 image: "images/solutions/authentication.png"
+tags: [ "Authentication", "AI" ]
 categories: ["solution"]
 type: "post"
 ---

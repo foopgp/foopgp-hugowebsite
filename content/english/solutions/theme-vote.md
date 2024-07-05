@@ -9,6 +9,7 @@ bg_image: "images/backgrounds/puzzle.jpg"
 description : "Solutions for electronic voting."
 # Research image
 image: "images/solutions/vote.png"
+tags: ["Vote"]
 categories: ["solution"]
 type: "post"
 ---

@@ -9,6 +9,7 @@ bg_image: "images/backgrounds/puzzle.jpg"
 description : "Email solutions."
 # Research image
 image: "images/solutions/mail-scryptmail-logo_large.png"
+tags: ["email"]
 categories: ["solution"]
 type: "post"
 ---

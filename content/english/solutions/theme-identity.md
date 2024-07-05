@@ -9,6 +9,7 @@ bg_image: "images/backgrounds/puzzle.jpg"
 description : "Solutions for digital identity."
 # Research image
 image: "images/solutions/identity.png"
+tags: ["Identity", "pgpid"]
 categories: ["solution"]
 type: "post"
 ---

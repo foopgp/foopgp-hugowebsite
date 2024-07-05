@@ -10,6 +10,7 @@ author: [ "Deepl Translate" ]
 description : "Solutions for digital identity."
 # Research image
 image: "images/solutions/identity.png"
+tags: ["Identity", "pgpid"]
 categories: ["solution"]
 type: "post"
 ---

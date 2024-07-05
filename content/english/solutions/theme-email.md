@@ -10,6 +10,7 @@ author: [ "Deepl Translate" ]
 description : "Email solutions."
 # Research image
 image: "images/solutions/mail-scryptmail-logo_large.png"
+tags: ["email"]
 categories: ["solution"]
 type: "post"
 ---

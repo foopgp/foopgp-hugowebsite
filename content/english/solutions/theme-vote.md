@@ -10,6 +10,7 @@ author: [ "Deepl Translate" ]
 description : "Solutions for electronic voting."
 # Research image
 image: "images/solutions/vote.png"
+tags: ["Vote"]
 categories: ["solution"]
 type: "post"
 ---

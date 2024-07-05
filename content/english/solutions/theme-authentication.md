@@ -10,6 +10,7 @@ author: [ "Deepl Translate" ]
 description: "Authentication solutions."
 # Research image
 image: "images/solutions/authentication.png"
+tags: [ "Authentication", "AI" ]
 categories: ["solution"]
 type: "post"
 ---

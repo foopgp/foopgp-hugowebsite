@@ -1,5 +1,5 @@
 ---
-Lastmod: 2024-07-02T07:30:59+00:00 # MANAGED BY update_lastmod.sh
+Lastmod: 2024-07-05T12:10:02+02:00 # MANAGED BY update_lastmod.sh
 title: "Email"
 #date: 2019-07-06T15:27:17+06:00
 draft: false

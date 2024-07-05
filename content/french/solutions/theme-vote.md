@@ -15,7 +15,7 @@ categories: ["solution"]
 type: "post"
 ---
 
-### Résumé de la Méthode de Vote utilisé par Debian
+### Gouvernance du projet Debian
 
 Le projet Debian est une initiative communautaire qui développe un système d'exploitation libre basé sur le noyau Linux.
 
@@ -23,11 +23,11 @@ Pour prendre des décisions importantes, telles que l'élection de leaders de pr
 
 Seuls les membres du projet, appelés développeurs ou mainteneurs Debian, peuvent voter. Les votes sont conduits de manière électronique en utilisant OpenPGP pour assurer une participation large et efficace.
 
-### La Méthode de Vote Schulze
+### La méthode de vote Schulze
 
 La méthode de vote Schulze, aussi connue sous le nom de méthode de Condorcet-Schulze, est un algorithme utilisé pour déterminer le vainqueur d'une élection où il y a plus de deux options. Elle est particulièrement appréciée pour sa capacité à refléter fidèlement les préférences des électeurs dans des scénarios complexes.
 
-#### Principe de la Méthode Schulze
+#### Principe de la méthode Schulze
 
 1. **Préférences des Électeurs** : Chaque électeur classe les propositions par ordre de préférence.
 2. **Paires de Comparaison** : Pour chaque paire de propositions, on compare combien d'électeurs préfèrent une proposition à chaque autre.

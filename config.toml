@@ -14,6 +14,8 @@ disableLanguages = [] # desable language from here
 rssLimit = 50
 # used notably by urlize function cf. https://gohugo.io/getting-started/configuration/#removepathaccents
 removePathAccents = true
+# take LastMod from git and create .GitInfo object, cf. https://gohugo.io/methods/page/gitinfo/
+enableGitInfo = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

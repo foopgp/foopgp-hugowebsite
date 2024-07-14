@@ -12,9 +12,10 @@ find "${@:-content/}" -type f -name "*.md" | while read file ; do
 	[[ "$lastauthordate" ]] || lastauthordate=$(date --iso-8601=seconds)
 
 	if [[ -z "$lastmod" ]] ; then
+		continue
 		sed -i "1a\Lastmod: $lastauthordate # MANAGED BY ${me}" "$file"
 	else
-		sed -i "${h%%:*}c\Lastmod: $lastauthordate # MANAGED BY ${me}" "$file"
+		sed -i "${h%%:*}c\#Lastmod: $lastauthordate # MANAGED by --enableGitInfo" "$file"
 	fi
 	if git diff --quiet -- "$file" ; then
 		echo "${me}: unchanged ${file}" >&2
@@ -24,4 +25,4 @@ find "${@:-content/}" -type f -name "*.md" | while read file ; do
 	fi
 	#git add -- "$file"
 	#git commit --date=${lastauthordate} --message="${me}: $file" --message="$lastmod -> $lastauthordate"
-done | sort | while read date file ; do git add -v -- "$file"; if [[ "$dp" == $date ]] ; then amend="--amend" ; else amend="" ; dp="$date" ; fi ; git commit $amend --date="$date" --message="Update lastmod entry for file(s) last modified $date" ; done
+done | sort | while read date file ; do git add -v -- "$file"; if [[ "$dp" == $date ]] ; then amend="--amend" ; else amend="" ; dp="$date" ; fi ; git commit $amend --date="$date" --message="Comment lastmod entry for file(s) last modified $date" ; done

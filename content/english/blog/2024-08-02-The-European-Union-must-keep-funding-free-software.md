@@ -13,12 +13,11 @@ image: "images/blog/2024/europe-413102_960_720.jpg"
 type: "post"
 ---
 
-Many free software projects benefit from the European funding program Next Generation Internet (NGI)[^note]. But this program is in danger. To appreciate the possible effect, we need only recall that this program is associated with numerous community projects and linked to essential free elements (see the [next_generation_internet](https://linuxfr.org/tags/next_generation_internet/public) label and the list of signatories).
+Many free software projects benefit from the European funding program Next Generation Internet (NGI)\*. But this program is in danger. To appreciate the possible effect, we need only recall that this program is associated with numerous community projects and linked to essential free elements (see the [next_generation_internet](https://linuxfr.org/tags/next_generation_internet/public) label and the list of signatories).
 
-[^note]: This is not the case for foopgp.org, and although we may think that the problem is not only political, but also technico-economic, we support the message, and "sign" it by republishing it on our blog.
+*\*:This is not the case for foopgp.org, and although we may think that the problem is not only political, but also technico-economic, we support the message, and "sign" it by republishing it on our blog.*
 
 ## Open Letter to the European Commission
-
 
 Since 2020, Next Generation Internet ([NGI](https://www.ngi.eu)) programmes, part of European Commission's Horizon programme, fund free software in Europe using a cascade funding mechanism (see for example [NGI0  Commons Fund](https://www.nlnet.nl/commonsfund)). This year, according to the Horizon Europe working draft detailing funding programmes for 2025, we notice that Next Generation Internet is not mentioned any more as part of Cluster 4.
 
@@ -43,4 +42,6 @@ Free and open source software, as supported by NGI since 2020, is by design the 
 This is all the more essential in the current geopolitical context: the challenge of technological sovereignty is central, and free software allows to address it while acting for peace and sovereignty in the digital world as a whole.
 
 In this perspective, we urge you to claim for preserving the NGI programme as part of the 2025 funding programme.
+
+[^1]: As defined by Horizon Europe, widening Member States are Bulgaria, Croatia, Cyprus, the Czech Republic, Estonia, Greece, Hungary, Latvia, Lituania, Malta, Poland, Portugal, Romania, Slovakia and Slovenia. Widening associated countries (under condition of an association agreement) include Albania, Armenia, Bosnia, Feroe Islands, Georgia, Kosovo, Moldavia, Montenegro, Morocco, North Macedonia, Serbia, Tunisia, Turkey and Ukraine. Widening overseas regions are : Guadeloupe, French Guyana, Martinique, Reunion Island, Mayotte, Saint-Martin, The Azores, Madeira, the Canary Islands.
 

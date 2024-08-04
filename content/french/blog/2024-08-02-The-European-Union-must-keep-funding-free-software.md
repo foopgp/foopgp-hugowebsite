@@ -13,7 +13,7 @@ image: "images/blog/2024/europe-413102_960_720.jpg"
 type: "post"
 ---
 
-De nombreux projets de logiciel libre bénéficient du programme de financement européen Next Generation Internet (NGI)\*. Or celui-ci est en danger. Pour prendre conscience de l'effet éventuel, il suffit de se rappeler que ce programme est associé à de nombreux projets communautaires et relié à des éléments libres essentiels (voir l'étiquette [next_generation_internet](https://linuxfr.org/tags/next_generation_internet/public) et la liste des signataires).
+De nombreux projets de logiciel libre bénéficient du programme de financement européen Next Generation Internet (NGI)\*. Or celui-ci est en danger. Pour prendre conscience de l'effet éventuel, il suffit de se rappeler que ce programme est associé à de nombreux projets communautaires et relié à des éléments libres essentiels.
 
 *\*: Ce n'est le cas de foopgp.org, et bien que nous puissions penser que le problème est n'est pas seulement politique, mais aussi technico-économique, nous soutenons le message, et le "signons" en le republiant sur notre blog.*
 

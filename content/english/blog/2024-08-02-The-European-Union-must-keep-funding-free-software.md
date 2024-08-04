@@ -13,7 +13,7 @@ image: "images/blog/2024/europe-413102_960_720.jpg"
 type: "post"
 ---
 
-Many free software projects benefit from the European funding program Next Generation Internet (NGI)\*. But this program is in danger. To appreciate the possible effect, we need only recall that this program is associated with numerous community projects and linked to essential free elements (see the [next_generation_internet](https://linuxfr.org/tags/next_generation_internet/public) label and the list of signatories).
+Many free software projects benefit from the European funding program Next Generation Internet (NGI)\*. But this program is in danger. To appreciate the possible effect, we need only recall that this program is associated with numerous community projects and linked to essential free elements.
 
 *\*:This is not the case for foopgp.org, and although we may think that the problem is not only political, but also technico-economic, we support the message, and "sign" it by republishing it on our blog.*
 

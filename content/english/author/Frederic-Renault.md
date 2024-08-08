@@ -14,6 +14,8 @@ social:
     link : "https://qo-op.com/"
   - icon : "ti-world" # themify icon pack : https://themify.me/themify-icons
     link : "https://chaton.g1sms.fr/"
+  - icon : "ti-gnupg"
+    link : "/keys/OpenPGP_0x4DCD3D088C7BEA1DFE2F434ED218CF2285CB2437.asc"
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-Lastmod: 2020-12-04T02:51:35+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2020-12-04T02:51:35+01:00 # MANAGED by --enableGitInfo
 title: "Training & Workshops"
 draft: false
 # page title background image

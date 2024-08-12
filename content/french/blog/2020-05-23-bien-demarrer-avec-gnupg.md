@@ -1,5 +1,5 @@
 ---
-Lastmod: 2021-02-01T18:02:48+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2021-02-01T18:01:47+01:00 # MANAGED by --enableGitInfo
 #URL:     https://linuxfr.org/news/bien-demarrer-avec-gnupg
 Title:   "Bien démarrer avec GnuPG"
 Authors: gouttegd, Davy Defaud, Benoît Sibaud, patrick_g et Ysabeau

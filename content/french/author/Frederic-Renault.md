@@ -1,5 +1,5 @@
 ---
-Lastmod: 2024-01-10T15:56:30+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-07-04T15:26:48+02:00 # MANAGED by --enableGitInfo
 title: "Frédéric Renault"
 # page title background image
 bg_image: "images/backgrounds/world.jpg"
@@ -14,6 +14,8 @@ social:
     link : "https://qo-op.com/"
   - icon : "ti-world" # themify icon pack : https://themify.me/themify-icons
     link : "https://chaton.g1sms.fr/"
+  - icon : "ti-gnupg"
+    link : "/keys/OpenPGP_0x4DCD3D088C7BEA1DFE2F434ED218CF2285CB2437.asc"
 
 ---
 

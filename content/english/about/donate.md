@@ -1,5 +1,5 @@
 ---
-Lastmod: 2024-06-04T14:54:54+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-07-05T12:16:06+02:00 # MANAGED by --enableGitInfo
 title: "Donate"
 lang: en
 #date: 2019-07-06T15:27:17+06:00
@@ -13,12 +13,11 @@ image: "images/logos/logo-foopgp-token-0.png"
 ---
 
 
-Please, fill in this form to become a member or make a donation.
-
 To become or remain an active member of the association, the annual fee is one euro (1€); see [association parameters](https://foopgp.org/fr/about/rules-parameters/).
 
 In addition to this fee, you can make a donation, which may entitle you to power tokens, in order to participate in the governance of the association, in accordance with our [rules of procedure](/en/about/rules-of-procedures/).
 
-{{< foopgp_form_register_en >}}
+
+Alas, inline inscription or donation are still ***work in progress***.
 
 

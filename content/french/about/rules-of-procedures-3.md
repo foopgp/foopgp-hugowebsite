@@ -1,5 +1,5 @@
 ---
-Lastmod: 2024-05-11T17:05:01+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-05-11T17:05:01+02:00 # MANAGED by --enableGitInfo
 title: "(en travaux) Réglement intérieur foopgp"
 lang: fr
 ###date: 2019-07-06T15:27:17+06:00

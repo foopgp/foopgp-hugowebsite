@@ -1,5 +1,5 @@
 ---
-Lastmod: 2020-12-08T18:22:40+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2020-12-08T18:22:40+01:00 # MANAGED by --enableGitInfo
 type: "event"
 title: "OpenPGP (technical) conference"
 publishDate: "2016-08-24"

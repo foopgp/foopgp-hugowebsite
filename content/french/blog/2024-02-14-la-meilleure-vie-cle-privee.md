@@ -1,7 +1,7 @@
 ---
 Title:   La meilleure vie de votre vie (numérique)
 Date:    2024-02-13T01:30:00+02:00
-Lastmod: 2024-06-28T12:22:10+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-07-03T10:36:30+02:00 # MANAGED by --enableGitInfo
 License: CC By-SA
 Tags:    [ "KSP", "pgpid", "keyserver" ]
 categories: [ "guide" ]

@@ -1,5 +1,5 @@
 ---
-Lastmod: 2023-09-26T21:45:50+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2023-09-26T21:45:50+02:00 # MANAGED by --enableGitInfo
 title: "Formaint'info"
 draft: false
 bg_image: "images/backgrounds/page-title.jpg"

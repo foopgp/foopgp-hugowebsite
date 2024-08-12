@@ -1,5 +1,5 @@
 ---
-Lastmod: 2024-06-27T15:31:47+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-07-03T10:36:30+02:00 # MANAGED by --enableGitInfo
 title: "Internship Summary"
 date: 2024-06-06T10:30:00+02:00
 draft: false

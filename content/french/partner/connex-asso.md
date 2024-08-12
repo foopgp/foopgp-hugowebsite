@@ -1,5 +1,5 @@
 ---
-Lastmod: 2020-12-16T02:15:47+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2020-12-16T02:15:47+01:00 # MANAGED by --enableGitInfo
 title: "Connex"
 draft: false
 bg_image: "images/backgrounds/page-title.jpg"

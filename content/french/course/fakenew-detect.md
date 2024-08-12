@@ -1,5 +1,5 @@
 ---
-Lastmod: 2023-12-05T19:41:54+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2023-12-05T19:41:54+01:00 # MANAGED by --enableGitInfo
 title: "FAKE... ¡No pasarán!"
 lang: fr
 #date: 2019-07-06T15:27:17+06:00

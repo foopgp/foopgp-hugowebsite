@@ -1,5 +1,5 @@
 ---
-Lastmod: 2020-12-16T02:15:47+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2020-12-16T02:15:47+01:00 # MANAGED by --enableGitInfo
 title: "Test français"
 lang: fr
 date: 2019-07-06T15:27:17+06:00

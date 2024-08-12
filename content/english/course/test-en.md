@@ -1,5 +1,5 @@
 ---
-Lastmod: 2020-12-08T18:22:40+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2020-12-08T18:22:40+01:00 # MANAGED by --enableGitInfo
 title: "test english"
 lang: en_US
 date: 2019-07-06T15:27:17+06:00

@@ -1,5 +1,5 @@
 ---
-Lastmod: 2023-12-13T19:42:28+01:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-07-04T15:26:48+02:00 # MANAGED by --enableGitInfo
 title: "Didier Loyens"
 # page title background image
 bg_image: "images/backgrounds/world.jpg"

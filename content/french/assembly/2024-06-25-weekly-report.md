@@ -1,5 +1,5 @@
 ---
-Lastmod: 2024-06-28T12:22:10+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-06-28T12:22:10+02:00 # MANAGED by --enableGitInfo
 title: "2024 S26 Rapport Hebdomadaire"
 lang: fr
 date: 2024-06-25T15:27:17+06:00

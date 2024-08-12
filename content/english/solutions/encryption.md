@@ -1,5 +1,5 @@
 ---
-Lastmod: 2024-07-05T12:10:02+02:00 # MANAGED BY update_lastmod.sh
+#Lastmod: 2024-07-05T12:41:04+02:00 # MANAGED by --enableGitInfo
 title: "Encryption"
 #date: 2019-07-06T15:27:17+06:00
 draft: false

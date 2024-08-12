@@ -185,7 +185,10 @@ contact_form_action = "#" # contact form works with https://formspree.io
 google_analitycs_id = "" # your id
 # top header
 top_header = false
+# the search feature
 searchURL = "search"
+# to enable link on git forge
+gitUrlHashPrefix = "https://codeberg.org/foopgp/foopgp-hugowebsite/commit/"
 
 # Preloader
 [params.preloader]

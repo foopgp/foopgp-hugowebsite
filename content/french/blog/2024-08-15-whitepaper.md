@@ -39,7 +39,7 @@ Car si ces régies ont pu développer leur sinistre business, c'est justement
 parce que ce n'était que du business. Du sacro-saint business dont la sacro-sainte croissance se nourrit.
 
 Elles n'ont rien inventé de nouveau depuis les premiers encarts publicitaires des
-journaux papiers, en fonction du profil de leurs lecteurs. Elles ont seulement optimisé
+journaux papiers. Elles ont seulement optimisé
 les processus, réduit les coûts, amélioré le ciblage, afin de produire toujours
 plus de bénéfices, et de nourrir encore et toujours la croissance.
 
@@ -48,7 +48,7 @@ A partir de là, nous voyons 2 axes pour limiter les dégâts inéluctables de t
 * Repenser le système économique et monétaire afin de désacraliser la
   croissance.
 
-## Construire des espaces de vie numérique privée
+### Construire des espaces de vie numérique privée
 
 Dès les premiers réseaux[^Chappe], des hommes ont pensé et trouvé des solutions pour
 préserver la confidentialité des échanges au travers de réseaux ouverts.
@@ -65,15 +65,19 @@ OpenPGP[^OpenPGP].
 
 Évidemment, ce genre de technologie, et OpenPGP en particulier, allait non seulement à l'encontre des volontés de surveillance de certains gouvernements, mais aussi et surtout à l'encontre du business modèle des régies publicitaires qui se sont emparées d'Internet et ont financés ses "évolutions". Aussi elles ont été et sont encore combattus, dénigrés, ou méprisés par les acteurs les plus puissants d'Internet.
 
-Le premier objectif de l'association foopgp est donc de permettre à tous de se
-construire un espace de vie numérique privé, en démocratisant les usages d'OpenPGP.
+***Le premier objectif de l'association foopgp est donc de permettre à tous de se
+construire un espace de vie numérique privé, en démocratisant les usages d'OpenPGP.***
 
-## Repenser le système monétaire
+### Repenser le système monétaire actuel
 
-Le système monétaire mis en place à la fin de la deuxième guerre mondiale a sans
+Le système monétaire mis en place à la fin de la deuxième guerre mondiale[^BW] a sans
 doute permis une ère globale de stabilité politique et de croissance économique,
 qui semble s'achever aujourd'hui avec les crises climatiques et géopolitiques
 globales.
+
+[^BW]: https://en.wikipedia.org/wiki/Bretton_Woods_system
+
+#### La croissance est intenable
 
 Son équilibre était basé sur la croissance, qui devait être sans fin, et
 satisfaire ainsi notre tentation, certains diront notre nature, à en vouloir toujours
@@ -81,6 +85,34 @@ plus : plus de confort, plus de temps libres, plus de vitesse, plus de voyages,
 etc.
 
 Sauf que notre bonne vieille planète n'est qu'un petit caillou dans l'espace.
-Elle est fini et possède des limites que nous avons probablement déjà dépassées.
+Elle est fini et possède des limites[^PBoundaries] que nous avons probablement déjà dépassées.
+
+[^PBoundaries]: https://fr.wikipedia.org/wiki/Limites_plan%C3%A9taires
+
+#### Les inégalités ne peuvent que s'accroître
+
+Ceux qui détiennent une licence bancaire, possède un privilège comparable à ceux que la révolution française a pu abolir.
+
+Ce privilège leur donne non seulement et plus qu'aux autres, le pouvoir de
+décider ce qui a de la valeur et ce qui n'en en pas. En hiérarchisant selon des critères arbitraires les prêts et projets d'accès à la propriété, privée ou public, immobilière ou entrepreneuriale.
+
+Mais de plus, il engendre en plus une distorsion de la valeur monétaire en faveur de ceux
+dont les projets été placé en haut de la hiérarchie par le créateur
+monétaire[^Cantillon].
+
+Ces deux conséquences se nourrissent l'une et l'autre et engendrent un cercle
+vicieux qui accroît les inégalités et qu'aucune politique de redistribution n'a pu résoudre :
+* "Ceux à qui on accorde les prêts sont plus riches" ↺ "On ne prête qu'aux riches"
+
+[^Cantillon]: https://www.adamsmith.org/blog/the-cantillion-effect
+
+
+***Le second objectif de l'association est donc de proposer un système économique dans lequel personne n'aurait (plus que d'autres) de privilège de création monétaire.***
+
+***Doté d'une gouvernance de tous les communs : espaces - biens - monnaies, plus juste et
+respectueuse de chacune des sensibilités et singularités humaines.***
+
+***Dans l'espoir de voir se renforcer la cohésion sociale ou le bonheur de vivre, et affaiblir l'individualisme ou la
+surconsommation.***
 
 

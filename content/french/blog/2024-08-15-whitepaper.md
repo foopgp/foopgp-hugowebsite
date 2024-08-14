@@ -1,15 +1,16 @@
 ---
 Title:   "Notre Livre Blanc"
-Date:    2024-08-02T01:30:00+02:00
+Date:    2024-08-14T01:30:00+02:00
 License: CC By-SA
 Tags:    [ "specification", "governance", "signature", "authentication", "encryption", "identity", "pgpid" ]
 categories: [ "About" ]
 draft: false
 author: [ "Jean-Jacques Brucker" ]
-description : "Quelle utopie nous visons, par quelles moyens nous l'atteindrons."
+description : "Quelle utopie nous visons, par quels moyens nous l'atteindrons."
 lang: fr
 bg_image: "images/backgrounds/library.jpg"
-image: "images/blog/2024/europe-413102_960_720.jpg"
+bg_image: "images/blog/2024/europe-413102_960_720.jpg"
+image: "images/blog/2024/earth4ever.jpeg"
 type: "post"
 ---
 
@@ -80,6 +81,6 @@ plus : plus de confort, plus de temps libres, plus de vitesse, plus de voyages,
 etc.
 
 Sauf que notre bonne vieille planète n'est qu'un petit caillou dans l'espace.
-Elle est fini et possède des limites que nous avons probablement déjà dépassée.
+Elle est fini et possède des limites que nous avons probablement déjà dépassées.
 
 

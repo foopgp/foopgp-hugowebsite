@@ -17,7 +17,7 @@ type: "post"
 
 ## Reconstruire l'Internet dont nous rêvions
 
-Aujourd'hui en 2024, le constat est sans appel : l'utopie initiale d'Internet a été dévoyé[^UIBellon] [^UIWalther].
+Aujourd'hui en 2024, le constat est sans appel : l'utopie initiale d'Internet a été dévoyée[^UIBellon] [^UIWalther].
 
 [^UIBellon]: https://www.cairn.info/revue-projet-2019-4-page-6.htm
 [^UIWalther]: https://www.ladn.eu/tech-a-suivre/internet-developpe-une-culture-mediocrite/
@@ -63,13 +63,13 @@ préserver la confidentialité des échanges au travers de réseaux ouverts.
 
 [^Chappe]: https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9graphe_Chappe
 
-Aux débuts d'Internet, c'est Phil Zimmermann[^PZ] qui a développé[^PGP] puis ouvert
-des spécifications aujourd'hui encore les plus abouties :
-OpenPGP[^OpenPGP].
+Aux débuts d'Internet, c'est Phil Zimmermann[^PZ] qui a développé[^PGP] un logiciel de référence pour protéger la vie privée, puis ouvert ses spécifications[^RFC2440] afin qu'elles deviennent un standard de l'IETF[^IETF] : OpenPGP[^OpenPGP]. Depuis de nombreux informaticiens l'ont adopté, fait évoluer, ou ont crée des spécifications annexes[^OpenPGPspecs]. Ainsi OpenPGP est aujourd'hui encore l'outil le plus abouti pour construire des espaces de vie privée.
 
 [^PZ]: https://fr.wikipedia.org/wiki/Philip_Zimmermann
 [^PGP]: https://fr.wikipedia.org/wiki/Pretty_Good_Privacy
-[^OpenPGP]: https://www.openpgp.org/
+[^RFC2440]: https://www.rfc-editor.org/rfc/rfc2440
+[^OpenPGP]: https://datatracker.ietf.org/wg/openpgp/about/
+[^OpenPGPspecs]: https://www.openpgp.org/about/standard/
 
 Évidemment, ce genre de technologie, et OpenPGP en particulier, allait non seulement à l'encontre des volontés de surveillance de certains gouvernements, mais aussi et surtout à l'encontre du business modèle des régies publicitaires qui se sont emparées d'Internet et ont financés ses "évolutions". Aussi elles ont été et sont encore combattus, dénigrés, ou méprisés par les acteurs les plus puissants d'Internet.
 
@@ -115,7 +115,7 @@ vicieux qui accroît les inégalités et qu'aucune politique de redistribution n
 [^Cantillon]: https://www.adamsmith.org/blog/the-cantillion-effect
 
 
-***Le second objectif de foopgp est donc de proposer un système économique plus résilient et plus juste, en abolissant les privilèges de création monétaire.***
+***Le second objectif de foopgp est donc de proposer un système économique plus résilient et plus juste, en abolissant tout privilège de création monétaire.***
 
 ### Refaire société, gouverner en commun
 

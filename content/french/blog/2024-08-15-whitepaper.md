@@ -73,7 +73,7 @@ OpenPGP[^OpenPGP].
 
 Évidemment, ce genre de technologie, et OpenPGP en particulier, allait non seulement à l'encontre des volontés de surveillance de certains gouvernements, mais aussi et surtout à l'encontre du business modèle des régies publicitaires qui se sont emparées d'Internet et ont financés ses "évolutions". Aussi elles ont été et sont encore combattus, dénigrés, ou méprisés par les acteurs les plus puissants d'Internet.
 
-***Le premier objectif de l'association foopgp est donc de permettre à tous de se
+***Le premier objectif de foopgp est donc de permettre à tous de se
 construire un espace de vie numérique privé, en démocratisant les usages d'OpenPGP.***
 
 ### Repenser le système monétaire actuel
@@ -115,17 +115,72 @@ vicieux qui accroît les inégalités et qu'aucune politique de redistribution n
 [^Cantillon]: https://www.adamsmith.org/blog/the-cantillion-effect
 
 
-***Le second objectif de l'association est donc de proposer un système économique plus résilient et plus juste, en abolissant les privilèges de création monétaire.***
+***Le second objectif de foopgp est donc de proposer un système économique plus résilient et plus juste, en abolissant les privilèges de création monétaire.***
 
-### Refaire société, gouverner les communs
+### Refaire société, gouverner en commun
 
-Les technologies comme OpenPGP, ou bien la monnaie, sont des biens communs.
+[Citation Wikipedia](https://fr.wikipedia.org/wiki/Communs) au jour du 15 août
+2024 :
 
-(...)
+> Les **communs** sont des ressources partagées, gérées et
+> [maintenues](https://fr.wikipedia.org/wiki/maintenance) collectivement par une communauté ;
+> celle-ci établit des règles dans le but de préserver et pérenniser ces
+> ressources[^communs.org] tout en fournissant aux membres de cette communauté la
+> possibilité et le droit de les utiliser, voire, si la communauté le
+> décide, en octroyant ce droit à tous. Ces ressources peuvent être
+> naturelles (une forêt, une rivière), matérielles (une machine-outil, une
+> maison, une centrale électrique) ou immatérielles ([une
+> connaissance](https://fr.wikipedia.org/wiki/Patrimoine_informationnel_commun), un
+> logiciel).
+> 
+> Les communs impliquent que la [propriété](https://fr.wikipedia.org/wiki/propriété) n\'est
+> pas conçue comme une appropriation ou une
+> [privatisation](https://fr.wikipedia.org/wiki/privatisation) mais comme un
+> [usage](https://fr.wikipedia.org/wiki/Droit_d'usage)[^2], ce qui rejoint la notion de
+> *possession* de [Proudhon](https://fr.wikipedia.org/wiki/Pierre-Joseph_Proudhon) dans
+> *[Qu\'est-ce que la propriété
+> ?](https://fr.wikipedia.org/wiki/Qu'est-ce_que_la_propriété_?)*. Hors de la [propriété
+> publique](https://fr.wikipedia.org/wiki/propriété_publique) et de la [propriété
+> privée](https://fr.wikipedia.org/wiki/propriété_privée), les communs forment une troisième
+> voie. [Elinor Ostrom](https://fr.wikipedia.org/wiki/Elinor_Ostrom) a obtenu un [Prix Nobel
+> d'économie](https://fr.wikipedia.org/wiki/Prix_Nobel_d’économie) pour ses travaux sur les
+> [biens communs](https://fr.wikipedia.org/wiki/biens_communs). Elle parle de [faisceaux de
+> droits](https://fr.wikipedia.org/wiki/Faisceau_de_droit) pour caractériser la propriété
+> commune[^3].
+> 
+> Selon [Benjamin Coriat](https://fr.wikipedia.org/wiki/Benjamin_Coriat), il ne faut pas
+> confondre un « commun » avec un « [bien
+> commun](https://fr.wikipedia.org/wiki/Biens_communs) ». Un bien commun est quelque chose
+> qui appartient à tous mais qui n\'est pas forcément géré comme un commun ; ainsi, « […]
+> l’atmosphère appartient à tous. C’est un « bien commun », mais pour autant ce n’est pas
+> un commun. Car, malgré les quelques réglementations mises en place, il n’y a pas de
+> gouvernance permettant de gérer les effets de serre et les émissions de CO₂ » [^4].
 
-***Le troisième objectif de l'association est donc de proposer un système de gouvernance plus juste et
-respectueux envers l'ensemble des sensibilités et singularités humaines, en
-s'inspirant des normes et lois qui se sont naturellement imposées dans les communautés du logiciel libre.***
+[^2]: https://www.canal-u.tv/video/universite_toulouse_ii_le_mirail/les_communs_quelles_definitions_quels_enjeux_genevieve_azam.13502
+
+[^3]: https://regulation.revues.org/10471
+
+[^4]: [Le retour des communs, la crise de l\'idéologie propriétaire,
+    sous la direction de Benjamin
+    Coriat](https://books.google.fr/books?id=zSRzCQAAQBAJ&pg=PT16&lpg=PT16&dq=%C2%ABCommoners+de+tous+les+pays,+unissez-vous+!%C2%BB&source=bl&ots=ODROamj_Ar&sig=B_r4nvAYAAhMnmxnAC4F34I2p00&hl=fr&sa=X&ei=h9-OVc_oDsvvUuHNrtgL&ved=0CDQQ6AEwAw#v=onepage&q=%C2%ABCommoners%20de%20tous%20les%20pays%2C%20unissez-vous%20!%C2%BB&f=false)
+
+Les spécifications OpenPGP étant rédigées de façon ouvertes et transparentes
+grâce à l'IETF[^IETF], ce sont aussi des communs.
+
+[^IETF]: https://www.ietf.org/about/introduction/
+
+En appliquant une gouvernance inspirée de celles du logiciel libre[^plintro], notamment Debian[^debianconst] le système monétaire proposé par foopgp sera aussi un commun.
+
+[^plintro]: https://www.projets-libres.org/introduction-aux-modeles-economiques-et-gouvernance-des-logiciels-libres/
+[^debianconst]: https://www.debian.org/devel/constitution
+
+Et nous voulons que la plupart des autres ressources produites ou gérées par
+la structure foopgp puissent être des communs à part entière.
+
+
+***Le troisième objectif de foopgp est donc de proposer un système de gouvernance plus juste et
+respectueux envers l'ensemble des sensibilités et singularités des membres, en
+s'inspirant de normes et lois qui se sont naturellement imposées dans les communautés du logiciel libre.***
 
 ---
 

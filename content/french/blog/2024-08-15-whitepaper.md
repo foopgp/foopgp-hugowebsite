@@ -24,7 +24,7 @@ Aujourd'hui en 2024, le constat est sans appel : l'utopie initiale d'Internet a 
 
 Par paresse ou orgueil, nous avons oublié toute frontière entre vie privée et
 vie publique dans le monde numérique. Nous avons laissé nos pensées se faire
-analyser par des algorithmes, et aujourd'hui des "intelligences artificielles",
+analyser par des algorithmes, et aujourd’hui des "intelligences artificielles",
 qui ont pour objectifs de toujours mieux nous cibler, nous influencer, et finalement contrôler nos
 pensées, afin que nous achetions toujours plus les produits ou opinions des plus offrants, au
 travers des régies publicitaires telles que Google, Apple, Facebook, Amazon,
@@ -47,6 +47,14 @@ A partir de là, nous voyons 2 axes pour limiter les dégâts inéluctables de t
 * Construire des espaces de vie privée dans le numériques ; privés notamment de ces marchands.
 * Repenser le système économique et monétaire afin de désacraliser la
   croissance.
+
+En poursuivant ces deux axes, la question de leur gouvernance et la notion des communs[^communs.org] [^communsw] surgiront rapidement.
+Un troisième axe permettra alors de rendre la vision plus complète et
+cohérente :
+* Déployer un système de gouvernance permettant de mieux gérer plus de communs.
+
+[^communs.org]: https://lescommuns.org/
+[^communsw]: https://fr.wikipedia.org/wiki/Communs
 
 ### Construire des espaces de vie numérique privée
 
@@ -96,7 +104,7 @@ Ceux qui détiennent une licence bancaire, possède un privilège comparable à 
 Ce privilège leur donne non seulement et plus qu'aux autres, le pouvoir de
 décider ce qui a de la valeur et ce qui n'en en pas. En hiérarchisant selon des critères arbitraires les prêts et projets d'accès à la propriété, privée ou public, immobilière ou entrepreneuriale.
 
-Mais de plus, il engendre en plus une distorsion de la valeur monétaire en faveur de ceux
+Mais de plus, il engendre une distorsion de la valeur monétaire en faveur de ceux
 dont les projets été placé en haut de la hiérarchie par le créateur
 monétaire[^Cantillon].
 
@@ -107,12 +115,20 @@ vicieux qui accroît les inégalités et qu'aucune politique de redistribution n
 [^Cantillon]: https://www.adamsmith.org/blog/the-cantillion-effect
 
 
-***Le second objectif de l'association est donc de proposer un système économique dans lequel personne n'aurait (plus que d'autres) de privilège de création monétaire.***
+***Le second objectif de l'association est donc de proposer un système économique plus résilient et plus juste, en abolissant les privilèges de création monétaire.***
 
-***Doté d'une gouvernance de tous les communs : espaces - biens - monnaies, plus juste et
-respectueuse de chacune des sensibilités et singularités humaines.***
+### Refaire société, gouverner les communs
 
-***Dans l'espoir de voir se renforcer la cohésion sociale ou le bonheur de vivre, et affaiblir l'individualisme ou la
-surconsommation.***
+Les technologies comme OpenPGP, ou bien la monnaie, sont des biens communs.
+
+(...)
+
+***Le troisième objectif de l'association est donc de proposer un système de gouvernance plus juste et
+respectueux envers l'ensemble des sensibilités et singularités humaines, en
+s'inspirant des normes et lois qui se sont naturellement imposées dans les communautés du logiciel libre.***
+
+---
+
+***En essayant d'affaiblir l'individualisme, la surconsommation, et les violences qui en découlent ; le projet foopgp porte donc l'espoir de voir se renforcer la cohésion sociale, le bonheur de vivre et la paix.***
 
 

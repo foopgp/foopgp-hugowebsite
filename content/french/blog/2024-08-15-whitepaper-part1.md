@@ -43,8 +43,8 @@ journaux papiers. Elles ont seulement optimisé
 les processus, réduit les coûts, amélioré le ciblage, afin de produire toujours
 plus de bénéfices, et de nourrir encore et toujours la croissance.
 
-A partir de là, nous voyons 2 axes pour limiter les dégâts inéluctables de telles entreprises :
-* Construire des espaces de vie privée dans le numériques ; privés notamment de ces marchands.
+A partir de là, nous voyons deux axes pour limiter les dégâts inéluctables de telles entreprises :
+* Construire des espaces de vie privée dans le monde numérique ; privés notamment de ces marchands.
 * Repenser le système économique et monétaire afin de désacraliser la
   croissance.
 
@@ -71,7 +71,7 @@ Aux débuts d'Internet, c'est Phil Zimmermann[^PZ] qui a développé[^PGP] un lo
 [^OpenPGP]: https://datatracker.ietf.org/wg/openpgp/about/
 [^OpenPGPspecs]: https://www.openpgp.org/about/standard/
 
-Évidemment, ce genre de technologie, et OpenPGP en particulier, allait non seulement à l'encontre des volontés de surveillance de certains gouvernements, mais aussi et surtout à l'encontre du business modèle des régies publicitaires qui se sont emparées d'Internet et ont financés ses "évolutions". Aussi elles ont été et sont encore combattus, dénigrés, ou méprisés par les acteurs les plus puissants d'Internet.
+Évidemment, ce genre de technologie, et OpenPGP en particulier, allait non seulement à l'encontre des volontés de surveillance de certains gouvernements, mais aussi et surtout à l'encontre du modèle économique des régies publicitaires qui se sont emparées d'Internet et ont financé ses "évolutions". Aussi elles ont été et sont encore combattues, dénigrées, ou méprisées par les acteurs les plus puissants d'Internet.
 
 ***Le premier objectif de foopgp est donc de permettre à tous de se
 construire un espace de vie numérique privé, en démocratisant les usages d'OpenPGP.***
@@ -93,19 +93,19 @@ plus : plus de confort, plus de temps libres, plus de vitesse, plus de voyages,
 etc.
 
 Sauf que notre bonne vieille planète n'est qu'un petit caillou dans l'espace.
-Elle est fini et possède des limites[^PBoundaries] que nous avons probablement déjà dépassées.
+Elle est finie et possède des limites[^PBoundaries] que nous avons probablement déjà dépassées.
 
 [^PBoundaries]: https://fr.wikipedia.org/wiki/Limites_plan%C3%A9taires
 
 #### Les inégalités ne peuvent que s'accroître
 
-Ceux qui détiennent une licence bancaire, possède un privilège comparable à ceux que la révolution française a pu abolir.
+Ceux qui détiennent une licence bancaire, possèdent un privilège comparable à ceux que la Révolution française a pu abolir.
 
 Ce privilège leur donne non seulement et plus qu'aux autres, le pouvoir de
-décider ce qui a de la valeur et ce qui n'en en pas. En hiérarchisant selon des critères arbitraires les prêts et projets d'accès à la propriété, privée ou public, immobilière ou entrepreneuriale.
+décider ce qui a de la valeur et ce qui n'en a pas. En hiérarchisant selon des critères arbitraires les prêts et projets d'accès à la propriété, privée ou publique, immobilière ou entrepreneuriale.
 
-Mais de plus, il engendre une distorsion de la valeur monétaire en faveur de ceux
-dont les projets été placé en haut de la hiérarchie par le créateur
+De plus, il engendre une distorsion de la valeur monétaire en faveur de ceux
+dont les projets ont été placés en haut de la hiérarchie par le créateur
 monétaire[^Cantillon].
 
 Ces deux conséquences se nourrissent l'une et l'autre et engendrent un cercle
@@ -164,7 +164,7 @@ vicieux qui accroît les inégalités et qu'aucune politique de redistribution n
     sous la direction de Benjamin
     Coriat](https://books.google.fr/books?id=zSRzCQAAQBAJ&pg=PT16&lpg=PT16&dq=%C2%ABCommoners+de+tous+les+pays,+unissez-vous+!%C2%BB&source=bl&ots=ODROamj_Ar&sig=B_r4nvAYAAhMnmxnAC4F34I2p00&hl=fr&sa=X&ei=h9-OVc_oDsvvUuHNrtgL&ved=0CDQQ6AEwAw#v=onepage&q=%C2%ABCommoners%20de%20tous%20les%20pays%2C%20unissez-vous%20!%C2%BB&f=false)
 
-Les spécifications OpenPGP étant rédigées de façon ouvertes et transparentes
+Les spécifications OpenPGP étant rédigées de façon ouverte et transparente
 grâce à l'IETF[^IETF], ce sont aussi des communs.
 
 [^IETF]: https://www.ietf.org/about/introduction/
@@ -184,6 +184,6 @@ s'inspirant de normes et lois qui se sont naturellement imposées dans les commu
 
 ---
 
-***En essayant d'affaiblir l'individualisme, la surconsommation, et les violences qui en découlent ; le projet foopgp porte donc l'espoir de voir se renforcer la cohésion sociale, le bonheur de vivre et la paix.***
+**En essayant d'affaiblir l'individualisme, la surconsommation, et les violences qui en découlent ; le projet foopgp porte donc l'espoir de voir se renforcer la cohésion sociale, le bonheur de vivre et la paix.**
 
 

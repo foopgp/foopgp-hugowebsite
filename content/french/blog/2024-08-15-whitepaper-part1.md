@@ -19,8 +19,8 @@ type: "post"
 
 Aujourd'hui en 2024, le constat est sans appel : l'utopie initiale d'Internet a été dévoyée[^UIBellon] [^UIWalther].
 
-[^UIBellon]: https://www.cairn.info/revue-projet-2019-4-page-6.htm
-[^UIWalther]: https://www.ladn.eu/tech-a-suivre/internet-developpe-une-culture-mediocrite/
+[^UIBellon]: [Qu’est devenue l’utopie d’Internet ? / Anne Bellon](https://www.cairn.info/revue-projet-2019-4-page-6.htm)
+[^UIWalther]: [Internet développe une sous-culture de la médiocrité / Bruno Walther](https://www.ladn.eu/tech-a-suivre/internet-developpe-une-culture-mediocrite/)
 
 Par paresse ou orgueil, nous avons oublié toute frontière entre vie privée et
 vie publique dans le monde numérique. Nous avons laissé nos pensées se faire
@@ -53,23 +53,23 @@ Un troisième axe permettra alors de rendre la vision plus complète et
 cohérente :
 * Déployer un système de gouvernance permettant de mieux gérer plus de communs.
 
-[^communs.org]: https://lescommuns.org/
-[^communsw]: https://fr.wikipedia.org/wiki/Communs
+[^communs.org]: [lescommuns.org](https://lescommuns.org/)
+[^communsw]: [Les communs / Wikipedia](https://fr.wikipedia.org/wiki/Communs)
 
 ### Construire des espaces de vie numérique privée
 
 Dès les premiers réseaux[^Chappe], des hommes ont pensé et trouvé des solutions pour
 préserver la confidentialité des échanges au travers de réseaux ouverts.
 
-[^Chappe]: https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9graphe_Chappe
+[^Chappe]: [Télégraphe de Chappe / Wikipedia](https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9graphe_Chappe)
 
 Aux débuts d'Internet, c'est Phil Zimmermann[^PZ] qui a développé[^PGP] un logiciel de référence pour protéger la vie privée, puis ouvert ses spécifications[^RFC2440] afin qu'elles deviennent un standard de l'IETF[^IETF] : OpenPGP[^OpenPGP]. Depuis de nombreux informaticiens l'ont adopté, fait évoluer, ou ont crée des spécifications annexes[^OpenPGPspecs]. Ainsi OpenPGP est aujourd'hui encore l'outil le plus abouti pour construire des espaces de vie privée.
 
-[^PZ]: https://fr.wikipedia.org/wiki/Philip_Zimmermann
-[^PGP]: https://fr.wikipedia.org/wiki/Pretty_Good_Privacy
-[^RFC2440]: https://www.rfc-editor.org/rfc/rfc2440
-[^OpenPGP]: https://datatracker.ietf.org/wg/openpgp/about/
-[^OpenPGPspecs]: https://www.openpgp.org/about/standard/
+[^PZ]: [Philip Zimmermann / Wikipedia](https://fr.wikipedia.org/wiki/Philip_Zimmermann)
+[^PGP]: [PGP / Wikipedia](https://fr.wikipedia.org/wiki/Pretty_Good_Privacy)
+[^RFC2440]: [RFC2440 (en)](https://www.rfc-editor.org/rfc/rfc2440)
+[^OpenPGP]: [OpenPGP Working Group (en)/ IETF](https://datatracker.ietf.org/wg/openpgp/about/)
+[^OpenPGPspecs]: [Standards OpenPGP (en)/ openpgp.org](https://www.openpgp.org/about/standard/)
 
 Évidemment, ce genre de technologie, et OpenPGP en particulier, allait non seulement à l'encontre des volontés de surveillance de certains gouvernements, mais aussi et surtout à l'encontre du modèle économique des régies publicitaires qui se sont emparées d'Internet et ont financé ses "évolutions". Aussi elles ont été et sont encore combattues, dénigrées, ou méprisées par les acteurs les plus puissants d'Internet.
 
@@ -83,7 +83,7 @@ doute permis une ère globale de stabilité politique et de croissance économiq
 qui semble s'achever aujourd'hui avec les crises climatiques et géopolitiques
 globales.
 
-[^BW]: https://en.wikipedia.org/wiki/Bretton_Woods_system
+[^BW]: [Bretton Woods (en)/ Wikipedia](https://en.wikipedia.org/wiki/Bretton_Woods_system)
 
 #### La croissance est intenable
 
@@ -95,7 +95,7 @@ etc.
 Sauf que notre bonne vieille planète n'est qu'un petit caillou dans l'espace.
 Elle est finie et possède des limites[^PBoundaries] que nous avons probablement déjà dépassées.
 
-[^PBoundaries]: https://fr.wikipedia.org/wiki/Limites_plan%C3%A9taires
+[^PBoundaries]: [Limites planétaires / Wikipedia](https://fr.wikipedia.org/wiki/Limites_plan%C3%A9taires)
 
 #### Les inégalités ne peuvent que s'accroître
 
@@ -112,7 +112,7 @@ Ces deux conséquences se nourrissent l'une et l'autre et engendrent un cercle
 vicieux qui accroît les inégalités et qu'aucune politique de redistribution n'a pu résoudre :
 * "Ceux à qui on accorde les prêts sont plus riches" ↺ "On ne prête qu'aux riches"
 
-[^Cantillon]: https://www.adamsmith.org/blog/the-cantillion-effect
+[^Cantillon]: [Effet Cantillon (en) / Adam Smith Institut](https://www.adamsmith.org/blog/the-cantillion-effect)
 
 
 ***Le second objectif de foopgp est donc de proposer un système économique plus résilient et plus juste, en abolissant tout privilège de création monétaire.***
@@ -158,7 +158,8 @@ vicieux qui accroît les inégalités et qu'aucune politique de redistribution n
 
 [^2]: [Les communs, quelles définitions, quels enjeux ? / Geneviève Azam](https://www.canal-u.tv/video/universite_toulouse_ii_le_mirail/les_communs_quelles_definitions_quels_enjeux_genevieve_azam.13502)
 
-[^3]: https://regulation.revues.org/10471
+[^3]: [Elinor Ostrom et les faisceaux de droits : l’ouverture d’un nouvel espace
+    pour penser la propriété commune / Fabienne Orsi](https://regulation.revues.org/10471)
 
 [^4]: [Le retour des communs, la crise de l\'idéologie propriétaire,
     sous la direction de Benjamin
@@ -167,12 +168,12 @@ vicieux qui accroît les inégalités et qu'aucune politique de redistribution n
 Les spécifications OpenPGP étant rédigées de façon ouverte et transparente
 grâce à l'IETF[^IETF], ce sont aussi des communs.
 
-[^IETF]: https://www.ietf.org/about/introduction/
+[^IETF]: [IETF about (en)](https://www.ietf.org/about/introduction/)
 
 En appliquant une gouvernance inspirée de celles du logiciel libre[^plintro], notamment Debian[^debianconst], le système monétaire proposé par foopgp sera aussi un commun.
 
-[^plintro]: https://www.projets-libres.org/introduction-aux-modeles-economiques-et-gouvernance-des-logiciels-libres/
-[^debianconst]: https://www.debian.org/devel/constitution
+[^plintro]: [Introduction aux modèles économiques et gouvernances des logiciels libres / G. Le Bouder, R.Semeteys](https://www.projets-libres.org/introduction-aux-modeles-economiques-et-gouvernance-des-logiciels-libres/)
+[^debianconst]: [Constitution for the Debian Project (v1.9)](https://www.debian.org/devel/constitution)
 
 Et nous voulons que la plupart des autres ressources produites ou gérées par
 la structure foopgp puissent être des communs à part entière.
@@ -185,5 +186,4 @@ s'inspirant de normes et lois qui se sont naturellement imposées dans les commu
 ---
 
 **En essayant d'affaiblir l'individualisme, la surconsommation, et les violences qui en découlent ; le projet foopgp porte donc l'espoir de faire prospérer la cohésion sociale, le bonheur de vivre et la paix.**
-
 

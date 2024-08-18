@@ -156,7 +156,7 @@ vicieux qui accroît les inégalités et qu'aucune politique de redistribution n
 > un commun. Car, malgré les quelques réglementations mises en place, il n’y a pas de
 > gouvernance permettant de gérer les effets de serre et les émissions de CO₂ » [^4].
 
-[^2]: https://www.canal-u.tv/video/universite_toulouse_ii_le_mirail/les_communs_quelles_definitions_quels_enjeux_genevieve_azam.13502
+[^2]: [Les communs, quelles définitions, quels enjeux ? / Geneviève Azam](https://www.canal-u.tv/video/universite_toulouse_ii_le_mirail/les_communs_quelles_definitions_quels_enjeux_genevieve_azam.13502)
 
 [^3]: https://regulation.revues.org/10471
 
@@ -169,7 +169,7 @@ grâce à l'IETF[^IETF], ce sont aussi des communs.
 
 [^IETF]: https://www.ietf.org/about/introduction/
 
-En appliquant une gouvernance inspirée de celles du logiciel libre[^plintro], notamment Debian[^debianconst] le système monétaire proposé par foopgp sera aussi un commun.
+En appliquant une gouvernance inspirée de celles du logiciel libre[^plintro], notamment Debian[^debianconst], le système monétaire proposé par foopgp sera aussi un commun.
 
 [^plintro]: https://www.projets-libres.org/introduction-aux-modeles-economiques-et-gouvernance-des-logiciels-libres/
 [^debianconst]: https://www.debian.org/devel/constitution
@@ -184,6 +184,6 @@ s'inspirant de normes et lois qui se sont naturellement imposées dans les commu
 
 ---
 
-**En essayant d'affaiblir l'individualisme, la surconsommation, et les violences qui en découlent ; le projet foopgp porte donc l'espoir de voir se renforcer la cohésion sociale, le bonheur de vivre et la paix.**
+**En essayant d'affaiblir l'individualisme, la surconsommation, et les violences qui en découlent ; le projet foopgp porte donc l'espoir de faire prospérer la cohésion sociale, le bonheur de vivre et la paix.**
 
 

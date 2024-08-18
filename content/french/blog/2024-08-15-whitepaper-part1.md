@@ -74,7 +74,7 @@ Aux débuts d'Internet, c'est Phil Zimmermann[^PZ] qui a développé[^PGP] un lo
 Évidemment, ce genre de technologie, et OpenPGP en particulier, allait non seulement à l'encontre des volontés de surveillance de certains gouvernements, mais aussi et surtout à l'encontre du modèle économique des régies publicitaires qui se sont emparées d'Internet et ont financé ses "évolutions". Aussi elles ont été et sont encore combattues, dénigrées, ou méprisées par les acteurs les plus puissants d'Internet.
 
 ***Le premier objectif de foopgp est donc de permettre à tous de se
-construire un espace de vie numérique privé, en démocratisant les usages d'OpenPGP.***
+construire des espaces de vie numérique privés, en démocratisant les usages d'OpenPGP.***
 
 ### Repenser le système monétaire actuel
 

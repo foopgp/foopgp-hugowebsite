@@ -4,7 +4,7 @@ Date:    2024-08-15T01:30:00+02:00
 License: CC By-SA
 Tags:    [ "specification", "governance", "signature", "authentication", "encryption", "identity", "pgpid" ]
 categories: [ "About" ]
-draft: false
+draft: true
 author: [ "Jean-Jacques Brucker" ]
 description : "par quels moyens nous atteindrons nos objectifs"
 lang: fr

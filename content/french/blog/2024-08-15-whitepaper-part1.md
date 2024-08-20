@@ -73,8 +73,8 @@ Aux débuts d'Internet, c'est Phil Zimmermann[^PZ] qui a développé[^PGP] un lo
 
 Évidemment, ce genre de technologie, et OpenPGP en particulier, allait non seulement à l'encontre des volontés de surveillance de certains gouvernements, mais aussi et surtout à l'encontre du modèle économique des régies publicitaires qui se sont emparées d'Internet et ont financé ses "évolutions". Aussi elles ont été et sont encore combattues, dénigrées, ou méprisées par les acteurs les plus puissants d'Internet.
 
-***Le premier objectif de foopgp est donc de permettre à tous de se
-construire des espaces de vie numérique privés, en démocratisant les usages d'OpenPGP.***
+***Le premier objectif de foopgp est donc de construire pour tous ses membres
+des espaces de vie numérique privés, en démocratisant les usages d'OpenPGP.***
 
 ### Repenser le système monétaire actuel
 
@@ -173,7 +173,7 @@ grâce à l'IETF[^IETF], ce sont aussi des communs.
 En appliquant une gouvernance inspirée de celles du logiciel libre[^plintro], notamment Debian[^debianconst], le système monétaire proposé par foopgp sera aussi un commun.
 
 [^plintro]: [Introduction aux modèles économiques et gouvernances des logiciels libres / G. Le Bouder, R.Semeteys](https://www.projets-libres.org/introduction-aux-modeles-economiques-et-gouvernance-des-logiciels-libres/)
-[^debianconst]: [Constitution for the Debian Project (v1.9)](https://www.debian.org/devel/constitution)
+[^debianconst]: [Constitution for the Debian Project (v1.9) (en)](https://www.debian.org/devel/constitution)
 
 Et nous voulons que la plupart des autres ressources produites ou gérées par
 la structure foopgp puissent être des communs à part entière.

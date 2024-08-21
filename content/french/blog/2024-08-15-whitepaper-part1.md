@@ -89,8 +89,7 @@ globales.
 
 Son équilibre était basé sur la croissance, qui devait être sans fin, et
 satisfaire ainsi notre tentation, certains diront notre nature, à en vouloir toujours
-plus : plus de confort, plus de temps libres, plus de vitesse, plus de voyages,
-etc.
+plus : plus de confort, plus de loisirs, plus de pouvoirs, plus de vitesse, etc.
 
 Sauf que notre bonne vieille planète n'est qu'un petit caillou dans l'espace.
 Elle est finie et possède des limites[^PBoundaries] que nous avons probablement déjà dépassées.

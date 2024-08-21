@@ -91,7 +91,7 @@ Jean-Jacques BRUCKER présente les choix proposés par le conseil d’administra
 
 Après discussions, et amendements, les valeurs des trois premiers paramètres ainsi que le cinquième sont adoptées à l’unanimité.
 
-La création d’une contribution de solidarité (quatrième paramètre) a été rejeté à l’unanimité.
+La création d’une contribution de solidarité (quatrième paramètre) a été rejeté à l’unanimité. *NB: Les discussions ayant évoqué que rapport bénéfice/coût de sa mise en place ne semblait pas favorable pour l'instant.*
 
 La valeur du sixième et dernier paramètre, l’exposant de lissage du pouvoir, n’a été adoptée qu’à la majorité (pour : 4413 voix, contre : 400 voix, abstention : 400 voix).
 

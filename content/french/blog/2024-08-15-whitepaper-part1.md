@@ -40,7 +40,7 @@ parce que ce n'était que du business. Du sacro-saint business dont la sacro-sai
 
 Elles n'ont rien inventé de nouveau depuis les premiers encarts publicitaires des
 journaux papiers. Elles ont seulement optimisé
-les processus, réduit les coûts, amélioré le ciblage, afin de produire toujours
+les processus, rationalisé les coûts, amélioré le ciblage, afin de produire toujours
 plus de bénéfices, et de nourrir encore et toujours la croissance.
 
 A partir de là, nous voyons deux axes pour limiter les dégâts inéluctables de telles entreprises :

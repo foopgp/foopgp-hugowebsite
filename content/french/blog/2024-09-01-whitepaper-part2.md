@@ -46,10 +46,10 @@ non conséquente, décès du titulaire, etc.
 
 [^rappelasym]: En Informatique, la sécurité repose très souvent sur la cryptographie asymétrique, laquelle nécessite une non divulgation parfaite du contenu de la partie privée d'une clé asymétrique (eg: RSA, ed25519, etc.), que l'on appelle aussi "clé privée".*
 
-Le modèle économique de l'association doit déjà permettre de faire évoluer et
+Le modèle économique de l'association permettra de faire évoluer et
 maintenir ces outils et processus.
 
-Mais il devra aussi permettre de :
+Il devra aussi permettre de :
  * Généraliser l'usage des serveurs de clés WKD/WKS, en lieu et place des
    serveurs centralisés ou fournissant des certificats incomplets (par exemple : [keys.openpgp.org](https://keys.openpgp.org/)).
  * Réaliser des outils permettant de mieux créer et gérer les toiles de confiances OpenPGP.
@@ -61,12 +61,32 @@ Mais il devra aussi permettre de :
  * Généraliser l'utilisation de signature électronique OpenPGP.
  * Réaliser les outils permettant d'utiliser les clés de sécurité [^YK] [^NK]
    comme moyen de paiement numérique.
- * Améliorer les outils de prise de décision communautaire.
+ * Améliorer ses outils de prise de décision communautaire.
 
 [^YK]: [YubiKey 5 Series](https://www.yubico.com/la-cle-yubikey/yubikey-5-series/?lang=fr)
 [^NK]: [NitroKeys](https://www.nitrokey.com/fr/products/nitrokeys)
 
 ### Deuxième objectif : mettre en place, non seulement un modèle, mais un système économique innovant.
+
+{{< plantuml id="eg" >}}
+@startuml
+left to right direction
+actor "Member" as mb
+rectangle foopgp {
+  usecase "monetary donation" as UC1
+  usecase "donations of goods" as UC2
+  usecase "donations of services" as UC3
+
+}
+usecase "Member's wallet of power tokens" as W
+mb --> UC1 : €
+mb --> UC2 : €
+mb --> UC3 : €
+UC1 --> W : Ɉ
+UC2 --> W : Ɉ
+UC3 --> W : Ɉ
+@enduml
+{{< /plantuml >}}
 
 Règlement intérieur, jetons de pouvoir.
 

@@ -27,8 +27,7 @@ vie publique dans le monde numérique. Nous avons laissé nos pensées se faire
 analyser par des algorithmes, et aujourd’hui des "intelligences artificielles",
 qui ont pour objectifs de toujours mieux nous cibler, nous influencer, et finalement contrôler nos
 pensées, afin que nous achetions toujours plus les produits ou opinions des plus offrants, au
-travers des régies publicitaires telles que Google, Apple, Facebook, Amazon,
-Microsoft.
+travers des régies publicitaires telles que Google, Amazon, Facebook, Microsoft.
 
 Les tentatives de régulation, provenant généralement d'une Europe qui ; au mieux
 par quelques convictions morales d'ingénieurs, au pire du fait d'une élite méprisant la
@@ -87,9 +86,12 @@ globales.
 
 #### La croissance est intenable
 
-Son équilibre était basé sur la croissance, qui devait être sans fin, et
+Son équilibre était basé sur la croissance[^IIC], qui devait être sans fin, et
 satisfaire ainsi notre tentation, certains diront notre nature, à en vouloir toujours
 plus : plus de confort, plus de loisirs, plus de pouvoirs, plus de vitesse, etc.
+
+[^IIC]: [Impact des inégalités sur la croissance / Guillaume
+    Allègre](https://shs.cairn.info/revue-de-l-ofce-2015-6-page-371?lang=fr)
 
 Sauf que notre bonne vieille planète n'est qu'un petit caillou dans l'espace.
 Elle est finie et possède des limites[^PBoundaries] que nous avons probablement déjà dépassées.
@@ -100,7 +102,7 @@ Elle est finie et possède des limites[^PBoundaries] que nous avons probablement
 
 Ceux qui détiennent une licence bancaire, possèdent un privilège comparable à ceux que la Révolution française a pu abolir.
 
-Ce privilège leur donne non seulement et plus qu'aux autres, le pouvoir de
+Ce privilège leur donne, plus qu'aux autres, le pouvoir de
 décider ce qui a de la valeur et ce qui n'en a pas. En hiérarchisant selon des critères arbitraires les prêts et projets d'accès à la propriété, privée ou publique, immobilière ou entrepreneuriale.
 
 De plus, il engendre une distorsion de la valeur monétaire en faveur de ceux

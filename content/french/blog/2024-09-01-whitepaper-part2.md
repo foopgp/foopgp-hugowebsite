@@ -116,9 +116,8 @@ Mais ces jetons de pouvoir pourront aussi être utilisés comme monnaie d'échan
 pour récupérer des produits ou services que l'association a pu construire grâce aux donations.
 
 Sachant que l'association produit déjà des services autour des clés de sécurité
-OpenPGP[^YK] [^NK], recycle déjà des laptop usagés, et envisage des partenariats
-avec des vendeurs de téléphone mobile "dégoogelisé".
-
+OpenPGP[^YK] [^NK], recycle déjà des laptop usagés, et envisage de pouvoir
+fournir des serveurs d'auto-hébergement ou des téléphones mobiles "dégoogelisés".
 
 {{< plantuml id="sell" >}}
 @startuml

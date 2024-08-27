@@ -62,13 +62,32 @@ Il devra aussi permettre de :
  * Réaliser les outils permettant d'utiliser les clés de sécurité [^YK] [^NK]
    comme moyen de paiement numérique.
  * Améliorer ses outils de prise de décision communautaire.
+ * Déployer et maintenir des systèmes (laptops, smartphones, etc.) équipés des outils précédents, en veillant à leur empreinte carbone (recyclage, basse consommation, etc.).
 
 [^YK]: [YubiKey 5 Series](https://www.yubico.com/la-cle-yubikey/yubikey-5-series/?lang=fr)
 [^NK]: [NitroKeys](https://www.nitrokey.com/fr/products/nitrokeys)
 
 ### Deuxième objectif : mettre en place, non seulement un modèle, mais un système économique innovant.
 
-{{< plantuml id="eg" >}}
+L'organisation foopgp n'a pas de but lucratif. Bien au contraire, l'organisation
+œuvre dans la recherche de l'intérêt général.
+
+Aussi les donations mesurées en € devraient être d'abord philanthropique.
+
+Ensuite, il semble assez évident que ceux qui donnent plus, aient un peu plus
+de pouvoir au sein de l'association. Par contre il semblerait injuste que le rapport
+entre don et pouvoir soit proportionnel. En effet, cela reproduirait les
+inégalités que nous cherchons justement à corriger.
+
+L'organisation foopgp a résolu ce problème en introduisant des jetons de pouvoir
+et une fonction logarithmique pour calculer la quantité de ces jetons (Ɉ) en
+fonctions des donations mesurées en euros (€).
+
+Ce mécanisme est décrit dans l'article 4 du règlement intérieur[^RI4].
+
+[^RI4]: https://foopgp.org/fr/about/rules-of-procedures/#article-4---modalit%C3%A9s-relatives-aux-jetons-de-pouvoir-confer-article-10bis-des-statuts
+
+{{< plantuml id="donation" >}}
 @startuml
 left to right direction
 actor "Member" as mb
@@ -82,15 +101,77 @@ usecase "Member's wallet of power tokens" as W
 mb --> UC1 : €
 mb --> UC2 : €
 mb --> UC3 : €
-UC1 --> W : Ɉ
-UC2 --> W : Ɉ
-UC3 --> W : Ɉ
+UC1 --> W #line:purple;line.bold;text:purple : Ɉ
+UC2 --> W #line:purple;line.bold;text:purple : Ɉ
+UC3 --> W #line:purple;line.bold;text:purple : Ɉ
 @enduml
 {{< /plantuml >}}
 
-Règlement intérieur, jetons de pouvoir.
+---
+
+Ces jetons de pouvoir seront pris en comptes à chaque fois que des décisions
+devront être prises et que les discussions préalables n'ont pu dégager de consensus.
+
+Mais ces jetons de pouvoir pourront aussi être utilisés comme monnaie d'échange
+pour récupérer des produits ou services que l'association a pu construire grâce aux donations.
+
+Sachant que l'association produit déjà des services autour des clés de sécurité
+OpenPGP[^YK] [^NK], recycle déjà des laptop usagés, et envisage des partenariats
+avec des vendeurs de téléphone mobile "dégoogelisé".
+
+
+{{< plantuml id="sell" >}}
+@startuml
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/osa/device_usb/device_usb-sprite.puml
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/osa/mobile/pda/pda-sprite.puml
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/osa/laptop/laptop-sprite.puml
+actor "customer member" as mb1
+actor "customer member" as mb2
+actor "customer member" as mb3
+rectangle foopgp {
+  actor "worker member" as wm1
+  actor "worker member" as wm2
+  actor "worker member" as wm3
+
+}
+mb1 --> wm1 #line:purple;line.bold;text:purple : Ɉ
+wm1 --> mb1 : <$device_usb>
+mb2 --> wm2 #line:purple;line.bold;text:purple : Ɉ
+wm2 --> mb2 : <$laptop>
+mb3 --> wm3 #line:purple;line.bold;text:purple : Ɉ
+wm3 --> mb3 : <$pda>
+@enduml
+{{< /plantuml >}}
+
+---
+
+Si l'on combine et simplifie les deux diagrammes précédents nous pourrions
+retrouver un schéma assez simple : un client échange des euros (€) contre, par
+exemple :
+* une clé de sécurité OpenPGP correctement configuré + une initiation à ses usages.
+
+{{< plantuml id="resume" >}}
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/osa/device_usb/device_usb-sprite.puml
+left to right direction
+actor "customer member" as mb1
+rectangle foopgp {
+  actor "worker member" as wm1
+}
+mb1 --> wm1 : €
+wm1 --> mb1 : <$device_usb>
+{{< /plantuml >}}
+
+À la différence notable que ce client aura cédé de son pouvoir décisionnel au sein de
+l'organisation, aux membre travailleurs qui lui ont vendu le service.
+
+Et que, étant donné la fonction logarithmique décrite dans l'article 4 du règlement intérieur[^RI4], le prix en euros des produits ou services sera exponentiel dès lors qu'il voudra
+acheter plusieurs produits ou services
+
+... à moins que le client ait lui-même des produits ou services à vendre en jetons (Ɉ) aux autres membres.
 
 ### Troisième objectif : gouverner en commun
 
-gouvernance, démocratie, décentralisation.
+Liberté, Égalité, Fraternité.
+
+gouvernance, équité, démocratie, décentralisation.
 

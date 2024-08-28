@@ -1,7 +1,7 @@
 ---
 title: "2024 S35 Rapport Hebdomadaire"
 lang: fr
-date: 2024-08-207T21:00:00+01:00
+date: 2024-08-27T21:00:00+01:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "CR visio du Mardi soir"
@@ -41,6 +41,14 @@ type: "meeting"
             dont frais : 0.00 €
 * Recettes constatées en € : 1.72 € (+0.00)
 * Dépenses constatées en € : 3735.57 € (+0.00)
+
+#### Recettes récentes
+
+*nc*
+
+#### Dépenses récentes
+
+*néant*
 
 ### Revue de presse
 
@@ -90,11 +98,8 @@ L'AMF a répondu à la question : *quelles sont les obligations réglementaires 
 
 Notre conseiller juridique nous a renvoyé sur les pages 28-29 de [la publication du Journal Officiel de l'UE L150/40](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv%3AOJ.L_.2023.150.01.0040.01.FRA&toc=OJ%3AL%3A2023%3A150%3ATOC) du [9 juin 2023](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=OJ:L:2023:150:TOC). Tout en résumant certaines des nombreuses "exemptions qui permettent aux émetteurs d’alléger, voire de supprimer le formalisme" de l'article 4, titre II.
 
-Il a rappelé l'inexistence d'un livre blanc (whitepaper), ce que Jean-Jacques a [dès lors commencé](https://foopgp.org/fr/blog/2024-08-15-whitepaper-part1/), ainsi que l'inexistence de diagramme de flux financier, ce que Jean-Jacques a aussi commencé diagramme et qui fera parti du livre blanc pour illustrer le business model.
+Il a rappelé l'inexistence d'un livre blanc (whitepaper), ce que Jean-Jacques a [dès lors commencé](https://foopgp.org/fr/blog/2024-08-15-whitepaper-part1/), ainsi que l'inexistence de diagramme de flux financier, ce que Jean-Jacques a aussi commencé et qui fera parti du livre blanc pour illustrer le business model.
 
-#### Achats récents
-
-*néant*
 
 ### Actions à mener (TODO list)
 
@@ -113,4 +118,3 @@ Il a rappelé l'inexistence d'un livre blanc (whitepaper), ce que Jean-Jacques a
 * [... agenda du libre](https://www.agendadulibre.org)
 
 ---
-

@@ -41,8 +41,7 @@ sont associées[^rappelasym] :
 2. **pgpid-qrscan** utilise ces fragments papier pour injecter les clés privés dans une clé de sécurité [^YK] [^NK]. La clé de sécurité peut dès lors faire office non seulement de pièce d'identité, mais permet aussi la signature numérique, l'authentification numérique, ou la création d'espaces numériques parfaitement chiffrés, c'est à dire vraiment privés.
 3. Les fragments sont référencés et stockés dans des coffres dispersés et tenus
    par des entreprises de confiance ou des amis ou des notaires. Si nécessaire, ils pourront
-être rassemblés et réutilisés par des outils comme **pgpid-qrscan** : recréation en cas d'incident (eg: blocage complet, destruction, perte non conséquente, etc), création de doubles, perte
-non conséquente, décès du titulaire, etc.
+être rassemblés et réutilisés par des outils comme **pgpid-qrscan** : recréation en cas d'incident (eg: blocage complet, destruction, perte non conséquente, etc), création de doubles, décès du titulaire, etc.
 
 [^rappelasym]: En Informatique, la sécurité repose très souvent sur la cryptographie asymétrique, laquelle nécessite une non divulgation parfaite du contenu de la partie privée d'une clé asymétrique (eg: RSA, ed25519, etc.), que l'on appelle aussi "clé privée".*
 
@@ -58,7 +57,8 @@ Il devra aussi permettre de :
  * Utiliser des toiles de confiances OpenPGP et des clés de sécurité[^YK] [^NK] pour s'authentifier numériquement plus sûrement et plus facilement - sans identifiant / mot de passe.
  * Créer des espaces numériques vraiment privés, accessibles et contrôlables
    uniquement au travers de clés de sécurité[^YK] [^NK].
- * Généraliser l'utilisation de signature électronique OpenPGP.
+ * Généraliser l'utilisation de signature électronique OpenPGP. Ce qui permettra
+   aussi de lutter efficacement contre toute pollution informationnelle[^LclPI]
  * Réaliser les outils permettant d'utiliser les clés de sécurité [^YK] [^NK]
    comme moyen de paiement numérique.
  * Améliorer ses outils de prise de décision communautaire.
@@ -66,6 +66,7 @@ Il devra aussi permettre de :
 
 [^YK]: [YubiKey 5 Series](https://www.yubico.com/la-cle-yubikey/yubikey-5-series/?lang=fr)
 [^NK]: [NitroKeys](https://www.nitrokey.com/fr/products/nitrokeys)
+[^LclPI]: [Lutter contre la pollution informationnelle / Jean-Jacques Brucker](https://foopgp.org/fr/blog/2023-04-03-lutter-contre-la-polution-informationelle/)
 
 ### Deuxième objectif : mettre en place, non seulement un modèle, mais un système économique innovant.
 

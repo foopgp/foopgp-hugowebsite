@@ -70,6 +70,8 @@ Il devra aussi permettre de :
 
 ### Deuxième objectif : mettre en place, non seulement un modèle, mais un système économique innovant.
 
+#### Jetons de pouvoir Ɉ
+
 L'organisation foopgp n'a pas de but lucratif. Bien au contraire, l'organisation
 œuvre dans la recherche de l'intérêt général.
 
@@ -168,6 +170,45 @@ Et que, étant donné la fonction logarithmique décrite dans l'article 4 du rè
 acheter plusieurs produits ou services
 
 ... à moins que le client ait lui-même des produits ou services à vendre en jetons (Ɉ) aux autres membres.
+
+#### Incitation à la générosité
+
+Pour inciter à ne pas attendre que le monde devienne inhabitable pour comprendre
+que nous avons besoin d'un système économique sans privilège de création
+monétaire, l'article 4 du règlement intérieur[^RI4] introduit également une
+notion de pénalité à la pingrerie, autrement d'incitation à la générosité,
+appelé *stingynalty*.
+
+Ce facteur se doit donc d'être supérieur à celui de l'inflation de la monnaie à
+cours légal dans la zone prépondérante d'activité de l'association.
+
+Ainsi les enthousiastes qui investissent dès maintenant dans notre projet d'intérêt
+général pour un monde plus durable, seront plus récompensés que les indécis qui
+regardent, ou ne voient même pas, un ancien monde s'écrouler.
+
+#### Distribution périodique de jetons
+
+De part la formule de conversion[^RI4bis] de la monnaie prépondérante à cours légal vers nos jetons de
+pouvoir, ces jetons (Ɉ) seront de fait bien moins abondants que la monnaie à cours légal. Ce qui risquerait
+de faire prendre à nos jetons (Ɉ), trop de valeur par rapport à la monnaie à cours légal (€), et de créer
+une bulle spéculative. Ce qui serait à moyen terme fatal pour le projet.
+
+Pour éviter cela nous avons doté notre système d'un mécanisme de création
+périodique, sans aucun privilège, décrit à l'article 5 du règlement
+intérieur[^RI5] : la quantité de jetons croît donc périodiquement d'un pourcentage prédéfini et
+ajustable si nécessaire. Ce pourcentage est appelé *growth*. Les jetons crées sont alors distribués équitablement à
+l'ensemble des personnes physiques membres.
+
+Cependant, afin que nos jetons demeurent plus rare et d'une valeur légèrement
+supérieure à celle de la monnaie à cours légal. Il semble important que la croissance
+prédéfinie de la quantité de jetons demeure inférieure ou égale à l'incitation à
+la générosité. Autrement dit, il semble pertinent de maintenir :
+***growth* < *stingynalty***
+
+[^RI4bis]: Suivant l'article 4 du règlement intérieur, la formule est de la
+    forme : **Ɉ = log₂(€+1) / *stingynalty***
+
+[^RI5]: https://foopgp.org/fr/about/rules-of-procedures/#article-5--émission-universelle-de-nouveaux-jetons-confer-article-10bis-des-statuts
 
 ### Troisième objectif : gouverner en commun
 

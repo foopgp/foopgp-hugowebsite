@@ -70,8 +70,6 @@ Il devra aussi permettre de :
 
 ### Deuxième objectif : mettre en place, non seulement un modèle, mais un système économique innovant.
 
-#### Jetons de pouvoir Ɉ
-
 L'organisation foopgp n'a pas de but lucratif. Bien au contraire, l'organisation
 œuvre dans la recherche de l'intérêt général.
 
@@ -81,6 +79,8 @@ Ensuite, il semble assez évident que ceux qui donnent plus, aient un peu plus
 de pouvoir au sein de l'association. Par contre il semblerait injuste que le rapport
 entre don et pouvoir soit proportionnel. En effet, cela reproduirait les
 inégalités que nous cherchons justement à corriger.
+
+#### Jetons de pouvoir Ɉ
 
 L'organisation foopgp a résolu ce problème en introduisant des jetons de pouvoir
 et une fonction logarithmique pour calculer la quantité de ces jetons (Ɉ) en
@@ -176,10 +176,10 @@ acheter plusieurs produits ou services
 Pour inciter à ne pas attendre que le monde devienne inhabitable pour comprendre
 que nous avons besoin d'un système économique sans privilège de création
 monétaire, l'article 4 du règlement intérieur[^RI4] introduit également une
-notion de pénalité à la pingrerie, autrement d'incitation à la générosité,
+notion de pénalité à la pingrerie, autrement dit d'incitation à la générosité,
 appelé *stingynalty*.
 
-Ce facteur se doit donc d'être supérieur à celui de l'inflation de la monnaie à
+Ce facteur se doit évidemment d'être supérieur à celui de l'inflation de la monnaie à
 cours légal dans la zone prépondérante d'activité de l'association.
 
 Ainsi les enthousiastes qui investissent dès maintenant dans notre projet d'intérêt
@@ -203,14 +203,71 @@ Cependant, afin que nos jetons demeurent plus rare et d'une valeur légèrement
 supérieure à celle de la monnaie à cours légal. Il semble important que la croissance
 prédéfinie de la quantité de jetons demeure inférieure ou égale à l'incitation à
 la générosité. Autrement dit, il semble pertinent de maintenir :
-***growth* < *stingynalty***
+***growth* < *stingynalty***
 
 [^RI4bis]: Suivant l'article 4 du règlement intérieur, la formule est de la
-    forme : **Ɉ = log₂(€+1) / *stingynalty***
+    forme : **Ɉ = log₂(€+1) / *stingynalty***
 
-[^RI5]: https://foopgp.org/fr/about/rules-of-procedures/#article-5--émission-universelle-de-nouveaux-jetons-confer-article-10bis-des-statuts
+[^RI5]: https://foopgp.org/fr/about/rules-of-procedures/#article-5--%C3%A9mission-universelle-de-nouveaux-jetons-confer-article-10bis-des-statuts
 
 ### Troisième objectif : gouverner en commun
+
+*Gouverner, c’est prévoir, choisir et expliquer.*
+
+*Seul on va plus vite, ensemble on va plus loin.*[^IC1]
+
+Il s'agit donc parvenir à combiner ces deux maximes, parfois difficiles à
+suivre.
+
+[^IC1]: [Intelligence collective : ensemble, va-t-on toujours plus loin ? / Gaëtan de Lavilléon, Marie Lacroix et Emma
+Vilarem](https://www.usinenouvelle.com/blogs/le-blog-des-experts-des-neurosciences/intelligence-collective-ensemble-va-t-on-toujours-plus-loin.N2150847)
+
+#### Intelligence collective
+
+Le plus difficile n'est pas de choisir[^Brazil], mais de prévoir. C'est à dire
+de voir, c'est à dire d'expliquer et d'accorder les visions de l'ensemble des
+membres.
+
+[^Brazil]: Choisir ne demande aucune intelligence particulière : {{< video src="/videos/Brazil Executive decision maker_360P.mp4" type="video/mp4" >}}
+
+Tout problème, une fois rationalisé dans son environnement, ne comporte qu'une
+est une seule "meilleure décision".
+
+Toute la difficulté est dans la rationalisation des problèmes, la mise en
+accord sur ces rationalisations, et l'acceptation que, malgré les efforts, toute rationnalisation
+ne sera jamais qu'une approximation imparfaite.
+
+Cela necessite de la transparence, de l'écoute, de la bienveillance et de
+l'intelligence.[^Values]
+
+[^Values]: Les valeurs inscrites dans nos statuts sont justement : la transparence, la proximité
+(qui induit l'écoute), la bienveillance, et la coopération (qui induit l'intelligence collective).
+
+Pour cela nous nous appuyons sur les recherches en intelligence collective[^IC2].
+
+[^IC2]: [Intelligence collective / Wikipedia](https://fr.wikipedia.org/wiki/Intelligence_collective)
+
+#### Démocratie
+
+Les décisions sont prises dans un premier temps par recherche du consentement, au sein de conseils dont les
+réunions sont ouvertes à tous les membres.
+
+Le conseil d'administration de l'association se reuni par visio
+conférence chaque semaine.
+
+Certaines décisions ou responsabilités bien définies peuvent être délégués à certains
+conseils ou rôles secondaires bien définis.
+
+Si au sein des conseils des objections perdurent, tout membre dudit conseil pourra demander consultation
+auprès de l'ensemble des membres de l'organisation. La consultation prendra en
+compte les jetons de pouvoir et devra si possible utiliser la méthode de Shulze,
+confer article 9 du règlement intérieur[^RI9]:
+
+[^RI9]: https://foopgp.org/fr/about/rules-of-procedures/#article-9--expression-de-la-volont%C3%A9-des-membres-confer-article-10bis-et-article-11-des-statuts
+
+#### Vote polynomial de Condorcet
+
+---
 
 Liberté, Égalité, Fraternité.
 

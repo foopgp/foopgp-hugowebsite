@@ -17,19 +17,19 @@ type: "post"
 
 *Suite de [la partie 1](../2024-08-15-whitepaper-part1/)*
 
-## Comment nous atteindrons nos objectif...
+## Comment atteindrons-nous nos objectifs ?
 
 ### Premier objectif : démocratiser OpenPGP
 
 De part la portée de ses spécifications, OpenPGP souffre à base d'une certaine complexité technique.
 
 Cette complexité est cependant tout à fait résoluble, et serait probablement
-déjà resolue si la technologie ne
+déjà résolue si la technologie ne
 souffrait pas des freins politico-économique [identifiés
 précédemment](../2024-08-15-whitepaper-part1/#construire-des-espaces-de-vie-numérique-privée)
 
-L'association doit donc se doter d'un modèle économique qui financera les
-développements ou évolutions nécessaire à l'adoption en masse des solutions OpenPGP.
+L'association doit donc se doter d'un modèle économique pour financer les
+développements ou évolutions nécessaires à l'adoption en masse des solutions OpenPGP.
 
 Déjà, nous avons développé des outils et processus permettant, pour une
 utilisation en masse, de créer des identités numérique OpenPGP et de gérer
@@ -38,7 +38,7 @@ sont associées[^rappelasym] :
 
 1. **pgpid-gen** génère, manuellement ou à partir d'un passeport aux normes ICAO
    9303 ou ISO/IEC 7501, une identité numérique OpenPGP. Puis découpe et imprime en plusieurs fragments, l'ensemble des clés privés associées.
-2. **pgpid-qrscan** utilise ces fragments papier pour injecter les clés privés dans une clé de sécurité [^YK] [^NK]. La clé de sécurité peut dès lors faire office non seulement de pièce d'identité, mais permet aussi la signature numérique, l'authentification numérique, ou la création d'espaces numériques parfaitement chiffrés, c'est à dire vraiment privés.
+2. **pgpid-qrscan** utilise ces fragments papier pour injecter les clés privés dans une clé de sécurité [^YK] [^NK]. La clé de sécurité peut dès lors faire office non seulement de pièce d'identité, mais permet aussi la signature numérique, l'authentification numérique, ou la création d'espaces numériques parfaitement chiffrés, c'est-à-dire vraiment privés.
 3. Les fragments sont référencés et stockés dans des coffres dispersés et tenus
    par des entreprises de confiance ou des amis ou des notaires. Si nécessaire, ils pourront
 être rassemblés et réutilisés par des outils comme **pgpid-qrscan** : recréation en cas d'incident (eg: blocage complet, destruction, perte non conséquente, etc), création de doubles, décès du titulaire, etc.
@@ -260,16 +260,65 @@ conseils ou rôles secondaires bien définis.
 
 Si au sein des conseils des objections perdurent, tout membre dudit conseil pourra demander consultation
 auprès de l'ensemble des membres de l'organisation. La consultation prendra en
-compte les jetons de pouvoir et devra si possible utiliser la méthode de Shulze,
-confer article 9 du règlement intérieur[^RI9]:
+compte les jetons de pouvoir et devra si possible utiliser la méthode de
+Shulze[^Shulze], confer article 9 du règlement intérieur[^RI9]:
 
+[^Shulze]: [Méthode de Schulze / Wikipedia](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Schulze)
 [^RI9]: https://foopgp.org/fr/about/rules-of-procedures/#article-9--expression-de-la-volont%C3%A9-des-membres-confer-article-10bis-et-article-11-des-statuts
 
 #### Vote polynomial de Condorcet
 
+La méthode de Shulze[^Shulze] est une méthode de Condorcet[^Condorcet] qui permet de résoudre la plupart de ses paradoxes[^ParaCondo].
+
+[^Condorcet]: [Méthode de Condorcet / Wikipedia](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Condorcet)
+[^ParaCondo]: [Paradoxe de Condorcet / Wikipedia](https://fr.wikipedia.org/wiki/Paradoxe_de_Condorcet)
+
+L'organisation s'appuyera sur les processus et outils développés par le
+projet Debian[^DebianVote] pour mener à bien ces consultations.
+
+[^DebianVote]: [Informations sur les votes dans Debian](https://www.debian.org/vote/index.fr.html)
+
+À la différence du projet Debian, l'organisation utilisera cependant les jetons
+de pouvoirs afin de calculer le nombre de voix de chacun.
+
+Au commencement, ces jetons servent à récompenser ceux qui donnent des valeurs mesurées en euros.
+
+Puis au fur et à mesure que ces jetons seront utilisés comme monnaie d'échange
+au sein de l'organisation, ils récompenseront ceux qui vendent des
+valeurs mesurées en jetons.
+
+Or nous n'avons pas tous les mêmes capacités à vendre ou à produire des valeurs échangeables.
+
+D'une part du fait des inégalités naturelles de fait : intelligence, force, beauté, souplesse, etc.
+D'autre part du fait des inégalités de propriété des moyens de production.
+
+Si la voie des communs peut permettre de réduire les inégalités de propriété.
+C'est une voie encore très longue et incertaine. Sur laquelle donc a nous ne pouvons
+compter assurément.
+
+D'autre part toute tentative de réduire les inégalités naturelles semble au
+mieux vouée à l'échec, au pire totalitaire.
+
+Si il peut sembler logique que ceux qui produisent et vendent davantage,
+puissent avoir plus de pouvoir décisionnels, il est nécessaire de
+* savoir que la mesure, en jetons (Ɉ) comme en euros (€) dépendra toujours d'échelles de valeurs
+subjectives, imparfaites et incomplètes.
+* d'essayer de prendre en compte, l'ensemble des inégalités de fait.
+
+Pour répondre à ce problème nous avons mis en place le concept de vote
+polynomial, décrit à l'article 8 du règlement intérieur[^RI8].
+
+Dans un souci d'équité, l'exposant de pouvoir *sharp* décrit à l'article 8 du règlement
+intérieur[^RI8], devra donc être diminué progressivement au fur et à mesure
+que les jetons de pouvoir sont utilisés comme monnaie d'échange, voir tendre vers zéro
+si nécessaire pour contrebalancer des inégalités qui s'accentueraient.
+
+[^RI8]: https://foopgp.org/fr/about/rules-of-procedures/article-8--lissage-polynomial-des-quantit%C3%A9es-de-pouvoir-confer-article-10bis-des-statuts
+
+#### Financer les communs
+
+Contribution obligatoires soumises à consultation.
+
 ---
 
-Liberté, Égalité, Fraternité.
-
-gouvernance, équité, démocratie, décentralisation.
 

@@ -291,7 +291,7 @@ D'une part du fait de nos inégalités naturelles : intelligence, force, beauté
 D'autre part du fait des inégalités de propriété des moyens de production.
 
 Si la voie des communs peut permettre de réduire les inégalités de propriété.
-C'est une voie encore très longue et incertaine. Sur laquelle donc a nous ne pouvons
+C'est une voie encore très longue et incertaine. Sur laquelle donc nous ne pouvons
 compter assurément.
 
 D'autre part toute tentative de réduire les inégalités naturelles semble au
@@ -309,14 +309,14 @@ polynomial, décrit à l'article 8 du règlement intérieur[^RI8].
 Dans un souci d'équité, l'exposant de pouvoir *sharp* décrit à l'article 8 du règlement
 intérieur[^RI8], devra donc être diminué progressivement au fur et à mesure
 que les jetons de pouvoir sont utilisés comme monnaie d'échange, jusqu'à tendre vers zéro
-si nécessaire pour contrebalancer des inégalités qui s'accentueraient.
+si nécessaire pour contrebalancer des inégalités qui perdureraient.
 
 [^RI8]: https://foopgp.org/fr/about/rules-of-procedures/article-8--lissage-polynomial-des-quantit%C3%A9es-de-pouvoir-confer-article-10bis-des-statuts
 
 #### Financer les communs
 
 Les projets communs ainsi que leur financement en jetons (Ɉ) pourront être
-discutées en conseils. Ces projets, ainsi que les montants qui leur sont
+discutés en conseils. Ces projets, ainsi que les montants qui leur sont
 alloués, devront être adoptés par consultation de l'ensemble des membres, en
 utilisant le vote polynomial de Shulze cité précédemment.
 
@@ -326,12 +326,12 @@ contributions.
 [^RI7]: https://foopgp.org/fr/about/rules-of-procedures/article-7--contributions-obligatoires-confer-article-10bis-des-statuts
 
 Ces contributions apparaissant à travers un processus on-ne-peut-plus
-démocratique, elles sont obligatoires et les membres qui s'y soustraient perdent
-leur statut de membre actif, c'est-à-dire :
-* leur pouvoir décisionel, c'est à dire leur droit à s'exprimer lors des
+démocratique, elles sont obligatoires. Les membres qui s'y soustraient perdent
+leur statut de membre actif, autrement dit :
+* leur pouvoir décisionnel, c'est-à-dire leur droit à s'exprimer lors des
   consultations.
 * leur part de jetons créés par le mécanisme décrit à l'article 5 du règlement intérieur[^RI5].
-* leurs eventuels rôles ou bénéfices au sein de l'organisation.
+* leurs éventuels rôles ou bénéfices au sein de l'organisation.
 
 S'y soustraire est cependant obligatoire en cas de décès. Si une activité semble
 maintenue pour une personne décédée, les responsables ou les bénéficiaires non

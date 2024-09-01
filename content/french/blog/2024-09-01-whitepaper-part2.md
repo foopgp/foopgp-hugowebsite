@@ -43,7 +43,7 @@ sont associées[^rappelasym] :
    par des entreprises de confiance ou des amis ou des notaires. Si nécessaire, ils pourront
 être rassemblés et réutilisés par des outils comme **pgpid-qrscan** : recréation en cas d'incident (eg: blocage complet, destruction, perte non conséquente, etc), création de doubles, décès du titulaire, etc.
 
-[^rappelasym]: En Informatique, la sécurité repose très souvent sur la cryptographie asymétrique, laquelle nécessite une non divulgation parfaite du contenu de la partie privée d'une clé asymétrique (eg: RSA, ed25519, etc.), que l'on appelle aussi "clé privée".*
+[^rappelasym]: En Informatique, la sécurité repose très souvent sur la cryptographie asymétrique, laquelle nécessite une non-divulgation parfaite du contenu de la partie privée d'une clé asymétrique (eg: RSA, ed25519, etc.), que l'on appelle aussi "clé privée".*
 
 Le modèle économique de l'association permettra de faire évoluer et
 maintenir ces outils et processus.
@@ -112,15 +112,14 @@ UC3 --> W #line:purple;line.bold;text:purple : Ɉ
 
 ---
 
-Ces jetons de pouvoir seront pris en comptes à chaque fois que des décisions
+Ces jetons de pouvoir seront pris en compte à chaque fois que des décisions
 devront être prises et que les discussions préalables n'ont pu dégager de consensus.
 
 Mais ces jetons de pouvoir pourront aussi être utilisés comme monnaie d'échange
 pour récupérer des produits ou services que l'association a pu construire grâce aux donations.
 
 Sachant que l'association produit déjà des services autour des clés de sécurité
-OpenPGP[^YK] [^NK], recycle déjà des laptop usagés, et envisage de pouvoir
-fournir des serveurs d'auto-hébergement ou des téléphones mobiles "dégoogelisés".
+OpenPGP[^YK] [^NK], recycle déjà des ordinateurs portables usagés, et envisage de proposer des serveurs d'auto-hébergement ou des téléphones mobiles "dégoogelisés".
 
 {{< plantuml id="sell" >}}
 @startuml
@@ -164,7 +163,7 @@ wm1 --> mb1 : <$device_usb>
 {{< /plantuml >}}
 
 À la différence notable que ce client aura cédé de son pouvoir décisionnel au sein de
-l'organisation, aux membre travailleurs qui lui ont vendu le service.
+l'organisation, aux membres travailleurs qui lui ont vendu le service.
 
 Et que, étant donné la fonction logarithmique décrite dans l'article 4 du règlement intérieur[^RI4], le prix en euros des produits ou services sera exponentiel dès lors qu'il voudra
 acheter plusieurs produits ou services
@@ -188,7 +187,7 @@ regardent, ou ne voient même pas, un ancien monde s'écrouler.
 
 #### Distribution périodique de jetons
 
-De part la formule de conversion[^RI4bis] de la monnaie prépondérante à cours légal vers nos jetons de
+De par la formule de conversion[^RI4bis] de la monnaie prépondérante à cours légal vers nos jetons de
 pouvoir, ces jetons (Ɉ) seront de fait bien moins abondants que la monnaie à cours légal. Ce qui risquerait
 de faire prendre à nos jetons (Ɉ), trop de valeur par rapport à la monnaie à cours légal (€), et de créer
 une bulle spéculative. Ce qui serait à moyen terme fatal pour le projet.
@@ -196,10 +195,10 @@ une bulle spéculative. Ce qui serait à moyen terme fatal pour le projet.
 Pour éviter cela nous avons doté notre système d'un mécanisme de création
 périodique, sans aucun privilège, décrit à l'article 5 du règlement
 intérieur[^RI5] : la quantité de jetons croît donc périodiquement d'un pourcentage prédéfini et
-ajustable si nécessaire. Ce pourcentage est appelé *growth*. Les jetons crées sont alors distribués équitablement à
+ajustable si nécessaire. Ce pourcentage est appelé *growth*. Les jetons créés sont alors distribués équitablement à
 l'ensemble des personnes physiques membres.
 
-Cependant, afin que nos jetons demeurent plus rare et d'une valeur légèrement
+Cependant, afin que nos jetons demeurent plus rares et d'une valeur légèrement
 supérieure à celle de la monnaie à cours légal. Il semble important que la croissance
 prédéfinie de la quantité de jetons demeure inférieure ou égale à l'incitation à
 la générosité. Autrement dit, il semble pertinent de maintenir :
@@ -216,7 +215,7 @@ la générosité. Autrement dit, il semble pertinent de maintenir :
 
 *Seul on va plus vite, ensemble on va plus loin.*[^IC1]
 
-Il s'agit donc parvenir à combiner ces deux maximes, parfois difficiles à
+Il s'agit donc de parvenir à combiner ces deux maximes, parfois difficiles à
 suivre.
 
 [^IC1]: [Intelligence collective : ensemble, va-t-on toujours plus loin ? / Gaëtan de Lavilléon, Marie Lacroix et Emma
@@ -233,11 +232,11 @@ membres.
 Tout problème, une fois rationalisé dans son environnement, ne comporte qu'une
 est une seule "meilleure décision".
 
-Toute la difficulté est dans la rationalisation des problèmes, la mise en
-accord sur ces rationalisations, et l'acceptation que, malgré les efforts, toute rationnalisation
+Toute la difficulté réside dans la rationalisation des problèmes, la mise en
+accord sur ces rationalisations, et l'acceptation que, malgré les efforts, toute rationalisation
 ne sera jamais qu'une approximation imparfaite.
 
-Cela necessite de la transparence, de l'écoute, de la bienveillance et de
+Cela nécessite de la transparence, de l'écoute, de la bienveillance et de
 l'intelligence.[^Values]
 
 [^Values]: Les valeurs inscrites dans nos statuts sont justement : la transparence, la proximité
@@ -252,10 +251,9 @@ Pour cela nous nous appuyons sur les recherches en intelligence collective[^IC2]
 Les décisions sont prises dans un premier temps par recherche du consentement, au sein de conseils dont les
 réunions sont ouvertes à tous les membres.
 
-Le conseil d'administration de l'association se reuni par visio
-conférence chaque semaine.
+Le conseil d'administration de l'association se réunit par visioconférence chaque semaine.
 
-Certaines décisions ou responsabilités bien définies peuvent être délégués à certains
+Certaines décisions ou responsabilités bien définies peuvent être déléguées à certains
 conseils ou rôles secondaires bien définis.
 
 Si au sein des conseils des objections perdurent, tout membre dudit conseil pourra demander consultation
@@ -273,7 +271,7 @@ La méthode de Shulze[^Shulze] est une méthode de Condorcet[^Condorcet] qui per
 [^Condorcet]: [Méthode de Condorcet / Wikipedia](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Condorcet)
 [^ParaCondo]: [Paradoxe de Condorcet / Wikipedia](https://fr.wikipedia.org/wiki/Paradoxe_de_Condorcet)
 
-L'organisation s'appuyera sur les processus et outils développés par le
+L'organisation s'appuiera sur les processus et outils développés par le
 projet Debian[^DebianVote] pour mener à bien ces consultations.
 
 [^DebianVote]: [Informations sur les votes dans Debian](https://www.debian.org/vote/index.fr.html)
@@ -289,7 +287,7 @@ valeurs mesurées en jetons.
 
 Or nous n'avons pas tous les mêmes capacités à vendre ou à produire des valeurs échangeables.
 
-D'une part du fait des inégalités naturelles de fait : intelligence, force, beauté, souplesse, etc.
+D'une part du fait de nos inégalités naturelles : intelligence, force, beauté, souplesse, volonté, etc.
 D'autre part du fait des inégalités de propriété des moyens de production.
 
 Si la voie des communs peut permettre de réduire les inégalités de propriété.
@@ -310,14 +308,38 @@ polynomial, décrit à l'article 8 du règlement intérieur[^RI8].
 
 Dans un souci d'équité, l'exposant de pouvoir *sharp* décrit à l'article 8 du règlement
 intérieur[^RI8], devra donc être diminué progressivement au fur et à mesure
-que les jetons de pouvoir sont utilisés comme monnaie d'échange, voir tendre vers zéro
+que les jetons de pouvoir sont utilisés comme monnaie d'échange, jusqu'à tendre vers zéro
 si nécessaire pour contrebalancer des inégalités qui s'accentueraient.
 
 [^RI8]: https://foopgp.org/fr/about/rules-of-procedures/article-8--lissage-polynomial-des-quantit%C3%A9es-de-pouvoir-confer-article-10bis-des-statuts
 
 #### Financer les communs
 
-Contribution obligatoires soumises à consultation.
+Les projets communs ainsi que leur financement en jetons (Ɉ) pourront être
+discutées en conseils. Ces projets, ainsi que les montants qui leur sont
+alloués, devront être adoptés par consultation de l'ensemble des membres, en
+utilisant le vote polynomial de Shulze cité précédemment.
+
+L'article 7 du règlement intérieur[^RI7] décrit le processus de création de ces
+contributions.
+
+[^RI7]: https://foopgp.org/fr/about/rules-of-procedures/article-7--contributions-obligatoires-confer-article-10bis-des-statuts
+
+Ces contributions apparaissant à travers un processus on-ne-peut-plus
+démocratique, elles sont obligatoires et les membres qui s'y soustraient perdent
+leur statut de membre actif, c'est-à-dire :
+* leur pouvoir décisionel, c'est à dire leur droit à s'exprimer lors des
+  consultations.
+* leur part de jetons créés par le mécanisme décrit à l'article 5 du règlement intérieur[^RI5].
+* leurs eventuels rôles ou bénéfices au sein de l'organisation.
+
+S'y soustraire est cependant obligatoire en cas de décès. Si une activité semble
+maintenue pour une personne décédée, les responsables ou les bénéficiaires non
+coopératifs seront trouvés et punis, à minima par la perte de leur statut de membre actif.
+
+La première contribution obligatoire qui a été voté, est de 1% des jetons de
+l'exercice 2023, pour financer en jetons (Ɉ) le fonctionnement de
+l'organisation pour l'année 2024.
 
 ---
 

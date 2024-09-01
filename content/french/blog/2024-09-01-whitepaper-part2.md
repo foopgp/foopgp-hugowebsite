@@ -311,7 +311,7 @@ intérieur[^RI8], devra donc être diminué progressivement au fur et à mesure
 que les jetons de pouvoir sont utilisés comme monnaie d'échange, jusqu'à tendre vers zéro
 si nécessaire pour contrebalancer des inégalités qui perdureraient.
 
-[^RI8]: https://foopgp.org/fr/about/rules-of-procedures/article-8--lissage-polynomial-des-quantit%C3%A9es-de-pouvoir-confer-article-10bis-des-statuts
+[^RI8]: https://foopgp.org/fr/about/rules-of-procedures/#article-8--lissage-polynomial-des-quantit%C3%A9es-de-pouvoir-confer-article-10bis-des-statuts
 
 #### Financer les communs
 
@@ -323,7 +323,7 @@ utilisant le vote polynomial de Shulze cité précédemment.
 L'article 7 du règlement intérieur[^RI7] décrit le processus de création de ces
 contributions.
 
-[^RI7]: https://foopgp.org/fr/about/rules-of-procedures/article-7--contributions-obligatoires-confer-article-10bis-des-statuts
+[^RI7]: https://foopgp.org/fr/about/rules-of-procedures/#article-7--contributions-obligatoires-confer-article-10bis-des-statuts
 
 Ces contributions apparaissant à travers un processus on-ne-peut-plus
 démocratique, elles sont obligatoires. Les membres qui s'y soustraient perdent

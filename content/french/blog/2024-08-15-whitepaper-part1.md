@@ -98,7 +98,9 @@ Elle est finie et possède des limites[^PBoundaries] que nous avons probablement
 
 #### Les inégalités ne peuvent que s'accroître
 
-Ceux qui détiennent une licence bancaire, possèdent un privilège comparable à ceux que la Révolution française a pu abolir.
+Ceux qui détiennent une licence bancaire[^BL], possèdent un privilège comparable à ceux que la Révolution française a pu abolir.
+
+[^BL]: [Licence bancaire / Wikipedia](https://fr.wikipedia.org/wiki/Licence_bancaire)
 
 Ce privilège leur donne non seulement et plus qu'aux autres, le pouvoir de
 décider ce qui a de la valeur et ce qui n'en a pas. En hiérarchisant selon des critères arbitraires les prêts et projets d'accès à la propriété, privée ou publique, immobilière ou entrepreneuriale.

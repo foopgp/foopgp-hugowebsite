@@ -6,7 +6,7 @@ Tags:    [ "specification", "governance", "signature", "authentication", "encryp
 categories: [ "About" ]
 draft: false
 author: [ "Jean-Jacques Brucker" ]
-description : "par quels moyens nous atteindrons nos objectifs"
+description : "Comment, fonctionnellement, nous atteindrons nos objectifs."
 lang: fr
 bg_image: "images/backgrounds/library.jpg"
 bg_image: "images/blog/2024/europe-413102_960_720.jpg"
@@ -36,12 +36,16 @@ utilisation en masse, de créer des identités numérique OpenPGP et de gérer
 efficacement et au haut plus haut niveau de sécurité, les clés privées qui leurs
 sont associées[^rappelasym] :
 
-1. **pgpid-gen** génère, manuellement ou à partir d'un passeport aux normes ICAO
-   9303 ou ISO/IEC 7501, une identité numérique OpenPGP. Puis découpe et imprime en plusieurs fragments, l'ensemble des clés privés associées.
-2. **pgpid-qrscan** utilise ces fragments papier pour injecter les clés privés dans une clé de sécurité [^YK] [^NK]. La clé de sécurité peut dès lors faire office non seulement de pièce d'identité, mais permet aussi la signature numérique, l'authentification numérique, ou la création d'espaces numériques parfaitement chiffrés, c'est-à-dire vraiment privés.
-3. Les fragments sont référencés et stockés dans des coffres dispersés et tenus
-   par des entreprises de confiance ou des amis ou des notaires. Si nécessaire, ils pourront
-être rassemblés et réutilisés par des outils comme **pgpid-qrscan** : recréation en cas d'incident (eg: blocage complet, destruction, perte non conséquente, etc), création de doubles, décès du titulaire, etc.
+1. **pgpid-gen** génère, manuellement ou à partir d'un passeport international[^passport],
+   une identité numérique OpenPGP. Puis découpe et imprime en plusieurs fragments, l'ensemble des clés privés associées.
+2. **pgpid-qrscan** utilise ces fragments papier pour injecter les clés privés dans une clé de sécurité [^YK] [^NK].
+   La clé de sécurité peut dès lors faire office non seulement de pièce d'identité, mais permet aussi la signature numérique,
+   l'authentification numérique, ou la création d'espaces numériques parfaitement chiffrés, c'est-à-dire vraiment privés.
+3. Les fragments sont référencés et stockés dans des coffres dispersés et tenus par des entreprises de confiance ou des amis
+   ou des notaires. Si nécessaire, ils pourront être rassemblés et réutilisés par des outils comme **pgpid-qrscan** :
+   recréation en cas d'incident (eg: blocage complet, destruction, perte non conséquente, etc), création de doubles, décès du titulaire, etc.
+
+[^passport]: Passeports conformes aux normes ICAO 9303 ou ISO/IEC 7501.
 
 [^rappelasym]: En Informatique, la sécurité repose très souvent sur la cryptographie asymétrique, laquelle nécessite une non-divulgation parfaite du contenu de la partie privée d'une clé asymétrique (eg: RSA, ed25519, etc.), que l'on appelle aussi "clé privée".*
 
@@ -343,4 +347,8 @@ l'organisation pour l'année 2024.
 
 ---
 
+*Une troisième partie du présent livre blanc est en préparation. Il devrait
+expliquer l'assemblage technologique innovant qui nous permettra d'atteindre nos
+objectifs. Cependant, de par son niveau peu abordable ou les innovations qu'il
+dévoile, nous ne sommes pas pressé de le publier.*
 

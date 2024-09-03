@@ -100,7 +100,6 @@ Notre conseiller juridique nous a renvoyé sur les pages 28-29 de [la publicatio
 
 Il a rappelé l'inexistence d'un livre blanc (whitepaper), ce que Jean-Jacques a [dès lors commencé](https://foopgp.org/fr/blog/2024-08-15-whitepaper-part1/), ainsi que l'inexistence de diagramme de flux financier, ce que Jean-Jacques a aussi commencé et qui fera parti du livre blanc pour illustrer le business model.
 
-
 ### Actions à mener (TODO list)
 
 * Appel à cotisation pour le nouvel exercice (dépend de l'avancement  https://foopgp.org/fr/about/donate/ )

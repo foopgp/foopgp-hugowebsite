@@ -37,7 +37,7 @@ efficacement et au haut plus haut niveau de sécurité, les clés privées qui l
 sont associées[^rappelasym] :
 
 1. **pgpid-gen** génère, manuellement ou à partir d'un passeport international[^passport],
-   une identité numérique OpenPGP. Puis découpe et imprime en plusieurs fragments, l'ensemble des clés privés associées.
+   une identité numérique OpenPGP. Puis imprime en plusieurs fragments l'ensemble des clés privés associées. Il utilise eventuellement l'algorithme de Shamir[^Shamir].
 2. **pgpid-qrscan** utilise ces fragments papier pour injecter les clés privés dans une clé de sécurité [^YK] [^NK].
    La clé de sécurité peut dès lors faire office non seulement de pièce d'identité, mais permet aussi la signature numérique,
    l'authentification numérique, ou la création d'espaces numériques parfaitement chiffrés, c'est-à-dire vraiment privés.
@@ -45,9 +45,11 @@ sont associées[^rappelasym] :
    ou des notaires. Si nécessaire, ils pourront être rassemblés et réutilisés par des outils comme **pgpid-qrscan** :
    recréation en cas d'incident (eg: blocage complet, destruction, perte non conséquente, etc), création de doubles, décès du titulaire, etc.
 
+[^rappelasym]: En Informatique, la sécurité repose très souvent sur la cryptographie asymétrique, laquelle nécessite une non-divulgation parfaite du contenu de la partie privée d'une clé asymétrique (eg: RSA, ed25519, etc.), que l'on appelle aussi "clé privée".*
+
 [^passport]: Passeports conformes aux normes ICAO 9303 ou ISO/IEC 7501.
 
-[^rappelasym]: En Informatique, la sécurité repose très souvent sur la cryptographie asymétrique, laquelle nécessite une non-divulgation parfaite du contenu de la partie privée d'une clé asymétrique (eg: RSA, ed25519, etc.), que l'on appelle aussi "clé privée".*
+[^Shamir]: [Partage de clé secrète de Shamir / Wikipedia](https://fr.wikipedia.org/wiki/Partage_de_cl%C3%A9_secr%C3%A8te_de_Shamir).
 
 Le modèle économique de l'association permettra de faire évoluer et
 maintenir ces outils et processus.
@@ -57,7 +59,7 @@ Il devra aussi permettre de :
    serveurs centralisés ou fournissant des certificats incomplets (par exemple : [keys.openpgp.org](https://keys.openpgp.org/)).
  * Réaliser des outils permettant de mieux créer et gérer les toiles de confiances OpenPGP.
  * Utiliser des toiles de confiances OpenPGP pour lutter efficacement contre
-   le SPAM - bien plus efficacement que l'ensemble des solutions actuelles.
+   les courriels indésirables - plus efficacement que l'ensemble des solutions actuelles.
  * Utiliser des toiles de confiances OpenPGP et des clés de sécurité[^YK] [^NK] pour s'authentifier numériquement plus sûrement et plus facilement - sans identifiant / mot de passe.
  * Créer des espaces numériques vraiment privés, accessibles et contrôlables
    uniquement au travers de clés de sécurité[^YK] [^NK].

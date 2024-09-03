@@ -1,6 +1,6 @@
 ---
 Title:   "Notre Livre Blanc - Partie 2"
-Date:    2024-08-24T01:30:00+02:00
+Date:    2024-09-01T01:30:00+02:00
 License: CC By-SA
 Tags:    [ "specification", "governance", "signature", "authentication", "encryption", "identity", "pgpid" ]
 categories: [ "About" ]
@@ -21,18 +21,16 @@ type: "post"
 
 ### Premier objectif : démocratiser OpenPGP
 
-De part la portée de ses spécifications, OpenPGP souffre à base d'une certaine complexité technique.
+De par la portée de ses spécifications, OpenPGP présente une certaine complexité technique.
 
-Cette complexité est cependant tout à fait résoluble, et serait probablement
-déjà résolue si la technologie ne
-souffrait pas des freins politico-économique [identifiés
-précédemment](../2024-08-15-whitepaper-part1/#construire-des-espaces-de-vie-numérique-privée)
+Cependant, cette complexité est tout à fait résoluble et aurait déjà été surmontée si
+la technologie ne souffrait pas des freins politico-économiques [identifiés précédemment](../2024-08-15-whitepaper-part1/#construire-des-espaces-de-vie-numérique-privée).
 
 L'association doit donc se doter d'un modèle économique pour financer les
 développements ou évolutions nécessaires à l'adoption en masse des solutions OpenPGP.
 
 Déjà, nous avons développé des outils et processus permettant, pour une
-utilisation en masse, de créer des identités numérique OpenPGP et de gérer
+utilisation en masse, de créer des identités numériques OpenPGP et de gérer
 efficacement et au haut plus haut niveau de sécurité, les clés privées qui leurs
 sont associées[^rappelasym] :
 
@@ -79,7 +77,7 @@ Il devra aussi permettre de :
 L'organisation foopgp n'a pas de but lucratif. Bien au contraire, l'organisation
 œuvre dans la recherche de l'intérêt général.
 
-Aussi les donations mesurées en € devraient être d'abord philanthropique.
+Aussi les donations mesurées en euros (€) devraient être d'abord philanthropiques.
 
 Ensuite, il semble assez évident que ceux qui donnent plus, aient un peu plus
 de pouvoir au sein de l'association. Par contre il semblerait injuste que le rapport
@@ -90,7 +88,7 @@ inégalités que nous cherchons justement à corriger.
 
 L'organisation foopgp a résolu ce problème en introduisant des jetons de pouvoir
 et une fonction logarithmique pour calculer la quantité de ces jetons (Ɉ) en
-fonctions des donations mesurées en euros (€).
+fonction des donations mesurées en euros (€).
 
 Ce mécanisme est décrit dans l'article 4 du règlement intérieur[^RI4].
 
@@ -287,7 +285,7 @@ wm3 --> mb3 : <$pda>
 Si l'on combine et simplifie les deux diagrammes précédents nous pourrions
 retrouver un schéma assez simple : un client échange des euros (€) contre, par
 exemple :
-* une clé de sécurité OpenPGP correctement configuré + une initiation à ses usages.
+* une clé de sécurité OpenPGP correctement configurée + une initiation à ses usages.
 
 {{< plantuml id="resume" >}}
 sprite $device_usb [128x128/16] {
@@ -445,7 +443,7 @@ Pour inciter à ne pas attendre que le monde devienne inhabitable pour comprendr
 que nous avons besoin d'un système économique sans privilège de création
 monétaire, l'article 4 du règlement intérieur[^RI4] introduit également une
 notion de pénalité à la pingrerie, autrement dit d'incitation à la générosité,
-appelé *stingynalty*.
+appelée *stingynalty*.
 
 Ce facteur se doit évidemment d'être supérieur à celui de l'inflation de la monnaie à
 cours légal dans la zone prépondérante d'activité de l'association.
@@ -470,7 +468,7 @@ l'ensemble des personnes physiques membres.
 Cependant, afin que nos jetons demeurent plus rares et d'une valeur légèrement
 supérieure à celle de la monnaie à cours légal. Il semble important que la croissance
 prédéfinie de la quantité de jetons demeure inférieure ou égale à l'incitation à
-la générosité. Autrement dit, il semble pertinent de maintenir :
+la générosité. En d'autres termes, il semble pertinent de maintenir :
 ***growth* < *stingynalty***
 
 [^RI4bis]: Suivant l'article 4 du règlement intérieur, la formule est de la
@@ -492,8 +490,8 @@ Vilarem](https://www.usinenouvelle.com/blogs/le-blog-des-experts-des-neuroscienc
 
 #### Intelligence collective
 
-Le plus difficile n'est pas de choisir[^Brazil], mais de prévoir. C'est à dire
-de voir, c'est à dire d'expliquer et d'accorder les visions de l'ensemble des
+Le plus difficile n'est pas de choisir[^Brazil], mais de prévoir. C'est-à-dire
+de voir, c'est-à-dire d'expliquer et d'accorder les visions de l'ensemble des
 membres.
 
 [^Brazil]: Choisir ne demande aucune intelligence particulière : {{< video src="/videos/Brazil Executive decision maker_360P.mp4" type="video/mp4" >}}
@@ -613,7 +611,8 @@ l'organisation pour l'année 2024.
 ---
 
 *Une troisième partie du présent livre blanc est en préparation. Elle devrait
-expliquer l'assemblage technologique innovant qui nous permettra d'atteindre nos
-objectifs. Cependant, de par son niveau peu abordable ou les innovations qu'il
-dévoile, nous ne sommes pas pressé de le publier.*
+expliquera l'assemblage technologique innovant qui nous permettra d'atteindre nos
+objectifs. Cependant, de par son niveau peu abordable ou les innovations qu'elle
+dévoile, nous prendrons le temps nécessaire pour satisfaire nos exigences de
+qualité.*
 

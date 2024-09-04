@@ -190,3 +190,6 @@ s'inspirant de normes et lois qui se sont naturellement imposées dans les commu
 
 **En essayant d'affaiblir l'individualisme, la surconsommation, et les violences qui en découlent ; le projet foopgp porte donc l'espoir de faire prospérer la cohésion sociale, le bonheur de vivre et la paix.**
 
+---
+
+*Partie suivante : [Comment, fonctionnellement, nous atteindrons nos objectifs.](../2024-09-01-whitepaper-part2/)*

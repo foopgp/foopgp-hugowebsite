@@ -8,14 +8,14 @@ draft: false
 author: [ "Jean-Jacques Brucker" ]
 description : "Comment, fonctionnellement, nous atteindrons nos objectifs."
 lang: fr
-bg_image: "images/backgrounds/library.jpg"
-bg_image: "images/blog/2024/europe-413102_960_720.jpg"
-image: "images/blog/2024/earth4ever.jpeg"
+bg_image: "images/blog/2024/earth4ever.jpeg"
+image: "images/blog/2024/europe4ever.jpeg"
 type: "post"
 ---
 
 
-*Suite de [la partie 1](../2024-08-15-whitepaper-part1/)*
+*Suite de la partie 1 : [Quelle utopie nous visons, par quelles voies nous les
+atteindrons.](../2024-08-15-whitepaper-part1/)*
 
 ## Comment atteindrons-nous nos objectifs ?
 
@@ -610,9 +610,7 @@ l'organisation pour l'année 2024.
 
 ---
 
-*Une troisième partie du présent livre blanc est en préparation. Elle devrait
-expliquera l'assemblage technologique innovant qui nous permettra d'atteindre nos
-objectifs. Cependant, de par son niveau peu abordable ou les innovations qu'elle
-dévoile, nous prendrons le temps nécessaire pour satisfaire nos exigences de
-qualité.*
+*Une troisième partie du présent livre blanc est en préparation. Elle expliquera l'assemblage technologique
+innovant qui nous permettra d'atteindre nos objectifs. Cependant, de par son niveau peu abordable ou les innovations qu'elle
+dévoile, nous prendrons, pour la publier, le temps nécessaire pour satisfaire nos exigences de qualité.*
 

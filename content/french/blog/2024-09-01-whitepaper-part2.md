@@ -561,7 +561,7 @@ Si la voie des communs peut permettre de réduire les inégalités de propriét�
 C'est une voie encore très longue et incertaine. Sur laquelle donc nous ne pouvons
 compter assurément.
 
-D'autre part toute tentative de réduire les inégalités naturelles semble au
+D'autre part toute tentative d'effacer les inégalités naturelles semble au
 mieux vouée à l'échec, au pire totalitaire.
 
 Si il peut sembler logique que ceux qui produisent et vendent davantage,

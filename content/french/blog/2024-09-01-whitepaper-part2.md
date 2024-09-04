@@ -460,15 +460,15 @@ de faire prendre à nos jetons (Ɉ), trop de valeur par rapport à la monnaie à
 une bulle spéculative. Ce qui serait à moyen terme fatal pour le projet.
 
 Pour éviter cela nous avons doté notre système d'un mécanisme de création
-périodique, sans aucun privilège, décrit à l'article 5 du règlement
+périodique, sans aucun privilège, décrit dans l'article 5 du règlement
 intérieur[^RI5] : la quantité de jetons croît donc périodiquement d'un pourcentage prédéfini et
 ajustable si nécessaire. Ce pourcentage est appelé *growth*. Les jetons créés sont alors distribués équitablement à
 l'ensemble des personnes physiques membres.
 
 Cependant, afin que nos jetons demeurent plus rares et d'une valeur légèrement
-supérieure à celle de la monnaie à cours légal. Il semble important que la croissance
+supérieure à celle de la monnaie à cours légal. **Il semble important que la croissance
 prédéfinie de la quantité de jetons demeure inférieure ou égale à l'incitation à
-la générosité. En d'autres termes, il semble pertinent de maintenir :
+la générosité**. En d'autres termes, il semble pertinent de maintenir :
 ***growth* < *stingynalty***
 
 [^RI4bis]: Suivant l'article 4 du règlement intérieur, la formule est de la
@@ -546,11 +546,11 @@ projet Debian[^DebianVote] pour mener à bien ces consultations.
 À la différence du projet Debian, l'organisation utilisera cependant les jetons
 de pouvoirs afin de calculer le nombre de voix de chacun.
 
-Au commencement, ces jetons servent à récompenser ceux qui donnent des valeurs mesurées en euros.
+Au commencement, ces jetons servent à récompenser ceux qui donnent des valeurs mesurées en euros (€).
 
 Puis au fur et à mesure que ces jetons seront utilisés comme monnaie d'échange
 au sein de l'organisation, ils récompenseront ceux qui vendent des
-valeurs mesurées en jetons.
+valeurs mesurées en jetons (Ɉ).
 
 Or nous n'avons pas tous les mêmes capacités à vendre ou à produire des valeurs échangeables.
 
@@ -565,17 +565,17 @@ D'autre part toute tentative de réduire les inégalités naturelles semble au
 mieux vouée à l'échec, au pire totalitaire.
 
 Si il peut sembler logique que ceux qui produisent et vendent davantage,
-puissent avoir plus de pouvoir décisionnels, il est nécessaire de
+puissent avoir plus de pouvoir décisionnel, il est nécessaire de
 * savoir que la mesure, en jetons (Ɉ) comme en euros (€) dépendra toujours d'échelles de valeurs
 subjectives, imparfaites et incomplètes.
 * d'essayer de prendre en compte, l'ensemble des inégalités de fait.
 
 Pour répondre à ce problème nous avons mis en place le concept de vote
-polynomial, décrit à l'article 8 du règlement intérieur[^RI8].
+polynomial, décrit dans l'article 8 du règlement intérieur[^RI8].
 
-Dans un souci d'équité, l'exposant de pouvoir *sharp* décrit à l'article 8 du règlement
-intérieur[^RI8], devra donc être diminué progressivement au fur et à mesure
-que les jetons de pouvoir sont utilisés comme monnaie d'échange, jusqu'à tendre vers zéro
+Dans un souci d'équité, **l'exposant de pouvoir *sharp*** décrit dans l'article 8 du règlement
+intérieur[^RI8], **devra donc être diminué progressivement au fur et à mesure
+que les jetons de pouvoir sont utilisés comme monnaie d'échange**, jusqu'à tendre vers zéro
 si nécessaire pour contrebalancer des inégalités qui perdureraient.
 
 [^RI8]: https://foopgp.org/fr/about/rules-of-procedures/#article-8--lissage-polynomial-des-quantit%C3%A9es-de-pouvoir-confer-article-10bis-des-statuts
@@ -597,7 +597,7 @@ démocratique, elles sont obligatoires. Les membres qui s'y soustraient perdent
 leur statut de membre actif, autrement dit :
 * leur pouvoir décisionnel, c'est-à-dire leur droit à s'exprimer lors des
   consultations.
-* leur part de jetons créés par le mécanisme décrit à l'article 5 du règlement intérieur[^RI5].
+* leur part de jetons créés par le mécanisme décrit dans l'article 5 du règlement intérieur[^RI5].
 * leurs éventuels rôles ou bénéfices au sein de l'organisation.
 
 S'y soustraire est cependant obligatoire en cas de décès. Si une activité semble

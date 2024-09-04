@@ -419,7 +419,7 @@ sprite $device_usb [128x128/16] {
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 }
 
-' !include http://test.foopgp.org/puml/device_usb-sprite.puml
+' !include https://foopgp.org/puml/device_usb-sprite.puml
 left to right direction
 actor "customer member" as mb1
 rectangle foopgp {

@@ -1,7 +1,7 @@
 ---
 title: "2024 S36 Rapport Hebdomadaire"
 lang: fr
-date: 2024-09-037T21:00:00+01:00
+date: 2024-09-03T21:00:00+01:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "CR visio du Mardi soir"
@@ -16,7 +16,7 @@ type: "meeting"
 
 ### Ordre du jour
 
-* Relecture partie 2 du livre blanc (en cours d'écriture) : http://test.foopgp.org/fr/blog/2024-09-01-whitepaper-part2/
+* Relecture partie 2 du livre blanc (en cours d'écriture) : https://foopgp.org/fr/blog/2024-09-01-whitepaper-part2/
 
 * Discussion mise à jour de nos statuts : https://codeberg.org/foopgp/foopgp-hugowebsite/commit/0e95e1612377642f201bf921b669493b08244c15 (manque de temps, ajourné)
 
@@ -78,7 +78,7 @@ type: "meeting"
 * Frederic Renault fait une première explication de son projet "Sagittarius" fournissant des services de LLM (aka IA) personalisés.
     * https://opencollective.com/uplanet-zero
     * https://cloud.astroport.com
-* Revue de [la deuxieme partie du livre blanc](http://test.foopgp.org/fr/blog/2024-09-01-whitepaper-part2/)
+* Revue de [la deuxieme partie du livre blanc](https://foopgp.org/fr/blog/2024-09-01-whitepaper-part2/)
 * Achat de tours de cou personnalisé pour la démo lors du Salon du 15 octobre à Sisteron ?
 * Bugs thunderbird + yubikeys + windows relevés par Laurent. 
 * Retour de Didier sur le Salon de Liège : pas folichon : des présentations éculés, des y'a-ka-faut-kon, "il faut s'organiser" mais "moi moi moi".

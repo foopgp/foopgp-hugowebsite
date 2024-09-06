@@ -14,16 +14,32 @@ type: "meeting"
 *Présents : Laurent Céard, Jean-Jacques Brucker, François Revol, Frédéric Renault, Fréderic Zwikel, Didier Loyens.*
 
 
-### Ordre du jour
+### Ordres du jour pour le prochain conseil, mardi 10 septembre à 21h en visio
+sur https://cloud.foopgp.org/call/4du5irxe
 
-* Relecture partie 2 du livre blanc (en cours d'écriture) : https://foopgp.org/fr/blog/2024-09-01-whitepaper-part2/
+* Discussion mise à jour de nos statuts : https://codeberg.org/foopgp/foopgp-hugowebsite/commit/0e95e1612377642f201bf921b669493b08244c15 
+
+* Point trésorerie et chiffres de l'association
+
+* Quelle participation aux prochains forum ou salon ?
+    * mardi 15 octobre 2024 : [Forum du numérique 04](https://docs.google.com/forms/d/e/1FAIpQLSeq2l_YUBXxO0PptCnWu02JYam4vLGG_lZ_J5GusTJ4rQVJ-Q/viewform)
+    * week-end 9 & 10 novembre 2024 : [Etats Généreux du revenu de base](https://www.revenudebase.info/etats-genereux-revenu-de-base-2024/) à [Givors (près de Lyon)](https://3wr8l.r.ag.d.sendibm3.com/mk/mr/sh/SMJz09SDriOHTC97GRrOKd5e46q2/TmWOD2oYnGLa)
+    * week-end 16 & 17 novembre 2024 : [Capitole du libre à Toulouse](https://capitoledulibre.org/)
+
+* Actions réalisés, en cours, à prévoir.
+
+
+
+### Ordres du soir
+
+* Relecture partie 2 du livre blanc : https://foopgp.org/fr/blog/2024-09-01-whitepaper-part2/
 
 * Discussion mise à jour de nos statuts : https://codeberg.org/foopgp/foopgp-hugowebsite/commit/0e95e1612377642f201bf921b669493b08244c15 (manque de temps, ajourné)
 
 * Retour sur le salon de Liège.
 
-* Quelle participation au forum du numérique du 04 ?
-
+* Quelle participation aux prochains forum ou salon ?
+    * mardi 15 octobre 2024 : [Forum du numérique 04](https://docs.google.com/forms/d/e/1FAIpQLSeq2l_YUBXxO0PptCnWu02JYam4vLGG_lZ_J5GusTJ4rQVJ-Q/viewform)
 
 
 ### Chiffres de l'association (à la date du 16 avril 2024)

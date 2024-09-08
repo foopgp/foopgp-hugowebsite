@@ -14,7 +14,7 @@ type: "meeting"
 *Présents : Laurent Céard, Jean-Jacques Brucker, François Revol, Frédéric Renault, Fréderic Zwikel, Didier Loyens.*
 
 
-### Ordres du jour pour le prochain conseil, mardi 10 septembre à 21h en visio
+### Ordre du jour pour le prochain conseil, mardi 10 septembre à 21h en visio
 sur https://cloud.foopgp.org/call/4du5irxe
 
 * Discussion mise à jour de nos statuts : https://codeberg.org/foopgp/foopgp-hugowebsite/commit/0e95e1612377642f201bf921b669493b08244c15 

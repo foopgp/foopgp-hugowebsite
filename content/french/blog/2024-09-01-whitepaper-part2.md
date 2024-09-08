@@ -432,7 +432,7 @@ wm1 --> mb1 : <$device_usb>
 À la différence notable que ce client aura cédé de son pouvoir décisionnel au sein de
 l'organisation, aux membres travailleurs qui lui ont vendu le service.
 
-Et que, étant donné la fonction logarithmique décrite dans l'article 4 du règlement intérieur[^RI4], le prix en euros des produits ou services sera exponentiel dès lors qu'il voudra
+Et que, étant donné la fonction logarithmique décrite dans l'article 4 du règlement intérieur[^RI4], le prix en euros (€) des produits ou services sera exponentiel dès lors qu'il voudra
 acheter plusieurs produits ou services
 
 ... à moins que le client ait lui-même des produits ou services à vendre en jetons (Ɉ) aux autres membres.
@@ -497,7 +497,7 @@ membres.
 [^Brazil]: Choisir ne demande aucune intelligence particulière : {{< video src="/videos/Brazil Executive decision maker_360P.mp4" type="video/mp4" >}}
 
 Tout problème, une fois rationalisé dans son environnement, ne comporte qu'une
-est une seule "meilleure décision".
+et une seule "meilleure décision".
 
 Toute la difficulté réside dans la rationalisation des problèmes, la mise en
 accord sur ces rationalisations, et l'acceptation que, malgré les efforts, toute rationalisation

@@ -45,7 +45,7 @@ sont associées[^rappelasym] :
 
 [^rappelasym]: En Informatique, la sécurité repose très souvent sur la cryptographie asymétrique, laquelle nécessite une non-divulgation parfaite du contenu de la partie privée d'une clé asymétrique (eg: RSA, ed25519, etc.), que l'on appelle aussi "clé privée".*
 
-[^passport]: Passeports conformes aux normes ICAO 9303 ou ISO/IEC 7501.
+[^passport]: Passeports conformes aux [normes "MRP"](https://en.wikipedia.org/wiki/Machine-readable_passport), [ICAO 9303](https://www.icao.int/publications/Documents/9303_p1_cons_fr.pdf) ou ISO/IEC 7501.
 
 [^Shamir]: [Partage de clé secrète de Shamir / Wikipedia](https://fr.wikipedia.org/wiki/Partage_de_cl%C3%A9_secr%C3%A8te_de_Shamir).
 
@@ -471,7 +471,7 @@ prédéfinie de la quantité de jetons demeure inférieure ou égale à l'incita
 la générosité**. En d'autres termes, il semble pertinent de maintenir :
 ***growth* < *stingynalty***
 
-[^RI4bis]: Suivant l'article 4 du règlement intérieur, la formule est de la
+[^RI4bis]: Suivant [l'article 4 du règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/#article-4---modalit%C3%A9s-relatives-aux-jetons-de-pouvoir-confer-article-10bis-des-statuts), la formule est de la
     forme : **Ɉ = log₂(€+1) / *stingynalty***
 
 [^RI5]: https://foopgp.org/fr/about/rules-of-procedures/#article-5--%C3%A9mission-universelle-de-nouveaux-jetons-confer-article-10bis-des-statuts
@@ -506,7 +506,7 @@ ne sera jamais qu'une approximation imparfaite.
 Cela nécessite de la transparence, de l'écoute, de la bienveillance et de
 l'intelligence.[^Values]
 
-[^Values]: Les valeurs inscrites dans nos statuts sont justement : la transparence, la proximité
+[^Values]: Les valeurs inscrites dans [nos statuts](https://foopgp.org/fr/about/status/) sont justement : la transparence, la proximité
 (qui induit l'écoute), la bienveillance, et la coopération (qui induit l'intelligence collective).
 
 Pour cela nous nous appuyons sur les recherches en intelligence collective[^IC2].

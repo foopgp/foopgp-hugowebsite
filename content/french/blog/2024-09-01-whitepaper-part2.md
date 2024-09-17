@@ -26,7 +26,7 @@ De par la portée de ses spécifications, OpenPGP présente une certaine complex
 Cependant, cette complexité est tout à fait résoluble et aurait déjà été surmontée si
 la technologie ne souffrait pas des freins politico-économiques [identifiés précédemment](../2024-08-15-whitepaper-part1/#construire-des-espaces-de-vie-numérique-privée).
 
-L'association doit donc se doter d'un modèle économique pour financer les
+L'organisation doit donc se doter d'un modèle économique pour financer les
 développements ou évolutions nécessaires à l'adoption en masse des solutions OpenPGP.
 
 Déjà, nous avons développé des outils et processus permettant, pour une
@@ -49,7 +49,7 @@ sont associées[^rappelasym] :
 
 [^Shamir]: [Partage de clé secrète de Shamir / Wikipedia](https://fr.wikipedia.org/wiki/Partage_de_cl%C3%A9_secr%C3%A8te_de_Shamir).
 
-Le modèle économique de l'association permettra de faire évoluer et
+Le modèle économique de l'organisation permettra de faire évoluer et
 maintenir ces outils et processus.
 
 Il devra aussi permettre de :
@@ -80,7 +80,7 @@ L'organisation foopgp n'a pas de but lucratif. Bien au contraire, l'organisation
 Aussi les donations mesurées en euros (€) devraient être d'abord philanthropiques.
 
 Ensuite, il semble assez évident que ceux qui donnent plus, aient un peu plus
-de pouvoir au sein de l'association. Par contre il semblerait injuste que le rapport
+de pouvoir au sein de l'organisation. Par contre il semblerait injuste que le rapport
 entre don et pouvoir soit proportionnel. En effet, cela reproduirait les
 inégalités que nous cherchons justement à corriger.
 
@@ -120,9 +120,9 @@ Ces jetons de pouvoir seront pris en compte à chaque fois que des décisions
 devront être prises et que les discussions préalables n'ont pu dégager de consensus.
 
 Mais ces jetons de pouvoir pourront aussi être utilisés comme monnaie d'échange
-pour récupérer des produits ou services que l'association a pu construire grâce aux donations.
+pour récupérer des produits ou services que l'organisation a pu construire grâce aux donations.
 
-Sachant que l'association produit déjà des services autour des clés de sécurité
+Sachant que l'organisation produit déjà des services autour des clés de sécurité
 OpenPGP[^YK] [^NK], recycle déjà des ordinateurs portables usagés, et envisage de proposer des serveurs d'auto-hébergement ou des téléphones mobiles "dégoogelisés".
 
 {{< plantuml id="sell" >}}
@@ -446,7 +446,7 @@ notion de pénalité à la pingrerie, autrement dit d'incitation à la généros
 appelée *stingynalty*.
 
 Ce facteur se doit évidemment d'être supérieur à celui de l'inflation de la monnaie à
-cours légal dans la zone prépondérante d'activité de l'association.
+cours légal dans la zone prépondérante d'activité de l'organisation.
 
 Ainsi les enthousiastes qui investissent dès maintenant dans notre projet d'intérêt
 général pour un monde plus durable, seront plus récompensés que les indécis qui
@@ -518,7 +518,7 @@ Pour cela nous nous appuyons sur les recherches en intelligence collective[^IC2]
 Les décisions sont prises dans un premier temps par recherche du consentement, au sein de conseils dont les
 réunions sont ouvertes à tous les membres.
 
-Le conseil d'administration de l'association se réunit par visioconférence chaque semaine.
+Le conseil d'administration de l'organisation se réunit par visioconférence chaque semaine.
 
 Certaines décisions ou responsabilités bien définies peuvent être déléguées à certains
 conseils ou rôles secondaires bien définis.

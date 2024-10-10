@@ -89,6 +89,8 @@ Sisteron](https://forumdunumerique.digne.cci.fr)
 
 * Les 50 yubikeys 5 NFC sont arrivées, afin d'être revendues (en € ou en Ɉ)
   personnaliées avec pgpid.
+* La demande de stand pour le capitole du libre les 16 et 17 Novembre à Toulouse
+  est accpetée.
 
 #### Actions en cours
 

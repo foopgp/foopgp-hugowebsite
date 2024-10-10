@@ -1,5 +1,5 @@
 ---
-title: "2024 S39 Rapport Hebdomadaire"
+title: "2024 S40 Rapport Hebdomadaire"
 lang: fr
 date: 2024-10-01T21:00:00+01:00
 draft: false

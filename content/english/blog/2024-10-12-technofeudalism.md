@@ -1,0 +1,1 @@
+../../french/blog/2024-10-12-technofeudalism.md

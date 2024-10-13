@@ -29,7 +29,7 @@ blanc](//foopgp.org/fr/blog/2024-08-15-whitepaper-part1/) :
 
 Notons que si nous commençons à être de plus en plus nombreux[^autres] à voir que
 système économique actuel nous mène droit dans le mur, avec comme
-risque de plus en plus évident : la fin pure et simple de l'humanité ; l'organisation foopgp
+risque sous-jacent : la fin pure et simple de l'humanité ; l'organisation foopgp
 est l'une des rares à proposer [une partie fondamentale et pertinente de la
 solution](//foopgp.org/fr/blog/2024-09-01-whitepaper-part2/).
 

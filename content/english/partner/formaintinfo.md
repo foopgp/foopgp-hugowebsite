@@ -1,0 +1,1 @@
+../../french/partner/formaintinfo.md

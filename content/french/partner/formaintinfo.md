@@ -20,7 +20,7 @@ contact:
     link : "https://www.openstreetmap.org/node/7375918682"
 
   - name : "Tel : 04.92.43.52.14"
-    icon : "ti-user" # icon pack : https://themify.me/themify-icons
+    icon : "ti-mobile" # icon pack : https://themify.me/themify-icons
     link : "tel:+33492435214"
 
   - name : "info@formaintinfo.com"

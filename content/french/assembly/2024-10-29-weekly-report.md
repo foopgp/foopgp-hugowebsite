@@ -13,7 +13,7 @@ type: "meeting"
 
 *Présents :  Didier Loyens, Jean-Jacques Brucker, François Revol, Laurent Céard, Frédéric Zwikel, Frédéric Renault.*
 
-### Ordre du jour pour le prochain conseil, mardi 29 octobre à 21h, en visio sur https://cloud.foopgp.org/call/4du5irxe
+### Ordre du jour pour le prochain conseil, mardi 5 novembre à 21h, en visio sur https://cloud.foopgp.org/call/4du5irxe
 
 * Parmi les points habituels, nous discuterons notamment de notre participation au capitole du libre à Toulouse.
 
@@ -98,12 +98,12 @@ type: "meeting"
 - <https://www.linformaticien.com/937-stockage/62534-partenariat-entre-unitel-et-scality.html>
 - <https://www.linformaticien.com/62532-des-assistants-d-ia-personnalises-dans-microsoft-365.html>
 - <https://www.distributique.com/actualites/lire-11-projet-open-source-a-suivre-35594.html>
-- 
 
 ### Activité récente
 
 #### Au cœur de la réunion
 
+- On remarque que le wiki dolibarr cite la june : https://wiki.dolibarr.org/index.php?title=Module_Multi-devise
 - slogan pour bannière (à mettre en forme) : ***Liberté ? Vie privée ? Responsabilité ? Maîtrisez vos données !***
 - Qualiopi
 - Stand capitole du libre

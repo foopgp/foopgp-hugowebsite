@@ -24,8 +24,8 @@ travaux***.
 
 Ceci dit vous pouvez tout de même [télécharger ici le bulletin d'adhésion](/documents/fr/bulletin-adhesion-foopgp.pdf), le remplir,
 et l'envoyer
-* par voie postale accompagné d'un chèque à l'ordre de l'association
-  foopgp, 75 Impasse Serre des Isnards, 05000 Pelleautier.
-* par courrier électronique à [info at foopgp.org](mailto:info@foopgp.org) en indiquant la référence du
-  virement effectué en parallèle (IBAN : FR76 1027 8079 9800 0208 2780 107).
+* par voie postale, accompagné d'un chèque à l'ordre de l'***association
+  foopgp***, *75 Impasse Serre des Isnards*, *05000 Pelleautier*.
+* par courrier électronique à [info at foopgp.org](mailto:info@foopgp.org), en indiquant la référence du
+  virement effectué en parallèle sur notre compte ***IBAN : FR76 1027 8079 9800 0208 2780 107***.
 

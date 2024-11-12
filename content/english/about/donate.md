@@ -13,9 +13,9 @@ image: "images/logos/logo-foopgp-token-0.png"
 ---
 
 
-To become or remain an active member of the association, the annual fee is one euro (1€); see [association parameters](https://foopgp.org/fr/about/rules-parameters/).
+To become or remain an active member of the association, the annual fee is one euro (1€); see [association parameters](/about/rules-parameters/).
 
-In addition to this fee, you can make a donation, which may entitle you to power tokens, in order to participate in the governance of the association, in accordance with our [rules of procedure](/en/about/rules-of-procedures/).
+In addition to this fee, you can make a donation, which may entitle you to power tokens, in order to participate in the governance of the association, in accordance with our [rules of procedure](/about/rules-of-procedures/).
 
 
 Alas, inline inscription or donation are still ***work in progress***.

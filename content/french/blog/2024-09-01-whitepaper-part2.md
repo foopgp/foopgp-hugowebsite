@@ -259,8 +259,8 @@ sprite $device_usb [128x128/16] {
 }
 
 ' !include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/osa/device_usb/device_usb-sprite.puml
-!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/osa/mobile/pda/pda-sprite.puml
-!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/osa/laptop/laptop-sprite.puml
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/463b4212d94df93301454fca0551432ae0d32e19/stdlib/osa/mobile/pda/pda-sprite.puml
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/463b4212d94df93301454fca0551432ae0d32e19/stdlib/osa/laptop/laptop-sprite.puml
 
 actor "customer member" as mb1
 actor "customer member" as mb2

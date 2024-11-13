@@ -13,9 +13,9 @@ type: "meeting"
 
 *Présents :  Didier Loyens, Jean-Jacques Brucker, François Revol, Laurent Céard, Henri Geist*
 
- *Excusé : Frédéric Renault, Frédéric Zwikel.*
+ *Excusés : Frédéric Renault, Frédéric Zwikel.*
 
-### Ordre du jour pour le prochain conseil, mardi 29 octobre à 21h, en visio sur https://cloud.foopgp.org/call/4du5irxe
+### Ordre du jour pour le prochain conseil, mardi 12 novembre à 21h, en visio sur https://cloud.foopgp.org/call/4du5irxe
 
 * Parmi les points habituels, nous discuterons notamment de notre participation au capitole du libre à Toulouse.
 

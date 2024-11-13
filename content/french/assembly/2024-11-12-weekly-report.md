@@ -4,14 +4,18 @@ lang: fr
 date: 2024-11-12T21:00:00+01:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-description : "Compte-rendu du conseil du Mardi soir"
+description : "Compte rendu du conseil du Mardi soir"
 image: "images/logos/logo-black-pgp.png"
 ###categories: [""]
 ###tags: [""]
 type: "meeting"
 ---
 
-*Présents :  Jean-Jacques Brucker, François Revol, Laurent Céard, Henri Geist.*
+*Les comptes rendus précédents sont aussi [sur notre forge git](https://codeberg.org/foopgp/foopgp-hugowebsite/src/commit/d8f056a42a0dfdc097e1e730e97a78d8c3641271/content/french/assembly).*
+
+---
+
+***Présents :**  Jean-Jacques Brucker, François Revol, Laurent Céard, Henri Geist.*
 
 ### Ordre du jour pour le prochain conseil, mardi 19 octobre à 21h, en visio sur https://cloud.foopgp.org/call/4du5irxe
 
@@ -134,8 +138,6 @@ Il a rappelé l'inexistence d'un livre blanc (whitepaper), ce que Jean-Jacques a
 
 ### Agenda
 
-- <https://fete-des-possibles.org/>
-- 9 & 10 novembre 2024 : [États Généreux du revenu de base](https://www.revenudebase.info/etats-genereux-revenu-de-base-2024/) à [Givors (près de Lyon](https://3wr8l.r.ag.d.sendibm3.com/mk/mr/sh/SMJz09SDriOHTC97GRrOKd5e46q2/TmWOD2oYnGLa)) : ANNULÉ (Suite aux intempéries)
 - 16 & 17 novembre 2024 : [Capitole du libre à Toulouse](https://capitoledulibre.org/)
 - mercredi 20 novembre 19h30 : visio Geneviève Bouché - mfrb  <https://www.revenudebase.info/evenements>
 - du 19 au 21 novembre 2024 : [Salon des maires à Paris (porte de Versaille)](https://www.salondesmaires.com/programme-du-salon/)

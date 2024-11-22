@@ -93,10 +93,14 @@ En plus des points habituels :
 - Participation au capitole du libre :
   - notre stand a été très fréquenté
   - Dépenses (frais) : 245.82€ . Recettes : 174.37€ +  5,7 Ɉ
+  - ... dont 89€ de dons -> 11,522814 jetons (Ɉ) crées[^s].
   - 3 nouveaux membres et de nombreux courriels récoltés
   - Conférences suivies par JJ : https://cfp.capitoledulibre.org/cdl-2024/talk/XNE9BG/ + https://cfp.capitoledulibre.org/cdl-2024/talk/LXJWQC/
   - Conférences suivies par Laurent : https://cfp.capitoledulibre.org/cdl-2024/talk/AQDXR7/ + https://cfp.capitoledulibre.org/cdl-2024/talk/Y93WWC/ + https://cfp.capitoledulibre.org/cdl-2024/talk/39MZ3A/ + https://cfp.capitoledulibre.org/cdl-2024/talk/HGW7RS/
   - Conférence animée par François : https://cfp.capitoledulibre.org/cdl-2024/talk/RRBNWX/
+
+[^s]: Pour le mois de novembre, **stingynalty=1.025251253128125**, confer [les paramètres généraux de l’association foopgp
+](/fr/about/rules-parameters/).
 
 #### Actions terminées
 
@@ -136,7 +140,7 @@ Livre blanc commencé :
 - Du 19 au 21 novembre 2024 : [Salon des maires à Paris (porte de Versaille)](https://www.salondesmaires.com/programme-du-salon/)
 - 23 novembre 2024 :  [campus du libre à Lyon](https://www.campus-du-libre.org/)
 - Mercredi 4 & jeudi 5 décembre : [OSX Paris Porte Maillot](https://www.opensource-experience.com/)
-- 27. - 30. December : [CCH Hamburg](https://events.ccc.de/congress/2024/infos/startpage.html)
+- 27 to 30 december : [CCH Hamburg](https://events.ccc.de/congress/2024/infos/startpage.html)
 - Sat. 1 & Sun. 2 February 2025 : [FOSDEM, Brussels](https://fosdem.org/2025/)
 - [... agenda du libre](https://www.agendadulibre.org)
 

@@ -100,9 +100,7 @@ Debian like
 **Copyright:** 2024 Henri GEIST \<<geist.henri@laposte.net>\>\
 **Licence:** CC-BY-SA-4.0+
 
-The last version of this document can always be found at:
-
-<https://codeberg.org/Henri_GEIST/OnlyKey_hardware_token_HowTo/src/branch/master/OnlyKey_hardware_token_HowTo_for_Debian_like.adoc>
+The last version of this document can always be found [on codeberg](//codeberg.org/Henri_GEIST/OnlyKey_hardware_token_HowTo/src/branch/master/OnlyKey_hardware_token_HowTo_for_Debian_like.adoc).
 
 You can find the last prettier *PDF*, *HTML*, *DocBook* and *Markdown*
 release at:
@@ -136,14 +134,10 @@ Bluetooth. But a lot of other solutions exists.
 To do the trick:
 
 1.  Setup an air-gap.
-
 2.  Install the prerequisites from the next section below on it.
-
 3.  Install anything else you think you will need.
-
 4.  **Then never connect your air-gap directly or indirectly to the
     network again. What ever the reason.**
-
 5.  Continue to the next step of this guide.
 
 ## Prerequisites {#_prerequisites}
@@ -392,24 +386,38 @@ internal agent **must** type at a speed your computer can handle.
 
 ### Layout {#_layout}
 
-And select the `KEYBORD_LAYOUT` matching your system configuration in
+And select the `KEYBOARD_LAYOUT` matching your system configuration in
 
-| KEYBORD_LAYOUT | Description     | KEBORD_LAYOUT | Description      |
-|--------------|-------------------|--------------|-------------------|
-| 1            | USA_ENGLISH       | 15           | NORWEGIAN         |
-| 2            | CANADIAN_FRENCH   | 16           | PORTUGUESE        |
-| 3            | CANADIAN_MULTILINGUAL | 17       | PORTUGUESE_BRAZILIAN |
-| 4            | DANISH            | 18           | SPANISH           |
-| 5            | FINNISH           | 19           | SPANISH_LATIN_AMERICA |
-| 6            | FRENCH            | 20           | SWEDISH           |
-| 7            | FRENCH_BELGIAN    | 21           | TURKISH           |
-| 8            | FRENCH_SWISS      | 22           | UNITED_KINGDOM    |
-| 9            | GERMAN            | 23           | US_INTERNATIONAL  |
-| 10           | GERMAN_MAC        | 24           | CZECH             |
-| 11           | GERMAN_SWISS      | 25           | SERBIAN_LATIN_ONLY |
-| 12           | ICELANDIC         | 26           | HUNGARIAN         |
-| 13           | IRISH             | 27           | DANISH MAC        |
-| 14           | ITALIAN           | 28           | US_DVORAK         |
+| KEYBOARD_LAYOUT | Description     |
+|--------------|-------------------|
+| 1            | USA_ENGLISH       |
+| 2            | CANADIAN_FRENCH   |
+| 3            | CANADIAN_MULTILINGUAL |
+| 4            | DANISH            |
+| 5            | FINNISH           |
+| 6            | FRENCH            |
+| 7            | FRENCH_BELGIAN    |
+| 8            | FRENCH_SWISS      |
+| 9            | GERMAN            |
+| 10           | GERMAN_MAC        |
+| 11           | GERMAN_SWISS      |
+| 12           | ICELANDIC         |
+| 13           | IRISH             |
+| 14           | ITALIAN           |
+| 15           | NORWEGIAN         |
+| 16           | PORTUGUESE        |
+| 17           | PORTUGUESE_BRAZILIAN |
+| 18           | SPANISH           |
+| 19           | SPANISH_LATIN_AMERICA |
+| 20           | SWEDISH           |
+| 21           | TURKISH           |
+| 22           | UNITED_KINGDOM    |
+| 23           | US_INTERNATIONAL  |
+| 24           | CZECH             |
+| 25           | SERBIAN_LATIN_ONLY |
+| 26           | HUNGARIAN         |
+| 27           | DANISH MAC        |
+| 28           | US_DVORAK         |
 
 Then type:
 

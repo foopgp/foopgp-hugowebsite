@@ -103,9 +103,7 @@ Debian et dérivées
 **Licence:** CC-BY-SA-4.0+
 
 Ce document est une traduction. La dernière version en anglais est
-toujours disponible sur :
-
-<https://codeberg.org/Henri_GEIST/OnlyKey_hardware_token_HowTo/src/branch/master/OnlyKey_hardware_token_HowTo_for_Debian_like.adoc>
+toujours disponible sur [codeberg](https://codeberg.org/Henri_GEIST/OnlyKey_hardware_token_HowTo/src/branch/master/OnlyKey_hardware_token_HowTo_for_Debian_like.adoc).
 
 Vous pouvez trouver les belles versions *PDF*, *HTML*, *DocBook* et
 *Markdown* sur :
@@ -140,14 +138,10 @@ tas d'autres solutions.
 Pour procéder :
 
 1.  Configurez un *air-gap*.
-
 2.  Installez y les pré requis mentionner dans la section ci-dessous.
-
 3.  Installez y tout ce que vous pensez qui pourrais vous être utiles.
-
 4.  **Puis ne connectez plus jamais votre air-gap directement ou
     indirectement au reséau. Peut importe la raison.**
-
 5.  Passez à la suite du tutoriel.
 
 ## Pré requis {#_pré_requis}
@@ -406,25 +400,39 @@ taper a une vitesse que votre ordinateur peu suivre.
 
 ### Disposition {#_disposition}
 
-Selectionné le `KEYBORD_LAYOUT` correspondant à votre système
-ci-dessous.
+Selectionné le `KEYBOARD_LAYOUT` correspondant à votre système
+ci-dessous :
 
-| KEYBORD_LAYOUT | Description     | KEBORD_LAYOUT | Description      |
-|--------------|-------------------|--------------|-------------------|
-| 1            | USA_ENGLISH       | 15           | NORWEGIAN         |
-| 2            | CANADIAN_FRENCH   | 16           | PORTUGUESE        |
-| 3            | CANADIAN_MULTILINGUAL | 17       | PORTUGUESE_BRAZILIAN |
-| 4            | DANISH            | 18           | SPANISH           |
-| 5            | FINNISH           | 19           | SPANISH_LATIN_AMERICA |
-| 6            | FRENCH            | 20           | SWEDISH           |
-| 7            | FRENCH_BELGIAN    | 21           | TURKISH           |
-| 8            | FRENCH_SWISS      | 22           | UNITED_KINGDOM    |
-| 9            | GERMAN            | 23           | US_INTERNATIONAL  |
-| 10           | GERMAN_MAC        | 24           | CZECH             |
-| 11           | GERMAN_SWISS      | 25           | SERBIAN_LATIN_ONLY |
-| 12           | ICELANDIC         | 26           | HUNGARIAN         |
-| 13           | IRISH             | 27           | DANISH MAC        |
-| 14           | ITALIAN           | 28           | US_DVORAK         |
+| KEYBOARD_LAYOUT | Description     |
+|--------------|-------------------|
+| 1            | USA_ENGLISH       |
+| 2            | CANADIAN_FRENCH   |
+| 3            | CANADIAN_MULTILINGUAL |
+| 4            | DANISH            |
+| 5            | FINNISH           |
+| 6            | FRENCH            |
+| 7            | FRENCH_BELGIAN    |
+| 8            | FRENCH_SWISS      |
+| 9            | GERMAN            |
+| 10           | GERMAN_MAC        |
+| 11           | GERMAN_SWISS      |
+| 12           | ICELANDIC         |
+| 13           | IRISH             |
+| 14           | ITALIAN           |
+| 15           | NORWEGIAN         |
+| 16           | PORTUGUESE        |
+| 17           | PORTUGUESE_BRAZILIAN |
+| 18           | SPANISH           |
+| 19           | SPANISH_LATIN_AMERICA |
+| 20           | SWEDISH           |
+| 21           | TURKISH           |
+| 22           | UNITED_KINGDOM    |
+| 23           | US_INTERNATIONAL  |
+| 24           | CZECH             |
+| 25           | SERBIAN_LATIN_ONLY |
+| 26           | HUNGARIAN         |
+| 27           | DANISH MAC        |
+| 28           | US_DVORAK         |
 
 Puis tapez :
 

@@ -4,7 +4,7 @@ Date:    2024-11-15T01:30:00+02:00
 License: CC-BY-SA-4.0+
 Tags:    [ "gnupg", "security tocken" ]
 categories: [ "Guide" ]
-draft: true
+draft: false
 author: [ "Henri Geist" ]
 description : "OnlyKey hardware token HowTo for
 Debian like"
@@ -16,9 +16,9 @@ type: "post"
 
 *This article should be revised in the light of recent developments within the organization, in particular:*
 
-- *[pgpid](//foopgp.org/solutions/theme-identity/), which is a welcome replacement for [paperkey](/github.com/dmshaw/paperkey/).*
+- *[**pgpid**](//foopgp.org/solutions/theme-identity/), which is a welcome replacement for [paperkey](//github.com/dmshaw/paperkey/).*
 
-- *The gen-passphrase action of the bash-lib [bl-security](//codeberg.org/foopgp/bash-libs/src/branch/main/man/bl-security.1.md), which implements a method comparable to [those of dice](//www.eff.org/dice) and replaces most [diceware programs](//github.com/ulif/diceware).*
+- *The **gen-passphrase** action of the bash-lib [**bl-security**](//codeberg.org/foopgp/bash-libs/src/branch/main/man/bl-security.1.md), which implements a method comparable to [those of dice](//www.eff.org/dice) and replaces most [diceware programs](//github.com/ulif/diceware).*
 
 ---
 
@@ -28,29 +28,18 @@ This is a step by step procedure giving the ordered way to get an
 *OnlyKey* configured and to use it:
 
 -   From the out boxing;
-
 -   Or to restart with an already configured *OnlyKey*;
-
 -   Until it is ready for use with:
-
     -   The *OnlyKey* pseudo keyboard configure for your computer;
-
     -   The brightness of the LED matching your liking;
-
     -   The inactivity lockout delay as you like it;
-
     -   The ability to lock your screen as you like it;
-
     -   A *GPG* private key pair imported in your *OnlyKey* from
         *GnuPG*;
-
     -   The *gpg-agent* configured on your *Debian* like;
-
     -   An *SSH* private key imported in your *OnlyKey* form
         *ssh-keygen*;
-
     -   The *ssh-agent* configured on your *Debian* like;
-
     -   The *GPG* forwarding over *SSH* configured on client and server
         side.
 
@@ -213,7 +202,6 @@ You need to choose some damn fucking good passphrases and pin codes:
 3.  Easy for you to remember because:
 
     -   If you loose them, everything protected by them is also lost.
-
     -   You should keep them in your head an never write them down.
 
 ### Create the *OnlyKey* pin codes. {#_create_the_onlykey_pin_codes}
@@ -268,15 +256,13 @@ needing to type your passphrase so often:
 
 This enable to restart from zero.
 
-::: note
+> Note:
 This is not needed. You can follow this guide and keeping what you
 already have on your *OnlyKey*.
-:::
 
-::: warning
+> WARNING:
 Be sure to have a copy of all important data you will loose in this
 operation.
-:::
 
 Connect the *OnlyKey*:
 
@@ -286,10 +272,9 @@ Connect the *OnlyKey*:
 
 ## Initialise an empty *OnlyKey* {#_initialise_an_empty_onlykey}
 
-::: note
+> Note:
 This will only work on an empty *OnlyKey*. If you have an already
 initialized *OnlyKey* jump to the next section.
-:::
 
 Connect an uninitialised *OnlyKey*, run the command command below and
 follow the instructions.
@@ -310,17 +295,11 @@ particular caution. They should not be accessible only because your
 To enter in the `config` mode:
 
 1.  Plug your *OnlyKey*.
-
 2.  Unlock it with your pin code.
-
 3.  Press the button `6` for more than five seconds.
-
 4.  Release the button `6`.
-
 5.  Check that the *OnlyKey* LED turned off.
-
 6.  Type again your pin code.
-
 7.  Check that the *OnlyKey* LED blink red.
 
 The `config` mode will exit when the *OnlyKey* is unplugged.
@@ -358,15 +337,13 @@ Just after the lines:
                     elif sys.argv[2] == 'HMAC2':
                         slot_id = 129
 
-::: warning
+> WARNING:
 In *Python* the correct number of `spaces` at begin of lines **must** be
 respected.
-:::
 
-::: note
+> Note:
 Depending of your installed version of python the path to the file may
 be a little different.
-:::
 
 Then save the modified file and type:
 
@@ -387,10 +364,9 @@ PASSPHRASE2=""
 
 ### Lock {#_lock}
 
-::: warning
+> WARNING:
 You can not change your mind after this. This operation is definitive
 until complete *OnlyKey* erasure.
-:::
 
 If you want to prevent anyone which can have access to your unlocked
 *OnlyKey* to dump and use for himself a backup of it. You should lock
@@ -418,41 +394,22 @@ internal agent **must** type at a speed your computer can handle.
 
 And select the `KEYBORD_LAYOUT` matching your system configuration in
 
-+--------------+-------------------+--------------+-------------------+
-| KE           | Description       | KE           | Description       |
-| YBORD_LAYOUT |                   | YBORD_LAYOUT |                   |
-+==============+===================+==============+===================+
+| KEYBORD_LAYOUT | Description     | KEBORD_LAYOUT | Description      |
+|--------------|-------------------|--------------|-------------------|
 | 1            | USA_ENGLISH       | 15           | NORWEGIAN         |
-+--------------+-------------------+--------------+-------------------+
 | 2            | CANADIAN_FRENCH   | 16           | PORTUGUESE        |
-+--------------+-------------------+--------------+-------------------+
-| 3            | CANA              | 17           | POR               |
-|              | DIAN_MULTILINGUAL |              | TUGUESE_BRAZILIAN |
-+--------------+-------------------+--------------+-------------------+
+| 3            | CANADIAN_MULTILINGUAL | 17       | PORTUGUESE_BRAZILIAN |
 | 4            | DANISH            | 18           | SPANISH           |
-+--------------+-------------------+--------------+-------------------+
-| 5            | FINNISH           | 19           | SPAN              |
-|              |                   |              | ISH_LATIN_AMERICA |
-+--------------+-------------------+--------------+-------------------+
+| 5            | FINNISH           | 19           | SPANISH_LATIN_AMERICA |
 | 6            | FRENCH            | 20           | SWEDISH           |
-+--------------+-------------------+--------------+-------------------+
 | 7            | FRENCH_BELGIAN    | 21           | TURKISH           |
-+--------------+-------------------+--------------+-------------------+
 | 8            | FRENCH_SWISS      | 22           | UNITED_KINGDOM    |
-+--------------+-------------------+--------------+-------------------+
 | 9            | GERMAN            | 23           | US_INTERNATIONAL  |
-+--------------+-------------------+--------------+-------------------+
 | 10           | GERMAN_MAC        | 24           | CZECH             |
-+--------------+-------------------+--------------+-------------------+
-| 11           | GERMAN_SWISS      | 25           | S                 |
-|              |                   |              | ERBIAN_LATIN_ONLY |
-+--------------+-------------------+--------------+-------------------+
+| 11           | GERMAN_SWISS      | 25           | SERBIAN_LATIN_ONLY |
 | 12           | ICELANDIC         | 26           | HUNGARIAN         |
-+--------------+-------------------+--------------+-------------------+
 | 13           | IRISH             | 27           | DANISH MAC        |
-+--------------+-------------------+--------------+-------------------+
 | 14           | ITALIAN           | 28           | US_DVORAK         |
-+--------------+-------------------+--------------+-------------------+
 
 Then type:
 
@@ -460,32 +417,23 @@ Then type:
 onlykey-cli keylayout $KEYBOARD_LAYOUT
 ```
 
-::: note
+> Note:
 If like me, your keyboard layout is not in the list and/or you use a non
 standard layout in your environment and you still want to to also use
 your *OnlyKey* on other computers nearby you. Then you will have to
 follow the instruction at chapter [Adapt to keyboard
 layout](#_adapt_to_onlykey_keyboard_layout).
-:::
 
 ### Speed {#_speed}
 
 Then select a `KEYBOARD_SPEED` value between `1` and `10`:
 
-+-------------+--------------------------------------------------------+
-| KEY         | Comment                                                |
-| BOARD_SPEED |                                                        |
-+=============+========================================================+
-| 1           | Only to connect to extremely slow 8 bits               |
-|             | microcontroller board.                                 |
-+-------------+--------------------------------------------------------+
+| KEYBOARD_SPEED | Comment                                             |
+|-------------|--------------------------------------------------------|
+| 1           | Only to connect to extremely slow 8 bits microcontroller board. |
 | 4           | Default value. (but damn slow)                         |
-+-------------+--------------------------------------------------------+
-| 7           | Maximum speed supported by my *Raspberry PI Zero*      |
-|             | board.                                                 |
-+-------------+--------------------------------------------------------+
+| 7           | Maximum speed supported by my *Raspberry PI Zero* board |
 | 9           | Maximum speed supported by my *Intel I5* laptop.       |
-+-------------+--------------------------------------------------------+
 
 Find your sweet spot and type:
 
@@ -503,12 +451,11 @@ onlykey-cli storedkeymode  1
 onlykey-cli derivedkeymode 1
 ```
 
-::: note
+> Note:
 This is required if you want to use the SSH or GPG agent as daemons. As
 in this case the random challenge will not be displayed to you. But in
 this case you can not be absolutely certain on what request trigger the
 challenge.
-:::
 
 If you still prefer to type the three random key challenge, type:
 
@@ -536,33 +483,22 @@ gpg --expert --full-generate-key --pinentry-mode loopback
 
 Then answer the questions:
 
-+-----------------------------------+-----------------------------------+
 | Subject                           | Answer                            |
-+===================================+===================================+
+|-----------------------------------|-----------------------------------|
 | Kind of key                       | \(9\) ECC and ECC                 |
-+-----------------------------------+-----------------------------------+
 | Elliptic curve                    | \(1\) Curve 25519                 |
-+-----------------------------------+-----------------------------------+
 | Key expiration                    | As long as you want or even never |
-+-----------------------------------+-----------------------------------+
 | Name                              | First Names LAST NAMES            |
-+-----------------------------------+-----------------------------------+
 | E-mail                            | <your.email@address.com>          |
-+-----------------------------------+-----------------------------------+
-| Comment                           | Usually nothing but what ever you |
-|                                   | want.                             |
-+-----------------------------------+-----------------------------------+
+| Comment                           | Usually nothing but what ever you want |
 
 If you already have some but they are not of `ed25519` type it may be
 time to:
 
 1.  Create some new keys;
-
 2.  Sign them with your old keys;
-
 3.  Publish the public part of them on a key server and/or to your
     peers;
-
 4.  Revoke the old keys and stop using them.
 
 ### export your *GPG* keys {#_export_your_gpg_keys}
@@ -577,10 +513,9 @@ gpg --export $GPG_FINGERPRINT > $GPG_FINGERPRINT.pub
 gpg --export-secret-keys --pinentry-mode loopback $GPG_FINGERPRINT > $GPG_FINGERPRINT.priv
 ```
 
-::: note
+> Note:
 The second command will ask your passphrase but its result is still
 passphrase protected.
-:::
 
 ### Save your *GPG* keys offline {#_save_your_gpg_keys_offline}
 
@@ -619,10 +554,9 @@ copies, and ask some relatives you trust to keep them safe for you. This
 will ensure you do not lost everything in case of fire or robbery at
 your home.
 
-::: note
+> Note:
 Even the paper version is protected by your passphrase and need it to be
 used. Then your relatives can not use it for themselves.
-:::
 
 ### Check recoverability of your printed *GPG* keys {#_check_recoverability_of_your_printed_gpg_keys}
 
@@ -648,9 +582,8 @@ Keep the `$GPG_FINGERPRINT` and choose some empty `$GPG_SIGN_SLOT` and
 flash the keys in and some `$GPG_SIGN_LABEL` and `$GPG_DECIPHER_LABEL`
 mnemonic to recall what is in each slot afterward.
 
-::: note
+> Note:
 Every label can contain a maximum of 16 ASCII characters.
-:::
 
 Then type:
 
@@ -671,13 +604,12 @@ onlykey-cli setkey $GPG_DECIPHER_SLOT label "$GPG_DECIPHER_LABEL"
 
 ## Import *SSH* key {#_import_ssh_key}
 
-::: note
+> Note:
 If you have already imported a *GPG* signing key in previous section you
 can choose to use it also as an *SSH* key and jump directly to the next
 section [Lock your screen and with a
 button](#_lock_your_screen_and_onlykey_with_a_button). If you want to
 import a dedicated key for *SSH* read this section.
-:::
 
 ### Find an *SSH* key to import {#_find_an_ssh_key_to_import}
 
@@ -737,9 +669,8 @@ Chose an `$SSH_SLOT` between `ECC1` and `ECC16` not already used for
 something else, an `$SSH_KEY_FILE` name to load in this slot and an
 `$SSH_KEY_LABEL` to name it. Then type:
 
-::: note
+> Note:
 Every label can contain a maximum of 16 ASCII characters.
-:::
 
 ``` shell
 SSH_KEY_FILE="the same private key file path as previously"
@@ -762,10 +693,9 @@ onlykey-cli lockbutton $LOCK_BUTTON
 Now each time you will touch this button your *OnlyKey* and your screen
 will lock.
 
-::: note
+> Note:
 The chosen button will not be able to supply a password any more as long
 as it is the lock button.
-:::
 
 ## Set inactivity lockout timer {#_set_inactivity_lockout_timer}
 
@@ -790,12 +720,11 @@ onlykey-cli ledbrightness $BRIGHTNESS
 
 # Computer configuration {#_computer_configuration}
 
-::: note
+> Note:
 This do not need to be done on the same computer you used to configure
 Your *OnlyKey*. And more than this, I do recommend to configure your
 *OnlyKey* on an air-gap different from the computer you will use your
 *OnlyKey* on dayly. See the chapter [Use an air-gap](#_use_an_air_gap).
-:::
 
 ## Prerequisites {#_prerequisites_2}
 
@@ -809,12 +738,11 @@ pipx install --system-site-packages onlykey
 . $HOME/.profile
 ```
 
-::: note
+> Note:
 Those install instruction are not exactly the same as the ones given in
 the official *OnlyKey* documentation. *Debian* need `pipx` instead of
 `pip`, one more `sudo` command is needed and some more `` apt` ``
 packages are needed to follow this guide.
-:::
 
 Then set some udev rules to make the OnlyKey device accessible to normal
 users.
@@ -844,10 +772,9 @@ Where `USER_NAME` must be replaced by the user owning the graphical
 session. If you want to configure this for multiple users your can add
 one line per user.
 
-::: note
+> Note:
 If you have initialised the inactivity lockout timer of your *OnlyKey*,
 this will also lock your screen each time your *OnlyKey* lockout itself.
-:::
 
 ## *OnlyKey* *GPG* agent {#_onlykey_gpg_agent}
 
@@ -903,16 +830,14 @@ onlykey-gpg init "$(gpg --show-keys $GPG_FINGERPRINT.pub | grep uid | sed 's/^ui
        --homedir $GNUPGHOME
 ```
 
-::: note
+> Note:
 In case of failure if you want to retry you first need to delete the
 `$GNUPGHOME` you have just created.
-:::
 
-::: warning
+> WARNING:
 But **BE CAREFUL DOUBLE CHECK WHAT YOU WILL DELETE.** If by mistake you
 delete your `$HOME/.gnupg` depending on what it already contain it can
 be a great loss.
-:::
 
 ### Using *OnlyKey* for *GPG* in the current terminal {#_using_onlykey_for_gpg_in_the_current_terminal}
 
@@ -966,10 +891,9 @@ SSH_SLOT="The ECCx slot containing the key to use for SSH"
 onlykey-agent -sk $SSH_SLOT some.user@some.domaine
 ```
 
-::: note
+> Note:
 You can use what ever you want as `some.user@some.domaine`. It as no
 impact. It is just like a comment when the `-sk $SSH_SLOT` is asserted.
-:::
 
 ### Using *OnlyKey* for *SSH* in the current terminal {#_using_onlykey_for_ssh_in_the_current_terminal}
 
@@ -987,26 +911,21 @@ private key you want to use for *SSH* authentification probably `ECC3`
 or maybe `ECC2` if you have chosen to use the same private key for *SSH*
 and *GPG*.
 
-::: note
+> Note:
 The `foo` argument has no purpose with imported keys, it is only use as
 a place holder required by the `onlykey-agent` executable.
-:::
 
 ### Making *OnlyKey* your default *SSH* agent {#_making_onlykey_your_default_ssh_agent}
 
-::: note
+> Note:
 I have planed to add some explanations for non *Systemd* users like
 *Devuan* users as soon as I find a solution.
-:::
 
 If you want to make it permanent and session wide you need to configure
 *Systemd* to run the *OnlyKey* *SSH* agent instead of the standard *SSH*
 agent first create a new user `onlykey-ssh-agent` *Systemd* service:
 
-::: formalpara-title
-**\$HOME/.config/systemd/user/onlykey-ssh-agent.service**
-:::
-
+`$HOME/.config/systemd/user/onlykey-ssh-agent.service` :
 ``` systemd
 [Unit]
 Description = onlykey-agent SSH agent
@@ -1019,24 +938,19 @@ Environment = "PATH=/bin:/usr/bin:/usr/local/bin:%h/.local/bin"
 ExecStart = %h/.local/bin/onlykey-agent --sock-path %t/onlykey-agent/S.ssh -f -sk $SSH_SLOT foo
 ```
 
-::: warning
+> WARNING:
 You need to replace `$SSH_SLOT` at the end of the last line by the real
 `ECC1` to `ECC16` slot containing the key you want to use for *SSH*.
 This will not be substitute automatically.
-:::
 
-::: note
+> Note:
 You may need to first create the directory `$HOME/.config/systemd/user`
 if id does not already exist.
-:::
 
 Then create a new user `onlykey-ssh-agent` *Systemd* socket for this
 service:
 
-::: formalpara-title
-**\$HOME/.config/systemd/user/onlykey-ssh-agent.socket**
-:::
-
+`$HOME/.config/systemd/user/onlykey-ssh-agent.socket` :
 ``` systemd
 [Unit]
 Description = onlykey-agent SSH agent socket
@@ -1108,9 +1022,8 @@ SSH_LOGIN="your ssh login something like 'user@server'"
 gpg --armor --export $GPG_FINGERPRINT | ssh $SSH_LOGIN "bash --login -c 'gpg --import'"
 ```
 
-::: note
+> Note:
 You need to already have a working *SSH* account on the server.
-:::
 
 ### Configure the local machine {#_configure_the_local_machine}
 
@@ -1119,11 +1032,10 @@ the command:
 
     gpgconf --list-dir agent-socket
 
-::: note
+> Note:
 On the classic *gpg-agent* we should look for the `agent-extra-socket`
 to prevent private key leaks. But with *OnlyKey* the normal socket is
 already like the extra socket and there is no extra socket.
-:::
 
 Next, the remote server normal *GPG* agent socket for your user with the
 command:
@@ -1141,9 +1053,7 @@ to connect to, `THE_REMOTE_HOST_GPG_AGENT_NORMAL_SOCKET` and
 `THE_LOCAL_GPG_AGENT_SOCKET` by the socket path you have just found
 above:
 
-::: formalpara-title
-**\$HOME/.ssh/config**
-:::
+`\$HOME/.ssh/config`:
 
 ``` conf
 HOST THE_REMOTE_HOSTNAME
@@ -1178,11 +1088,10 @@ at hand connected on your local machine.
 
 ## Adapt to *OnlyKey* keyboard layout {#_adapt_to_onlykey_keyboard_layout}
 
-::: note
+> Note:
 If the keyboard layout configured in your *OnlyKey* match the keyboard
 layout configured on your computer you can just jump to the next
 section.
-:::
 
 On *Xwindows* it is possible to set individually different keyboard for
 each keyboard. Then even if you use keyboard layout different from the
@@ -1203,9 +1112,7 @@ Then assign it the keyboard layout matching what is configured in your
 *OnlyKey*:
 
 -   \"us\" for standard English US QWERTY keyboard layout
-
 -   \"fr\" for standard French AZERTY keyboard layout
-
 -   and so on ...
 
 By typing:
@@ -1223,9 +1130,7 @@ First create the script below to be called each time your *OnlyKey* is
 plugged. Call it `.$HOME/.local/bin/onlykey_set_layout.sh` and adapt the
 `ONLYKEY_KEYBOARD_LAYOUT` and `ONLYKEY_USER` to your need.
 
-::: formalpara-title
-**\$HOME/.local/bin/onlykey_set_layout.sh**
-:::
+`\$HOME/.local/bin/onlykey_set_layout.sh`:
 
 ``` shell
 #!/bin/sh
@@ -1272,9 +1177,7 @@ chmod u+x $HOME/.local/bin/onlykey_set_layout.sh
 Finally, add the line below to your `/etc/udev/rules.d/49-onlykey.rules`
 file to execute the script each time you plug your *OnlyKey*.
 
-::: formalpara-title
-**/etc/udev/rules.d/49-onlykey.rules**
-:::
+`/etc/udev/rules.d/49-onlykey.rules`:
 
 ``` conf
 ACTION=="add", SUBSYSTEM=="input", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", RUN+="/usr/bin/at -M -f '/home/USER/.local/bin/onlykey_set_layout.sh' now"
@@ -1289,10 +1192,6 @@ If you plane to use the *TOTP* second factor authentication
 functionality of your *OnlyKey* you need to set its internal clock each
 time you plug it in your *USB* port. To do so add those to lines below
 to the `/etc/udev/rules.d/49-onlykey.rules` file.
-
-::: formalpara-title
-**/etc/udev/rules.d/49-onlykey.rules**
-:::
 
 ``` conf
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", RUN+="/usr/local/bin/onlykey-cli settime"

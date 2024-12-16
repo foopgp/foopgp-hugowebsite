@@ -382,7 +382,7 @@ GnuPG 1.x, de son côté, *peut* utiliser l’agent GnuPG (ce qu’il fait autom
 
 
 
-![Architecture de GnuPG pour l’accès aux cartes à puce](http://www.incenp.org/files/misc/2014/gnupg-smartcard-access.svg)
+![Architecture de GnuPG pour l’accès aux cartes à puce](/images/blog/2014/gnupg-smartcard-access.svg)
 
 
 

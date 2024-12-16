@@ -19,7 +19,6 @@ type: "post"
 ---
 
 
-
 Introduction
 ============
 
@@ -459,7 +458,7 @@ Impact des *trust signatures*
 
 Pour illustrer l’impact des *trust signatures* sur la toile de confiance, reprenons à nouveau l’exemple d’une chaîne de certification allant de Alice à David en passant par Bob et Charlie.
 
-![Fig1](https://incenp.org/dvlpt/docs/wot-chains.svg)
+![Fig1](/images/blog/2016/wot-chains.svg)
 
 En absence de *trust signatures*, du point de vue d’Alice seule la clef de Bob est valide (puisqu’elle est certifiée par une clef à confiance ultime, la sienne). Même si Bob a certifié la clef de Charlie, cette dernière restera à validité inconnue tant que Alice n’aura pas explicitement exprimé sa confiance envers Bob. (Il en va de même, *a fortiori*, pour la clef de David.)
 

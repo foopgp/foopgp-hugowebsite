@@ -1,0 +1,1 @@
+../../french/blog/2015-05-17-de-la-gestion-des-clefs-openpgp.md

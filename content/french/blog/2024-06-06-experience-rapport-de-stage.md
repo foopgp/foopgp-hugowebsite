@@ -4,7 +4,7 @@ title: "Résumé de stage"
 date: 2024-06-06T10:30:00+02:00
 draft: false
 bg_image: "/images/blog/2024/bg_stage.jpg"
-description: "Résumé de stage d'Evyn Faure et Maël Lemoine"
+description: "Résumé de stage d'Evyn Faure et de Maël Lemoine"
 lang: fr
 image: "/images/blog/2024/rds.avif"
 author: ["Evyn Faure", "Maël Lemoine"]
@@ -210,3 +210,5 @@ Ce début de stage a été une expérience extrêmement enrichissante pour nous.
 [Evyn](/fr/author/evyn-faure/) : Pendant ce stage, j'ai été impliqué dans diverses missions, comme la modification du site web en utilisant des langages de programmation que je ne connaissais pas auparavant, et aussi la familiarisation avec les clés PGP et tout ce qui y est lié, comme les mails chiffrés, le tout en utilisant Debian, un système d'exploitation que j'avais très peu utilisé. Ce stage m'a permis de développer des compétences essentielles et de mieux comprendre les enjeux de la sécurité informatique.
 
 ---
+
+Si vous souhaitez consulter notre second rapport de stage, cliquez sur le lien suivant : [stage 2](/fr/blog/2025-01-07-experience-rapport-de-stage-2/)

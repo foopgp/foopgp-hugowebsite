@@ -19,5 +19,4 @@ social:
 
 ---
 
-As part of my studies in BTS SIO (Service Informatique aux Organisation), SLAM option, I did my first year internship with the foopgp association.
-
+As part of my studies in the BTS SIO (IT Services for Organizations) program, specializing in SLAM, I completed my first- and second-year internships within the Foopgp association.

@@ -26,7 +26,7 @@ De par la portée de ses spécifications, OpenPGP présente une certaine complex
 Cependant, cette complexité est tout à fait résoluble et aurait déjà été surmontée si
 la technologie ne souffrait pas des freins politico-économiques [identifiés précédemment](../2024-08-15-whitepaper-part1/#construire-des-espaces-de-vie-numérique-privée).
 
-L'association doit donc se doter d'un modèle économique pour financer les
+L'organisation doit donc se doter d'un modèle économique pour financer les
 développements ou évolutions nécessaires à l'adoption en masse des solutions OpenPGP.
 
 Déjà, nous avons développé des outils et processus permettant, pour une
@@ -45,11 +45,11 @@ sont associées[^rappelasym] :
 
 [^rappelasym]: En Informatique, la sécurité repose très souvent sur la cryptographie asymétrique, laquelle nécessite une non-divulgation parfaite du contenu de la partie privée d'une clé asymétrique (eg: RSA, ed25519, etc.), que l'on appelle aussi "clé privée".*
 
-[^passport]: Passeports conformes aux normes ICAO 9303 ou ISO/IEC 7501.
+[^passport]: Passeports conformes aux [normes "MRP"](https://en.wikipedia.org/wiki/Machine-readable_passport), [ICAO 9303](https://www.icao.int/publications/Documents/9303_p1_cons_fr.pdf) ou ISO/IEC 7501.
 
 [^Shamir]: [Partage de clé secrète de Shamir / Wikipedia](https://fr.wikipedia.org/wiki/Partage_de_cl%C3%A9_secr%C3%A8te_de_Shamir).
 
-Le modèle économique de l'association permettra de faire évoluer et
+Le modèle économique de l'organisation permettra de faire évoluer et
 maintenir ces outils et processus.
 
 Il devra aussi permettre de :
@@ -80,7 +80,7 @@ L'organisation foopgp n'a pas de but lucratif. Bien au contraire, l'organisation
 Aussi les donations mesurées en euros (€) devraient être d'abord philanthropiques.
 
 Ensuite, il semble assez évident que ceux qui donnent plus, aient un peu plus
-de pouvoir au sein de l'association. Par contre il semblerait injuste que le rapport
+de pouvoir au sein de l'organisation. Par contre il semblerait injuste que le rapport
 entre don et pouvoir soit proportionnel. En effet, cela reproduirait les
 inégalités que nous cherchons justement à corriger.
 
@@ -120,9 +120,9 @@ Ces jetons de pouvoir seront pris en compte à chaque fois que des décisions
 devront être prises et que les discussions préalables n'ont pu dégager de consensus.
 
 Mais ces jetons de pouvoir pourront aussi être utilisés comme monnaie d'échange
-pour récupérer des produits ou services que l'association a pu construire grâce aux donations.
+pour récupérer des produits ou services que l'organisation a pu construire grâce aux donations.
 
-Sachant que l'association produit déjà des services autour des clés de sécurité
+Sachant que l'organisation produit déjà des services autour des clés de sécurité
 OpenPGP[^YK] [^NK], recycle déjà des ordinateurs portables usagés, et envisage de proposer des serveurs d'auto-hébergement ou des téléphones mobiles "dégoogelisés".
 
 {{< plantuml id="sell" >}}
@@ -259,8 +259,8 @@ sprite $device_usb [128x128/16] {
 }
 
 ' !include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/osa/device_usb/device_usb-sprite.puml
-!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/osa/mobile/pda/pda-sprite.puml
-!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/osa/laptop/laptop-sprite.puml
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/463b4212d94df93301454fca0551432ae0d32e19/stdlib/osa/mobile/pda/pda-sprite.puml
+!include https://raw.githubusercontent.com/plantuml/plantuml-stdlib/463b4212d94df93301454fca0551432ae0d32e19/stdlib/osa/laptop/laptop-sprite.puml
 
 actor "customer member" as mb1
 actor "customer member" as mb2
@@ -419,7 +419,7 @@ sprite $device_usb [128x128/16] {
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 }
 
-' !include http://test.foopgp.org/puml/device_usb-sprite.puml
+' !include https://foopgp.org/puml/device_usb-sprite.puml
 left to right direction
 actor "customer member" as mb1
 rectangle foopgp {
@@ -432,7 +432,7 @@ wm1 --> mb1 : <$device_usb>
 À la différence notable que ce client aura cédé de son pouvoir décisionnel au sein de
 l'organisation, aux membres travailleurs qui lui ont vendu le service.
 
-Et que, étant donné la fonction logarithmique décrite dans l'article 4 du règlement intérieur[^RI4], le prix en euros des produits ou services sera exponentiel dès lors qu'il voudra
+Et que, étant donné la fonction logarithmique décrite dans l'article 4 du règlement intérieur[^RI4], le prix en euros (€) des produits ou services sera exponentiel dès lors qu'il voudra
 acheter plusieurs produits ou services
 
 ... à moins que le client ait lui-même des produits ou services à vendre en jetons (Ɉ) aux autres membres.
@@ -446,7 +446,7 @@ notion de pénalité à la pingrerie, autrement dit d'incitation à la généros
 appelée *stingynalty*.
 
 Ce facteur se doit évidemment d'être supérieur à celui de l'inflation de la monnaie à
-cours légal dans la zone prépondérante d'activité de l'association.
+cours légal dans la zone prépondérante d'activité de l'organisation.
 
 Ainsi les enthousiastes qui investissent dès maintenant dans notre projet d'intérêt
 général pour un monde plus durable, seront plus récompensés que les indécis qui
@@ -460,18 +460,18 @@ de faire prendre à nos jetons (Ɉ), trop de valeur par rapport à la monnaie à
 une bulle spéculative. Ce qui serait à moyen terme fatal pour le projet.
 
 Pour éviter cela nous avons doté notre système d'un mécanisme de création
-périodique, sans aucun privilège, décrit à l'article 5 du règlement
+périodique, sans aucun privilège, décrit dans l'article 5 du règlement
 intérieur[^RI5] : la quantité de jetons croît donc périodiquement d'un pourcentage prédéfini et
 ajustable si nécessaire. Ce pourcentage est appelé *growth*. Les jetons créés sont alors distribués équitablement à
 l'ensemble des personnes physiques membres.
 
 Cependant, afin que nos jetons demeurent plus rares et d'une valeur légèrement
-supérieure à celle de la monnaie à cours légal. Il semble important que la croissance
+supérieure à celle de la monnaie à cours légal. **Il semble important que la croissance
 prédéfinie de la quantité de jetons demeure inférieure ou égale à l'incitation à
-la générosité. En d'autres termes, il semble pertinent de maintenir :
+la générosité**. En d'autres termes, il semble pertinent de maintenir :
 ***growth* < *stingynalty***
 
-[^RI4bis]: Suivant l'article 4 du règlement intérieur, la formule est de la
+[^RI4bis]: Suivant [l'article 4 du règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/#article-4---modalit%C3%A9s-relatives-aux-jetons-de-pouvoir-confer-article-10bis-des-statuts), la formule est de la
     forme : **Ɉ = log₂(€+1) / *stingynalty***
 
 [^RI5]: https://foopgp.org/fr/about/rules-of-procedures/#article-5--%C3%A9mission-universelle-de-nouveaux-jetons-confer-article-10bis-des-statuts
@@ -497,7 +497,7 @@ membres.
 [^Brazil]: Choisir ne demande aucune intelligence particulière : {{< video src="/videos/Brazil Executive decision maker_360P.mp4" type="video/mp4" >}}
 
 Tout problème, une fois rationalisé dans son environnement, ne comporte qu'une
-est une seule "meilleure décision".
+et une seule "meilleure décision".
 
 Toute la difficulté réside dans la rationalisation des problèmes, la mise en
 accord sur ces rationalisations, et l'acceptation que, malgré les efforts, toute rationalisation
@@ -506,7 +506,7 @@ ne sera jamais qu'une approximation imparfaite.
 Cela nécessite de la transparence, de l'écoute, de la bienveillance et de
 l'intelligence.[^Values]
 
-[^Values]: Les valeurs inscrites dans nos statuts sont justement : la transparence, la proximité
+[^Values]: Les valeurs inscrites dans [nos statuts](https://foopgp.org/fr/about/status/) sont justement : la transparence, la proximité
 (qui induit l'écoute), la bienveillance, et la coopération (qui induit l'intelligence collective).
 
 Pour cela nous nous appuyons sur les recherches en intelligence collective[^IC2].
@@ -518,7 +518,7 @@ Pour cela nous nous appuyons sur les recherches en intelligence collective[^IC2]
 Les décisions sont prises dans un premier temps par recherche du consentement, au sein de conseils dont les
 réunions sont ouvertes à tous les membres.
 
-Le conseil d'administration de l'association se réunit par visioconférence chaque semaine.
+Le conseil d'administration de l'organisation se réunit par visioconférence chaque semaine.
 
 Certaines décisions ou responsabilités bien définies peuvent être déléguées à certains
 conseils ou rôles secondaires bien définis.
@@ -546,11 +546,11 @@ projet Debian[^DebianVote] pour mener à bien ces consultations.
 À la différence du projet Debian, l'organisation utilisera cependant les jetons
 de pouvoirs afin de calculer le nombre de voix de chacun.
 
-Au commencement, ces jetons servent à récompenser ceux qui donnent des valeurs mesurées en euros.
+Au commencement, ces jetons servent à récompenser ceux qui donnent des valeurs mesurées en euros (€).
 
 Puis au fur et à mesure que ces jetons seront utilisés comme monnaie d'échange
 au sein de l'organisation, ils récompenseront ceux qui vendent des
-valeurs mesurées en jetons.
+valeurs mesurées en jetons (Ɉ).
 
 Or nous n'avons pas tous les mêmes capacités à vendre ou à produire des valeurs échangeables.
 
@@ -561,21 +561,21 @@ Si la voie des communs peut permettre de réduire les inégalités de propriét�
 C'est une voie encore très longue et incertaine. Sur laquelle donc nous ne pouvons
 compter assurément.
 
-D'autre part toute tentative de réduire les inégalités naturelles semble au
+D'autre part toute tentative d'effacer les inégalités naturelles semble au
 mieux vouée à l'échec, au pire totalitaire.
 
 Si il peut sembler logique que ceux qui produisent et vendent davantage,
-puissent avoir plus de pouvoir décisionnels, il est nécessaire de
+puissent avoir plus de pouvoir décisionnel, il est nécessaire de
 * savoir que la mesure, en jetons (Ɉ) comme en euros (€) dépendra toujours d'échelles de valeurs
 subjectives, imparfaites et incomplètes.
 * d'essayer de prendre en compte, l'ensemble des inégalités de fait.
 
 Pour répondre à ce problème nous avons mis en place le concept de vote
-polynomial, décrit à l'article 8 du règlement intérieur[^RI8].
+polynomial, décrit dans l'article 8 du règlement intérieur[^RI8].
 
-Dans un souci d'équité, l'exposant de pouvoir *sharp* décrit à l'article 8 du règlement
-intérieur[^RI8], devra donc être diminué progressivement au fur et à mesure
-que les jetons de pouvoir sont utilisés comme monnaie d'échange, jusqu'à tendre vers zéro
+Dans un souci d'équité, **l'exposant de pouvoir *sharp*** décrit dans l'article 8 du règlement
+intérieur[^RI8], **devra donc être diminué progressivement au fur et à mesure
+que les jetons de pouvoir sont utilisés comme monnaie d'échange**, jusqu'à tendre vers zéro
 si nécessaire pour contrebalancer des inégalités qui perdureraient.
 
 [^RI8]: https://foopgp.org/fr/about/rules-of-procedures/#article-8--lissage-polynomial-des-quantit%C3%A9es-de-pouvoir-confer-article-10bis-des-statuts
@@ -597,7 +597,7 @@ démocratique, elles sont obligatoires. Les membres qui s'y soustraient perdent
 leur statut de membre actif, autrement dit :
 * leur pouvoir décisionnel, c'est-à-dire leur droit à s'exprimer lors des
   consultations.
-* leur part de jetons créés par le mécanisme décrit à l'article 5 du règlement intérieur[^RI5].
+* leur part de jetons créés par le mécanisme décrit dans l'article 5 du règlement intérieur[^RI5].
 * leurs éventuels rôles ou bénéfices au sein de l'organisation.
 
 S'y soustraire est cependant obligatoire en cas de décès. Si une activité semble

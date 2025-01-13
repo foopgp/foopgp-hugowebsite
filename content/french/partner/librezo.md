@@ -5,7 +5,7 @@ draft: false
 bg_image: "images/backgrounds/page-title.jpg"
 description : "Solutions d'auto-hébergement"
 image: "images/partners/logoliobrezo2cwhite-200x200.png"
-course: "Entreprise"
+course: "Association"
 bio : "Services informatiques"
 interest: ["Auto-hébergement", "Debian", "NextCloud"] 
 contact:

@@ -5,7 +5,7 @@ draft: false
 bg_image: "images/backgrounds/page-title.jpg"
 description : "Self-hosting solutions"
 image: "images/partners/logoliobrezo2cwhite-200x200.png"
-course: "Company"
+course: "Association"
 bio : "IT services"
 interest: ["Self-hosting", "Debian", "NextCloud", "Odoo"]
 contact:

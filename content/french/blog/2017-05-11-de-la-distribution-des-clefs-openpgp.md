@@ -1,5 +1,4 @@
 ---
-#Lastmod: 2021-02-01T18:01:47+01:00 # MANAGED by --enableGitInfo
 #URL:     https://linuxfr.org/users/gouttegd/journaux/de-la-distribution-des-clefs-openpgp
 Title:   De la distribution des clefs OpenPGP
 Authors: gouttegd

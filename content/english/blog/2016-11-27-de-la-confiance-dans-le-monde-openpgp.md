@@ -1,0 +1,1 @@
+../../french/blog/2016-11-27-de-la-confiance-dans-le-monde-openpgp.md

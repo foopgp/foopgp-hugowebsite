@@ -1,0 +1,1 @@
+../../french/event/2024-11-16-capitole-toulouse.md

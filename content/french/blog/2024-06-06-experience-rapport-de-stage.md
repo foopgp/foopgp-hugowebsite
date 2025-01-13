@@ -1,5 +1,4 @@
 ---
-#Lastmod: 2024-07-03T10:36:30+02:00 # MANAGED by --enableGitInfo
 title: "Résumé de stage"
 date: 2024-06-06T10:30:00+02:00
 draft: false

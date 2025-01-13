@@ -1,5 +1,4 @@
 ---
-#Lastmod: 2024-07-03T10:36:30+02:00 # MANAGED by --enableGitInfo
 title: "Internship Summary"
 date: 2024-06-06T10:30:00+02:00
 draft: false
@@ -211,3 +210,5 @@ This early stage of our internship has been an extremely enriching experience fo
 [Evyn](/fr/author/evyn-faure/): During this internship, I was involved in various tasks, such as modifying the website using programming languages I was unfamiliar with, and getting acquainted with PGP keys and related aspects like encrypted emails, all while using Debian, an operating system I had barely used before. This internship allowed me to develop essential skills and better understand the challenges of computer security.
 
 ---
+
+If you would like to read our second internship report, click on the following link: [internship 2](/blog/2025-01-07-experience-rapport-de-stage-2/)

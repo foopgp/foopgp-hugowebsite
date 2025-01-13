@@ -1,8 +1,7 @@
 ---
-#Lastmod: 2024-07-03T10:36:30+02:00 # MANAGED by --enableGitInfo
 title: "Résumé du second stage"
 date: 2025-01-07T10:30:00+02:00
-draft: false
+draft: true
 bg_image: "/images/blog/2024/bg_stage.jpg"
 description: "Résumé du second stage d'Evyn Faure et de Maël Lemoine"
 lang: fr

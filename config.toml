@@ -82,15 +82,9 @@ hasChildren = true
 
   [[menu.main]]
   parent = "about"
-  name = "donate"
-  URL = "about/donate"
-  weight = 5
-
-  [[menu.main]]
-  parent = "about"
-  name = "contact"
-  URL = "contact"
-  weight = 6
+  name = "white book"
+  URL = "about/white-book"
+  weight = 4
 
 [[menu.main]]
 name = "solutions"

@@ -81,3 +81,6 @@
 
 - id: Hardware
   translation: Materiels 
+
+- id: "white book"
+  translation: "livre blanc"

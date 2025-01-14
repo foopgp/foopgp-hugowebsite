@@ -220,6 +220,7 @@ link = "mailto:info@foopgp.org"
 title = "contribute"
 icon = "ti-codeberg" # themify icon : https://themify.me/themify-icons
 link = "https://codeberg.org/foopgp"
+target="_blank"
 
 [[params.social]]
 title = "donate"
@@ -230,11 +231,13 @@ link = "/about/donate"
 title = "follow us"
 icon = "ti-bluesky" # themify icon : https://themify.me/themify-icons
 link = "https://twitter.com/foopgp"
+target="_blank"
 
 [[params.social]]
 title = "join us"
 icon = "ti-comments" # themify icon : https://themify.me/themify-icons
 link = "https://framalistes.org/sympa/info/foopgp"
+target="_blank"
 
 ################################### English language #####################################
 [Languages.en]

@@ -18,5 +18,4 @@ social:
     link : "/keys/OpenPGP_0x93BFA79156DCA5328B65F272AEC4DE20717E5094.asc"
 ---
 
-Dans le cadre de mes études en BTS SIO (Service Informatique aux Organisation), option SLAM, j'ai fait mon stage de première année dans l'association foopgp.
-
+Dans le cadre de mes études en BTS SIO (Services Informatiques aux Organisations), option SLAM, j'ai effectué mes stages de première et de deuxième année au sein de l'association Foopgp.

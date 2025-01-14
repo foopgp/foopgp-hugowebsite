@@ -64,3 +64,20 @@
 - id: vote
   translation: vote
 
+- id : "our offer"
+  translation: "notre offre"
+
+- id: Advice
+  translation: Conseils
+
+- id: Training
+  translation: Formations
+
+- id: "Token Ɉ"
+  translation: "Jetons Ɉ"
+
+- id: Software
+  translation: Logiciels
+
+- id: Hardware
+  translation: Materiels 

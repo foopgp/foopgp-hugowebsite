@@ -32,21 +32,11 @@ $ ln -s ../../english/blog/1970-01-01-my-first-article.md
 
 You should use a text editor that supports [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax (e.g., [vim](https://www.vim.org/), etc.).
 
-Then, you need to install [hugo](https://github.com/gohugoio/hugo/releases).
-
-Once installed, run the following command:
-
-```bash
-$ hugo server -D
-```
-
-This tells Hugo to generate the static website and run it on your [localhost](https://en.wikipedia.org/wiki/Localhost), with draft pages enabled.
-
-
-### Clone the repository:
+### Clone the repository and its theme submodule:
 ```bash
 git clone https://codeberg.org/foopgp/foopgp-hugowebsite.git
 cd foopgp-hugowebsite
+git submodule update --init --recursive themes
 ```
 
 ### Install Hugo (if necessary):
@@ -57,8 +47,9 @@ sudo apt install hugo
 
 ### Start the local server:
 ```bash
-hugo server -D
+hugo server --buildDrafts
 ```
+This tells Hugo to generate the static website and run it on your [localhost](https://en.wikipedia.org/wiki/Localhost), with draft pages enabled.
 
 ### Configure your environment
 
@@ -68,15 +59,9 @@ git config --global url.git@codeberg.org:.pushInsteadOf https://codeberg.org/
 git config --global commit.gpgsign true
 ```
 
-#### Add the two lines to replace the SSH agent with the GPG agent:
+#### Add two lines to your `~/.bashrc` to replace the SSH agent with the GPG agent:
 ```bash
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 ```
 
-### Modify the content and commit the changes:
-```bash
-git add .
-git commit -m "Your commit message"
-git push
-``` 

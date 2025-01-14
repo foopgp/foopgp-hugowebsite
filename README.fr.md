@@ -38,33 +38,26 @@ inversement.
 Vous devez utiliser un éditeur de texte qui prend en charge la syntaxe [Markdown](https://fr.wikipedia.org/wiki/Markdown)
 ([vim](https://www.vim.org/), etc.)
 
-Ensuite, vous devez installer [hugo](https://github.com/gohugoio/hugo/releases).
-
-Ensuite, vous devez exécuter la commande suivante :
-
-> $ hugo server -D
-
-Cela indique à Hugo de générer le site statique et de le faire fonctionner sur votre
-[localhost](https://fr.wikipedia.org/wiki/Localhost), avec les pages de brouillon
-activées.
-
-
-### Cloner le dépôt :
+### Cloner le dépôt et son sous-module de theme :
 ```bash
 git clone https://codeberg.org/foopgp/foopgp-hugowebsite.git
 cd foopgp-hugowebsite
+git submodule update --init --recursive themes
 ```
 
-### Installer Hugo (si nécessaire) : 
+### Installer Hugo (si nécessaire) :
 ```bash
 sudo apt update
 sudo apt install hugo
 ```
 
-### Lancer le serveur local :
+### Lancer un serveur local :
 ```bash
-hugo server -D
+hugo server --buildDrafts
 ```
+Cela indique à Hugo de générer le site statique et de le faire fonctionner sur votre
+[localhost](https://fr.wikipedia.org/wiki/Localhost), avec les pages de brouillon
+activées.
 
 ### Configurer votre environement
 
@@ -74,15 +67,9 @@ git config --global url.git@codeberg.org:.pushInsteadOf https://codeberg.org/
 git config --global commit.gpgsign true
 ```
 
-#### Ajouter les deux lignes pour remplacer l'agent SSH par l'agent GPG:
+#### Ajouter ces deux lignes dans votre `~/.bashrc` pour remplacer l'agent SSH par l'agent GPG:
 ```bash
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-gpgconf --launch gpg-agent 
+gpgconf --launch gpg-agent
 ```
 
-### Modifier le contenu et valider les changements :
-```bash
-git add .
-git commit -m "Votre message de commit"
-git push
-```

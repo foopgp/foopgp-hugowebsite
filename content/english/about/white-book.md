@@ -1,8 +1,6 @@
 ---
-#Lastmod: 2021-02-01T18:01:47+01:00 # MANAGED by --enableGitInfo
-title: "Livre Blanc"
+title: "White Book"
 lang: en
-#date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 Description: "About the White Paper"  

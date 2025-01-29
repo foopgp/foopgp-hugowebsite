@@ -9,21 +9,24 @@ categories: ["about"]
 type: "post"
 ---
 
-### Introduction au Livre Blanc : Reconstruire l’Internet dont nous rêvions
+### Synopsis
 
-Internet, autrefois symbole d’une utopie collective promettant liberté, égalité et partage des savoirs, s’est progressivement transformé en un outil de surveillance, de manipulation et de surconsommation. En 2024, il est clair que l’idéal originel a été détourné par des régies publicitaires et des modèles économiques dictés par la quête de croissance à tout prix.
+Internet, autrefois symbole d’une utopie collective promettant liberté, égalité
+et partage des savoirs, s’est progressivement transformé en un outil de
+surveillance, de manipulation et de surconsommation.
 
-Le livre blanc Reconstruire l’Internet dont nous rêvions explore trois axes fondamentaux pour remédier à cette dérive :
+Aujourd'hui, il est clair que l’idéal originel a été détourné par des régies publicitaires et des modèles
+économiques dictés par la quête de croissance à tout prix.
 
-1. Créer des espaces de vie numérique privés, protégés de la marchandisation des données et des intrusions publicitaires.
-2. Repenser le système monétaire et économique, afin de désacraliser la croissance et réduire les inégalités.
-3. Développer une gouvernance axée sur les communs, inspirée des principes du logiciel libre et des ressources partagées.
+Lesquels ne sont pas sans conséquences sur la viabilité de notre humanité sur cette petite planète.
 
-Ce livre blanc propose des solutions concrètes pour un Internet plus juste, durable et respectueux des individus. Découvrez comment la technologie OpenPGP et des modèles économiques innovants peuvent transformer notre façon de vivre et de collaborer dans le monde numérique.
+### Livre Blanc
 
+Le [livre blanc de notre organisation](/fr/blog/2024-08-15-whitepaper-part1/) se décompose en trois parties :
 
-[Livre Blanc - Partie 1](/fr/blog/2024-08-15-whitepaper-part1/)
+- [1ère partie](/fr/blog/2024-08-15-whitepaper-part1/) : Où nous diagnostiquons cette dérive et proposons trois axes fondamentaux pour y remédier.
+- [2ème partie](/fr/blog/2024-09-01-whitepaper-part2/) : Où nous présentons nos solutions fonctionnelles en rapport à ces axes, et expliquons notre règlement intérieur
+- 3ème partie : (non publiée) Où nous présenterons nos solutions techniques, et comment elles s'appuient sur OpenPGP.
 
-[Livre Blanc - Partie 2](/fr/blog/2024-09-01-whitepaper-part2/)
- 
-[Livre Blanc - Partie 3](/fr/blog/2024-09-01-whitepaper-part2/)
+Ce livre blanc propose des solutions concrètes pour un Internet plus juste, durable et respectueux des individus. Vous y découvrirez comment la technologie OpenPGP et des systèmes monétaires innovants peuvent transformer notre façon de vivre et de coopérer dans le monde d'aujourd'hui.
+

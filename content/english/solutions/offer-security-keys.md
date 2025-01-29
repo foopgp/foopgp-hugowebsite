@@ -1,7 +1,7 @@
 ---
 title: "Security Keys"
 draft: false
-bg_image: "images/backgrounds/puzzle.jpg"
+bg_image: "images/solutions/OpenPGPkeys.jpg"
 description : "Our offer concerning hardware security keys"
 ---
 

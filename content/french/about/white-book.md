@@ -2,7 +2,7 @@
 title: "Livre Blanc"
 lang: fr
 draft: false
-bg_image: "images/backgrounds/puzzle.jpg"
+bg_image: "images/backgrounds/world.jpg"
 description : "À propos du Livre blanc"
 image: "images/solutions/signature.png"
 categories: ["about"]

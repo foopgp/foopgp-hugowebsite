@@ -67,6 +67,9 @@
 - id : "our offer"
   translation: "notre offre"
 
+- id : "our activities"
+  translation: "nos activités"
+
 - id: Advice
   translation: Conseils
 
@@ -77,10 +80,16 @@
   translation: "Jetons Ɉ"
 
 - id: Software
-  translation: Logiciels
+  translation: Logiciel
+
+- id : "security keys"
+  translation: "clés de sécurité"
+
+- id : "computers"
+  translation: "ordinateurs"
 
 - id: Hardware
-  translation: Materiels 
+  translation: Materiel
 
 - id: "white book"
   translation: "livre blanc"

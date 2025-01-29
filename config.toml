@@ -134,36 +134,36 @@ weight = 2
   weight = 7
 
 [[menu.main]]
-name = "our offer"
+name = "our activities"
 hasChildren = true
-URL = "our offer "
+URL = "solutions"
 weight = 3
   [[menu.main]]
-    parent = "our offer"
-    name = "Advice"
-    URL = "solutions/offer-advice"
+    parent = "our activities"
+    name = "R&D"
+    URL = "solutions/activity-rd"
     weight = 1
 
   [[menu.main]]
-    parent = "our offer"
+    parent = "our activities"
     name = "Training"
-    URL = "/course"
+    URL = "course"
     weight = 2
- 
+
   [[menu.main]]
-    parent = "our offer"
-    name = "Software"
-    URL = "solutions/offer-software"
+    parent = "our activities"
+    name = "security keys"
+    URL = "solutions/offer-security-keys"
     weight = 3
 
-  [[menu.main]]
-    parent = "our offer"
-    name = "Hardware"
-    URL = "solutions/offer-hardware"
-    weight = 4
+#  [[menu.main]]
+#    parent = "our activities"
+#    name = "computers"
+#    URL = "solutions/offer-computers"
+#    weight = 4
 
   [[menu.main]]
-    parent = "our offer"
+    parent = "our activities"
     name = "Token Ɉ"
     URL = "about/donate"
     weight = 5

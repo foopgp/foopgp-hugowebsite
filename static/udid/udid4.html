@@ -1227,17 +1227,15 @@ function generateudid2() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
- // Fonction pour récupérer les paramètres de l'URL
  function getQueryParam(param) {
  const urlParams = new URLSearchParams(window.location.search);
  return urlParams.get(param);
  }
 
- // Vérifier si "lang=fr" est dans l'URL
  const lang = getQueryParam("lang");
  if (lang && lang.toLowerCase() === "fr") {
- document.getElementById("language").value = "fr"; // Sélectionner FR dans la liste déroulante
- translatePage("fr"); // Appliquer la traduction en français
+ document.getElementById("language").value = "fr";
+ translatePage("fr");
  }
 });
 
@@ -1245,132 +1243,221 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
  
 <style type="text/css">
- body {
- background-color: #2C284B;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- color: #f4f7fc;
- text-align: center;
- margin: 0;
- padding: 0;
- margin-bottom: 20px; /* Ajout d'une marge en bas de la page */
+    body {
+        background-color: #2C284B;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #f4f7fc;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+        color: #FF7F00;
+        margin-top: 1em;
+        font-weight: 700;
+        font-size: 1.6em;
+    }
+
+    .info {
+        color: #f4f7fc;
+        font-size: 0.9em;
+        margin-top: 1em;
+    }
+
+    .centered {
+        display: inline-block;
+        padding: 2em;
+        background-color: #3f3757;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: 2em;
+        max-width: 700px;
+        width: 90%; /* Change width to 90% for better responsiveness */
+    }
+
+    table {
+        width: 100%;
+        margin-top: 1em;
+        border-spacing: 0;
+    }
+
+    td {
+        padding: 0.8em 0;
+        text-align: left;
+        font-size: 1em;
+        color: #f4f7fc;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 0.8em;
+        font-size: 1em;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        margin-bottom: 1em;
+        background-color: #2C284B;
+        color: #f4f7fc;
+    }
+
+    input[type="button"], input[type="submit"] {
+        background-color: #FF7F00;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    input[type="button"]:hover, input[type="submit"]:hover {
+        background-color: #E06D00;
+    }
+
+    .secondary {
+        background-color: #3f3757;
+        color: #f4f7fc;
+        border: 1px solid #ddd;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .inputcell {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .info a {
+        color: #FF7F00;
+        text-decoration: none;
+    }
+
+    .info a:hover {
+        text-decoration: underline;
+    }
+
+    #generated input {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #3f3757;
+        border: 1px solid #ddd;
+        padding: 0.8em;
+        width: 80%;
+        margin-top: 1em;
+        color: #f4f7fc;
+    }
+
+    #footer {
+        margin-top: 3em;
+        font-size: 0.8em;
+        color: #f4f7fc;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        width: 110px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .birth-date-container {
+    display: flex;
+    gap: 10px; /* Espacement entre les éléments */
+    align-items: center;
 }
 
- h1, h2, h3 {
- color: #FF7F00; /* Utilisation de l'orange vif pour les titres */
- margin-top: 1em;
- font-weight: 700;
- font-size: 1.6em;
- }
+#day, #month, #year {
+    width: auto; /* Assure que chaque élément garde sa largeur naturelle */
+    max-width: 100px; /* Limite la largeur de chaque champ */
+}
 
- .info {
- color: #f4f7fc; /* Texte informatif dans une couleur claire */
- font-size: 0.9em;
- margin-top: 1em;
- }
+    #location {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
 
- .centered {
- display: inline-block;
- padding: 2em;
- background-color: #3f3757; /* Utilisation d'un gris/mauve légèrement plus clair pour le fond de la section */
- border-radius: 8px;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- margin-top: 2em;
- max-width: 700px;
- width: 100%;
- }
+    .language-switcher {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
 
- table {
- width: 100%;
- margin-top: 1em;
- border-spacing: 0;
- }
+    #language {
+        max-width: 200px;
+        text-align: center;
+    }
 
- td {
- padding: 0.8em 0;
- text-align: left;
- font-size: 1em;
- color: #f4f7fc; /* Texte des champs dans une couleur claire */
- }
+    #day {
+        max-width: 80px;
+    }
 
- input, select {
- width: 100%;
- padding: 0.8em;
- font-size: 1em;
- border-radius: 4px;
- border: 1px solid #ddd;
- margin-bottom: 1em;
- background-color: #2C284B; /* Fond sombre pour les champs */
- color: #f4f7fc; /* Texte clair dans les champs */
- }
+    #month {
+        max-width: 150px;
+    }
 
- input[type="button"], input[type="submit"] {
- background-color: #FF7F00; /* Orange vif pour les boutons */
- color: white;
- font-weight: bold;
- cursor: pointer;
- transition: background-color 0.3s;
- }
+    @media (max-width: 768px) {
+        .centered {
+            padding: 1.5em;
+        }
 
- input[type="button"]:hover, input[type="submit"]:hover {
- background-color: #E06D00; /* Survol plus sombre de l'orange */
- }
+        .image-container {
+            flex-direction: column;
+            gap: 20px;
+        }
 
- .secondary {
- background-color: #3f3757; /* Fond gris/mauve clair pour les boutons secondaires */
- color: #f4f7fc;
- border: 1px solid #ddd;
- }
+        table {
+            width: 100%;
+            margin-top: 1em;
+        }
 
- .hidden {
- display: none;
- }
+        .birth-date-container {
+            flex-direction: column;
+            gap: 5px;
+        }
 
- .inputcell {
- padding-left: 20px;
- padding-right: 20px;
- }
- 
+        #day, #month {
+            width: 100%;
+        }
 
- .info a {
- color: #FF7F00; /* Lien orange vif */
- text-decoration: none;
- }
+        .inputcell {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
- .info a:hover {
- text-decoration: underline;
- }
+        #language {
+            width: 100%;
+            max-width: 100%;
+        }
 
- #generated input {
- font-family: 'Courier New', Courier, monospace;
- background-color: #3f3757; /* Fond gris/mauve clair pour le champ généré */
- border: 1px solid #ddd;
- padding: 0.8em;
- width: 80%;
- margin-top: 1em;
- color: #f4f7fc; /* Texte clair dans le champ généré */
- }
+        input[type="button"], input[type="submit"] {
+            width: 100%;
+        }
+    }
 
- #footer {
- margin-top: 3em;
- font-size: 0.8em;
- color: #f4f7fc;
- }
+    @media (max-width: 480px) {
+        h1, h2, h3 {
+            font-size: 1.2em;
+        }
 
- .image-container {
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 40px;
- margin-top: 20px;
- }
+        .centered {
+            padding: 1em;
+        }
 
- .image-container img {
- width: 110px; 
- height: auto;
- cursor: pointer;
- }
-
+        input, select {
+            font-size: 0.9em;
+        }
+    }
 </style>
+
+
 <body style="text-align:center">
  <div class="image-container">
  <a href="http://foopgp.org/" target="_blank">
@@ -1391,6 +1478,7 @@ document.addEventListener("DOMContentLoaded", () => {
  <option value="it">Italiano</option>
  <option value="es">Español</option>
  <option value="de">Deutsch</option>
+ <option value="ua">українська</option>
 
  </select>
  </div>
@@ -1408,60 +1496,64 @@ document.addEventListener("DOMContentLoaded", () => {
  </td>
  </tr>
  <tr>
- <td>Your birth date:</td>
- <td class="inputcell">
- <select title="The day of the month in which you were born (1-31)" id="day" name="day">
- <option value="">Day</option>
- <option value="01">1</option>
- <option value="02">2</option>
- <option value="03">3</option>
- <option value="04">4</option>
- <option value="05">5</option>
- <option value="06">6</option>
- <option value="07">7</option>
- <option value="08">8</option>
- <option value="09">9</option>
- <option value="10">10</option>
- <option value="11">11</option>
- <option value="12">12</option>
- <option value="13">13</option>
- <option value="14">14</option>
- <option value="15">15</option>
- <option value="16">16</option>
- <option value="17">17</option>
- <option value="18">18</option>
- <option value="19">19</option>
- <option value="20">20</option>
- <option value="21">21</option>
- <option value="22">22</option>
- <option value="23">23</option>
- <option value="24">24</option>
- <option value="25">25</option>
- <option value="26">26</option>
- <option value="27">27</option>
- <option value="28">28</option>
- <option value="29">29</option>
- <option value="30">30</option>
- <option value="31">31</option>
- </select>
- <select title="The month in which you were born" id="month" name="month">
- <option value="">Month</option>
- <option value="01">January</option>
- <option value="02">February</option>
- <option value="03">March</option>
- <option value="04">April</option>
- <option value="05">May</option>
- <option value="06">June</option>
- <option value="07">July</option>
- <option value="08">August</option>
- <option value="09">September</option>
- <option value="10">October</option>
- <option value="11">November</option>
- <option value="12">December</option>
- </select>
- <input title="The year in which you were born" size="4" id="year" name="year" type="text">
- </td>
- </tr>
+    <td>Your birth date:</td>
+    <td class="inputcell">
+        <div class="birth-date-container">
+            <select title="The day of the month in which you were born (1-31)" id="day" name="day">
+                <option value="">Day</option>
+                <option value="01">1</option>
+                <option value="02">2</option>
+                <option value="03">3</option>
+                <option value="04">4</option>
+                <option value="05">5</option>
+                <option value="06">6</option>
+                <option value="07">7</option>
+                <option value="08">8</option>
+                <option value="09">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+            
+            <select title="The month in which you were born" id="month" name="month">
+                <option value="">Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+
+            <input title="The year in which you were born" size="4" id="year" name="year" type="text">
+        </div>
+    </td>
+</tr>
  <tr>
  <td>Your birthplace:</td>
  <td class=inputcell>
@@ -1501,121 +1593,131 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <script>
  document.addEventListener("DOMContentLoaded", () => {
- const translations = {
- en: {
- title: "UDID4 - Create Your International ID",
- yourInformation: "Your Information:",
- givenNames: "Your Given Names (at birth):",
- surname: "Your surname/family name at birth:",
- birthDate: "Your birth date:",
- day: "Day",
- month: "Month",
- months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
- birthplace: "Your birthplace:",
- reset: "Reset",
- generate: "Generate your UDID4",
- udidInfo: "Your UDID4 is a unique code to identify you only once, worldwide, without revealing your real name."
- },
- fr: {
- title: "UDID4 - Créez Votre ID International",
- yourInformation: "Vos informations :",
- givenNames: "Vos prénoms (à la naissance) :",
- surname: "Votre nom de famille (à la naissance) :",
- birthDate: "Votre date de naissance :",
- day: "Jour",
- month: "Mois",
- months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
- birthplace: "Votre lieu de naissance :",
- reset: "Réinitialiser",
- generate: "Générer votre UDID4",
- udidInfo: "Votre UDID4 est un code unique pour vous identifier une seule fois, dans le monde entier, sans révéler votre vrai nom."
- },
- it: {
- title: "UDID4 - Crea il Tuo ID Internazionale",
- yourInformation: "Le Tue Informazioni:",
- givenNames: "I Tuoi Nomi (alla nascita):",
- surname: "Il Tuo Cognome (alla nascita):",
- birthDate: "La Tua Data di Nascita:",
- day: "Giorno",
- month: "Mese",
- months: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
- birthplace: "Il Tuo Luogo di Nascita:",
- reset: "Resetta",
- generate: "Genera il Tuo UDID4",
- udidInfo: "Il tuo UDID4 è un codice unico per identificarti una sola volta, in tutto il mondo, senza rivelare il tuo vero nome."
- },
- es: {
- title: "UDID4 - Crea Tu ID Internacional",
- yourInformation: "Tu Información:",
- givenNames: "Tus Nombres (al nacer):",
- surname: "Tu Apellido (al nacer):",
- birthDate: "Tu Fecha de Nacimiento:",
- day: "Día",
- month: "Mes",
- months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
- birthplace: "Tu Lugar de Nacimiento:",
- reset: "Restablecer",
- generate: "Generar tu UDID4",
- udidInfo: "Tu UDID4 es un código único para identificarte una vez, en todo el mundo, sin revelar tu verdadero nombre."
- },
- de: {
- title: "UDID4 - Erstellen Sie Ihre Internationale ID",
- yourInformation: "Ihre Informationen:",
- givenNames: "Ihre Vornamen (bei der Geburt):",
- surname: "Ihr Nachname (bei der Geburt):",
- birthDate: "Ihr Geburtsdatum:",
- day: "Tag",
- month: "Monat",
- months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
- birthplace: "Ihr Geburtsort:",
- reset: "Zurücksetzen",
- generate: "Ihre UDID4 generieren",
- udidInfo: "Ihre UDID4 ist ein einzigartiger Code, mit dem Sie weltweit einmalig identifiziert werden können, ohne Ihren echten Namen preiszugeben."
- }
- };
+    const translations = {
+        en: {
+            title: "UDID4 - Create Your International ID",
+            yourInformation: "Your Information:",
+            givenNames: "Your Given Names (at birth):",
+            surname: "Your surname/family name at birth:",
+            birthDate: "Your birth date:",
+            day: "Day",
+            month: "Month",
+            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            birthplace: "Your birthplace:",
+            reset: "Reset",
+            generate: "Generate your UDID4",
+            udidInfo: "Your UDID4 is a unique code to identify you only once, worldwide, without revealing your real name."
+        },
+        fr: {
+            title: "UDID4 - Créez Votre ID International",
+            yourInformation: "Vos informations :",
+            givenNames: "Vos prénoms (à la naissance) :",
+            surname: "Votre nom de famille (à la naissance) :",
+            birthDate: "Votre date de naissance :",
+            day: "Jour",
+            month: "Mois",
+            months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+            birthplace: "Votre lieu de naissance :",
+            reset: "Réinitialiser",
+            generate: "Générer votre UDID4",
+            udidInfo: "Votre UDID4 est un code unique pour vous identifier une seule fois, dans le monde entier, sans révéler votre vrai nom."
+        },
+        it: {
+            title: "UDID4 - Crea il Tuo ID Internazionale",
+            yourInformation: "Le Tue Informazioni:",
+            givenNames: "I Tuoi Nomi (alla nascita):",
+            surname: "Il Tuo Cognome (alla nascita):",
+            birthDate: "La Tua Data di Nascita:",
+            day: "Giorno",
+            month: "Mese",
+            months: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
+            birthplace: "Il Tuo Luogo di Nascita:",
+            reset: "Resetta",
+            generate: "Genera il Tuo UDID4",
+            udidInfo: "Il tuo UDID4 è un codice unico per identificarti una sola volta, in tutto il mondo, senza rivelare il tuo vero nome."
+        },
+        es: {
+            title: "UDID4 - Crea Tu ID Internacional",
+            yourInformation: "Tu Información:",
+            givenNames: "Tus Nombres (al nacer):",
+            surname: "Tu Apellido (al nacer):",
+            birthDate: "Tu Fecha de Nacimiento:",
+            day: "Día",
+            month: "Mes",
+            months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+            birthplace: "Tu Lugar de Nacimiento:",
+            reset: "Restablecer",
+            generate: "Generar tu UDID4",
+            udidInfo: "Tu UDID4 es un código único para identificarte una vez, en todo el mundo, sin revelar tu verdadero nombre."
+        },
+        de: {
+            title: "UDID4 - Erstellen Sie Ihre Internationale ID",
+            yourInformation: "Ihre Informationen:",
+            givenNames: "Ihre Vornamen (bei der Geburt):",
+            surname: "Ihr Nachname (bei der Geburt):",
+            birthDate: "Ihr Geburtsdatum:",
+            day: "Tag",
+            month: "Monat",
+            months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+            birthplace: "Ihr Geburtsort:",
+            reset: "Zurücksetzen",
+            generate: "Ihre UDID4 generieren",
+            udidInfo: "Ihre UDID4 ist ein einzigartiger Code, mit dem Sie weltweit einmalig identifiziert werden können, ohne Ihren echten Namen preiszugeben."
+        },
+        ua: {
+            title: "UDID4 - Створіть свій міжнародний ідентифікатор",
+            yourInformation: "Ваша інформація:",
+            givenNames: "Ваші імена (при народженні):",
+            surname: "Ваше прізвище (при народженні):",
+            birthDate: "Дата вашого народження:",
+            day: "День",
+            month: "Місяць",
+            months: ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"],
+            birthplace: "Місце вашого народження:",
+            reset: "Скинути",
+            generate: "Згенерувати ваш UDID4",
+            udidInfo: "Ваш UDID4 — це унікальний код, що дозволяє ідентифікувати вас лише раз у всьому світі без розкриття вашого справжнього імені."
+        }
+    };
 
- function translatePage(lang) {
- const t = translations[lang];
- if (!t) return;
+    function translatePage(lang) {
+        const t = translations[lang];
+        if (!t) return;
 
- document.title = t.title;
- document.querySelector("h3").textContent = t.yourInformation;
- document.querySelectorAll("td")[0].textContent = t.givenNames;
- document.querySelectorAll("td")[2].textContent = t.surname;
- document.querySelectorAll("td")[4].textContent = t.birthDate;
- document.getElementById("day").options[0].textContent = t.day;
- document.getElementById("month").options[0].textContent = t.month;
+        document.title = t.title;
+        document.querySelector("h3").textContent = t.yourInformation;
+        document.querySelectorAll("td")[0].textContent = t.givenNames;
+        document.querySelectorAll("td")[2].textContent = t.surname;
+        document.querySelectorAll("td")[4].textContent = t.birthDate;
+        document.getElementById("day").options[0].textContent = t.day;
+        document.getElementById("month").options[0].textContent = t.month;
 
- t.months.forEach((month, index) => {
- document.getElementById("month").options[index + 1].textContent = month;
- });
+        t.months.forEach((month, index) => {
+            document.getElementById("month").options[index + 1].textContent = month;
+        });
 
- document.querySelectorAll("td")[6].textContent = t.birthplace;
- document.getElementById("reset").value = t.reset;
- document.getElementById("generate").value = t.generate;
+        document.querySelectorAll("td")[6].textContent = t.birthplace;
+        document.getElementById("reset").value = t.reset;
+        document.getElementById("generate").value = t.generate;
+        document.querySelector("#generated h4").textContent = t.udidInfo;
+    }
 
- // Mise à jour du texte dans la section UDID4
- document.querySelector("#generated h4").textContent = t.udidInfo;
- }
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
 
- // Fonction pour récupérer les paramètres de l'URL
- function getQueryParam(param) {
- const urlParams = new URLSearchParams(window.location.search);
- return urlParams.get(param);
- }
+    const lang = getQueryParam("lang");
+    if (lang && translations[lang]) {
+        document.getElementById("language").value = lang;
+        translatePage(lang);
+    }
 
- // Vérifier si "lang=fr", "lang=it", "lang=es" ou "lang=de" est dans l'URL et traduire automatiquement
- const lang = getQueryParam("lang");
- if (lang && translations[lang]) {
- document.getElementById("language").value = lang;
- translatePage(lang);
- }
-
- // Changement de langue via le menu déroulant
- document.getElementById("language").addEventListener("change", (event) => {
- translatePage(event.target.value);
- });
+    document.getElementById("language").addEventListener("change", (event) => {
+        translatePage(event.target.value);
+    });
 });
+
 </script>
 </head>
 </body>

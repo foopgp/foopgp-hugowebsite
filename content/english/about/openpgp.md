@@ -1,10 +1,9 @@
 ---
-#Lastmod: 2021-02-01T18:01:47+01:00 # MANAGED by --enableGitInfo
 title: "OpenPGP"
 lang: en
 #date: 2019-07-06T15:27:17+06:00
 draft: false
-bg_image: "images/backgrounds/puzzle.jpg"
+bg_image: "images/backgrounds/world.jpg"
 description : "About OpenPGP."
 image: "images/solutions/enigma.png"
 #author: "Jean-Jacques Brucker"

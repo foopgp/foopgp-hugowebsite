@@ -1,9 +1,6 @@
 ---
-#Lastmod: 2020-11-25T23:40:21+01:00 # MANAGED by --enableGitInfo
 title: "Événements"
 draft: false
-# page title background image
-bg_image: "images/backgrounds/page-title.jpg"
-# meta description
+bg_image: "images/blog/2024/party-rehearsal-dinner-meal-leisure-tradition-1561863-3256076730.jpg"
 description : "Événements concernant **[GnuPG](https://www.agendadulibre.org/tags/gnupg)**, **[OpenPGP](https://www.agendadulibre.org/tags/pgp)** ou ses domaines d'application."
 ---

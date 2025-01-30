@@ -82,15 +82,9 @@ hasChildren = true
 
   [[menu.main]]
   parent = "about"
-  name = "donate"
-  URL = "about/donate"
-  weight = 5
-
-  [[menu.main]]
-  parent = "about"
-  name = "contact"
-  URL = "contact"
-  weight = 6
+  name = "white book"
+  URL = "about/white-book"
+  weight = 4
 
 [[menu.main]]
 name = "solutions"
@@ -140,9 +134,39 @@ weight = 2
   weight = 7
 
 [[menu.main]]
-name = "trainings"
-URL = "course"
+name = "our activities"
+hasChildren = true
+URL = "solutions"
 weight = 3
+  [[menu.main]]
+    parent = "our activities"
+    name = "R&D"
+    URL = "solutions/activity-rd"
+    weight = 1
+
+  [[menu.main]]
+    parent = "our activities"
+    name = "Training"
+    URL = "course"
+    weight = 2
+
+  [[menu.main]]
+    parent = "our activities"
+    name = "security keys"
+    URL = "solutions/offer-security-keys"
+    weight = 3
+
+#  [[menu.main]]
+#    parent = "our activities"
+#    name = "computers"
+#    URL = "solutions/offer-computers"
+#    weight = 4
+
+  [[menu.main]]
+    parent = "our activities"
+    name = "Token Ɉ"
+    URL = "about/donate"
+    weight = 5
 
 [[menu.main]]
 weight = 4
@@ -247,7 +271,7 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Copyright &copy; 2024. [Thanks](https://codeberg.org/foopgp/foopgp-hugowebsite) to [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
+copyright = "Copyright &copy; 2020-2025. [Thanks](https://codeberg.org/foopgp/foopgp-hugowebsite) to [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
 
 
 ################################### French language #####################################
@@ -258,4 +282,4 @@ contentDir = "content/french"
 weight = 2
 home = "Accueil"
 # copyright
-copyright = "Copyright &copy; 2024. [Généré](https://codeberg.org/foopgp/foopgp-hugowebsite) grâce à [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
+copyright = "Copyright &copy; 2020-2025. [Généré](https://codeberg.org/foopgp/foopgp-hugowebsite) grâce à [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"

@@ -1,7 +1,8 @@
 ---
 title: "Clés de sécurité"
 draft: false
-bg_image: "images/solutions/OpenPGPkeys.jpg"
+image: "images/solutions/OpenPGPkeys.jpg"
+bg_image: "images/backgrounds/puzzle.jpg"
 description : "Notre offre concernant les clés matérielles de sécurité"
 ---
 

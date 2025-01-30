@@ -1,8 +1,9 @@
 ---
 title: "Security Keys"
 draft: false
-bg_image: "images/solutions/OpenPGPkeys.jpg"
-description : "Our offer concerning hardware security keys"
+image: "images/solutions/OpenPGPkeys.jpg"
+bg_image: "images/backgrounds/puzzle.jpg"
+description : "Our offer for hardware security keys"
 ---
 
 ## Tariff grid

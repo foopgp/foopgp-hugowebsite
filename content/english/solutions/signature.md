@@ -23,10 +23,10 @@ OpenPGP digital signatures are a common method to ensure the authenticity of dat
 
 ### Advantages of OpenPGP Signatures
 
-2. **Authenticity:**
+1. **Authenticity:**
    - Digital signatures verify the sender's identity.
 
-3. **Integrity:**
+2. **Integrity:**
    - Signatures ensure that the message has not been altered during transit.
 
 ---

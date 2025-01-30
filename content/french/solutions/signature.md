@@ -20,10 +20,10 @@ Les signatures numériques OpenPGP (Pretty Good Privacy) sont une méthode coura
 
 ### Avantages des Signatures OpenPGP
 
-2. **Authenticité :**
+1. **Authenticité :**
    - Les signatures numériques vérifient l'identité de l'expéditeur.
 
-3. **Intégrité :**
+2. **Intégrité :**
    - Les signatures garantissent que le message n'a pas été altéré pendant le transit.
 
 ---

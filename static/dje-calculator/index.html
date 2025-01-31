@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphe Logarithmique Interactif</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2C284B; /* Fond violet */
+            color: black; /* Tout le texte en noir */
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: #fff; /* Fond blanc pour le contenu */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            color: black;
+        }
+        canvas {
+            max-width: 100%;
+        }
+        .controls {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .slider {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        input[type="range"] {
+            flex: 1;
+            margin: 0 10px;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background-color: #ddd; /* Fond de la barre du curseur */
+            border-radius: 5px;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background-color: #FF7F00; /* Couleur orange pour le curseur */
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background-color: #FF7F00; /* Couleur orange pour le curseur */
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        label {
+            font-weight: bold;
+        }
+        /* Ajouter un champ de saisie pour chaque curseur */
+        .slider input[type="number"] {
+            width: 70px;
+            margin-left: 10px;
+            font-size: 14px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .formula {
+            font-size: 16px;
+            margin-top: 15px;
+            color: #555;
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>📈 Évolution de la Fonction Logarithmique</h2>
+        <canvas id="myChart"></canvas>
+        <div class="formula">
+            <strong>Formule :</strong> \( f(x) = \frac{\log_2(x + d + 1)}{\text{stingynalty}} - j \)
+        </div>
+        <div class="controls">
+            <div class="slider">
+                <label for="d">Valeur de <strong>d</strong> : <span id="dValue">0</span></label>
+                <input type="range" id="d" min="0" max="10000" step="1" value="0">
+                <input type="number" id="dInput" value="0" min="0" max="10000" step="1">
+            </div>
+            <div class="slider">
+                <label for="j">Valeur de <strong>j</strong> : <span id="jValue">0</span></label>
+                <input type="range" id="j" min="0" max="24" step="1" value="0">
+                <input type="number" id="jInput" value="0" min="0" max="24" step="1">
+            </div>
+            <div class="slider">
+                <label for="stingynalty">Valeur de <strong>stingynalty</strong> : <span id="stingynaltyValue">1</span></label>
+                <input type="range" id="stingynalty" min="1" max="1.4" step="0.01" value="1">
+                <input type="number" id="stingynaltyInput" value="1" min="1" max="1.4" step="0.01">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+        let d = 0, j = 0, stingynalty = 1;
+
+        function generateData() {
+            let data = [];
+            let xValues = [1, 2, 5, 10, 15, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 15000, 17000];
+
+            for (let x of xValues) {
+                let y = (Math.log2(x + d + 1) / stingynalty) - j;
+                data.push({ x, y });
+            }
+            return data;
+        }
+
+        let myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: '📊 Courbe de f(x) : Transformation logarithmique',
+                    data: generateData(),
+                    borderColor: '#FF7F00', /* Courbe orange */
+                    borderWidth: 2,
+                    fill: false,  /* Laisser cette option sur false */
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Évolution de la fonction logarithmique',
+                        font: { size: 18 }
+                    }
+                },
+                scales: {
+                    x: {
+                        type: 'linear',
+                        position: 'bottom',
+                        title: {
+                            display: true,
+                            text: '€ euro',
+                            font: { size: 14 }
+                        }
+                    },
+                    y: {
+                        beginAtZero: false,
+                        title: {
+                            display: true,
+                            text: 'Jeton',
+                            font: { size: 14 }
+                        },
+                        grid: {
+                            drawBorder: false,
+                            color: function(context) {
+                                return context.tick.value === 0 ? '#000' : 'rgba(0, 0, 0, 0.1)';
+                            },
+                            lineWidth: function(context) {
+                                return context.tick.value === 0 ? 2 : 1;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        function updateChart() {
+            d = parseFloat(document.getElementById('d').value);
+            j = parseFloat(document.getElementById('j').value);
+            stingynalty = parseFloat(document.getElementById('stingynalty').value);
+
+            document.getElementById('dValue').textContent = d;
+            document.getElementById('jValue').textContent = j;
+            document.getElementById('stingynaltyValue').textContent = stingynalty;
+
+            myChart.data.datasets[0].data = generateData();
+            myChart.update();
+        }
+
+        document.getElementById('d').addEventListener('input', function() {
+            document.getElementById('dInput').value = document.getElementById('d').value;
+            updateChart();
+        });
+        document.getElementById('dInput').addEventListener('input', function() {
+            document.getElementById('d').value = document.getElementById('dInput').value;
+            updateChart();
+        });
+
+        document.getElementById('j').addEventListener('input', function() {
+            document.getElementById('jInput').value = document.getElementById('j').value;
+            updateChart();
+        });
+        document.getElementById('jInput').addEventListener('input', function() {
+            document.getElementById('j').value = document.getElementById('jInput').value;
+            updateChart();
+        });
+
+        document.getElementById('stingynalty').addEventListener('input', function() {
+            document.getElementById('stingynaltyInput').value = document.getElementById('stingynalty').value;
+            updateChart();
+        });
+        document.getElementById('stingynaltyInput').addEventListener('input', function() {
+            document.getElementById('stingynalty').value = document.getElementById('stingynaltyInput').value;
+            updateChart();
+        });
+    </script>
+</body>
+</html>

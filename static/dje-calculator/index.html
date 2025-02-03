@@ -3,125 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphe Logarithmique Interactif</title>
+    <title>Graphe Ɉ</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script> <!-- Plugin pour annotations -->
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #2C284B; /* Fond violet */
-            color: black; /* Tout le texte en noir */
+            background-color: #1E1E2F; /* Fond sombre */
+            color: #F1F1F1; /* Texte clair */
             text-align: center;
             margin: 0;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .container {
-            background: #fff; /* Fond blanc pour le contenu */
+            background: #2D2D44; /* Conteneur avec fond légèrement plus clair */
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
+            width: 90%;
             max-width: 800px;
-            margin: auto;
         }
         h2 {
-            color: black;
+            color: #FF7F00; /* Titre principal en orange vif */
+            font-size: 22px;
+        }
+        .chart-container {
+            width: 100%;
+            height: 400px;
         }
         canvas {
-            max-width: 100%;
+            width: 100% !important;
+            height: 100% !important;
         }
         .controls {
             margin-top: 20px;
-            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
-        .slider {
+        .slider, .date-selector {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 15px;
+
         }
-        input[type="range"] {
+        input[type="number"], select {
             flex: 1;
             margin: 0 10px;
-            -webkit-appearance: none;
-            appearance: none;
-            height: 8px;
-            background-color: #ddd; /* Fond de la barre du curseur */
+            background-color: #3A3A5D; /* Fond des champs de saisie */
+            color: #F1F1F1; /* Texte clair */
+            border: 1px solid #555555;
             border-radius: 5px;
-        }
-        input[type="range"]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            background-color: #FF7F00; /* Couleur orange pour le curseur */
-            border-radius: 50%;
-            cursor: pointer;
-        }
-        input[type="range"]::-moz-range-thumb {
-            width: 20px;
-            height: 20px;
-            background-color: #FF7F00; /* Couleur orange pour le curseur */
-            border-radius: 50%;
-            cursor: pointer;
-        }
-        label {
-            font-weight: bold;
-        }
-        /* Ajouter un champ de saisie pour chaque curseur */
-        .slider input[type="number"] {
-            width: 70px;
-            margin-left: 10px;
-            font-size: 14px;
             padding: 5px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            text-align: center;
         }
+
+        input[type="range"] {
+    -webkit-appearance: none; /* Supprime le style par défaut */
+    background: #3A3A5D; /* Couleur orange */
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.9;
+    transition: opacity .15s ease-in-out;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #FF7F00; /* Bouton du slider en orange */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background: #FF7F00; /* Bouton du slider en orange */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
         .formula {
-            font-size: 16px;
+            font-size: 14px;
             margin-top: 15px;
-            color: #555;
-            background: #ecf0f1;
-            padding: 10px;
+            background: #3A3A5D;
+            padding: 8px;
             border-radius: 5px;
+            color: #F1F1F1;
         }
+        .date-selector label {
+            color: #FF7F00; /* Labels en orange */
+        }
+
+        /* Couleur pour les valeurs de d et j */
+        .controls label, .controls span {
+            color: #FF7F00; /* Valeurs de d et j en orange */
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>📈 Évolution de la Fonction Logarithmique</h2>
-        <canvas id="myChart"></canvas>
+        <h2>Graphe Ɉ</h2>
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
         <div class="formula">
-            <strong>Formule :</strong> \( f(x) = \frac{\log_2(x + d + 1)}{\text{stingynalty}} - j \)
+            <strong>Formule de calcul :</strong> \( f(x) = \frac{\log_2(x + d + 1)}{\text{stingynalty}} - j \)
         </div>
         <div class="controls">
             <div class="slider">
-                <label for="d">Valeur de <strong>d</strong> : <span id="dValue">0</span></label>
+                <label for="d">€ : <span id="dValue"></span></label>
                 <input type="range" id="d" min="0" max="10000" step="1" value="0">
-                <input type="number" id="dInput" value="0" min="0" max="10000" step="1">
+                <input type="number" id="dNumber" min="0" max="10000" step="1" value="0">
             </div>
             <div class="slider">
-                <label for="j">Valeur de <strong>j</strong> : <span id="jValue">0</span></label>
+                <label for="j">Ɉ : <span id="jValue"></span></label>
                 <input type="range" id="j" min="0" max="24" step="1" value="0">
-                <input type="number" id="jInput" value="0" min="0" max="24" step="1">
+                <input type="number" id="jNumber" min="0" max="24" step="1" value="0">
+            </div>
+            <div class="date-selector">
+                <label for="month">Mois:</label>
+                <select id="month"></select>
+                <label for="year">Année:</label>
+                <select id="year"></select>
             </div>
             <div class="slider">
-                <label for="stingynalty">Valeur de <strong>stingynalty</strong> : <span id="stingynaltyValue">1</span></label>
-                <input type="range" id="stingynalty" min="1" max="1.4" step="0.01" value="1">
-                <input type="number" id="stingynaltyInput" value="1" min="1" max="1.4" step="0.01">
+                <label for="stingynalty">stingynalty: <span id="stingynaltyValue">1</span></label>
             </div>
         </div>
     </div>
 
     <script>
         const ctx = document.getElementById('myChart').getContext('2d');
+        let d = 0, j = 0;
 
-        let d = 0, j = 0, stingynalty = 1;
+        function calculateStingynalty(initialValue, months) {
+            let a = initialValue;
+            // Ajuster pour que le facteur d'augmentation soit de 0.5% chaque mois
+            if (months >= 0) {
+                for (let i = 0; i < months; i++) {
+                    a = a + (a * 0.5 / 100);  // 0.5% d'augmentation par mois
+                }
+            }
+            return a;
+        }
+
+        function populateDateSelectors() {
+            const monthSelect = document.getElementById("month");
+            const yearSelect = document.getElementById("year");
+            const currentYear = new Date().getFullYear();
+            
+            for (let i = 7; i <= 12; i++) {
+                let option = new Option(i, i);
+                monthSelect.add(option);
+            }
+            for (let i = 2024; i <= currentYear + 10; i++) {
+                let option = new Option(i, i);
+                yearSelect.add(option);
+            }
+            monthSelect.value = 7;
+            yearSelect.value = 2024;
+        }
 
         function generateData() {
             let data = [];
-            let xValues = [1, 2, 5, 10, 15, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000, 15000, 17000];
+            let xValues = [1, 2, 5, 10, 20, 50, 100, 500, 1000, 5000];
+            let selectedMonth = parseInt(document.getElementById("month").value);
+            let selectedYear = parseInt(document.getElementById("year").value);
+            let monthsElapsed = (selectedYear - 2024) * 12 + (selectedMonth - 7); // Commencer à 0 en Juillet 2024
+            let stingynalty = calculateStingynalty(1.0050, Math.max(monthsElapsed, 0));  // Commence à 1.0050 en Juillet 2024
 
+            document.getElementById('stingynaltyValue').textContent = stingynalty.toFixed(4);
+            
             for (let x of xValues) {
                 let y = (Math.log2(x + d + 1) / stingynalty) - j;
                 data.push({ x, y });
@@ -133,23 +185,17 @@
             type: 'line',
             data: {
                 datasets: [{
-                    label: '📊 Courbe de f(x) : Transformation logarithmique',
+                    label: 'Ɉ dje',
                     data: generateData(),
-                    borderColor: '#FF7F00', /* Courbe orange */
+                    borderColor: '#FF7F00',
                     borderWidth: 2,
-                    fill: false,  /* Laisser cette option sur false */
+                    fill: false,
                     tension: 0.1
                 }]
             },
             options: {
                 responsive: true,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'Évolution de la fonction logarithmique',
-                        font: { size: 18 }
-                    }
-                },
+                maintainAspectRatio: false,
                 scales: {
                     x: {
                         type: 'linear',
@@ -157,25 +203,44 @@
                         title: {
                             display: true,
                             text: '€ euro',
-                            font: { size: 14 }
+                            color: '#FF7F00',  // Couleur du titre de l'axe
+                            font: {
+                                size: 16
+                            }
                         }
                     },
                     y: {
                         beginAtZero: false,
                         title: {
                             display: true,
-                            text: 'Jeton',
-                            font: { size: 14 }
+                            text: 'Ɉ dje',
+                            color: '#FF7F00',  // Couleur du titre de l'axe
+                            font: {
+                                size: 16
+                            }
                         },
                         grid: {
                             drawBorder: false,
-                            color: function(context) {
-                                return context.tick.value === 0 ? '#000' : 'rgba(0, 0, 0, 0.1)';
-                            },
-                            lineWidth: function(context) {
-                                return context.tick.value === 0 ? 2 : 1;
-                            }
+                            color: '#3A3A5D',
+                        },
+                        ticks: {
+                            color: '#F1F1F1', // Couleur des ticks
                         }
+                    }
+                },
+                plugins: {
+                    annotation: {
+                        annotations: [{
+                            type: 'line',
+                            mode: 'horizontal',
+                            scaleID: 'y',
+                            value: 0,
+                            borderColor: '#FF7F00', // Couleur de la ligne
+                            borderWidth: 2,
+                            label: {
+                                enabled: false
+                            }
+                        }]
                     }
                 }
             }
@@ -184,42 +249,37 @@
         function updateChart() {
             d = parseFloat(document.getElementById('d').value);
             j = parseFloat(document.getElementById('j').value);
-            stingynalty = parseFloat(document.getElementById('stingynalty').value);
-
-            document.getElementById('dValue').textContent = d;
-            document.getElementById('jValue').textContent = j;
-            document.getElementById('stingynaltyValue').textContent = stingynalty;
-
             myChart.data.datasets[0].data = generateData();
             myChart.update();
         }
 
+        // Synchroniser le champ de saisie et le slider
         document.getElementById('d').addEventListener('input', function() {
-            document.getElementById('dInput').value = document.getElementById('d').value;
+            document.getElementById('dNumber').value = this.value;
             updateChart();
         });
-        document.getElementById('dInput').addEventListener('input', function() {
-            document.getElementById('d').value = document.getElementById('dInput').value;
+        document.getElementById('dNumber').addEventListener('input', function() {
+            document.getElementById('d').value = this.value;
             updateChart();
         });
 
         document.getElementById('j').addEventListener('input', function() {
-            document.getElementById('jInput').value = document.getElementById('j').value;
+            document.getElementById('jNumber').value = this.value;
             updateChart();
         });
-        document.getElementById('jInput').addEventListener('input', function() {
-            document.getElementById('j').value = document.getElementById('jInput').value;
+        document.getElementById('jNumber').addEventListener('input', function() {
+            document.getElementById('j').value = this.value;
             updateChart();
         });
 
-        document.getElementById('stingynalty').addEventListener('input', function() {
-            document.getElementById('stingynaltyInput').value = document.getElementById('stingynalty').value;
-            updateChart();
+        document.querySelectorAll('.controls select').forEach(input => {
+            input.addEventListener('input', () => {
+                updateChart();
+            });
         });
-        document.getElementById('stingynaltyInput').addEventListener('input', function() {
-            document.getElementById('stingynalty').value = document.getElementById('stingynaltyInput').value;
-            updateChart();
-        });
+
+        populateDateSelectors();
+        updateChart();
     </script>
 </body>
 </html>

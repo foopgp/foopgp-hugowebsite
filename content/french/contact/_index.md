@@ -1,5 +1,4 @@
 ---
-#Lastmod: 2023-12-05T19:40:57+01:00 # MANAGED by --enableGitInfo
 title: "Contact"
 draft: false
 # page title background image
@@ -8,4 +7,6 @@ bg_image: "images/backgrounds/world.jpg"
 description : "Canaux de contact."
 ---
 
-Vous pouvez contacter l'organisation directement:
+Vous pouvez rejoindre notre liste de diffusion : [fr.foopgp@framalistes.org](https://framalistes.org/sympa/info/fr.foopgp)
+
+Ou contacter l'organisation directement :

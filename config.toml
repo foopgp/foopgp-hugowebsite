@@ -238,7 +238,7 @@ link = "/"
 [[params.social]]
 title = "contact"
 icon = "ti-email" # themify icon : https://themify.me/themify-icons
-link = "mailto:info@foopgp.org"
+link = "/contact"
 
 [[params.social]]
 title = "contribute"

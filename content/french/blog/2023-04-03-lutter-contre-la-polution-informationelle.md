@@ -107,5 +107,5 @@ durable...
 ---
 
 *Si cet article vous a plu, n'hésitez-pas à rejoindre ou financer
-[foopgp](/fr/about/legal-notice/).*
+[foopgp](/fr/about/donate/).*
 

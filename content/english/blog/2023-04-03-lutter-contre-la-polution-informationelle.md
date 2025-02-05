@@ -94,4 +94,4 @@ others try to [build](https://datatracker.ietf.org/wg/openpgp/charter/) a sustai
 
 ---
 
-*If you liked this article, feel free to join or fund [foopgp](/about/legal-notice/).*
+*If you liked this article, feel free to join or fund [foopgp](/about/donate/).*

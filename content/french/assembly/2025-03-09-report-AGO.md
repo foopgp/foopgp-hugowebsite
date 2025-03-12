@@ -18,8 +18,7 @@ L’assemblée générale débute à 15h30 ce 9 mars 2025, à Pelleautier, au si
 
 Le secrétaire de séance est François F., membre présent de l’association.
 
-
-### Feuille de présence
+### Feuille de présence
 
 Sept membres
 - Laurent C.

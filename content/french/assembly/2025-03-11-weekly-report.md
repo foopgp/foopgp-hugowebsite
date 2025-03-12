@@ -1,7 +1,7 @@
 ---
 title: "2025 S11 Rapport Hebdomadaire"
 lang: fr
-date: 2025-04-11T21:00:00+01:00
+date: 2025-03-11T21:00:00+01:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"

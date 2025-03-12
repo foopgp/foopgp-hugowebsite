@@ -2,5 +2,5 @@
 	path = themes/educenter
 	url = https://codeberg.org/foopgp/foopgp-hugotheme.git
 [submodule "static/largefiles"]
-	path = static/largefiles
+	path = public/largefiles
 	url = https://codeberg.org/foopgp/foopgp-largefiles.git

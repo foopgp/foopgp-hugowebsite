@@ -1,0 +1,39 @@
+
+---
+type: "event"
+title: "Etats généreux du revenu de base"
+publishDate: "2025-03-15"
+date: "2025-04-19T09:00:00+02:00"
+# post save as draft
+draft: false
+# page title background image
+bg_image: "images/backgrounds/page-title.jpg"
+# meta description
+description : "Alfortville - Porte de Paris"
+# Event image
+image: "images/events/img-etats-genereux-revenu-base-2025.jpg"
+# location
+location: "[Alforville  🇫🇷 ](https://www.openstreetmap.org/relation/4609879#map=14/48.80474/2.41948)"
+# expected attendees
+audience: "🎖️ Pour tout le monde"
+# entry fee
+fee: "gratuit"
+# apply url
+apply_url: "https://www.helloasso.com/associations/mouvement-francais-pour-un-revenu-de-base/evenements/etats-genereux-du-revenu-de-base"
+# Event language
+lang: fr
+# event speaker
+speaker:
+  - name : "Frederic Bosqué"
+  - name : "Jean-Jacques Brucker"
+  - name : "Et beaucoup d'autres"
+---
+
+Découvrez le programme :
+
+  [https://www.revenudebase.info/wp-content/uploads/2025/03/Programme-previsionnel-.pdf](https://www.revenudebase.info/wp-content/uploads/2025/03/Programme-previsionnel-.pdf)
+
+Plus d'informations :
+
+  [https://www.revenudebase.info/etats-genereux-revenu-de-base-2025/](https://www.revenudebase.info/etats-genereux-revenu-de-base-2025/)
+

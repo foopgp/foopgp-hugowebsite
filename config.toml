@@ -254,7 +254,7 @@ link = "/about/donate"
 [[params.social]]
 title = "follow us"
 icon = "ti-bluesky" # themify icon : https://themify.me/themify-icons
-link = "https://twitter.com/foopgp"
+link = "https://www.linkedin.com/company/foopgp/"
 target="_blank"
 
 [[params.social]]

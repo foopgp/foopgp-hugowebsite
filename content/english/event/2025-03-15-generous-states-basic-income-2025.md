@@ -12,7 +12,7 @@ description: "Alfortville - Near Paris"
 # Event image
 image: "images/events/img-etats-genereux-revenu-base-2025.jpg"
 # rental
-location: "[Alforville 🇫🇷](https://www.openstreetmap.org/relation/4609879#map=14/48.80474/2.41948)"
+location: "[Alfortville 🇫🇷](https://www.openstreetmap.org/relation/4609879#map=14/48.80474/2.41948)"
 # expected attendees
 audience: "🎖️ For everyone"
 # entry fee

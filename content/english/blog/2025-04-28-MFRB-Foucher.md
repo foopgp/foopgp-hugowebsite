@@ -1,0 +1,1 @@
+../../french/blog/2025-04-28-MFRB-Foucher.md

@@ -8,7 +8,7 @@ draft: false
 author: [ "Jean-Jacques Brucker" ]
 description : "Pourquoi nous devons maintenant changer de système monétaire"
 lang: fr
-bg_image: "images/blog/2024/th-2727082260.jpeg"
+bg_image: "images/blog/2024/earth4ever.jpeg"
 image: "images/blog/2025/Les_secrets_de_la_monnaie_Gerard_Foucher.jpg"
 type: "post"
 ---

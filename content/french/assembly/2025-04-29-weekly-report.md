@@ -2,7 +2,7 @@
 title: "2025 S18 Rapport Hebdomadaire"
 lang: fr
 date: 2025-04-29T20:30:00+01:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/logos/logo-black-pgp.png"
@@ -13,14 +13,13 @@ type: "meeting"
 
 ---
 
-\*\*\*Présents : \*\*\**Laurent C, Jean-Jacques B, Didier L, Kélyan, Fred R, Henri G.*
+***Présents :*** *Laurent C, Jean-Jacques B, Didier L, Kélyan, Fred R, Henri G.*
 
-### Ordre du jour pour le prochain conseil, mardi 29 avril 2025 à **20h30**, en visio sur <https://cloud.foopgp.org/call/4du5irxe>
+### Ordre du jour pour le prochain conseil, mardi 6 mai 2025 à **21h**, en visio sur <https://cloud.foopgp.org/call/4du5irxe>
 
 *Note : Si problème avec le premier lien de visio, se connecter sur [https://meet.jit.si/foopgp](https://meet.jit.si/foopgp).*
 
-- 
-- Suivi de (après 21h) : Points habituels (revue de presse + déplacements et actions réalisés, en cours, ou à prévoir).
+- Points habituels (revue de presse + déplacements et actions réalisés, en cours, ou à prévoir).
 
 ### Ordres du soir
 
@@ -49,7 +48,7 @@ type: "meeting"
 #### Au cœur de la réunion
 
 - Retour avec Didier Loyens sur les dernières réunions du groupe altermonnaie, notamment celle avec Charles de <http://postmonetaire.fr/> (MOCICA).
-- Frédéric essaie de nous expliquer les idées qu'il a développées et produites ces derniers mois. Il compte "vendre" des services Nextcloud avec des fonctionnalités expérimentales. cf: <https://zen.g1sms.fr/>  
+- Frédéric essaie de nous expliquer les idées qu'il a développées et produites ces derniers mois. Il compte "vendre" des services Nextcloud avec des fonctionnalités expérimentales. cf: <https://zen.g1sms.fr/>
   UPlanet ORIGIN : <https://qo-op.com> ( <https://www.copylaradio.com> )
 - Point compta : la future trésorière a eu un empêchement de dernière minute, et kélyan n'avait pas son micro. Donc le point compta avec présentation de paheko a été incomplet et est à refaire prochainement, notamment pour la future trésorière.
 - Un nouveau stagiaire arrive pour 3 semaines en mai. On espère faire avec lui : industrialiser l'installation et la customisation de nos systèmes GNU/Linux (Debian) OpenPGP et foopgp friendly (faire des paquets).
@@ -58,7 +57,7 @@ type: "meeting"
 #### Actions terminées
 
 - Mise en place de notre propre serveur de clé HKP <http://keys.foopgp.org:11371/pks/lookup?op=index&search=udid4> (afin de ne pas dépendre de keys.openpgp.org qui minimalise systématiquement les certificats).
-- Mise en place des dépôts git : 
+- Mise en place des dépôts git :
   - <https://codeberg.org/foopgp/foopgp-accounting> pour gérer les comptes en euros €.
   - <https://codeberg.org/foopgp/foopgp-members> pour gérer les membres et les comptes en jetons Ɉ.
 
@@ -84,7 +83,7 @@ Livre blanc commencé : <https://foopgp.org/fr/about/white-book/>
 ### Agenda
 
 - Vendredi 2 mai : Rendez-vous avec le [LUG de Marseille](https://plugfr.org/reunions/2-mai-2025/), ou [Jérémy](https://mastodon.evolix.org/@jlecour) et [Grégory](https://mastodon.evolix.org/@gcolpart) feront une présentation sur les mises à jour sous Debian GNU/Linux.
-- Vendredi 9 mai à 8h30 : Rendez-vous avec la députée de notre circonscription des Hautes-Alpes.
+- Vendredi 9 mai à 12h15 : Rendez-vous avec la députée de notre circonscription des Hautes-Alpes.
 - Mercredi 14 mai de 9 h 30 à 17 h à Gap : [ADELHA : Mobiliser, intégrer et fidéliser ses bénévoles.](https://ADELHA%20:%20Mobiliser,%20int%C3%A9grer%20et%20fid%C3%A9liser%20ses%20b%C3%A9n%C3%A9voles.)
 - Jeudi 15 mai 2025 à Lyon : [Rencontres Professionnelles du Logiciel Libre](https://www.rpll.fr/)
 - Jeudi 22 mai de 9 h 30 à 12 h 00 à Gap : [ADELHA : Penser ses fiches missions de bénévolat](https://docs.google.com/forms/d/e/1FAIpQLSfYEgB59lleVhW4ILt-r785Kjpv0-LdrRFxFbWrImAIXQBE9g/viewform)

@@ -1,8 +1,8 @@
 ---
 https://fossforce.com/2025/04/un-drops-google-for-cryptpad-an-encrypted-open-source-office-suite/title: "2025 S18 Rapport Hebdomadaire"
 lang: fr
-date: 2025-05-06T20:30:00+01:00
-draft: true
+date: 2025-05-13T20:30:00+01:00
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/logos/logo-black-pgp.png"
@@ -13,12 +13,15 @@ type: "meeting"
 
 ---
 
-***Présents :*** *Laurent C, Jean-Jacques B, Didier L, Henri G, Kélyan, François R.*
+\*\*\*Présents : \*\*\**Laurent C, Jean-Jacques B, Didier L, Henri G, Kélyan, François R..*
 
 ### Ordre du jour pour le prochain conseil, mardi 20 mai 2025 à **21h00**, en visio sur <https://cloud.foopgp.org/call/4du5irxe>
 
 *Note : Si problème avec le premier lien de visio, se connecter sur [https://meet.jit.si/foopgp](https://meet.jit.si/foopgp).*
 
+- Dernières préparations pour notre participation aux JDDL de Lyon : 
+  - <https://pretalx.jdll.org/jdll2025/talk/LYVR3T/>
+  - <https://pretalx.jdll.org/jdll2025/talk/review/HHADRMV3YUCQS8N73BFLBZZJDXNQ3LTN>
 - Points habituels : (revue de presse + déplacements et actions réalisés, en cours, ou à prévoir).
 
 ### Ordres du soir
@@ -26,6 +29,40 @@ type: "meeting"
 - Revue de presse.
 - Point sur les participations aux forums ou salons.
 - Actions réalisés, en cours, à prévoir.
+
+### Stingynalty
+
+Pour le mois de mai 2025, ***stingynalty* = 1.05639583270099459579**
+
+Et donc en appliquant la formule du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/), **j = log₂(d+1) / *stingynalty*** :
+
+| dons initial en € | quantité de jetons Ɉ |
+|-------------------|----------------------|
+| 1.00 €            | .946614 Ɉ            |
+| 1.08 €            | 1.000000 Ɉ           |
+| 2.00 €            | 1.500349 Ɉ           |
+| 3.33 €            | 2.000000 Ɉ           |
+| 5.00 €            | 2.446963 Ɉ           |
+| 8.00 €            | 3.000000 Ɉ           |
+| 10.00 €           | 3.274749 Ɉ           |
+| 17.71 €           | 4.000000 Ɉ           |
+| 20.00 €           | 4.157832 Ɉ           |
+| 37.91 €           | 5.000000 Ɉ           |
+| 50.00 €           | 5.369602 Ɉ           |
+| 79.92 €           | 6.000000 Ɉ           |
+| 100.00 €          | 6.302761 Ɉ           |
+| 167.29 €          | 7.000000 Ɉ           |
+| 200.00 €          | 7.242599 Ɉ           |
+| 348.99 €          | 8.000000 Ɉ           |
+| 500.00 €          | 8.489873 Ɉ           |
+| 726.89 €          | 9.000000 Ɉ           |
+| 1000.00 €         | 9.435124 Ɉ           |
+| 1512.80 €         | 10.000000 Ɉ          |
+
+Rappel, si vous avez déjà fais un don identifié (aka cotisation libre), la formule pour calculer la quantité de nouvelles valeurs en Ɉ est :  
+**jₙ = log₂( (dₙ+dₜ) + 1 ) / *stingynaltyₙ* – jₜ**  
+  
+Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/).
 
 ### Revue de presse
 
@@ -40,14 +77,15 @@ type: "meeting"
 - Firefox est inquiet à cause d'un procès contre Google dont le navigateur Chrome pourrait être racheté par OpenAI : <https://siecledigital.fr/2025/05/06/firefox-survivra-t-il-sans-google-lavenir-de-mozilla-plus-incertain-que-jamais/>  
   <https://www.lesnumeriques.com/appli-logiciel/c-est-extremement-inquietant-mozilla-alerte-firefox-pourrait-disparaitre-sans-google-n236418.html>
 - Microsoft relance une fonction controversée dans son IA Copilot du nom de Recall : <https://www.distributique.com/actualites/lire-microsoft-relance-la-fonction-controversee-recall-36166.html>
-- Petite opinion "récente" de fabrice eplboin:  <https://souveraine.tech/fabrice-epelboin/>
+- Petite opinion "récente" de Fabrice Epelboin:  <https://souveraine.tech/fabrice-epelboin/>
 
 ### Activité récente
 
 #### Au cœur de la réunion
 
-- Retour sur la conférence aux États Généreux du rdb, les progrès, et les points à améliorer. Petite réf au passage : "<https://fr.wikipedia.org/wiki/Loi_de_Gresham>" 
-- Discussion sur le groupe "alliance du peuple", divergences et convergences. Leur vision avec microtaxation sur les échanges pose le même problème que la taxe sur le chiffre d'affaire, qui existait avant [la TVA](https://fr.wikipedia.org/wiki/Taxe_sur_la_valeur_ajout%C3%A9e). 
+- Retour sur [la conférence aux États Généreux du rdb](https://www.youtube.com/watch?v=D_SHmA1m7R4), les progrès, et les points à améliorer. Petite réf au passage : "<https://fr.wikipedia.org/wiki/Loi_de_Gresham>".
+- Possible don à recevoir d'un HP ProLiant DL380 G7 (Merci au généreux donateur ^^).
+- Discussion sur le groupe "alliance du peuple", divergences et convergences. Leur vision avec microtaxation sur les échanges pose le même problème que la taxe sur le chiffre d'affaire, qui existait avant [la TVA](https://fr.wikipedia.org/wiki/Taxe_sur_la_valeur_ajout%C3%A9e).
 - Débat sur l'IA, l'utilité, le sens, du travail et de l'existence humaine. Ce qui nous amène aux divergence entre technosolutionisme et décroissance. Et à de grands débats idéologico-philosophiques.
 - En réaction aux histoire FTC-Trump-Google-Mozilla, inquiétude sur la fin ou la dystopie du web.
 
@@ -77,7 +115,6 @@ Livre blanc commencé : <https://foopgp.org/fr/about/white-book/>
 
 ### Agenda
 
-- Mardi 13 mai 19h30 : RdV Linux alpes : <<https://www.linux-alpes.org/soiree-linux-alpes-a-gap-le-13-mai/>>
 - Mercredi 14 mai de 9 h 30 à 17 h à Gap : [ADELHA : Mobiliser, intégrer et fidéliser ses bénévoles.](https://ADELHA%20:%20Mobiliser,%20int%C3%A9grer%20et%20fid%C3%A9liser%20ses%20b%C3%A9n%C3%A9voles.)
 - Jeudi 15 mai 2025 à Lyon : [Rencontres Professionnelles du Logiciel Libre](https://www.rpll.fr/)
 - Jeudi 22 mai de 9 h 30 à 12 h 00 à Gap : [ADELHA : Penser ses fiches missions de bénévolat](https://docs.google.com/forms/d/e/1FAIpQLSfYEgB59lleVhW4ILt-r785Kjpv0-LdrRFxFbWrImAIXQBE9g/viewform)

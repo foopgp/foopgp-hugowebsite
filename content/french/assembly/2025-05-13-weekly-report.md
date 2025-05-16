@@ -1,5 +1,5 @@
 ---
-https://fossforce.com/2025/04/un-drops-google-for-cryptpad-an-encrypted-open-source-office-suite/title: "2025 S18 Rapport Hebdomadaire"
+title: "2025 S20 Rapport Hebdomadaire"
 lang: fr
 date: 2025-05-13T20:30:00+01:00
 draft: false

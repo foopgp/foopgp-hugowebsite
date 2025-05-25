@@ -60,7 +60,7 @@ Lutter contre la coercition.
 
 Trouver un système monétaire adapté aux enjeux de notre époque.
 
-## Objectifs de l'association
+# Objectifs de l'association
 
 cf. [Livre Blanc](https://foopgp.org/fr/about/white-book/)
 
@@ -83,7 +83,7 @@ cf. [Livre Blanc](https://foopgp.org/fr/about/white-book/)
 
 * Authentifier (ssh, identité, vote)
 
-## Toile de confiance
+# Toile de confiance
 
 ::: columns
 
@@ -124,7 +124,7 @@ cf. [Livre Blanc](https://foopgp.org/fr/about/white-book/)
 
 ![Internet dogs](img/on-the-internet-nobody-knows-youre-a-dog.jpg)
 
-## Une monnaie libre qui fonctionne
+# Une monnaie libre qui fonctionne
 
 - Un business model
 
@@ -136,21 +136,31 @@ cf. [Livre Blanc](https://foopgp.org/fr/about/white-book/)
 
 - Des technologies plus efficaces, moins couteuses, ...
 
-## Nos réalisation techniques:
+# Nos réalisation techniques:
 
 - bash-libs
 
 - pgpid
 
+- cloud.foopgp.org
+
 - keys.foopgp.org
 
-# Nos réalisations humaines :
+## Nos réalisations humaines :
 
 - récupération et reconditionnement de laptop
 
 - configuration de clés matérielles de sécurité
 
 - formations
+
+## Nos réalisations commerciales :
+
+- Revendeur NitroKeys
+
+- Revendeur YubiKeys
+
+- Partenaire éditions Yves Michel
 
 ## Nos réalisations juridiques :
 
@@ -160,7 +170,7 @@ cf. [Livre Blanc](https://foopgp.org/fr/about/white-book/)
 
 - [paramétrage en AG](https://foopgp.org/fr/about/rules-parameters/)
 
-# Nos réalisations comptables :
+## Nos réalisations comptables :
 
 - comptes de résultat
 

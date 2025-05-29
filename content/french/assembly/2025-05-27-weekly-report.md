@@ -1,7 +1,7 @@
 ---
-title: "2025 S21 Rapport Hebdomadaire"
+title: "2025 S22 Rapport Hebdomadaire"
 lang: fr
-date: 2025-05-20T20:30:00+01:00
+date: 2025-05-27T20:30:00+01:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
@@ -13,11 +13,11 @@ type: "meeting"
 
 ---
 
-***Présents :*** *Jean-Jacques B, Didier L, François R.*
+***Présents :*** *Jean-Jacques B, Laurent C, Henri G, piseb.*
 
-*Excusés : Laurent C.*
+*Excusés : Didier Loyens, François Révol*
 
-### Ordre du jour pour le prochain conseil, mardi 27 mai 2025 à **21h00**, en visio sur <https://cloud.foopgp.org/call/4du5irxe>
+### Ordre du jour pour le prochain conseil, mardi 3 juin 2025 à **21h00**, en visio sur <https://cloud.foopgp.org/call/4du5irxe>
 
 *Note : Si problème avec le premier lien de visio, se connecter sur [https://meet.jit.si/foopgp](https://meet.jit.si/foopgp).*
 
@@ -25,9 +25,6 @@ type: "meeting"
 
 ### Ordres du soir
 
-- Dernières préparations pour notre participation aux JDDL de Lyon : 
-  - <https://pretalx.jdll.org/jdll2025/talk/LYVR3T/>
-  - <https://pretalx.jdll.org/jdll2025/talk/review/HHADRMV3YUCQS8N73BFLBZZJDXNQ3LTN>
 - Revue de presse.
 - Point sur les participations aux forums ou salons.
 - Actions réalisés, en cours, à prévoir.
@@ -36,30 +33,32 @@ type: "meeting"
 
 Pour le mois de mai 2025, ***stingynalty* = 1.05639583270099459579**
 
-Et donc en appliquant la formule du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/), **j = log₂(d+1) / *stingynalty*** :
+Pour le mois de juin 2025, ***stingynalty* = 1.06167781186449956876**
+
+Et donc pour juin, en appliquant la formule du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/), **j = log₂(d+1) / *stingynalty*** :
 
 | cotisation initial en € | quantité de jetons Ɉ |
-|-------------------|----------------------|
-| 1.00 €            | .946614 Ɉ            |
-| 1.08 €            | 1.000000 Ɉ           |
-| 2.00 €            | 1.500349 Ɉ           |
-| 3.33 €            | 2.000000 Ɉ           |
-| 5.00 €            | 2.446963 Ɉ           |
-| 8.00 €            | 3.000000 Ɉ           |
-| 10.00 €           | 3.274749 Ɉ           |
-| 17.71 €           | 4.000000 Ɉ           |
-| 20.00 €           | 4.157832 Ɉ           |
-| 37.91 €           | 5.000000 Ɉ           |
-| 50.00 €           | 5.369602 Ɉ           |
-| 79.92 €           | 6.000000 Ɉ           |
-| 100.00 €          | 6.302761 Ɉ           |
-| 167.29 €          | 7.000000 Ɉ           |
-| 200.00 €          | 7.242599 Ɉ           |
-| 348.99 €          | 8.000000 Ɉ           |
-| 500.00 €          | 8.489873 Ɉ           |
-| 726.89 €          | 9.000000 Ɉ           |
-| 1000.00 €         | 9.435124 Ɉ           |
-| 1512.80 €         | 10.000000 Ɉ          |
+|-------------------------|----------------------|
+| 1.00 €                  | .941905 Ɉ            |
+| 1.09 €                  | 1.000000 Ɉ           |
+| 2.00 €                  | 1.492884 Ɉ           |
+| 3.36 €                  | 2.000000 Ɉ           |
+| 5.00 €                  | 2.434789 Ɉ           |
+| 8.10 €                  | 3.000000 Ɉ           |
+| 10.00 €                 | 3.258457 Ɉ           |
+| 17.99 €                 | 4.000000 Ɉ           |
+| 20.00 €                 | 4.137147 Ɉ           |
+| 38.63 €                 | 5.000000 Ɉ           |
+| 50.00 €                 | 5.342887 Ɉ           |
+| 81.72 €                 | 6.000000 Ɉ           |
+| 100.00 €                | 6.271404 Ɉ           |
+| 171.66 €                | 7.000000 Ɉ           |
+| 200.00 €                | 7.206566 Ɉ           |
+| 359.40 €                | 8.000000 Ɉ           |
+| 500.00 €                | 8.447635 Ɉ           |
+| 751.27 €                | 9.000000 Ɉ           |
+| 1000.00 €               | 9.388183 Ɉ           |
+| 1569.25 €               | 10.000000 Ɉ          |
 
 Rappel, si vous avez déjà cotisé, la formule pour calculer la quantité de nouvelles valeurs en Ɉ est :  
 **jₙ = log₂( (dₙ+dₜ) + 1 ) / *stingynaltyₙ* – jₜ**  
@@ -71,24 +70,35 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 *Au 2 Avril 2025, en utilisant le script ./tools/[gifts-stats.sh](http://gifts-stats.sh) dans la blockchain qui gère les jetons Ɉ.*
 
 Total members: 32	-	Total certified members: 9 / 32
-
 Total gifts:   56	-	Total certified gifts: 17 / 56
-
 Total given:   50747.14 €	-	Total certified given: 47794.51 € / 50747.14 €
-
 Total created: 187.338852 Ɉ	-	Total certified created: 81.095877 Ɉ / 187.338852 Ɉ
 
-### Pas de Revue de presse ce soir
+### Revue de presse
+
+- Meta AI est le plus gros collecteur de données personnelles : <https://www.linformaticien.com/magazine/tendances/941-ia/63465-meta-ai-aime-vos-donnees.html>
+- Mise en route d'un ordinateur quantique photonique : <https://www.linformaticien.com/magazine/infra/63460-par-toutatis-quandela-met-en-service-belenos.html>
+- OVH s'étend en Italie : <https://www.linformaticien.com/magazine/infra/63467-ovh-s-etend-en-italie.html>
+- Le département des Hauts-de-Seine victime d'une cyber-attaque : <https://www.linformaticien.com/magazine/cybersecurite/63448-le-departement-des-hauts-de-seine-cible-d-une-cyberattaque.html>
+- Qwant rachète Lilo : <https://www.linformaticien.com/magazine/biz-it/63439-qwant-rachete-le-moteur-de-recherche-solidaire-lilo-org.html>
+- Manpower utilise l'IA pour sa RH : <https://www.linformaticien.com/magazine/tendances/941-ia/63440-manpower-ouvre-un-hub-dedie-a-l-ia.html>
+- La CNIL ajoute un module RH dans ses formations sur le RGPD : <https://www.linformaticien.com/magazine/tendances/968-donnees-personnelles/63437-la-cnil-enrichit-sa-formation-rgpd-d-un-module-rh.html>
+- Coinbase victime d'un piratage : <https://www.linformaticien.com/magazine/cybersecurite/63433-coinbase-cible-par-un-piratage.html>
+- Meta mis en demeure sur l'entrainement de ses modèles IA : <https://www.linformaticien.com/magazine/tendances/968-donnees-personnelles/63425-meta-vise-par-une-mise-en-demeure-sur-l-entrainement-de-ses-modeles.html>
 
 ### Activité récente
 
 #### Au cœur de la réunion
 
-- Présentation de la blockchain gérant les comptes des adhérents à l'association, à partir de laquelle sont calculés les chiffres telle la masse monétaire cité plus haut.
+- Retour des JDLL (Lyon), près de 350€ de CA, mais les bénéfices sont encore loin de couvrir le déplacement.
+  - Voici le support de la présentation que Jean-Jacques a donné : <https://foopgp.org/documents/fr/2025-foopgp-presentation.pdf>
+  - Et la vidéo : <https://videos-libr.es/w/vRzeAyKLvxf9EQhnhrw5xq>
+- Support GPG sous windows, notamment pour la onlykey
+- Même si Fido est très limité par rapport à OpenPGP il permet aussi de s'authentifier en ssh : <https://quentin.demouliere.eu/sysadmin/2023/09/12/ssh-fido2.html>
 
 #### Actions en cours
 
-- Génération d'ISO Debian, configurées foopgp/OpenPGP. (piseb)
+- Génération d'ISO Debian, configurés foopgp/OpenPGP. (piseb)
 - Rédaction de fiches missions, pour les bénévoles et plus. (Kelyan et JJ)
 - Collecte de laptop doté de windows obsolètes, et installation de système Debian GNU/Linux (en attendant nos  ISO complétée et configurée foopgp/OpenPGP). (Merci Laurent)
 
@@ -121,11 +131,12 @@ Livre blanc commencé : <https://foopgp.org/fr/about/white-book/>
 
 ### Agenda
 
-- Jeudi 22 mai de 9 h 30 à 12 h 00 à Gap : [ADELHA : Penser ses fiches missions de bénévolat](https://docs.google.com/forms/d/e/1FAIpQLSfYEgB59lleVhW4ILt-r785Kjpv0-LdrRFxFbWrImAIXQBE9g/viewform)
-- WE du 24 et 25 mai 2025 à Lyon : [Les 26es Journées du Logiciel Libre](https://www.jdll.org/contact-and-informations)
 - WE du 25 au 27 juillet 2025 à Saint-Maixent-l'École (79400) : <https://decroissancelefestival.org/>
 - Du jeudi 7 au dimanche 10 Août : Les résistantes 2025 en Normandie.
 - camp CHATONS 7-10 août
+- 3 octobre près de Gap : présentation de la monnaie libre avec le collectif Philarmonia
+- 15 Novembre 2025 : Capitole du libre à Toulouse
+- 15 Novembre 2025 : Campus du Libre à Villeurbanne (oui il y a comme une collision)
 - [... agenda du libre](https://www.agendadulibre.org)
 
 ---

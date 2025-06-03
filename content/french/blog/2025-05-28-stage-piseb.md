@@ -1,7 +1,7 @@
 ﻿---
 title: "Résumé de stage"
 date: 2025-05-28T13:00:00+02:00
-draft: true
+draft: false
 description: "Résumé de stage par Sébastien Picardeau (piseb)"
 lang: fr
 image: "/images/blog/2024/rds.avif"
@@ -102,7 +102,7 @@ Le site utilise [hugo](https://gohugo.io) et est sur un dépot git (en fait 3, a
 ```bash
 # Parce qu'on veut la branche "public" et uniquement elle qui n'est pas par défaut.
 $ git clone --branch public --single-branch  https://codeberg.org/foopgp/foopgp-hugowebsite.git
-$ git submodule update --init --recursive 
+$ git submodule update --init --recursive
 ```
 
 #### hugo
@@ -289,7 +289,7 @@ On édite `changelog` pour corriger le nom et la version.
 
 ```bash
 $ vim changelog
-$ cat changelog 
+$ cat changelog
 bash-libs (0.0.2-1) UNRELEASED; urgency=low
 
   * Initial release.
@@ -299,7 +299,7 @@ bash-libs (0.0.2-1) UNRELEASED; urgency=low
 On édite aussi `control`.
 
 ```bash
-$ cat control 
+$ cat control
 Source: bash-libs
 Section: utils
 Priority: optional
@@ -338,7 +338,7 @@ On passe a une rapide configuration pour `gbp`, on précise juste les branch et 
 
 ```bash
 $ vim gbp.conf # toujours dans bash-libs/debian
-seb@PC1:~/demo-bash-libs/bash-libs/debian$ cat gbp.conf 
+seb@PC1:~/demo-bash-libs/bash-libs/debian$ cat gbp.conf
 [DEFAULT]
 upstream-branch = main
 upstream-tag = v%(version)s
@@ -436,7 +436,7 @@ $ gbp buildpackage --git-ignore-new
 On constate que le deb ne contient pas `bin/` ni `data/`. (Ils sont pas compilés mais à copier.)
 
 ```bash
-$ dpkg -c ../pgpid_0.0.1-1_amd64.deb 
+$ dpkg -c ../pgpid_0.0.1-1_amd64.deb
 drwxr-xr-x root/root         0 2025-05-27 16:02 ./
 drwxr-xr-x root/root         0 2025-05-27 16:02 ./usr/
 drwxr-xr-x root/root         0 2025-05-27 16:02 ./usr/share/
@@ -682,7 +682,7 @@ $ dquilt header -e
 Le patch :
 
 ```bash
-$ cat debian/patches/fix-bash-libs-paths.patch 
+$ cat debian/patches/fix-bash-libs-paths.patch
 --- a/bin/pgpid-gen
 +++ b/bin/pgpid-gen
 @@ -136,10 +136,10 @@

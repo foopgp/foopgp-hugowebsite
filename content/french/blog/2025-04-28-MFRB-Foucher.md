@@ -15,7 +15,7 @@ type: "post"
 
 En attendant que le [mouvement français pour le revenu de
 base](https://www.revenudebase.info/) publie les vidéos
-de ses [rencontres de 2025](/fr/event/2025-03-15-generous-states-basic-income-2025/) (notamment celle où je suis intervenu :-p), on peut se
+de ses [rencontres de 2025](/fr/event/2025-03-15-generous-states-basic-income-2025/) ([notamment celle où je suis intervenu :-p](https://www.youtube.com/watch?v=D_SHmA1m7R4&t=2340s)), on peut se
 souvenir de l'excellent prestation de Gérard Foucher lors de l'édition de 2014 :
 
 {{< video src="/largefiles/videos/2025/Gerard Foucher Monnaie et revenu de base.mp4" type="video/mp4" >}}

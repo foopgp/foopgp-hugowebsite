@@ -33,7 +33,6 @@ fonctionnement de l'association foopgp, notamment ceux décrits dans son
 
 | Paramètre  | valeur | description
 |---|---|---|
-| *fee* | 1€ | Minimum de cotisation libre (don), confer article 3 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 | *stingynalty*  | 1 + 5‰/mois | facteur d'inflation, confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 | *growth* | 4‰/mois | taux de croissance autonome de la quantité de jetons, confer article 5 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |
 | *taxe* | 2%/ans | contributions obligatoires, confer article 7 du [règlement intérieur](/fr/about/rules-of-procedures-2/). |

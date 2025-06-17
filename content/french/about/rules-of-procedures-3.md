@@ -35,66 +35,76 @@ Il peut être modifié par le conseil d’administration sur proposition d'un de
 
 Toute modification doit se faire approuver par l'assemblée générale.
 
-
 ### Article 3 – Cotisation
 
-Pour chaque exercice, les membres actifs doivent s'acquitter d'une cotisation, notée *fee*.
-
-Le montant et les natures de celle-ci sont fixés par le Conseil d'Administration qui soumet chaque changement à l'approbation de l’Assemblée Générale.
+Pour chaque exercice, les adhérents peuvent s'acquitter d'une cotisation libre.
 
 Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un membre en cours d’année.
 
-**Le montant de la cotisation *fee* défini lors de la dernière assemblée
-générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
-
 Le versement de la cotisation doit être effectué de préférence par virement (IBAN : FR76 1027 8079 9800 0208 2780 107) ou par chèque à l'ordre de l'association foopgp.
-
 
 ### Article 4 - Modalités relatives aux jetons de pouvoir (confer article 10bis des Statuts)
 
-Tous les dons à l'association reçus à titre individuel (personne physique) donnent droit à des jetons de pouvoir,
+Toutes les cotisations à l'association reçus à titre individuel (personne physique) donnent droit à des jetons de pouvoir,
 suivant la formule :
 
-**j = log₂(d+1) / *stingynalty***
+**jₙ = log₂( (cₙ+cₜ) + 1 ) / *stingynaltyₙ* – jₜ**
 
 Avec :
-* j : la quantité de jetons
-* d : le montant total du don en équivalent euro (€)
-* *stingynalty* : le facteur d'inflation
 * log₂() : la fonction logarithme binaire. C'est à dire de base 2 :
   log₂(x) = ln(x) / ln(2)
+* jₙ : la quantité de jetons supplémentaires
+* cₙ : le montant de la nième cotisation mesurées en Euros (€).
+* cₜ : le montant total des cotisations précédentes (cₜ = cₙ₋₁ + cₙ₋₂ + ... + c₀ )
+* *stingynaltyₙ* : le facteur d'inflation à la période de la nième cotisation
+* jₜ : la quantité totale de jetons issue des cotisations précédentes (jₜ = jₙ₋₁ + jₙ₋₂ + ... + j₀)
 
-où *stingynalty* croît automatiquement de 5 pour mille (5 ‰) le premier jour de chaque mois, à 0h00 :
+Où *stingynalty* croît automatiquement le premier jour de chaque mois, à 0h00. Actuellement ce taux de croissance est de 5 pour mille (5 ‰) :
 
 **stingynaltyₙ = stingynaltyₙ₋₁ + 0.005 × stingynaltyₙ₋₁**
-
-En cas d'inflation significative de la zone euro, un ajustement du paramètre *stingynalty* pourra être determiné par le conseil d'administration puis adopté en assemblée générale.
 
 *Explication :* en choisissant un facteur d'inflation supérieur à ceux calculés en zone euro (eg: eurostat)
 nous pouvons créer un léger « [Fear Of Missing Opportunity](https://fr.wikipedia.org/wiki/Syndrome_FOMO) ».
 
-Chaque don étant compté à titre individuel, tout nouveau don donne droit à de nouveaux jetons suivant la formule :
+En cas d'inflation significative de la zone euro, un ajustement du paramètre *stingynalty* pourra être determiné par le conseil d'administration puis adopté en assemblée générale.
 
-**jₙ = log₂( (dₙ+dₜ) + 1 ) / *stingynaltyₙ* – jₜ**
+*Note :* jₙ ne peut être négatif. Si la nième cotisation ne comble pas la croissance du facteur d'inflation *stingynalty*, alors la cotisation est compté mais aucun jeton n'est crée : jₙ est nul.
+
+Remarque : au moment la première cotisation, la formule se simplifie :
+
+**j = log₂(c+1) / *stingynalty***
 
 Avec :
-* jₙ : la quantité de jetons supplémentaires
-* jₜ : la quantité totale de jetons issue des dons précédents (jₜ = jₙ₋₁ + jₙ₋₂ + ... + j₀)
-* dₙ : le montant du nième don
-* dₜ : le montant total des dons précédents (dₜ = dₙ₋₁ + dₙ₋₂ + ... + d₀ )
-* *stingynaltyₙ* : le facteur d'inflation à la période du nième don
+* j : la quantité de jetons
+* c : le montant de la cotisation, mesurée en euro (€)
+* *stingynalty* : le facteur d'inflation
 
-*Note :* jₙ ne peut être négatif. Si le nième don ne comble pas la croissance du facteur d'inflation, alors le don est compté mais jₙ est nul.
-
-**Les tableaux de correspondance entre dons et jetons, en fonction des facteurs d'inflations *stingynalty* actuels et à venir,
+**Des tableaux de correspondance entre cotisations et jetons, en fonction des facteurs d'inflations *stingynalty* actuels et à venir,
 sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
 
+### Article 4bis - Certification et validation
+
+Pour pouvoir utiliser ou échanger tout jeton de pouvoir, chaque adhérent devra être validé par l'association.
+
+Cette validation est automatique dès lors que les deux critères suivant sont remplis :
+- Être à jour de ses contributions obligatoires (confer article 7 du présent document et article 10bis des Statuts).
+- Être certifié par l'association.
+
+Cette certification passe par un identifiant unique, calculé à partir de données d'État-Civil conformes à la norme ISO/IEC 7501-1:2008[^ISO7501-1].
+
+Cette certification pourra s'appuyer sur des toiles de confiance OpenPGP[^PGPWOT] ; lesquelles peuvent être renforcées lors de "Key Signing Parties"[^KSP].
+
+[^ISO7501-1]: [ISO/IEC 7501-1:2008 Identification cards -- Machine readable travel documents -- Part 1: Machine readable passport](https://www.iso.org/standard/45562.html)
+
+[^PGPWOT]: <https://fr.wikipedia.org/wiki/Toile_de_confiance>
+
+[^KSP]: <https://en.wikipedia.org/wiki/Key_signing_party>
 
 ### Article 5 – Émission universelle de nouveaux jetons (confer article 10bis des Statuts)
 
-Mensuellement, de nouveaux jetons sont émis à quantité égale pour chaque personne physique membre active de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
+Mensuellement, de nouveaux jetons sont émis à quantité égale pour chaque personne physique adhérent validé de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
 
-Ainsi, pour chacune de ces périodes mensuelles, chaque membre actif de l’association, c’est-à-dire à jour de sa cotisation et de ses contributions obligatoires (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
+Ainsi, pour chacune de ces périodes mensuelles, chaque adhérent validé de l’association, c’est-à-dire certifié et à jour de ses cotisation et de ses contributions obligatoires (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
 
 **jₛ= *growth* × Mₜ ∕ N**
 
@@ -116,7 +126,6 @@ Toute personne physique peut posséder des portefeuilles secondaires, éventuell
 
 Ces portefeuilles sont notés « W ».
 
-
 ### Article 7 – Contributions obligatoires (confer article 10bis des Statuts)
 
 Des contributions obligatoires en jetons pourront être déterminé par le conseil d'administration puis adopté en assemblée générale.
@@ -133,9 +142,9 @@ Tant que ces contributions ne seront pas réglés, les membres associés à ces 
 
 ### Article 8 – Lissage polynomial des quantitées de pouvoir (confer article 10bis des Statuts)
 
-Durant chaque exercice, les membres actifs pourront exprimer leur voix pour valider, ou non, certaines résolutions prises par le conseil d’administration.
+Durant chaque exercice, les adhérents validés pourront exprimer leur voix pour valider, ou non, certaines résolutions prises par le conseil d’administration.
 
-Le nombre de voix de chaque membre actif dépend de la quantité de jetons de pouvoir en leur possession, suivant la formule :
+Le nombre de voix de chaque adhérents validés dépend de la quantité de jetons de pouvoir en leur possession, suivant la formule :
 
 **v = j^*sharp* = jˢʰᵃʳᵖ**
 
@@ -151,7 +160,6 @@ Avec :
 
 **L'exposant de pouvoir *sharp* défini lors de la dernière assemblée
 générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
-
 
 ### Article 9 – Expression de la volonté des membres (confer article 10bis et article 11 des Statuts)
 

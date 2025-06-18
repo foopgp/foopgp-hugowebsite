@@ -124,10 +124,10 @@ Elle se réunit au moins une fois chaque année civile.
 Quinze jours au moins avant la date fixée, les membres de l'association sont convoqués par les soins du
 Conseil d'administration. L'ordre du jour figure sur les convocations.
 
-Le président, assisté des membres du conseil, préside l'assemblée et expose la situation morale ou l’activité
+Un président, assisté des membres du conseil, préside l'assemblée et expose la situation morale ou l’activité
 de l'association.
 
-Le trésorier rend compte de sa gestion et soumet les comptes de l'année civile échue à l'approbation de
+Un trésorier rend compte de sa gestion et soumet les comptes de l'année civile échue à l'approbation de
 l'assemblée.
 
 L’assemblée générale fixe la valeur des paramètres de fonctionnement définis par [le règlement intérieur](../rules-of-procedures/).
@@ -144,7 +144,7 @@ Les décisions des assemblées générales s’imposent à tous les membres, y c
 
 ### Article 12 - ASSEMBLÉE GÉNÉRALE EXTRAORDINAIRE
 
-Si besoin est, ou sur la demande de la moitié plus un des membres inscrits, le président peut convoquer
+Si besoin est, ou sur la demande de la moitié plus un des membres inscrits, un président peut convoquer
 une assemblée générale extraordinaire, suivant les modalités prévues aux présents statuts et uniquement
 pour modification des statuts ou règlement intérieur, ou la dissolution ou pour des actes portant sur des immeubles.
 
@@ -154,7 +154,7 @@ Les délibérations sont prises à la majorité des suffrages exprimés par les 
 
 ### Article 13 - CONSEIL D'ADMINISTRATION
 
-L'association est dirigée par un conseil d'administration d'au moins 2 membres (président et trésorier), élus
+L'association est dirigée par un conseil d'administration d'au moins 2 membres (un président et un trésorier), élus
 pour 3 années par l'assemblée générale. Les membres sont rééligibles.
 
 En cas de vacance, le conseil pourvoit provisoirement au remplacement de ses membres jusqu'à la prochaine assemblée générale.
@@ -164,21 +164,21 @@ soir. Ces réunions sont ouvertes à tous les membres et aux invités, dans la
 limite d'un invité par membre. À chaque réunion un compte rendu sera publié,
 au plus tard avant la réunion suivante.
 
-Les décisions sont prises par recherche du consentement sur au moins deux réunions.
+Les décisions sont prises par recherche du consentement.
 
-Si des objections perdurent, le président convoquera l'ensemble des membres du conseil
+Si des objections perdurent, un président convoquera l'ensemble des membres du conseil
 d'administration, et les décisions seront prise à la majorité qualifié des deux tiers des voix exprimées.
 
 Si la majorité qualifié n'est pas obtenue au sein du conseil d'administration,
 les decisions concernées pourront être soumises à l'ensemble des membres, lors d'une prochaine
-assemblé générale ou d'un vote par correspondance.
+assemblée générale ou d'un vote par correspondance.
 
-En cas de partage égal des voix, le président dispose d’une voix prépondérante.
+En cas de partage égal des voix, un président dispose d’une voix prépondérante.
 
-Le trésorier et le président sont les seules personnes habilitées à engager
+Trésoriers et présidents sont les seules personnes habilitées à engager
 l'association sur ses deniers.
 
-Les signatures du trésorier et du président devront être conjointes pour toutes opérations importantes, notamment :
+Les signatures d'un trésorier et d'un président devront être conjointes pour toutes opérations importantes, notamment :
 * signature d'un bail
 * ouverture de compte bancaire
 * opérations bancaires, ou somme d'opérations bancaires sur un mois, de montant supérieur à 10% du chiffre d'affaire établi.
@@ -213,4 +213,4 @@ fonctionnement desdits établissements.
 
 *Brouillon pour soumission éventuelle à la prochaine assemblée générale extraordinaire.*
 
-*Remplacera donc éventuellement [les Statuts vigueur](status/).*
+*Remplacera donc éventuellement [les Statuts en vigueur](status/).*

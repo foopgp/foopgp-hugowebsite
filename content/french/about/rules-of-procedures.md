@@ -16,7 +16,7 @@ type: "post"
 
 ---
 
-Ce règlement intérieur a pour objectif de préciser [les statuts](../status-2/) de l'association foopgp, dont l'objet est de rassembler toutes les personnes physiques ou morales qui utilisent ou développent des solutions technologiques basées sur les normes OpenPGP.
+Ce règlement intérieur a pour objectif de préciser [les statuts](../status/) de l'association foopgp, dont l'objet est de rassembler toutes les personnes physiques ou morales qui utilisent ou développent des solutions technologiques basées sur les normes OpenPGP.
 
 Le règlement intérieur en vigueur devrait être remis à chaque nouvel adhérent,
 et il doit être consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-of-procedures/ .
@@ -29,7 +29,7 @@ L'association foopgp est composée de membres : personnes physiques, et de parte
 
 ### Article 2 - Modification du règlement intérieur
 
-Le règlement intérieur de l’association foopgp est établi par le conseil d’administration conformément à l'article 15 des [statuts](../status-2/).
+Le règlement intérieur de l’association foopgp est établi par le conseil d’administration conformément à l'article 15 des [statuts](../status/).
 
 Il peut être modifié par le conseil d’administration sur proposition d'un de ses membres.
 
@@ -171,5 +171,5 @@ Cette expression pourra utiliser la [méthode de Schulze](https://fr.wikipedia.o
 
 *Adopté en [assemblée générale extraordinaire du dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-age/) et en vigueur depuis cette date et jusqu'à nouvel ordre.*
 
-*[Réglement intérieur précédent](../rules-of-procedures-1/)*
+*[Réglement intérieur précédent](../rules-of-procedures-old/)*
 

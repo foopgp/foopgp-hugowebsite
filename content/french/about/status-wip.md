@@ -213,4 +213,4 @@ fonctionnement desdits établissements.
 
 *Brouillon pour soumission éventuelle à la prochaine assemblée générale extraordinaire.*
 
-*Remplacera donc éventuellement [les Statuts vigueur](status-2/).*
+*Remplacera donc éventuellement [les Statuts vigueur](status/).*

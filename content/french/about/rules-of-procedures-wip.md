@@ -1,8 +1,7 @@
 ---
-#Lastmod: 2024-05-11T17:05:01+02:00 # MANAGED by --enableGitInfo
 title: "(en travaux) Réglement intérieur foopgp"
 lang: fr
-###date: 2019-07-06T15:27:17+06:00
+date: 2025-06-18T15:27:17+02:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Réglement intérieur de l'association foopgp"

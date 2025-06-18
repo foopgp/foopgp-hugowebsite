@@ -1,8 +1,7 @@
 ---
-#Lastmod: 2024-06-27T08:46:18+02:00 # MANAGED by --enableGitInfo
 title: "Friends Of OpenPGP (foopgp)"
 lang: fr
-###date: 2019-07-06T15:27:17+06:00
+date: 2025-06-18T15:27:17+02:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "(en travaux) Statuts de l'association"
@@ -167,13 +166,13 @@ au plus tard avant la réunion suivante.
 Les décisions sont prises par recherche du consentement.
 
 Si des objections perdurent, un président convoquera l'ensemble des membres du conseil
-d'administration, et les décisions seront prise à la majorité qualifié des deux tiers des voix exprimées.
+d'administration, et les décisions seront prises à la majorité qualifié des deux tiers des voix exprimées.
 
 Si la majorité qualifié n'est pas obtenue au sein du conseil d'administration,
 les decisions concernées pourront être soumises à l'ensemble des membres, lors d'une prochaine
 assemblée générale ou d'un vote par correspondance.
 
-En cas de partage égal des voix, un président dispose d’une voix prépondérante.
+En cas de partage égal des voix, les décisions seront tirées au sort.
 
 Trésoriers et présidents sont les seules personnes habilitées à engager
 l'association sur ses deniers.
@@ -213,4 +212,4 @@ fonctionnement desdits établissements.
 
 *Brouillon pour soumission éventuelle à la prochaine assemblée générale extraordinaire.*
 
-*Remplacera donc éventuellement [les Statuts en vigueur](status/).*
+*Remplacera donc éventuellement [les Statuts en vigueur](../status/).*

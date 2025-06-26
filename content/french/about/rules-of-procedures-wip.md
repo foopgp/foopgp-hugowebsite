@@ -36,7 +36,9 @@ Toute modification doit se faire approuver par l'assemblée générale.
 
 ### Article 3 – Cotisation
 
-Pour chaque exercice, les adhérents doivent s'acquitter d'une cotisation libre et non-nulle.
+À tout moment, les adhérents peuvent s'acquitter de cotisations libres.
+
+Plus la somme des cotisations est importante, plus l'adhérent disposera de pouvoirs (confer article 4 du règlement intérieur).
 
 Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un adhérent en cours d’année.
 
@@ -46,7 +48,7 @@ Le versement de la cotisation doit être effectué de préférence par virement[
 
 ### Article 4 - Modalités relatives aux jetons de pouvoir (confer article 10bis des Statuts)
 
-Toutes les cotisations à l'association reçus à titre individuel (personne physique) donnent droit à des jetons de pouvoir,
+Toutes les cotisations à l'association versées à titre individuel (personne physique) donnent droit à des jetons de pouvoir,
 suivant la formule :
 
 **jₙ = log₂( (cₙ+cₜ) + 1 ) / *stingynaltyₙ* – jₜ**

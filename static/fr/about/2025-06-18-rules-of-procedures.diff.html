@@ -9,7 +9,7 @@
 <body>
 <pre>
 <span style="color:red;">--- rules-of-procedures.md	2025-06-18 14:16:42.701058817 +0200</span>
-<span style="color:green;">+++ rules-of-procedures-wip.md	2025-06-26 15:17:14.719569623 +0200</span>
+<span style="color:green;">+++ rules-of-procedures-wip.md	2025-06-26 16:16:49.462681951 +0200</span>
 <span style="color:teal;">@@ -1,8 +1,7 @@</span>
  ---
 <span style="color:red;">-#Lastmod: 2024-05-09T19:45:29+02:00 # MANAGED by --enableGitInfo</span>
@@ -39,7 +39,7 @@
  
  
  ### Article 2 - Modification du règlement intérieur
-<span style="color:teal;">@@ -35,66 +34,78 @@</span>
+<span style="color:teal;">@@ -35,66 +34,80 @@</span>
  
  Toute modification doit se faire approuver par l'assemblée générale.
  
@@ -49,10 +49,11 @@
 <span style="color:red;">-Pour chaque exercice, les membres actifs doivent s'acquitter d'une cotisation, notée *fee*.</span>
 <span style="color:red;">-</span>
 <span style="color:red;">-Le montant et les natures de celle-ci sont fixés par le Conseil d'Administration qui soumet chaque changement à l'approbation de l’Assemblée Générale.</span>
-<span style="color:green;">+Pour chaque exercice, les adhérents doivent s'acquitter d'une cotisation libre et non-nulle.</span>
+<span style="color:green;">+À tout moment, les adhérents peuvent s'acquitter de cotisations libres.</span>
  
 <span style="color:red;">-Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un membre en cours d’année.</span>
-<span style="color:red;">-</span>
+<span style="color:green;">+Plus la somme des cotisations est importante, plus l'adhérent disposera de pouvoirs (confer article 4 du règlement intérieur).</span>
+ 
 <span style="color:red;">-**Le montant de la cotisation *fee* défini lors de la dernière assemblée</span>
 <span style="color:red;">-générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**</span>
 <span style="color:green;">+Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un adhérent en cours d’année.</span>
@@ -65,7 +66,7 @@
  ### Article 4 - Modalités relatives aux jetons de pouvoir (confer article 10bis des Statuts)
  
 <span style="color:red;">-Tous les dons à l'association reçus à titre individuel (personne physique) donnent droit à des jetons de pouvoir,</span>
-<span style="color:green;">+Toutes les cotisations à l'association reçus à titre individuel (personne physique) donnent droit à des jetons de pouvoir,</span>
+<span style="color:green;">+Toutes les cotisations à l'association versées à titre individuel (personne physique) donnent droit à des jetons de pouvoir,</span>
  suivant la formule :
  
 <span style="color:red;">-**j = log₂(d+1) / *stingynalty***</span>
@@ -95,11 +96,9 @@
  
 <span style="color:red;">-Chaque don étant compté à titre individuel, tout nouveau don donne droit à de nouveaux jetons suivant la formule :</span>
 <span style="color:green;">+En cas d'inflation significative de la zone euro, un ajustement du paramètre *stingynalty* pourra être determiné par le conseil d'administration puis adopté en assemblée générale.</span>
-<span style="color:green;">+</span>
-<span style="color:green;">+*Note :* jₙ ne peut être négatif. Si la nième cotisation ne comble pas la croissance du facteur d'inflation *stingynalty*, alors la cotisation est compté mais aucun jeton n'est crée : jₙ est nul.</span>
  
 <span style="color:red;">-**jₙ = log₂( (dₙ+dₜ) + 1 ) / *stingynaltyₙ* – jₜ**</span>
-<span style="color:green;">+Remarque : au moment la première cotisation, la formule se simplifie :</span>
+<span style="color:green;">+*Note :* jₙ ne peut être négatif. Si la nième cotisation ne comble pas la croissance du facteur d'inflation *stingynalty*, alors la cotisation est compté mais aucun jeton n'est crée : jₙ est nul.</span>
  
 <span style="color:red;">-Avec :</span>
 <span style="color:red;">-* jₙ : la quantité de jetons supplémentaires</span>
@@ -107,15 +106,17 @@
 <span style="color:red;">-* dₙ : le montant du nième don</span>
 <span style="color:red;">-* dₜ : le montant total des dons précédents (dₜ = dₙ₋₁ + dₙ₋₂ + ... + d₀ )</span>
 <span style="color:red;">-* *stingynaltyₙ* : le facteur d'inflation à la période du nième don</span>
-<span style="color:green;">+**j = log₂(c+1) / *stingynalty***</span>
+<span style="color:green;">+Remarque : au moment la première cotisation, la formule se simplifie :</span>
  
 <span style="color:red;">-*Note :* jₙ ne peut être négatif. Si le nième don ne comble pas la croissance du facteur d'inflation, alors le don est compté mais jₙ est nul.</span>
+<span style="color:green;">+**j = log₂(c+1) / *stingynalty***</span>
+ 
+<span style="color:red;">-**Les tableaux de correspondance entre dons et jetons, en fonction des facteurs d'inflations *stingynalty* actuels et à venir,</span>
 <span style="color:green;">+Avec :</span>
 <span style="color:green;">+* j : la quantité de jetons</span>
 <span style="color:green;">+* c : le montant de la cotisation, mesurée en euro (€)</span>
 <span style="color:green;">+* *stingynalty* : le facteur d'inflation</span>
- 
-<span style="color:red;">-**Les tableaux de correspondance entre dons et jetons, en fonction des facteurs d'inflations *stingynalty* actuels et à venir,</span>
+<span style="color:green;">+</span>
 <span style="color:green;">+**Des tableaux de correspondance entre cotisations et jetons, en fonction des facteurs d'inflations *stingynalty* actuels et à venir,</span>
  sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
  
@@ -147,7 +148,7 @@
  
  **jₛ= *growth* × Mₜ ∕ N**
  
-<span style="color:teal;">@@ -102,7 +113,7 @@</span>
+<span style="color:teal;">@@ -102,7 +115,7 @@</span>
  * jₛ : la quantité de jetons supplémentaires issue de cette émission
  * *growth* : un taux de croissance de la masse totale de l’ensemble des jetons
  * Mₜ : la masse totale de l’ensemble des jetons (avant cette émission universelle)
@@ -156,7 +157,7 @@
  
  **Le taux de croissance *growth* adopté lors de la dernière assemblée générale sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
  
-<span style="color:teal;">@@ -110,13 +121,12 @@</span>
+<span style="color:teal;">@@ -110,13 +123,12 @@</span>
  
  Tout jeton doit être associé à un et un seul portefeuille.
  
@@ -171,7 +172,7 @@
  ### Article 7 – Contributions obligatoires (confer article 10bis des Statuts)
  
  Des contributions obligatoires en jetons pourront être déterminé par le conseil d'administration puis adopté en assemblée générale.
-<span style="color:teal;">@@ -127,15 +137,15 @@</span>
+<span style="color:teal;">@@ -127,15 +139,15 @@</span>
  
  Aussi, elles pourront être réglées en une seule fois, au bénéfice de l'association.
  
@@ -190,7 +191,7 @@
  
  **v = j^*sharp* = jˢʰᵃʳᵖ**
  
-<span style="color:teal;">@@ -152,12 +162,10 @@</span>
+<span style="color:teal;">@@ -152,12 +164,10 @@</span>
  **L'exposant de pouvoir *sharp* défini lors de la dernière assemblée
  générale est consultable sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
  
@@ -205,7 +206,7 @@
  * le facteur d'inflation *stingynalty* (confer article 4 du présent règlement intérieur)
  * le taux de croissance « *growth* » ainsi que sa périodicité « *growthp* » (confer article 5 du présent règlement intérieur)
  * les taux de contributions obligatoires et donc le taux d'impôt associatif « *taxe* » ainsi que sa périodicité « *taxep* » (confer article 7 du présent règlement intérieur)
-<span style="color:teal;">@@ -169,7 +177,6 @@</span>
+<span style="color:teal;">@@ -169,7 +179,6 @@</span>
  
  ---
  

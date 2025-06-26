@@ -260,7 +260,7 @@ target="_blank"
 [[params.social]]
 title = "join us"
 icon = "ti-comments" # themify icon : https://themify.me/themify-icons
-link = "https://framalistes.org/sympa/info/foopgp"
+link = "/contact"
 target="_blank"
 
 ################################### English language #####################################

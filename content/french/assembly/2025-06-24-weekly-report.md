@@ -2,7 +2,7 @@
 title: "2025 S26 Rapport Hebdomadaire"
 lang: fr
 date: 2025-06-24T20:30:00+01:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/logos/logo-black-pgp.png"

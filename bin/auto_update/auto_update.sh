@@ -25,6 +25,6 @@ tail -n 100 $log_file > $tmp_file && mv $tmp_file $log_file
   # hugo build only if needed
   if [[ "$head_root_before" != "$head_root_after" ]]\
     || [[ "$head_subs_before" != "$head_subs_after" ]]; then
-      hugo
+      hugo --minify
   fi
 } 2>&1 | tee -a $log_file

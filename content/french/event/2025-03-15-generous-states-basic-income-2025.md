@@ -1,4 +1,3 @@
-
 ---
 type: "event"
 title: "Etats généreux du revenu de base"
@@ -35,7 +34,9 @@ Nous sommes au seuil d’une disruption dans l’économie et assistons à un d�
 
 **Il s’agit bien de concevoir et de mettre en œuvre des mesures innovantes, positives, radicales. Une utopie réaliste est à mettre à l’ordre du jour. Il nous faut recréer des caps d’espoir, un horizon commun, généreux et enviable.**
 
-C'est dans ce cadre, que [Jean-Jacques](/fr/author/jean-jacques-brucker/), en tant qu'inititateur de « monnaies libres » interviendra **samedi 19 à 14h45** lors de la **table ronde : Retours sur expérimentations, passées et en cours**.
+C'est dans ce cadre, que [Jean-Jacques](/fr/author/jean-jacques-brucker/), en tant qu'inititateur de « monnaies libres » est intervienu **samedi 19 à 14h45** lors de la **table ronde : Retours sur expérimentations, passées et en cours** :
+
+{{< youtube id="D_SHmA1m7R4" start=2344 loading=lazy title="Le revenu de base, expérimentons une autre redistribution des richesses" >}}
 
 ---
 

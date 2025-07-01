@@ -28,6 +28,8 @@ speaker:
   - name: “And many others”
 ---
 
+{{< youtube id="D_SHmA1m7R4" start=2344 loading=lazy title="Le revenu de base, expérimentons une autre redistribution des richesses" >}}
+
 The full program is available at:
 
   [https://www.revenudebase.info/wp-content/uploads/2025/03/Programme-previsionnel-.pdf](https://www.revenudebase.info/wp-content/uploads/2025/03/Programme-previsionnel-.pdf)

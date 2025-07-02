@@ -40,6 +40,8 @@ fonctionnement de l'association foopgp, notamment ceux décrits dans son
 
 ### Nombre de jetons pour une cotisation initiale
 
+**Graphique en 3 dimensions** -> <https://www.math3d.org/qN4f2yxwsp>
+
 Ces tableaux permettent d'appréhender la quantité de jetons crée par cotisation initiale.
 
 Cette quantité dépend du facteur d'inflation *stingynalty* dont la réévaluation est effective à chaque changement de mois.
@@ -54,7 +56,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00€ |  1.000000 Ɉ |
 |       2.00€ |  1.584962 Ɉ |
@@ -124,7 +126,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.05114013204079064258**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .951347 Ɉ |
 |       1.08 € |  1.000000 Ɉ |
@@ -155,7 +157,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.05639583270099459579**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .946614 Ɉ |
 |       1.08 € |  1.000000 Ɉ |
@@ -186,7 +188,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.06167781186449956876**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .941905 Ɉ |
 |       1.09 € |  1.000000 Ɉ |
@@ -217,7 +219,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.06698620092382206660**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .937219 Ɉ |
 |       1.10 € |  1.000000 Ɉ |
@@ -248,7 +250,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.07232113192844117693**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .932556 Ɉ |
 |       1.11 € |  1.000000 Ɉ |
@@ -279,7 +281,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.07768273758808338281**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .927916 Ɉ |
 |       1.12 € |  1.000000 Ɉ |
@@ -310,7 +312,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.08307115127602379972**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .923300 Ɉ |
 |       1.12 € |  1.000000 Ɉ |
@@ -341,7 +343,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.08848650703240391871**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .918706 Ɉ |
 |       1.13 € |  1.000000 Ɉ |
@@ -372,7 +374,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.09392893956756593830**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .914136 Ɉ |
 |       1.14 € |  1.000000 Ɉ |
@@ -403,7 +405,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.09939858426540376799**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .909588 Ɉ |
 |       1.15 € |  1.000000 Ɉ |
@@ -434,7 +436,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.10489557718673078682**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .905062 Ɉ |
 |       1.16 € |  1.000000 Ɉ |
@@ -465,7 +467,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.11042005507266444075**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .900560 Ɉ |
 |       1.16 € |  1.000000 Ɉ |
@@ -496,7 +498,7 @@ Confer article 4 du [règlement intérieur](/fr/about/rules-of-procedures/).
 
 ***stingynalty* = 1.11597215534802776295**
 
-| cotisation initiale en € | quantité de jetons |
+| cotisation initiale en € | quantité de jetons Ɉ |
 |---|---|
 |       1.00 € |   .896079 Ɉ |
 |       1.17 € |  1.000000 Ɉ |

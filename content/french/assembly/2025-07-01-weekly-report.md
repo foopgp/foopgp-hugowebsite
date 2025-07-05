@@ -13,7 +13,7 @@ type: "meeting"
 
 ---
 
-***Présents :*** *Jean-Jacques B, François R.*  
+***Présents :*** *Jean-Jacques B, François R.*
 ***Excusés :*** *Laurent C, piseb.*
 
 ### Ordre du jour pour le prochain conseil, mardi 8 juillet 2025 à **21h00**, en visio sur <https://cloud.foopgp.org/call/4du5irxe>
@@ -37,7 +37,7 @@ Pour le mois de juin 2025, ***stingynalty* = 1.06167781186449956876**
 
 Pour le mois de juillet 2025, ***stingynalty* = 1.06698620092382206660**
 
-**Graphique en 3 dimensions** -> <https://www.math3d.org/qN4f2yxwsp>
+**Graphique en 3 dimensions** -> <https://www.math3d.org/qN4f2yxwsp> <- **Nouveauté !**
 
 Et donc pour juillet, en appliquant la formule du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/), **j = log₂(d+1) / *stingynalty*** :
 
@@ -66,17 +66,19 @@ Et donc pour juillet, en appliquant la formule du [règlement intérieur](https:
 
 Rappel, si vous avez déjà cotisé, la formule pour calculer la quantité de nouvelles valeurs en Ɉ est :  
 **jₙ = log₂( (dₙ+dₜ) + 1 ) / *stingynaltyₙ* – jₜ**  
-  
+
 Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/).
 
 #### Chiffres de l'association
 
-*Au 2 Avril 2025, en utilisant le script ./tools/[gifts-stats.sh](http://gifts-stats.sh) dans la blockchain qui gère les jetons Ɉ.*
+*Au 31 mai 2025, en utilisant le script ./tools/gifts-stats.sh dans la blockchain qui gère les jetons Ɉ.*
 
-Total members: 32	-	Total certified members: 9 / 32
-Total gifts:   56	-	Total certified gifts: 17 / 56
-Total given:   50747.14 €	-	Total certified given: 47794.51 € / 50747.14 €
-Total created: 187.338852 Ɉ	-	Total certified created: 81.095877 Ɉ / 187.338852 Ɉ
+```
+Total members:  33	-	Total certified members: 9 / 33
+Total contribs: 60	-	Total certified contribs: 19 / 60
+Total contribution:   51408.14 €	-	Total certified contribution: 48394.51 € / 51408.14 €
+Total created:      194.337979 Ɉ	-	Total certified created: 82.424599 Ɉ / 194.337979 Ɉ
+```
 
 ### Revue de presse
 
@@ -91,7 +93,7 @@ Total created: 187.338852 Ɉ	-	Total certified created: 81.095877 Ɉ / 187.33885
 - <https://arstechnica.com/ai/2025/06/anthropic-destroyed-millions-of-print-books-to-build-its-ai-models/>
 
   <https://orbital.horse/@emma/114745818011771505>
-- 
+
 
 ### Activité récente
 
@@ -135,12 +137,12 @@ Notre conseiller juridique nous a renvoyé sur les pages 28-29 de [la publicatio
 ### Agenda
 
 - Du 1er au 3 juillet : <https://2025.pass-the-salt.org/> à Lille.
-- Les 3, 4 et 5 juillet : [rencontres économiques d'Aix-en-Provence](https://www.lesrencontreseconomiques.fr/) 
+- Les 3, 4 et 5 juillet : [rencontres économiques d'Aix-en-Provence](https://www.lesrencontreseconomiques.fr/)
 - Le Samedi 5 juillet : rencontres et fête de soutien Radio Zinzine.
 - Du 6 au 11 juillet 2025 : [Campus des jardiniers du Nous](https://www.helloasso.com/associations/jardinier-e-s-du-nous/evenements/campus-des-jardiniers-du-nous-2025) avec Virginie Deleu.
-- 20 juillet 2025 à 14h30 : Assemblée Générale extraordinaire foopgp (convocation à venir prochainement).
+- 20 juillet 2025 à 14h30 : [Assemblée Générale extraordinaire foopgp](https://foopgp.org/fr/event/2025-07-20-ag/).
 - WE du 25 au 27 juillet 2025 à Saint-Maixent-l'École (79400) : <https://decroissancelefestival.org/>
-- Du jeudi 7 au dimanche 10 Août : Les résistantes 2025 en Normandie.
+- Du jeudi 7 au dimanche 10 Août : Les résistantes 2025 dans l'Orne : <https://lesresistantes.fr/>
 - camp CHATONS 7-10 août
 - 3 octobre près de Gap : présentation de la monnaie libre avec le collectif Philarmonia
 - 15 Novembre 2025 : Capitole du libre à Toulouse

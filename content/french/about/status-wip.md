@@ -140,7 +140,7 @@ Les décisions des assemblées générales s’imposent à tous les adhérents, 
 
 ### Article 12 - ASSEMBLÉE GÉNÉRALE EXTRAORDINAIRE
 
-Si besoin est, ou sur la demande de la moitié plus un des adhérents inscrits, un président peut convoquer
+Si besoin est, ou sur la demande de plus de 20% un des adhérents inscrits, un président peut convoquer
 une assemblée générale extraordinaire, suivant les modalités prévues aux présents statuts et uniquement
 pour modification des statuts ou règlement intérieur, ou la dissolution ou pour des actes portant sur des immeubles.
 

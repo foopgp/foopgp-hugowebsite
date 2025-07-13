@@ -41,7 +41,7 @@ Pour le mois de juin 2025, ***stingynalty* = 1.06167781186449956876**
 
 Pour le mois de juillet 2025, ***stingynalty* = 1.06698620092382206660**
 
-**Graphique en 3 dimensions** -> <https://www.math3d.org/qN4f2yxwsp> 
+**Graphique en 3 dimensions** -> <https://www.math3d.org/xzuclzIbuZ>
 
 Et donc pour juin, en appliquant la formule du [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/), **j = log₂(d+1) / *stingynalty*** :
 

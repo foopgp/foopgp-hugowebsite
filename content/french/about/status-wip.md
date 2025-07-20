@@ -28,8 +28,9 @@ développent des solutions technologiques basées sur les normes OpenPGP.
 
 Les valeurs portées par l'association sont la Transparence, la Bienveillance, la Coopération, et la Proximité.
 
-Les objectifs de l'association sont de promouvoir et de faciliter l’adoption de ces technologies et de
-soutenir leur croissance et leur utilisation.
+Les objectifs de l'association sont
+- de promouvoir et de faciliter l’adoption des technologies OpenPGP et de soutenir leur croissance et leur utilisation.
+- la transition vers un système monétaire complémentaire, conscient des limites physiques de notre planète.
 
 Pour atteindre ces objectifs, l’association organise des événements, des ateliers et des formations. Elle
 informe sur les évolutions technologiques liées à OpenPGP à travers tous les médias (presse écrite ou
@@ -43,6 +44,7 @@ rapportant aux normes OpenPGP.
 
 L'association peut récolter des dons et accompagner financièrement les projets tiers qui concourent au
 développement des solutions technologiques basées sur les normes OpenPGP.
+
 
 ### Article 3 - SIÈGE SOCIAL
 
@@ -102,13 +104,15 @@ les financements participatifs.
 
 **LES JETONS DE POUVOIR.**
 
-À chaque cotisation, des jetons de pouvoir individualisés et personnels sont offerts pour participer aux votes sur les décisions.
+À chaque cotisation en euros, des jetons de pouvoir individualisés et personnels sont crées pour participer aux votes sur les décisions.
 
-Ce mécanisme vise à financer la transition vers un système monétaire plus humain et plus respectueux vis à vis de notre petite planète.
+Le conseil d'administration propose, au sein d'un [règlement intérieur](../rules-of-procedures/) *ad hoc* les modalités de l'offre aux adhérents des jetons de pouvoir, leurs caractéristiques (pseudonymat, incompressibilité, fongibilité, (dé)matérialisation, (dé)centralisation) et les quantités logarithmiques de jetons de pouvoir en fonction des cotisations.
 
-Le conseil d'administration détermine au sein d'un [règlement intérieur](../rules-of-procedures/) *ad hoc* les modalités de l'offre aux adhérents des jetons de pouvoir, leurs caractéristiques (pseudonymat, incompressibilité, fongibilité, (dé)matérialisation, (dé)centralisation) et les quantités logarithmiques de jetons de pouvoir en fonction des cotisations.
+Le conseil d'administration propose aussi, le coefficient de croissance du nombre de jetons de pouvoir au sein de l'association, ainsi que les contributions obligatoires dues en raison du nombre de jetons de pouvoir détenus, et les modalités de lissage polynomial des jetons de pouvoir pour pallier aux inégalités de fait.
 
-Le conseil d'administration détermine aussi, le cas échéant, le coefficient de croissance du nombre de jetons de pouvoir au sein de l'association, ainsi que les contributions obligatoires dues en raison du nombre de jetons de pouvoir détenus, et les modalités de lissage polynomial des jetons de pouvoir pour pallier aux inégalités de fait.
+Le nombre de voix de chaque adhérent dépend de ces modalités de lissage.
+
+Ces propositions sont soumises à validation lors d'une assemblée générale.
 
 ### Article 11 - ASSEMBLÉE GÉNÉRALE ORDINAIRE
 
@@ -131,7 +135,7 @@ Tel le montant de la cotisation à verser par les adhérents.
 
 Ne peuvent être abordés que les points inscrits à l'ordre du jour.
 
-Les décisions sont prises à la majorité des suffrages exprimés par les adhérents,
+Les décisions sont prises à la majorité des voix (confer article 10bis) exprimées par les adhérents,
 présents ou représentés.
 
 Il est procédé, après épuisement de l'ordre du jour, au renouvellement des membres sortants du conseil.
@@ -140,20 +144,20 @@ Les décisions des assemblées générales s’imposent à tous les adhérents, 
 
 ### Article 12 - ASSEMBLÉE GÉNÉRALE EXTRAORDINAIRE
 
-Si besoin est, ou sur la demande de plus de 20% un des adhérents inscrits, un président peut convoquer
+Si besoin est, ou sur la demande de plus de 20% un des adhérents, un président peut convoquer
 une assemblée générale extraordinaire, suivant les modalités prévues aux présents statuts et uniquement
 pour modification des statuts ou règlement intérieur, ou la dissolution ou pour des actes portant sur des immeubles.
 
 Les modalités de convocation sont les mêmes que pour l’assemblée générale ordinaire.
 
-Les délibérations sont prises à la majorité des suffrages exprimés par les adhérents, présents ou représentés.
+Les délibérations sont prises à la majorité des voix (confer article 10bis) exprimés par les adhérents, présents ou représentés.
 
 ### Article 13 - CONSEIL D'ADMINISTRATION
 
 L'association est dirigée par un conseil d'administration d'au moins 2 membres (un président et un trésorier), élus
 pour 3 années par l'assemblée générale. Les membres sont rééligibles.
 
-En cas de vacance, le conseil pourvoit provisoirement au remplacement de ses membres jusqu'à la prochaine assemblée générale.
+En cas de vacance, le conseil d'administration pourvoit provisoirement au remplacement de ses membres jusqu'à la prochaine assemblée générale.
 
 Le conseil d'administration se réunit par visioconférence une fois par semaine, sauf exceptions.
 Ces réunions sont ouvertes à tous les adhérents et aux invités, dans la
@@ -177,7 +181,7 @@ l'association sur ses deniers.
 Les signatures d'un trésorier et d'un président devront être conjointes pour toutes opérations importantes, notamment :
 * signature d'un bail
 * ouverture de compte bancaire
-* opérations bancaires, ou somme d'opérations bancaires sur un mois, de montant supérieur à 10% du chiffre d'affaire établi.
+* opérations bancaires, ou somme d'opérations bancaires sur un mois, pour des montants supérieurs à 5% du chiffre d'affaire établi, et dans la limite de 10 000 €.
 
 ### Article 14 – INDEMNITÉS
 

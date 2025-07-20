@@ -36,9 +36,9 @@ Toute modification doit se faire approuver par l'assemblée générale.
 
 ### Article 3 – Cotisation
 
-À tout moment, les adhérents peuvent s'acquitter de cotisations libres.
+À tout moment, les adhérents peuvent s'acquitter de cotisations libres, en euros.
 
-Plus la somme des cotisations est importante, plus l'adhérent disposera de pouvoirs (confer article 4 du règlement intérieur).
+Plus la somme de ces cotisations est importante, plus l'adhérent disposera de jetons de pouvoirs (confer article 4 du règlement intérieur).
 
 Toute cotisation versée à l'association est définitivement acquise. Aucun remboursement de cotisation ne peut être exigé en cas de démission, d'exclusion ou de décès d'un adhérent en cours d’année.
 
@@ -107,7 +107,7 @@ Cette certification pourra s'appuyer sur des toiles de confiance OpenPGP[^PGPWOT
 
 Mensuellement, de nouveaux jetons sont émis à quantité égale pour chaque personne physique adhérente validée de l’association. **Ce mécanisme permet d’appliquer la [théorie relative de la monnaie de Stéphane Laborde](https://trm.creationmonetaire.info/).**
 
-Ainsi, pour chacune de ces périodes mensuelles, chaque adhérent validé de l’association, c’est-à-dire certifié et à jour de ses cotisation et de ses contributions obligatoires (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
+Ainsi, pour chacune de ces périodes mensuelles, chaque adhérent validé de l’association, c’est-à-dire certifié et à jour de ses cotisations et de ses contributions obligatoires (cf. articles 3 et 7) pourra émettre, avant la fin de la dite période, une quantité de nouveaux jetons égales à :
 
 **jₛ= *growth* × Mₜ ∕ N**
 
@@ -139,7 +139,7 @@ La somme de ces contributions est appelée impôt associatif et son taux est not
 
 Aussi, elles pourront être réglées en une seule fois, au bénéfice de l'association.
 
-Tant que ces contributions ne seront pas réglés, les adhérents associés à ces portefeuilles sont considérés comme suspendus.
+Tant que ces contributions ne seront pas réglés, les adhérents associés à ces portefeuilles sont considérés comme suspendus (confer article 8 des statuts).
 
 **Le taux total de contributions *taxe* et sa periodicité *taxep* définis lors de la dernière assemblée générale sont consultables sur le site Web de l'association : https://foopgp.org/fr/about/rules-parameters/**
 

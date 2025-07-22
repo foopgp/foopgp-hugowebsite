@@ -1,7 +1,7 @@
 ---
-title: "2025 S27 Rapport Hebdomadaire"
+title: "2025 S29 Rapport Hebdomadaire"
 lang: fr
-date: 2025-07-01T21:30:00+02:00
+date: 2025-07-15T21:30:00+02:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"

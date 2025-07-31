@@ -35,12 +35,12 @@ License: CC By-SA
     * [clean](./#clean)
     * [happy end](./#happy-end)
     * [Ma configuration](./#ma-configuration)
-    * [Premier patch pour `/data/`](./#premier-patch-pour-data-1)
-    * [Deuxième patch, les bash-libs et les `bl-`](./#deuxième-patch-les-bash-libs-et-les-bl--1)
-* [**iso Debian personnalisée**](./#iso-debian-personnalisée-1)
-* [**Signer ses commit**](./#signer-ses-commit-1)
-  * [Configuration dépôt distant](./#configuration-dépôt-distant-1)
-  * [Configuration local](./#configuration-local-1)
+    * [Premier patch pour `/data/`](./#premier-patch-pour-data)
+    * [Deuxième patch, les bash-libs et les `bl-`](./#deuxième-patch-les-bash-libs-et-les-bl-)
+* [**iso Debian personnalisée**](./#iso-debian-personnalisée)
+* [**Signer ses commit**](./#signer-ses-commit)
+  * [Configuration dépôt distant](./#configuration-dépôt-distant)
+  * [Configuration local](./#configuration-local)
 
 ## OVH Debian SSH
 
@@ -59,7 +59,6 @@ unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
   export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
-
 ```
 
 On peut alors se connecter en ssh avec la [yubikey](https://www.yubico.com/products/) qui protége la clé privée.
@@ -76,7 +75,7 @@ Au moment de la connexion ssh la clé doit déjà être connectée (`ssh-agent` 
 
 ### Rajouter un acces ssh à un tiers
 
-Pour rajouter les acces à un tiers, on rajoute sa clé publique dans `~/.ssh/authorized_keys`.
+Pour rajouter les accès à un tiers, on rajoute sa clé publique dans `~/.ssh/authorized_keys`.
 
 ## Apache
 
@@ -167,9 +166,13 @@ Status for the jail: sshd
 
 ## Packages Debian
 
-Création de packages deb pour les outils de foopgp.
+Création de packages .deb pour les outils de foopgp.
 
 ### Préambule
+
+```bash
+$ sudo apt install debmake git-buildpackage
+```
 
 Dans mon `.bashrc` :
 ```bash
@@ -214,7 +217,7 @@ I: provide bash_libs.orig.tar.gz for non-native Debian package
 I: pwd = "/tmp/demo-bash-libs"
 I: $ ln -sf bash-libs.tar.gz bash_libs.orig.tar.gz
 I: pwd = "/tmp/demo-bash-libs/bash-libs"
-I: parse binary package settings: 
+I: parse binary package settings:
 I: binary package=bash Type=bin / Arch=any M-A=foreign
 I: analyze the source tree
 I: build_type = make
@@ -320,7 +323,7 @@ Description: TODO
 
 Le fichier `copyright` va demander un petit travail pour être correct mais ce n'est pas obligatoire pour le moment (voir le dépôt git).
 
-On voit tout de suite un avantage d'avoir une branch dédiée au packaging. Le `Makefile` du projet est configuré pour s'installer dans `/usr/local`, on veut que notre package deb s'installe désormais dans `/usr`. On édite donc `rules` ainsi :
+On voit tout de suite un avantage d'avoir une branch dédiée au packaging. Le `Makefile` du projet est configuré pour s'installer dans `/usr/local`, on veut que notre package .deb s'installe désormais dans `/usr`. On édite donc `rules` ainsi :
 
 ```bash
 $ vim rules
@@ -329,12 +332,11 @@ $ cat rules
 
 override_dh_auto_install:
 	dh_auto_install -- prefix=/usr
-
 ```
 
 Le `README.Debian` sera à éditer.
 
-On passe a une rapide configuration pour `gbp`, on précise juste les branch et tag.
+On passe a une rapide configuration pour `gbp` (git-buildpackage), on précise juste les branch et tag.
 
 ```bash
 $ vim gbp.conf # toujours dans bash-libs/debian
@@ -357,9 +359,9 @@ $ curl https://codeberg.org/foopgp/bash-libs/archive/v0.0.2.tar.gz -o ../bash-li
 $ gbp buildpackage --git-ignore-new # on a pas commit
 ```
 
-Un minimum de vérification est de vérifier le contenu du deb créé : `$ dpkg -c ../bash-libs_0.0.2-1_amd64.deb`
+Un minimum est de vérifier le contenu du .deb créé : `$ dpkg -c ../bash-libs_0.0.2-1_amd64.deb`
 
-On veut commit notre configuration de build mais pas que les fichiers crées pour le build soient commit, donc on rajoute dans `.gitignore` :
+On veut commit notre configuration de build mais pas que les fichiers créés pour le build soient commit, donc on rajoute dans `.gitignore` :
 
 ```bash
 debian/*.debhelper
@@ -398,7 +400,6 @@ Pour `pgpig` une manipulation complémentaire est nécessaire.
 
 #### démo accélérée
 
-
 ```bash
 $ mkdir demo-pgpid && cd demo-pgpid
 $ git clone https://codeberg.org/foopgp/pgpid.git
@@ -433,7 +434,7 @@ $ gbp buildpackage --git-ignore-new
 
 #### premier problème
 
-On constate que le deb ne contient pas `bin/` ni `data/`. (Ils sont pas compilés mais à copier.)
+On constate que le .deb ne contient pas `bin/` ni `data/`. (Ils sont pas compilés mais à copier.)
 
 ```bash
 $ dpkg -c ../pgpid_0.0.1-1_amd64.deb
@@ -484,7 +485,6 @@ lrwxrwxrwx root/root         0 2025-05-27 16:02 ./usr/bin/bl-json -> ../bash-lib
 lrwxrwxrwx root/root         0 2025-05-27 16:02 ./usr/bin/bl-log -> ../bash-libs/bin/bl-log
 lrwxrwxrwx root/root         0 2025-05-27 16:02 ./usr/bin/bl-security -> ../bash-libs/bin/bl-security
 lrwxrwxrwx root/root         0 2025-05-27 16:02 ./usr/bin/data -> ../data
-
 ```
 
 Pour `bin/` ça semble correct, mais maintenant on a des liens qui ne fonctionneront pas.
@@ -501,7 +501,6 @@ bin/bl-json
 bin/bl-log
 bin/bl-security
 bin/data
-
 ```
 
 Je préfère inclure le dossier `bin` en entier et exclure une sélection. Je trouve ça plus propre en cas de nouveaux fichiers à l'avenir.
@@ -610,7 +609,7 @@ $ cat debian/patches/fix-pgpid-gen-data-path.patch
 --- a/bin/pgpid-gen
 +++ b/bin/pgpid-gen
 @@ -50,8 +50,8 @@
- 
+
  FACE_MARGIN_WIDTH="25/100"
  FACE_MARGIN_HEIGHT="50/100"
 -TESSDATADIR="$(dirname "$0")/data/"
@@ -618,7 +617,7 @@ $ cat debian/patches/fix-pgpid-gen-data-path.patch
 +TESSDATADIR="/usr/share/data/"
 +GEOLIST_CENTROID="/usr/share/data/geolist_centroid.txt"
  ONLYUDID=false
- 
+
  ### Default option values ###
 ```
 
@@ -686,9 +685,9 @@ $ cat debian/patches/fix-bash-libs-paths.patch
 --- a/bin/pgpid-gen
 +++ b/bin/pgpid-gen
 @@ -136,10 +136,10 @@
- 
+
  ### functions ###
- 
+
 -. "$(dirname "$BASH_SOURCE")"/bl-log --no-act --log-level "$LOGLEVEL" --log-exit "$LOGEXITPRIO"
 -. "$(dirname "$BASH_SOURCE")"/bl-interactive --
 -. "$(dirname "$BASH_SOURCE")"/bl-security --
@@ -697,22 +696,22 @@ $ cat debian/patches/fix-bash-libs-paths.patch
 +. /usr/bin/bl-interactive --
 +. /usr/bin/bl-security --
 +. /usr/bin/bl-json --
- 
+
  # Implementation of ICAO doc 9303 part 3 (Specifications Common to all MRTDs - 4.9)
  icao9303_mrz_checkdigit() {
 --- a/bin/pgpid-qrscan
 +++ b/bin/pgpid-qrscan
 @@ -107,9 +107,9 @@
- 
+
  ### functions ###
- 
+
 -. "$(dirname "$BASH_SOURCE")"/bl-log --no-act --log-level "$LOGLEVEL" --log-exit "$LOGEXITPRIO"
 -. "$(dirname "$BASH_SOURCE")"/bl-interactive --
 -. "$(dirname "$BASH_SOURCE")"/bl-security --
 +. /usr/bin/bl-log --no-act --log-level "$LOGLEVEL" --log-exit "$LOGEXITPRIO"
 +. /usr/bin/bl-interactive --
 +. /usr/bin/bl-security --
- 
+
  # Do nothing else if sourced
  [[ "$BASH_SOURCE" == "$0" ]] || return 0
 ```
@@ -805,7 +804,7 @@ mDMEaBhvbRYJKwYBBAHaRw8BAQdAptz0xzoRLmzYZcNvQZ/bbT7aPIK13xNkJiGv
 
 Un challenge est demandé pour vérifier qu'on possède la clé privée correspondante.
 
-### Configuration local
+### Configuration locale
 
 Pour automatiser les signatures, dans `~/.gitconfig` :
 
@@ -841,4 +840,3 @@ Pour que la signature soit validée en local, la clé publique doit être import
 Documentation :
 
 - [https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work)
-

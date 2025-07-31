@@ -1,18 +1,17 @@
 ---
-#Lastmod: 2024-05-09T20:19:05+02:00 # MANAGED by --enableGitInfo
 title: "Friends Of OpenPGP (foopgp)"
 lang: fr
-###date: 2019-07-06T15:27:17+06:00
+date: 2024-03-24T18:00:00+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-description : "(Anciens) Statuts de l'association (n°1)"
+description : "(Anciens) statuts de l'association"
 image: "images/logos/logo-black-pgp.png"
 categories: ["about"]
 ###tags: [""]
 type: "post"
 ---
 
-## (Anciens) Statuts de l'association déclarée en France par application de la loi du 1er juillet 1901 et du décret du 16 août 1901.
+## (Anciens) statuts de l'association déclarée en France par application de la loi du 1er juillet 1901 et du décret du 16 août 1901.
 
 ---
 
@@ -68,7 +67,11 @@ chacune de ses réunions, sur les demandes d'admission présentées.
 
 ### Article 7 - MEMBRES – COTISATIONS
 
-Sont membres actifs ceux qui, à chaque exercice, ont versé la somme fixée par [le règlement intérieur](../rules-of-procedures-old/) à titre de cotisation.
+Sont membres actifs ceux qui sont à jour du paiement des sommes fixées par [le règlement intérieur](../rules-of-procedures-old/), telle la cotisation.
+
+Seuls les membres actifs peuvent :
+* exprimer leurs voix
+* recevoir des jetons de pouvoir supplémentaires (confer article 10bis)
 
 ### Article 8 - RADIATIONS
 
@@ -108,7 +111,7 @@ Ce mécanisme vise à récompenser les donateurs, tout en offrant une source de 
 
 Le conseil d'administration détermine au sein d'un [règlement intérieur](../rules-of-procedures-old/) *ad hoc* les modalités de l'offre aux membres des jetons de pouvoir, leurs caractéristiques (pseudonymat, incompressibilité, fongibilité, (dé)matérialisation, (dé)centralisation) et les quantités logarithmiques de jetons de pouvoir en fonction des dons.
 
-Le conseil d'administration détermine aussi, le cas échéant, le coefficient de croissance du nombre de jetons de pouvoir au sein de l'association, ainsi que le montant de l'impôt associatif dû en raison du nombre de jetons de pouvoir détenus, et avec les modalités de lissage polynomial des jetons de pouvoir pour pallier aux inégalités de fait.
+Le conseil d'administration détermine aussi, le cas échéant, le coefficient de croissance du nombre de jetons de pouvoir au sein de l'association, ainsi que les contributions obligatoires dues en raison du nombre de jetons de pouvoir détenus, et les modalités de lissage polynomial des jetons de pouvoir pour pallier aux inégalités de fait.
 
 ### Article 11 - ASSEMBLÉE GÉNÉRALE ORDINAIRE
 
@@ -193,6 +196,7 @@ fonctionnement desdits établissements.
 
 ---
 
-*Adopté en [assemblée générale extraordinaire le dimanche 22 octobre 2023 à Pelleautier](/fr/assembly/2023-10-22-report-age/).*
+*Adopté en [assemblée générale extraordinaire le dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-age/).
 
-*[Modifié et remplacé](../status/) en [assemblée générale extraordinaire le dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-age/).*
+*[Modifié et remplacé](../status/) en [assemblée générale extraordinaire le dimanche 20 juillet 2025 à Pelleautier](/fr/assembly/2025-07-20-report-age/).*
+

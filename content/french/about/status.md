@@ -1,8 +1,7 @@
 ---
-#Lastmod: 2024-05-09T19:45:29+02:00 # MANAGED by --enableGitInfo
 title: "Friends Of OpenPGP (foopgp)"
 lang: fr
-###date: 2019-07-06T15:27:17+06:00
+date: 2025-07-20T15:27:17+02:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Statuts de l'association"
@@ -29,8 +28,9 @@ développent des solutions technologiques basées sur les normes OpenPGP.
 
 Les valeurs portées par l'association sont la Transparence, la Bienveillance, la Coopération, et la Proximité.
 
-Les objectifs de l'association sont de promouvoir et de faciliter l’adoption de ces technologies et de
-soutenir leur croissance et leur utilisation.
+Les objectifs de l'association sont
+- de promouvoir et de faciliter l’adoption des technologies OpenPGP et de soutenir leur croissance et leur utilisation.
+- la transition vers un système monétaire complémentaire, conscient des limites physiques de notre planète.
 
 Pour atteindre ces objectifs, l’association organise des événements, des ateliers et des formations. Elle
 informe sur les évolutions technologiques liées à OpenPGP à travers tous les médias (presse écrite ou
@@ -44,6 +44,7 @@ rapportant aux normes OpenPGP.
 
 L'association peut récolter des dons et accompagner financièrement les projets tiers qui concourent au
 développement des solutions technologiques basées sur les normes OpenPGP.
+
 
 ### Article 3 - SIÈGE SOCIAL
 
@@ -59,33 +60,30 @@ La durée de l’association est illimitée.
 
 ### Article 5 - COMPOSITION
 
-L'association se compose de membres : personnes physiques, et de partenaires : personnes morales.
+L'association se compose d'adhérents : personnes physiques, et de partenaires : personnes morales.
 
 ### Article 6 - ADMISSION
 
 Pour faire partie de l'association, il faut être agréé par le conseil d’administration, qui statue, lors de
 chacune de ses réunions, sur les demandes d'admission présentées.
 
-### Article 7 - MEMBRES – COTISATIONS
+### Article 7 - ADHÉRENTS – COTISATIONS
 
-Sont membres actifs ceux qui sont à jour du paiement des sommes fixées par [le règlement intérieur](../rules-of-procedures/), telle la cotisation.
+Sont adhérents ceux qui sont à jour du paiement des sommes fixées par [le règlement intérieur](../rules-of-procedures/), telle la cotisation.
 
-Seuls les membres actifs peuvent :
+Seuls les adhérents peuvent :
 * exprimer leurs voix
 * recevoir des jetons de pouvoir supplémentaires (confer article 10bis)
 
-### Article 8 - RADIATIONS
+### Article 8 - SUSPENSIONS
 
-La qualité de membre se perd par :
+La qualité d'adhérent peut-être suspendue par :
 
-* La démission ;
-* La radiation prononcée par le conseil d'administration pour motif grave, l'intéressé ayant été
+* La démission.
+* La suspension prononcée par le conseil d'administration pour motif grave, l'intéressé ayant été
 invité par tout moyen à fournir des explications devant le bureau et/ou par écrit.
-
-La qualité de membre actif se perd par :
-
-* Le décès ;
 * Le non-payement des sommes fixées par [le règlement intérieur](../rules-of-procedures/), telle la cotisation.
+* Le non-respect des critères de certification décrits par [le règlement intérieur](../rules-of-procedures/).
 
 ### Article 9 - AFFILIATION
 
@@ -102,72 +100,88 @@ Les ressources de l'association comprennent :
 les financements participatifs.
 * Les produits de ses activités économiques.
 
-### Article 10 BIS – SUR LES SUFFRAGES LORS DES  ASSEMBLÉE GÉNÉRALES
+### Article 10 BIS – SUR LES SUFFRAGES LORS DES ASSEMBLÉES GÉNÉRALES
 
 **LES JETONS DE POUVOIR.**
 
-À chaque donation de membre, des jetons de pouvoir individualisés et personnels sont offerts pour participer aux votes sur les décisions.
+À chaque cotisation en euros, des jetons de pouvoir individualisés et personnels sont crées pour participer aux votes sur les décisions.
 
-Ce mécanisme vise à récompenser les donateurs, tout en offrant une source de financement supplémentaire à l'association.
+Le conseil d'administration propose, au sein d'un [règlement intérieur](../rules-of-procedures/) *ad hoc* les modalités de l'offre aux adhérents des jetons de pouvoir, leurs caractéristiques (pseudonymat, incompressibilité, fongibilité, (dé)matérialisation, (dé)centralisation) et les quantités logarithmiques de jetons de pouvoir en fonction des cotisations.
 
-Le conseil d'administration détermine au sein d'un [règlement intérieur](../rules-of-procedures/) *ad hoc* les modalités de l'offre aux membres des jetons de pouvoir, leurs caractéristiques (pseudonymat, incompressibilité, fongibilité, (dé)matérialisation, (dé)centralisation) et les quantités logarithmiques de jetons de pouvoir en fonction des dons.
+Le conseil d'administration propose aussi, le coefficient de croissance du nombre de jetons de pouvoir au sein de l'association, ainsi que les contributions obligatoires dues en raison du nombre de jetons de pouvoir détenus, et les modalités de lissage polynomial des jetons de pouvoir pour pallier aux inégalités de fait.
 
-Le conseil d'administration détermine aussi, le cas échéant, le coefficient de croissance du nombre de jetons de pouvoir au sein de l'association, ainsi que les contributions obligatoires dues en raison du nombre de jetons de pouvoir détenus, et les modalités de lissage polynomial des jetons de pouvoir pour pallier aux inégalités de fait.
+Le nombre de voix de chaque adhérent dépend de ces modalités de lissage.
+
+Ces propositions sont soumises à validation lors d'une assemblée générale.
 
 ### Article 11 - ASSEMBLÉE GÉNÉRALE ORDINAIRE
 
-L'assemblée générale ordinaire comprend toutes les personnes physiques membres de l'association à
+L'assemblée générale ordinaire comprend toutes les personnes physiques adhérentes de l'association à
 quelque titre qu'elles soient.
 
 Elle se réunit au moins une fois chaque année civile.
 
-Quinze jours au moins avant la date fixée, les membres de l'association sont convoqués par les soins du
+Quinze jours au moins avant la date fixée, les adhérents de l'association sont convoqués par les soins du
 Conseil d'administration. L'ordre du jour figure sur les convocations.
 
-Le président, assisté des membres du conseil, préside l'assemblée et expose la situation morale ou l’activité
+Un président, assisté des adhérents du conseil, préside l'assemblée et expose la situation morale ou l’activité
 de l'association.
 
-Le trésorier rend compte de sa gestion et soumet les comptes de l'année civile échue à l'approbation de
+Un trésorier rend compte de sa gestion et soumet les comptes de l'année civile échue à l'approbation de
 l'assemblée.
 
 L’assemblée générale fixe la valeur des paramètres de fonctionnement définis par [le règlement intérieur](../rules-of-procedures/).
-Tel le montant de la cotisation à verser par les membres.
+Tel le montant de la cotisation à verser par les adhérents.
 
 Ne peuvent être abordés que les points inscrits à l'ordre du jour.
 
-Les décisions sont prises à la majorité des suffrages exprimés par les membres actifs,
+Les décisions sont prises à la majorité des voix (confer article 10bis) exprimées par les adhérents,
 présents ou représentés.
 
 Il est procédé, après épuisement de l'ordre du jour, au renouvellement des membres sortants du conseil.
 
-Les décisions des assemblées générales s’imposent à tous les membres, y compris absents ou représentés.
+Les décisions des assemblées générales s’imposent à tous les adhérents, y compris absents ou représentés.
 
 ### Article 12 - ASSEMBLÉE GÉNÉRALE EXTRAORDINAIRE
 
-Si besoin est, ou sur la demande de la moitié plus un des membres inscrits, le président peut convoquer
+Si besoin est, ou sur la demande de plus de 20% un des adhérents, un président peut convoquer
 une assemblée générale extraordinaire, suivant les modalités prévues aux présents statuts et uniquement
 pour modification des statuts ou règlement intérieur, ou la dissolution ou pour des actes portant sur des immeubles.
 
 Les modalités de convocation sont les mêmes que pour l’assemblée générale ordinaire.
 
-Les délibérations sont prises à la majorité des suffrages exprimés par les membres actifs, présents ou représentés.
+Les délibérations sont prises à la majorité des voix (confer article 10bis) exprimés par les adhérents, présents ou représentés.
 
 ### Article 13 - CONSEIL D'ADMINISTRATION
 
-L'association est dirigée par un conseil d'administration d'au moins 2 membres (président et trésorier), élus
+L'association est dirigée par un conseil d'administration d'au moins 2 membres (un président et un trésorier), élus
 pour 3 années par l'assemblée générale. Les membres sont rééligibles.
 
-En cas de vacances, le conseil d'administration pourvoit provisoirement au remplacement de ses membres.
+En cas de vacance, le conseil d'administration pourvoit provisoirement au remplacement de ses membres jusqu'à la prochaine assemblée générale.
 
-Il est procédé à leur remplacement définitif par la plus prochaine assemblée générale. Les pouvoirs des
-membres ainsi élus prennent fin à l'expiration le mandat des membres remplacés.
+Le conseil d'administration se réunit par visioconférence une fois par semaine, sauf exceptions.
+Ces réunions sont ouvertes à tous les adhérents et aux invités, dans la
+limite d'un invité par adhérent. À chaque réunion un compte rendu sera publié,
+au plus tard avant la réunion suivante.
 
-Le conseil d'administration se réunit sur convocation du président.
+Les décisions sont prises par recherche du consentement.
 
-Les décisions sont prises à la majorité des voix; en cas de partage, les voix du président sont prépondérantes.
+Si des objections perdurent, un président convoquera l'ensemble des membres du conseil
+d'administration, et les décisions seront prises à la majorité qualifié des deux tiers des voix exprimées.
 
-Le trésorier, avec le président en signature conjointe, sont les seules personnes habilitées à engager
-l'association sur ses deniers (signature d'un bail, ouverture de compte bancaire et opérations bancaires).
+Si la majorité qualifié n'est pas obtenue au sein du conseil d'administration,
+les decisions concernées pourront être soumises à l'ensemble des adhérents, lors d'une prochaine
+assemblée générale ou d'un vote par correspondance.
+
+En cas de partage égal des voix, les décisions seront tirées au sort.
+
+Trésoriers et présidents sont les seules personnes habilitées à engager
+l'association sur ses deniers.
+
+Les signatures d'un trésorier et d'un président devront être conjointes pour toutes opérations importantes, notamment :
+* signature d'un bail
+* ouverture de compte bancaire
+* opérations bancaires, ou somme d'opérations bancaires sur un mois, pour des montants supérieurs à 5% du chiffre d'affaire établi, et dans la limite de 10 000 €.
 
 ### Article 14 – INDEMNITÉS
 
@@ -197,7 +211,7 @@ fonctionnement desdits établissements.
 
 ---
 
-*Adopté en [assemblée générale extraordinaire le dimanche 24 mars 2024 à Pelleautier](/fr/assembly/2024-03-24-report-age/), et en vigueur à partir de cette date et jusqu'à nouvel ordre.*
+*Adopté en [assemblée générale extraordinaire le dimanche 20 juillet 2025 à Pelleautier](/fr/assembly/2025-07-20-report-age/), et en vigueur à partir de cette date et jusqu'à nouvel ordre.*
 
 *[Statuts précédents](../status-old/)*
 

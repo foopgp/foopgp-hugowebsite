@@ -40,7 +40,7 @@ License: CC By-SA
 * [**iso Debian personnalisée**](./#iso-debian-personnalisée)
 * [**Signer ses commit**](./#signer-ses-commit)
   * [Configuration dépôt distant](./#configuration-dépôt-distant)
-  * [Configuration local](./#configuration-local)
+  * [Configuration local](./#configuration-locale)
 
 ## OVH Debian SSH
 

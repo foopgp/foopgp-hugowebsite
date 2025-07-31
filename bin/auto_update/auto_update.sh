@@ -1,16 +1,16 @@
 #!/bin/bash
 
-path_root_git=$(dirname $0)/../..
-log_file=${0%.sh}.log
+path_root_git="$(dirname "$0")/../.."
+log_file="${0%.sh}.log"
 
 # keep only the last 100 lines in log
 tmp_file=$(mktemp)
-tail -n 100 $log_file > $tmp_file && mv $tmp_file $log_file
+tail -n 100 "$log_file" > "$tmp_file" && mv "$tmp_file" "$log_file"
 
 {
-  echo ===
-  echo $(date +"%d-%m-%y_%H-%M--%s")
-  cd $path_root_git
+  echo "==="
+  date +"%d-%m-%y_%H-%M--%s"
+  cd "$path_root_git" || exit 1
   echo "PWD: $(pwd)"
 
   head_root_before=$(git rev-parse HEAD)
@@ -27,4 +27,4 @@ tail -n 100 $log_file > $tmp_file && mv $tmp_file $log_file
     || [[ "$head_subs_before" != "$head_subs_after" ]]; then
       hugo --minify
   fi
-} 2>&1 | tee -a $log_file
+} 2>&1 | tee -a "$log_file"

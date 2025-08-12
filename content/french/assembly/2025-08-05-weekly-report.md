@@ -1,5 +1,5 @@
 ---
-aaaaatitle: "2025 S32 Rapport Hebdomadaire"
+title: "2025 S32 Rapport Hebdomadaire"
 lang: fr
 date: 2025-08-05T21:30:00+02:00
 draft: false

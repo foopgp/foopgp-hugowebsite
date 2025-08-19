@@ -140,7 +140,7 @@ URL = "solutions"
 weight = 3
   [[menu.main]]
     parent = "our activities"
-    name = "R&D"
+    name = "R&D projects"
     URL = "solutions/activity-rd"
     weight = 1
 

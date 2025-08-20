@@ -55,6 +55,9 @@
 - id: payment
   translation: paiement
 
+- id: "R&D projects"
+  translation: projets R&D
+
 - id: solutions
   translation: solutions
 

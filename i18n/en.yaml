@@ -52,6 +52,9 @@
 - id: partners
   translation: partners
 
+- id: "R&D projects"
+  translation: R&D projects
+
 - id: solutions
   translation: solutions
 

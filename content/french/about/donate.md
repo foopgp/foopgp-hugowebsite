@@ -13,9 +13,9 @@ image: "images/logos/logo-foopgp-token-0.png"
 La meilleur façon de soutenir le projet consiste à investir sous forme de cotisations.
 
 Ces cotisations vous permettent d'obtenir vos premiers jetons FOOPGP, et
-financent le travail de l'association pour passer d'un système monétaire,
+financent le travail de l'association pour [passer d'un système monétaire,
 économique et politique qui détruit nos vies et notre planète à un nouveau
-système, plus respectueux de l'ensemble du vivant.
+système, plus respectueux de l'ensemble du vivant](/fr/about/white-book/).
 
 Les jetons foopgp, aussi appelés *djis* (**Ɉ**), sont comparables à des actions : ils sont librement échangeables entre les adhérents de l'association et la quantité de djis possédée par chacun détermine le nombre de voix dont il dispose, lorsque nous devons prendre des décisions qui n'ont pas trouvé de consensus.
 

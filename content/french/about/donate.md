@@ -1,28 +1,23 @@
 ---
-#Lastmod: 2024-07-05T12:16:06+02:00 # MANAGED by --enableGitInfo
-title: "Faire un don"
+title: "Soutenir le projet"
 lang: fr
-#date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-description : "Devenez membre ou faites un don pour soutenir notre communauté."
+description : "Embarquons tous ensemble vers des horizons plus radieux."
 image: "images/logos/logo-foopgp-token-0.png"
 #categories: ["about"]
 #tags: [""]
 #type: "post"
 ---
 
-Pour adhérer, il suffit d'y investir sous forme de cotisation.
-
+La meilleur façon de soutenir le projet consiste à investir sous forme de cotisations.
 
 Ces cotisations vous permettent d'obtenir vos premiers jetons FOOPGP, et
 financent le travail de l'association pour passer d'un système monétaire,
 économique et politique qui détruit nos vies et notre planète à un nouveau
 système, plus respectueux de l'ensemble du vivant.
 
-
 Les jetons foopgp, aussi appelés *djis* (**Ɉ**), sont comparables à des actions : ils sont librement échangeables entre les adhérents de l'association et la quantité de djis possédée par chacun détermine le nombre de voix dont il dispose, lorsque nous devons prendre des décisions qui n'ont pas trouvé de consensus.
-
 
 Cependant, la comparaison s'arrête là, car ces jetons ont d'autres caractéristiques très intéressantes :
 
@@ -31,6 +26,8 @@ Cependant, la comparaison s'arrête là, car ces jetons ont d'autres caractéris
 - Le coefficient multiplicateur du retour sur investissement diminue avec la quantité investie. Voir ce [joli graphique en 3D](https://www.math3d.org/VHvPcDNBY9).
 
 - Les gros actionnaires n'ont pas forcément plus de pouvoir que les petits. Nos règles permettant de régler finement le curseur entre « une part, une voix » et « une personne, une voix ». Voir l'article 8 de notre [règlement intérieur](/fr/about/rules-of-procedures/).
+
+- Grâce aux [technologies que nous assemblons et développons](/fr/solutions/activity-rd/) ([OpenPGP](/fr/about/openpgp/), [git](https://fr.wikipedia.org/wiki/Git), [blockchain](https://netfuture.ch/2022/02/git-pgp-blockchain-comparison/), ...), les échanges en *djis* (**Ɉ**) seront extrêmement faciles et peu couteux, pour l'ensemble du monde.
 
 ---
 

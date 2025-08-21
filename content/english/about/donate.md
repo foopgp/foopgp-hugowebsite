@@ -1,19 +1,16 @@
 ---
-#Lastmod: 2024-07-05T12:16:06+02:00 # MANAGED by --enableGitInfo
-title: "Donate"
+title: "Endorse"
 lang: en
-#date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-description : "Register or donate to support our community."
+description : "Let's set sail together for brighter horizons."
 image: "images/logos/logo-foopgp-token-0.png"
 #categories: ["about"]
 #tags: [""]
 #type: "post"
 ---
 
-
-To join, all you have to do is invest in the form of a membership fee.
+The best way to support the project is to invest in the form of membership fees.
 
 These membership fees allow you to obtain your first foopgp tokens and finance the association's work to move from a monetary, economic, and political system that destroys our lives and our planet to a new system that is more respectful of the living world.
 
@@ -27,9 +24,11 @@ However, the comparison ends there, as these tokens have other very interesting 
 
 - Large shareholders do not necessarily have more power than small shareholders. As our rules allow us to fine-tune the balance between “one share, one vote” and “one person, one vote.” See Article 8 of our [internal regulations](/en/about/rules-of-procedures/).
 
+- Thanks to the [technologies we assemble and develop](/en/solutions/activity-rd/) ([OpenPGP](/en/about/openpgp/), [git](https://en.wikipedia.org/wiki/Git), [blockchain](https://netfuture.ch/2022/02/git-pgp-blockchain-comparison/), ...), exchanges in *djis* (**Ɉ**) will be extremely easy and inexpensive for the whole world.
+
 ---
 
-To avoid wasting time (and return on investment) while waiting to be able to join online (it's [in the works](https://foopgp.org/udid/)!), please [download the membership form here](/documents/en/membership-form-foopgp.pdf), fill it out, and send it.
+To avoid wasting time (and return on investment) while waiting to be able to join online (it's [in the works](https://foopgp.org/udid/)!), please [download the membership form here](/documents/fr/membership-form-foopgp.pdf), fill it out, and send it.
 
 - by mail, accompanied by a check made out to the ***association
   foopgp***, *75 Impasse Serre des Isnards*, *05000 Pelleautier*.

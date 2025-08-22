@@ -13,7 +13,7 @@ type: "meeting"
 
 ---
 
-***Présents :**** Jean-Jacques B, Laurent C., Didier L., François R..*
+***Présents :*** *Jean-Jacques B, Laurent C., Didier L., François R..*
 
 ### Ordre du jour pour le prochain conseil, mardi 26 Août 2025 à **21h00**, en visio sur <https://cloud.foopgp.org/call/4du5irxe>
 
@@ -144,14 +144,14 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 - <https://infosec.exchange/@manhack/115021603303111481>
 
-#### Au cœur de la réunion
+### Au cœur de la réunion
 
 - C'est la rentrée, piseb nous a rejoint et avance bien sur l'ISO permettant de déployer en masse nos configuration et outils GNU/Linux (bien mieux qu'un *docker*, pour les connaisseurs).
 - Nouvelle page sur notre site web : <https://foopgp.org/fr/solutions/activity-rd/>
 - CR des visio CA faites durant la relâche du 1er au 15 aout :
   - <https://foopgp.org/fr/assembly/2025-08-05-weekly-report/>
   - <https://foopgp.org/fr/assembly/2025-08-12-weekly-report/>
-- Grosse discussion avec Didier sur l'économie projeté par l'association par rapport à l'économie actuel et les chiffres de la BCE. Calculs d'estimation des possibles valeurs futures d'un djis (à terme un 1 Ɉ vaudra au plus strict minimum : 707 € d'aujourd'hui ).
+- Grosse discussion avec Didier sur l'économie projetée par l'association par rapport à l'économie actuelle chiffres de la BCE à l'appui. Calculs d'estimation des possibles valeurs futures d'un djis (à terme un 1 Ɉ vaudra au plus strict minimum : 707 € d'aujourd'hui ).
 
 #### Actions en cours
 
@@ -159,7 +159,7 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 - Debugage, peaufinage et packaging de nos outils et configurations qui se trouvent dans cette ISO.
 - Industrialisation des informations à poser dans les carnets d'échanges. (Stickers à coller).
 
-### Actions à mener (TODO list)
+#### Actions à mener (TODO list)
 
 - Collecte d’ordinateurs dotés de Windows obsolètes, pour installation de nos ISO.
 - Appel à cotisation.

@@ -165,7 +165,7 @@ weight = 3
   [[menu.main]]
     parent = "our activities"
     name = "Token Ɉ"
-    URL = "about/donate"
+    URL = "about/join"
     weight = 5
 
 [[menu.main]]
@@ -252,15 +252,15 @@ icon = "ti-heart"
 link = "/about/donate"
 
 [[params.social]]
-title = "follow us"
+title = "follow"
 icon = "ti-bluesky" # themify icon : https://themify.me/themify-icons
 link = "https://www.linkedin.com/company/foopgp/"
 target="_blank"
 
 [[params.social]]
-title = "join us"
+title = "join"
 icon = "ti-comments" # themify icon : https://themify.me/themify-icons
-link = "/contact"
+link = "/about/join"
 target="_blank"
 
 ################################### English language #####################################

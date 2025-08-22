@@ -30,5 +30,5 @@ Et pour illustrer encore le propos, voici une petite illustration (trouvé sur
 
 Rappellons donc que l'association propose [une solution et vision complète](/fr/about/white-book/) : un nouveau système monétaire, économique, politique et technologique post-croissance.
 
-Pour rentrer dans ce système, [il suffit d'adhérer](/fr/about/donate/).
+Pour rentrer dans ce système, [il suffit d'adhérer](/fr/about/join/).
 

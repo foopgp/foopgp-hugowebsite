@@ -34,13 +34,32 @@ Cet ensemble contient :
 
 ### pgpid
 
-Il s'agit du premier projet, lancé avant même la création de l'association foopgp. Les deux outils au cœur de [**pgpid**](https://codeberg.org/foopgp/pgpid) sont :
+[**pgpid**](https://codeberg.org/foopgp/pgpid) marque le début de [**foopgp**](/fr/about/). Les deux outils en son cœur sont :
 
 - **pgpid-gen** : génère des certificats et des secrets OpenPGP sur plusieurs codes QR (schéma de partage de secrets physiques).
 
 - **pgpid-qrscan** : transfère les secrets OpenPGP des codes QR pgpid vers une carte à puce OpenPGP (par exemple : yubikey, nitrokey, ...).
 
-*Remarque : maintenant que la phase de validation du concept est terminée, nous devrions réécrire pgpid avec un code plus robuste et plus facile à maintenir, ainsi qu'avec une interface plus conviviale.*
+*Remarque : Conception validé - nous devrions maintenant réécrire pgpid avec un code plus robuste et plus facile à maintenir, ainsi qu'avec une interface plus conviviale.*
+
+### foopgp-ppa
+
+[Ce service](https://codeberg.org/foopgp/ppa) est notre propre [référentiel de paquets Debian](https://wiki.debian.org/DebianRepository/Setup), destiné à distribuer nos dernières versions logicielles.
+
+De cette manière, vous pouvez facilement installer nos logiciels sur vos systèmes Debian:
+
+```bash
+sudo curl http://ppa.foopgp.org/debian/bookworm/foopgp.list -o /etc/apt/sources.list.d/foopgp.list
+sudo bash -c 'curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
+| awk "/-----BEGIN PGP PUBLIC KEY BLOCK-----/,/-----END PGP PUBLIC KEY BLOCK-----/" \
+> /etc/apt/trusted.gpg.d/foopgp.asc'
+sudo apt update
+
+sudo apt install bash-libs
+sudo apt install pgpid
+```
+
+*Remarque : le paquet* ***bash-libs*** *ayant très peu de dépendances, il devrait être compatible avec tous systèmes de type Debian : Ubuntu, Mint, etc.*
 
 ### foopgp-hugotheme
 

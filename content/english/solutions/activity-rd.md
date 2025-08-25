@@ -35,8 +35,7 @@ License](https://spdx.org/licenses/LGPL-3.0-only.html).*
 
 ### pgpid
 
-This was the first project, launched even before the creation of the foopgp
-association. The two tools at the heart of [**pgpid**](https://codeberg.org/foopgp/pgpid) are:
+[**pgpid**](https://codeberg.org/foopgp/pgpid) marks the beginning of [**foopgp**](/about/). The two tools at the heart of [**pgpid**](https://codeberg.org/foopgp/pgpid) are:
 
 - **pgpid-gen**: Generate OpenPGP certifcates and secrets on multiple QR codes (physical secret sharing scheme).
 
@@ -44,6 +43,25 @@ association. The two tools at the heart of [**pgpid**](https://codeberg.org/foop
 
 *Note: Now that the proof of concept stage has been validated, we should rewrite
 pgpid with more robust and maintainable code and with a little more user-friendly interface.*
+
+### foopgp-ppa
+
+[This](https://codeberg.org/foopgp/ppa) is our own [Debian package repository](https://wiki.debian.org/DebianRepository/Setup), to distribute our latest software releases.
+
+Then, to install our software products on your Debian computers:
+
+```bash
+sudo curl http://ppa.foopgp.org/debian/bookworm/foopgp.list -o /etc/apt/sources.list.d/foopgp.list
+sudo bash -c 'curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
+| awk "/-----BEGIN PGP PUBLIC KEY BLOCK-----/,/-----END PGP PUBLIC KEY BLOCK-----/" \
+> /etc/apt/trusted.gpg.d/foopgp.asc'
+sudo apt update
+
+sudo apt install bash-libs
+sudo apt install pgpid
+```
+
+*Note:* ***bash-libs*** *has very few dependencies and sould be compatible with all Debian-like systems, eg: Ubuntu, Mint, etc..*
 
 ### foopgp-hugotheme
 

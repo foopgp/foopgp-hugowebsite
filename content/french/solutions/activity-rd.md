@@ -42,9 +42,9 @@ Cet ensemble contient :
 
 *Remarque : Conception validé - nous devrions maintenant réécrire pgpid avec un code plus robuste et plus facile à maintenir, ainsi qu'avec une interface plus conviviale.*
 
-### foopgp-ppa
+### ppa.foopgp.org
 
-[Ce service](https://codeberg.org/foopgp/ppa) est notre propre [référentiel de paquets Debian](https://wiki.debian.org/DebianRepository/Setup), destiné à distribuer nos dernières versions logicielles.
+[Ce service](https://codeberg.org/foopgp/ppa) est notre propre [dépôt de paquets Debian](https://wiki.debian.org/DebianRepository/Setup), destiné à distribuer nos dernières versions logicielles.
 
 De cette manière, vous pouvez facilement installer nos logiciels sur vos systèmes Debian:
 
@@ -60,6 +60,12 @@ sudo apt install pgpid
 ```
 
 *Remarque : le paquet* ***bash-libs*** *ayant très peu de dépendances, il devrait être compatible avec tous systèmes de type Debian : Ubuntu, Mint, etc.*
+
+### keys.foopgp.org
+
+C'est [notre serveur de clés OpenPGP](https://keys.foopgp.org/) conforme au [protocole draft-gallagher-openpgp-hkp-00](https://www.ietf.org/archive/id/draft-gallagher-openpgp-hkp-00.html).
+
+Il utilise [une version améliorée d'Onak](https://codeberg.org/foopgp/onak), et nous transmettons régulièrement nos contributions [au développeur principal](https://www.earth.li/~noodles/) de [la version originale](https://github.com/u1f35c/onak).
 
 ### foopgp-hugotheme
 

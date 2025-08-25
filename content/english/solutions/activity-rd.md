@@ -44,7 +44,7 @@ License](https://spdx.org/licenses/LGPL-3.0-only.html).*
 *Note: Now that the proof of concept stage has been validated, we should rewrite
 pgpid with more robust and maintainable code and with a little more user-friendly interface.*
 
-### foopgp-ppa
+### ppa.foopgp.org
 
 [This](https://codeberg.org/foopgp/ppa) is our own [Debian package repository](https://wiki.debian.org/DebianRepository/Setup), to distribute our latest software releases.
 
@@ -62,6 +62,12 @@ sudo apt install pgpid
 ```
 
 *Note:* ***bash-libs*** *has very few dependencies and sould be compatible with all Debian-like systems, eg: Ubuntu, Mint, etc..*
+
+### keys.foopgp.org
+
+This is [our OpenPGP key server](https://keys.foopgp.org/), compliant with [the draft-gallagher-openpgp-hkp-00 protocol](https://www.ietf.org/archive/id/draft-gallagher-openpgp-hkp-00.html).
+
+It runs [an enhanced version of Onak](https://codeberg.org/foopgp/onak), and we regularly send our contributions to [the lead developer](https://www.earth.li/~noodles/) of [the original version](https://github.com/u1f35c/onak).
 
 ### foopgp-hugotheme
 

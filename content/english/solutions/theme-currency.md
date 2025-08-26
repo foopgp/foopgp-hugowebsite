@@ -1,11 +1,12 @@
 ---
 title: "Payment"
+lang: en
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Solutions for digital payments."
 image: "images/solutions/currency.png"
-categories: ["solution"]
 type: "post"
+categories: ["solution"]
 ---
 
 ### Digital payments

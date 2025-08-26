@@ -1,11 +1,12 @@
 ---
 title: "Paiement"
+lang: fr
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Solutions pour les paiements numériques."
 image: "images/solutions/currency.png"
-categories: ["solution"]
 type: "post"
+categories: ["solution"]
 ---
 
 ### Paiements numériques

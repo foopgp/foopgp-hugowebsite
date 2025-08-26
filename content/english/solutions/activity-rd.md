@@ -1,9 +1,11 @@
 ---
 title: "R&D Projects"
+lang: en
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Our Research and Development activities"
 type: "post"
+categories: ["solution"]
 ---
 
 *The page guide you through our main Projects and their open-source

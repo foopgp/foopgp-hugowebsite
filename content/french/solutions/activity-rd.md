@@ -1,9 +1,11 @@
 ---
 title: "Projets R&D"
+lang: fr
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Nos activités de Recherche et Développement"
 type: "post"
+categories: ["solution"]
 ---
 
 *Cette page vous guide à travers nos principaux projets et leurs développements open source

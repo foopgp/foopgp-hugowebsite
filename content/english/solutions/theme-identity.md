@@ -1,14 +1,10 @@
 ---
-#Lastmod: 2024-07-05T12:41:04+02:00 # MANAGED by --enableGitInfo
 title: "Identity"
-#date: 2019-07-06T15:27:17+06:00
+lang: en
 draft: false
-# page title background image
 bg_image: "images/backgrounds/puzzle.jpg"
 author: [ "Deepl Translate" ]
-# meta description
 description : "Solutions for digital identity."
-# Research image
 image: "images/solutions/identity.png"
 tags: ["Identity", "pgpid"]
 categories: ["solution"]

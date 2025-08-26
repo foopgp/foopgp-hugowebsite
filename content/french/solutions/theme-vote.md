@@ -1,13 +1,9 @@
 ---
-#Lastmod: 2024-07-05T15:50:38+02:00 # MANAGED by --enableGitInfo
 title: "Vote"
-#date: 2019-07-06T15:27:17+06:00
+lang: fr
 draft: false
-# page title background image
 bg_image: "images/backgrounds/puzzle.jpg"
-# meta description
 description : "Solutions pour le vote électronique."
-# Research image
 image: "images/solutions/vote.png"
 author: [ "ChatGPT", "Evyn Faure", "Maël Lemoine" ]
 tags: ["Vote"]

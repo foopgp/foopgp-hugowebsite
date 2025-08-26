@@ -5,9 +5,6 @@ draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Let's set sail together for brighter horizons."
 image: "images/logos/logo-foopgp-token-0.png"
-#categories: ["about"]
-#tags: [""]
-#type: "post"
 ---
 
 The best way to support the project is to invest in the form of membership fees.

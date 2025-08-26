@@ -1,5 +1,6 @@
 ---
 title: "Security Keys"
+lang: en
 draft: false
 image: "images/solutions/OpenPGPkeys.jpg"
 bg_image: "images/backgrounds/puzzle.jpg"

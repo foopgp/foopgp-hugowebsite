@@ -1,13 +1,9 @@
 ---
-#Lastmod: 2024-07-05T02:03:09+02:00 # MANAGED by --enableGitInfo
 title: "Identité"
-#date: 2019-07-06T15:27:17+06:00
+lang: fr
 draft: false
-# page title background image
 bg_image: "images/backgrounds/puzzle.jpg"
-# meta description
 description : "Solutions pour la gestion d'identités numériques."
-# Research image
 image: "images/solutions/identity.png"
 tags: ["Identity", "pgpid"]
 categories: ["solution"]

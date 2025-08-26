@@ -5,9 +5,6 @@ draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Embarquons tous ensemble vers des horizons plus radieux."
 image: "images/logos/logo-foopgp-token-0.png"
-#categories: ["about"]
-#tags: [""]
-#type: "post"
 ---
 
 La meilleur façon de soutenir le projet consiste à investir sous forme de cotisations.

@@ -50,7 +50,7 @@ Cet ensemble contient :
 De cette manière, vous pouvez facilement installer nos logiciels sur vos systèmes Debian:
 
 ```bash
-sudo curl http://ppa.foopgp.org/debian/bookworm/foopgp.list -o /etc/apt/sources.list.d/foopgp.list
+sudo curl http://ppa.foopgp.org/debian/foopgp.list -o /etc/apt/sources.list.d/foopgp.list
 sudo bash -c 'curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
 | awk "/-----BEGIN PGP PUBLIC KEY BLOCK-----/,/-----END PGP PUBLIC KEY BLOCK-----/" \
 > /etc/apt/trusted.gpg.d/foopgp.asc'

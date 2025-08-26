@@ -3,6 +3,7 @@ title: "R&D Projects"
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Our Research and Development activities"
+type: "post"
 ---
 
 *The page guide you through our main Projects and their open-source

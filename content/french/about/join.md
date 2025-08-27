@@ -7,7 +7,7 @@ description : "Embarquons tous ensemble vers des horizons plus radieux."
 image: "images/logos/logo-foopgp-token-0.png"
 ---
 
-La meilleur façon de soutenir le projet consiste à investir sous forme de cotisations.
+La meilleur façon de soutenir [le projet](/fr/about/white-book/) consiste à investir sous forme de cotisations.
 
 Ces cotisations vous permettent d'obtenir vos premiers jetons FOOPGP, et
 financent le travail de l'association pour [passer d'un système monétaire,

@@ -72,7 +72,7 @@ Il utilise [une version améliorée d'Onak](https://codeberg.org/foopgp/onak), e
 
 ### foopgp-hugotheme
 
-[**foopgp-foopgp-hugotheme**](https://codeberg.org/foopgp/foopgp-hugotheme) contient le thème Hugo de notre site web. Vous pouvez l'utiliser pour vos propres sites web Hugo. Si vous ajoutez des corrections ou des améliorations à ce thème Hugo, veuillez le partager avec nous.
+[**foopgp-hugotheme**](https://codeberg.org/foopgp/foopgp-hugotheme) contient le thème Hugo de notre site web. Vous pouvez l'utiliser pour vos propres sites web Hugo. Si vous ajoutez des corrections ou des améliorations à ce thème Hugo, veuillez le partager avec nous.
 
 *Remarque : sauf indication contraire, tout le contenu de foopgp-hugotheme est soumis à la [licence MIT](https://en.wikipedia.org/wiki/MIT_License).*
 

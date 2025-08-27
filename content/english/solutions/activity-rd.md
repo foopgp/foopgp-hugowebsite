@@ -74,7 +74,7 @@ It runs [an enhanced version of Onak](https://codeberg.org/foopgp/onak), and we 
 
 ### foopgp-hugotheme
 
-[**foopgp-foopgp-hugotheme**](https://codeberg.org/foopgp/foopgp-hugotheme) contain
+[**foopgp-hugotheme**](https://codeberg.org/foopgp/foopgp-hugotheme) contain
 the hugo theme of our website. You may use it for your own hugo websites. If you
 add some fixes or improvements to this hugo theme, please share theme with us.
 

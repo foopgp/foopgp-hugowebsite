@@ -7,7 +7,7 @@ description : "Let's set sail together for brighter horizons."
 image: "images/logos/logo-foopgp-token-0.png"
 ---
 
-The best way to support the project is to invest in the form of membership fees.
+The best way to support [the project](/about/white-book/) is to invest in the form of membership fees.
 
 These membership fees allow you to obtain your first foopgp tokens and finance the association's work to [move from a monetary, economic, and political system that destroys our lives and our planet to a new system that is more respectful of the living world](/about/white-book/).
 

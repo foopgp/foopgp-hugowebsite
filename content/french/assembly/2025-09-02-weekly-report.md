@@ -75,7 +75,9 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 ### Revue de presse
 
+- Android se ferme, Google veut tout contrôler : <https://www.frandroid.com/android/2770887_android-devient-il-un-iphone-google-va-bloquer-les-apps-non-verifiees>
 - À propos de l'IA : 
+  - 14 000 serveurs IA laissés en libre-service sur Internet : <https://korben.info/ollama-serveurs-vulnerabilites-secrete.html>
   - Checkmarx lance un outil pour sécuriser le développement par l'IA : <https://www.linformaticien.com/magazine/tendances/941-ia/63799-checkmarx-lance-un-outil-pour-securiser-le-developpement-par-l-ia.html>
   - Checkmarx met en garde contre les vulnérabilité de développement par l'IA : <https://www.linformaticien.com/magazine-linfo-cyber-risques/menaces/63793-codage-par-ia-checkmarx-met-en-garde-contre-les-vulnerabilites-2.html>
   - Un ransomware génère son code en temps réel grâce à l'IA : <https://www.linformaticien.com/magazine-linfo-cyber-risques/menaces/63788-un-ransomware-qui-genere-son-code-en-temps-reel-grace-a-l-ia-2.html>

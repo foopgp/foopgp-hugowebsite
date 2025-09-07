@@ -20,13 +20,13 @@ Je parts d'une vm "neuve" pour cette démo.
 **Remote:** Si besoin.
 
 ```bash
-udo apt install openssh-server
+sudo apt install openssh-server
 ```
 
 **Local:** La connexion ssh fonctionne.
 
 ```bash
-sh foopgp@192.168.122.209
+ssh foopgp@192.168.122.209
 ...
 $ echo bonjour > top-secret.txt
 $ cat top-secret.txt
@@ -45,7 +45,7 @@ host demo
 **Local:** Pour se connecter il suffit désormais de 2 mots.
 
 ```bash
-sh demo
+ssh demo
 ...
 $ cat top-secret.txt
 bonjour
@@ -76,7 +76,7 @@ $ gpg -k
 **Remote:** Je rajoute "StreamLocalBindUnlink yes", ci-dessous je rajoute un fichier dédié et je redémarre le service ssh:
 
 ```bash
-udo -i
+sudo -i
 vim /etc/ssh/sshd_config.d/demo.conf
 cat /etc/ssh/sshd_config.d/demo.conf
 StreamLocalBindUnlink yes
@@ -104,7 +104,7 @@ host demo
     RemoteForward /run/user/1000/gnupg/S.gpg-agent /run/user/1000/gnupg/S.gpg-agent.extra
 ```
 
-Et désormais l'utilisation de ma clé privée est possible sur le remote sans y être présente:
+**Local:** Et désormais l'utilisation de ma clé privée est possible sur le remote sans y être présente:
 
 ```bash
 ssh demo

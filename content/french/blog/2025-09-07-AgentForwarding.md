@@ -17,23 +17,23 @@ Comment utiliser ses clés privées à distance, et donc sa Yubikey, tout en gar
 
 Je parts d'une vm "neuve" pour cette démo.
 
-Remote: Si besoin.
+**Remote:** Si besoin.
 
 ```bash
-$ sudo apt install openssh-server
+udo apt install openssh-server
 ```
 
-Local: La connexion ssh fonctionne.
+**Local:** La connexion ssh fonctionne.
 
 ```bash
-$ ssh foopgp@192.168.122.209
+sh foopgp@192.168.122.209
 ...
 $ echo bonjour > top-secret.txt
 $ cat top-secret.txt
 bonjour
 ```
 
-Local: Je rajoute la configuration dans ~/.ssh/config .
+**Local:** Je rajoute la configuration dans ~/.ssh/config .
 
 ```bash
 cat .ssh/config
@@ -42,16 +42,16 @@ host demo
     User foopgp
 ```
 
-Local: Pour se connecter il suffit désormais de 2 mots.
+**Local:** Pour se connecter il suffit désormais de 2 mots.
 
 ```bash
-$ ssh demo
+sh demo
 ...
 $ cat top-secret.txt
 bonjour
 ```
 
-Remote: J'importe ma clé _publique_, plusieurs solutions, exemple.
+**Remote:** J'importe ma clé _publique_, plusieurs solutions, exemple.
 
 ```bash
 curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
@@ -65,7 +65,7 @@ gpg:                     importées : 1
 gpg: aucune clef de confiance ultime n'a été trouvée
 ```
 
-Remote: Seule la publique est évidemment présente.
+**Remote:** Seule la publique est évidemment présente.
 
 ```bash
 $ gpg -K
@@ -73,29 +73,29 @@ $ gpg -k
 ...
 ```
 
-Remote: Je rajoute "StreamLocalBindUnlink yes", ci-dessous je rajoute un fichier dédié et je redémarre le service ssh:
+**Remote:** Je rajoute "StreamLocalBindUnlink yes", ci-dessous je rajoute un fichier dédié et je redémarre le service ssh:
 
 ```bash
-$ sudo -i
+udo -i
 vim /etc/ssh/sshd_config.d/demo.conf
 cat /etc/ssh/sshd_config.d/demo.conf
 StreamLocalBindUnlink yes
 systemctl restart sshd.service
 ```
 
-Remote:
+**Remote:**
 
 ```bash
 gpgconf --list-dir agent-socket
 ```
 
-Local:
+**Local:**
 
 ```bash
 gpgconf --list-dir agent-extra-socket
 ```
 
-Local: Je retourne à mon fichier conf, je rajoute les résultats des 2 commandes précédentes:
+**Local:** Je retourne à mon fichier conf, je rajoute les résultats des 2 commandes précédentes:
 
 ```bash
 host demo

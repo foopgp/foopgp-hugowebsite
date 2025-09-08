@@ -1,8 +1,6 @@
 ---
-#Lastmod: 2023-07-15T10:31:57+02:00 # MANAGED by --enableGitInfo
 title: "Fred Zwikel"
-# page title background image
-bg_image: "images/banner/banner-1.jpg"
+bg_image: "images/backgrounds/world.jpg"
 # meta description
 description : "gentil chieur"
 # Not the used one, but the one for gravatar

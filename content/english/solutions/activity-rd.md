@@ -2,7 +2,7 @@
 title: "R&D Projects"
 lang: en
 draft: false
-bg_image: "images/backgrounds/puzzle.jpg"
+bg_image: "images/backgrounds/Cartographie.jpg"
 description : "Our Research and Development activities"
 type: "post"
 categories: ["solution"]

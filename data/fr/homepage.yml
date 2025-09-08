@@ -1,7 +1,7 @@
 ################################# Slider #####################################
 slider:
   enable : true
-  bg_image : "images/banner/banner-1.jpg"
+  bg_image: "images/backgrounds/world.jpg"
   slider_item:
     # slider item loop
     - title : "Promouvoir les utilisations de la technologie [OpenPGP](/fr/about/openpgp/)"

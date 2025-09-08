@@ -4,7 +4,7 @@ lang: en
 draft: false
 bg_image: "images/backgrounds/world.jpg"
 description : ""
-#image: "images/solutions/signature.png"
+image: "images/banner/foopgp+dji+djibian.png"
 categories: ["about"]
 Tags:    [ "specification" ]
 type: "post"

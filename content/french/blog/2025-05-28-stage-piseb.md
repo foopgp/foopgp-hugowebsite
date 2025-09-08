@@ -5,6 +5,7 @@ draft: false
 description: "Résumé de stage par Sébastien Picardeau (piseb)"
 lang: fr
 image: "/images/blog/2024/rds.avif"
+bg_image: "images/backgrounds/library.jpg"
 author: ["Sébastien Picardeau"]
 categories: ["study"]
 tags: ["Internship", "Experience"]

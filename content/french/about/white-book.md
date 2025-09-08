@@ -3,8 +3,8 @@ title: "Livre Blanc"
 lang: fr
 draft: false
 bg_image: "images/backgrounds/world.jpg"
-description : ""
-#image: "images/solutions/signature.png"
+description : "Un *notre monde* est **possible**."
+image: "images/banner/foopgp+dji+djibian.png"
 categories: ["about"]
 Tags:    [ "specification" ]
 type: "post"

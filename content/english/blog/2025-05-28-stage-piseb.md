@@ -1,1 +1,0 @@
-../../french/blog/2025-05-28-stage-piseb.md

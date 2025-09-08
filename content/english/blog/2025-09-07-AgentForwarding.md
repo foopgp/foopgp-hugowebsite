@@ -1,9 +1,9 @@
 ---
-title: "Utiliser ses clés privées locales à travers ssh - Agent Forwarding"
-Date: 2025-09-07T20:00:00+02:00
+title: "Using your local private keys via SSH"
+Date: 2025-09-08T20:00:00+02:00
 draft: false
 description: "GPG Agent Forwarding"
-lang: fr
+lang: en
 author: ["Sébastien Picardeau"]
 categories: ["study"]
 tags: ["gnupg"]
@@ -13,27 +13,27 @@ bg_image: "images/backgrounds/library.jpg"
 image: "images/logos/logo-gnupg-light-purple-bg.png"
 ---
 
-Comment utiliser ses clés privées à distance, et donc sa Yubikey, tout en gardant les secrets en local, secrets et local.
+How to use your private keys remotely, and therefore your Yubikey, while keeping secrets local.
 
-Je parts d'une VM (machine virtuelle) "neuve" pour cette démo.
+I am starting with a “new” VM (virtual machine) for this demo.
 
-**Remote:** Si besoin.
+**Remote:** (if needed).
 
 ```bash
 sudo apt install openssh-server
 ```
 
-**Local:** La connexion ssh fonctionne.
+**Local:** The SSH connection is working.
 
 ```bash
 ssh foopgp@192.168.122.209
 ...
-$ echo bonjour > top-secret.txt
+$ echo hello > top-secret.txt
 $ cat top-secret.txt
 bonjour
 ```
 
-**Local:** Je rajoute la configuration dans *~/.ssh/config*,
+**Local:** I add the configuration to *~/.ssh/config*,
 
 ```bash
 cat .ssh/config
@@ -42,16 +42,16 @@ host demo
     User foopgp
 ```
 
-**Local:** afin de me reconnecter plus facilement.
+**Local:** so that I can reconnect more easily.
 
 ```bash
 ssh demo
 ...
 $ cat top-secret.txt
-bonjour
+hello
 ```
 
-**Remote:** J'importe ma clé _publique_, plusieurs solutions, exemple.
+**Remote:** I import my public key, several solutions, for example:
 
 ```bash
 $ curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
@@ -65,7 +65,7 @@ gpg:                     importées : 1
 gpg: aucune clef de confiance ultime n'a été trouvée
 ```
 
-**Remote:** Seule la publique est évidemment présente. On peut vérifier.
+**Remote:** Only the public key is obviously present. This can be verified.
 
 ```bash
 $ gpg --list-secret-keys
@@ -73,7 +73,7 @@ $ gpg --list-public-keys
 ...
 ```
 
-**Remote:** Je rajoute "StreamLocalBindUnlink yes" à la configuration du serveur ssh, ci-dessous dans un fichier dédié, et je redémarre le service ssh:
+**Remote:** I add “StreamLocalBindUnlink yes” to the ssh server configuration, below in a dedicated file, and restart the ssh service:
 
 ```bash
 sudo -i
@@ -81,19 +81,19 @@ echo "StreamLocalBindUnlink yes" > /etc/ssh/sshd_config.d/demo.conf
 systemctl restart sshd.service
 ```
 
-**Remote:** Je regarde quel est le socket utilisé par le gpg-agent du serveur.
+**Remote:** I check which socket is used by the server's gpg-agent.
 
 ```bash
 gpgconf --list-dir agent-socket
 ```
 
-**Local:** Je regarde quel est le socket supplémentaire utilisable par mon gpg-agent local.
+**Local:** I check which additional socket can be used by my local gpg-agent.
 
 ```bash
 gpgconf --list-dir agent-extra-socket
 ```
 
-**Local:** Je retourne à mon fichier conf, je rajoute les résultats des 2 commandes précédentes afin que le gpg-agent distant utilise en fait mon gpg-agent local :
+**Local:** I return to my client configuration file and add the results of the two previous commands so that the remote gpg-agent actually uses my local gpg-agent:
 
 ```bash
 host demo
@@ -102,7 +102,7 @@ host demo
     RemoteForward /run/user/1000/gnupg/S.gpg-agent /run/user/1000/gnupg/S.gpg-agent.extra
 ```
 
-**Local:** Et désormais l'utilisation de ma clé privée est possible sur le remote sans y être présente:
+**Local:** And now I can use my private key on the remote without being there:
 
 ```bash
 ssh demo
@@ -110,7 +110,7 @@ gpg --list-secret-keys
 ...
 ```
 
-Je peux signer, chiffrer etc. exactement comme en local.
+So I can sign, encrypt, etc. exactly as I would locally.
 
 Sources:
 

@@ -2,8 +2,8 @@
 title: "Soutenir le projet"
 lang: fr
 draft: false
-bg_image: "images/backgrounds/puzzle.jpg"
-description : "Embarquons tous ensemble vers des horizons plus radieux."
+bg_image: "images/backgrounds/Cartographie.jpg"
+description : "Embarquons vers des horizons plus radieux."
 image: "images/logos/logo-foopgp-token-0.png"
 ---
 

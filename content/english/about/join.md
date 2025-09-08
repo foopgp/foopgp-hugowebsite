@@ -2,7 +2,7 @@
 title: "Endorse"
 lang: en
 draft: false
-bg_image: "images/backgrounds/puzzle.jpg"
+bg_image: "images/backgrounds/Cartographie.jpg"
 description : "Let's set sail together for brighter horizons."
 image: "images/logos/logo-foopgp-token-0.png"
 ---

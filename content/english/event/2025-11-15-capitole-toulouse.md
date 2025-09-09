@@ -1,0 +1,1 @@
+../../french/event/2025-11-15-capitole-toulouse.md

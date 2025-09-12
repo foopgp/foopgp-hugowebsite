@@ -10,9 +10,9 @@
    xml:space="preserve"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="poster_french.svg"
-   inkscape:export-filename="../../../../../../foopgp/git/codeberg/foopgp-hugowebsite/static/images/banner/poster_04ter_french.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   inkscape:export-filename="../../static/images/banner/poster_french_1654x2339.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -28,9 +28,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.7042597"
-     inkscape:cx="376.99161"
-     inkscape:cy="797.29111"
+     inkscape:zoom="0.35212985"
+     inkscape:cx="90.875568"
+     inkscape:cy="637.5489"
      inkscape:window-width="1366"
      inkscape:window-height="744"
      inkscape:window-x="0"
@@ -80,7 +80,11 @@
        y1="195.47509"
        x2="244.38204"
        y2="195.47509"
-       gradientUnits="userSpaceOnUse" /></defs><g
+       gradientUnits="userSpaceOnUse" /><script
+       id="mesh_polyfill-4"
+       type="text/javascript">
+!function(){const t=&quot;http://www.w3.org/2000/svg&quot;,e=&quot;http://www.w3.org/1999/xlink&quot;,s=&quot;http://www.w3.org/1999/xhtml&quot;,r=2;if(document.createElementNS(t,&quot;meshgradient&quot;).x)return;const n=(t,e,s,r)=&gt;{let n=new x(.5*(e.x+s.x),.5*(e.y+s.y)),o=new x(.5*(t.x+e.x),.5*(t.y+e.y)),i=new x(.5*(s.x+r.x),.5*(s.y+r.y)),a=new x(.5*(n.x+o.x),.5*(n.y+o.y)),h=new x(.5*(n.x+i.x),.5*(n.y+i.y)),l=new x(.5*(a.x+h.x),.5*(a.y+h.y));return[[t,o,a,l],[l,h,i,r]]},o=t=&gt;{let e=t[0].distSquared(t[1]),s=t[2].distSquared(t[3]),r=.25*t[0].distSquared(t[2]),n=.25*t[1].distSquared(t[3]),o=e&gt;s?e:s,i=r&gt;n?r:n;return 18*(o&gt;i?o:i)},i=(t,e)=&gt;Math.sqrt(t.distSquared(e)),a=(t,e)=&gt;t.scale(2/3).add(e.scale(1/3)),h=t=&gt;{let e,s,r,n,o,i,a,h=new g;return t.match(/(\w+\(\s*[^)]+\))+/g).forEach(t=&gt;{let l=t.match(/[\w.-]+/g),d=l.shift();switch(d){case&quot;translate&quot;:2===l.length?e=new g(1,0,0,1,l[0],l[1]):(console.error(&quot;mesh.js: translate does not have 2 arguments!&quot;),e=new g(1,0,0,1,0,0)),h=h.append(e);break;case&quot;scale&quot;:1===l.length?s=new g(l[0],0,0,l[0],0,0):2===l.length?s=new g(l[0],0,0,l[1],0,0):(console.error(&quot;mesh.js: scale does not have 1 or 2 arguments!&quot;),s=new g(1,0,0,1,0,0)),h=h.append(s);break;case&quot;rotate&quot;:if(3===l.length&amp;&amp;(e=new g(1,0,0,1,l[1],l[2]),h=h.append(e)),l[0]){r=l[0]*Math.PI/180;let t=Math.cos(r),e=Math.sin(r);Math.abs(t)&lt;1e-16&amp;&amp;(t=0),Math.abs(e)&lt;1e-16&amp;&amp;(e=0),a=new g(t,e,-e,t,0,0),h=h.append(a)}else console.error(&quot;math.js: No argument to rotate transform!&quot;);3===l.length&amp;&amp;(e=new g(1,0,0,1,-l[1],-l[2]),h=h.append(e));break;case&quot;skewX&quot;:l[0]?(r=l[0]*Math.PI/180,n=Math.tan(r),o=new g(1,0,n,1,0,0),h=h.append(o)):console.error(&quot;math.js: No argument to skewX transform!&quot;);break;case&quot;skewY&quot;:l[0]?(r=l[0]*Math.PI/180,n=Math.tan(r),i=new g(1,n,0,1,0,0),h=h.append(i)):console.error(&quot;math.js: No argument to skewY transform!&quot;);break;case&quot;matrix&quot;:6===l.length?h=h.append(new g(...l)):console.error(&quot;math.js: Incorrect number of arguments for matrix!&quot;);break;default:console.error(&quot;mesh.js: Unhandled transform type: &quot;+d)}}),h},l=t=&gt;{let e=[],s=t.split(/[ ,]+/);for(let t=0,r=s.length-1;t&lt;r;t+=2)e.push(new x(parseFloat(s[t]),parseFloat(s[t+1])));return e},d=(t,e)=&gt;{for(let s in e)t.setAttribute(s,e[s])},c=(t,e,s,r,n)=&gt;{let o,i,a=[0,0,0,0];for(let h=0;h&lt;3;++h)e[h]&lt;t[h]&amp;&amp;e[h]&lt;s[h]||t[h]&lt;e[h]&amp;&amp;s[h]&lt;e[h]?a[h]=0:(a[h]=.5*((e[h]-t[h])/r+(s[h]-e[h])/n),o=Math.abs(3*(e[h]-t[h])/r),i=Math.abs(3*(s[h]-e[h])/n),a[h]&gt;o?a[h]=o:a[h]&gt;i&amp;&amp;(a[h]=i));return a},u=[[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],[-3,3,0,0,-2,-1,0,0,0,0,0,0,0,0,0,0],[2,-2,0,0,1,1,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0],[0,0,0,0,0,0,0,0,-3,3,0,0,-2,-1,0,0],[0,0,0,0,0,0,0,0,2,-2,0,0,1,1,0,0],[-3,0,3,0,0,0,0,0,-2,0,-1,0,0,0,0,0],[0,0,0,0,-3,0,3,0,0,0,0,0,-2,0,-1,0],[9,-9,-9,9,6,3,-6,-3,6,-6,3,-3,4,2,2,1],[-6,6,6,-6,-3,-3,3,3,-4,4,-2,2,-2,-2,-1,-1],[2,0,-2,0,0,0,0,0,1,0,1,0,0,0,0,0],[0,0,0,0,2,0,-2,0,0,0,0,0,1,0,1,0],[-6,6,6,-6,-4,-2,4,2,-3,3,-3,3,-2,-1,-2,-1],[4,-4,-4,4,2,2,-2,-2,2,-2,2,-2,1,1,1,1]],f=t=&gt;{let e=[];for(let s=0;s&lt;16;++s){e[s]=0;for(let r=0;r&lt;16;++r)e[s]+=u[s][r]*t[r]}return e},p=(t,e,s)=&gt;{const r=e*e,n=s*s,o=e*e*e,i=s*s*s;return t[0]+t[1]*e+t[2]*r+t[3]*o+t[4]*s+t[5]*s*e+t[6]*s*r+t[7]*s*o+t[8]*n+t[9]*n*e+t[10]*n*r+t[11]*n*o+t[12]*i+t[13]*i*e+t[14]*i*r+t[15]*i*o},y=t=&gt;{let e=[],s=[],r=[];for(let s=0;s&lt;4;++s)e[s]=[],e[s][0]=n(t[0][s],t[1][s],t[2][s],t[3][s]),e[s][1]=[],e[s][1].push(...n(...e[s][0][0])),e[s][1].push(...n(...e[s][0][1])),e[s][2]=[],e[s][2].push(...n(...e[s][1][0])),e[s][2].push(...n(...e[s][1][1])),e[s][2].push(...n(...e[s][1][2])),e[s][2].push(...n(...e[s][1][3]));for(let t=0;t&lt;8;++t){s[t]=[];for(let r=0;r&lt;4;++r)s[t][r]=[],s[t][r][0]=n(e[0][2][t][r],e[1][2][t][r],e[2][2][t][r],e[3][2][t][r]),s[t][r][1]=[],s[t][r][1].push(...n(...s[t][r][0][0])),s[t][r][1].push(...n(...s[t][r][0][1])),s[t][r][2]=[],s[t][r][2].push(...n(...s[t][r][1][0])),s[t][r][2].push(...n(...s[t][r][1][1])),s[t][r][2].push(...n(...s[t][r][1][2])),s[t][r][2].push(...n(...s[t][r][1][3]))}for(let t=0;t&lt;8;++t){r[t]=[];for(let e=0;e&lt;8;++e)r[t][e]=[],r[t][e][0]=s[t][0][2][e],r[t][e][1]=s[t][1][2][e],r[t][e][2]=s[t][2][2][e],r[t][e][3]=s[t][3][2][e]}return r};class x{constructor(t,e){this.x=t||0,this.y=e||0}toString(){return`(x=${this.x}, y=${this.y})`}clone(){return new x(this.x,this.y)}add(t){return new x(this.x+t.x,this.y+t.y)}scale(t){return void 0===t.x?new x(this.x*t,this.y*t):new x(this.x*t.x,this.y*t.y)}distSquared(t){let e=this.x-t.x,s=this.y-t.y;return e*e+s*s}transform(t){let e=this.x*t.a+this.y*t.c+t.e,s=this.x*t.b+this.y*t.d+t.f;return new x(e,s)}}class g{constructor(t,e,s,r,n,o){void 0===t?(this.a=1,this.b=0,this.c=0,this.d=1,this.e=0,this.f=0):(this.a=t,this.b=e,this.c=s,this.d=r,this.e=n,this.f=o)}toString(){return`affine: ${this.a} ${this.c} ${this.e} \n       ${this.b} ${this.d} ${this.f}`}append(t){t instanceof g||console.error(&quot;mesh.js: argument to Affine.append is not affine!&quot;);let e=this.a*t.a+this.c*t.b,s=this.b*t.a+this.d*t.b,r=this.a*t.c+this.c*t.d,n=this.b*t.c+this.d*t.d,o=this.a*t.e+this.c*t.f+this.e,i=this.b*t.e+this.d*t.f+this.f;return new g(e,s,r,n,o,i)}}class w{constructor(t,e){this.nodes=t,this.colors=e}paintCurve(t,e){if(o(this.nodes)&gt;r){const s=n(...this.nodes);let r=[[],[]],o=[[],[]];for(let t=0;t&lt;4;++t)r[0][t]=this.colors[0][t],r[1][t]=(this.colors[0][t]+this.colors[1][t])/2,o[0][t]=r[1][t],o[1][t]=this.colors[1][t];let i=new w(s[0],r),a=new w(s[1],o);i.paintCurve(t,e),a.paintCurve(t,e)}else{let s=Math.round(this.nodes[0].x);if(s&gt;=0&amp;&amp;s&lt;e){let r=4*(~~this.nodes[0].y*e+s);t[r]=Math.round(this.colors[0][0]),t[r+1]=Math.round(this.colors[0][1]),t[r+2]=Math.round(this.colors[0][2]),t[r+3]=Math.round(this.colors[0][3])}}}}class m{constructor(t,e){this.nodes=t,this.colors=e}split(){let t=[[],[],[],[]],e=[[],[],[],[]],s=[[[],[]],[[],[]]],r=[[[],[]],[[],[]]];for(let s=0;s&lt;4;++s){const r=n(this.nodes[0][s],this.nodes[1][s],this.nodes[2][s],this.nodes[3][s]);t[0][s]=r[0][0],t[1][s]=r[0][1],t[2][s]=r[0][2],t[3][s]=r[0][3],e[0][s]=r[1][0],e[1][s]=r[1][1],e[2][s]=r[1][2],e[3][s]=r[1][3]}for(let t=0;t&lt;4;++t)s[0][0][t]=this.colors[0][0][t],s[0][1][t]=this.colors[0][1][t],s[1][0][t]=(this.colors[0][0][t]+this.colors[1][0][t])/2,s[1][1][t]=(this.colors[0][1][t]+this.colors[1][1][t])/2,r[0][0][t]=s[1][0][t],r[0][1][t]=s[1][1][t],r[1][0][t]=this.colors[1][0][t],r[1][1][t]=this.colors[1][1][t];return[new m(t,s),new m(e,r)]}paint(t,e){let s,n=!1;for(let t=0;t&lt;4;++t)if((s=o([this.nodes[0][t],this.nodes[1][t],this.nodes[2][t],this.nodes[3][t]]))&gt;r){n=!0;break}if(n){let s=this.split();s[0].paint(t,e),s[1].paint(t,e)}else{new w([...this.nodes[0]],[...this.colors[0]]).paintCurve(t,e)}}}class b{constructor(t){this.readMesh(t),this.type=t.getAttribute(&quot;type&quot;)||&quot;bilinear&quot;}readMesh(t){let e=[[]],s=[[]],r=Number(t.getAttribute(&quot;x&quot;)),n=Number(t.getAttribute(&quot;y&quot;));e[0][0]=new x(r,n);let o=t.children;for(let t=0,r=o.length;t&lt;r;++t){e[3*t+1]=[],e[3*t+2]=[],e[3*t+3]=[],s[t+1]=[];let r=o[t].children;for(let n=0,o=r.length;n&lt;o;++n){let o=r[n].children;for(let r=0,i=o.length;r&lt;i;++r){let i=r;0!==t&amp;&amp;++i;let h,d=o[r].getAttribute(&quot;path&quot;),c=&quot;l&quot;;null!=d&amp;&amp;(c=(h=d.match(/\s*([lLcC])\s*(.*)/))[1]);let u=l(h[2]);switch(c){case&quot;l&quot;:0===i?(e[3*t][3*n+3]=u[0].add(e[3*t][3*n]),e[3*t][3*n+1]=a(e[3*t][3*n],e[3*t][3*n+3]),e[3*t][3*n+2]=a(e[3*t][3*n+3],e[3*t][3*n])):1===i?(e[3*t+3][3*n+3]=u[0].add(e[3*t][3*n+3]),e[3*t+1][3*n+3]=a(e[3*t][3*n+3],e[3*t+3][3*n+3]),e[3*t+2][3*n+3]=a(e[3*t+3][3*n+3],e[3*t][3*n+3])):2===i?(0===n&amp;&amp;(e[3*t+3][3*n+0]=u[0].add(e[3*t+3][3*n+3])),e[3*t+3][3*n+1]=a(e[3*t+3][3*n],e[3*t+3][3*n+3]),e[3*t+3][3*n+2]=a(e[3*t+3][3*n+3],e[3*t+3][3*n])):(e[3*t+1][3*n]=a(e[3*t][3*n],e[3*t+3][3*n]),e[3*t+2][3*n]=a(e[3*t+3][3*n],e[3*t][3*n]));break;case&quot;L&quot;:0===i?(e[3*t][3*n+3]=u[0],e[3*t][3*n+1]=a(e[3*t][3*n],e[3*t][3*n+3]),e[3*t][3*n+2]=a(e[3*t][3*n+3],e[3*t][3*n])):1===i?(e[3*t+3][3*n+3]=u[0],e[3*t+1][3*n+3]=a(e[3*t][3*n+3],e[3*t+3][3*n+3]),e[3*t+2][3*n+3]=a(e[3*t+3][3*n+3],e[3*t][3*n+3])):2===i?(0===n&amp;&amp;(e[3*t+3][3*n+0]=u[0]),e[3*t+3][3*n+1]=a(e[3*t+3][3*n],e[3*t+3][3*n+3]),e[3*t+3][3*n+2]=a(e[3*t+3][3*n+3],e[3*t+3][3*n])):(e[3*t+1][3*n]=a(e[3*t][3*n],e[3*t+3][3*n]),e[3*t+2][3*n]=a(e[3*t+3][3*n],e[3*t][3*n]));break;case&quot;c&quot;:0===i?(e[3*t][3*n+1]=u[0].add(e[3*t][3*n]),e[3*t][3*n+2]=u[1].add(e[3*t][3*n]),e[3*t][3*n+3]=u[2].add(e[3*t][3*n])):1===i?(e[3*t+1][3*n+3]=u[0].add(e[3*t][3*n+3]),e[3*t+2][3*n+3]=u[1].add(e[3*t][3*n+3]),e[3*t+3][3*n+3]=u[2].add(e[3*t][3*n+3])):2===i?(e[3*t+3][3*n+2]=u[0].add(e[3*t+3][3*n+3]),e[3*t+3][3*n+1]=u[1].add(e[3*t+3][3*n+3]),0===n&amp;&amp;(e[3*t+3][3*n+0]=u[2].add(e[3*t+3][3*n+3]))):(e[3*t+2][3*n]=u[0].add(e[3*t+3][3*n]),e[3*t+1][3*n]=u[1].add(e[3*t+3][3*n]));break;case&quot;C&quot;:0===i?(e[3*t][3*n+1]=u[0],e[3*t][3*n+2]=u[1],e[3*t][3*n+3]=u[2]):1===i?(e[3*t+1][3*n+3]=u[0],e[3*t+2][3*n+3]=u[1],e[3*t+3][3*n+3]=u[2]):2===i?(e[3*t+3][3*n+2]=u[0],e[3*t+3][3*n+1]=u[1],0===n&amp;&amp;(e[3*t+3][3*n+0]=u[2])):(e[3*t+2][3*n]=u[0],e[3*t+1][3*n]=u[1]);break;default:console.error(&quot;mesh.js: &quot;+c+&quot; invalid path type.&quot;)}if(0===t&amp;&amp;0===n||r&gt;0){let e=window.getComputedStyle(o[r]).stopColor.match(/^rgb\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)$/i),a=window.getComputedStyle(o[r]).stopOpacity,h=255;a&amp;&amp;(h=Math.floor(255*a)),e&amp;&amp;(0===i?(s[t][n]=[],s[t][n][0]=Math.floor(e[1]),s[t][n][1]=Math.floor(e[2]),s[t][n][2]=Math.floor(e[3]),s[t][n][3]=h):1===i?(s[t][n+1]=[],s[t][n+1][0]=Math.floor(e[1]),s[t][n+1][1]=Math.floor(e[2]),s[t][n+1][2]=Math.floor(e[3]),s[t][n+1][3]=h):2===i?(s[t+1][n+1]=[],s[t+1][n+1][0]=Math.floor(e[1]),s[t+1][n+1][1]=Math.floor(e[2]),s[t+1][n+1][2]=Math.floor(e[3]),s[t+1][n+1][3]=h):3===i&amp;&amp;(s[t+1][n]=[],s[t+1][n][0]=Math.floor(e[1]),s[t+1][n][1]=Math.floor(e[2]),s[t+1][n][2]=Math.floor(e[3]),s[t+1][n][3]=h))}}e[3*t+1][3*n+1]=new x,e[3*t+1][3*n+2]=new x,e[3*t+2][3*n+1]=new x,e[3*t+2][3*n+2]=new x,e[3*t+1][3*n+1].x=(-4*e[3*t][3*n].x+6*(e[3*t][3*n+1].x+e[3*t+1][3*n].x)+-2*(e[3*t][3*n+3].x+e[3*t+3][3*n].x)+3*(e[3*t+3][3*n+1].x+e[3*t+1][3*n+3].x)+-1*e[3*t+3][3*n+3].x)/9,e[3*t+1][3*n+2].x=(-4*e[3*t][3*n+3].x+6*(e[3*t][3*n+2].x+e[3*t+1][3*n+3].x)+-2*(e[3*t][3*n].x+e[3*t+3][3*n+3].x)+3*(e[3*t+3][3*n+2].x+e[3*t+1][3*n].x)+-1*e[3*t+3][3*n].x)/9,e[3*t+2][3*n+1].x=(-4*e[3*t+3][3*n].x+6*(e[3*t+3][3*n+1].x+e[3*t+2][3*n].x)+-2*(e[3*t+3][3*n+3].x+e[3*t][3*n].x)+3*(e[3*t][3*n+1].x+e[3*t+2][3*n+3].x)+-1*e[3*t][3*n+3].x)/9,e[3*t+2][3*n+2].x=(-4*e[3*t+3][3*n+3].x+6*(e[3*t+3][3*n+2].x+e[3*t+2][3*n+3].x)+-2*(e[3*t+3][3*n].x+e[3*t][3*n+3].x)+3*(e[3*t][3*n+2].x+e[3*t+2][3*n].x)+-1*e[3*t][3*n].x)/9,e[3*t+1][3*n+1].y=(-4*e[3*t][3*n].y+6*(e[3*t][3*n+1].y+e[3*t+1][3*n].y)+-2*(e[3*t][3*n+3].y+e[3*t+3][3*n].y)+3*(e[3*t+3][3*n+1].y+e[3*t+1][3*n+3].y)+-1*e[3*t+3][3*n+3].y)/9,e[3*t+1][3*n+2].y=(-4*e[3*t][3*n+3].y+6*(e[3*t][3*n+2].y+e[3*t+1][3*n+3].y)+-2*(e[3*t][3*n].y+e[3*t+3][3*n+3].y)+3*(e[3*t+3][3*n+2].y+e[3*t+1][3*n].y)+-1*e[3*t+3][3*n].y)/9,e[3*t+2][3*n+1].y=(-4*e[3*t+3][3*n].y+6*(e[3*t+3][3*n+1].y+e[3*t+2][3*n].y)+-2*(e[3*t+3][3*n+3].y+e[3*t][3*n].y)+3*(e[3*t][3*n+1].y+e[3*t+2][3*n+3].y)+-1*e[3*t][3*n+3].y)/9,e[3*t+2][3*n+2].y=(-4*e[3*t+3][3*n+3].y+6*(e[3*t+3][3*n+2].y+e[3*t+2][3*n+3].y)+-2*(e[3*t+3][3*n].y+e[3*t][3*n+3].y)+3*(e[3*t][3*n+2].y+e[3*t+2][3*n].y)+-1*e[3*t][3*n].y)/9}}this.nodes=e,this.colors=s}paintMesh(t,e){let s=(this.nodes.length-1)/3,r=(this.nodes[0].length-1)/3;if(&quot;bilinear&quot;===this.type||s&lt;2||r&lt;2){let n;for(let o=0;o&lt;s;++o)for(let s=0;s&lt;r;++s){let r=[];for(let t=3*o,e=3*o+4;t&lt;e;++t)r.push(this.nodes[t].slice(3*s,3*s+4));let i=[];i.push(this.colors[o].slice(s,s+2)),i.push(this.colors[o+1].slice(s,s+2)),(n=new m(r,i)).paint(t,e)}}else{let n,o,a,h,l,d,u;const x=s,g=r;s++,r++;let w=new Array(s);for(let t=0;t&lt;s;++t){w[t]=new Array(r);for(let e=0;e&lt;r;++e)w[t][e]=[],w[t][e][0]=this.nodes[3*t][3*e],w[t][e][1]=this.colors[t][e]}for(let t=0;t&lt;s;++t)for(let e=0;e&lt;r;++e)0!==t&amp;&amp;t!==x&amp;&amp;(n=i(w[t-1][e][0],w[t][e][0]),o=i(w[t+1][e][0],w[t][e][0]),w[t][e][2]=c(w[t-1][e][1],w[t][e][1],w[t+1][e][1],n,o)),0!==e&amp;&amp;e!==g&amp;&amp;(n=i(w[t][e-1][0],w[t][e][0]),o=i(w[t][e+1][0],w[t][e][0]),w[t][e][3]=c(w[t][e-1][1],w[t][e][1],w[t][e+1][1],n,o));for(let t=0;t&lt;r;++t){w[0][t][2]=[],w[x][t][2]=[];for(let e=0;e&lt;4;++e)n=i(w[1][t][0],w[0][t][0]),o=i(w[x][t][0],w[x-1][t][0]),w[0][t][2][e]=n&gt;0?2*(w[1][t][1][e]-w[0][t][1][e])/n-w[1][t][2][e]:0,w[x][t][2][e]=o&gt;0?2*(w[x][t][1][e]-w[x-1][t][1][e])/o-w[x-1][t][2][e]:0}for(let t=0;t&lt;s;++t){w[t][0][3]=[],w[t][g][3]=[];for(let e=0;e&lt;4;++e)n=i(w[t][1][0],w[t][0][0]),o=i(w[t][g][0],w[t][g-1][0]),w[t][0][3][e]=n&gt;0?2*(w[t][1][1][e]-w[t][0][1][e])/n-w[t][1][3][e]:0,w[t][g][3][e]=o&gt;0?2*(w[t][g][1][e]-w[t][g-1][1][e])/o-w[t][g-1][3][e]:0}for(let s=0;s&lt;x;++s)for(let r=0;r&lt;g;++r){let n=i(w[s][r][0],w[s+1][r][0]),o=i(w[s][r+1][0],w[s+1][r+1][0]),c=i(w[s][r][0],w[s][r+1][0]),x=i(w[s+1][r][0],w[s+1][r+1][0]),g=[[],[],[],[]];for(let t=0;t&lt;4;++t){(d=[])[0]=w[s][r][1][t],d[1]=w[s+1][r][1][t],d[2]=w[s][r+1][1][t],d[3]=w[s+1][r+1][1][t],d[4]=w[s][r][2][t]*n,d[5]=w[s+1][r][2][t]*n,d[6]=w[s][r+1][2][t]*o,d[7]=w[s+1][r+1][2][t]*o,d[8]=w[s][r][3][t]*c,d[9]=w[s+1][r][3][t]*x,d[10]=w[s][r+1][3][t]*c,d[11]=w[s+1][r+1][3][t]*x,d[12]=0,d[13]=0,d[14]=0,d[15]=0,u=f(d);for(let e=0;e&lt;9;++e){g[t][e]=[];for(let s=0;s&lt;9;++s)g[t][e][s]=p(u,e/8,s/8),g[t][e][s]&gt;255?g[t][e][s]=255:g[t][e][s]&lt;0&amp;&amp;(g[t][e][s]=0)}}h=[];for(let t=3*s,e=3*s+4;t&lt;e;++t)h.push(this.nodes[t].slice(3*r,3*r+4));l=y(h);for(let s=0;s&lt;8;++s)for(let r=0;r&lt;8;++r)(a=new m(l[s][r],[[[g[0][s][r],g[1][s][r],g[2][s][r],g[3][s][r]],[g[0][s][r+1],g[1][s][r+1],g[2][s][r+1],g[3][s][r+1]]],[[g[0][s+1][r],g[1][s+1][r],g[2][s+1][r],g[3][s+1][r]],[g[0][s+1][r+1],g[1][s+1][r+1],g[2][s+1][r+1],g[3][s+1][r+1]]]])).paint(t,e)}}}transform(t){if(t instanceof x)for(let e=0,s=this.nodes.length;e&lt;s;++e)for(let s=0,r=this.nodes[0].length;s&lt;r;++s)this.nodes[e][s]=this.nodes[e][s].add(t);else if(t instanceof g)for(let e=0,s=this.nodes.length;e&lt;s;++e)for(let s=0,r=this.nodes[0].length;s&lt;r;++s)this.nodes[e][s]=this.nodes[e][s].transform(t)}scale(t){for(let e=0,s=this.nodes.length;e&lt;s;++e)for(let s=0,r=this.nodes[0].length;s&lt;r;++s)this.nodes[e][s]=this.nodes[e][s].scale(t)}}document.querySelectorAll(&quot;rect,circle,ellipse,path,text&quot;).forEach((r,n)=&gt;{let o=r.getAttribute(&quot;id&quot;);o||(o=&quot;patchjs_shape&quot;+n,r.setAttribute(&quot;id&quot;,o));const i=r.style.fill.match(/^url\(\s*&quot;?\s*#([^\s&quot;]+)&quot;?\s*\)/),a=r.style.stroke.match(/^url\(\s*&quot;?\s*#([^\s&quot;]+)&quot;?\s*\)/);if(i&amp;&amp;i[1]){const a=document.getElementById(i[1]);if(a&amp;&amp;&quot;meshgradient&quot;===a.nodeName){const i=r.getBBox();let l=document.createElementNS(s,&quot;canvas&quot;);d(l,{width:i.width,height:i.height});const c=l.getContext(&quot;2d&quot;);let u=c.createImageData(i.width,i.height);const f=new b(a);&quot;objectBoundingBox&quot;===a.getAttribute(&quot;gradientUnits&quot;)&amp;&amp;f.scale(new x(i.width,i.height));const p=a.getAttribute(&quot;gradientTransform&quot;);null!=p&amp;&amp;f.transform(h(p)),&quot;userSpaceOnUse&quot;===a.getAttribute(&quot;gradientUnits&quot;)&amp;&amp;f.transform(new x(-i.x,-i.y)),f.paintMesh(u.data,l.width),c.putImageData(u,0,0);const y=document.createElementNS(t,&quot;image&quot;);d(y,{width:i.width,height:i.height,x:i.x,y:i.y});let g=l.toDataURL();y.setAttributeNS(e,&quot;xlink:href&quot;,g),r.parentNode.insertBefore(y,r),r.style.fill=&quot;none&quot;;const w=document.createElementNS(t,&quot;use&quot;);w.setAttributeNS(e,&quot;xlink:href&quot;,&quot;#&quot;+o);const m=&quot;patchjs_clip&quot;+n,M=document.createElementNS(t,&quot;clipPath&quot;);M.setAttribute(&quot;id&quot;,m),M.appendChild(w),r.parentElement.insertBefore(M,r),y.setAttribute(&quot;clip-path&quot;,&quot;url(#&quot;+m+&quot;)&quot;),u=null,l=null,g=null}}if(a&amp;&amp;a[1]){const o=document.getElementById(a[1]);if(o&amp;&amp;&quot;meshgradient&quot;===o.nodeName){const i=parseFloat(r.style.strokeWidth.slice(0,-2))*(parseFloat(r.style.strokeMiterlimit)||parseFloat(r.getAttribute(&quot;stroke-miterlimit&quot;))||1),a=r.getBBox(),l=Math.trunc(a.width+i),c=Math.trunc(a.height+i),u=Math.trunc(a.x-i/2),f=Math.trunc(a.y-i/2);let p=document.createElementNS(s,&quot;canvas&quot;);d(p,{width:l,height:c});const y=p.getContext(&quot;2d&quot;);let g=y.createImageData(l,c);const w=new b(o);&quot;objectBoundingBox&quot;===o.getAttribute(&quot;gradientUnits&quot;)&amp;&amp;w.scale(new x(l,c));const m=o.getAttribute(&quot;gradientTransform&quot;);null!=m&amp;&amp;w.transform(h(m)),&quot;userSpaceOnUse&quot;===o.getAttribute(&quot;gradientUnits&quot;)&amp;&amp;w.transform(new x(-u,-f)),w.paintMesh(g.data,p.width),y.putImageData(g,0,0);const M=document.createElementNS(t,&quot;image&quot;);d(M,{width:l,height:c,x:0,y:0});let S=p.toDataURL();M.setAttributeNS(e,&quot;xlink:href&quot;,S);const k=&quot;pattern_clip&quot;+n,A=document.createElementNS(t,&quot;pattern&quot;);d(A,{id:k,patternUnits:&quot;userSpaceOnUse&quot;,width:l,height:c,x:u,y:f}),A.appendChild(M),o.parentNode.appendChild(A),r.style.stroke=&quot;url(#&quot;+k+&quot;)&quot;,g=null,p=null,S=null}}})}();
+</script></defs><g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"><rect
@@ -115,23 +119,23 @@
        xml:space="preserve"><tspan
          x="82.403122"
          y="191.96097"
-         id="tspan29720"><tspan
+         id="tspan24980"><tspan
            style="font-style:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff"
-           id="tspan29712">Un </tspan><tspan
+           id="tspan24972">Un </tspan><tspan
            style="fill:#ffffff"
-           id="tspan29714">notre monde</tspan><tspan
+           id="tspan24974">notre monde</tspan><tspan
            style="font-style:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';fill:#ffffff"
-           id="tspan29716"> </tspan><tspan
+           id="tspan24976"> </tspan><tspan
            dx="0.33939147"
            style="letter-spacing:-0.791909px;fill:#ffffff"
-           id="tspan29718"> </tspan></tspan><tspan
+           id="tspan24978"> </tspan></tspan><tspan
          x="82.403122"
          y="207.64847"
-         id="tspan29726"><tspan
+         id="tspan24986"><tspan
            style="font-style:normal;-inkscape-font-specification:'TeX Gyre Adventor, Normal';fill:#ffffff"
-           id="tspan29722">    est </tspan><tspan
+           id="tspan24982">    est </tspan><tspan
            style="font-style:normal;font-weight:bold;-inkscape-font-specification:'TeX Gyre Adventor, Bold';fill:#ffffff"
-           id="tspan29724">possible</tspan></tspan></text><image
+           id="tspan24984">possible</tspan></tspan></text><image
        width="172.10503"
        height="129.07877"
        preserveAspectRatio="none"
@@ -149,7 +153,7 @@
        x="48.712601"
        y="27.98745" /><g
        id="g12055"
-       transform="matrix(0.18597665,0,0,0.18554184,83.010879,219.50666)"><g
+       transform="matrix(0.18597665,0,0,0.18554184,82.27399,221.73033)"><g
          id="g24292"
          transform="matrix(7.8792571,0,0,7.1171868,-630.37066,-513.04224)"><g
            id="g21229"><path
@@ -178,191 +182,200 @@
              rotate="0"><tspan
                id="tspan3796-5"
                style="letter-spacing:-1.19673px;fill:#ff8012;fill-opacity:1;stroke:#ff8012;stroke-width:0.136663;stroke-opacity:1">Ɉ</tspan></tspan></text></g></g><g
-       id="g7763"
-       transform="matrix(0.20971919,0,0,0.20971919,146.76027,227.73828)"><g
-         id="g7840"><g
-           id="g21229-2"
-           transform="matrix(1.1709799,0,0,1.1709799,-22.431171,-17.414589)"><path
-             style="color:#000000;fill:#000000;stroke-width:1.43191;-inkscape-stroke:none"
+       id="g6853"
+       transform="matrix(0.20971762,0,0,0.20971762,146.90544,229.45189)"><g
+         id="g16313"
+         style="stroke:#ff8012;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"><g
+           id="g21229-3"
+           transform="matrix(1.1709799,0,0,1.1709799,-22.431171,-17.414589)"
+           style="stroke:#ff8012;stroke-width:0.170797;stroke-dasharray:none;stroke-opacity:1"><path
+             style="color:#000000;fill:#000000;stroke:#ff8012;stroke-width:0.170797;stroke-dasharray:none;stroke-opacity:1"
              d="m 95.803968,105.29119 c -8.24287,-0.0763 -14.69381,-7.094482 -14.55045,-15.867225 0.14331,-8.696468 6.88099,-15.485813 14.9805,-15.25695 7.741142,0.228852 14.263762,6.865629 14.263762,15.638373 10e-6,8.925314 -6.80932,15.485802 -14.693812,15.485802 z"
-             id="path21199-9"
+             id="path21199-20"
              sodipodi:nodetypes="cccsc" /><path
-             style="color:#000000;fill:#ff8012;-inkscape-stroke:none"
+             style="color:#000000;fill:#ff8012;stroke:#ff8012;stroke-width:0.170797;stroke-dasharray:none;stroke-opacity:1"
              d="m 96.253906,73.451172 c -8.510324,-0.240471 -15.567497,6.900971 -15.716797,15.960937 -0.149195,9.129811 6.614026,16.515671 15.259766,16.595701 h 0.0039 0.0039 c 8.281635,0 15.408215,-6.913672 15.408205,-16.203123 0,-9.127614 -6.8191,-16.112933 -14.957033,-16.353515 z m -0.04102,1.43164 c 7.344334,0.217122 13.568364,6.50402 13.568364,14.921875 1e-5,8.558904 -6.48588,14.768213 -13.970708,14.771483 C 87.970563,104.5036 81.831225,97.851205 81.96875,89.435547 82.10607,81.102594 88.524211,74.665558 96.212891,74.882812 Z"
-             id="path21201-1"
+             id="path21201-6"
              sodipodi:nodetypes="ccccssccssccss" /></g><text
            class="st2"
-           id="text18-3-2"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.6057px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-0.738618px;word-spacing:0px;stroke-width:0.14761;enable-background:new"
+           id="text18-3-1"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.6057px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-0.738618px;word-spacing:0px;stroke:#ff8012;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
            x="89.57489"
            y="91.66748"
            transform="scale(0.97315513,1.0275854)"><tspan
              x="89.57489"
              y="91.66748"
              class="st3 st4 st5 st6"
-             id="tspan14-6"
-             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.6057px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.14761"
+             id="tspan14-6-5"
+             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.6057px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:#ff8012;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
              rotate="0"><tspan
-               id="tspan3796-5-70"
-               style="letter-spacing:-1.29259px;fill:#ff8012;fill-opacity:1;stroke-width:0.14761">Ɉ</tspan></tspan></text><ellipse
-           transform="matrix(0.97615143,-0.21709073,0.26410012,0.96449527,0,0)"
-           class="st0"
-           cx="101.03902"
-           cy="117.90171"
-           rx="9.0895042"
-           ry="7.547204"
-           id="ellipse4-3-9"
-           style="fill:#ffffff;stroke-width:0.869583" /><ellipse
-           class="st0"
-           cx="167.62872"
-           cy="59.733414"
-           rx="7.0503078"
-           ry="9.6474133"
-           id="ellipse8-7-3"
-           style="fill:#ffffff;stroke-width:0.865881" /><ellipse
-           transform="matrix(0.97615143,-0.21709073,0.26410012,0.96449527,0,0)"
-           class="st0"
-           cx="101.56802"
-           cy="149.41411"
-           rx="29.877533"
-           ry="11.949742"
-           id="ellipse10-5-6"
-           style="fill:#ffffff;stroke-width:0.869583" /><path
-           d="m 94.601432,34.617781 c -1.12071,1.544537 -2.17674,2.826571 -3.156615,4.200173 -6.512979,9.01077 -12.121082,18.854668 -16.300087,29.907072 -2.358201,6.266374 -4.195035,12.819597 -5.141281,19.763388 -0.825494,6.153267 -0.988752,12.422426 -0.126372,18.734206 0.378824,2.66754 0.61398,5.41752 0.479973,8.06377 -0.0274,1.41315 -0.204383,2.73171 -0.601052,4.04113 -0.866596,2.61581 -2.44688,3.5225 -4.811229,2.80552 -1.330127,-0.40883 -2.451891,-1.16259 -3.649827,-2.00788 -2.401504,-1.86764 -4.524268,-4.16567 -6.509137,-6.72315 C 48.679098,105.54647 43.786299,96.76904 40.465236,86.819385 39.167228,82.876144 38.235538,78.948123 38.174413,74.79108 c -0.103046,-3.18645 0.459165,-6.168482 1.985104,-8.756908 0.278763,-0.43038 0.408133,-0.955381 0.613593,-1.388815 1.365128,-3.037056 3.336356,-5.430187 5.459822,-7.64022 3.540072,-3.653866 7.618677,-6.489817 11.85527,-8.965634 7.036524,-4.127381 14.473698,-7.177383 22.153499,-9.510152 4.563929,-1.401581 9.136465,-2.537438 13.703221,-3.850505 0.21684,-0.07978 0.29026,-0.07607 0.65648,-0.06123 z"
-           id="path20-3-0"
-           style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:1.67673;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
-           d="m 135.20975,23.399254 c 0.724,-0.235133 1.44517,-0.558752 2.16918,-0.793884 7.167,-2.35408 14.49194,-4.348077 21.91303,-5.630804 6.83786,-1.218642 13.76901,-1.814649 20.81345,-1.168449 4.03503,0.344411 8.01111,1.128337 11.94538,2.882874 1.48523,0.680436 2.97618,1.53792 4.32632,2.566341 0.15217,0.183097 0.37488,0.28075 0.59753,0.37839 2.23211,1.153458 3.98002,3.170735 5.29978,5.523775 1.78221,3.079416 2.84041,6.393951 3.61411,9.961838 1.18861,5.087825 1.64469,10.145196 1.81055,15.278916 0.2402,7.435044 -0.25508,14.751142 -1.85782,21.756053 -0.44707,2.014485 -1.11675,3.931326 -1.86256,5.756608 -0.47281,1.217876 -1.16823,2.338102 -1.86936,3.281307 -1.68677,2.139769 -3.80845,2.140025 -5.77616,0.113621 -0.83445,-0.9186 -1.5985,-1.922671 -2.29215,-3.01221 -1.23509,-1.995968 -2.18283,-4.156788 -3.06019,-6.403076 -3.20778,-8.707443 -7.98157,-16.065634 -13.82277,-22.495846 -5.68898,-6.247097 -11.92686,-11.36787 -18.6547,-15.801865 -7.32535,-4.812368 -14.84189,-8.748773 -22.69613,-11.815237 -0.22266,-0.09772 -0.37201,-0.192251 -0.59466,-0.289902 0,0 -0.002,-0.08843 -0.002,-0.08843 z"
-           id="path22-5-6"
-           style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:1.67673;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
-           d="m 146.64566,66.611657 c 0,-9.111445 6.71458,-17.776254 16.36679,-18.133567 9.23255,-0.267983 17.20612,7.146231 17.70971,17.150958 0.50358,10.540693 -7.05032,18.669533 -16.115,19.205501 -4.86807,0.267981 -9.14862,-1.518575 -12.58983,-5.091693 -3.60908,-3.483786 -5.62347,-7.860856 -5.37167,-13.131199 z m 20.98306,-2.947822 c 2.51798,0 4.53234,-2.14387 4.53234,-4.734376 0,-2.679839 -2.01436,-4.823712 -4.53234,-4.913038 -2.51796,-3e-6 -4.61627,2.143872 -4.53235,4.82371 0,2.67983 2.01439,4.823704 4.53235,4.823704 z"
-           id="path26-2-2"
-           style="stroke:#ff8012;stroke-width:1.67673;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
-           d="m 184.37486,113.88932 c -0.70821,-2.94223 -1.58399,-5.80201 -2.46311,-8.75031 -0.5894,-2.05406 -1.51729,-4.03175 -2.77362,-5.667583 -1.70694,-2.27064 -3.73565,-4.022368 -5.84315,-5.600116 -0.96664,-0.741589 -1.92993,-1.394652 -2.8932,-2.047716 -0.87453,-0.561496 -1.74904,-1.123007 -2.62355,-1.684516 -0.26302,-0.186151 -0.51937,-0.195292 -0.78239,-0.381444 -1.83448,-1.126062 -3.74439,-1.989623 -5.65097,-2.76468 -3.38256,-1.446374 -6.91603,-2.367764 -10.44282,-3.112127 -1.03207,-0.213542 -1.97869,-0.424047 -3.00409,-0.460567 -1.79779,-0.152416 -3.59223,-0.216334 -5.38669,-0.280245 -0.42723,-0.01514 -0.68693,-0.112871 -1.04206,-0.47908 -1.59481,-1.559493 -3.34714,-2.771024 -5.39463,-2.755549 -0.25635,-0.009 -0.51604,-0.10677 -0.77236,-0.115892 -2.57351,-0.356837 -5.04821,-0.35658 -7.49625,0.351774 -2.5335,0.705252 -4.87272,2.036297 -6.94227,3.730464 -0.49601,0.424301 -1.0775,0.845562 -1.57348,1.26986 -1.41264,1.010414 -2.21379,2.396182 -2.48219,4.331279 -0.0587,0.70505 -0.30511,0.961456 -0.80449,1.297246 -2.67102,1.584354 -5.1578,3.528838 -7.55248,5.653402 -3.62968,3.318076 -6.7267,7.18548 -9.465238,11.50764 -0.56146,0.95232 -1.12626,1.81614 -1.68771,2.76848 -0.39721,0.78138 -0.79445,1.56279 -1.19169,2.34419 -0.15766,0.34796 -0.31178,0.78443 -0.46601,1.2209 -0.70233,1.74286 -1.49013,3.48268 -2.10369,5.31709 -1.391331,3.83978 -1.408814,7.90525 -0.31211,12.09882 0.90581,3.65639 1.81164,7.31277 2.96707,10.80131 0.96456,2.95134 2.01124,5.81721 3.39305,8.51824 0.921218,1.80067 2.009948,3.51894 3.427168,4.89531 2.66024,2.65817 5.67434,3.38427 8.8981,2.88033 1.78108,-0.29014 3.47339,-0.67184 5.25452,-0.96198 1.10417,-0.13745 2.21169,-0.18641 3.32586,-0.0583 1.45597,0.14024 2.82986,0.36597 4.20371,0.59169 1.61689,-0.11924 3.15167,-0.15293 4.76853,-0.27214 3.23042,-0.32691 6.3587,-1.09943 9.39489,-2.05202 4.72181,-1.51132 9.44698,-2.9341 14.18214,-4.09137 3.63765,-0.84278 7.18319,-1.86563 10.54115,-3.33711 2.77313,-1.13874 5.35873,-2.72613 7.67127,-4.76522 0.8278,-0.67767 1.65564,-1.35534 2.57891,-1.76442 1.84988,-0.72966 3.69641,-1.54784 5.54629,-2.27748 1.84988,-0.72965 3.51553,-1.81946 4.81935,-3.4525 1.78985,-2.32288 2.36337,-5.21945 2.41754,-8.3113 -0.1802,-4.77967 -1.12593,-9.49821 -2.2393,-14.13433 z m -49.38522,-28.80735 -4.16325,7.276789 -7.50878,-4.510322 z m 19.48696,32.51576 c -0.16416,0.17095 -0.4139,0.33884 -0.57812,0.50976 -0.83783,0.41215 -1.67231,0.91278 -2.51014,1.3249 -5.03694,2.20724 -10.17934,3.88035 -15.50598,5.19334 -2.70437,0.69923 -5.32666,1.31297 -8.04104,1.74666 -1.69566,0.29319 -3.23374,0.2384 -4.93273,0.44307 -0.34181,-0.0124 -0.86452,-0.29596 -0.97664,-1.0071 -0.0142,-0.35403 0.0453,-1.05911 0.81115,-1.12023 0.76569,-0.0611 1.1075,-0.0489 1.95867,-0.10703 0.0675,-2.7378 -0.11805,-5.39622 0.0382,-8.04245 1.2009,2.42939 2.48725,4.86183 3.69149,7.37976 6.69384,-1.2643 13.19676,-3.06576 19.50544,-5.49287 -0.10668,-2.8324 -0.21011,-5.57629 -0.3135,-8.32018 0,0 0.0821,-0.0855 0.0821,-0.0855 1.27968,2.25542 2.47725,4.5963 3.76026,6.94024 0.75238,-0.41519 1.08416,-0.66855 1.75442,-0.99825 0.1676,-0.0824 0.67361,-0.24118 0.94661,0.21049 0.0888,0.0916 0.26637,0.27468 0.36515,0.63177 0.17431,0.0946 0.11218,0.71115 -0.0555,0.79357 z"
-           id="path36-9-6"
-           style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:1.67673;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><text
-           class="st2"
-           id="text18-8"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.8512px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-2.21684px;word-spacing:0px;stroke-width:0.443027;enable-background:new"
+               id="tspan3796-5-5"
+               style="letter-spacing:-1.29259px;fill:#ff8012;fill-opacity:1;stroke:#ff8012;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1">Ɉ</tspan></tspan></text></g><ellipse
+         transform="matrix(0.97615143,-0.21709073,0.26410012,0.96449527,0,0)"
+         class="st0"
+         cx="101.03902"
+         cy="117.90171"
+         rx="9.0895042"
+         ry="7.547204"
+         id="ellipse4-3"
+         style="fill:#ffffff;stroke-width:0.869583" /><ellipse
+         transform="matrix(0.97615143,-0.21709073,0.26410012,0.96449527,0,0)"
+         class="st0"
+         cx="101.56802"
+         cy="149.41411"
+         rx="29.877533"
+         ry="11.949742"
+         id="ellipse10-5"
+         style="fill:#ffffff;stroke-width:0.869583" /><path
+         d="m 94.601432,34.617781 c -1.12071,1.544537 -2.17674,2.826571 -3.156615,4.200173 -6.512979,9.01077 -12.121082,18.854668 -16.300087,29.907072 -2.358201,6.266374 -4.195035,12.819597 -5.141281,19.763388 -0.825494,6.153267 -0.988752,12.422426 -0.126372,18.734206 0.378824,2.66754 0.61398,5.41752 0.479973,8.06377 -0.0274,1.41315 -0.204383,2.73171 -0.601052,4.04113 -0.866596,2.61581 -2.44688,3.5225 -4.811229,2.80552 -1.330127,-0.40883 -2.451891,-1.16259 -3.649827,-2.00788 -2.401504,-1.86764 -4.524268,-4.16567 -6.509137,-6.72315 C 48.679098,105.54647 43.786299,96.76904 40.465236,86.819385 39.167228,82.876144 38.235538,78.948123 38.174413,74.79108 c -0.103046,-3.18645 0.459165,-6.168482 1.985104,-8.756908 0.278763,-0.43038 0.408133,-0.955381 0.613593,-1.388815 1.365128,-3.037056 3.336356,-5.430187 5.459822,-7.64022 3.540072,-3.653866 7.618677,-6.489817 11.85527,-8.965634 7.036524,-4.127381 14.473698,-7.177383 22.153499,-9.510152 4.563929,-1.401581 9.136465,-2.537438 13.703221,-3.850505 0.21684,-0.07978 0.29026,-0.07607 0.65648,-0.06123 z"
+         id="path20-3"
+         style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" /><path
+         d="m 135.20975,23.399254 c 0.724,-0.235133 1.44517,-0.558752 2.16918,-0.793884 7.167,-2.35408 14.49194,-4.348077 21.91303,-5.630804 6.83786,-1.218642 13.76901,-1.814649 20.81345,-1.168449 4.03503,0.344411 8.01111,1.128337 11.94538,2.882874 1.48523,0.680436 2.97618,1.53792 4.32632,2.566341 0.15217,0.183097 0.37488,0.28075 0.59753,0.37839 2.23211,1.153458 3.98002,3.170735 5.29978,5.523775 1.78221,3.079416 2.84041,6.393951 3.61411,9.961838 1.18861,5.087825 1.64469,10.145196 1.81055,15.278916 0.2402,7.435044 -0.25508,14.751142 -1.85782,21.756053 -0.44707,2.014485 -1.11675,3.931326 -1.86256,5.756608 -0.47281,1.217876 -1.16823,2.338102 -1.86936,3.281307 -1.68677,2.139769 -3.80845,2.140025 -5.77616,0.113621 -0.83445,-0.9186 -1.5985,-1.922671 -2.29215,-3.01221 -1.23509,-1.995968 -2.18283,-4.156788 -3.06019,-6.403076 -3.20778,-8.707443 -7.98157,-16.065634 -13.82277,-22.495846 -5.68898,-6.247097 -11.92686,-11.36787 -18.6547,-15.801865 -7.32535,-4.812368 -14.84189,-8.748773 -22.69613,-11.815237 -0.22266,-0.09772 -0.37201,-0.192251 -0.59466,-0.289902 0,0 -0.002,-0.08843 -0.002,-0.08843 z"
+         id="path22-5"
+         style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" /><path
+         d="m 184.37486,113.88932 c -0.70821,-2.94223 -1.58399,-5.80201 -2.46311,-8.75031 -0.5894,-2.05406 -1.51729,-4.03175 -2.77362,-5.667583 -1.70694,-2.27064 -3.73565,-4.022368 -5.84315,-5.600116 -0.96664,-0.741589 -1.92993,-1.394652 -2.8932,-2.047716 -0.87453,-0.561496 -1.74904,-1.123007 -2.62355,-1.684516 -0.26302,-0.186151 -0.51937,-0.195292 -0.78239,-0.381444 -1.83448,-1.126062 -3.74439,-1.989623 -5.65097,-2.76468 -3.38256,-1.446374 -6.91603,-2.367764 -10.44282,-3.112127 -1.03207,-0.213542 -1.97869,-0.424047 -3.00409,-0.460567 -1.79779,-0.152416 -3.59223,-0.216334 -5.38669,-0.280245 -0.42723,-0.01514 -0.68693,-0.112871 -1.04206,-0.47908 -1.59481,-1.559493 -3.34714,-2.771024 -5.39463,-2.755549 -0.25635,-0.009 -0.51604,-0.10677 -0.77236,-0.115892 -2.57351,-0.356837 -5.04821,-0.35658 -7.49625,0.351774 -2.5335,0.705252 -4.87272,2.036297 -6.94227,3.730464 -0.49601,0.424301 -1.0775,0.845562 -1.57348,1.26986 -1.41264,1.010414 -2.21379,2.396182 -2.48219,4.331279 -0.0587,0.70505 -0.30511,0.961456 -0.80449,1.297246 -2.67102,1.584354 -5.1578,3.528838 -7.55248,5.653402 -3.62968,3.318076 -6.7267,7.18548 -9.465238,11.50764 -0.56146,0.95232 -1.12626,1.81614 -1.68771,2.76848 -0.39721,0.78138 -0.79445,1.56279 -1.19169,2.34419 -0.15766,0.34796 -0.31178,0.78443 -0.46601,1.2209 -0.70233,1.74286 -1.49013,3.48268 -2.10369,5.31709 -1.391331,3.83978 -1.408814,7.90525 -0.31211,12.09882 0.90581,3.65639 1.81164,7.31277 2.96707,10.80131 0.96456,2.95134 2.01124,5.81721 3.39305,8.51824 0.921218,1.80067 2.009948,3.51894 3.427168,4.89531 2.66024,2.65817 5.67434,3.38427 8.8981,2.88033 1.78108,-0.29014 3.47339,-0.67184 5.25452,-0.96198 1.10417,-0.13745 2.21169,-0.18641 3.32586,-0.0583 1.45597,0.14024 2.82986,0.36597 4.20371,0.59169 1.61689,-0.11924 3.15167,-0.15293 4.76853,-0.27214 3.23042,-0.32691 6.3587,-1.09943 9.39489,-2.05202 4.72181,-1.51132 9.44698,-2.9341 14.18214,-4.09137 3.63765,-0.84278 7.18319,-1.86563 10.54115,-3.33711 2.77313,-1.13874 5.35873,-2.72613 7.67127,-4.76522 0.8278,-0.67767 1.65564,-1.35534 2.57891,-1.76442 1.84988,-0.72966 3.69641,-1.54784 5.54629,-2.27748 1.84988,-0.72965 3.51553,-1.81946 4.81935,-3.4525 1.78985,-2.32288 2.36337,-5.21945 2.41754,-8.3113 -0.1802,-4.77967 -1.12593,-9.49821 -2.2393,-14.13433 z m -49.38522,-28.80735 -4.16325,7.276789 -7.50878,-4.510322 z m 19.48696,32.51576 c -0.16416,0.17095 -0.4139,0.33884 -0.57812,0.50976 -0.83783,0.41215 -1.67231,0.91278 -2.51014,1.3249 -5.03694,2.20724 -10.17934,3.88035 -15.50598,5.19334 -2.70437,0.69923 -5.32666,1.31297 -8.04104,1.74666 -1.69566,0.29319 -3.23374,0.2384 -4.93273,0.44307 -0.34181,-0.0124 -0.86452,-0.29596 -0.97664,-1.0071 -0.0142,-0.35403 0.0453,-1.05911 0.81115,-1.12023 0.76569,-0.0611 1.1075,-0.0489 1.95867,-0.10703 0.0675,-2.7378 -0.11805,-5.39622 0.0382,-8.04245 1.2009,2.42939 2.48725,4.86183 3.69149,7.37976 6.69384,-1.2643 13.19676,-3.06576 19.50544,-5.49287 -0.10668,-2.8324 -0.21011,-5.57629 -0.3135,-8.32018 0,0 0.0821,-0.0855 0.0821,-0.0855 1.27968,2.25542 2.47725,4.5963 3.76026,6.94024 0.75238,-0.41519 1.08416,-0.66855 1.75442,-0.99825 0.1676,-0.0824 0.67361,-0.24118 0.94661,0.21049 0.0888,0.0916 0.26637,0.27468 0.36515,0.63177 0.17431,0.0946 0.11218,0.71115 -0.0555,0.79357 z"
+         id="path36-9"
+         style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" /><text
+         class="st2"
+         id="text18"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.8512px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-2.21684px;word-spacing:0px;stroke-width:0.443027;enable-background:new"
+         x="13.417406"
+         y="222.04091"
+         transform="scale(0.96748533,1.0336074)"><tspan
            x="13.417406"
            y="222.04091"
-           transform="scale(0.96748533,1.0336074)"><tspan
-             x="13.417406"
-             y="222.04091"
-             class="st3 st4 st5 st6"
-             id="tspan14-79"
-             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.8512px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.443027"
-             rotate="0 0 0"><tspan
-               style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.8512px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fafafa;fill-opacity:1;stroke-width:0.443027"
-               id="tspan2823-2"
-               rotate="0 0">d</tspan><tspan
-               id="tspan3796-0"
-               style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.8512px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-3.87949px;fill:#ff8012;fill-opacity:1;stroke-width:0.443027">ji</tspan><tspan
-               style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.8512px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-3.87949px;fill:#fafafa;fill-opacity:1;stroke-width:0.443027"
-               id="tspan1946-2"
-               rotate="0 0 0 0 0">bian</tspan></tspan></text><g
-           id="g21229-6-3"
-           transform="matrix(1.1709799,0,0,1.1709799,51.086696,-38.539388)"><path
-             style="color:#000000;fill:#000000;stroke-width:1.43191;-inkscape-stroke:none"
-             d="m 95.803968,105.29119 c -8.24287,-0.0763 -14.69381,-7.094482 -14.55045,-15.867225 0.14331,-8.696468 6.88099,-15.485813 14.9805,-15.25695 7.741142,0.228852 14.263762,6.865629 14.263762,15.638373 10e-6,8.925314 -6.80932,15.485802 -14.693812,15.485802 z"
-             id="path21199-2-7"
-             sodipodi:nodetypes="cccsc" /><path
-             style="color:#000000;fill:#ff8012;-inkscape-stroke:none"
-             d="m 96.253906,73.451172 c -8.510324,-0.240471 -15.567497,6.900971 -15.716797,15.960937 -0.149195,9.129811 6.614026,16.515671 15.259766,16.595701 h 0.0039 0.0039 c 8.281635,0 15.408215,-6.913672 15.408205,-16.203123 0,-9.127614 -6.8191,-16.112933 -14.957033,-16.353515 z m -0.04102,1.43164 c 7.344334,0.217122 13.568364,6.50402 13.568364,14.921875 1e-5,8.558904 -6.48588,14.768213 -13.970708,14.771483 C 87.970563,104.5036 81.831225,97.851205 81.96875,89.435547 82.10607,81.102594 88.524211,74.665558 96.212891,74.882812 Z"
-             id="path21201-9-5"
-             sodipodi:nodetypes="ccccssccssccss" /></g><text
-           class="st2"
-           id="text18-3-3"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.6057px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-0.738618px;word-spacing:0px;stroke-width:0.14761;enable-background:new"
-           x="-93.30777"
-           y="154.81639"
-           transform="matrix(-0.77190185,0.59261999,0.62576625,0.81507567,0,0)"><tspan
-             x="-93.30777"
-             y="154.81639"
-             class="st3 st4 st5 st6"
-             id="tspan14-6-6"
-             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.6057px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.14761"
-             rotate="0"><tspan
-               id="tspan3796-5-7"
-               style="letter-spacing:-1.29259px;fill:#ff8012;fill-opacity:1;stroke-width:0.14761">Ɉ</tspan></tspan></text></g></g><g
-       id="g27821"
-       transform="matrix(0.22788214,0,0,0.22788214,68.187675,334.22781)"><g
-         id="g28204"
-         transform="translate(-253.76975,-473.59133)"><ellipse
-           transform="matrix(0.97615143,-0.21709073,0.26410012,0.96449527,0,0)"
-           class="st0"
-           cx="100.8511"
-           cy="119.384"
-           rx="7.7623062"
-           ry="6.4452038"
-           id="ellipse4-3-7"
-           style="fill:#ffffff;stroke-width:0.742611" /><ellipse
-           class="st0"
-           cx="91.204887"
-           cy="87.929565"
-           rx="6.0208616"
-           ry="8.2387524"
-           id="ellipse6-6-6"
-           style="fill:#ffffff;stroke-width:0.73945" /><ellipse
-           class="st0"
-           cx="162.30843"
-           cy="65.883286"
-           rx="6.0208616"
-           ry="8.2387524"
-           id="ellipse8-7-5"
-           style="fill:#ffffff;stroke-width:0.73945" /><ellipse
-           transform="matrix(0.97615143,-0.21709073,0.26410012,0.96449527,0,0)"
-           class="st0"
-           cx="101.30286"
-           cy="146.29515"
-           rx="25.514984"
-           ry="10.204908"
-           id="ellipse10-5-69"
-           style="fill:#ffffff;stroke-width:0.742611" /><path
-           d="m 95.803968,105.29119 c -8.24287,-0.0763 -14.69381,-7.094482 -14.55045,-15.867225 0.14331,-8.696468 6.88099,-15.485813 14.9805,-15.25695 7.741142,0.228852 14.263762,6.865629 14.263762,15.638373 10e-6,8.925314 -6.80932,15.485802 -14.693812,15.485802 z m -6.02088,-15.485804 c 2.07863,-2e-6 3.87056,-1.830831 3.87056,-4.119375 0,-2.288546 -1.72024,-4.195667 -3.87056,-4.195658 -2.07863,-8e-6 -3.87057,1.830828 -3.87057,4.119369 2e-5,2.364826 1.72027,4.195662 3.87057,4.195664 z"
-           id="path24-6-3"
-           style="stroke:#ff8012;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
-           d="m 144.38919,71.757208 c 0,-7.781043 5.73415,-15.180666 13.977,-15.485806 7.88447,-0.228854 14.69378,6.102779 15.12384,14.646672 0.43005,9.0016 -6.02087,15.943513 -13.76198,16.401222 -4.15726,0.228852 -7.81279,-1.296841 -10.75153,-4.348233 -3.08211,-2.975103 -4.80237,-6.713058 -4.58733,-11.213855 z m 17.91923,-2.517398 c 2.15032,0 3.87055,-1.830834 3.87055,-4.043089 0,-2.288544 -1.72023,-4.119381 -3.87055,-4.195664 -2.1503,-2e-6 -3.94223,1.830836 -3.87056,4.119379 0,2.288537 1.72026,4.119374 3.87056,4.119374 z"
-           id="path26-2-7"
-           style="stroke:#ff8012;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
-           d="m 99.405033,44.24844 c -0.978042,1.347919 -1.899642,2.466753 -2.754785,3.6655 -5.683892,7.863718 -10.578092,16.454508 -14.225115,26.099965 -2.058005,5.468678 -3.66102,11.187689 -4.486805,17.24755 -0.720416,5.369972 -0.862894,10.841085 -0.110293,16.349375 0.330606,2.32797 0.535822,4.72789 0.41888,7.03727 -0.02391,1.23327 -0.178371,2.38397 -0.524547,3.52671 -0.756275,2.28282 -2.135396,3.07408 -4.198761,2.44839 -1.160808,-0.3568 -2.139779,-1.0146 -3.185215,-1.75229 -2.095802,-1.62989 -3.94834,-3.63539 -5.680541,-5.86731 -5.329339,-6.85555 -9.599286,-14.515622 -12.497592,-23.198712 -1.132776,-3.441272 -1.945863,-6.869264 -1.999203,-10.497124 -0.08993,-2.780823 0.40071,-5.383247 1.7324,-7.642173 0.243285,-0.375594 0.356185,-0.833763 0.535491,-1.212022 1.191344,-2.650445 2.911639,-4.738935 4.764796,-6.667636 3.089427,-3.188737 6.648839,-5.663678 10.34612,-7.824328 6.140787,-3.601974 12.631229,-6.263718 19.333406,-8.299531 3.982952,-1.223162 7.97341,-2.214426 11.95883,-3.360344 0.189237,-0.06962 0.253311,-0.06639 0.572916,-0.05343 z"
-           id="path20-3-3"
-           style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:1.57086;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" /><path
-           d="m 134.84401,34.458007 c 0.63183,-0.205202 1.26121,-0.487625 1.89305,-0.692824 6.25466,-2.054411 12.64715,-3.794577 19.12354,-4.914015 5.96743,-1.063512 12.01625,-1.583648 18.16395,-1.019708 3.52138,0.300568 6.99132,0.984702 10.42476,2.51589 1.29615,0.593818 2.59731,1.342147 3.77559,2.239651 0.1328,0.159789 0.32715,0.245012 0.52146,0.330222 1.94797,1.006626 3.47338,2.767108 4.62514,4.820611 1.55533,2.687412 2.47882,5.580014 3.15403,8.693716 1.03731,4.440157 1.43532,8.853735 1.58007,13.333943 0.20963,6.488579 -0.2226,12.873354 -1.62132,18.986554 -0.39016,1.758046 -0.97459,3.430878 -1.62547,5.023804 -0.41261,1.062844 -1.0195,2.040467 -1.63138,2.863604 -1.47205,1.867385 -3.32365,1.867603 -5.04087,0.09916 -0.72823,-0.801663 -1.39502,-1.677918 -2.00036,-2.628762 -1.07787,-1.741885 -1.90497,-3.627638 -2.67064,-5.587978 -2.79944,-7.599006 -6.96553,-14.020515 -12.06316,-19.632174 -4.96479,-5.451856 -10.40859,-9.920765 -16.27999,-13.790322 -6.39286,-4.199764 -12.95256,-7.635073 -19.80697,-10.311183 -0.19431,-0.08528 -0.32465,-0.167777 -0.51895,-0.252997 0,0 -0.002,-0.07717 -0.002,-0.07717 z"
-           id="path22-5-2-4"
-           style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:1.57086;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" /><path
-           d="m 177.7505,113.42889 c -0.61805,-2.5677 -1.38234,-5.06344 -2.14956,-7.63642 -0.51437,-1.79259 -1.32413,-3.51852 -2.42054,-4.94611 -1.48965,-1.981594 -3.26011,-3.510331 -5.09933,-4.887238 -0.84359,-0.647187 -1.68425,-1.217114 -2.5249,-1.787048 -0.76321,-0.490014 -1.52638,-0.980046 -2.28958,-1.470077 -0.22954,-0.162453 -0.45325,-0.170429 -0.68279,-0.332892 -1.60096,-0.982715 -3.26774,-1.736345 -4.93161,-2.412742 -2.95197,-1.26225 -6.03563,-2.066348 -9.11348,-2.715957 -0.90069,-0.186359 -1.72679,-0.370067 -2.62167,-0.401938 -1.56893,-0.133014 -3.13495,-0.188795 -4.70098,-0.244569 -0.37284,-0.01321 -0.59948,-0.0985 -0.9094,-0.418095 -1.3918,-1.360973 -2.92106,-2.41828 -4.70791,-2.404774 -0.22372,-0.0078 -0.45036,-0.09318 -0.67404,-0.10114 -2.24591,-0.311411 -4.40558,-0.311187 -6.542,0.306995 -2.21099,0.615474 -4.25243,1.777081 -6.05853,3.255584 -0.43287,0.370289 -0.94034,0.737922 -1.37318,1.108208 -1.23281,0.881795 -1.93198,2.091151 -2.16622,3.779918 -0.0513,0.615298 -0.26627,0.839068 -0.70208,1.132112 -2.33099,1.382666 -4.50121,3.079618 -6.59106,4.933735 -3.16762,2.895678 -5.8704,6.270778 -8.26034,10.042738 -0.48999,0.83109 -0.98288,1.58495 -1.47286,2.41606 -0.34665,0.68191 -0.69332,1.36385 -1.03999,2.04578 -0.1376,0.30366 -0.27209,0.68457 -0.40669,1.06548 -0.612922,1.521 -1.300443,3.03935 -1.835898,4.64023 -1.214217,3.35099 -1.229471,6.89893 -0.272378,10.55867 0.790501,3.19094 1.581024,6.38187 2.589376,9.42633 0.84177,2.57564 1.75521,5.07669 2.96112,7.43389 0.80394,1.57144 1.75409,3.07098 2.9909,4.27215 2.3216,2.31979 4.952,2.95345 7.76539,2.51367 1.55434,-0.25322 3.03124,-0.58632 4.58563,-0.83952 0.96361,-0.11996 1.93014,-0.16269 2.90248,-0.0509 1.27063,0.12238 2.46963,0.31938 3.66858,0.51637 1.41107,-0.10406 2.75047,-0.13346 4.16151,-0.23749 2.8192,-0.2853 5.54926,-0.95948 8.19895,-1.79081 4.12074,-1.31894 8.2444,-2.5606 12.37678,-3.57055 3.17459,-0.73549 6.26878,-1.62813 9.19928,-2.9123 2.42013,-0.99378 4.67658,-2.3791 6.69473,-4.15862 0.72244,-0.5914 1.44489,-1.1828 2.25062,-1.53981 1.6144,-0.63678 3.22587,-1.3508 4.84026,-1.98756 1.61439,-0.63677 3.06802,-1.58784 4.20587,-3.01301 1.56201,-2.02718 2.06251,-4.55502 2.10979,-7.25329 -0.15725,-4.17122 -0.98261,-8.28911 -1.95425,-12.33505 z m -43.09858,-25.140243 -3.63328,6.35047 -6.55293,-3.936175 z m 17.00631,28.376563 c -0.14326,0.14919 -0.36121,0.29571 -0.50453,0.44487 -0.73117,0.35969 -1.45942,0.79659 -2.19061,1.15625 -4.39574,1.92626 -8.88351,3.38639 -13.5321,4.53223 -2.3601,0.61023 -4.64858,1.14584 -7.01742,1.52431 -1.47981,0.25587 -2.8221,0.20806 -4.30481,0.38668 -0.2983,-0.0108 -0.75447,-0.25829 -0.85232,-0.87891 -0.0124,-0.30896 0.0395,-0.92428 0.70789,-0.97762 0.66822,-0.0533 0.96653,-0.0426 1.70935,-0.0933 0.0589,-2.38928 -0.10303,-4.70929 0.0333,-7.01865 1.04803,2.12013 2.17064,4.24291 3.22157,6.44033 5.84174,-1.10336 11.51686,-2.6755 17.02245,-4.79365 -0.093,-2.47184 -0.18336,-4.86643 -0.2736,-7.26103 0,0 0.0716,-0.0746 0.0716,-0.0746 1.11679,1.96832 2.1619,4.01121 3.28158,6.05676 0.65661,-0.36233 0.94615,-0.58344 1.5311,-0.87117 0.14626,-0.0719 0.58785,-0.21048 0.8261,0.18369 0.0776,0.0799 0.23246,0.23971 0.31867,0.55135 0.15212,0.0825 0.0979,0.62063 -0.0485,0.69255 z"
-           id="path36-9-0"
-           style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:1.57086;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" /><text
-           class="st2"
-           id="text18-2"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:59.2912px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-1.71032px;word-spacing:0px;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;enable-background:new"
-           x="11.641666"
-           y="209.72826"
-           transform="scale(0.96866145,1.0323524)"><tspan
-             x="11.641666"
-             y="209.72826"
-             class="st3 st4 st5 st6"
-             id="tspan14-5"
-             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:59.2912px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-             rotate="0 0 3 0"><tspan
-               style="font-size:59.2912px;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-               id="tspan2823-47"
-               rotate="3 0"
-               dx="0">f</tspan><tspan
-               style="font-size:47.8891px;letter-spacing:-1.71032px;fill:#ff8012;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-               id="tspan3788-4"
-               rotate="3 0">o</tspan><tspan
-               id="tspan3796-4"
-               style="letter-spacing:-2.99304px;fill:#ff8012;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke">o</tspan><tspan
-               style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:59.2912px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-               id="tspan1946-3"
-               rotate="3 3 3 0 0 0 0 0"><tspan
-                 style="letter-spacing:-2.99304px;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-                 id="tspan4190-0">pg</tspan><tspan
-                 style="letter-spacing:0px;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-                 id="tspan426-7">p</tspan><tspan
-                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3181px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';letter-spacing:0px;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-                 id="tspan422-8">.org</tspan></tspan></tspan></text></g></g></g><style
+           class="st3 st4 st5 st6"
+           id="tspan14"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.8512px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.443027"
+           rotate="0 0 0"><tspan
+             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.8512px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fafafa;fill-opacity:1;stroke-width:0.443027"
+             id="tspan2823"
+             rotate="0 0">d</tspan><tspan
+             id="tspan3796"
+             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.8512px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-3.87949px;fill:#ff8012;fill-opacity:1;stroke-width:0.443027">ji</tspan><tspan
+             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.8512px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-3.87949px;fill:#fafafa;fill-opacity:1;stroke-width:0.443027"
+             id="tspan1946"
+             rotate="0 0 0 0 0">bian</tspan></tspan></text><g
+         id="g21229-6"
+         transform="matrix(1.1709799,0,0,1.1709799,51.758836,-38.795205)"
+         style="stroke:#ff8012;stroke-width:0.170797;stroke-dasharray:none;stroke-opacity:1"><path
+           style="color:#000000;fill:#000000;stroke:#ff8012;stroke-width:0.170797;stroke-dasharray:none;stroke-opacity:1"
+           d="m 95.803968,105.29119 c -8.24287,-0.0763 -14.69381,-7.094482 -14.55045,-15.867225 0.14331,-8.696468 6.88099,-15.485813 14.9805,-15.25695 7.741142,0.228852 14.263762,6.865629 14.263762,15.638373 10e-6,8.925314 -6.80932,15.485802 -14.693812,15.485802 z"
+           id="path21199-2"
+           sodipodi:nodetypes="cccsc" /><path
+           style="color:#000000;fill:#ff8012;stroke:#ff8012;stroke-width:0.170797;stroke-dasharray:none;stroke-opacity:1"
+           d="m 96.253906,73.451172 c -8.510324,-0.240471 -15.567497,6.900971 -15.716797,15.960937 -0.149195,9.129811 6.614026,16.515671 15.259766,16.595701 h 0.0039 0.0039 c 8.281635,0 15.408215,-6.913672 15.408205,-16.203123 0,-9.127614 -6.8191,-16.112933 -14.957033,-16.353515 z m -0.04102,1.43164 c 7.344334,0.217122 13.568364,6.50402 13.568364,14.921875 1e-5,8.558904 -6.48588,14.768213 -13.970708,14.771483 C 87.970563,104.5036 81.831225,97.851205 81.96875,89.435547 82.10607,81.102594 88.524211,74.665558 96.212891,74.882812 Z"
+           id="path21201-9"
+           sodipodi:nodetypes="ccccssccssccss" /></g><text
+         class="st2"
+         id="text18-3-3-7"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.6057px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-0.738618px;word-spacing:0px;stroke:#ff8012;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+         x="-170.41791"
+         y="-57.393467"
+         transform="matrix(-0.97315344,-0.00181301,0.00191441,-1.0275836,0,0)"><tspan
+           x="-170.41791"
+           y="-57.393467"
+           class="st3 st4 st5 st6"
+           id="tspan14-6-6-6"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.6057px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:#ff8012;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+           rotate="0"><tspan
+             id="tspan3796-5-7-5"
+             style="letter-spacing:-1.29259px;fill:#ff8012;fill-opacity:1;stroke:#ff8012;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1">Ɉ</tspan></tspan></text></g><g
+       id="g24740"
+       transform="matrix(1.0172253,0,0,1.0172253,-0.2105908,-4.0143722)"><ellipse
+         transform="matrix(0.97615143,-0.21709071,0.26410012,0.96449527,0,0)"
+         class="st0"
+         cx="-27.609211"
+         cy="251.65762"
+         rx="1.8302318"
+         ry="1.5196794"
+         id="ellipse4-3-4"
+         style="fill:#ffffff;stroke-width:0.175096" /><ellipse
+         class="st0"
+         cx="30.370581"
+         cy="247.46147"
+         rx="1.4196261"
+         ry="1.9425704"
+         id="ellipse6-6"
+         style="fill:#ffffff;stroke-width:0.174351" /><ellipse
+         class="st0"
+         cx="47.135696"
+         cy="242.26331"
+         rx="1.4196261"
+         ry="1.9425704"
+         id="ellipse8-7"
+         style="fill:#ffffff;stroke-width:0.174351" /><ellipse
+         transform="matrix(0.97615143,-0.21709071,0.26410012,0.96449527,0,0)"
+         class="st0"
+         cx="-27.502693"
+         cy="258.00287"
+         rx="6.0160389"
+         ry="2.4061596"
+         id="ellipse10-5-8"
+         style="fill:#ffffff;stroke-width:0.175096" /><path
+         d="m 31.454973,251.55507 c -1.943542,-0.018 -3.464573,-1.67277 -3.430771,-3.74124 0.03379,-2.0505 1.622431,-3.65131 3.532171,-3.59735 1.825241,0.054 3.363174,1.61881 3.363174,3.68728 3e-6,2.10446 -1.605533,3.65131 -3.464574,3.65131 z m -1.419631,-3.65131 c 0.49011,0 0.912619,-0.43168 0.912619,-0.97128 0,-0.5396 -0.405606,-0.98927 -0.912619,-0.98927 -0.490108,0 -0.91262,0.43168 -0.91262,0.97128 5e-6,0.55759 0.405613,0.98927 0.91262,0.98927 z"
+         id="path24-6"
+         style="stroke:#ff8012;stroke-width:0.471569;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
+         d="m 42.910617,243.64828 c 0,-1.83465 1.352025,-3.57937 3.295561,-3.65131 1.859037,-0.054 3.464567,1.43894 3.565968,3.45345 0.101402,2.12244 -1.419628,3.75924 -3.244862,3.86716 -0.980217,0.054 -1.842135,-0.30577 -2.535045,-1.02525 -0.726713,-0.70148 -1.132325,-1.58283 -1.081622,-2.64405 z m 4.225078,-0.59356 c 0.507013,0 0.912617,-0.43168 0.912617,-0.9533 0,-0.5396 -0.405604,-0.97128 -0.912617,-0.98927 -0.507007,0 -0.929517,0.43168 -0.912618,0.97128 0,0.53961 0.405611,0.97129 0.912618,0.97129 z"
+         id="path26-2"
+         style="stroke:#ff8012;stroke-width:0.471569;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
+         d="m 32.304049,237.16214 c -0.230607,0.31782 -0.447906,0.58162 -0.649536,0.86426 -1.340174,1.85415 -2.494151,3.87973 -3.354062,6.15397 -0.485246,1.28943 -0.863213,2.63789 -1.057919,4.06671 -0.169864,1.26615 -0.203458,2.55616 -0.02601,3.85493 0.07796,0.5489 0.126338,1.11476 0.09877,1.65928 -0.0056,0.29079 -0.04206,0.5621 -0.123679,0.83154 -0.178319,0.53825 -0.503494,0.72482 -0.990004,0.5773 -0.273701,-0.0841 -0.504527,-0.23923 -0.751024,-0.41317 -0.494158,-0.3843 -0.930957,-0.85716 -1.339384,-1.38341 -1.256576,-1.61644 -2.263364,-3.42257 -2.946739,-5.4699 -0.267091,-0.8114 -0.458805,-1.61967 -0.471382,-2.47506 -0.0212,-0.65568 0.09448,-1.26929 0.408474,-1.80191 0.05736,-0.0886 0.08398,-0.19659 0.126261,-0.28578 0.2809,-0.62493 0.686519,-1.11737 1.123464,-1.57212 0.72844,-0.75186 1.567694,-1.33541 2.439456,-1.84485 1.447903,-0.8493 2.978249,-1.47689 4.558518,-1.95691 0.939119,-0.2884 1.880007,-0.52213 2.819708,-0.79232 0.04462,-0.0164 0.05973,-0.0157 0.135085,-0.0126 z"
+         id="path20-3-3-7"
+         style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:0.370385;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" /><path
+         d="m 40.660012,234.85371 c 0.148975,-0.0483 0.297373,-0.11498 0.446352,-0.16336 1.474752,-0.4844 2.982003,-0.8947 4.509035,-1.15865 1.407028,-0.25076 2.833246,-0.3734 4.282778,-0.24043 0.830288,0.0709 1.648446,0.23218 2.457998,0.59321 0.305613,0.14001 0.612406,0.31645 0.890225,0.52807 0.03131,0.0377 0.07714,0.0578 0.122953,0.0778 0.459301,0.23735 0.818969,0.65244 1.090536,1.13663 0.366723,0.63365 0.584468,1.31567 0.743673,2.04984 0.244581,1.04692 0.338425,2.08758 0.372556,3.14394 0.04943,1.52991 -0.05248,3.03534 -0.382283,4.47673 -0.092,0.41453 -0.229794,0.80895 -0.38326,1.18454 -0.09728,0.2506 -0.240383,0.48111 -0.384655,0.67519 -0.347086,0.44031 -0.783666,0.44036 -1.188559,0.0233 -0.171706,-0.18901 -0.328924,-0.39563 -0.471654,-0.61982 -0.254145,-0.4107 -0.449163,-0.85534 -0.629696,-1.31755 -0.660064,-1.79173 -1.642364,-3.30582 -2.844306,-4.62897 -1.170622,-1.28546 -2.454185,-2.33917 -3.83857,-3.25155 -1.507338,-0.99023 -3.054014,-1.80023 -4.670178,-2.43121 -0.04582,-0.0201 -0.07654,-0.0395 -0.12236,-0.0596 0,0 -4.72e-4,-0.0182 -4.72e-4,-0.0182 z"
+         id="path22-5-2"
+         style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:0.370385;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" /><path
+         d="m 50.7767,253.47382 c -0.145727,-0.60543 -0.325935,-1.19388 -0.506834,-1.80055 -0.121281,-0.42267 -0.312209,-0.82962 -0.570726,-1.16622 -0.351236,-0.46722 -0.768683,-0.82768 -1.202343,-1.15233 -0.198906,-0.1526 -0.39712,-0.28698 -0.595332,-0.42136 -0.179954,-0.11554 -0.359897,-0.23108 -0.539848,-0.34662 -0.05412,-0.0383 -0.106869,-0.0401 -0.160991,-0.0785 -0.377482,-0.23171 -0.770483,-0.40941 -1.162797,-0.56888 -0.69603,-0.29762 -1.423109,-0.48722 -2.148819,-0.64039 -0.212368,-0.0439 -0.407149,-0.0873 -0.618149,-0.0948 -0.369929,-0.0313 -0.739173,-0.0446 -1.108418,-0.0577 -0.08791,-0.003 -0.141348,-0.0233 -0.214423,-0.0985 -0.328165,-0.32089 -0.68874,-0.57019 -1.110052,-0.56701 -0.05275,-0.002 -0.106188,-0.0219 -0.158928,-0.0239 -0.529551,-0.0734 -1.038768,-0.0733 -1.542503,0.0724 -0.521317,0.14512 -1.002658,0.41901 -1.428508,0.76763 -0.102067,0.0873 -0.221717,0.17399 -0.323775,0.26129 -0.290676,0.20791 -0.45553,0.49306 -0.51076,0.89124 -0.0121,0.14508 -0.06279,0.19785 -0.16554,0.26694 -0.549612,0.32601 -1.061316,0.72612 -1.55407,1.1633 -0.746876,0.68275 -1.38415,1.47855 -1.947661,2.36792 -0.115531,0.19596 -0.231748,0.37371 -0.347277,0.56967 -0.08174,0.16079 -0.163474,0.32157 -0.245214,0.48236 -0.03244,0.0716 -0.06416,0.16142 -0.09589,0.25122 -0.144517,0.35864 -0.306623,0.71664 -0.432875,1.09411 -0.286294,0.7901 -0.289891,1.62666 -0.06422,2.48956 0.186389,0.75237 0.372782,1.50475 0.610536,2.22259 0.198476,0.60729 0.413851,1.197 0.698186,1.75279 0.189557,0.37053 0.413587,0.72409 0.705208,1.00731 0.547397,0.54698 1.167605,0.69637 1.830959,0.59269 0.36649,-0.0597 0.71472,-0.13825 1.081221,-0.19795 0.227204,-0.0283 0.455097,-0.0383 0.68436,-0.012 0.299595,0.0289 0.582301,0.0753 0.864994,0.12175 0.332709,-0.0246 0.648519,-0.0314 0.98122,-0.056 0.664724,-0.0673 1.30843,-0.22623 1.933186,-0.42224 0.971607,-0.31098 1.943902,-0.60375 2.918253,-0.84188 0.748519,-0.17342 1.478082,-0.38389 2.169048,-0.68668 0.570629,-0.23431 1.102666,-0.56095 1.578515,-0.98054 0.170339,-0.13944 0.340682,-0.27888 0.530661,-0.36306 0.38065,-0.15014 0.76061,-0.3185 1.141258,-0.46864 0.380649,-0.15013 0.723392,-0.37438 0.991679,-0.71041 0.368298,-0.47798 0.486308,-1.07401 0.497456,-1.71022 -0.03708,-0.98351 -0.231684,-1.95444 -0.460781,-2.90842 z m -10.16198,-5.92768 -0.856671,1.49735 -1.54508,-0.9281 z m 4.009825,6.69075 c -0.03378,0.0351 -0.08517,0.0698 -0.11896,0.1049 -0.172399,0.0848 -0.344109,0.18782 -0.516512,0.27263 -1.036448,0.45417 -2.094594,0.79845 -3.19066,1.06863 -0.556475,0.14387 -1.096064,0.27017 -1.6546,0.3594 -0.348916,0.0603 -0.665407,0.0491 -1.015008,0.0912 -0.07034,-0.002 -0.177891,-0.0609 -0.200964,-0.20724 -0.003,-0.0728 0.0093,-0.21793 0.166911,-0.23051 0.157555,-0.0126 0.227892,-0.0102 0.403038,-0.022 0.01389,-0.56336 -0.0243,-1.11038 0.0079,-1.6549 0.247109,0.4999 0.511803,1.00042 0.759596,1.51854 1.377392,-0.26016 2.715498,-0.63084 4.01363,-1.13027 -0.02193,-0.58283 -0.04323,-1.14743 -0.06451,-1.71204 0,0 0.01688,-0.0176 0.01688,-0.0176 0.263321,0.46409 0.509743,0.94578 0.773746,1.42809 0.154818,-0.0854 0.223088,-0.13757 0.361009,-0.20541 0.03449,-0.0169 0.138606,-0.0497 0.194782,0.0433 0.01829,0.0188 0.05481,0.0565 0.07514,0.13001 0.03587,0.0195 0.02309,0.14632 -0.01143,0.16328 z"
+         id="path36-9-0-1"
+         style="fill:#000000;fill-opacity:1;stroke:#888888;stroke-width:0.370385;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" /><g
+         inkscape:label="Calque 1"
+         id="layer1-2"
+         transform="matrix(0.89115422,0,0,0.89115422,1.4891798,292.87264)"><g
+           id="g8766"
+           transform="matrix(1.31004,0,0,1.4619138,-14.168458,-35.159266)"><text
+             class="st2"
+             id="text18-5"
+             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3193px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-0.326517px;word-spacing:0px;stroke-width:0.0652529;enable-background:new"
+             x="22.601786"
+             y="10.944994"
+             transform="scale(1.0410561,0.96056303)"><tspan
+               x="22.601786"
+               y="10.944994"
+               class="st3 st4 st5 st6"
+               id="tspan14-2"
+               style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3193px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.0652529"
+               rotate="0 3 0"><tspan
+                 style="font-size:9.57442px;letter-spacing:-0.326517px;fill:#ff8012;fill-opacity:1;stroke-width:0.0652529"
+                 id="tspan3788-5"
+                 rotate="3 0">o</tspan><tspan
+                 id="tspan3796-4-7"
+                 style="font-size:11.1702px;letter-spacing:-0.571402px;fill:#ff8012;fill-opacity:1;stroke-width:0.0652529">o</tspan><tspan
+                 style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.1702px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fafafa;fill-opacity:1;stroke-width:0.0652529"
+                 id="tspan1946-7"
+                 rotate="3 3 3 0 0 0 0 0"><tspan
+                   style="font-size:11.1702px;letter-spacing:-0.571402px;stroke-width:0.0652529"
+                   id="tspan4190-4">pg</tspan><tspan
+                   style="font-size:11.1702px;letter-spacing:0px;stroke-width:0.0652529"
+                   id="tspan426-4">p<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.07866px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan8768">.org</tspan></tspan></tspan></tspan></text><g
+             id="g24160-9"
+             transform="matrix(-0.46589198,0,0.04571482,-0.55826519,63.253884,57.877923)"
+             style="fill:#ffffff;stroke:none;stroke-opacity:0.985167"><text
+               class="st2"
+               id="text18-3-1-2"
+               style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.7067px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-0.683841px;word-spacing:0px;fill:#ffffff;stroke:none;stroke-width:0.136663;stroke-opacity:0.985167;enable-background:new"
+               x="91.393814"
+               y="97.781052"
+               transform="scale(1.0236254,0.97691987)"><tspan
+                 x="91.393814"
+                 y="97.781052"
+                 class="st3 st4 st5 st6"
+                 id="tspan14-6-2-2"
+                 style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.7067px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.136663;stroke-opacity:0.985167"
+                 rotate="0"><tspan
+                   id="tspan3796-5-7"
+                   style="letter-spacing:-1.19673px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.136663;stroke-opacity:0.985167">Ɉ</tspan></tspan></text></g></g></g></g></g><style
      type="text/css"
      id="style2">
 	.st0{fill:#FAFAFA;}
@@ -444,6 +457,51 @@
 </style><style
      type="text/css"
      id="style2-4">
+	.st0{fill:#FAFAFA;}
+	.st1{fill:none;}
+	.st2{enable-background:new    ;}
+	.st3{fill:#FF8012;}
+	.st4{font-family:'GalanoClassic-MediumItalic';}
+	.st5{font-size:171.8888px;}
+	.st6{letter-spacing:-5;}
+	.st7{fill:#5E6363;}
+	.st8{fill:#784343;}
+	.st9{fill:#DB4040;}
+	.st10{fill:#797474;}
+	.st11{fill:none;stroke:#FFC951;stroke-width:4;stroke-miterlimit:10;}
+</style><style
+     type="text/css"
+     id="style2-6">
+	.st0{fill:#FAFAFA;}
+	.st1{fill:none;}
+	.st2{enable-background:new    ;}
+	.st3{fill:#FF8012;}
+	.st4{font-family:'GalanoClassic-MediumItalic';}
+	.st5{font-size:171.8888px;}
+	.st6{letter-spacing:-5;}
+	.st7{fill:#5E6363;}
+	.st8{fill:#784343;}
+	.st9{fill:#DB4040;}
+	.st10{fill:#797474;}
+	.st11{fill:none;stroke:#FFC951;stroke-width:4;stroke-miterlimit:10;}
+</style><style
+     type="text/css"
+     id="style2-50">
+	.st0{fill:#FAFAFA;}
+	.st1{fill:none;}
+	.st2{enable-background:new    ;}
+	.st3{fill:#FF8012;}
+	.st4{font-family:'GalanoClassic-MediumItalic';}
+	.st5{font-size:171.8888px;}
+	.st6{letter-spacing:-5;}
+	.st7{fill:#5E6363;}
+	.st8{fill:#784343;}
+	.st9{fill:#DB4040;}
+	.st10{fill:#797474;}
+	.st11{fill:none;stroke:#FFC951;stroke-width:4;stroke-miterlimit:10;}
+</style><style
+     type="text/css"
+     id="style2-3">
 	.st0{fill:#FAFAFA;}
 	.st1{fill:none;}
 	.st2{enable-background:new    ;}

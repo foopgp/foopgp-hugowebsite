@@ -3,7 +3,7 @@ title: "Endorse"
 lang: en
 draft: false
 bg_image: "images/backgrounds/Cartographie.jpg"
-description : "Let's set sail together for brighter horizons."
+description : "The dji (Ɉ), the deliverance."
 image: "images/logos/logo-foopgp-token-0.png"
 ---
 

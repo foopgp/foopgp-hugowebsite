@@ -13,7 +13,7 @@ categories: ["solution"]
 
 Nous développons une solution permettant d'enregistrer et de consulter des transactions financières.
 
-[Les technologies que nous mettons au point](/fr/solutions/activity-rd/) pour échanger nos djis (Ɉ) sont également applicables à n'importe quelle autre devise.
+[Les technologies que nous mettons au point](/fr/solutions/activity-rd/) pour échanger [nos djis (Ɉ)](/fr/about/join/) sont également applicables à n'importe quelle autre devise.
 
 Elles pourraient donc permettre aussi d'échanger des monnaies à cours légal (€, $, ¥, ...) ou des actifs numériques (bitcoins, ...).
 

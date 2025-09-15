@@ -13,7 +13,7 @@ categories: ["solution"]
 
 We are developing a solution for recording and viewing financial transactions.
 
-[The technologies we are developing](/solutions/activity-rd/) to exchange our djis (Ɉ) can also be applied to any other currency.
+[The technologies we are developing](/solutions/activity-rd/) to exchange [our djis (Ɉ)](/about/join/) can also be applied to any other currency.
 
 They could therefore be also used to exchange legal tender currencies (€, $, ¥, etc.) or digital assets (bitcoins, etc.) .
 

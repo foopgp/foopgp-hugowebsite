@@ -3,7 +3,7 @@ title: "Soutenir le projet"
 lang: fr
 draft: false
 bg_image: "images/backgrounds/Cartographie.jpg"
-description : "Embarquons vers des horizons plus radieux."
+description : "Le dji (Ɉ), la devise qui vous délivre."
 image: "images/logos/logo-foopgp-token-0.png"
 ---
 

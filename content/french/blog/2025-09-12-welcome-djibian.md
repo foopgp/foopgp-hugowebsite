@@ -20,7 +20,7 @@ type: "post"
 
 **Djibian** est un système [Debian](https://www.debian.org/index.fr.html) auquel nous intégrons ou configurons les logiciels qui vous faciliteront l'usage des [technologies OpenPGP](/fr/about/openpgp/) :
 
-- Configuration de [vos](/fr/solutions/theme-identity/) [clés de sécurité OpenPGP](/fr/solutions/offer-security-keys/)
+- Configuration de [vos](/fr/solutions/theme-identity/) [clés de sécurité OpenPGP](/fr/solutions/offer-security-keys/).
 
 - [Authentification](/fr/solutions/theme-authentication/) forte ***et*** facile à l'usage.
 
@@ -54,11 +54,11 @@ Sinon nous vous conseillons de vous fournir auprès de [nos partenaires](/fr/par
 
 #### Communiquer
 
-Si ce projet vous enthousiasme, visuel à partager sans modération :
+Si [ce projet](/fr/about/white-book/) vous enthousiasme, visuel à partager sans modération :
 
 {{< figure
-  src="/images/banner/poster_french_djibian_1654x2339.png"
-  link="/images/banner/poster_french_djibian_1654x2339.png"
+  src="/images/banner/poster_fr_djibian_1654x2339.png"
+  link="/images/banner/poster_fr_djibian_1654x2339.png"
   alt="Djibian, le système qui vous respecte !"
   class="mx-auto w-25"
 >}}

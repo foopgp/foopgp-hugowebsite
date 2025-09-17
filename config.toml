@@ -10,12 +10,16 @@ summaryLength = "10"
 #disqusShortname = "educenter" # get your shortname form here : https://disqus.com
 # disable language
 disableLanguages = [] # desable language from here
-# limit RSS feeds to 50 entries
-rssLimit = 50
+# limit RSS feeds to 32 entries
+rssLimit = 32
 # used notably by urlize function cf. https://gohugo.io/getting-started/configuration/#removepathaccents
 removePathAccents = true
 # take LastMod from git and create .GitInfo object, cf. https://gohugo.io/methods/page/gitinfo/
 enableGitInfo = true
+
+# As long as we are in control of content, we may allow embedded HTML into markdown files
+#[markup.goldmark.renderer]
+#unsafe = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

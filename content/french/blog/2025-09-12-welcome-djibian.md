@@ -66,6 +66,13 @@ Si [ce projet](/fr/about/white-book/) vous enthousiasme, visuels à partager san
 >}}
 
 {{< figure
+  src="/images/banner/poster_fr_dji_1654x2339.png"
+  link="/images/banner/poster_fr_dji_1654x2339.png"
+  alt="Le dji, la devise qui nous délivre !"
+  class="float-right mr-4 w-25"
+>}}
+
+{{< figure
   src="/images/banner/poster_fr_all_1654x2339.png"
   link="/images/banner/poster_fr_all_1654x2339.png"
   alt="Poster: un notre monde est possible."

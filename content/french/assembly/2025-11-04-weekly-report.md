@@ -1,3 +1,14 @@
+---
+title: "2025 S45 Rapport Hebdomadaire"
+lang: fr
+date: 2025-11-O4T21:30:00+02:00
+draft: false
+bg_image: "images/backgrounds/puzzle.jpg"
+description : "Compte rendu du conseil du Mardi soir"
+image: "images/logos/logo-black-pgp.png"
+type: "meeting"
+---
+
  *Les comptes rendus précédents sont aussi [sur notre forge git](https://codeberg.org/foopgp/foopgp-hugowebsite/src/commit/03f71eeb25b3bb4c028805feb70958ea36ee068d/content/french/assembly) .*
 
 ---

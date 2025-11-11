@@ -46,6 +46,8 @@ Enfin et si vous nous aidez à grandir, nous pourrons achever et proposer d'autr
 
 La dernière ISO est ici : <http://iso.foopgp.org/djibian/latest>.
 
+*(Le mot de passe de l'utilisateur par défaut est :* ***foopgp****. À utiliser pour créer de vrais utilisateurs via la commande :* ***sudo bl-djibian adduser --admin****.)*
+
 Si vous souhaitez par vous-mêmes installer **djibian**, nous vous conseillons d'utiliser [Ventoy](https://www.ventoy.net).
 
 Sinon nous vous conseillons de vous fournir auprès de [nos partenaires](/fr/partner/). Notamment :

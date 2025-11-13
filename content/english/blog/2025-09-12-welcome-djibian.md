@@ -46,7 +46,10 @@ Finally, if you help us grow, we will be able to complete and offer other innova
 
 The latest ISO is available here: <http://iso.foopgp.org/djibian/latest>.
 
-*(The default password of the default user:* ***foopgp****. To be used for creating real user, with the command:* ***sudo bl-djibian adduser --admin****.)*
+*Note: the default password of the default user:* ***foopgp****. To login, before creating real user with the command:*
+```bash
+$ sudo bl-djibian adduser --admin
+```
 
 If you want to install **djibian** yourself, we recommend using [Ventoy](https://www.ventoy.net).
 

@@ -77,9 +77,11 @@ $ gpg --list-public-keys
 
 ```bash
 sudo -i
-echo "StreamLocalBindUnlink yes" > /etc/ssh/sshd_config.d/demo.conf
+echo "StreamLocalBindUnlink yes" > /etc/ssh/sshd_config.d/streamlocal.conf
 systemctl restart sshd.service
 ```
+
+> L'option **StreamLocalBindUnlink** permet  de  spécifier  si un fichier de socket de domaine Unix pour la redirection de port local ou distant doit être supprimé avant d’en créer un nouveau. Si le fichier de socket existe déjà et si **StreamLocalBindUnlink** n’est pas activée, sshd ne pourra pas rediriger le port  vers  le  fichier de socket de domaine Unix. Cette option n’est utilisée que pour la redirection de port vers un fichier de socket de domaine Unix.
 
 **Remote:** Je regarde quel est le socket utilisé par le gpg-agent du serveur.
 

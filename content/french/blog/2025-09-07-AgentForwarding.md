@@ -83,38 +83,15 @@ systemctl restart sshd.service
 
 > L'option **StreamLocalBindUnlink** permet  de  spécifier  si un fichier de socket de domaine Unix pour la redirection de port local ou distant doit être supprimé avant d’en créer un nouveau. Si le fichier de socket existe déjà et si **StreamLocalBindUnlink** n’est pas activée, sshd ne pourra pas rediriger le port  vers  le  fichier de socket de domaine Unix. Cette option n’est utilisée que pour la redirection de port vers un fichier de socket de domaine Unix.
 
-**Remote:** Je regarde quel est le socket utilisé par le gpg-agent du serveur.
+Pour la suite, on utilise le petit script *ssh_gpgforward* qu'un gentil membre de l'association a [publié sur codeberg](https://codeberg.org/djibian/djibian-config/src/branch/main/djibian-gpgconfig/usr/bin/ssh_gpgforward) (d'où vous pouvez [le télécharger](https://codeberg.org/djibian/djibian-config/raw/branch/main/djibian-gpgconfig/usr/bin/ssh_gpgforward)).
 
 ```bash
-gpgconf --list-dir agent-socket
+ssh_gpgforward user@demo.org "hostname -f | gpg --clearsign | tee  >( gpg --verify)"
 ```
-
-**Local:** Je regarde quel est le socket supplémentaire utilisable par mon gpg-agent local.
-
-```bash
-gpgconf --list-dir agent-extra-socket
-```
-
-**Local:** Je retourne à mon fichier conf, je rajoute les résultats des 2 commandes précédentes afin que le gpg-agent distant utilise en fait mon gpg-agent local :
-
-```bash
-host demo
-    hostname 192.168.122.209
-    User foopgp
-    RemoteForward /run/user/1000/gnupg/S.gpg-agent /run/user/1000/gnupg/S.gpg-agent.extra
-```
-
-**Local:** Et désormais l'utilisation de ma clé privée est possible sur le remote sans y être présente:
-
-```bash
-ssh demo
-gpg --list-secret-keys
-...
-```
-
-Je peux signer, chiffrer etc. exactement comme en local.
+Et l'on peut signer, déchiffrer etc. exactement comme en local.
 
 Sources:
 
 - https://wiki.gnupg.org/AgentForwarding
 - https://superuser.com/questions/161973/how-can-i-forward-a-gpg-key-via-ssh-agent/1329299#1329299
+- https://wiki.archlinux.org/title/GnuPG#Forwarding_gpg-agent_and_ssh-agent_to_remote

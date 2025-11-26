@@ -83,38 +83,15 @@ systemctl restart sshd.service
 
 > Option **StreamLocalBindUnlink** specifies whether to remove an existing Unix-domain socket file for local or remote port forwarding before creating a new one.  If the socket file already exists and StreamLocalBindUnlink is not enabled, sshd will be unable to forward the port to the Unix-domain socket file. This option is only used for port forwarding to a Unix-domain socket file.
 
-**Remote:** I check which socket is used by the server's gpg-agent.
+Next, we use the small wrapper *ssh_gpgforward* that a kind member of the association has [published on codeberg](https://codeberg.org/djibian/djibian-config/src/branch/main/djibian-gpgconfig/usr/bin/ssh_gpgforward) (where you can [download it](https://codeberg.org/djibian/djibian-config/raw/branch/main/djibian-gpgconfig/usr/bin/ssh_gpgforward)).
 
 ```bash
-gpgconf --list-dir agent-socket
+ssh_gpgforward user@demo.org "hostname -f | gpg --clearsign | tee  >( gpg --verify)"
 ```
-
-**Local:** I check which additional socket can be used by my local gpg-agent.
-
-```bash
-gpgconf --list-dir agent-extra-socket
-```
-
-**Local:** I return to my client configuration file and add the results of the two previous commands so that the remote gpg-agent actually uses my local gpg-agent:
-
-```bash
-host demo
-    hostname 192.168.122.209
-    User foopgp
-    RemoteForward /run/user/1000/gnupg/S.gpg-agent /run/user/1000/gnupg/S.gpg-agent.extra
-```
-
-**Local:** And now I can use my private key on the remote without being there:
-
-```bash
-ssh demo
-gpg --list-secret-keys
-...
-```
-
-So I can sign, encrypt, etc. exactly as I would locally.
+So we can sign, decrypt, etc. exactly as we would locally.
 
 Sources:
 
 - https://wiki.gnupg.org/AgentForwarding
 - https://superuser.com/questions/161973/how-can-i-forward-a-gpg-key-via-ssh-agent/1329299#1329299
+- https://wiki.archlinux.org/title/GnuPG#Forwarding_gpg-agent_and_ssh-agent_to_remote

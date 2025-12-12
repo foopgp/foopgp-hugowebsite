@@ -19,6 +19,7 @@ type: "meeting"
 
 *Note : Si problème avec la visio sur notre cloud.foopgp.org, se connecter sur [https://meet.jit.si/foopgp](https://meet.jit.si/foopgp) .*
 
+- Debriefing Salon OSX Paris.
 - Points habituels : (revue de presse + déplacements et actions réalisés, en cours, ou à prévoir).
 
 ### Ordres du soir (mardi 9 décembre)
@@ -113,6 +114,7 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 ### Au cœur de la réunion
 
 - Encore merci aux bêta-testeurs : encore des petits bugs par çi par là, pas grand chose de bien de méchant.
+- Un grand merci également à Sun Valley System pour la remise en état et la fourniture de laptop pour les démos.
 - Nécessité pour djibian de mettre en avant (et configurer) Thunderbird pour ne pas forcer les utilisateurs gmail à créer un autre email (aller chercher les utilisateurs où ils sont).
 - Gros travail sur la finalisation [des bashlibs (environ 3 releases par semaine)](https://codeberg.org/foopgp/bash-libs/commits/branch/main) et [du logiciel d'embarquement (onboarding)](https://codeberg.org/djibian/onboarding/commits/branch/feature/idopgp) - On semble tenir les jalons (release djibian sous le sapin de Noël).
 - JJ monte à L'OSX Paris les 10 et 11. Foopgp n'a pas (encore) de stand ni conf cette année, mais on espère pouvoir faire quelques démos djibian en marge (dans les stand des autres ^^).

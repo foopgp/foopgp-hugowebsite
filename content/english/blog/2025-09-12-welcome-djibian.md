@@ -12,6 +12,9 @@ image: "images/logos/djibian_square_logo.png"
 type: "post"
 ---
 
+
+*Note, December 2025: Djibian is now in its latest stage of beta-testing. Release of version 1.0.0 is expected in few weeks. Please subscribe to [our mailing lists](/contact/) to get informed.*
+
 #### Discover
 
 ***We are delighted to welcome and introduce [djibian](/blog/2025-09-12-welcome-djibian/), the operating system that secures your data and respects your privacy***.

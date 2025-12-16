@@ -19,6 +19,13 @@ sur [nos dépôts Git](https://codeberg.org/foopgp).*
 
 Cet ensemble contient :
 
+- **bl-pgpid** : Génère des identifiants foopgp, tels que *u4*, pour identifier les personnes dans le monde entier, ou un uid Unix fixe pour chacune d'entre elles.
+
+- **bl-qrkey** : Sauvegarde ou restauration des clés OpenPGP à l'aide de QR codes imprimés utilisant le partage de clé secrète de Shamir.
+Facilite également la modification des mots de passe protégeant les clés OpenPGP ou des codes (PIN ou Admin) des jetons de sécurité OpenPGP (YubiKey, ...).
+
+- **bl-djibian** : Outils système pour Djibian GNU/Linux. Principalement pour gérer les utilisateurs.
+
 - **bl-dji** : gère les djis (Ɉ), aussi appelés jetons foopgp.
 
 - **bl-foopgp** : calcule combien de jetons foopgp (Ɉ) peuvent être créés pour chaque cotisation à l'association foopgp.
@@ -43,50 +50,34 @@ Cet ensemble contient :
 
 - **pgpid-qrscan** : transfère les secrets OpenPGP des codes QR pgpid vers une carte à puce OpenPGP (par exemple : yubikey, nitrokey, ...).
 
-*Remarque : Conception validé - nous devrions maintenant réécrire pgpid avec un code plus robuste et plus facile à maintenir, ainsi qu'avec une interface plus conviviale.*
+*Remarque : Conception validé - nous somme en train de réécrire pgpid avec un code plus robuste et plus facile à maintenir, ainsi qu'avec une interface plus conviviale.*
 
 ### djibian.foopgp.org
 
-TODO: à valider
-
-Debian est en train de changer le format des définitions de dépôts :
-
-https://wiki.debian.org/SecureApt
-https://wiki.debian.org/SourcesList#debian.sources_format
-
-```bash
-curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
-| awk "/-----BEGIN PGP PUBLIC KEY BLOCK-----/,/-----END PGP PUBLIC KEY BLOCK-----/" \
-| sudo gpg --dearmor --yes --output /usr/share/keyrings/foopgp.gpg
-
-
-sudo cat << EOF > /etc/apt/sources.list.d/foopgp.sources
-Types: deb
-URIs: http://djibian.foopgp.org/test/
-Suites: ./
-Components: 
-Signed-By: /usr/share/keyrings/foopgp.gpg
-EOF
-```
-
-### ppa.foopgp.org
-
-[Ce service](https://codeberg.org/foopgp/ppa) est notre propre [dépôt de paquets Debian](https://wiki.debian.org/DebianRepository/Setup), destiné à distribuer nos dernières versions logicielles.
+[Ce service](http://djibian.foopgp.org/) est notre propre [dépôt de paquets Debian](https://wiki.debian.org/DebianRepository/Setup), destiné à distribuer nos dernières versions logicielles.
 
 De cette manière, vous pouvez facilement installer nos logiciels sur vos systèmes Debian:
 
 ```bash
-echo -e "deb http://djibian.foopgp.org/debs ./\n#deb http://djibian.foopgp.org/test ./" | sudo tee /etc/apt/sources.list.d/djibian-byhand.list
-sudo bash -c 'curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
+curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
 | awk "/-----BEGIN PGP PUBLIC KEY BLOCK-----/,/-----END PGP PUBLIC KEY BLOCK-----/" \
-> /etc/apt/trusted.gpg.d/foopgp.asc'
+| sudo gpg --dearmor --yes --output /usr/local/share/foopgp-archive-keyring.pgp
+
+cat <<EOF | sudo tee /etc/apt/sources.list.d/foopgp.sources
+Types: deb
+URIs: http://djibian.foopgp.org/test/
+Suites: ./
+Components: 
+Signed-By: /usr/local/share/foopgp-archive-keyring.pgp
+EOF
+
 sudo apt update
 
 sudo apt install bashlibs-all
 sudo apt install pgpid
 ```
 
-*Remarque : le paquet* ***bash-libs*** *ayant très peu de dépendances, il devrait être compatible avec tous systèmes de type Debian : Ubuntu, Mint, etc.*
+*Remarque : le paquet* ***bashlibs*** *ayant très peu de dépendances, il devrait être compatible avec tous systèmes de type Debian : Ubuntu, Mint, etc.*
 
 ### keys.foopgp.org
 

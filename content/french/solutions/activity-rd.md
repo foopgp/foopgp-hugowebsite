@@ -52,13 +52,13 @@ Cet ensemble contient :
 De cette manière, vous pouvez facilement installer nos logiciels sur vos systèmes Debian:
 
 ```bash
-sudo curl http://ppa.foopgp.org/debian/foopgp.list -o /etc/apt/sources.list.d/foopgp.list
+echo -e "deb http://djibian.foopgp.org/debs ./\n#deb http://djibian.foopgp.org/test ./" | sudo tee /etc/apt/sources.list.d/djibian-byhand.list
 sudo bash -c 'curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
 | awk "/-----BEGIN PGP PUBLIC KEY BLOCK-----/,/-----END PGP PUBLIC KEY BLOCK-----/" \
 > /etc/apt/trusted.gpg.d/foopgp.asc'
 sudo apt update
 
-sudo apt install bash-libs
+sudo apt install bashlibs-all
 sudo apt install pgpid
 ```
 

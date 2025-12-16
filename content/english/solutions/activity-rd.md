@@ -47,6 +47,30 @@ License](https://spdx.org/licenses/LGPL-3.0-only.html).*
 *Note: Now that the proof of concept stage has been validated, we should rewrite
 pgpid with more robust and maintainable code and with a little more user-friendly interface.*
 
+### djibian.foopgp.org
+
+TODO: verify
+
+Debian is changing the default repository description format:
+
+https://wiki.debian.org/SecureApt
+https://wiki.debian.org/SourcesList#debian.sources_format
+
+```bash
+curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
+| awk "/-----BEGIN PGP PUBLIC KEY BLOCK-----/,/-----END PGP PUBLIC KEY BLOCK-----/" \
+| sudo gpg --dearmor --yes --output /usr/share/keyrings/foopgp.gpg
+
+
+sudo cat << EOF > /etc/apt/sources.list.d/foopgp.sources
+Types: deb
+URIs: http://djibian.foopgp.org/test/
+Suites: ./
+Components: 
+Signed-By: /usr/share/keyrings/foopgp.gpg
+EOF
+```
+
 ### ppa.foopgp.org
 
 [This](https://codeberg.org/foopgp/ppa) is our own [Debian package repository](https://wiki.debian.org/DebianRepository/Setup), to distribute our latest software releases.

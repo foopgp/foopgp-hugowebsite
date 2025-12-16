@@ -45,6 +45,30 @@ Cet ensemble contient :
 
 *Remarque : Conception validé - nous devrions maintenant réécrire pgpid avec un code plus robuste et plus facile à maintenir, ainsi qu'avec une interface plus conviviale.*
 
+### djibian.foopgp.org
+
+TODO: à valider
+
+Debian est en train de changer le format des définitions de dépôts :
+
+https://wiki.debian.org/SecureApt
+https://wiki.debian.org/SourcesList#debian.sources_format
+
+```bash
+curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
+| awk "/-----BEGIN PGP PUBLIC KEY BLOCK-----/,/-----END PGP PUBLIC KEY BLOCK-----/" \
+| sudo gpg --dearmor --yes --output /usr/share/keyrings/foopgp.gpg
+
+
+sudo cat << EOF > /etc/apt/sources.list.d/foopgp.sources
+Types: deb
+URIs: http://djibian.foopgp.org/test/
+Suites: ./
+Components: 
+Signed-By: /usr/share/keyrings/foopgp.gpg
+EOF
+```
+
 ### ppa.foopgp.org
 
 [Ce service](https://codeberg.org/foopgp/ppa) est notre propre [dépôt de paquets Debian](https://wiki.debian.org/DebianRepository/Setup), destiné à distribuer nos dernières versions logicielles.

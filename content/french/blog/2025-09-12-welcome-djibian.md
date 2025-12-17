@@ -60,6 +60,14 @@ Sinon nous vous conseillons de vous fournir auprès de [nos partenaires](/fr/par
 
 ---
 
+#### Tester
+
+Si vous êtes déjà sous Debian, vous pouvez tester nos logiciels en pre-production [en rajoutant notre dépôt de paquets *test*](/fr/solutions/activity-rd/#djibianfoopgporg).
+
+Certains de ces paquets pourraient être fonctionnels également sous Ubuntu ou Mint. Les développeurs peuvent librement intégrer nos logiciels pour les autres systèmes d'exploitation (GNU/Linux, Mac OS, etc.)
+
+---
+
 #### Communiquer
 
 Si [ce projet](/fr/about/white-book/) vous enthousiasme, visuels à partager sans modération :

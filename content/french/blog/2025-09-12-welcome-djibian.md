@@ -20,7 +20,7 @@ type: "post"
 
 ---
 
-**Djibian** est un système [Debian](https://www.debian.org/index.fr.html), c'est à dire une alternative libre et open source aux univers Windows® ou Apple®, auquel nous intégrons ou configurons vos logiciels courants, ainsi que les dernières [innovations](/fr/solutions/activity-rd/) pour vous faciliter :
+**Djibian** est un système [Debian](https://www.debian.org/index.fr.html), c'est-à-dire une alternative libre et open source aux univers Windows® ou Apple®, auquel nous intégrons ou configurons vos logiciels courants, ainsi que les dernières [innovations](/fr/solutions/activity-rd/) pour vous faciliter :
 
 - La configuration de [vos](/fr/solutions/theme-identity/) [clés de sécurité](/fr/solutions/offer-security-keys/) [OpenPGP](/fr/about/openpgp/).
 
@@ -62,7 +62,7 @@ Sinon nous vous conseillons de vous fournir auprès de [nos partenaires](/fr/par
 
 #### Tester
 
-Si vous êtes déjà sous Debian, vous pouvez tester nos logiciels en pre-production [en rajoutant notre dépôt de paquets *test*](/fr/solutions/activity-rd/#djibianfoopgporg).
+Si vous êtes déjà sous Debian, vous pouvez tester nos logiciels en préproduction [en rajoutant notre dépôt de paquets *test*](/fr/solutions/activity-rd/#djibianfoopgporg).
 
 Certains de ces paquets pourraient être fonctionnels également sous Ubuntu ou Mint. Les développeurs peuvent librement intégrer nos logiciels pour les autres systèmes d'exploitation (GNU/Linux, Mac OS, etc.)
 

@@ -62,7 +62,7 @@ Otherwise, we recommend contacting [our partners](/partner/).
 
 #### Test
 
-If you are already using Debian, you can test our software in pre-production [by adding our *test* package repository](/en/solutions/activity-rd/#djibianfoopgporg).
+If you are already using Debian, you can test our software in pre-production [by adding our *test* package repository](/solutions/activity-rd/#djibianfoopgporg).
 
 
 Some of these packages may also work on Ubuntu or Mint. Developers are free to integrate our software into other operating systems (GNU/Linux, Mac OS, etc.).

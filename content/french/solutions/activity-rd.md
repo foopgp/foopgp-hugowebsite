@@ -56,7 +56,7 @@ Facilite également la modification des mots de passe protégeant les clés Open
 
 [Ce service](http://djibian.foopgp.org/) est notre propre [dépôt de paquets Debian](https://wiki.debian.org/DebianRepository/Setup), destiné à distribuer nos dernières versions logicielles.
 
-De cette manière, vous pouvez facilement installer nos logiciels sur vos systèmes Debian:
+De cette manière, vous pouvez facilement installer nos logiciels sur vos systèmes Debian. Par exemple pour les versions de préproduction :
 
 ```bash
 curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
@@ -77,7 +77,7 @@ sudo apt install bashlibs-all
 sudo apt install pgpid
 ```
 
-*Remarque : le paquet* ***bashlibs*** *ayant très peu de dépendances, il devrait être compatible avec tous systèmes de type Debian : Ubuntu, Mint, etc.*
+*Remarque : le paquet* ***bashlibs*** *ayant peu de dépendances, il devrait être compatible avec tous systèmes de type Debian : Ubuntu, Mint, etc.*
 
 ### keys.foopgp.org
 

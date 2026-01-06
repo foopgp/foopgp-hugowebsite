@@ -58,7 +58,7 @@ pgpid with more robust and maintainable code and with a little more user-friendl
 
 [This](http://djibian.foopgp.org/) is our own [Debian package repository](https://wiki.debian.org/DebianRepository/Setup), to distribute our latest software releases.
 
-Then, to install our software products on your Debian computers:
+Then, to install our software products on your Debian computers ("/test/" contains preproduction versions):
 
 ```bash
 curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
@@ -79,7 +79,7 @@ sudo apt install bashlibs-all
 sudo apt install pgpid
 ```
 
-*Note:* ***bashlibs*** *has very few dependencies and sould be compatible with all Debian-like systems, eg: Ubuntu, Mint, etc..*
+*Note:* ***bashlibs*** *has few dependencies and should be compatible with all Debian-like systems, eg: Ubuntu, Mint, etc..*
 
 ### keys.foopgp.org
 

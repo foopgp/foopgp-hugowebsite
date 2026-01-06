@@ -1,11 +1,10 @@
 ---
-#Lastmod: 2020-12-24T15:35:22+00:00 # MANAGED by --enableGitInfo
 type: "event"
 title: "Confin’atelier #3"
 publishDate: "2020-11-03"
 date: "2020-11-07T14:00:00+01:00"
-# post save as draft
-draft: false
+# set to true to hide the smallest past events to clean event pages
+draft: true
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description

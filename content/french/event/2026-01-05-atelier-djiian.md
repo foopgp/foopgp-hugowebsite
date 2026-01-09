@@ -7,9 +7,10 @@ draft: false
 bg_image: "images/backgrounds/party-event.jpg"
 description: "Atelier pour apprendre à contrôler ses données"
 image: "images/events/logo-alposs.png"
-location: "[Échirolles 🇫🇷](https://alposs.fr/)"
+location: "[Échirolles 🇫🇷](https://www.openstreetmap.org/search?query=15+Avenue+du+8+Mai+1945%2C+38130+%C3%89chirolles&zoom=19&minlon=5.716951489448547&minlat=45.14871519824868&maxlon=5.720615386962891&maxlat=45.14990126865423#map=19/45.149234/5.718963)"
 audience: "Pour tous."
-fee: "libre"
+fee: "Libre"
+apply_url: "https://pretalx.com/alposs-2026/talk/KTNMTA/"
 lang: "fr"
 ---
 

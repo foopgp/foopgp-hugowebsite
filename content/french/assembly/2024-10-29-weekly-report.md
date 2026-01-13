@@ -2,7 +2,7 @@
 title: "2024 S44 Rapport Hebdomadaire"
 lang: fr
 date: 2024-10-29T21:00:00+01:00
-draft: false
+draft: true
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte-rendu du conseil du Mardi soir"
 image: "images/logos/logo-black-pgp.png"

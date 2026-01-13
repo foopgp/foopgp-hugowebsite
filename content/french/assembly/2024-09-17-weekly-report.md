@@ -2,7 +2,7 @@
 title: "2024 S38 Rapport Hebdomadaire"
 lang: fr
 date: 2024-09-17T21:00:00+01:00
-draft: false
+draft: true
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte-Rendu visio du Mardi soir"
 image: "images/logos/logo-black-pgp.png"

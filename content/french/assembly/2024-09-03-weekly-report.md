@@ -2,7 +2,7 @@
 title: "2024 S36 Rapport Hebdomadaire"
 lang: fr
 date: 2024-09-03T21:00:00+01:00
-draft: false
+draft: true
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "CR visio du Mardi soir"
 image: "images/logos/logo-black-pgp.png"

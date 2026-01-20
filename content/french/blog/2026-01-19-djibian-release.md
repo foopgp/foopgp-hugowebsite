@@ -43,6 +43,8 @@ Une petite vidéo valant mieux qu'un long discours :
 
 {{< video src="/videos/2026/20260119-djibian-onboarding.mp4" type="video/mp4" >}}
 
+*Sous-titres: [français](/videos/2026/20260119-djibian-onboarding.fr.srt), [anglais](/videos/2026/20260119-djibian-onboarding.en.srt).*
+
 ---
 
 Pour les prochains étages de la fusée :

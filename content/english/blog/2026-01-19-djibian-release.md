@@ -52,6 +52,8 @@ A short video is better than a long speech:
 
 {{< video src="/videos/2026/20260119-djibian-onboarding.mp4" type="video/mp4" >}}
 
+*Subtitles: [french](/videos/2026/20260119-djibian-onboarding.fr.srt), [english](/videos/2026/20260119-djibian-onboarding.en.srt).*
+
 ---
 
 For the next stages of the rocket:

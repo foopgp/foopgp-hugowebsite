@@ -28,9 +28,13 @@ Cette première version pose et fournit le premier étage de [la fusée](/fr/sol
 Votre [identité numérique](/fr/solutions/theme-identity/) **OpenPGP ID**, est universelle et décentralisée.
 
 Elle permet, [concrètement](/fr/solutions/offer-security-keys/) :
+
 - de [s'authentifier](/fr/solutions/theme-authentication/) sans mot de passe ou de manière unique (SSO) ;
+
 - d'émettre et recevoir des [données authentiques](/fr/solutions/signature/) ;
+
 - de [chiffrer](/fr/solutions/encryption/) nos échanges et [données personnelles](/fr/solutions/theme-email/), c'est à dire de s'assurer qu'ils et elles demeurent privés ;
+
 - [d'avancer](/fr/solutions/theme-vote/) vers [l'abolition](/fr/about/rules-of-procedures/) de [certains privilèges](/fr/solutions/theme-currency/), et d'obtenir plus de liberté, égalité, fraternité. [✊🕊️💕](/fr/about/join/)
 
 De plus et toujours, efficacité et sobriété étant nos maîtres mots, **Djibian** GNU/Linux permet de ***prolonger de plusieurs années la vie de vos ordinateurs***.
@@ -42,22 +46,24 @@ Une petite vidéo valant mieux qu'un long discours :
 ---
 
 Pour les prochains étages de la fusée :
+
+- Amélioration des pré-configurations (git, ssh, evolution, thunderbird, etc.)
+
 - Gestion et exploitation fluide et puissante de vos [toiles de confiance](https://fr.wikipedia.org/wiki/Toile_de_confiance).
+
 - Sauvegarde et récupération automatique de votre univers numérique, dès que vous branchez votre clé de sécurité OpenPGP sur un système **djibian**.
+
 - etc.
 
 ---
 
 #### Installer
 
-La dernière ISO[^packages] est ici : <http://iso.foopgp.org/djibian/latest>.
+La dernière ISO [^packages] est ici : <http://iso.foopgp.org/djibian/latest>.
 
-[^packages]: ISO avec sa liste de paquets, et ses différences par rapport à la version précédente. En l'occurence la debian "vanilla" pour cette fois çi.
+[^packages]: Le fichier [extra-Packages.gz](http://iso.foopgp.org/djibian/1.0.0/extra-Packages.gz) contient la liste de tous les paquets qui ont été ajouté à l'ISO debian de référence (13.3.0) ; dont une vingtaine sont (aujourd'hui) exclusives à djibian.
 
-*Note : le mot de passe de l'utilisateur par défaut est :* ***foopgp*** *; pour ouvrir une session afin de créer de vrais utilisateurs via la commande :*
-```bash
-$ sudo bl-djibian adduser --admin
-```
+*Note : le mot de passe de l'utilisateur par défaut est :* ***foopgp***
 
 Si vous souhaitez par vous-mêmes installer **djibian**, nous vous conseillons d'utiliser [Ventoy](https://www.ventoy.net).
 

@@ -1,7 +1,7 @@
 ---
 Title:   "Djibian GNU/Linux ^^"
 Date:    2025-09-12T01:30:00+02:00
-Tags:    [ "experience", "debian" ]
+Tags:    [ "djibian", "experience", "debian" ]
 categories: [ "News" ]
 draft: false
 author: [ "Jean-Jacques Brucker" ]
@@ -12,8 +12,7 @@ image: "images/logos/djibian_square_logo.png"
 type: "post"
 ---
 
-
-*Note, December 2025: Djibian is now in its latest stage of beta-testing. Release of version 1.0.0 is expected in few weeks. Please subscribe to [our mailing lists](/contact/) to get informed.*
+*Note, January 2026: Djibian [steps to prod ^^](/blog/2026-01-19-djibian-release/). Please subscribe to [our mailing lists](/contact/) to get informed.*
 
 #### Discover
 

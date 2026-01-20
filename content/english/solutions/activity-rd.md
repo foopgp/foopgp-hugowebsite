@@ -61,9 +61,8 @@ pgpid with more robust and maintainable code and with a little more user-friendl
 Then, to install our software products on your Debian computers ("/test/" contains preproduction versions):
 
 ```bash
-curl -s "https://keys.foopgp.org/pks/lookup?op=get&search=0x2C364630A2436D7E" \
-| awk "/-----BEGIN PGP PUBLIC KEY BLOCK-----/,/-----END PGP PUBLIC KEY BLOCK-----/" \
-| sudo gpg --dearmor --yes --output /usr/local/share/foopgp-archive-keyring.pgp
+gpg --keyserver keys.foopgp.org --recv-keys 2C364630A2436D7E
+gpg --export 2C364630A2436D7E | sudo tee /usr/local/share/foopgp-archive-keyring.pgp > /dev/null
 
 cat <<EOF | sudo tee /etc/apt/sources.list.d/foopgp.sources
 Types: deb
@@ -76,7 +75,7 @@ EOF
 sudo apt update
 
 sudo apt install bashlibs-all
-sudo apt install pgpid
+sudo apt install djibian-onboarding
 ```
 
 *Note:* ***bashlibs*** *has few dependencies and should be compatible with all Debian-like systems, eg: Ubuntu, Mint, etc..*

@@ -1,7 +1,7 @@
 ---
 Title:   "Djibian GNU/Linux ^^"
 Date:    2025-09-12T01:30:00+02:00
-Tags:    [ "experience", "debian" ]
+Tags:    [ "djibian", "experience", "debian" ]
 categories: [ "News" ]
 draft: false
 author: [ "Jean-Jacques Brucker" ]

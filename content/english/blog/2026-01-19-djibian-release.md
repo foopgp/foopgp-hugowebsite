@@ -21,7 +21,7 @@ type: "post"
 [^clairette]: Proximity to Die and a preference for local products make it a must. Their corks pop just as well as those of champagne.
 
 
-***After more than three years of research and development [^CVjjb], we are immensely proud to deliver the first marketable version of [djibian](/blog/2025-09-12-welcome-djibian/), the operating system that secures your data and respects your privacy***.
+***After more than three years of research and development [^CVjjb], we are immensely proud to deliver the first stable version of [djibian](/blog/2025-09-12-welcome-djibian/), the operating system that secures your data and respects your privacy***.
 
 
 [^CVjjb]: The R&D could even be estimated at more than 15 years, if we are to believe the [founder's impressive resume](https://domesticserver.org/myresume/) (in all modesty, of course, since no one reads the footnotes anyway... right?).
@@ -30,6 +30,12 @@ type: "post"
 
 This first version establishes and provides the first stage of [the rocket](/solutions/activity-rd/): **OpenPGP ID**.
 
+{{< figure
+  src="/images/solutions/OpenPGPkeys.jpg"
+  link="/images/solutions/OpenPGPkeys.jpg"
+  alt="OpenPGP tokens: 1 nitrokey, 2 yubikey, 1 unknow (pink)"
+  class="mx-auto w-25"
+>}}
 
 Your [digital identity](/solutions/theme-identity/) **OpenPGP ID** is universal and decentralized.
 
@@ -72,7 +78,7 @@ For the next stages of the rocket:
 
 The latest ISO [^packages] is available here: <http://iso.foopgp.org/djibian/latest>.
 
-[^packages]: The [extra-Packages.gz](http://iso.foopgp.org/djibian/1.0.0/extra-Packages.gz) file contains a list of all the packages that have been added to the reference Debian ISO (13.3.0), around twenty of which are (currently) exclusive to djibian.
+[^packages]: The [extra-Packages.gz](http://iso.foopgp.org/djibian/1.0.0/extra-Packages.gz) file contains a list of all the packages that have been added from the reference Debian ISO (13.3.0), around twenty of which are (currently) exclusive to djibian.
 
 *Note: the default password of the default user:* ***foopgp***
 

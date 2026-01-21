@@ -18,12 +18,19 @@ type: "post"
 
 [^clairette]: Proximité avec Die et préférence pour les produits locaux obligent. Leurs bouchons sautent aussi bien que ceux du champagne.
 
-***Après plus de 3 ans de Recherche et Développement [^CVjjb], nous avons l'immense fierté de livrer la première version commercialisable de [djibian](/fr/blog/2025-09-12-welcome-djibian/), le système d'exploitation qui sécurise vos données et respecte votre vie privée***.
+***Après plus de 3 ans de Recherche et Développement [^CVjjb], nous avons l'immense fierté de livrer la première version stable de [djibian](/fr/blog/2025-09-12-welcome-djibian/), le système d'exploitation qui sécurise vos données et respecte votre vie privée***.
 
 [^CVjjb]: On pourrait même chiffrer la R&D à plus de 15 ans, si l'on en croit le [CV impressionnant du fondateur](https://domesticserver.org/myresume/) (en toute modestie bien sûr, de toute façon personne ne lit les notes de bas de page... n'est-ce pas ?).
 ---
 
 Cette première version pose et fournit le premier étage de [la fusée](/fr/solutions/activity-rd/) : **OpenPGP ID**.
+
+{{< figure
+  src="/images/solutions/OpenPGPkeys.jpg"
+  link="/images/solutions/OpenPGPkeys.jpg"
+  alt="OpenPGP tokens: 1 nitrokey, 2 yubikey, 1 unknow (pink)"
+  class="mx-auto w-25"
+>}}
 
 Votre [identité numérique](/fr/solutions/theme-identity/) **OpenPGP ID**, est universelle et décentralisée.
 
@@ -63,7 +70,7 @@ Pour les prochains étages de la fusée :
 
 La dernière ISO [^packages] est ici : <http://iso.foopgp.org/djibian/latest>.
 
-[^packages]: Le fichier [extra-Packages.gz](http://iso.foopgp.org/djibian/1.0.0/extra-Packages.gz) contient la liste de tous les paquets qui ont été ajouté à l'ISO debian de référence (13.3.0) ; dont une vingtaine sont (aujourd'hui) exclusives à djibian.
+[^packages]: Le fichier [extra-Packages.gz](http://iso.foopgp.org/djibian/1.0.0/extra-Packages.gz) contient la liste de tous les paquets qui ont été ajouté par rapport à l'ISO debian de référence (13.3.0) ; dont une vingtaine sont (aujourd'hui) exclusives à djibian.
 
 *Note : le mot de passe de l'utilisateur par défaut est :* ***foopgp***
 

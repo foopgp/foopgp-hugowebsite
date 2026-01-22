@@ -82,7 +82,9 @@ The latest ISO [^packages] is available here: <http://iso.foopgp.org/djibian/lat
 
 *Note: the default password of the default user:* ***foopgp***
 
-If you want to install **djibian** yourself, we recommend using [Ventoy](https://www.ventoy.net).
+If you want to install **djibian** yourself, we recommend using [Ventoy](https://www.ventoy.net/en/doc_start.html).
+
+*Little know bug: On few old machines, it seems impossible to start installation without using Ventoy.*
 
 Otherwise, we recommend contacting [our partners](/partner/).
 

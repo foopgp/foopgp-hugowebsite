@@ -32,7 +32,7 @@ Also facilitate changing passphrase protecting OpenPGP keys, or (PIN or Admin) c
 
 - **bl-json**: Use jq (Command-line JSON processor) to convert json data to bash variables or arrays, and vice-versa.
 
-- **bl-interactive**: Help managing interactive choices, while supporting multiple frontends: NONE, whiptail or dialog.
+- **bl-interactive**: Help managing interactive choices, while supporting multiple frontends: NONE, whiptail, dialog or zenity.
 
 - **bl-markdown**: Manipulate [markdown](https://en.wikipedia.org/wiki/Markdown). Today, only converts: markdown arrays <> bash arrays.
 
@@ -50,9 +50,6 @@ License](https://spdx.org/licenses/LGPL-3.0-only.html).*
 - **pgpid-gen**: Generate OpenPGP certifcates and secrets on multiple QR codes (physical secret sharing scheme).
 
 - **pgpid-qrscan**: Transfers OpenPGP secrets from pgpid QR codes to OpenPGP smartcard (eg: yubikey, nitrokey, ...).
-
-*Note: Now that the proof of concept stage has been validated, we are rewriting
-pgpid with more robust and maintainable code and with a little more user-friendly interface.*
 
 ### djibian.foopgp.org
 
@@ -78,7 +75,7 @@ sudo apt install bashlibs-all
 sudo apt install djibian-onboarding
 ```
 
-*Note:* ***bashlibs*** *has few dependencies and should be compatible with all Debian-like systems, eg: Ubuntu, Mint, etc..*
+*Note:* These packages have few dependencies and may be compatible with all Debian-like systems, eg: Ubuntu, Mint, etc..*
 
 ### keys.foopgp.org
 

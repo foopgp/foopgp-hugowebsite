@@ -32,7 +32,7 @@ Facilite également la modification des mots de passe protégeant les clés Open
 
 - **bl-json** : utilise jq (processeur JSON en ligne de commande) pour convertir des données json en variables ou tableaux bash, et vice-versa.
 
-- **bl-interactive** : aide à gérer les choix interactifs, tout en prenant en charge plusieurs interfaces : NONE, whiptail ou dialog.
+- **bl-interactive** : aide à gérer les choix interactifs, tout en prenant en charge plusieurs interfaces : NONE, whiptail, dialog ou zenity.
 
 - **bl-markdown** : manipule des données au format [markdown](https://en.wikipedia.org/wiki/Markdown). Aujourd'hui, sert principalement à convertir : tableaux markdown <> tableaux bash.
 
@@ -49,8 +49,6 @@ Facilite également la modification des mots de passe protégeant les clés Open
 - **pgpid-gen** : génère des certificats et des secrets OpenPGP sur plusieurs codes QR (schéma de partage de secrets physiques).
 
 - **pgpid-qrscan** : transfère les secrets OpenPGP des codes QR pgpid vers une carte à puce OpenPGP (par exemple : yubikey, nitrokey, ...).
-
-*Remarque : Conception validé - nous somme en train de réécrire pgpid avec un code plus robuste et plus facile à maintenir, ainsi qu'avec une interface plus conviviale.*
 
 ### djibian.foopgp.org
 
@@ -76,7 +74,7 @@ sudo apt install bashlibs-all
 sudo apt install djibian-onboarding
 ```
 
-*Remarque : le paquet* ***bashlibs*** *ayant peu de dépendances, il devrait être compatible avec tous systèmes de type Debian : Ubuntu, Mint, etc.*
+*Remarque : ces paquets ayant peu de dépendances, ils pourraient être compatibles avec tous systèmes de type Debian : Ubuntu, Mint, etc.*
 
 ### keys.foopgp.org
 

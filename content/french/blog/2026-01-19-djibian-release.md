@@ -76,7 +76,7 @@ La dernière ISO [^packages] est ici : <http://iso.foopgp.org/djibian/latest>.
 
 Si vous souhaitez par vous-mêmes installer **djibian**, nous vous conseillons d'utiliser [Ventoy](https://www.ventoy.net/en/doc_start.html).
 
-*Petit bug à connaître : sur certaines machines anciennes, il semble impossible de démarrer l'installation sans utiliser Ventoy.*
+***Problème connu :*** *sur certaines machines anciennes, il semble impossible de démarrer l'installation sans utiliser Ventoy.*
 
 Sinon nous vous conseillons de vous fournir auprès de [nos partenaires](/fr/partner/). Notamment :
 - [Sun Valley Systems](/fr/partner/sun-valley-systems/) à [Gap](//www.openstreetmap.org/node/7375918682).

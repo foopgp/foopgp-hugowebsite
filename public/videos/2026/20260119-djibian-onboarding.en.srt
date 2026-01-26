@@ -44,7 +44,7 @@ Do you have the QR codes? <No>.
 
 12
 00:00:22,340 --> 00:00:28,340
-Enter your birth last name, first name, date of birth, and finally your country of birth.
+Enter your birth last names, first name, date of birth, and finally your country of birth.
 
 13
 00:00:28,340 --> 00:00:30,180

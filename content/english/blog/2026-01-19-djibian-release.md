@@ -56,7 +56,7 @@ Furthermore, with efficiency and simplicity as our watchwords, **Djibian** GNU/L
 
 A short video is better than a long speech:
 
-{{< video src="/videos/2026/20260119-djibian-onboarding.mp4" type="video/mp4" >}}
+{{< video src="/videos/2026/20260126-djibian-clepgp.mp4" type="video/mp4" >}}
 
 *Subtitles: [french](/videos/2026/20260119-djibian-onboarding.fr.srt), [english](/videos/2026/20260119-djibian-onboarding.en.srt).*
 
@@ -83,8 +83,6 @@ The latest ISO [^packages] is available here: <http://iso.foopgp.org/djibian/lat
 *Note: the default password of the default user:* ***foopgp***
 
 If you want to install **djibian** yourself, we recommend using [Ventoy](https://www.ventoy.net/en/doc_start.html).
-
-***Known issue:*** *on few old machines, it seems impossible to start installation without using Ventoy.*
 
 Otherwise, we recommend contacting [our partners](/partner/).
 

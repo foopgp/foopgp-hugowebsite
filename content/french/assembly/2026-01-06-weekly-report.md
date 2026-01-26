@@ -1,5 +1,5 @@
 ---
-title: "2026 S01 Rapport Hebdomadaire"
+title: "2026 S02 Rapport Hebdomadaire"
 lang: fr
 date: 2026-01-06T21:00:00+02:00
 draft: false

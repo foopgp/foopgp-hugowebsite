@@ -3,99 +3,49 @@ title: "Courriel"
 lang: fr
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-author: [ ChatGPT, "Maël Lemoine", "Evyn Faure" ]
-description : "Solutions pour le courriel."
+author: [ "Maël Lemoine", "Evyn Faure" ]
+description: "Solutions pour sécuriser les courriels avec OpenPGP."
 image: "images/solutions/mail-scryptmail-logo_large.png"
 tags: ["email"]
 categories: ["solution"]
 type: "post"
 ---
 
-Si vous avez des changements à suggérer [-> Codeberg](https://codeberg.org/foopgp/foopgp-hugowebsite/_edit/test/content/french/solutions/theme-email.md).
+Si vous avez des améliorations ou corrections à proposer, vous pouvez contribuer directement sur
+[Codeberg](https://codeberg.org/foopgp/foopgp-hugowebsite/_edit/test/content/french/solutions/theme-email.md).
 
 ---
 
-### Clients mail compatibles OpenPGP
+## Démonstration : sécuriser un courriel avec OpenPGP
 
-Nos suggestions de clients email supportant OpenPGP :
+Cette démonstration présente les bases de la sécurisation des courriels avec OpenPGP :
 
+- chiffrer un message pour garantir sa confidentialité,
+- déchiffrer un courriel reçu,
+- signer un message pour prouver son authenticité,
+- vérifier la signature d’un courriel.
 
-- Pour ordinateur (GNU/Linux…) :
-  - [Evolution](https://help.gnome.org/users/evolution/stable/intro-main-window.html.fr) + [GnuPG](https://gnupg.org/)
-  - [Thunderbird](https://www.thunderbird.net/fr/) + [GnuPG](https://gnupg.org/)
+La démonstration est réalisée avec
+[**Evolution**](https://help.gnome.org/users/evolution/stable/intro-main-window.html.fr) et [**GnuPG**](/fr/about/openpgp/) pour la gestion des clés.
 
-- Sur Android :
-  - [K9 Mail](https://k9mail.github.io/) + [OpenKeychain](https://www.openkeychain.org/)
-
-- Pour Windows ou Mac :
-  - [Thunderbird](https://www.thunderbird.net/fr/) + [GnuPG](https://gnupg.org/)
-
-
-De nombreux autres clients mails sont compatibles OpenPGP, vous en trouverez ici :
-
-- https://www.openpgp.org/software/
-- [sur Framalibre](https://framalibre.org/recherche-par-crit-res?keys=pgp+OR+gpg) (la requête ne cherche pas que les clients mails).
+{{< video src="/videos/2026/20260123-djibian-mail-chiffre.mp4" type="video/mp4" >}}
 
 ---
 
-### Ordinateurs
+## Clients mail compatibles OpenPGP
 
-[**Evolution**](https://help.gnome.org/users/evolution/stable/index.html.fr) ou [**Thunderbird**](https://www.thunderbird.net/fr/) permettent de gérer vos courriels, contacts, tâches et agendas. Via GnuPG, ils prennent en charge les clés de sécurité OpenPGP pour sécuriser les courriels.
+- [Evolution](https://help.gnome.org/users/evolution/stable/intro-main-window.html.fr) : ordinateurs Linux/Unix.
+- [Thunderbird](https://www.thunderbird.net/fr/) : Linux/Unix, Windows, macOS, Android et IOS.
+- [K-9 Mail](https://k9mail.app/) : smartphones Android.
 
-#### Fonctionnalités PGP d'Evolution ou Thunderbird
+## Cas d’usage
 
-1. **Chiffrement des emails :**
-   - Evolution ou Thunderbird permettent de chiffrer les emails en utilisant le certificat du destinataire. Cela garantit que seuls les destinataires autorisés peuvent lire le contenu du message.
-   - Pour chiffrer un email, vous devez avoir importé le certificat du destinataire dans votre trousseau de clés.
+- **Evolution / Thunderbird** + **GnuPG** : usage personnel ou professionnel sur ordinateur, avec des fonctionnalités complètes.
+- **K-9 Mail / Thunderbird** + **OpenKeychain** : usage mobile sécurisé, idéal en déplacement.
 
-2. **Déchiffrement des emails :**
-   - Lors de la réception d'un email chiffré, Evolution ou Thunderbird utilisent votre clé privée pour déchiffrer le message afin que vous puissiez le lire.
+---
 
-3. **Signature numérique :**
-   - Evolution ou Thunderbird permettent de signer numériquement les emails en utilisant votre clé privée. Cela permet au destinataire de vérifier l'authenticité et l'intégrité du message à l'aide de votre clé publique.
-   - La signature numérique assure que le message n'a pas été altéré en transit et qu'il provient bien de vous.
+## Conclusion
 
-4. **Vérification des signatures :**
-   - Lors de la réception d'un email signé numériquement, Evolution ou Thunderbird vérifient la signature en utilisant le certificat de l'expéditeur pour confirmer l'authenticité du message.
-
-5. **Gestion des clés :**
-   - Evolution ou Thunderbird s'intègrent avec des gestionnaires de clés comme GnuPG pour la gestion des certificats et clés OpenPGP. Vous pouvez importer, exporter et gérer les certificats et vos clés directement depuis l'application.
-
-### Smartphones
-
-[**K-9 Mail**](https://k9mail.app/) est un client de messagerie open source pour Android qui utilise les clés de sécurité via OpenKeychain, une application de gestion de clés OpenPGP pour Android.
-
-#### Fonctionnalités PGP de K-9 Mail
-
-1. **Chiffrement des emails :**
-   - K-9 Mail, en combinaison avec OpenKeychain, permet de chiffrer les emails en utilisant le certificat du destinataire. Les emails chiffrés garantissent que seuls les destinataires prévus peuvent lire le message.
-
-2. **Déchiffrement des emails :**
-   - Lors de la réception d'un email chiffré, K-9 Mail utilise OpenKeychain pour demander à votre clé de sécurité (YubiKey, Nitrokey,...) de déchiffrer le message, permettant ainsi la lecture du contenu.
-
-3. **Signature numérique :**
-   - Vous pouvez signer numériquement vos emails avec K-9 Mail et OpenKeychain. En utilisant votre clé de sécurité (YubiKey, Nitrokey,...), vous pouvez ajouter une signature numérique à vos messages, assurant ainsi leur authenticité et intégrité.
-
-4. **Vérification des signatures :**
-   - K-9 Mail, avec l'aide d'OpenKeychain, vérifie les signatures numériques des emails reçus en utilisant le certificat de l'expéditeur. Cela confirme que le message est authentique et n'a pas été modifié.
-
-5. **Gestion des clés :**
-   - OpenKeychain gère OpenPGP pour K-9 Mail. Vous pouvez importer, exporter et gérer les certificats OpenPGP et vos clés de sécurité à partir de l'application OpenKeychain.
-
-### Comparaison entre Evolution ou Thunderbird et K-9 Mail
-
-#### Plateforme
-
-- **Evolution** : Destiné aux ordinateurs de bureau sous Linux/Unix avec une intégration d'OpenPGP via GnuPG.
-- **Thunderbird** : Destiné aux ordinateurs de bureau sous Linux/Unix, Windows ou Mac. Il faut le configurer pour utiliser GnuPG afin d'utiliser des clés de sécurité.
-- **K-9 Mail** : Conçu pour les appareils Android, nécessitant l'application OpenKeychain pour la gestion des certificats et clés OpenPGP.
-
-#### Utilisation
-
-- **Evolution**, **Thunderbird** : Idéaux pour une utilisation professionnelle ou personnelle sur des ordinateurs de bureau, avec des fonctionnalités complètes de gestion de messagerie, agenda, contact.
-- **K-9 Mail** : Parfait pour une utilisation mobile, permettant aux utilisateurs de gérer leurs emails en toute sécurité en déplacement.
-
-### Conclusion
-
-**Evolution**, **Thunderbird** et **K-9 Mail** offrent tous une prise en charge robuste d'OpenPGP pour sécuriser les communications par email. Evolution ou Thunderbird utilisent GnuPG, tandis que K-9 Mail utilise OpenKeychain pour fournir des fonctionnalités similaires sur les appareils Android. Ces deux clients de messagerie permettent aux utilisateurs de chiffrer, déchiffrer, signer et vérifier les emails, assurant ainsi la confidentialité et l'authenticité des communications électroniques.
-
+**Evolution**, **Thunderbird** et **K-9 Mail** sont des applications de messagerie offrant une prise en charge fiable d’OpenPGP pour sécuriser vos courriels.
+Selon la plateforme utilisée, ces applications utilisent **GnuPG** ou **OpenKeychain** pour chiffrer, déchiffrer, signer et vérifier les messages, assurant ainsi la confidentialité et l’authenticité des échanges.

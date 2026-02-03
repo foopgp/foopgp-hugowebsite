@@ -48,9 +48,12 @@ De plus et toujours, efficacité et sobriété étant nos maîtres mots, **Djibi
 
 Une petite vidéo valant mieux qu'un long discours :
 
-{{< video src="/videos/2026/20260126-djibian-clepgp.mp4" type="video/mp4" >}}
-
-*Sous-titres: [français](/videos/2026/20260119-djibian-onboarding.fr.srt), [anglais](/videos/2026/20260119-djibian-onboarding.en.srt).*
+{{< video
+  src="/videos/2026/20260126-djibian-clepgp.mp4"
+  type="video/mp4"
+  sub_fr="/videos/2026/sous-titre-fr-cle-pgp.vtt"
+  sub_en="/videos/2026/sous-titre-en-cle-pgp.vtt"
+>}}
 
 ---
 

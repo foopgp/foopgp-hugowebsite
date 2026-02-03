@@ -56,9 +56,12 @@ Furthermore, with efficiency and simplicity as our watchwords, **Djibian** GNU/L
 
 A short video is better than a long speech:
 
-{{< video src="/videos/2026/20260126-djibian-clepgp.mp4" type="video/mp4" >}}
-
-*Subtitles: [french](/videos/2026/20260119-djibian-onboarding.fr.srt), [english](/videos/2026/20260119-djibian-onboarding.en.srt).*
+{{< video
+  src="/videos/2026/20260126-djibian-clepgp.mp4"
+  type="video/mp4"
+  sub_fr="/videos/2026/sous-titre-fr-cle-pgp.vtt"
+  sub_en="/videos/2026/sous-titre-en-cle-pgp.vtt"
+>}}
 
 ---
 

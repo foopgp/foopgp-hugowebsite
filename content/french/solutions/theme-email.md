@@ -3,7 +3,7 @@ title: "Courriel"
 lang: fr
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-author: [ "Maël Lemoine", "Evyn Faure" ]
+author: [ "Maël Lemoine" ]
 description: "Solutions pour sécuriser les courriels avec OpenPGP."
 image: "images/solutions/mail-scryptmail-logo_large.png"
 tags: ["email"]
@@ -28,7 +28,12 @@ Cette démonstration présente les bases de la sécurisation des courriels avec 
 La démonstration est réalisée avec
 [**Evolution**](https://help.gnome.org/users/evolution/stable/intro-main-window.html.fr) et [**GnuPG**](/fr/about/openpgp/) pour la gestion des clés.
 
-{{< video src="/videos/2026/20260123-djibian-mail-chiffre.mp4" type="video/mp4" >}}
+{{< video
+  src="/videos/2026/20260123-djibian-mail-chiffre.mp4"
+  type="video/mp4"
+  sub_fr="/videos/2026/sous-titre-fr-mail-chiffre.vtt"
+  sub_en="/videos/2026/sous-titre-en-mail-chiffre.vtt"
+>}}
 
 ---
 

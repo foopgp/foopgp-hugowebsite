@@ -1,7 +1,33 @@
 {{- $video_src := .Get "src" -}}
 {{- $width := "100%" -}}
-<video class="video-shortcode" {{ if ne (.Get "controls") "false" }}controls {{ end }}preload="auto" width="{{ or (.Get "width") $width }}" {{ with .Get "height" }}height="{{.}}"{{ end }} {{ if eq (.Get "autoplay") "true" }}autoplay {{ end }}{{ if eq (.Get "loop") "true" }}loop {{ end }}{{ if eq (.Get "muted") "true" }}muted {{ end }}{{ with .Get "poster" }}poster="{{ .RelPermalink }}" {{ end }}playsinline >
-    <source src="{{ $video_src }}" type="{{ .Get "type" }}">
-    There should have been a video here but your browser does not seem
-    to support it.
+{{- $pageLang := .Page.Lang -}}
+
+<video class="video-shortcode"
+  {{ if ne (.Get "controls") "false" }}controls{{ end }}
+  preload="auto"
+  width="{{ or (.Get "width") $width }}"
+  {{ with .Get "height" }}height="{{ . }}"{{ end }}
+  {{ if eq (.Get "autoplay") "true" }}autoplay{{ end }}
+  {{ if eq (.Get "loop") "true" }}loop{{ end }}
+  {{ if eq (.Get "muted") "true" }}muted{{ end }}
+  {{ with .Get "poster" }}poster="{{ . }}"{{ end }}
+  playsinline
+>
+
+  <source src="{{ $video_src }}" type="{{ .Get "type" }}">
+
+  {{ range $key, $value := .Params }}
+    {{ if hasPrefix $key "sub_" }}
+      {{ $lang := replace $key "sub_" "" }}
+      <track
+        src="{{ $value }}"
+        kind="subtitles"
+        srclang="{{ $lang }}"
+        label="{{ upper $lang }}"
+        {{ if eq $lang $pageLang }}default{{ end }}
+      >
+    {{ end }}
+  {{ end }}
+
+  Your browser does not support the video tag.
 </video>

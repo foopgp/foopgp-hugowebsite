@@ -14,7 +14,7 @@ financent le travail de l'association pour permettre [la transition d'un systèm
 économique et politique qui détruit nos vies et notre planète, vers un nouveau
 système plus respectueux de l'ensemble du vivant](/fr/about/white-book/).
 
-Les jetons foopgp, aussi appelés *djis* (**Ɉ**), sont comparables à des actions : ils sont librement échangeables entre les adhérents de l'association et la quantité de djis possédée par chacun détermine le nombre de voix dont il dispose, lorsque nous devons prendre des décisions qui n'ont pas trouvé de consensus.
+Les jetons foopgp, aussi appelés *djis* (**Ɉ**), sont comparables à des actions : ils sont librement échangeables entre les adhérents de l'association et, lorsque nous devons prendre des décisions qui ne trouvent pas de consensus, nous votons avec un nombre de voix dépendant de la quantité de djis sur nos portefeuilles nominatifs.
 
 Cependant, la comparaison s'arrête là, car ces jetons ont d'autres caractéristiques très intéressantes :
 
@@ -24,7 +24,7 @@ Cependant, la comparaison s'arrête là, car ces jetons ont d'autres caractéris
 
 - Les gros actionnaires n'ont pas forcément plus de pouvoir que les petits. Nos règles permettant de régler finement le curseur entre « une part, une voix » et « une personne, une voix ». Voir l'article 8 de notre [règlement intérieur](/fr/about/rules-of-procedures/).
 
-- Grâce aux [technologies que nous assemblons et développons](/fr/solutions/activity-rd/) ([OpenPGP](/fr/about/openpgp/), [git](https://fr.wikipedia.org/wiki/Git), [blockchain](https://netfuture.ch/2022/02/git-pgp-blockchain-comparison/), ...), les échanges en *djis* (**Ɉ**) seront extrêmement faciles et peu couteux, pour l'ensemble du monde.
+- Grâce aux [technologies que nous assemblons et développons](/fr/solutions/activity-rd/) ([OpenPGP](/fr/about/openpgp/), [git](https://fr.wikipedia.org/wiki/Git), [blockchain](https://netfuture.ch/2022/02/git-pgp-blockchain-comparison/), ...), les échanges en *djis* (**Ɉ**) sont extrêmement faciles et peu couteux, pour l'ensemble du monde.
 
 ---
 

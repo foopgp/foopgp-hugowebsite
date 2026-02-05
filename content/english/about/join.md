@@ -11,7 +11,7 @@ The best way to support [the project](/about/white-book/) is to invest in the fo
 
 These membership fees allow you to obtain your first FOOPGP tokens and finance the association's work to enable [the transition from a monetary, economic, and political system that is destroying our lives and our planet, to a new system more respectful of all living things](/about/white-book/)
 
-Foopgp tokens, also known as *djis* (**Ɉ**), are comparable to shares: they are freely exchangeable between members of the association, and the number of djis owned by each member determines the number of votes they have, when decisions that have not reached consensus need to be made.
+Foopgp tokens, also known as *djis* (**Ɉ**), are comparable to shares: they are freely exchangeable between members of the association and, when we have to make decisions that do not reach consensus, we vote with a number of votes depending on the amount of djis in our nominative wallets.
 
 However, the comparison ends there, as these tokens have other very interesting characteristics:
 
@@ -21,7 +21,7 @@ However, the comparison ends there, as these tokens have other very interesting 
 
 - Large shareholders do not necessarily have more power than small shareholders. As our rules allow us to fine-tune the balance between “one share, one vote” and “one person, one vote.” See Article 8 of our [rules of procedures](/about/rules-of-procedures/).
 
-- Thanks to the [technologies we assemble and develop](/solutions/activity-rd/) ([OpenPGP](/about/openpgp/), [git](https://en.wikipedia.org/wiki/Git), [blockchain](https://netfuture.ch/2022/02/git-pgp-blockchain-comparison/), ...), exchanges in *djis* (**Ɉ**) will be extremely easy and inexpensive for the whole world.
+- Thanks to the [technologies we assemble and develop](/solutions/activity-rd/) ([OpenPGP](/about/openpgp/), [git](https://en.wikipedia.org/wiki/Git), [blockchain](https://netfuture.ch/2022/02/git-pgp-blockchain-comparison/), ...), exchanges in *djis* (**Ɉ**) are extremely easy and inexpensive for the whole world.
 
 ---
 

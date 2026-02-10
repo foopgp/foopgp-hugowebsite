@@ -1,36 +1,38 @@
 ---
-Title:   "Présentation de Djibian"
-Date:    2026-01-20T01:30:00+02:00
+Title:   "Visite guidée (Jour 1)"
+Date:    2026-02-10T01:30:00+02:00
 Tags:    [ "djibian", "debian" ]
 categories: [ "News" ]
-draft: true
-author: ["Maël Lemoine" ]
-description : "Présentation et démonstration de Djibian"
+draft: false
+author: ["Maël Lemoine", "Jean-Jacques Brucker" ]
+description : "Rapide présentation vidéo de Djibian"
 lang: fr
-bg_image: "images/backgrounds/Cartographie.jpg"
-image: "images/logos/djibian_square_logo.png"
+bg_image: "images/backgrounds/party-event.jpg"
+image: "images/blog/2026/djibian-tour.png"
 type: "post"
 ---
 
-## Présentation de Djibian
+## ✨ Djibian : sûr, léger, rapide et intuitif.
 
-Dans cet article, nous vous proposons une présentation de **Djibian**, à travers une démonstration vidéo mettant en avant ses fonctionnalités.
+En plus d'être [le seul système d'exploitation qui vous respecte](/fr/blog/2026-01-19-djibian-release/), **Djibian** a été pensé pour tous.
 
-L’objectif est de montrer concrètement son fonctionnement et son utilisation au quotidien.
-
-### Contenu de la vidéo
-
-Dans cette vidéo, je présente :
-
-- Les différents menus et l’interface générale du système  
-- L’utilisation des mails avec les clés PGP  
-- L’application **« Logiciel »** pour installer des programmes  
-- L’installation de jeux afin de démontrer que même avec un ordinateur peu puissant, les performances restent correctes  
-- La suite **LibreOffice**
-
-Cette démonstration permet d’avoir une vue d’ensemble claire et pratique de Djibian.
+En effet : **Djibian** combine légèreté, simplicité et efficacité pour transformer votre expérience informatique en un vrai plaisir au quotidien.
 
 ---
+
+### Ce que vous allez découvrir dans cette video :
+
+- **Un bureau XFCE élégant et intuitif**  
+  Naviguez facilement grâce à ses menus clairs et ses applications par défaut prêtes à l’emploi.  
+
+- **Installation de logiciels en un clic**  
+  Avec l’application **Logiciels**, ajoutez vos applications favorites en toute simplicité.  
+
+- **Des performances étonnantes pour vos jeux**  
+  Même sur un PC modeste, profitez d’une expérience fluide et réactive.  
+
+- **La suite LibreOffice complète**  
+  Pour créer facilement documents, tableaux et présentations comme un pro.
 
 {{< video
   src="/videos/2026/2026-02-06-djibian.mp4"

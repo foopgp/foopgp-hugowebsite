@@ -7,13 +7,13 @@ draft: false
 author: [ "Jean-Jacques Brucker", "Sébastien Picardeau", "Maël Lemoine" ]
 description : "Djibian O.S.: you can trust."
 lang: en
-bg_image: "images/backgrounds/Cartographie.jpg"
+bg_image: "images/backgrounds/party-event.jpg"
 image: "images/logos/djibian_square_logo.png"
 type: "post"
 ---
 
 
-*Note: For an introduction to Djibian, [see the previous post](/blog/2025-09-12-welcome-djibian/). Please subscribe to [our mailing lists](/contact/) to get informed.*
+*Note: For a first introduction to Djibian, [see the previous post](/blog/2025-09-12-welcome-djibian/). For a larger overview of Djibian, [see the next post](/blog/2026-02-10-djibian-tour/). To stay informed, [subscribe to our mailing lists](/contact/).*
 
 #### Clairette [^clairette]!
 

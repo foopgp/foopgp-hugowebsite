@@ -7,18 +7,18 @@ draft: false
 author: [ "Jean-Jacques Brucker", "Sébastien Picardeau", "Maël Lemoine" ]
 description : "Djibian O.S., le système qui vous respecte."
 lang: fr
-bg_image: "images/backgrounds/Cartographie.jpg"
+bg_image: "images/backgrounds/party-event.jpg"
 image: "images/logos/djibian_square_logo.png"
 type: "post"
 ---
 
-*Note: Pour une première présentation de djibian, [voir le post précédent](/fr/blog/2025-09-12-welcome-djibian/). Restez informé en vous inscrivant à [nos listes de diffusion](/fr/contact/).*
+*Note: Pour une première introduction à Djibian, [voir le post précédent](/fr/blog/2025-09-12-welcome-djibian/). Pour un plus large aperçu de Djibian, [voir le post suivant](/fr/blog/2026-02-10-djibian-tour/). Pour rester informé, [inscrivez-vous à nos listes de diffusion](/fr/contact/).*
 
 #### Clairette [^clairette] !
 
 [^clairette]: Proximité avec Die et préférence pour les produits locaux obligent. Leurs bouchons sautent aussi bien que ceux du champagne.
 
-***Après plus de 3 ans de Recherche et Développement [^CVjjb], nous avons l'immense fierté de livrer la première version stable de [djibian](/fr/blog/2025-09-12-welcome-djibian/), le système d'exploitation qui sécurise vos données et respecte votre vie privée***.
+***Après plus de 3 ans de Recherche et Développement [^CVjjb], nous avons l'immense fierté de livrer la première version stable de [Djibian](/fr/blog/2025-09-12-welcome-djibian/), le système d'exploitation qui sécurise vos données et respecte votre vie privée***.
 
 [^CVjjb]: On pourrait même chiffrer la R&D à plus de 15 ans, si l'on en croit le [CV impressionnant du fondateur](https://domesticserver.org/myresume/) (en toute modestie bien sûr, de toute façon personne ne lit les notes de bas de page... n'est-ce pas ?).
 ---

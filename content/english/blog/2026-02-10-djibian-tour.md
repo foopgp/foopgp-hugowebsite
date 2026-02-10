@@ -1,36 +1,38 @@
 ---
-Title:   "Djibian Presentation"
-Date:    2026-01-20T01:30:00+02:00
+Title:   "Djibian Tour (Day 1)"
+Date:    2026-02-10T01:30:00+02:00
 Tags:    [ "djibian", "debian" ]
 categories: [ "News" ]
-draft: true
-author: ["Maël Lemoine" ]
-description : "Presentation and demonstration of Djibian"
+draft: false
+author: ["Maël Lemoine", "Jean-Jacques Brucker" ]
+description : "Fast overview of Djibian"
 lang: en
-bg_image: "images/backgrounds/Cartographie.jpg"
-image: "images/logos/djibian_square_logo.png"
+bg_image: "images/backgrounds/party-event.jpg"
+image: "images/blog/2026/djibian-tour.png"
 type: "post"
 ---
 
-## Djibian Presentation
+## ✨ Djibian: Safe, Lightweight, Fast, and Intuitive
 
-In this article, we present **Djibian** through a video demonstration highlighting its main features.
+In addition to being [the only privacy-respecting operating systems](/blog/2026-01-19-djibian-release/), **Djibian** is designed for everyone.
 
-The goal is to clearly show how it works and how it can be used in everyday situations.
-
-### Video Content
-
-In this video, I present:
-
-- The different menus and the overall system interface  
-- The use of email with PGP keys  
-- The **"Software"** application for installing programs  
-- The installation of games to demonstrate that even on a low-powered computer, performance remains satisfactory  
-- The **LibreOffice** suite  
-
-This demonstration provides a clear and practical overview of Djibian.
+Indeed, **Djibian** combines lightness, simplicity, and efficiency to make your computing experience a true daily pleasure.
 
 ---
+
+### What you’ll discover in this video:
+
+- **A sleek and intuitive XFCE desktop**  
+  Navigate effortlessly with its clear menus and ready-to-use default applications.
+
+- **One-click software installation**  
+  With the **Software** app, easily add your favorite applications.
+
+- **Impressive performance for your games**  
+  Even on a modest PC, enjoy a smooth and responsive experience.
+
+- **The complete LibreOffice suite**  
+  Easily create documents, spreadsheets, and presentations like a pro.
 
 {{< video
   src="/videos/2026/2026-02-06-djibian.mp4"

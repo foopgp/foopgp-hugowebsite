@@ -1,104 +1,106 @@
 WEBVTT
 
-00:00:00,000 --> 00:00:04,860
-Hello, I’m going to give you a quick presentation of Jibian. First of all, we can see that on the
+00:00:00.000 --> 00:00:04.860
+Hello, I’m going to give you a quick presentation of Djibian. First of all, we can see that on the
 
-00:00:04,860 --> 00:00:09,540
+00:00:04.860 --> 00:00:09.540
 right we have a menu here. This is used to go back directly, close all pages, and return
 
-00:00:09,540 --> 00:00:15,060
+00:00:09.540 --> 00:00:15.060
 to the main menu. This here is the terminal emulator. Here is where you can see all the software; we’ll
 
-00:00:15,060 --> 00:00:19,280
+00:00:15.060 --> 00:00:19.280
 see a bit later what it’s used for. This is the file manager, which lets you see all
 
-00:00:19,280 --> 00:00:28,760
+00:00:19.280 --> 00:00:28.760
 your files. Firefox is a web browser, Chromium as well, Thunderbird is an email client, Evolution
 
-00:00:28,760 --> 00:00:36,080
+00:00:28.760 --> 00:00:36.080
 too, and here we have LibreOffice. At the bottom left, we can see Applications; here all the applications
 
-00:00:36,080 --> 00:00:40,820
+00:00:36.080 --> 00:00:40.820
 are sorted and categorized. If you’re looking for a specific application, you can click
 
-00:00:40,820 --> 00:00:46,160
+00:00:40.820 --> 00:00:46.160
 right here on the small magnifying glass, which opens a search. For example, if we search for the terminal,
 
-00:00:46,160 --> 00:00:51,380
+00:00:46.160 --> 00:00:51.380
 hop, we find it. At the bottom right, we have other information, such as
 
-00:00:51,380 --> 00:00:56,720
+00:00:51.380 --> 00:00:56.720
 the two screens I have, the battery, whether your microphones and speakers are enabled,
 
-00:00:56,720 --> 00:01:02,840
+00:00:56.720 --> 00:01:02.840
 you can manage the power, see if you are connected to Wi-Fi, and the applications you are using. Here
 
-00:01:02,840 --> 00:01:07,320
+00:01:02.840 --> 00:01:07.320
 is the update indicator. You can see that I’m up to date, but if you’re not,
 
-00:01:07,320 --> 00:01:11,360
+00:01:07.320 --> 00:01:11.360
 you’ll have a big red warning panel, so you’ll know that you need to update.
 
-00:01:11,360 --> 00:01:16,520
+00:01:11.360 --> 00:01:16.520
 Here you can see how much the processor is being used; this is the task manager. Here is the
 
-00:01:16,520 --> 00:01:22,140
+00:01:16.520 --> 00:01:22.140
 date and time, and finally the user currently logged into the computer. Now I’m going to show you some
 
-00:01:22,140 --> 00:01:27,640
+00:01:22.140 --> 00:01:27.640
 useful applications. Here we can see the two email clients, Thunderbird and Evolution. They are
 
-00:01:27,640 --> 00:01:31,860
+00:01:27.640 --> 00:01:31.860
 more secure than webmail, and they are very practical because you can use them with
 
-00:01:31,860 --> 00:01:37,080
+00:01:31.860 --> 00:01:37.080
 PGP keys. Now let’s look at Software. This allows you to install all kinds of
 
-00:01:37,080 --> 00:01:46,140
-applications, games, and so on. For example, I’m going to install Lunanti. As you can see here, you can
+00:01:37.080 --> 00:01:46.140
+applications, games, and so on. For example, I’m going to install Luanti. As you can see here, you can
 
-00:01:46,140 --> 00:01:53,760
+00:01:46.140 --> 00:01:53.760
 install it directly; you just need your user password. Once the game is installed,
 
-00:01:53,760 --> 00:02:01,380
+00:01:53.760 --> 00:02:01.380
 you just have to open it. Hop, you arrive at the test screen. I already played a demo,
 
-00:02:01,380 --> 00:02:07,860
+00:02:01.380 --> 00:02:07.860
 so just for information, I have a computer with 4 GB of RAM, and you can see that it works very well.
 
-00:02:07,860 --> 00:02:19,200
+00:02:07.860 --> 00:02:19.200
 I can build, I can break things. Or there’s also SuperTuxKart, a Mario Kart–style game but under a free license.
 
-00:02:19,200 --> 00:02:27,180
+00:02:19.200 --> 00:02:27.180
 Once the game is installed, you launch it and you’ll see that you can configure everything. So here,
 
-00:02:27,180 --> 00:02:35,580
+00:02:27.180 --> 00:02:35.580
 I’m going to play solo. You can choose your character, your difficulty level, do a normal race,
 
-00:02:35,580 --> 00:02:42,000
+00:02:35.580 --> 00:02:42.000
 your level, the number of laps, the number of opponent karts, the driving direction. Hop, you can start,
 
-00:02:42,000 --> 00:02:49,500
+00:02:42.000 --> 00:02:49.500
 and that’s it. And here, the game runs normally.
 
-00:02:59,500 --> 00:03:04,500Now that we’ve had fun with games, you can see that it’s more professional. You have all the LibreOffice
+00:02:59.500 --> 00:03:04.500
+Now that we’ve had fun with games. you can see that it’s more professional. You have all the LibreOffice
 
-00:03:04,500 --> 00:03:13,000
+00:03:04.500 --> 00:03:13.000
 applications: classic LibreOffice, Calc, Draw, Impress,
 
-00:03:13,000 --> 00:03:21,600
+00:03:13.000 --> 00:03:21.600
 Math, and Printer. You can select everything. So here, for example, I choose something and you can see
 
-00:03:21,600 --> 00:03:29,820
+00:03:21.600 --> 00:03:29.820
 that it works the same way, but using free software. You can also see that there are other useful
 
-00:03:29,820 --> 00:03:35,280
-programs you can install. For example, in Development, I have Code OSS, which is a derivative of VS Code
+00:03:29.820 --> 00:03:35.280
+programs you can install. For example, in Development, I have VS Codium, which is like VS Code
 
-00:03:35,280 --> 00:03:37,320
-but in a free version. You can also do graphic design.
+00:03:35.280 --> 00:03:37.320
+but it's a free software. You can also do graphic design.
 
-00:03:41,760 --> 00:03:46,260
-In Multimedia, for example, I have Shotcut, which is the software I
-use00:03:46,260 --> 00:03:48,820
+00:03:41.760 --> 00:03:46.260
+In Multimedia, for example, I have Shotcut, which is the software I use
+
+00:03:46.260 --> 00:03:48.820
 to do video editing, including the video I’m currently creating.

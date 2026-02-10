@@ -33,10 +33,10 @@ This demonstration provides a clear and practical overview of Djibian.
 ---
 
 {{< video
-  src="/videos/2026/20260123-djibian-mail-chiffre.mp4"
+  src="/videos/2026/2026-02-06-djibian.mp4"
   type="video/mp4"
-  sub_fr="/videos/2026/sous-titre-fr-mail-chiffre.vtt"
-  sub_en="/videos/2026/sous-titre-en-mail-chiffre.vtt"
+  sub_fr="/videos/2026/2026-02-06-djibian.fr.vtt"
+  sub_en="/videos/2026/2026-02-06-djibian.en.vtt"
 >}}
 
 ---

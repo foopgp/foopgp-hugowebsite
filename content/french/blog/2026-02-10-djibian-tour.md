@@ -14,7 +14,7 @@ type: "post"
 
 ## Présentation de Djibian
 
-Dans cet article, nous vous proposons une présentation de **Djibian**, à travers une démonstration vidéo mettant en avant ses principales fonctionnalités.
+Dans cet article, nous vous proposons une présentation de **Djibian**, à travers une démonstration vidéo mettant en avant ses fonctionnalités.
 
 L’objectif est de montrer concrètement son fonctionnement et son utilisation au quotidien.
 
@@ -33,10 +33,10 @@ Cette démonstration permet d’avoir une vue d’ensemble claire et pratique de
 ---
 
 {{< video
-  src="/videos/2026/20260123-djibian-mail-chiffre.mp4"
+  src="/videos/2026/2026-02-06-djibian.mp4"
   type="video/mp4"
-  sub_fr="/videos/2026/sous-titre-fr-mail-chiffre.vtt"
-  sub_en="/videos/2026/sous-titre-en-mail-chiffre.vtt"
+  sub_fr="/videos/2026/2026-02-06-djibian.fr.vtt"
+  sub_en="/videos/2026/2026-02-06-djibian.en.vtt"
 >}}
 
 ---

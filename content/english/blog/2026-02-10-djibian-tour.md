@@ -4,7 +4,7 @@ Date:    2026-02-10T01:30:00+02:00
 Tags:    [ "djibian", "debian" ]
 categories: [ "News" ]
 draft: false
-author: ["Maël Lemoine", "Jean-Jacques Brucker" ]
+author: [ "Jean-Jacques Brucker", "Sébastien Picardeau", "Maël Lemoine" ]
 description : "Fast overview of Djibian"
 lang: en
 bg_image: "images/backgrounds/party-event.jpg"

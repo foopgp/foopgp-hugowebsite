@@ -27,7 +27,6 @@ Cette première version pose et fournit le premier étage de [la fusée](/fr/sol
 
 {{< figure
   src="/images/solutions/OpenPGPkeys.jpg"
-  link="/images/solutions/OpenPGPkeys.jpg"
   alt="OpenPGP tokens: 1 nitrokey, 2 yubikey, 1 unknow (pink)"
   class="mx-auto w-25"
 >}}

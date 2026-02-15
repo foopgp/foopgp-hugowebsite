@@ -1,16 +1,16 @@
 ---
 type: "event"
-title: "Atelier Djbian"
-publishDate: "2026-02-28"
+title: "Atelier grand public Djibian + OpenPGP"
+publishDate: "2026-02-14"
 date: "2026-02-28T14:00:00"
-draft: true
+draft: false
 bg_image: "images/backgrounds/party-event.jpg"
-description: "Atelier pour apprendre à contrôler ses données"
+description: "Émancipez-vous et reprenez le contrôle avec Djibian et les clés de sécurité OpenPGP"
 image: "images/banner/foopgp+dji+djibian.png"
-location: "?"
+location: "Tallard"
 audience: "Pour tous."
 fee: "Libre"
-apply_url: "?"
+apply_url: "tel:+33756832215"
 lang: "fr"
 
 ---
@@ -18,25 +18,51 @@ lang: "fr"
 ## Reprenez le contrôle sur vos données avec les clés de sécurité OpenPGP
 
 
-**[Foopgp](/fr/about/)** est une organisation qui promeut et facilite l'usage des solutions basées sur **[OpenPGP](/fr/about/openpgp/)**.
+**[Foopgp](/fr/about/)** a sélectionné et développé des outils, intégrés dans un système d'exploitation GNU/Linux (*Debian Blends*) dénommé **[Djibian](/fr/blog/2025-09-12-welcome-djibian/)**.
 
-À cette fin, nous avons sélectionné et développé des outils que nous avons intégrés dans un assemblage Debian (*Debian Blends*) dénommé **[djibian](/fr/blog/2025-09-12-welcome-djibian/)**.
+**[Djibian](/fr/blog/2025-09-12-welcome-djibian)** est aujourd'hui le système d'exploitation grand public le plus sûr et respectueux de votre singularité humaine.
 
-L'atelier vous permettra de découvrir notre stratégie pour contrer certaines dystopies actuelles, et de prendre en main une des solutions pour reprendre le contrôle sur vos données qui, sinon, formatent aujourd'hui nos vies.
+L'atelier vous permettra de donner naissance à votre identité OpenPGP ID et de prendre en main Djibian et votre clé de sécurité OpenPGP, YubiKey ou NitroKey.
+
+![OpenPGP tokens: 1 nitrokey, 2 yubikey, 1 unknow (pink)](/images/solutions/OpenPGPkeys.jpg)
+
+Notez que ces clés sont ensuite utilisables à travers de nombreuses applications sur la plupart des autres systèmes d'exploitation (Android, Windows, Mac OS, etc.).
+
+Ainsi vous commencerez à reprendre vraiment le contrôle sur vos données qui, sinon, permettent aujourd'hui à des corporations étrangères et peu scrupuleuses de vous contrôler.
 
 ---
 
 ### Objectifs de l’atelier
 
-À partir d'un système **[Djibian GNU/Linux](/fr/blog/2025-09-12-welcome-djibian/)** fraîchement installé, nous allons :
+À partir d'un système **[Djibian GNU/Linux](/fr/blog/2026-01-19-djibian-release/)** fraîchement installé, nous allons :
 
 - Créer une identité numérique **[OpenPGP](/fr/about/openpgp/)**
 - Configurer une **[clé de sécurité OpenPGP](/fr/solutions/offer-security-keys/)** (ex : *YubiKey*) dans laquelle cette identité sera transposée
 - Utiliser cette clé pour :
-  - S’authentifier sur le système **[djibian](/fr/blog/2025-09-12-welcome-djibian/)** ainsi que sur différents services (*SSH, Git*)
+  - S’authentifier sur le système **[Djibian](/fr/blog/2026-01-19-djibian-release/)** ainsi que sur différents services (*SSH, Git*)
   - Signer des documents et des courriels
   - Chiffrer et déchiffrer des documents et des courriels
+  - Certifier vos proches et étendre votre toile de confiance.
   - Vérifier la signature de documents ou de courriels
 - **Bonus** : réaliser une transaction en **[djis (Ɉ)](/fr/about/join/)**
+
+### Install party
+
+Nous mettons à disposition quelques ordinateurs reconditionnés sous Djibian, que vous pourrez acheter en euros (€) [ou en djis (Ɉ)](https://foopgp.org/fr/about/join/).
+
+Si vous avez des ordinateurs qui rament, qui buguent ou qui vous espionnent (tous Windows ou MacOS par exemple), **nous vous aiderons** aussi à les désinfecter **en y installant Djibian**. *(N'oubliez pas de sauvegarder vos données auparavant.)*
+
+### S'inscrire
+
+L'atelier aura lieu le **samedi 28 février de 14h à 18h à Tallard**.
+
+L'atelier demandant une certaine préparation (tables, branchements, ordinateurs), les places sont limitées.
+
+**Pour vous inscrire, merci d'envoyer un SMS** au [07 56 83 22 15](tel:+33756832215). Exemple,
+```
+Bonjour, je souhaite (x) place(s) pour l'atelier du 28 février.
+```
+
+En espérant vous voir au complet ! :-) 
 
 ---

@@ -7,7 +7,7 @@ draft: false
 bg_image: "images/backgrounds/party-event.jpg"
 description: "Émancipez-vous et reprenez le contrôle avec Djibian et les clés de sécurité OpenPGP"
 image: "images/banner/foopgp+dji+djibian.png"
-location: "Tallard"
+location: "[Tallard 🇫🇷](https://www.openstreetmap.org/way/662873510)"
 audience: "Pour tous."
 fee: "Libre"
 apply_url: "tel:+33756832215"
@@ -22,7 +22,7 @@ lang: "fr"
 
 **[Djibian](/fr/blog/2025-09-12-welcome-djibian)** est aujourd'hui le système d'exploitation grand public le plus sûr et respectueux de votre singularité humaine.
 
-L'atelier vous permettra de donner naissance à votre identité OpenPGP ID et de prendre en main Djibian et votre clé de sécurité OpenPGP, YubiKey ou NitroKey.
+L'atelier vous permettra de donner naissance à votre identité OpenPGP ID et de prendre en main **Djibian** et **votre clé de sécurité** [OpenPGP](/fr/about/openpgp/), **YubiKey ou NitroKey**.
 
 ![OpenPGP tokens: 1 nitrokey, 2 yubikey, 1 unknow (pink)](/images/solutions/OpenPGPkeys.jpg)
 
@@ -36,19 +36,19 @@ Ainsi vous commencerez à reprendre vraiment le contrôle sur vos données qui, 
 
 À partir d'un système **[Djibian GNU/Linux](/fr/blog/2026-01-19-djibian-release/)** fraîchement installé, nous allons :
 
-- Créer une identité numérique **[OpenPGP](/fr/about/openpgp/)**
-- Configurer une **[clé de sécurité OpenPGP](/fr/solutions/offer-security-keys/)** (ex : *YubiKey*) dans laquelle cette identité sera transposée
+- Créer votre identité **[OpenPGP ID](/fr/solutions/theme-identity/)**.
+- Configurer **[la YubiKey ou la Nitrokey](/fr/solutions/offer-security-keys/)** qui sécurisera votre singularité dans l'univers numérique.
 - Utiliser cette clé pour :
-  - S’authentifier sur le système **[Djibian](/fr/blog/2026-01-19-djibian-release/)** ainsi que sur différents services (*SSH, Git*)
-  - Signer des documents et des courriels
-  - Chiffrer et déchiffrer des documents et des courriels
-  - Certifier vos proches et étendre votre toile de confiance.
-  - Vérifier la signature de documents ou de courriels
-- **Bonus** : réaliser une transaction en **[djis (Ɉ)](/fr/about/join/)**
+  - S’authentifier sur le système **[Djibian](/fr/blog/2026-02-10-djibian-tour/)** ainsi que sur différents services (*SSH, Git*).
+  - [Signer](/fr/solutions/signature/) vos documents et [courriels](/fr/solutions/theme-email/).
+  - [Chiffrer et déchiffrer](/fr/solutions/encryption/) vos documents et [courriels](/fr/solutions/theme-email/).
+  - [Certifier](/fr/solutions/theme-authentication/) vos proches et étendre votre [toile de confiance](//fr.wikipedia.org/wiki/Toile_de_confiance).
+  - Vérifier la signature de documents ou courriels.
+- **Bonus** : consulter ses comptes en **[djis (Ɉ)](/fr/about/join/)**.
 
 ### Install party
 
-Nous mettons à disposition quelques ordinateurs reconditionnés sous Djibian, que vous pourrez acheter en euros (€) [ou en djis (Ɉ)](https://foopgp.org/fr/about/join/).
+Nous mettons à disposition quelques ordinateurs reconditionnés sous [Djibian](/fr/blog/2026-02-10-djibian-tour/), que vous pourrez acheter, en euros (€) [ou en djis (Ɉ)](https://foopgp.org/fr/about/join/).
 
 Si vous avez des ordinateurs qui rament, qui buguent ou qui vous espionnent (tous Windows ou MacOS par exemple), **nous vous aiderons** aussi à les désinfecter **en y installant Djibian**. *(N'oubliez pas de sauvegarder vos données auparavant.)*
 
@@ -58,7 +58,7 @@ L'atelier aura lieu le **samedi 28 février de 14h à 18h à Tallard**.
 
 L'atelier demandant une certaine préparation (tables, branchements, ordinateurs), les places sont limitées.
 
-**Pour vous inscrire, merci d'envoyer un SMS** au [07 56 83 22 15](tel:+33756832215). Exemple,
+**Pour vous inscrire, merci d'envoyer un SMS** au [07 56 83 22 15](tel:+33756832215). Exemple :
 ```
 Bonjour, je souhaite (x) place(s) pour l'atelier du 28 février.
 ```

@@ -72,7 +72,7 @@ Pour les prochains étages de la fusée :
 
 La dernière ISO [^packages] est ici : <http://iso.foopgp.org/djibian/latest>.
 
-[^packages]: Le fichier [extra-Packages.gz](http://iso.foopgp.org/djibian/1.0.0/extra-Packages.gz) contient la liste de tous les paquets qui ont été ajouté par rapport à l'ISO debian de référence (13.3.0) ; dont une vingtaine sont (aujourd'hui) exclusives à djibian.
+[^packages]: Le fichier [extra-Packages.gz](http://iso.foopgp.org/djibian/1.0.0/extra-Packages.gz) contient la liste de tous les paquets qui ont été ajouté par rapport à l'ISO debian de référence (13.3.0) ; dont [une vingtaine](http://djibian.foopgp.org/debs/) sont (aujourd'hui) exclusives à djibian.
 
 *Note : le mot de passe de l'utilisateur par défaut est :* ***foopgp***
 
@@ -85,7 +85,7 @@ Sinon nous vous conseillons de vous fournir auprès de [nos partenaires](/fr/par
 
 #### Tester
 
-Si vous êtes déjà sous Debian, vous pouvez tester nos logiciels en préproduction [en rajoutant notre dépôt de paquets *test*](/fr/solutions/activity-rd/#djibianfoopgporg).
+Si vous êtes déjà sous Debian, vous pouvez installer nos logiciels [en rajoutant notre dépôt de paquets](/fr/solutions/activity-rd/#djibianfoopgporg).
 
 Certains de ces paquets pourraient être fonctionnels également sous Ubuntu ou Mint. Les développeurs peuvent librement intégrer nos logiciels pour les autres systèmes d'exploitation (GNU/Linux, Mac OS, etc.)
 

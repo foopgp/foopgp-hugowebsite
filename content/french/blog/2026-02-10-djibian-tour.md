@@ -12,6 +12,10 @@ image: "images/blog/2026/djibian-tour.png"
 type: "post"
 ---
 
+***Note:*** *L'innovation majeure « OpenPGP ID » est présenté [dans le post précédent](/fr/blog/2026-01-19-djibian-release/). Restez informé en vous inscrivant à [nos listes de diffusion](/fr/contact/).*
+
+---
+
 ## ✨ Djibian : sûr, léger, rapide et intuitif.
 
 En plus d'être [le seul système d'exploitation qui vous respecte](/fr/blog/2026-01-19-djibian-release/), **Djibian** a été pensé pour tous.
@@ -42,3 +46,30 @@ En effet : **Djibian** combine légèreté, simplicité et efficacité pour tran
 >}}
 
 ---
+
+#### Installer
+
+La dernière ISO est ici : <http://iso.foopgp.org/djibian/latest>.
+
+*Note : le mot de passe de l'utilisateur par défaut est :* ***foopgp***
+
+Si vous souhaitez par vous-mêmes installer **djibian**, nous vous conseillons d'utiliser [Ventoy](https://www.ventoy.net/en/doc_start.html).
+
+Sinon nous vous conseillons de vous fournir auprès de [nos partenaires](/fr/partner/). Notamment :
+- [Sun Valley Systems](/fr/partner/sun-valley-systems/) à [Gap](//www.openstreetmap.org/node/7375918682).
+
+---
+
+#### Tester
+
+Si vous êtes déjà sous Debian, vous pouvez installer nos logiciels [en rajoutant notre dépôt de paquets](/fr/solutions/activity-rd/#djibianfoopgporg).
+
+---
+
+{{< figure
+  src="/images/banner/poster_fr_djibian_1654x2339.png"
+  link="/images/banner/poster_fr_djibian_1654x2339.png"
+  alt="Djibian, le système qui vous respecte !"
+  class="mx-auto w-25"
+>}}
+

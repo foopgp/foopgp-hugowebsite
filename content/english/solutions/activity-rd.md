@@ -55,7 +55,7 @@ License](https://spdx.org/licenses/LGPL-3.0-only.html).*
 
 [This](http://djibian.foopgp.org/) is our own [Debian package repository](https://wiki.debian.org/DebianRepository/Setup), to distribute our latest software releases.
 
-Then, to install our software products on your Debian computers ("/test/" contains preproduction versions):
+Then, to install our software products on your Debian computers:
 
 ```bash
 gpg --keyserver keys.foopgp.org --recv-keys 2C364630A2436D7E
@@ -63,7 +63,7 @@ gpg --export 2C364630A2436D7E | sudo tee /usr/local/share/foopgp-archive-keyring
 
 cat <<EOF | sudo tee /etc/apt/sources.list.d/foopgp.sources
 Types: deb
-URIs: http://djibian.foopgp.org/test/
+URIs: http://djibian.foopgp.org/debs/
 Suites: ./
 Components: 
 Signed-By: /usr/local/share/foopgp-archive-keyring.pgp
@@ -75,7 +75,9 @@ sudo apt install bashlibs-all
 sudo apt install djibian-onboarding
 ```
 
-*Note:* These packages have few dependencies and may be compatible with all Debian-like systems, eg: Ubuntu, Mint, etc..*
+*Notes:*
+- *These packages have few dependencies and may be compatible with others Debian-like systems, eg: Ubuntu, Mint, etc..*
+- *To test preproduction versions, replace URI <http://djibian.foopgp.org/debs/> by <http://djibian.foopgp.org/test/>.*
 
 ### keys.foopgp.org
 

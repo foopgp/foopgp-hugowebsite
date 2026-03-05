@@ -1,0 +1,1 @@
+../../french/course/djibian-openpgp.md

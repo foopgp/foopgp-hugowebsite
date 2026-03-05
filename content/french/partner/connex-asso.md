@@ -1,7 +1,6 @@
 ---
-#Lastmod: 2020-12-16T02:15:47+01:00 # MANAGED by --enableGitInfo
 title: "Connex"
-draft: false
+draft: true
 bg_image: "images/backgrounds/page-title.jpg"
 description : "Logiciels libres pour les associations"
 image: "images/partners/association-connex-200x200.png"

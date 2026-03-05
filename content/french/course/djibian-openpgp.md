@@ -58,8 +58,8 @@ Bonjour, j'aimerais suivre un atelier Djibian/Yubikey/OpenPGP...
 
 ### Avis
 
-- ***J'ai appris énormément de chose :-).*** *(Clément, étudiant)*
+- ***J'ai appris énormément de chose 😎.*** *(Clément, étudiant)*
 
-- ***En remplaçant Windows par Djibian sur mon laptop vieux de 5 ans, je me suis retrouvé avec une machine qui marche du feu de dieu ! Je me sens plus efficace, moins espionné, et grâce à ma YubiKey, je crois que je suis vraiment en train de reprendre le contrôle sur mes données. Face aux algorithmes, aux IA et à tous ces écrans qui nous influencent, nous changent ou nous manipulent, les projets portés par cette association m'ont donné de l'espoir : celui de nous permettre de retrouver nos singularités. Autrement dit : la liberté fondamentale d'être ou de redevenir nous-mêmes. Respect, bravo à eux.*** *(Olivier, jeune retraité actif)*
+- ***En remplaçant Windows par Djibian sur mon laptop vieux de 5 ans, je me suis retrouvé avec une machine qui marche du feu de Dieu ! Je me sens plus efficace, moins espionné, et grâce à ma YubiKey, je crois que je suis vraiment en train de reprendre le contrôle sur mes données. Face aux algorithmes, aux IA et à tous ces écrans qui nous influencent, nous changent ou nous manipulent, les projets portés par cette association m'ont donné de l'espoir : celui de nous permettre de retrouver nos singularités. Autrement dit : la liberté fondamentale d'être ou de redevenir nous-mêmes. Respect, bravo à eux.*** *(Olivier, jeune retraité actif)*
 
 ---

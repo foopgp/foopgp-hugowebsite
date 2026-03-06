@@ -27,9 +27,9 @@ This document aims to gather all the parameters governing the operation of the f
 | *taxe*     | 2%/year            | Mandatory contributions, see article 7 of the [internal regulations](/fr/about/rules-of-procedures/). |
 | *sharp*    | 1/2 = 0.5         | Power exponent, see article 8 of the [internal regulations](/fr/about/rules-of-procedures/). |
 
-### Number of Tokens for an Initial Donation
+### Number of Tokens for an Initial Investment
 
-These tables help understand the quantity of tokens created by an initial donation.
+These tables help understand the quantity of tokens created by an initial investment.
 
 This quantity depends on the inflation factor *stingynalty*, which is reevaluated at each change of month.
 
@@ -55,7 +55,7 @@ done
 
 ***stingynalty* = 1**
 
-| Initial Donation in € | Quantity of Tokens |
+| Initial Investment in € | Quantity of Tokens |
 |-----------------------|--------------------|
 |       1.00 € |  100.0000 cɈ |
 |       1.00 € |  100.0000 cɈ |
@@ -102,7 +102,7 @@ done
 
 ***stingynalty* = 1.03552939694073445312**
 
-| Initial Donation in € | Quantity of Tokens |
+| Initial Investment in € | Quantity of Tokens |
 |-----------------------|--------------------|
 |       1.00 € |   96.5689 cɈ |
 |       1.05 € |  100.0000 cɈ |
@@ -158,7 +158,7 @@ done
 
 ***stingynalty* = 1.09939858426540376799**
 
-| Initial donations in € | Quantity of tokens |
+| Initial investment in € | Quantity of tokens |
 |---|---|
 |       1.00 € |   90.9588 cɈ |
 |       1.15 € |  100.0000 cɈ |

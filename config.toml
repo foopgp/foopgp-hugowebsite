@@ -253,7 +253,7 @@ target="_blank"
 [[params.social]]
 title = "donate"
 icon = "ti-heart"
-link = "/about/donate"
+link = "/about/join"
 
 [[params.social]]
 title = "follow"

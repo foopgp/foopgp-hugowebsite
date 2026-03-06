@@ -33,13 +33,13 @@ slider:
         link : "blog"
 
     - title : "Accompagner les initiatives et solutions utilisant [OpenPGP](/fr/about/openpgp/)"
-      content : "en récoltant et redistribuant des donations."
+      content : "en récoltant et redistribuant des investissements."
       animation_in : "down"
       animation_out : "right"
       button:
         enable : true
-        label : "Donations"
-        link : "about/donate"
+        label : "Investir"
+        link : "about/join"
 
 
 ############################### Banner feature ###############################

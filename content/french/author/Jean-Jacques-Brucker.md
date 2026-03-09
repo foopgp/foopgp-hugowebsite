@@ -1,5 +1,4 @@
 ---
-#Lastmod: 2024-07-04T15:13:55+02:00 # MANAGED by --enableGitInfo
 title: "Jean-Jacques Brucker"
 # page title background image
 bg_image: "images/friends/banner_jjb.jpg"

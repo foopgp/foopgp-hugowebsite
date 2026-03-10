@@ -12,8 +12,9 @@ fee: "libre"
 apply_url: "mailto:info@foopgp.org"
 ---
 
-## Reprenez le contrôle sur vos données avec les clés de sécurité OpenPGP
+***Note :*** *Des sessions grand public de cet atelier sont ouvertes régulièrement, [voir la page « évènements »](/fr/event/).*
 
+## Reprenez le contrôle sur vos données avec les clés de sécurité OpenPGP
 
 **[Foopgp](/fr/about/)** a sélectionné et développé des outils, intégrés dans un système d'exploitation GNU/Linux (*Debian Blends*) dénommé **[Djibian](/fr/blog/2025-09-12-welcome-djibian/)**.
 

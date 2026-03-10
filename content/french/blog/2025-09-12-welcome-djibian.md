@@ -12,7 +12,7 @@ image: "images/logos/djibian_square_logo.png"
 type: "post"
 ---
 
-*Note, janvier 2026: Djibian est [passé en prod ^^](/fr/blog/2026-01-19-djibian-release/). Restez informé en vous inscrivant à [nos listes de diffusion](/fr/contact/).*
+***Note*** *janvier 2026* ***:*** *Djibian est* ***passé en prod ^^*** ! *([voir l'annonce](/fr/blog/2026-01-19-djibian-release/)). Restez informé en vous inscrivant à [nos listes de diffusion](/fr/contact/).*
 
 #### Découvrir
 

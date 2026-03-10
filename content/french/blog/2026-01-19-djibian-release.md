@@ -12,7 +12,7 @@ image: "images/logos/djibian_square_logo.png"
 type: "post"
 ---
 
-*Note: Pour une première introduction à Djibian, [voir le post précédent](/fr/blog/2025-09-12-welcome-djibian/). Pour un plus large aperçu de Djibian, [voir le post suivant](/fr/blog/2026-02-10-djibian-tour/). Pour rester informé, [inscrivez-vous à nos listes de diffusion](/fr/contact/).*
+***Note :*** *Pour une première introduction à Djibian, [voir le post précédent](/fr/blog/2025-09-12-welcome-djibian/). Pour un plus large aperçu de Djibian, [voir le post suivant](/fr/blog/2026-02-10-djibian-tour/). Pour rester informé, [inscrivez-vous à nos listes de diffusion](/fr/contact/).*
 
 #### Clairette [^clairette] !
 

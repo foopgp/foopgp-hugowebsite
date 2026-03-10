@@ -14,8 +14,8 @@ description : "Notre offre concernant les clés matérielles de sécurité"
 ### En euros €
 
 | Nitrokey 3A NFC | Yubikey 5C NFC | Certificate Generation | ID Verification | Nitro/Yubi Key Customisation | Fragments Storage |
-|------------------|----------------|-------------------------|-----------------|------------------------------|-------------------|
-| 55 €             | 60 €           | 15 €                    | 5 €             | 30 €                         | 10 €/fragment/year |
+|-----------------|----------------|-------------------------|-----------------|------------------------------|-------------------|
+| 60 €            | 70 €           | 0 €                    | 0 €             | 0 €                          | 10 €/fragment/year |
 
 ---
 

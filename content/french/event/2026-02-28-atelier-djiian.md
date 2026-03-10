@@ -27,7 +27,7 @@ Autrement dit : **[Djibian](/fr/blog/2026-02-10-djibian-tour/)** est **le systè
 
 ### Rendez-vous samedi 28 mars à Tallard, pour
 
-1- **Découvrir** pourquoi des hommes se sont levés pour construire et vous partager ces nouveaux outils.
+1- **Découvrir** pourquoi construire et partager ces nouveaux outils.
 
 2- Donner naissance à votre identité **[OpenPGP ID](/fr/about/openpgp/)**, la sécuriser avec votre **[YubiKey](/fr/solutions/offer-security-keys/)**, et l'utiliser avec votre ordinateur ou votre smartphone.
 
@@ -49,7 +49,7 @@ Si vous avez des ordinateurs qui rament, qui buguent ou qui vous espionnent (tou
 - Parcours et objectif des hommes et femmes à l'origine du projet.
 - Concepts et terminologie : **Linux**, **OpenPGP**, **YubiKey**, **Monnaie Libre**, **dji (Ɉ)**.
 
-#### --- 12h00 --- **Repas** partagé
+#### --- 12h30 --- **Repas** partagé
 
 #### --- 14h00 --- Atelier **Djibian**
 - Démarrez votre ordinateur.

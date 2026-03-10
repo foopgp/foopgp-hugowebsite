@@ -3,7 +3,7 @@ type: "event"
 title: "Capitole du libre"
 publishDate: "2023-10-31"
 date: "2024-11-16T09:30:00+02:00"
-# post save as draft
+# post save as draft for website lisibility
 draft: false
 # page title background image
 bg_image: "images/about/about-us.jpg"

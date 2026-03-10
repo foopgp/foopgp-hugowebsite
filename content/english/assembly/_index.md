@@ -10,3 +10,6 @@ image: ""
 description : "General meetings, activity reports, etc."
 ---
 
+To keep the pages clean and easy to browse, some past rapports are occasionally removed from the index.
+
+The complete history is still available in [our Git repository](https://codeberg.org/foopgp/foopgp-hugowebsite/src/branch/public/content/english/assembly/).

@@ -10,3 +10,6 @@ image: ""
 description : "Assemblées générales, rapports d'activités, etc."
 ---
 
+Pour garder des pages sobres et faciles à lire, certains rapports passés sont parfois retirés de l’index.
+
+L’historique complet reste disponible dans [notre dépôt Git](https://codeberg.org/foopgp/foopgp-hugowebsite/src/branch/public/content/french/assembly/).

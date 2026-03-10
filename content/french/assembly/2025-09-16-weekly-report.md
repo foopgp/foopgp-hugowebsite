@@ -2,7 +2,7 @@
 title: "2025 S38 Rapport Hebdomadaire"
 lang: fr
 date: 2025-09-16T21:30:00+02:00
-draft: false
+draft: true
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/logos/logo-black-pgp.png"

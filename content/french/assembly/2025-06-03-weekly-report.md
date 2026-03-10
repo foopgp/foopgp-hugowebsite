@@ -2,7 +2,7 @@
 title: "2025 S23 Rapport Hebdomadaire"
 lang: fr
 date: 2025-06-03T20:30:00+01:00
-draft: false
+draft: true
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/logos/logo-black-pgp.png"

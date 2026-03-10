@@ -2,7 +2,7 @@
 title: "2025 S52 Rapport Hebdomadaire"
 lang: fr
 date: 2025-12-23T21:00:00+02:00
-draft: false
+draft: true
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/logos/logo-black-pgp.png"

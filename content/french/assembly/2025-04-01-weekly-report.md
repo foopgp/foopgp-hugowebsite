@@ -2,7 +2,7 @@
 title: "2025 S14 Rapport Hebdomadaire"
 lang: fr
 date: 2025-04-01T21:00:00+01:00
-draft: false
+draft: true
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/logos/logo-black-pgp.png"

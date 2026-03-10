@@ -11,19 +11,19 @@ description : "Our offer for hardware security keys"
 
 ---
 
-### in euros €
+### In euros €
 
-| Nitrokey 3A NFC | Yubikey 5C NFC | Certificate Generation | ID Verification | Nitro/Yubi Key Customisation | Fragments Storage |
-|-----------------|----------------|------------------------|-----------------|------------------------------|-------------------|
-| 60 €            | 70 €           | 0 €                    | 0 €             | 0 €                          | 10 €/fragment/year |
+| Nitrokey 3A NFC | Yubikey 5 NFC | OpenPGP ID Certification | Fragments Storage |
+|---|---|---|---|
+| 60 € | 70 € | 10 € | 12 €/fragment/year |
 
 ---
 
-### For our members
+### For members
 
-| Nitrokey 3A NFC | Yubikey 5C NFC | Certificate Generation | ID Verification | Nitro/Yubi Key Customisation | Fragments Storage |
-|------------------|----------------|-------------------------|-----------------|------------------------------|-------------------|
-| 5,6 Ɉ            | 5,7 Ɉ          | 0 Ɉ                     | 0 Ɉ             | 0 Ɉ                          | 0,1 Ɉ/fragment/year |
+| Nitrokey 3A NFC | Yubikey 5 NFC | OpenPGP ID Certification | Fragments Storage |
+|---|---|---|---|
+| 5,6 Ɉ | 5,7 Ɉ | 0 Ɉ | 0,1 Ɉ/fragment/year |
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 type: "event"
-title: "Présentation foopgp + Atelier grand public Djibian"
+title: "Présentation + Atelier grand public Djibian"
 publishDate: "2026-02-14"
 date: "2026-03-28T11:00:00"
 draft: false

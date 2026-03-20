@@ -6,7 +6,7 @@ date: "2026-03-28T11:00:00"
 draft: false
 bg_image: "images/backgrounds/party-event.jpg"
 description: "Émancipez-vous et reprenez le contrôle avec Djibian et les clés de sécurité OpenPGP"
-image: "images/banner/foopgp+dji+djibian.png"
+image: "images/events/2026/20260328_djibian_atelier.png"
 location: "[Tallard 🇫🇷](https://www.openstreetmap.org/way/662873510)"
 audience: "Pour tous."
 fee: "Libre"

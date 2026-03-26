@@ -57,8 +57,8 @@ Facilite également la modification des mots de passe protégeant les clés Open
 De cette manière, vous pouvez facilement installer nos logiciels sur vos systèmes Debian :
 
 ```bash
-gpg --keyserver keys.foopgp.org --recv-keys 2C364630A2436D7E
-gpg --export 2C364630A2436D7E | sudo tee /usr/local/share/foopgp-archive-keyring.pgp > /dev/null
+gpg --keyserver keys.foopgp.org --recv-keys 2C364630A2436D7E FE1349E747CF1896
+gpg --export 2C364630A2436D7E FE1349E747CF1896 | sudo tee /usr/local/share/foopgp-archive-keyring.pgp > /dev/null
 
 cat <<EOF | sudo tee /etc/apt/sources.list.d/foopgp.sources
 Types: deb

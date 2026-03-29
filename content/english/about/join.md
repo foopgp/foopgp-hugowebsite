@@ -7,9 +7,9 @@ description : "The dji (Ɉ), the deliverance."
 image: "images/logos/logo-foopgp-token-0.png"
 ---
 
-The best way to support [the project](/about/white-book/) is to invest in the form of membership fees.
+The best way to support [the project](/about/white-book/) is to invest in the form of subscriptions.
 
-These membership fees allow you to obtain your first FOOPGP tokens and finance the association's work to enable [the transition from a monetary, economic, and political system that is destroying our lives and our planet, to a new system more respectful of all living things](/about/white-book/)
+These subscriptions, at a price of your choosing, allow you to obtain your first FOOPGP tokens and finance the association's work to enable [the transition from a monetary, economic, and political system that is destroying our lives and our planet, to a new system more respectful of all living things](/about/white-book/)
 
 Foopgp tokens, also known as *djis* (**Ɉ**), are comparable to shares: they are freely exchangeable between members of the association and, when we have to make decisions that do not reach consensus, we vote with a number of votes depending on the amount of djis in our nominative wallets.
 
@@ -25,10 +25,15 @@ However, the comparison ends there, as these tokens have other very interesting 
 
 ---
 
-To avoid wasting time (and return on investment) while waiting to be able to join online (it's [in the works](https://foopgp.org/udid/)!), please [download the membership form here](/documents/fr/bulletin-adhesion-foopgp.pdf), fill it out, and send it.
+Ready to generate djis ?
+
+Then 🌟 [**subscribe**](//api.foopgp.org/onboarding/) [here](//api.foopgp.org/onboarding/) 🌟.
+
+Or [download the membership form here](/documents/fr/bulletin-adhesion-foopgp.pdf), fill it out, and send it.
 
 - by mail, accompanied by a check made out to the ***association
   foopgp***, *75 Impasse Serre des Isnards*, *05000 Pelleautier*.
 
 - by email to [info at foopgp.org](mailto:info@foopgp.org), indicating the reference of the transfer made to our account in France: ***IBAN: FR76 1027 8079 9800 0208 2780 107***.
 
+Welcome to a better world ! 🥰

@@ -1,13 +1,10 @@
 ---
-#Lastmod: 2024-07-04T15:26:48+02:00 # MANAGED by --enableGitInfo
 title: "Alain BAYLE"
-# page title background image
+draft: true
 bg_image: "images/backgrounds/world.jpg"
-# meta description
 description : "Disillusioned and cynical, but determined and resolute cypherpunk"
 # Not the used one, but the one for gravatar
 email: "abayle@foopgp.org"
-# portrait
 image: "images/friends/avatar_ab128.jpg"
 social:
   - icon : "ti-gnupg"

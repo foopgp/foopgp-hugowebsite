@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.4" office:mimetype="application/vnd.oasis.opendocument.presentation">
- <office:meta><meta:creation-date>2026-03-26T23:54:32.340232296</meta:creation-date><dc:date>2026-03-29T15:51:32.400435086</dc:date><meta:editing-duration>PT2H30M25S</meta:editing-duration><meta:editing-cycles>23</meta:editing-cycles><meta:generator>LibreOffice/25.2.3.2$Linux_X86_64 LibreOffice_project/520$Build-2</meta:generator><meta:print-date>2026-03-29T15:48:22.881741914</meta:print-date><meta:printed-by>Fichiers PDF</meta:printed-by><meta:document-statistic meta:object-count="111"/></office:meta>
+ <office:meta><meta:creation-date>2026-03-26T23:54:32.340232296</meta:creation-date><dc:date>2026-03-31T20:21:45.986733385</dc:date><meta:editing-duration>PT2H37M55S</meta:editing-duration><meta:editing-cycles>24</meta:editing-cycles><meta:generator>LibreOffice/25.2.3.2$Linux_X86_64 LibreOffice_project/520$Build-2</meta:generator><meta:print-date>2026-03-29T15:48:22.881741914</meta:print-date><meta:printed-by>Fichiers PDF</meta:printed-by><meta:document-statistic meta:object-count="111"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="VisibleAreaTop" config:type="int">296</config:config-item>
@@ -29,15 +29,15 @@
      <config:config-item config:name="NoColors" config:type="boolean">true</config:config-item>
      <config:config-item config:name="RulerIsVisible" config:type="boolean">false</config:config-item>
      <config:config-item config:name="PageKind" config:type="short">0</config:config-item>
-     <config:config-item config:name="SelectedPage" config:type="short">1</config:config-item>
+     <config:config-item config:name="SelectedPage" config:type="short">3</config:config-item>
      <config:config-item config:name="IsLayerMode" config:type="boolean">false</config:config-item>
      <config:config-item config:name="IsDoubleClickTextEdit" config:type="boolean">true</config:config-item>
      <config:config-item config:name="IsClickChangeRotation" config:type="boolean">true</config:config-item>
      <config:config-item config:name="SlidesPerRow" config:type="short">4</config:config-item>
      <config:config-item config:name="EditMode" config:type="int">0</config:config-item>
-     <config:config-item config:name="VisibleAreaTop" config:type="int">-5412</config:config-item>
+     <config:config-item config:name="VisibleAreaTop" config:type="int">-5352</config:config-item>
      <config:config-item config:name="VisibleAreaLeft" config:type="int">-421</config:config-item>
-     <config:config-item config:name="VisibleAreaWidth" config:type="int">28835</config:config-item>
+     <config:config-item config:name="VisibleAreaWidth" config:type="int">28955</config:config-item>
      <config:config-item config:name="VisibleAreaHeight" config:type="int">26580</config:config-item>
      <config:config-item config:name="GridCoarseWidth" config:type="int">2000</config:config-item>
      <config:config-item config:name="GridCoarseHeight" config:type="int">2000</config:config-item>
@@ -62,7 +62,7 @@
    <config:config-item config:name="DefaultTabStop" config:type="int">1250</config:config-item>
    <config:config-item config:name="IsPrintHandout" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrinterName" config:type="string">PDF</config:config-item>
-   <config:config-item config:name="PrinterSetup" config:type="base64Binary">kAH+/1BERgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpQREYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAMAhwAAAAAAAAAIAFZUAAAkbQAASm9iRGF0YSAxCnByaW50ZXI9UERGCm9yaWVudGF0aW9uPVBvcnRyYWl0CmNvcGllcz0xCmNvbGxhdGU9ZmFsc2UKbWFyZ2luYWRqdXN0bWVudD0wLDAsJzAsMApjb2xvcmRlcHRoPTI0CmNvbG9yZGV2aWNlPTAKUFBEQ29udGV4dERhdGEKEgBDT01QQVRfRFVQTEVYX01PREUPAER1cGxleE1vZGU6Ok9mZgwAUFJJTlRFUl9OQU1FAwBQREYLAERSSVZFUl9OQU1FCABDVVBTOlBERg==</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">pQH+/1BERgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpQREYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAMAmAAAAAAAAAAIAFZUAAAkbQAASm9iRGF0YSAxCnByaW50ZXI9UERGCm9yaWVudGF0aW9uPVBvcnRyYWl0CmNvcGllcz0xCmNvbGxhdGU9ZmFsc2UKbWFyZ2luYWRqdXN0bWVudD0wLDAsJzAsMApjb2xvcmRlcHRoPTI0CmNvbG9yZGV2aWNlPTAKUFBEQ29udGV4dERhdGEKUGFnZVNpemU6TGV0dGVyAAASAENPTVBBVF9EVVBMRVhfTU9ERRMARHVwbGV4TW9kZTo6VW5rbm93bgwAUFJJTlRFUl9OQU1FAwBQREYLAERSSVZFUl9OQU1FCABDVVBTOlBERg==</config:config-item>
    <config:config-item config:name="DashTableURL" config:type="string">$(brandbaseurl)/share/palette%3B$(user)/config/standard.sod</config:config-item>
    <config:config-item config:name="PageNumberFormat" config:type="int">4</config:config-item>
    <config:config-item-map-indexed config:name="ForbiddenCharacters">
@@ -49073,7 +49073,7 @@
   <draw:marker draw:name="Arrow" svg:viewBox="0 0 20 30" svg:d="M10 0l-10 30h20z"/>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" style:writing-mode="lr-tb"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:punctuation-wrap="simple" style:line-break="strict" loext:tab-stop-distance="0cm" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:punctuation-wrap="simple" style:line-break="strict" loext:tab-stop-distance="0cm" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="24pt" fo:language="fr" fo:country="FR" style:font-name-asian="DejaVu Sans" style:font-size-asian="24pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="DejaVu Sans" style:font-size-complex="24pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -49476,9 +49476,6 @@
    <style:drawing-page-properties presentation:background-visible="true" presentation:background-objects-visible="true" draw:fill="bitmap" draw:fill-image-name="background" draw:opacity="90%" style:repeat="stretch" presentation:display-footer="true" presentation:display-page-number="false" presentation:display-date-time="true"/>
   </style:style>
   <style:style style:name="dp4" style:family="drawing-page">
-   <style:drawing-page-properties presentation:background-visible="true" presentation:background-objects-visible="true" presentation:display-footer="true" presentation:display-page-number="false" presentation:display-date-time="true"/>
-  </style:style>
-  <style:style style:name="dp5" style:family="drawing-page">
    <style:drawing-page-properties presentation:visibility="hidden" presentation:background-visible="true" presentation:background-objects-visible="true" draw:fill="gradient" draw:fill-gradient-name="gradient" presentation:display-footer="true" presentation:display-page-number="false" presentation:display-date-time="true"/>
   </style:style>
   <style:style style:name="gr1" style:family="graphic" style:parent-style-name="standard">
@@ -49490,7 +49487,7 @@
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="gr3" style:family="graphic" style:parent-style-name="standard">
-   <style:graphic-properties draw:stroke="none" draw:fill="none" draw:fill-color="#ffffff" draw:textarea-horizontal-align="right" draw:auto-grow-width="true" fo:min-height="0.937cm" fo:min-width="1cm" loext:decorative="false"/>
+   <style:graphic-properties draw:stroke="none" draw:fill="none" draw:fill-color="#ffffff" draw:textarea-horizontal-align="right" draw:auto-grow-width="true" fo:min-height="0.937cm" fo:min-width="2.897cm" loext:decorative="false"/>
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="gr4" style:family="graphic" style:parent-style-name="standard">
@@ -49501,27 +49498,32 @@
    <style:graphic-properties style:protect="size" loext:decorative="false"/>
   </style:style>
   <style:style style:name="gr6" style:family="graphic" style:parent-style-name="standard">
+   <style:graphic-properties draw:stroke="none" draw:fill="none" draw:fill-color="#ffffff" draw:textarea-horizontal-align="right" draw:auto-grow-width="true" fo:min-height="0.937cm" fo:min-width="1cm" loext:decorative="false"/>
+   <style:paragraph-properties style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="gr7" style:family="graphic" style:parent-style-name="standard">
    <style:graphic-properties draw:stroke="none" svg:stroke-color="#000000" draw:fill="none" draw:fill-color="#ffffff" draw:textarea-horizontal-align="left" draw:textarea-vertical-align="middle" draw:auto-grow-height="true" draw:auto-grow-width="false" fo:min-height="1.75cm" loext:decorative="false"/>
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="gr7" style:family="graphic" style:parent-style-name="Object_20_with_20_no_20_fill_20_and_20_no_20_line">
-   <style:graphic-properties draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" loext:decorative="false"/>
+  <style:style style:name="gr8" style:family="graphic" style:parent-style-name="Object_20_with_20_no_20_fill_20_and_20_no_20_line">
+   <style:graphic-properties draw:stroke="none" draw:fill="none" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" loext:decorative="false"/>
+   <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="gr8" style:family="graphic" style:parent-style-name="standard">
+  <style:style style:name="gr9" style:family="graphic" style:parent-style-name="standard">
    <style:graphic-properties draw:stroke="none" svg:stroke-color="#000000" draw:fill="none" draw:fill-color="#ffffff" draw:textarea-horizontal-align="center" draw:auto-grow-height="true" draw:auto-grow-width="false" fo:min-height="0.75cm" loext:decorative="false"/>
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="gr9" style:family="graphic" style:parent-style-name="Object_20_with_20_no_20_fill_20_and_20_no_20_line">
+  <style:style style:name="gr10" style:family="graphic" style:parent-style-name="Object_20_with_20_no_20_fill_20_and_20_no_20_line">
    <style:graphic-properties draw:stroke="none" draw:fill="none" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(2.663cm, 0cm, 3.034cm, 0cm)" draw:image-opacity="100%" style:mirror="none" loext:decorative="false"/>
   </style:style>
-  <style:style style:name="gr10" style:family="graphic" style:parent-style-name="standard">
+  <style:style style:name="gr11" style:family="graphic" style:parent-style-name="standard">
    <style:graphic-properties draw:stroke="none" svg:stroke-color="#000000" draw:fill="none" draw:fill-color="#ffffff" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" draw:auto-grow-height="true" draw:auto-grow-width="false" fo:min-height="1.25cm" loext:decorative="false"/>
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="gr11" style:family="graphic" style:parent-style-name="standard">
+  <style:style style:name="gr12" style:family="graphic" style:parent-style-name="standard">
    <style:graphic-properties loext:decorative="false"/>
   </style:style>
-  <style:style style:name="gr12" style:family="graphic" style:parent-style-name="Object_20_with_20_no_20_fill_20_and_20_no_20_line">
+  <style:style style:name="gr13" style:family="graphic" style:parent-style-name="Object_20_with_20_no_20_fill_20_and_20_no_20_line">
    <style:graphic-properties draw:stroke="none" draw:fill="none" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none" loext:decorative="false"/>
   </style:style>
   <style:style style:name="pr1" style:family="presentation" style:parent-style-name="Standard-backgroundobjects">
@@ -49573,15 +49575,15 @@
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="pr13" style:family="presentation" style:parent-style-name="Standard-subtitle">
-   <style:graphic-properties draw:fill-color="#ffffff" draw:textarea-horizontal-align="left" draw:auto-grow-height="true" fo:min-height="10.666cm" loext:decorative="false"/>
+   <style:graphic-properties draw:fill-color="#ffffff" draw:textarea-horizontal-align="left" draw:auto-grow-height="true" fo:min-height="10.696cm" loext:decorative="false"/>
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="pr14" style:family="presentation" style:parent-style-name="Standard-subtitle">
    <style:graphic-properties draw:fill-color="#ffffff" draw:textarea-horizontal-align="justify" draw:textarea-vertical-align="middle" draw:auto-grow-height="true" fo:min-height="9.134cm" loext:decorative="false"/>
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="pr15" style:family="presentation" style:parent-style-name="Standard-subtitle" style:list-style-name="L6">
-   <style:graphic-properties draw:fill-color="#ffffff" draw:textarea-horizontal-align="left" draw:auto-grow-height="true" fo:min-height="9.221cm" loext:decorative="false"/>
+  <style:style style:name="pr15" style:family="presentation" style:parent-style-name="Standard-subtitle" style:list-style-name="L5">
+   <style:graphic-properties draw:fill-color="#ffffff" draw:textarea-horizontal-align="left" draw:auto-grow-height="true" fo:min-height="10.507cm" loext:decorative="false"/>
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="pr16" style:family="presentation" style:parent-style-name="Standard-subtitle">
@@ -49691,11 +49693,9 @@
   </style:style>
   <style:style style:name="P16" style:family="paragraph">
    <style:paragraph-properties fo:line-height="100%" fo:text-align="start"/>
-   <style:text-properties fo:font-size="32pt"/>
   </style:style>
   <style:style style:name="P17" style:family="paragraph">
    <style:paragraph-properties fo:margin-top="0.2cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-align="start"/>
-   <style:text-properties fo:font-size="32pt"/>
   </style:style>
   <style:style style:name="P18" style:family="paragraph">
    <loext:graphic-properties draw:fill-color="#ffffff"/>
@@ -49703,122 +49703,110 @@
    <style:text-properties fo:font-size="32pt"/>
   </style:style>
   <style:style style:name="P19" style:family="paragraph">
-   <style:paragraph-properties fo:text-align="end"/>
-   <style:text-properties fo:font-size="18pt"/>
+   <style:paragraph-properties fo:text-align="start"/>
   </style:style>
   <style:style style:name="P20" style:family="paragraph">
-   <style:text-properties fo:font-size="18pt"/>
-  </style:style>
-  <style:style style:name="P21" style:family="paragraph">
-   <style:paragraph-properties fo:text-align="start"/>
-   <style:text-properties fo:font-size="18pt"/>
-  </style:style>
-  <style:style style:name="P22" style:family="paragraph">
    <loext:graphic-properties draw:fill="none" draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:text-align="start"/>
    <style:text-properties fo:font-size="18pt"/>
   </style:style>
-  <style:style style:name="P23" style:family="paragraph">
+  <style:style style:name="P21" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.1cm" fo:margin-bottom="0.1cm" fo:text-align="justify" fo:text-indent="0cm"/>
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P24" style:family="paragraph">
+  <style:style style:name="P22" style:family="paragraph">
    <loext:graphic-properties draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:text-align="justify"/>
    <style:text-properties fo:font-size="32pt"/>
   </style:style>
+  <style:style style:name="P23" style:family="paragraph">
+   <loext:graphic-properties draw:fill="none"/>
+   <style:paragraph-properties fo:text-align="center"/>
+  </style:style>
+  <style:style style:name="P24" style:family="paragraph">
+   <style:paragraph-properties fo:text-align="center"/>
+  </style:style>
   <style:style style:name="P25" style:family="paragraph">
+   <loext:graphic-properties draw:fill="none" draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:text-align="center"/>
   </style:style>
   <style:style style:name="P26" style:family="paragraph">
    <loext:graphic-properties draw:fill="none" draw:fill-color="#ffffff"/>
-   <style:paragraph-properties fo:text-align="center"/>
   </style:style>
   <style:style style:name="P27" style:family="paragraph">
-   <loext:graphic-properties draw:fill="none"/>
-   <style:paragraph-properties fo:text-align="center"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.1cm" fo:margin-bottom="0.1cm" fo:text-align="center" fo:text-indent="0cm"/>
   </style:style>
   <style:style style:name="P28" style:family="paragraph">
-   <loext:graphic-properties draw:fill="none" draw:fill-color="#ffffff"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:text-align="center" fo:text-indent="0cm"/>
   </style:style>
   <style:style style:name="P29" style:family="paragraph">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.1cm" fo:margin-bottom="0.1cm" fo:text-align="center" fo:text-indent="0cm"/>
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.2cm" fo:margin-bottom="0.1cm" fo:text-align="center" fo:text-indent="0cm"/>
   </style:style>
   <style:style style:name="P30" style:family="paragraph">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:text-align="center" fo:text-indent="0cm"/>
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P31" style:family="paragraph">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.2cm" fo:margin-bottom="0.1cm" fo:text-align="center" fo:text-indent="0cm"/>
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="P32" style:family="paragraph">
    <loext:graphic-properties draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.1cm" fo:margin-bottom="0.1cm" fo:text-align="center" fo:text-indent="0cm"/>
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P33" style:family="paragraph">
+  <style:style style:name="P31" style:family="paragraph">
    <style:paragraph-properties fo:margin-top="0.42cm" fo:margin-bottom="0.35cm"/>
   </style:style>
-  <style:style style:name="P34" style:family="paragraph">
+  <style:style style:name="P32" style:family="paragraph">
    <loext:graphic-properties draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:margin-top="0.42cm" fo:margin-bottom="0.35cm" fo:text-align="justify"/>
    <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
   </style:style>
-  <style:style style:name="P35" style:family="paragraph">
+  <style:style style:name="P33" style:family="paragraph">
    <style:paragraph-properties fo:text-align="center"/>
    <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="P36" style:family="paragraph">
+  <style:style style:name="P34" style:family="paragraph">
    <style:paragraph-properties fo:text-align="end"/>
    <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-style="italic" fo:font-weight="bold" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-style-complex="italic" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="P37" style:family="paragraph">
+  <style:style style:name="P35" style:family="paragraph">
    <style:paragraph-properties fo:text-align="center"/>
    <style:text-properties fo:color="#ff0000" loext:opacity="100%"/>
   </style:style>
-  <style:style style:name="P38" style:family="paragraph">
+  <style:style style:name="P36" style:family="paragraph">
    <style:paragraph-properties fo:text-align="center"/>
    <style:text-properties fo:color="#00a933" loext:opacity="100%"/>
   </style:style>
-  <style:style style:name="P39" style:family="paragraph">
+  <style:style style:name="P37" style:family="paragraph">
    <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="115%" fo:text-align="start"/>
   </style:style>
-  <style:style style:name="P40" style:family="paragraph">
+  <style:style style:name="P38" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="115%" fo:text-align="start" fo:text-indent="0cm"/>
   </style:style>
-  <style:style style:name="P41" style:family="paragraph">
+  <style:style style:name="P39" style:family="paragraph">
    <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="115%" fo:text-align="center"/>
   </style:style>
-  <style:style style:name="P42" style:family="paragraph">
+  <style:style style:name="P40" style:family="paragraph">
    <loext:graphic-properties draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:margin-top="0.1cm" fo:margin-bottom="0.1cm" fo:text-align="start"/>
    <style:text-properties fo:font-size="32pt"/>
   </style:style>
-  <style:style style:name="P43" style:family="paragraph">
+  <style:style style:name="P41" style:family="paragraph">
    <style:paragraph-properties fo:margin-top="0.2cm" fo:margin-bottom="0cm" fo:line-height="115%"/>
   </style:style>
-  <style:style style:name="P44" style:family="paragraph">
+  <style:style style:name="P42" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:line-height="115%" fo:text-align="start" fo:text-indent="1cm"/>
   </style:style>
-  <style:style style:name="P45" style:family="paragraph">
+  <style:style style:name="P43" style:family="paragraph">
    <loext:graphic-properties draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:line-height="115%" fo:text-align="start" fo:text-indent="1cm"/>
    <style:text-properties fo:font-size="32pt"/>
   </style:style>
-  <style:style style:name="P46" style:family="paragraph">
+  <style:style style:name="P44" style:family="paragraph">
    <style:paragraph-properties fo:line-height="115%"/>
   </style:style>
-  <style:style style:name="P47" style:family="paragraph">
+  <style:style style:name="P45" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:line-height="115%" fo:text-align="center" fo:text-indent="0cm"/>
   </style:style>
-  <style:style style:name="P48" style:family="paragraph">
+  <style:style style:name="P46" style:family="paragraph">
    <loext:graphic-properties draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:line-height="115%" fo:text-align="justify"/>
    <style:text-properties fo:font-size="32pt"/>
   </style:style>
-  <style:style style:name="P49" style:family="paragraph">
+  <style:style style:name="P47" style:family="paragraph">
    <style:text-properties fo:color="#ff8012" loext:opacity="100%" fo:font-weight="bold" fo:background-color="transparent" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
@@ -49867,66 +49855,72 @@
    <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-size="28pt" style:font-size-asian="28pt" style:font-size-complex="28pt"/>
   </style:style>
   <style:style style:name="T16" style:family="text">
-   <style:text-properties fo:font-size="16pt" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="T17" style:family="text">
-   <style:text-properties fo:font-size="26pt" style:font-size-asian="26pt" style:font-size-complex="26pt"/>
-  </style:style>
-  <style:style style:name="T18" style:family="text">
-   <style:text-properties fo:font-size="24pt" fo:font-weight="bold" style:font-size-asian="24pt" style:font-weight-asian="bold" style:font-size-complex="24pt" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="T19" style:family="text">
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" fo:font-size="28pt" style:font-size-asian="28pt" style:font-size-complex="28pt"/>
   </style:style>
+  <style:style style:name="T17" style:family="text">
+   <style:text-properties fo:font-size="16pt" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="T18" style:family="text">
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="26pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="26pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="26pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="T19" style:family="text">
+   <style:text-properties fo:font-size="24pt" fo:font-weight="bold" style:font-size-asian="24pt" style:font-weight-asian="bold" style:font-size-complex="24pt" style:font-weight-complex="bold"/>
+  </style:style>
   <style:style style:name="T20" style:family="text">
-   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="T21" style:family="text">
-   <style:text-properties fo:color="#ff0000" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="T22" style:family="text">
-   <style:text-properties fo:color="#ff8012" loext:opacity="100%" fo:font-style="italic" fo:font-weight="normal" style:font-style-asian="italic" style:font-weight-asian="normal" style:font-style-complex="italic" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="T23" style:family="text">
-   <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt" style:font-size-complex="12pt"/>
-  </style:style>
-  <style:style style:name="T24" style:family="text">
-   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="T25" style:family="text">
-   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-style="italic" fo:font-weight="bold" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-style-complex="italic" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="T26" style:family="text">
-   <style:text-properties fo:color="#ff0000" loext:opacity="100%"/>
-  </style:style>
-  <style:style style:name="T27" style:family="text">
-   <style:text-properties fo:color="#00a933" loext:opacity="100%"/>
-  </style:style>
-  <style:style style:name="T28" style:family="text">
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="28pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
+  <style:style style:name="T21" style:family="text">
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#ff0000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="28pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="T22" style:family="text">
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="FreeSans" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="T23" style:family="text">
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#ff0000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="FreeSans" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="T24" style:family="text">
+   <style:text-properties fo:color="#ff8012" loext:opacity="100%" fo:font-style="italic" fo:font-weight="normal" style:font-style-asian="italic" style:font-weight-asian="normal" style:font-style-complex="italic" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="T25" style:family="text">
+   <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt" style:font-size-complex="12pt"/>
+  </style:style>
+  <style:style style:name="T26" style:family="text">
+   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T27" style:family="text">
+   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-style="italic" fo:font-weight="bold" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-style-complex="italic" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T28" style:family="text">
+   <style:text-properties fo:color="#ff0000" loext:opacity="100%"/>
+  </style:style>
   <style:style style:name="T29" style:family="text">
-   <style:text-properties fo:font-size="32pt" fo:font-weight="normal" style:font-size-asian="32pt" style:font-weight-asian="normal" style:font-size-complex="32pt" style:font-weight-complex="normal"/>
+   <style:text-properties fo:color="#00a933" loext:opacity="100%"/>
   </style:style>
   <style:style style:name="T30" style:family="text">
-   <style:text-properties fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
+   <style:text-properties fo:font-size="32pt" fo:font-weight="normal" style:font-size-asian="32pt" style:font-weight-asian="normal" style:font-size-complex="32pt" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T31" style:family="text">
-   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
+   <style:text-properties fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T32" style:family="text">
-   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T33" style:family="text">
-   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
+   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T34" style:family="text">
-   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T35" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#00a933" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="28pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T36" style:family="text">
+   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T37" style:family="text">
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#00a933" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="28pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="T38" style:family="text">
    <style:text-properties fo:color="#ff8012" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <text:list-style style:name="L1">
@@ -50139,48 +50133,6 @@
     <style:text-properties fo:font-family="OpenSymbol" style:font-charset="x-symbol" style:use-window-font-color="true" fo:font-size="45%"/>
    </text:list-level-style-bullet>
   </text:list-style>
-  <text:list-style style:name="L6">
-   <text:list-level-style-bullet text:level="1" text:bullet-char="→">
-    <style:list-level-properties text:min-label-width="0.6cm"/>
-    <style:text-properties fo:font-family="OpenSymbol" style:font-charset="x-symbol" style:use-window-font-color="true" fo:font-size="45%"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="2" text:bullet-char="→">
-    <style:list-level-properties text:space-before="0.6cm" text:min-label-width="0.6cm"/>
-    <style:text-properties fo:font-family="OpenSymbol" style:font-charset="x-symbol" style:use-window-font-color="true" fo:font-size="45%"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="3" text:bullet-char="→">
-    <style:list-level-properties text:space-before="1.2cm" text:min-label-width="0.6cm"/>
-    <style:text-properties fo:font-family="OpenSymbol" style:font-charset="x-symbol" style:use-window-font-color="true" fo:font-size="45%"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="4" text:bullet-char="→">
-    <style:list-level-properties text:space-before="1.8cm" text:min-label-width="0.6cm"/>
-    <style:text-properties fo:font-family="OpenSymbol" style:font-charset="x-symbol" style:use-window-font-color="true" fo:font-size="45%"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="5" text:bullet-char="→">
-    <style:list-level-properties text:space-before="2.4cm" text:min-label-width="0.6cm"/>
-    <style:text-properties fo:font-family="OpenSymbol" style:font-charset="x-symbol" style:use-window-font-color="true" fo:font-size="45%"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="6" text:bullet-char="→">
-    <style:list-level-properties text:space-before="3cm" text:min-label-width="0.6cm"/>
-    <style:text-properties fo:font-family="OpenSymbol" style:font-charset="x-symbol" style:use-window-font-color="true" fo:font-size="45%"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="7" text:bullet-char="→">
-    <style:list-level-properties text:space-before="3.6cm" text:min-label-width="0.6cm"/>
-    <style:text-properties fo:font-family="OpenSymbol" style:font-charset="x-symbol" style:use-window-font-color="true" fo:font-size="45%"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="8" text:bullet-char="→">
-    <style:list-level-properties text:space-before="4.2cm" text:min-label-width="0.6cm"/>
-    <style:text-properties fo:font-family="OpenSymbol" style:font-charset="x-symbol" style:use-window-font-color="true" fo:font-size="45%"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="9" text:bullet-char="→">
-    <style:list-level-properties text:space-before="4.8cm" text:min-label-width="0.6cm"/>
-    <style:text-properties fo:font-family="OpenSymbol" style:font-charset="x-symbol" style:use-window-font-color="true" fo:font-size="45%"/>
-   </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="10" text:bullet-char="→">
-    <style:list-level-properties text:space-before="5.4cm" text:min-label-width="0.6cm"/>
-    <style:text-properties fo:font-family="OpenSymbol" style:font-charset="x-symbol" style:use-window-font-color="true" fo:font-size="45%"/>
-   </text:list-level-style-bullet>
-  </text:list-style>
  </office:automatic-styles>
  <office:master-styles>
   <draw:layer-set>
@@ -50291,12 +50243,12 @@
      <draw:text-box>
       <text:p text:style-name="P7"><text:span text:style-name="T2"/></text:p>
       <text:p text:style-name="P7"><text:span text:style-name="T2"/></text:p>
-      <text:p text:style-name="P7"><text:span text:style-name="T3"><text:s text:c="2"/></text:span><text:span text:style-name="T4">dji-</text:span><text:span text:style-name="T4">bian</text:span></text:p>
+      <text:p text:style-name="P7"><text:span text:style-name="T3"><text:s text:c="2"/></text:span><text:span text:style-name="T4">dji-bian</text:span></text:p>
       <text:p text:style-name="P7"><text:span text:style-name="T5"/></text:p>
       <text:p text:style-name="P7"><text:span text:style-name="T6">30 mars 2026</text:span></text:p>
       <text:p text:style-name="P7"><text:span text:style-name="T7"/></text:p>
-      <text:p text:style-name="P7"><text:span text:style-name="T8">(u4=</text:span><text:span text:style-name="T9">sRyUhEbNU5Owy</text:span><text:span text:style-name="T9">LEjfSwaXAe_42.17-</text:span><text:span text:style-name="T9">002.76</text:span><text:span text:style-name="T8">)</text:span></text:p>
-      <text:p text:style-name="P7"><text:span text:style-name="T10">&lt;jjbrucker@foopgp.</text:span><text:span text:style-name="T10">org&gt;</text:span></text:p>
+      <text:p text:style-name="P7"><text:span text:style-name="T8">(u4=</text:span><text:span text:style-name="T9">sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76</text:span><text:span text:style-name="T8">)</text:span></text:p>
+      <text:p text:style-name="P7"><text:span text:style-name="T10">&lt;jjbrucker@foopgp.org&gt;</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr3" draw:text-style-name="P10" draw:layer="layout" svg:width="3.397cm" svg:height="1.187cm" svg:x="23.603cm" svg:y="14.564cm">
@@ -50319,7 +50271,7 @@
    <draw:page draw:name="page2" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
     <draw:frame presentation:style-name="pr6" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.4cm" svg:y="0.628cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12">Sommair</text:span><text:span text:style-name="T12">e</text:span></text:p>
+      <text:p><text:span text:style-name="T12">Sommaire</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame presentation:style-name="pr7" draw:text-style-name="P15" draw:layer="layout" svg:width="25.199cm" svg:height="9.134cm" svg:x="1.4cm" svg:y="3.685cm" presentation:class="subtitle" presentation:user-transformed="true">
@@ -50369,7 +50321,7 @@
    <draw:page draw:name="page3" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
     <draw:frame presentation:style-name="pr6" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.4cm" svg:y="0.628cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12">D’où tu </text:span><text:span text:style-name="T12">parles ?</text:span></text:p>
+      <text:p><text:span text:style-name="T12">D’où tu parles ?</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame presentation:style-name="pr7" draw:text-style-name="P15" draw:layer="layout" svg:width="25.199cm" svg:height="9.134cm" svg:x="1.4cm" svg:y="3.685cm" presentation:class="subtitle" presentation:user-transformed="true">
@@ -50410,62 +50362,62 @@
      <draw:text-box>
       <text:list text:style-name="L4">
        <text:list-item>
-        <text:p text:style-name="P16"><text:span text:style-name="T13">Ne pas subir</text:span><text:span text:style-name="T14"> </text:span><text:span text:style-name="T14">(la </text:span><text:span text:style-name="T14">décroissance</text:span><text:span text:style-name="T14">),</text:span></text:p>
+        <text:p text:style-name="P16"><text:span text:style-name="T13">Ne pas subir</text:span><text:span text:style-name="T14"> (la décroissance),</text:span></text:p>
        </text:list-item>
       </text:list>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P16"><text:span text:style-name="T14">Mais </text:span><text:span text:style-name="T15">reprendre de </text:span><text:span text:style-name="T15">la maîtrise</text:span><text:span text:style-name="T14"> </text:span><text:span text:style-name="T14">(de notre </text:span><text:span text:style-name="T14">bonheur).</text:span></text:p>
+        <text:p text:style-name="P16"><text:span text:style-name="T14">Mais </text:span><text:span text:style-name="T15">reprendre de la maîtrise</text:span><text:span text:style-name="T14"> (de notre bonheur).</text:span></text:p>
        </text:list-item>
       </text:list>
       <text:list text:style-name="L4">
        <text:list-item>
-        <text:p text:style-name="P17"><text:span text:style-name="T14">Moins </text:span><text:span text:style-name="T14">d’</text:span><text:span text:style-name="T13">individualis</text:span><text:span text:style-name="T13">me</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T13">consommatio</text:span><text:span text:style-name="T13">n</text:span><text:span text:style-name="T14">,</text:span></text:p>
+        <text:p text:style-name="P17"><text:span text:style-name="T14">Moins d’</text:span><text:span text:style-name="T13">individualisme</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T13">consommation</text:span><text:span text:style-name="T14">,</text:span></text:p>
        </text:list-item>
       </text:list>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P16"><text:span text:style-name="T14">Plus de </text:span><text:span text:style-name="T15">sens</text:span><text:span text:style-name="T14">, </text:span><text:span text:style-name="T14">de </text:span><text:span text:style-name="T15">joie de </text:span><text:span text:style-name="T15">vivre</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T15">paix</text:span><text:span text:style-name="T14">.</text:span></text:p>
+        <text:p text:style-name="P16"><text:span text:style-name="T14">Plus de </text:span><text:span text:style-name="T15">sens</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T15">joie de vivre</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T15">paix</text:span><text:span text:style-name="T14">.</text:span></text:p>
        </text:list-item>
       </text:list>
       <text:list text:style-name="L4">
        <text:list-item>
-        <text:p text:style-name="P17"><text:span text:style-name="T14">Moins </text:span><text:span text:style-name="T14">d’</text:span><text:span text:style-name="T13">écrans</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T13">gadgets </text:span><text:span text:style-name="T13">numériques</text:span><text:span text:style-name="T14">,</text:span></text:p>
+        <text:p text:style-name="P17"><text:span text:style-name="T14">Moins d’</text:span><text:span text:style-name="T13">écrans</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T13">gadgets numériques</text:span><text:span text:style-name="T14">,</text:span></text:p>
        </text:list-item>
       </text:list>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P16"><text:span text:style-name="T14">Plus d’</text:span><text:span text:style-name="T15">air pur</text:span><text:span text:style-name="T14">, </text:span><text:span text:style-name="T14">de </text:span><text:span text:style-name="T15">repas </text:span><text:span text:style-name="T15">partagés</text:span><text:span text:style-name="T14">.</text:span></text:p>
+        <text:p text:style-name="P16"><text:span text:style-name="T14">Plus d’</text:span><text:span text:style-name="T15">air pur</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T15">repas partagés</text:span><text:span text:style-name="T14">.</text:span></text:p>
        </text:list-item>
       </text:list>
       <text:list text:style-name="L4">
        <text:list-item>
-        <text:p text:style-name="P17"><text:span text:style-name="T14">Moins de </text:span><text:span text:style-name="T13">magouilles</text:span><text:span text:style-name="T14">, </text:span><text:span text:style-name="T14">de </text:span><text:span text:style-name="T13">coercitions</text:span><text:span text:style-name="T14">,</text:span></text:p>
+        <text:p text:style-name="P17"><text:span text:style-name="T14">Moins de </text:span><text:span text:style-name="T13">magouilles</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T13">coercitions</text:span><text:span text:style-name="T14">,</text:span></text:p>
        </text:list-item>
       </text:list>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P16"><text:span text:style-name="T14">Plus de </text:span><text:span text:style-name="T15">transparence</text:span><text:span text:style-name="T14">*, </text:span><text:span text:style-name="T15">d’équité</text:span><text:span text:style-name="T14">.</text:span></text:p>
+        <text:p text:style-name="P16"><text:span text:style-name="T14">Plus de </text:span><text:span text:style-name="T15">transparence</text:span><text:span text:style-name="T14">*,</text:span><text:span text:style-name="T16"> d’</text:span><text:span text:style-name="T15">équité</text:span><text:span text:style-name="T14">.</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr3" draw:text-style-name="P10" draw:layer="layout" svg:width="1.5cm" svg:height="1.187cm" svg:x="25.5cm" svg:y="14.563cm">
+    <draw:frame draw:style-name="gr6" draw:text-style-name="P10" draw:layer="layout" svg:width="1.5cm" svg:height="1.187cm" svg:x="25.5cm" svg:y="14.563cm">
      <draw:text-box>
-      <text:p text:style-name="P19"><text:span text:style-name="T11"><text:page-number>&lt;numéro&gt;</text:page-number></text:span></text:p>
+      <text:p text:style-name="P9"><text:span text:style-name="T11"><text:page-number>&lt;numéro&gt;</text:page-number></text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr4" draw:text-style-name="P11" draw:layer="layout" svg:width="1.5cm" svg:height="1.123cm" svg:x="26.5cm" svg:y="14.563cm">
      <draw:text-box>
-      <text:p text:style-name="P20"><text:span text:style-name="T11">/</text:span><text:span text:style-name="T11"><text:page-count>14</text:page-count></text:span></text:p>
+      <text:p><text:span text:style-name="T11">/</text:span><text:span text:style-name="T11"><text:page-count>14</text:page-count></text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr6" draw:text-style-name="P22" draw:layer="layout" svg:width="8cm" svg:height="2cm" svg:x="10.5cm" svg:y="12.5cm">
+    <draw:frame draw:style-name="gr7" draw:text-style-name="P20" draw:layer="layout" svg:width="8cm" svg:height="2cm" svg:x="10.5cm" svg:y="12.5cm">
      <draw:text-box>
-      <text:p text:style-name="P21"><text:span text:style-name="T16"><text:s/>(* : dans l’espace </text:span><text:span text:style-name="T16">publique)</text:span></text:p>
+      <text:p text:style-name="P19"><text:span text:style-name="T17"><text:s/>(* : dans l’espace publique)</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <presentation:notes draw:style-name="dp4">
+    <presentation:notes draw:style-name="dp2">
      <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="19.798cm" svg:height="11.136cm" svg:x="0.6cm" svg:y="2.257cm" draw:page-number="4" presentation:class="page"/>
      <draw:frame presentation:style-name="pr5" draw:text-style-name="P12" draw:layer="layout" svg:width="16.799cm" svg:height="13.364cm" svg:x="2.1cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true">
       <draw:text-box/>
@@ -50475,35 +50427,35 @@
    <draw:page draw:name="page5" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
     <draw:frame presentation:style-name="pr6" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.4cm" svg:y="0.628cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12">Dates </text:span><text:span text:style-name="T12">clés</text:span></text:p>
+      <text:p><text:span text:style-name="T12">Dates clés</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr9" draw:text-style-name="P24" draw:layer="layout" svg:width="25.199cm" svg:height="9.134cm" svg:x="1.4cm" svg:y="3.685cm" presentation:class="subtitle" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr9" draw:text-style-name="P22" draw:layer="layout" svg:width="25.199cm" svg:height="9.134cm" svg:x="1.4cm" svg:y="3.685cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
       <text:list text:style-name="L1">
        <text:list-item>
-        <text:p text:style-name="P23"><text:span text:style-name="T17">Automne </text:span><text:span text:style-name="T17">2008 : crise </text:span><text:span text:style-name="T17">des subprimes</text:span></text:p>
+        <text:p text:style-name="P21"><text:span text:style-name="T18">Automne 2008 : crise des subprimes</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P23"><text:span text:style-name="T17">Janvier 2009 : </text:span><text:span text:style-name="T17">publication du </text:span><text:span text:style-name="T17">code </text:span><text:span text:style-name="T17">« bitcoin »</text:span></text:p>
+        <text:p text:style-name="P21"><text:span text:style-name="T18">Janvier 2009 : publication du code « bitcoin »</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P23"><text:span text:style-name="T17">2009 &amp; 2010 : </text:span><text:span text:style-name="T17"><text:a xlink:href="https://creationmonetaire.info/" xlink:type="simple">creationmonetaire.info</text:a></text:span><text:span text:style-name="T17"><text:s/>&amp; </text:span><text:span text:style-name="T17">TRM (S. </text:span><text:span text:style-name="T17">Laborde)</text:span></text:p>
+        <text:p text:style-name="P21"><text:span text:style-name="T18">2009 &amp; 2010 : </text:span><text:span text:style-name="T18"><text:a xlink:href="https://creationmonetaire.info/" xlink:type="simple">creationmonetaire.info</text:a></text:span><text:span text:style-name="T18"><text:s/>&amp; TRM (S. Laborde)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P23"><text:span text:style-name="T17">Janvier 2011 : </text:span><text:span text:style-name="T17">projet </text:span><text:span text:style-name="T17">OpenUDC </text:span><text:span text:style-name="T17">(J.J. Brucker)</text:span></text:p>
+        <text:p text:style-name="P21"><text:span text:style-name="T18">Janvier 2011 : projet OpenUDC (J.J. Brucker)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P23"><text:span text:style-name="T17">5 février </text:span><text:span text:style-name="T17">2011 : </text:span><text:span text:style-name="T17">naissance de </text:span><text:span text:style-name="T17">« la monnaie </text:span><text:span text:style-name="T17">libre » (de </text:span><text:span text:style-name="T17">dette)</text:span></text:p>
+        <text:p text:style-name="P21"><text:span text:style-name="T18">5 février 2011 : naissance de « la monnaie libre » (de dette)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P23"><text:span text:style-name="T17">Avril 2014 : </text:span><text:span text:style-name="T17">ucoin/duniter </text:span><text:span text:style-name="T17">(C. Moreau)</text:span></text:p>
+        <text:p text:style-name="P21"><text:span text:style-name="T18">Avril 2014 : ucoin/duniter (C. Moreau)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P23"><text:span text:style-name="T17">8 mars 2017 : </text:span><text:span text:style-name="T17">naissance </text:span><text:span text:style-name="T17">June (</text:span><text:span text:style-name="T17"><text:a xlink:href="https://monnaie-libre.fr/" xlink:type="simple">monnaie-libre.fr</text:a></text:span><text:span text:style-name="T17">)</text:span></text:p>
+        <text:p text:style-name="P21"><text:span text:style-name="T18">8 mars 2017 : naissance June (</text:span><text:span text:style-name="T18"><text:a xlink:href="https://monnaie-libre.fr/" xlink:type="simple">monnaie-libre.fr</text:a></text:span><text:span text:style-name="T18">)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P23"><text:span text:style-name="T17">Avril 2023 : </text:span><text:span text:style-name="T17">Association </text:span><text:span text:style-name="T17">des amis </text:span><text:span text:style-name="T17">d’OpenPGP (</text:span><text:span text:style-name="T17"><text:a xlink:href="https://foopgp.org/" xlink:type="simple">foopgp.org</text:a></text:span><text:span text:style-name="T17">)</text:span></text:p>
+        <text:p text:style-name="P21"><text:span text:style-name="T18">Avril 2023 : Association des amis d’OpenPGP (</text:span><text:span text:style-name="T18"><text:a xlink:href="https://foopgp.org/" xlink:type="simple">foopgp.org</text:a></text:span><text:span text:style-name="T18">)</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -50541,7 +50493,7 @@
       <text:p><text:span text:style-name="T11">/</text:span><text:span text:style-name="T11"><text:page-count>14</text:page-count></text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr7" draw:text-style-name="P25" draw:layer="layout" svg:width="12.297cm" svg:height="8.749cm" svg:x="1.399cm" svg:y="3.251cm" presentation:class="graphic" presentation:user-transformed="true">
+    <draw:frame draw:style-name="gr8" draw:text-style-name="P23" draw:layer="layout" svg:width="12.297cm" svg:height="8.749cm" svg:x="1.399cm" svg:y="3.251cm" presentation:class="graphic" presentation:user-transformed="true">
      <draw:image draw:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABLAAAAM0CAYAAACrp9uPAAAgAElEQVR4XuzdC7g1VX0f/oWo
        GJpSI4TwUlopTcQSFFBjFI3RN5Zaq1wEFbm1XotUQcLFC0KsRhNINSBEERQQFFpphKJitEYT
@@ -51635,7 +51587,7 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr7" draw:text-style-name="P25" draw:layer="layout" svg:width="10.961cm" svg:height="8.815cm" svg:x="14.98cm" svg:y="3.185cm" presentation:class="graphic" presentation:user-transformed="true">
+    <draw:frame draw:style-name="gr8" draw:text-style-name="P23" draw:layer="layout" svg:width="10.961cm" svg:height="8.815cm" svg:x="14.98cm" svg:y="3.185cm" presentation:class="graphic" presentation:user-transformed="true">
      <draw:image draw:mime-type="image/jpeg">
       <office:binary-data>/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgK
        CgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkL
@@ -54897,17 +54849,17 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr8" draw:text-style-name="P26" draw:layer="layout" svg:width="12cm" svg:height="1cm" svg:x="1.5cm" svg:y="12.5cm">
+    <draw:frame draw:style-name="gr9" draw:text-style-name="P25" draw:layer="layout" svg:width="12cm" svg:height="1cm" svg:x="1.5cm" svg:y="12.5cm">
      <draw:text-box>
-      <text:p text:style-name="P25"><text:a xlink:href="https://fr.tradingeconomics.com/euro-area/government-debt" xlink:type="simple">tradingeconomics.com</text:a></text:p>
+      <text:p text:style-name="P24"><text:a xlink:href="https://fr.tradingeconomics.com/euro-area/government-debt" xlink:type="simple">tradingeconomics.com</text:a></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr8" draw:text-style-name="P26" draw:layer="layout" svg:width="11cm" svg:height="1cm" svg:x="15cm" svg:y="12.5cm">
+    <draw:frame draw:style-name="gr9" draw:text-style-name="P25" draw:layer="layout" svg:width="11cm" svg:height="1cm" svg:x="15cm" svg:y="12.5cm">
      <draw:text-box>
-      <text:p text:style-name="P25"><text:a xlink:href="https://www.insee.fr/fr/statistiques/3281639?sommaire=3281778" xlink:type="simple">insee.fr</text:a></text:p>
+      <text:p text:style-name="P24"><text:a xlink:href="https://www.insee.fr/fr/statistiques/3281639?sommaire=3281778" xlink:type="simple">insee.fr</text:a></text:p>
      </draw:text-box>
     </draw:frame>
-    <presentation:notes draw:style-name="dp4">
+    <presentation:notes draw:style-name="dp2">
      <draw:page-thumbnail draw:style-name="gr5" draw:layer="layout" svg:width="19.798cm" svg:height="11.136cm" svg:x="0.6cm" svg:y="2.257cm" draw:page-number="6" presentation:class="page"/>
      <draw:frame presentation:style-name="pr5" draw:text-style-name="P12" draw:layer="layout" svg:width="16.799cm" svg:height="13.364cm" svg:x="2.1cm" svg:y="14.107cm" presentation:class="notes" presentation:placeholder="true">
       <draw:text-box/>
@@ -54915,7 +54867,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page7" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
-    <draw:frame draw:style-name="gr9" draw:text-style-name="P27" draw:layer="layout" svg:width="23.549cm" svg:height="8.999cm" svg:x="2cm" svg:y="4.5cm">
+    <draw:frame draw:style-name="gr10" draw:text-style-name="P23" draw:layer="layout" svg:width="23.549cm" svg:height="8.999cm" svg:x="2cm" svg:y="4.5cm">
      <draw:image draw:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABLAAAAKiCAYAAADG7yVlAAAACXBIWXMAAA7EAAAOxAGVKw4b
        AAAgAElEQVR4nOzde1yUdfr/8bdFgobIGRQPeEDwlClqaFluoWuatanZaTts22bltvvNn33L
@@ -56616,12 +56568,12 @@
     </draw:frame>
     <draw:frame presentation:style-name="pr10" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="2.129cm" svg:x="1.401cm" svg:y="0.5cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12">Masses </text:span><text:span text:style-name="T12">monétair</text:span><text:span text:style-name="T12">es</text:span></text:p>
+      <text:p><text:span text:style-name="T12">Masses monétaires</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr10" draw:text-style-name="P28" draw:layer="layout" svg:width="13.5cm" svg:height="1.5cm" svg:x="7.5cm" svg:y="2.5cm">
+    <draw:frame draw:style-name="gr11" draw:text-style-name="P26" draw:layer="layout" svg:width="13.5cm" svg:height="1.5cm" svg:x="7.5cm" svg:y="2.5cm">
      <draw:text-box>
-      <text:p text:style-name="P25"><text:span text:style-name="T18"><text:a xlink:href="https://www.banque-france.fr/fr/publications-et-statistiques/publications/masse-monetaire-agregats-monetaires-et-base-monetaire" xlink:type="simple">zone euro - 2022</text:a></text:span></text:p>
+      <text:p text:style-name="P24"><text:span text:style-name="T19"><text:a xlink:href="https://www.banque-france.fr/fr/publications-et-statistiques/publications/masse-monetaire-agregats-monetaires-et-base-monetaire" xlink:type="simple">zone euro - 2022</text:a></text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <presentation:notes draw:style-name="dp2">
@@ -56634,23 +56586,23 @@
    <draw:page draw:name="page8" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
     <draw:frame presentation:style-name="pr6" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.4cm" svg:y="0.628cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12">Récapitul</text:span><text:span text:style-name="T12">atif</text:span></text:p>
+      <text:p><text:span text:style-name="T12">Récapitulatif</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr11" draw:text-style-name="P32" draw:layer="layout" svg:width="26.5cm" svg:height="9.134cm" svg:x="1cm" svg:y="3.685cm" presentation:class="subtitle" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr11" draw:text-style-name="P30" draw:layer="layout" svg:width="26.5cm" svg:height="9.134cm" svg:x="1cm" svg:y="3.685cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
       <text:list text:style-name="L1">
        <text:list-item>
-        <text:p text:style-name="P29"><text:span text:style-name="T14">Paradoxe </text:span><text:span text:style-name="T14">des intérêts </text:span><text:span text:style-name="T14">manquants :</text:span></text:p>
-        <text:p text:style-name="P30"><text:span text:style-name="T14">Dette (taux </text:span><text:span text:style-name="T14">directeurs) </text:span><text:span text:style-name="T14">&lt;=&gt; </text:span><text:span text:style-name="T14">Croissance</text:span></text:p>
+        <text:p text:style-name="P27"><text:span text:style-name="T20">Paradoxe des intérêts manquants :</text:span></text:p>
+        <text:p text:style-name="P28"><text:span text:style-name="T20">Dette (taux directeurs) &lt;=&gt; Croissance</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P31"><text:span text:style-name="T14">Effet </text:span><text:span text:style-name="T14">Cantillon =&gt;</text:span></text:p>
-        <text:p text:style-name="P29"><text:span text:style-name="T14">€, $, ¥, ₿ ne </text:span><text:span text:style-name="T14">sont </text:span><text:span text:style-name="T13">pas des </text:span><text:span text:style-name="T13">unités de </text:span><text:span text:style-name="T13">mesure</text:span><text:span text:style-name="T19">.</text:span></text:p>
-        <text:p text:style-name="P29"><text:span text:style-name="T14">Ce sont des </text:span><text:span text:style-name="T14">escroqueries </text:span><text:span text:style-name="T14">(dixit Maurice </text:span><text:span text:style-name="T14">Allais)</text:span></text:p>
+        <text:p text:style-name="P29"><text:span text:style-name="T20">Effet Cantillon =&gt;</text:span></text:p>
+        <text:p text:style-name="P27"><text:span text:style-name="T20">€, $, ¥, ₿ ne sont </text:span><text:span text:style-name="T21">pas des unités de mesure</text:span><text:span text:style-name="T20">.</text:span></text:p>
+        <text:p text:style-name="P27"><text:span text:style-name="T20">Ce sont des escroqueries (dixit Maurice Allais)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P31"><text:span text:style-name="T20">Principale</text:span><text:span text:style-name="T20">s sources </text:span><text:span text:style-name="T20">des </text:span><text:span text:style-name="T21">tensions </text:span><text:span text:style-name="T21">qui </text:span><text:span text:style-name="T21">détruisent</text:span><text:span text:style-name="T20"> </text:span><text:span text:style-name="T20">ou </text:span><text:span text:style-name="T20">menacent </text:span><text:span text:style-name="T21">l’ensemble </text:span><text:span text:style-name="T21">du vivant</text:span></text:p>
+        <text:p text:style-name="P29"><text:span text:style-name="T22">Principales sources des </text:span><text:span text:style-name="T23">tensions qui détruisent</text:span><text:span text:style-name="T22"> ou menacent </text:span><text:span text:style-name="T23">l’ensemble du vivant</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -56675,15 +56627,15 @@
    <draw:page draw:name="page9" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
     <draw:frame presentation:style-name="pr6" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.4cm" svg:y="0.628cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12">Le dji (</text:span><text:span text:style-name="T22">Ɉ</text:span><text:span text:style-name="T12">)</text:span></text:p>
+      <text:p><text:span text:style-name="T12">Le dji (</text:span><text:span text:style-name="T24">Ɉ</text:span><text:span text:style-name="T12">)</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr12" draw:text-style-name="P34" draw:layer="layout" svg:width="25.199cm" svg:height="4.5cm" svg:x="1.4cm" svg:y="9cm" presentation:class="subtitle" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr12" draw:text-style-name="P32" draw:layer="layout" svg:width="25.199cm" svg:height="4.5cm" svg:x="1.4cm" svg:y="9cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p text:style-name="P33"><text:span text:style-name="T23">Le Dji est un outil d&apos;échange et de </text:span><text:span text:style-name="T23">gouvernance réservé aux </text:span><text:span text:style-name="T23">adhérents de l&apos;association.</text:span></text:p>
-      <text:p text:style-name="P33"><text:span text:style-name="T23">Les contributions nominatives </text:span><text:span text:style-name="T23">valent cotisations.</text:span></text:p>
-      <text:p text:style-name="P33"><text:span text:style-name="T23">Les djis calculés à partir de la date </text:span><text:span text:style-name="T23">et du montant et vos contributions </text:span><text:span text:style-name="T23">seront crées et attribués après </text:span><text:span text:style-name="T23">validation de votre adhésion, c&apos;est-</text:span><text:span text:style-name="T23">à-dire certification de votre identité </text:span><text:span text:style-name="T23">numérique OpenPGP ID. </text:span></text:p>
-      <text:p text:style-name="P33"><text:span text:style-name="T23">Conformément à nos </text:span><text:span text:style-name="T23"><text:a xlink:href="https://foopgp.org/fr/about/status/" xlink:type="simple">statuts</text:a></text:span><text:span text:style-name="T23"><text:s/>et </text:span><text:span text:style-name="T23"><text:a xlink:href="https://foopgp.org/fr/about/rules-of-procedures/" xlink:type="simple">règlement intérieur</text:a></text:span><text:span text:style-name="T23">.</text:span></text:p>
+      <text:p text:style-name="P31"><text:span text:style-name="T25">Le Dji est un outil d&apos;échange et de gouvernance réservé aux adhérents de l&apos;association.</text:span></text:p>
+      <text:p text:style-name="P31"><text:span text:style-name="T25">Les contributions nominatives valent cotisations.</text:span></text:p>
+      <text:p text:style-name="P31"><text:span text:style-name="T25">Les djis calculés à partir de la date et du montant et vos contributions seront crées et attribués après validation de votre adhésion, c&apos;est-à-dire certification de votre identité numérique OpenPGP ID. </text:span></text:p>
+      <text:p text:style-name="P31"><text:span text:style-name="T25">Conformément à nos </text:span><text:span text:style-name="T25"><text:a xlink:href="https://foopgp.org/fr/about/status/" xlink:type="simple">statuts</text:a></text:span><text:span text:style-name="T25"><text:s/>et </text:span><text:span text:style-name="T25"><text:a xlink:href="https://foopgp.org/fr/about/rules-of-procedures/" xlink:type="simple">règlement intérieur</text:a></text:span><text:span text:style-name="T25">.</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr3" draw:text-style-name="P10" draw:layer="layout" svg:width="3.397cm" svg:height="1.187cm" svg:x="23.603cm" svg:y="14.563cm">
@@ -56696,53 +56648,53 @@
       <text:p><text:span text:style-name="T11">/</text:span><text:span text:style-name="T11"><text:page-count>14</text:page-count></text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr11" draw:layer="layout" svg:width="22.997cm" svg:height="4.868cm" svg:x="2.5cm" svg:y="3.639cm">
+    <draw:frame draw:style-name="gr12" draw:layer="layout" svg:width="22.997cm" svg:height="4.868cm" svg:x="2.5cm" svg:y="3.639cm">
      <table:table table:template-name="black-dark" table:use-first-row-styles="true" table:use-first-column-styles="true">
       <table:table-column table:style-name="co1"/>
       <table:table-column table:style-name="co2"/>
       <table:table-column table:style-name="co3"/>
       <table:table-row table:style-name="ro1" table:default-cell-style-name="ce2">
        <table:table-cell table:style-name="ce1">
-        <text:p text:style-name="P35"><text:span text:style-name="T24">Devise</text:span></text:p>
+        <text:p text:style-name="P33"><text:span text:style-name="T26">Devise</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P35"><text:span text:style-name="T24">Création (futur)</text:span></text:p>
+        <text:p text:style-name="P33"><text:span text:style-name="T26">Création (futur)</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P35"><text:span text:style-name="T24">Création (maintenant)</text:span></text:p>
+        <text:p text:style-name="P33"><text:span text:style-name="T26">Création (maintenant)</text:span></text:p>
        </table:table-cell>
       </table:table-row>
       <table:table-row table:style-name="ro1" table:default-cell-style-name="ce4">
        <table:table-cell table:style-name="ce3">
-        <text:p text:style-name="P36"><text:span text:style-name="T25">Euro, Dollar, ...</text:span></text:p>
+        <text:p text:style-name="P34"><text:span text:style-name="T27">Euro, Dollar, ...</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P37"><text:span text:style-name="T26">Imprévisible</text:span></text:p>
+        <text:p text:style-name="P35"><text:span text:style-name="T28">Imprévisible</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P37"><text:span text:style-name="T26">Réservée aux plus riches </text:span></text:p>
+        <text:p text:style-name="P35"><text:span text:style-name="T28">Réservée aux plus riches </text:span></text:p>
        </table:table-cell>
       </table:table-row>
       <table:table-row table:style-name="ro1">
        <table:table-cell table:style-name="ce3">
-        <text:p text:style-name="P36"><text:span text:style-name="T25">Bitcoin, Monero, ...</text:span></text:p>
+        <text:p text:style-name="P34"><text:span text:style-name="T27">Bitcoin, Monero, ...</text:span></text:p>
        </table:table-cell>
        <table:table-cell table:style-name="ce5">
-        <text:p text:style-name="P38"><text:span text:style-name="T27">Prévisible</text:span></text:p>
+        <text:p text:style-name="P36"><text:span text:style-name="T29">Prévisible</text:span></text:p>
        </table:table-cell>
        <table:table-cell table:style-name="ce4">
-        <text:p text:style-name="P37"><text:span text:style-name="T26">Premier arrivé, premier servi.</text:span></text:p>
+        <text:p text:style-name="P35"><text:span text:style-name="T28">Premier arrivé, premier servi.</text:span></text:p>
        </table:table-cell>
       </table:table-row>
       <table:table-row table:style-name="ro2" table:default-cell-style-name="ce5">
        <table:table-cell table:style-name="ce3">
-        <text:p text:style-name="P36"><text:span text:style-name="T25">Dji, June.</text:span></text:p>
+        <text:p text:style-name="P34"><text:span text:style-name="T27">Dji, June.</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P38"><text:span text:style-name="T27">Prévisible</text:span></text:p>
+        <text:p text:style-name="P36"><text:span text:style-name="T29">Prévisible</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P38"><text:span text:style-name="T27">Parfaitement distribuée </text:span></text:p>
+        <text:p text:style-name="P36"><text:span text:style-name="T29">Parfaitement distribuée </text:span></text:p>
        </table:table-cell>
       </table:table-row>
      </table:table><draw:image>
@@ -57046,29 +56998,29 @@
    <draw:page draw:name="page10" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
     <draw:frame presentation:style-name="pr6" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.4cm" svg:y="0.628cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12">OpenPG</text:span><text:span text:style-name="T12">P</text:span></text:p>
+      <text:p><text:span text:style-name="T12">OpenPGP</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr13" draw:text-style-name="P42" draw:layer="layout" svg:width="25.199cm" svg:height="10.696cm" svg:x="1.4cm" svg:y="2.902cm" presentation:class="subtitle" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr13" draw:text-style-name="P40" draw:layer="layout" svg:width="25.199cm" svg:height="10.696cm" svg:x="1.4cm" svg:y="2.902cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P39"><text:span text:style-name="T14">Signature, </text:span><text:span text:style-name="T14">Chiffrement, </text:span><text:span text:style-name="T14">Authentificati</text:span><text:span text:style-name="T14">on</text:span></text:p>
+        <text:p text:style-name="P37"><text:span text:style-name="T14">Signature, Chiffrement, Authentification</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P39"><text:span text:style-name="T14">Confiance </text:span><text:span text:style-name="T14">décentralisée </text:span><text:span text:style-name="T14">(Web of </text:span><text:span text:style-name="T14">Trust)</text:span></text:p>
+        <text:p text:style-name="P37"><text:span text:style-name="T14">Confiance décentralisée (Web of Trust)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P40"><text:span text:style-name="T28">Technologie </text:span><text:span text:style-name="T28">éprouvée </text:span><text:span text:style-name="T28">(1991), </text:span><text:span text:style-name="T28">ouverte </text:span><text:span text:style-name="T28">(depuis </text:span><text:span text:style-name="T28">1996),</text:span></text:p>
+        <text:p text:style-name="P38"><text:span text:style-name="T20">Technologie éprouvée (1991), ouverte (depuis 1996),</text:span></text:p>
        </text:list-item>
       </text:list>
-      <text:p text:style-name="P40"><text:span text:style-name="T28"><text:tab/></text:span><text:span text:style-name="T28">en </text:span><text:span text:style-name="T28">constante </text:span><text:span text:style-name="T28">évolution (8 </text:span><text:span text:style-name="T28">RFC + many </text:span><text:span text:style-name="T28">IETF drafts)</text:span></text:p>
+      <text:p text:style-name="P38"><text:span text:style-name="T20"><text:tab/></text:span><text:span text:style-name="T20">en constante évolution (8 RFC + many IETF drafts)</text:span></text:p>
       <text:list text:continue-numbering="true" text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P40"><text:span text:style-name="T14">Interopérable </text:span><text:span text:style-name="T14">(courriel, ssh, </text:span><text:span text:style-name="T14">git, </text:span><text:span text:style-name="T14">documents, </text:span><text:span text:style-name="T14">paiements)</text:span></text:p>
+        <text:p text:style-name="P38"><text:span text:style-name="T14">Interopérable (courriel, ssh, git, documents, paiements)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P41"><text:span text:style-name="T29">Outil ultime </text:span><text:span text:style-name="T29">pour </text:span><text:span text:style-name="T30">contrer la </text:span><text:span text:style-name="T30">surveillanc</text:span><text:span text:style-name="T30">e de </text:span><text:span text:style-name="T30">masse</text:span><text:span text:style-name="T29"> et </text:span><text:span text:style-name="T31">construire </text:span><text:span text:style-name="T31">des </text:span><text:span text:style-name="T31">réseaux </text:span><text:span text:style-name="T31">qui </text:span><text:span text:style-name="T31">respectent </text:span><text:span text:style-name="T31">nos vies </text:span><text:span text:style-name="T31">privées</text:span><text:span text:style-name="T29">.</text:span></text:p>
+        <text:p text:style-name="P39"><text:span text:style-name="T30">Outil ultime pour </text:span><text:span text:style-name="T31">contrer la surveillance de masse</text:span><text:span text:style-name="T30"> et </text:span><text:span text:style-name="T32">construire des réseaux qui respectent nos vies privées</text:span><text:span text:style-name="T30">.</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -57096,22 +57048,22 @@
       <text:p><text:span text:style-name="T12">Djibian</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr14" draw:text-style-name="P24" draw:layer="layout" svg:width="25.199cm" svg:height="9.134cm" svg:x="1.4cm" svg:y="3.685cm" presentation:class="subtitle" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr14" draw:text-style-name="P22" draw:layer="layout" svg:width="25.199cm" svg:height="9.134cm" svg:x="1.4cm" svg:y="3.685cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
       <text:list text:style-name="L5">
        <text:list-item>
         <text:p>Système GNU/Linux</text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P43">Fait par et pour des <text:span text:style-name="T27">humains </text:span><text:span text:style-name="T27">qui se </text:span><text:span text:style-name="T27">respectent</text:span></text:p>
+        <text:p text:style-name="P41">Fait par et pour des <text:span text:style-name="T29">humains qui se respectent</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P43">Composé à 99 % de logiciels libres :</text:p>
-        <text:p><text:span text:style-name="T27">communs </text:span><text:span text:style-name="T27">auditables </text:span><text:span text:style-name="T27">et </text:span><text:span text:style-name="T27">réparables</text:span></text:p>
+        <text:p text:style-name="P41">Composé à 99 % de logiciels libres :</text:p>
+        <text:p><text:span text:style-name="T29">communs auditables et réparables</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P43"><text:span text:style-name="T32">À la pointe</text:span><text:span text:style-name="T20"> </text:span><text:span text:style-name="T20">de l’usage </text:span><text:span text:style-name="T20">d’</text:span><text:span text:style-name="T32">OpenPG</text:span><text:span text:style-name="T32">P</text:span><text:span text:style-name="T20">,</text:span></text:p>
-        <text:p><text:span text:style-name="T20">et </text:span><text:span text:style-name="T20">notammen</text:span><text:span text:style-name="T20">t du </text:span><text:span text:style-name="T32">dji</text:span><text:span text:style-name="T24"> (Ɉ)</text:span></text:p>
+        <text:p text:style-name="P41"><text:span text:style-name="T33">À la pointe</text:span><text:span text:style-name="T34"> de l’usage d’</text:span><text:span text:style-name="T33">OpenPGP</text:span><text:span text:style-name="T34">,</text:span></text:p>
+        <text:p><text:span text:style-name="T34">et notamment du </text:span><text:span text:style-name="T33">dji</text:span><text:span text:style-name="T26"> (Ɉ)</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -57139,20 +57091,23 @@
       <text:p><text:span text:style-name="T12">Bilan</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr15" draw:text-style-name="P45" draw:layer="layout" svg:width="23.5cm" svg:height="9.221cm" svg:x="2.5cm" svg:y="3.642cm" presentation:class="subtitle" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr15" draw:text-style-name="P43" draw:layer="layout" svg:width="24.5cm" svg:height="10.507cm" svg:x="2cm" svg:y="2.999cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
-      <text:list text:style-name="L6">
+      <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P44"><text:span text:style-name="T15">Ré-</text:span><text:span text:style-name="T15">appropriation </text:span><text:span text:style-name="T15">de l’outil</text:span><text:span text:style-name="T14"> </text:span><text:span text:style-name="T14">(« Monnaie </text:span><text:span text:style-name="T14">libre »)</text:span></text:p>
+        <text:p text:style-name="P42"><text:span text:style-name="T15">Ré-appropriation de l’outil</text:span><text:span text:style-name="T14"> (« Monnaie libre »)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P44"><text:span text:style-name="T14">Cadre </text:span><text:span text:style-name="T14">structuré </text:span><text:span text:style-name="T14">(Siret, etc) : </text:span><text:span text:style-name="T15">foopgp.org</text:span></text:p>
+        <text:p text:style-name="P42"><text:span text:style-name="T14">Cadre structuré (Statuts, RI, Siret, etc) : </text:span><text:span text:style-name="T15">foopgp.org</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P44"><text:span text:style-name="T14">Identité </text:span><text:span text:style-name="T14">numérique </text:span><text:span text:style-name="T14">décentralisée </text:span><text:span text:style-name="T15">OpenPGP ID</text:span></text:p>
+        <text:p text:style-name="P42"><text:span text:style-name="T14">Outillage </text:span><text:span text:style-name="T15">posé et opérationnel</text:span><text:span text:style-name="T14"> (NextCloud, git, etc)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P44"><text:span text:style-name="T14">Véhicule in</text:span><text:span text:style-name="T14">tégrateur et </text:span><text:span text:style-name="T14">catalyseur : </text:span><text:span text:style-name="T33">djibian</text:span><text:span text:style-name="T14"> </text:span></text:p>
+        <text:p text:style-name="P42"><text:span text:style-name="T14">Identité numérique décentralisée </text:span><text:span text:style-name="T15">OpenPGP ID</text:span></text:p>
+       </text:list-item>
+       <text:list-item>
+        <text:p text:style-name="P42"><text:span text:style-name="T14">Véhicule intégrateur et catalyseur : </text:span><text:span text:style-name="T35">djibian</text:span><text:span text:style-name="T14"> </text:span></text:p>
         <text:list>
          <text:list-item>
           <text:list>
@@ -57161,7 +57116,7 @@
              <text:list-item>
               <text:list>
                <text:list-item>
-                <text:p text:style-name="P44"><text:span text:style-name="T31">Rés</text:span><text:span text:style-name="T31">ervati</text:span><text:span text:style-name="T31">ons </text:span><text:span text:style-name="T34">et</text:span><text:span text:style-name="T31"> </text:span><text:span text:style-name="T31">créati</text:span><text:span text:style-name="T31">ons</text:span><text:span text:style-name="T31"><text:line-break/></text:span><text:span text:style-name="T31"><text:tab/></text:span><text:span text:style-name="T31"> </text:span><text:span text:style-name="T31"><text:tab/></text:span><text:span text:style-name="T31"> </text:span><text:span text:style-name="T34">des</text:span><text:span text:style-name="T31"> </text:span><text:span text:style-name="T31">premi</text:span><text:span text:style-name="T31">ers </text:span><text:span text:style-name="T31">djis </text:span><text:span text:style-name="T34">(Ɉ)</text:span></text:p>
+                <text:p text:style-name="P42"><text:span text:style-name="T32">Réservations </text:span><text:span text:style-name="T36">et</text:span><text:span text:style-name="T32"> créations</text:span><text:span text:style-name="T32"><text:line-break/></text:span><text:span text:style-name="T32"><text:tab/></text:span><text:span text:style-name="T32"> </text:span><text:span text:style-name="T32"><text:tab/></text:span><text:span text:style-name="T32"> </text:span><text:span text:style-name="T36">des</text:span><text:span text:style-name="T32"> premiers djis </text:span><text:span text:style-name="T36">(Ɉ)</text:span></text:p>
                </text:list-item>
               </text:list>
              </text:list-item>
@@ -57197,29 +57152,29 @@
       <text:p><text:span text:style-name="T12">Objectifs</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr16" draw:text-style-name="P48" draw:layer="layout" svg:width="25.199cm" svg:height="9.241cm" svg:x="1.4cm" svg:y="3.629cm" presentation:class="subtitle" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr16" draw:text-style-name="P46" draw:layer="layout" svg:width="25.199cm" svg:height="9.241cm" svg:x="1.4cm" svg:y="3.629cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
-      <text:list text:style-name="L6">
+      <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P46"><text:span text:style-name="T15">Échanger</text:span><text:span text:style-name="T14"> ses </text:span><text:span text:style-name="T15">djis</text:span></text:p>
+        <text:p text:style-name="P44"><text:span text:style-name="T15">Échanger</text:span><text:span text:style-name="T14"> ses </text:span><text:span text:style-name="T15">djis</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P46"><text:span text:style-name="T14">Améliorer la </text:span><text:span text:style-name="T15">structure</text:span><text:span text:style-name="T14"> </text:span><text:span text:style-name="T14">(SCOP)</text:span></text:p>
+        <text:p text:style-name="P44"><text:span text:style-name="T14">Améliorer la </text:span><text:span text:style-name="T15">structure</text:span><text:span text:style-name="T14"> (SCOP)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P47"><text:span text:style-name="T14">Améliorer la </text:span><text:span text:style-name="T15">qualité des </text:span><text:span text:style-name="T15">produits</text:span></text:p>
+        <text:p text:style-name="P45"><text:span text:style-name="T14">Améliorer la </text:span><text:span text:style-name="T15">qualité des produits</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P47"><text:span text:style-name="T14">Accompagne</text:span><text:span text:style-name="T14">r la </text:span><text:span text:style-name="T15">croissance </text:span><text:span text:style-name="T15">des </text:span><text:span text:style-name="T15">adhésions</text:span><text:span text:style-name="T14"> (&gt; </text:span><text:span text:style-name="T14">1M)</text:span></text:p>
+        <text:p text:style-name="P45"><text:span text:style-name="T14">Accompagner la </text:span><text:span text:style-name="T15">croissance des adhésions</text:span><text:span text:style-name="T14"> (&gt; 1M)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P47"><text:span text:style-name="T28">Accompagne</text:span><text:span text:style-name="T28">r la </text:span><text:span text:style-name="T35">montée </text:span><text:span text:style-name="T35">en valeur du </text:span><text:span text:style-name="T35">dji</text:span><text:span text:style-name="T28"> (1 Ɉ &gt; 1k€)</text:span></text:p>
+        <text:p text:style-name="P45"><text:span text:style-name="T20">Accompagner la </text:span><text:span text:style-name="T37">montée en valeur du dji</text:span><text:span text:style-name="T20"> (1 Ɉ &gt; 1k€)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P46"><text:span text:style-name="T32">Nous </text:span><text:span text:style-name="T32">libérer</text:span><text:span text:style-name="T20"> à </text:span><text:span text:style-name="T20">90 % du </text:span><text:span text:style-name="T20">chiffre </text:span><text:span text:style-name="T20">d’affaire</text:span></text:p>
+        <text:p text:style-name="P44"><text:span text:style-name="T33">Nous libérer</text:span><text:span text:style-name="T34"> à 90 % du chiffre d’affaire</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P46"><text:span text:style-name="T32">des </text:span><text:span text:style-name="T32">GAFAMPX</text:span><text:span text:style-name="T20"> </text:span><text:span text:style-name="T20">d’aujourd’</text:span><text:span text:style-name="T20">hui.</text:span></text:p>
+        <text:p text:style-name="P44"><text:span text:style-name="T33">des GAFAMPX</text:span><text:span text:style-name="T34"> d’aujourd’hui.</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -57244,10 +57199,10 @@
    <draw:page draw:name="page14" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="1.993cm" svg:x="1.5cm" svg:y="1cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12">Merci </text:span><text:span text:style-name="T12">pour </text:span><text:span text:style-name="T12">votre </text:span><text:span text:style-name="T12">attention</text:span></text:p>
+      <text:p><text:span text:style-name="T12">Merci pour votre attention</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr12" draw:text-style-name="P27" draw:layer="layout" svg:width="12.54cm" svg:height="11.879cm" svg:x="7.96cm" svg:y="3.521cm">
+    <draw:frame draw:style-name="gr13" draw:text-style-name="P23" draw:layer="layout" svg:width="12.54cm" svg:height="11.879cm" svg:x="7.96cm" svg:y="3.521cm">
      <draw:image draw:mime-type="image/jpeg">
       <office:binary-data>/9j/4AAQSkZJRgABAQEAAAAAAAD/4QBCRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAA
        AAAAAkAAAAMAAAABAAsAAEABAAEAAAABAAAAAAAAAAAAAP/bAEMACwkJBwkJBwkJCQkLCQkJ
@@ -57864,10 +57819,10 @@
      </draw:frame>
     </presentation:notes>
    </draw:page>
-   <draw:page draw:name="page15" draw:style-name="dp5" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL4T1">
-    <draw:frame presentation:style-name="pr6" draw:text-style-name="P49" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.301cm" svg:y="6.5cm" presentation:class="title" presentation:user-transformed="true">
+   <draw:page draw:name="page15" draw:style-name="dp4" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL4T1">
+    <draw:frame presentation:style-name="pr6" draw:text-style-name="P47" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.301cm" svg:y="6.5cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T36">À table !</text:span></text:p>
+      <text:p><text:span text:style-name="T38">À table !</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <presentation:notes draw:style-name="dp2">

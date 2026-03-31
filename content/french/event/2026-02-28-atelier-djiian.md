@@ -46,8 +46,8 @@ Si vous avez des ordinateurs qui rament, qui buguent ou qui vous espionnent (tou
 ## Programme
 
 #### --- 11h00 --- Présentation Djibian
-- Parcours et objectif des hommes et femmes à l'origine du projet.
 - Concepts et terminologie : **Linux**, **OpenPGP**, **YubiKey**, **Monnaie Libre**, **dji (Ɉ)**.
+{{< embed-pdf url="/documents/fr/20260330-presentation-djibian.pdf" >}}
 
 #### --- 12h30 --- **Repas** partagé
 

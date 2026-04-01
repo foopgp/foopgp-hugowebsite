@@ -60,11 +60,11 @@ Sauf que :
 [^RI4]: Article 4 de notre [règlement intérieur](/fr/about/rules-of-procedures/) : <https://foopgp.org/fr/about/rules-of-procedures/>
 [^RI5]: Article 5 de notre [règlement intérieur](/fr/about/rules-of-procedures/) : <https://foopgp.org/fr/about/rules-of-procedures/>
 
-Ainsi le premier calcule ne représente que le cas où la société ne produit rien, dans une économie totalement égalitaire.
+Ainsi le premier calcul ne représente que le cas où la société ne produit rien, dans une économie totalement égalitaire.
 
 Et le chiffre de 2369.31 €, n'est qu'une estimation plancher.
 
-Il est extrêmement probable qu'un jour, **la valorisation d'un dji dépasse les 3000 euros** (1 Ɉ > 3000 €).
+Il est donc extrêmement probable qu'un jour, **la valorisation d'un dji dépasse les 3000 euros** (1 Ɉ > 3000 €).
 
 ---
 

@@ -1,6 +1,7 @@
 /public/*
 !/public/documents/
 !/public/videos/
+!/public/dji-viewer/
 /resources/_gen
 static/goaccess
 static/register/config.php

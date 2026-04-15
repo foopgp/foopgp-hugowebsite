@@ -40,7 +40,11 @@ Supposons que nous sommes en février 2026 et que la taille du gateau économiqu
 
 Dans la zone euro, [la masse monétaire M1](https://fr.tradingeconomics.com/euro-area/money-supply-m1) est de 11235768 millions d'euros, c'est à dire en moyenne : 11235768/350 =~ 32102.19 € par citoyen de cette zone. [^momentum]
 
-Dès que nous commençons à utiliser le dji (émancipateur) à la place de l'euro (qui cause tant de maux), nous avons échangé et utilisons donc en moyenne 13.549179 Ɉ pour 32102.19 €.
+Ce chiffre est une référence sur lequel nous pouvons appliquer la formule simplifiée de création du dji : *DJI = log₂(EUR + 1) / stingynalty*. [^RI4]
+
+Le paramètre stingynalty ayant été fixé en Assemblée Générale à la valeur de 1.10489557718673078682 pour ce mois de février 2026, nous avons donc *log₂(32102.19+1)/1.10489557718673078682 ≃ 13.549179*
+
+Donc dès que nous commençons à utiliser le dji (émancipateur) à la place de l'euro (qui cause tant de maux), nous échangeons et utilisons en moyenne 13.549179 Ɉ pour 32102.19 €.
 
 C'est à dire qu'un dji (Ɉ) vaut 32102.19/13.549179 = 2369.31 €.
 
@@ -59,8 +63,8 @@ Précisons maintenant :
 - Pression à baisse puis à la hausse : Tout le monde n'a pas en moyenne 32102.19 € sur son compte en banque... [^momentum]
 - Pression à la hausse : Le dji est la part sociale d'une société qui produit des innovations comme [**OpenPGP ID**](/fr/blog/2026-01-19-djibian-release/) et [**Djibian**](/fr/blog/2026-02-10-djibian-tour/). Ces produits s'attaquent (entre autres) aux parts de marché de Microsoft et d'Apple, c'est-à-dire (rien que pour eux deux) : [7200 milliards de capitalisation (en 2025)](https://www.clubic.com/actualite-574953-non-apple-et-microsoft-ne-connaissent-pas-la-crise.html).
 
-[^RI4]: Article 4 de notre [règlement intérieur](/fr/about/rules-of-procedures/) : <https://foopgp.org/fr/about/rules-of-procedures/>
-[^RI5]: Article 5 de notre [règlement intérieur](/fr/about/rules-of-procedures/) : <https://foopgp.org/fr/about/rules-of-procedures/>
+[^RI4]: Article 4 de notre [règlement intérieur](/fr/about/rules-of-procedures/#article-4---modalités-relatives-aux-jetons-de-pouvoir-confer-article-10bis-des-statuts) : <https://foopgp.org/fr/about/rules-of-procedures/>
+[^RI5]: Article 5 de notre [règlement intérieur](/fr/about/rules-of-procedures/#article-5--émission-universelle-de-nouveaux-jetons-confer-article-10bis-des-statuts) : <https://foopgp.org/fr/about/rules-of-procedures/>
 [^momentum]: momentum : ~99% des citoyens de la zone euro ont intérêt à adopter le dji, justement parce qu'ils sont en dessous de cette moyenne. Par rapport à l'euro, une pression supplémentaire à la hausse apparaîtra lorsque, même pour les ~1% des plus riches, ce que nous produisons sera acheté dans ***notre*** monnaie, émancipatrice ; plutôt que dans ***leur*** monnaie, qui ne leur coûte rien (ou presque, cf. effet Cantillon).
 
 

@@ -40,6 +40,9 @@
 - id: identity
   translation: identité
 
+- id: invest
+  translation: investir
+
 - id: join
   translation: rejoindre
 

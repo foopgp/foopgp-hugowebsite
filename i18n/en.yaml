@@ -40,6 +40,9 @@
 - id: identity
   translation: identity
 
+- id: invest
+  translation: invest
+
 - id: join 
   translation: join
 

@@ -5,7 +5,7 @@ date: 2026-04-19T18:00:00+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Procès-verbal d'assemblée générale ordinaire"
-image: "images/logos/logo-black-pgp.png"
+image: "images/banner/foopgp+dji+djibian.png"
 ###categories: [""]
 ###tags: [""]
 type: "meeting"
@@ -13,15 +13,13 @@ type: "meeting"
 
 # Procès Verbal de l’Assemblée Générale ordinaire du 19 avril 2026
 
-# Analyse de l'Assemblée Générale du 19/04/2026
-
 ## 1\. Fiche Identité de l'Assemblée Générale
 
-• **Organisation :** Association promouvant la monnaie libre (Djee/June) et l'identité numérique décentralisée
+• **Organisation :** Association promouvant l'usage des solutions « OpenPGP » : chiffrement, signature, authentification, mais aussi et surtout ses propres innovations : le jeton « dji » (Ɉ) et l'identité numérique décentralisée.
 
 • **Type d'AG :** Ordinaire (renouvellement des instances, bilan financier et moral)
 
-• **Date & Lieu :** 19/04/2026 à 16h - Lieu non spécifié (visioconférence partielle)
+• **Date & Lieu :** 19/04/2026 à 16h à Gap (visioconférence partielle)
 
 • **Intervenants Clés :**
 
@@ -42,12 +40,11 @@ type: "meeting"
 
 ## 2\. Synthèse Exécutive
 
-Cette AG marque un tournant pour l'association, centrée sur la promotion d'une **monnaie libre** (Dji) et d'une **identité numérique OpenPGP****, décentralisées**. Les débats révèlent des tensions entre :
+Cette AG marque un tournant pour l'association, centrée sur la promotion de la « **monnaie libre** » : le Dji et de l'**identité numérique décentralisées OpenPGP ID**. Les débats révèlent des tensions entre :
 
-• **L'urgence technique** (développement de solutions comme Giga Onboarding) portée par Jean-Jacques.
+• **L'urgence technique** (développement de solutions comme Djibian Onboarding) portée par Jean-Jacques.
 
 • **La nécessité de structuration** (comptabilité, recherche de financements, communication) soulignée par Jacques et Didier.
-
 
 Le **bilan financier 2025** est adopté malgré des lacunes comptables (selon Katia : 2% de justificatifs. Manque particulièrement les frais périodiques (abonnements) et les reçus de cotisations (Urgence)), tandis que le **bilan moral** met en avant des avancées techniques (intégration Debian, ateliers) mais un manque de clarté stratégique. Le renouvellement du CA et du bureau reflète une volonté de professionnalisation, avec l'arrivée de Jacques (expert-comptable) et la confirmation de Jean-Jacques à la présidence.
 
@@ -93,17 +90,17 @@ Le **bilan financier 2025** est adopté malgré des lacunes comptables (selon Ka
 
 • **Avancées :**
 
-• Intégration de **Debian** et **OpenPGP** pour une identité numérique décentralisée.
+• Intégration dans **Debian** de nos outils et configurations, pour l'usage des clés de sécurité **OpenPGP** et de l'identité numérique décentralisée **OpenPGP ID**.
 
 • Développement de **Djibian** **Onboarding** (front-end par Sébastien Picardeau).
 
 • Création de plaquettes de communication (Isabelle).
 
-• Ateliers et conférences pour vulgariser le projet.
+• Ateliers pour maîtriser les outils et conférences pour vulgariser le projet.
 
 • **Défis :**
 
-• **50-60% des développements** achevés : l'étape « Investir » n’est pas finie (visualiser ses djis), et l’étape « s’émanciper » n’est pas commencée (échanger ses djis, avec la yubikeys).
+• **50-60% des développements** achevés : l'étape « Investir » n’est pas finie (visualiser ses djis), et l’étape « s’émanciper » n’est pas commencée (échanger ses djis, avec les yubikeys).
 
 • _Complexité_ : Projet difficilement compréhensible pour le grand public (centralisation vs décentralisation, interopérabilité).
 
@@ -122,7 +119,7 @@ Le **bilan financier 2025** est adopté malgré des lacunes comptables (selon Ka
 
 • **Membres sortants,** **ne se représentant pas** : Michel Schmidt, Claire Bodzen, Alain Bayle, Stéphane Fawal, Fred Renaud.
 
-• **M****embres** **reconduits** : Laurent Céard, François, Jean-Jacques, Fred Zwikel, Katia Poyer.
+• **Membres reconduits** : Laurent Céard, François, Jean-Jacques, Fred Zwikel, Katia Poyer.
 
 • **Nouveaux** **membres** : Jacques (expert-comptable).
 
@@ -191,7 +188,7 @@ Le **bilan financier 2025** est adopté malgré des lacunes comptables (selon Ka
 | Résolution 3 | Maintien du paramètre Stingynalty à +5/1000 par mois | ADOPTÉE | 0 contre, 0 abstention (malgré les réserves). |
 | Résolution 4 | Renouvellement du CA | ADOPTÉE | Membres élus : Jean-Jacques, Laurent, François, Fred ZWIKEL, Katia, Jacques. |
 | Résolution 5 | Réélection de Jean-Jacques à la présidence | ADOPTÉE | 0 contre, 0 abstention. |
-| Résolution 6 | Confirmation de Katia au poste de trésorière | ADOPTÉE | Sous réserve d'un audit comptable. |
+| Résolution 6 | Confirmation de Katia au poste de trésorière | ADOPTÉE | Sous reserve d'audit et amélioriation des process (justificatifs, ...). |
 
 ## 5\. Plan d'Action & Prochaines Étapes
 

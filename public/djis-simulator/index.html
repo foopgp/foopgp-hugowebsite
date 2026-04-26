@@ -5,424 +5,392 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Simulateur Ɉ — foopgp</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
-  /* ── Palette foopgp (educenter theme) ──────────────────────────────── */
+  /* ── Palette foopgp – dark mode ─────────────────────────────────────
+     Source SCSS :
+       $primary-color   : #ff8012
+       $secondary-color : #2c284b
+       $text-color      : #5c5c77
+       $text-color-light: #8585a4
+       $text-color-dark : #1e1e4b
+       $primary-font    : 'Poppins', sans-serif
+  ─────────────────────────────────────────────────────────────────── */
   :root {
-    /* foopgp brand */
-    --orange:     #f58220;
-    --orange-dk:  #d96e10;
-    --orange-lt:  #fef3e8;
-    --navy:       #222f3e;
-    --navy-lt:    #2c3e50;
-    --teal:       #2980b9;
-    --teal-lt:    #eaf4fb;
-    --gray-dark:  #444f5a;
-    --gray:       #6c757d;
-    --gray-lt:    #f4f6f8;
-    --gray-xlt:   #fafbfc;
-    --white:      #ffffff;
-    --border:     #dde3ea;
-    --border-dk:  #c5cfd8;
-    --shadow:     0 2px 16px rgba(34,47,62,.10);
-    --shadow-lg:  0 6px 32px rgba(34,47,62,.13);
-    --radius:     8px;
-    --radius-sm:  5px;
+    --primary:      #ff8012;
+    --primary-dk:   #d96800;
+    --primary-dim:  rgba(255,128,18,.12);
+    --secondary:    #2c284b;
+
+    --bg:           #111029;   /* plus sombre que secondary */
+    --bg2:          #1a1838;   /* cartes */
+    --bg3:          #221f44;   /* inputs / surfaces */
+    --bg4:          #2c284b;   /* secondary exact */
+
+    --text:         #ccc9e8;   /* texte courant */
+    --text-lt:      #8585a4;   /* texte léger ($text-color-light) */
+    --text-bright:  #eeedf8;   /* titres */
+    --text-muted:   #5c5c77;   /* très discret ($text-color) */
+
+    --border:       #312e55;
+    --border-lt:    #3e3a68;
 
     /* courbes */
-    --c1:         #f58220;   /* orange foopgp   – courbe 1 */
-    --c2:         #2980b9;   /* teal foopgp     – courbe 2 */
-    --c3:         #27ae60;   /* vert            – courbe 3 */
-    --stingy:     #8e44ad;   /* violet          – stingynalty */
-    --now:        #e74c3c;   /* rouge           – maintenant */
+    --c1:           #ff8012;   /* orange foopgp */
+    --c2:           #7c6fff;   /* violet doux   */
+    --c3:           #2ecc71;   /* vert          */
+    --stingy:       #e056a0;   /* rose/magenta  */
+    --now-line:     #ff5252;   /* rouge         */
+
+    --shadow:       0 4px 24px rgba(0,0,0,.45);
+    --radius:       10px;
+    --radius-sm:    6px;
   }
 
-  /* ── Reset ─────────────────────────────────────────────────────────── */
+  /* ── Reset ──────────────────────────────────────────────────────── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { font-size: 15px; }
   body {
-    background: var(--gray-lt);
-    color: var(--gray-dark);
-    font-family: 'Nunito Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
-  /* ── Header ────────────────────────────────────────────────────────── */
+  /* ── Header ─────────────────────────────────────────────────────── */
   header {
-    width: 100%;
-    background: var(--navy);
-    color: var(--white);
-    padding: 0;
-    box-shadow: var(--shadow-lg);
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 2px 20px rgba(0,0,0,.4);
   }
   .header-inner {
-    max-width: 1320px;
+    max-width: 1360px;
     margin: 0 auto;
-    padding: 1.4rem 2rem;
+    padding: 1.1rem 2rem;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
   }
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: .9rem;
-  }
   .brand-token {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: 800;
-    color: var(--white);
-    letter-spacing: -.02em;
+    color: var(--text-bright);
+    letter-spacing: -.03em;
     line-height: 1;
+    white-space: nowrap;
   }
-  .brand-token .accent { color: var(--orange); }
-  .brand-divider {
-    width: 2px; height: 40px;
-    background: rgba(255,255,255,.2);
+  .brand-token .accent { color: var(--primary); }
+  .brand-sep {
+    width: 1px; height: 36px;
+    background: var(--border-lt);
     flex-shrink: 0;
   }
-  .brand-sub {
-    display: flex;
-    flex-direction: column;
-    gap: .15rem;
-  }
   .brand-sub .title {
-    font-weight: 700;
-    font-size: 1rem;
-    color: rgba(255,255,255,.95);
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--text-bright);
   }
-  .brand-sub .subtitle {
-    font-size: .75rem;
-    color: rgba(255,255,255,.55);
-    letter-spacing: .03em;
+  .brand-sub .sub {
+    font-size: .72rem;
+    font-weight: 400;
+    color: var(--text-lt);
+    letter-spacing: .02em;
   }
   .header-formula {
     margin-left: auto;
-    background: rgba(255,255,255,.07);
-    border: 1px solid rgba(255,255,255,.12);
-    border-radius: var(--radius);
-    padding: .65rem 1.1rem;
-    font-size: .78rem;
-    color: rgba(255,255,255,.65);
-    line-height: 1.65;
+    background: var(--bg3);
+    border: 1px solid var(--border-lt);
+    border-radius: var(--radius-sm);
+    padding: .6rem 1.1rem;
+    font-size: .76rem;
+    color: var(--text-lt);
+    line-height: 1.7;
   }
-  .header-formula em   { color: #c39bd3; font-style: normal; font-weight: 600; }
-  .header-formula strong { color: var(--orange); font-weight: 700; }
+  .header-formula strong { color: var(--primary); font-weight: 600; }
+  .header-formula em     { color: var(--stingy);  font-style: normal; font-weight: 600; }
 
-  /* ── Orange stripe ──────────────────────────────────────────────────── */
-  .stripe { width: 100%; height: 4px; background: var(--orange); }
+  /* ── Sélecteur de langue ─────────────────────────────────────────── */
+  #lang-select {
+    margin-left: auto;
+    background: var(--bg3);
+    border: 1.5px solid var(--border-lt);
+    border-radius: var(--radius-sm);
+    color: var(--text-bright);
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: .38rem .7rem;
+    cursor: pointer;
+    outline: none;
+    flex-shrink: 0;
+  }
+  #lang-select:focus { border-color: var(--primary); }
 
-  /* ── Main grid ──────────────────────────────────────────────────────── */
+  /* ── Barre orange ────────────────────────────────────────────────── */
+  .stripe { height: 3px; background: linear-gradient(90deg, var(--primary) 0%, #ffb347 100%); }
+
+  /* ── Main ────────────────────────────────────────────────────────── */
   main {
+    flex: 1;
+    max-width: 1360px;
     width: 100%;
-    max-width: 1320px;
-    padding: 1.8rem 1.5rem 2.5rem;
+    margin: 0 auto;
+    padding: 1.6rem 1.5rem 2.5rem;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 290px 1fr;  /* panel | graphique */
     gap: 1.4rem;
     align-items: start;
   }
 
-  /* ── Card ───────────────────────────────────────────────────────────── */
+  /* ── Cards ───────────────────────────────────────────────────────── */
   .card {
-    background: var(--white);
+    background: var(--bg2);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 1.2rem 1.3rem;
+    padding: 1.25rem 1.4rem;
     box-shadow: var(--shadow);
   }
   .card + .card { margin-top: 1.1rem; }
 
   .card-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: .72rem;
+    font-size: .68rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: .1em;
-    color: var(--orange);
+    letter-spacing: .12em;
+    color: var(--primary);
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    gap: .55rem;
+    gap: .5rem;
   }
   .card-title::before {
     content: '';
-    display: inline-block;
     width: 3px; height: 13px;
-    background: var(--orange);
+    background: var(--primary);
     border-radius: 2px;
     flex-shrink: 0;
   }
-  .card-title.teal  { color: var(--teal); }
-  .card-title.teal::before { background: var(--teal); }
   .card-title.violet { color: var(--stingy); }
   .card-title.violet::before { background: var(--stingy); }
+  .card-title.teal   { color: var(--c2); }
+  .card-title.teal::before   { background: var(--c2); }
 
-  /* ── Champs ─────────────────────────────────────────────────────────── */
-  .field { margin-bottom: .85rem; }
+  /* ── Champs ─────────────────────────────────────────────────────── */
+  .field { margin-bottom: .8rem; }
   .field:last-child { margin-bottom: 0; }
   .field label {
     display: block;
-    font-size: .72rem;
-    font-weight: 700;
-    color: var(--gray);
+    font-size: .68rem;
+    font-weight: 600;
+    color: var(--text-lt);
     text-transform: uppercase;
-    letter-spacing: .07em;
-    margin-bottom: .32rem;
+    letter-spacing: .08em;
+    margin-bottom: .3rem;
   }
   .input-wrap { position: relative; }
   .input-wrap .unit {
     position: absolute;
     right: .75rem; top: 50%;
     transform: translateY(-50%);
-    color: var(--gray);
+    color: var(--text-lt);
     font-size: .82rem;
-    pointer-events: none;
     font-weight: 600;
+    pointer-events: none;
   }
   input[type="number"],
   input[type="date"] {
     width: 100%;
-    background: var(--gray-xlt);
-    border: 1.5px solid var(--border);
+    background: var(--bg3);
+    border: 1.5px solid var(--border-lt);
     border-radius: var(--radius-sm);
-    color: var(--navy);
-    font-family: 'Nunito Sans', monospace;
-    font-size: .9rem;
-    font-weight: 600;
-    padding: .5rem .75rem;
+    color: var(--text-bright);
+    font-family: 'Poppins', sans-serif;
+    font-size: .88rem;
+    font-weight: 500;
+    padding: .48rem .75rem;
     outline: none;
     transition: border-color .18s, box-shadow .18s;
     -moz-appearance: textfield;
   }
   input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
-  input[type="number"]:focus,
-  input[type="date"]:focus {
-    border-color: var(--orange);
-    box-shadow: 0 0 0 3px rgba(245,130,32,.13);
-    background: var(--white);
+  input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(255,128,18,.18);
+    background: var(--bg4);
   }
   input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: .5;
-    cursor: pointer;
+    filter: invert(.6); cursor: pointer;
   }
 
-  /* ── Courbes ────────────────────────────────────────────────────────── */
+  /* ── Courbes ─────────────────────────────────────────────────────── */
   .curve-row {
-    display: flex;
-    align-items: center;
-    gap: .55rem;
-    margin-bottom: .55rem;
+    display: flex; align-items: center;
+    gap: .5rem; margin-bottom: .5rem;
   }
   .dot {
-    width: 11px; height: 11px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    border: 2px solid rgba(0,0,0,.08);
+    width: 10px; height: 10px;
+    border-radius: 50%; flex-shrink: 0;
+    box-shadow: 0 0 6px rgba(255,128,18,.4);
   }
   .curve-hint {
-    font-size: .72rem;
-    color: var(--gray);
-    padding-left: 1.1rem;
-    margin-bottom: .75rem;
-    min-height: 1.1em;
+    font-size: .7rem; color: var(--text-lt);
+    padding-left: 1rem; margin-bottom: .7rem;
+    min-height: 1em;
   }
-  .curve-hint span { font-weight: 700; }
+  .curve-hint span { font-weight: 600; }
 
   .btn-add {
-    display: inline-flex;
-    align-items: center;
-    gap: .35rem;
-    background: var(--orange-lt);
-    color: var(--orange-dk);
-    border: 1.5px solid rgba(245,130,32,.3);
+    display: inline-flex; align-items: center; gap: .35rem;
+    background: var(--primary-dim);
+    color: var(--primary);
+    border: 1.5px solid rgba(255,128,18,.3);
     border-radius: var(--radius-sm);
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: .8rem;
-    font-weight: 700;
-    padding: .38rem .8rem;
-    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: .78rem; font-weight: 600;
+    padding: .38rem .85rem; cursor: pointer;
     transition: background .15s, border-color .15s;
   }
-  .btn-add:hover { background: rgba(245,130,32,.18); border-color: var(--orange); }
+  .btn-add:hover { background: rgba(255,128,18,.22); border-color: var(--primary); }
   .btn-remove {
-    background: none;
-    border: none;
-    color: var(--border-dk);
-    font-size: 1.1rem;
-    line-height: 1;
-    padding: 0 .3rem;
-    cursor: pointer;
+    background: none; border: none;
+    color: var(--border-lt); font-size: 1.1rem;
+    padding: 0 .3rem; cursor: pointer;
     border-radius: 3px;
     transition: color .15s, background .15s;
   }
-  .btn-remove:hover { color: #e74c3c; background: #fdecea; }
+  .btn-remove:hover { color: var(--now-line); background: rgba(255,82,82,.12); }
 
-  /* ── Info stingynalty ──────────────────────────────────────────────── */
-  .info-rows { display: flex; flex-direction: column; gap: .45rem; }
+  hr.sep { border: none; border-top: 1px solid var(--border); margin: .85rem 0; }
+
+  /* ── Info rows ───────────────────────────────────────────────────── */
+  .info-rows { display: flex; flex-direction: column; gap: .4rem; }
   .info-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-size: .8rem;
+    display: flex; justify-content: space-between;
+    align-items: baseline; font-size: .78rem;
   }
-  .info-row .lbl { color: var(--gray); }
-  .info-row .val { font-weight: 700; color: var(--navy); font-size: .85rem; }
-  .info-row .val.accent { color: var(--stingy); }
+  .info-row .lbl { color: var(--text-lt); }
+  .info-row .val { font-weight: 600; color: var(--text-bright); font-size: .82rem; }
+  .info-row .val.v-stingy { color: var(--stingy); }
 
-  /* ── Toggle ajustement ─────────────────────────────────────────────── */
+  /* ── Toggle ajustement ────────────────────────────────────────────── */
   .toggle-adj {
-    display: flex;
-    align-items: center;
-    gap: .55rem;
-    cursor: pointer;
-    font-size: .82rem;
-    font-weight: 600;
-    color: var(--gray);
-    margin-bottom: .8rem;
+    display: flex; align-items: center;
+    gap: .5rem; cursor: pointer;
+    font-size: .8rem; font-weight: 500;
+    color: var(--text-lt); margin-bottom: .75rem;
     user-select: none;
+    transition: color .15s;
   }
   .toggle-adj:hover { color: var(--stingy); }
   .toggle-adj input[type="checkbox"] {
-    width: 15px; height: 15px;
-    accent-color: var(--stingy);
-    cursor: pointer;
+    width: 14px; height: 14px;
+    accent-color: var(--stingy); cursor: pointer;
   }
-  .adj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+  .adj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; }
   #adj-fields { display: none; }
   #adj-fields.open { display: block; }
   .adj-preview {
-    font-size: .75rem;
-    color: var(--stingy);
-    font-weight: 600;
-    margin-top: .5rem;
-    min-height: 1.1em;
+    font-size: .72rem; color: var(--stingy);
+    font-weight: 600; margin-top: .5rem; min-height: 1em;
   }
 
-  hr.divider {
-    border: none;
-    border-top: 1px solid var(--border);
-    margin: .85rem 0;
-  }
-
-  /* ── Info box ──────────────────────────────────────────────────────── */
-  .info-box {
-    background: var(--teal-lt);
-    border: 1px solid rgba(41,128,185,.2);
+  /* ── Note ────────────────────────────────────────────────────────── */
+  .note-box {
+    background: var(--bg3);
+    border: 1px solid var(--border-lt);
+    border-left: 3px solid var(--c2);
     border-radius: var(--radius-sm);
-    padding: .7rem .9rem;
-    font-size: .76rem;
-    color: var(--gray-dark);
+    padding: .65rem .9rem;
+    font-size: .73rem;
+    color: var(--text-lt);
     line-height: 1.65;
   }
-  .info-box strong { color: var(--navy); }
-  .info-box em { color: var(--stingy); font-style: normal; font-weight: 700; }
+  .note-box strong { color: var(--text-bright); }
+  .note-box em { color: var(--stingy); font-style: normal; font-weight: 600; }
 
-  /* ── Chart area ────────────────────────────────────────────────────── */
+  /* ── Chart area ──────────────────────────────────────────────────── */
   .chart-area {
-    background: var(--white);
+    background: var(--bg2);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 1.5rem 1.5rem 1.2rem;
+    padding: 1.4rem 1.5rem 1.2rem;
     box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
   .chart-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: .8rem;
+    display: flex; justify-content: space-between;
+    align-items: flex-start; flex-wrap: wrap; gap: .8rem;
   }
   .chart-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--navy);
+    font-size: 1rem; font-weight: 700;
+    color: var(--text-bright);
   }
-  .chart-sub {
-    font-size: .75rem;
-    color: var(--gray);
-    margin-top: .18rem;
-  }
+  .chart-sub { font-size: .72rem; color: var(--text-lt); margin-top: .15rem; }
 
-  /* Toggle unité */
   .unit-toggle {
     display: flex;
-    border: 1.5px solid var(--border);
+    border: 1.5px solid var(--border-lt);
     border-radius: var(--radius-sm);
-    overflow: hidden;
-    flex-shrink: 0;
+    overflow: hidden; flex-shrink: 0;
   }
   .unit-toggle button {
-    background: none;
-    border: none;
-    padding: .38rem .85rem;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: .78rem;
-    font-weight: 700;
-    color: var(--gray);
-    cursor: pointer;
+    background: none; border: none;
+    padding: .35rem .85rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: .75rem; font-weight: 600;
+    color: var(--text-lt); cursor: pointer;
     transition: background .15s, color .15s;
   }
   .unit-toggle button.active {
-    background: var(--orange);
-    color: var(--white);
+    background: var(--primary); color: #fff;
   }
-
   canvas { width: 100% !important; }
 
-  /* ── Stats ─────────────────────────────────────────────────────────── */
+  /* ── Stats ───────────────────────────────────────────────────────── */
   .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: .7rem;
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    gap: .65rem;
   }
   .stat-box {
-    background: var(--gray-xlt);
+    background: var(--bg3);
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
-    padding: .7rem 1rem;
+    padding: .65rem .9rem;
   }
   .stat-label {
-    font-size: .65rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .07em;
-    color: var(--gray);
-    margin-bottom: .2rem;
+    font-size: .62rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .08em;
+    color: var(--text-muted); margin-bottom: .2rem;
   }
   .stat-val {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--navy);
+    font-size: .98rem; font-weight: 700;
+    color: var(--text-bright);
   }
 
-  /* ── Footer ────────────────────────────────────────────────────────── */
+  /* ── Footer ──────────────────────────────────────────────────────── */
   footer {
-    margin-top: auto;
-    width: 100%;
-    background: var(--navy);
-    color: rgba(255,255,255,.4);
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
     text-align: center;
     font-size: .72rem;
-    padding: .9rem;
+    padding: .85rem;
   }
-  footer a { color: var(--orange); text-decoration: none; }
+  footer a { color: var(--primary); text-decoration: none; }
   footer a:hover { text-decoration: underline; }
 
-  /* ── Responsive ─────────────────────────────────────────────────────── */
-  @media (max-width: 880px) {
+  /* ── Responsive ──────────────────────────────────────────────────── */
+  @media (max-width: 900px) {
     main { grid-template-columns: 1fr; }
+    /* graphique en premier sur mobile même s'il est 2ème dans le DOM */
+    .chart-area { order: -1; }
   }
 </style>
 </head>
@@ -430,39 +398,43 @@
 
 <header>
   <div class="header-inner">
-    <div class="brand">
-      <div class="brand-token">Jeton <span class="accent">Ɉ</span></div>
-      <div class="brand-divider"></div>
-      <div class="brand-sub">
-        <div class="title">Simulateur de cotisation</div>
-        <div class="subtitle">foopgp — Friends of OpenPGP</div>
-      </div>
+    <div class="brand-token">Jeton <span class="accent">Ɉ</span></div>
+    <div class="brand-sep"></div>
+    <div class="brand-sub">
+      <div class="title" data-i18n="uiTitle"></div>
+      <div class="sub">foopgp — Friends of OpenPGP</div>
     </div>
-    <div class="header-formula">
-      Cotisation initiale → <strong>j = log₂(c + 1) / <em>stingynalty</em></strong><br>
-      <em>stingynaltyₙ</em> = <em>stingynaltyₙ₋₁</em> × (1 + taux‰) — croissance le 1ᵉʳ de chaque mois
-    </div>
+    <div class="header-formula" data-i18n-html="formula"></div>
+    <select id="lang-select" title="Language">
+      <option value="fr">🇫🇷 Français</option>
+      <option value="en">🇬🇧 English</option>
+      <option value="es">🇪🇸 Español</option>
+      <option value="de">🇩🇪 Deutsch</option>
+      <option value="it">🇮🇹 Italiano</option>
+      <option value="uk">🇺🇦 Українська</option>
+    </select>
   </div>
 </header>
 <div class="stripe"></div>
 
 <main>
-  <!-- ── Panneau gauche ── -->
+
+  <!-- ══ PANNEAU (colonne 1) ════════════════════════════════════════ -->
   <div>
 
     <!-- Cotisations -->
     <div class="card">
-      <div class="card-title">Cotisations initiales</div>
+      <div class="card-title" data-i18n="cardCotisations"></div>
       <div id="curves-container"></div>
-      <button class="btn-add" id="btn-add-curve">＋ Ajouter une courbe</button>
+      <button class="btn-add" id="btn-add-curve" data-i18n="addCurve"></button>
     </div>
 
-    <!-- Plage -->
+    <!-- Date de fin -->
     <div class="card">
-      <div class="card-title teal">Plage temporelle</div>
+      <div class="card-title teal" data-i18n="cardPeriod"></div>
       <div class="field">
-        <label>Date de fin</label>
-        <input type="date" id="end-date">
+        <label data-i18n="endDate"></label>
+        <input type="month" id="end-date">
       </div>
     </div>
 
@@ -471,35 +443,35 @@
       <div class="card-title violet">Stingynalty</div>
       <div class="info-rows">
         <div class="info-row">
-          <span class="lbl">Taux actuel</span>
-          <span class="val accent">5 ‰ / mois</span>
+          <span class="lbl" data-i18n="currentRate"></span>
+          <span class="val v-stingy">5 ‰ / mois</span>
         </div>
         <div class="info-row">
-          <span class="lbl">Valeur ce mois-ci</span>
+          <span class="lbl" data-i18n="currentVal"></span>
           <span class="val" id="cur-stingy">—</span>
         </div>
         <div class="info-row">
-          <span class="lbl">Valeur fin de période</span>
+          <span class="lbl" data-i18n="endVal"></span>
           <span class="val" id="end-stingy">—</span>
         </div>
       </div>
 
-      <hr class="divider">
+      <hr class="sep">
 
       <label class="toggle-adj">
         <input type="checkbox" id="chk-adj">
-        Ajustement futur du taux
+        <span data-i18n="adjToggle"></span>
       </label>
       <div id="adj-fields">
         <div class="adj-grid">
           <div class="field">
-            <label>À partir de</label>
-            <input type="date" id="adj-date">
+            <label data-i18n="adjFrom"></label>
+            <input type="month" id="adj-date">
           </div>
           <div class="field">
-            <label>Nouveau taux</label>
+            <label data-i18n="adjRate"></label>
             <div class="input-wrap">
-              <input type="number" id="adj-rate" value="5" step="0.1" min="0" max="200">
+              <input type="number" id="adj-rate" value="5" step="0.1" min="-999" max="999">
               <span class="unit">‰</span>
             </div>
           </div>
@@ -510,22 +482,17 @@
 
     <!-- Note -->
     <div class="card">
-      <div class="info-box">
-        <em>stingynalty</em> = 1 du 24 mars 2024 (AGE) au 30 juin 2024.<br>
-        Croissance de <strong>5 ‰/mois</strong> effective dès le <strong>1ᵉʳ juillet 2024</strong>
-        (décision AGO mars 2025, en vigueur depuis déc. 2024).<br>
-        Jetons en <strong>cɈ</strong> (centi-Ɉ) ou <strong>Ɉ</strong>.
-      </div>
+      <div class="note-box" data-i18n-html="noteText"></div>
     </div>
 
-  </div>
+  </div><!-- /panel -->
 
-  <!-- ── Zone graphique ── -->
+  <!-- ══ GRAPHIQUE (colonne 2) ══════════════════════════════════════ -->
   <div class="chart-area">
     <div class="chart-header">
       <div>
-        <div class="chart-title">DJI générés par cotisation initiale</div>
-        <div class="chart-sub">Depuis l'introduction du stingynalty (juillet 2024 — 1ʳᵉ croissance)</div>
+        <div class="chart-title" data-i18n="chartTitle"></div>
+        <div class="chart-sub" data-i18n-html="chartSub"></div>
       </div>
       <div class="unit-toggle">
         <button class="active" data-unit="cj">cɈ</button>
@@ -533,444 +500,565 @@
       </div>
     </div>
 
-    <canvas id="chart" height="360"></canvas>
+    <canvas id="chart" height="370"></canvas>
 
-    <hr class="divider" style="margin:0">
+    <hr class="sep" style="margin:0">
     <div class="stats-grid" id="stats-grid"></div>
   </div>
+
 </main>
 
 <footer>
-  Algorithme conforme à <a href="https://foopgp.org/fr/about/rules-of-procedures/" target="_blank">bl-foopgp</a> ·
+  <span data-i18n="footerAlgo"></span>
+  <a href="https://foopgp.org/fr/about/rules-of-procedures/" target="_blank">bl-foopgp</a> ·
   <a href="https://foopgp.org" target="_blank">foopgp.org</a>
 </footer>
 
+
 <script>
-// ═══════════════════════════════════════════════════════════════════════
-//  Constantes
-// ═══════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════
+//  Traductions
+// ═══════════════════════════════════════════════════════════════════
+const LANGS = {
+  fr: {
+    uiTitle:        'Simulateur de cotisation initiale',
+    formula:        "Cotisation initiale → <strong>j = log₂(c + 1) / <em>stingynalty</em></strong><br><em>stingynaltyₙ</em> = <em>stingynaltyₙ₋₁</em> × (1 + taux‰) — croissance le 1ᵉʳ de chaque mois",
+    cardCotisations:'Cotisations initiales',
+    addCurve:       '＋ Ajouter une courbe',
+    cardPeriod:     'Plage temporelle',
+    endDate:        'Date de fin',
+    currentRate:    'Taux actuel',
+    currentVal:     'Valeur ce mois-ci',
+    endVal:         'Fin de période',
+    adjToggle:      'Ajustement futur du taux',
+    adjFrom:        'À partir de',
+    adjRate:        'Nouveau taux',
+    placeholder:    'Montant…',
+    chartTitle:     'DJI générés par cotisation initiale',
+    chartSub:       "Depuis l'introduction du <em style='color:var(--stingy);font-style:normal'>stingynalty</em> (juillet 2024 — 1ʳᵉ croissance)",
+    noteText:       "<em>stingynalty</em> = 1 jusqu'au 30 juin 2024 (AGE du 24 mars 2024).<br>Croissance <strong>5 ‰/mois</strong> effective dès le <strong>1ᵉʳ juillet 2024</strong>.<br><strong>cɈ</strong> = centi-Ɉ (100 cɈ = 1 Ɉ).",
+    footerAlgo:     'Algorithme conforme à ',
+    unitLabel:      function(u){ return u === 'cj' ? 'Jetons (cɈ)' : 'Jetons (Ɉ)'; },
+    statNow:        function(amt,val,u){ return amt+'€ maintenant généreront '+val+' '+u; },
+    statEnd:        function(amt,val,u,mon,yr){ return amt+'€ en '+mon+' '+yr+' généreront '+val+' '+u; },
+    hintNow:        function(val,u){ return "→ aujourd'hui\u00a0: <span style='font-weight:700'>"+val+' '+u+'</span>'; },
+    adjFrozen:      'stingynalty figé (0 ‰)',
+    adjPreview:     function(rate,mn,yr){ return '→ '+rate+' ‰/mois à partir de '+mn+' '+yr; },
+    months:         ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
+    monthsShort:    ['jan','fév','mar','avr','mai','jun','jul','aoû','sep','oct','nov','déc'],
+    monthsFull:     ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
+  },
+  en: {
+    uiTitle:        'Initial membership fee simulator',
+    formula:        'Initial fee → <strong>j = log₂(c + 1) / <em>stingynalty</em></strong><br><em>stingynaltyₙ</em> = <em>stingynaltyₙ₋₁</em> × (1 + rate‰) — grows on the 1st of each month',
+    cardCotisations:'Initial fees',
+    addCurve:       '＋ Add a curve',
+    cardPeriod:     'Time range',
+    endDate:        'End date',
+    currentRate:    'Current rate',
+    currentVal:     'Value this month',
+    endVal:         'Value at end of period',
+    adjToggle:      'Future rate adjustment',
+    adjFrom:        'Starting from',
+    adjRate:        'New rate',
+    placeholder:    'Amount…',
+    chartTitle:     'Tokens Ɉ generated per initial fee',
+    chartSub:       "Since <em style='color:var(--stingy);font-style:normal'>stingynalty</em> was introduced (July 2024 — 1st growth)",
+    noteText:       '<em>stingynalty</em> = 1 until 30 June 2024 (EGM on 24 March 2024).<br>Growth of <strong>5 ‰/month</strong> effective from <strong>1 July 2024</strong>.<br><strong>cɈ</strong> = centi-Ɉ (100 cɈ = 1 Ɉ).',
+    footerAlgo:     'Algorithm per ',
+    unitLabel:      function(u){ return u === 'cj' ? 'Tokens (cɈ)' : 'Tokens (Ɉ)'; },
+    statNow:        function(amt,val,u){ return amt+'€ now will generate '+val+' '+u; },
+    statEnd:        function(amt,val,u,mon,yr){ return amt+'€ in '+mon+' '+yr+' will generate '+val+' '+u; },
+    hintNow:        function(val,u){ return '→ today: <span style=\'font-weight:700\'>'+val+' '+u+'</span>'; },
+    adjFrozen:      'stingynalty frozen (0 ‰)',
+    adjPreview:     function(rate,mn,yr){ return '→ '+rate+' ‰/month from '+mn+' '+yr; },
+    months:         ['January','February','March','April','May','June','July','August','September','October','November','December'],
+    monthsShort:    ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    monthsFull:     ['January','February','March','April','May','June','July','August','September','October','November','December'],
+  },
+  es: {
+    uiTitle:        'Simulador de cuota inicial',
+    formula:        'Cuota inicial → <strong>j = log₂(c + 1) / <em>stingynalty</em></strong><br><em>stingynaltyₙ</em> = <em>stingynaltyₙ₋₁</em> × (1 + tasa‰) — crece el 1º de cada mes',
+    cardCotisations:'Cuotas iniciales',
+    addCurve:       '＋ Añadir una curva',
+    cardPeriod:     'Período',
+    endDate:        'Fecha final',
+    currentRate:    'Tasa actual',
+    currentVal:     'Valor este mes',
+    endVal:         'Valor al final',
+    adjToggle:      'Ajuste futuro de la tasa',
+    adjFrom:        'A partir de',
+    adjRate:        'Nueva tasa',
+    placeholder:    'Importe…',
+    chartTitle:     'Tokens Ɉ generados por cuota inicial',
+    chartSub:       "Desde la introducción de <em style='color:var(--stingy);font-style:normal'>stingynalty</em> (julio 2024 — 1er crecimiento)",
+    noteText:       '<em>stingynalty</em> = 1 hasta el 30 de junio de 2024 (AGE del 24 de marzo de 2024).<br>Crecimiento de <strong>5 ‰/mes</strong> efectivo desde el <strong>1 de julio de 2024</strong>.<br><strong>cɈ</strong> = centi-Ɉ (100 cɈ = 1 Ɉ).',
+    footerAlgo:     'Algoritmo según ',
+    unitLabel:      function(u){ return u === 'cj' ? 'Tokens (cɈ)' : 'Tokens (Ɉ)'; },
+    statNow:        function(amt,val,u){ return amt+'€ ahora generarán '+val+' '+u; },
+    statEnd:        function(amt,val,u,mon,yr){ return amt+'€ en '+mon+' '+yr+' generarán '+val+' '+u; },
+    hintNow:        function(val,u){ return '→ hoy: <span style=\'font-weight:700\'>'+val+' '+u+'</span>'; },
+    adjFrozen:      'stingynalty congelado (0 ‰)',
+    adjPreview:     function(rate,mn,yr){ return '→ '+rate+' ‰/mes desde '+mn+' '+yr; },
+    months:         ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],
+    monthsShort:    ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],
+    monthsFull:     ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
+  },
+  de: {
+    uiTitle:        'Erstbeitrags-Simulator',
+    formula:        'Erstbeitrag → <strong>j = log₂(c + 1) / <em>stingynalty</em></strong><br><em>stingynaltyₙ</em> = <em>stingynaltyₙ₋₁</em> × (1 + Rate‰) — wächst am 1. jedes Monats',
+    cardCotisations:'Erstbeiträge',
+    addCurve:       '＋ Kurve hinzufügen',
+    cardPeriod:     'Zeitraum',
+    endDate:        'Enddatum',
+    currentRate:    'Aktuelle Rate',
+    currentVal:     'Wert diesen Monat',
+    endVal:         'Wert am Ende',
+    adjToggle:      'Zukünftige Ratenanpassung',
+    adjFrom:        'Ab',
+    adjRate:        'Neue Rate',
+    placeholder:    'Betrag…',
+    chartTitle:     'Generierte Tokens Ɉ pro Erstbeitrag',
+    chartSub:       "Seit Einführung von <em style='color:var(--stingy);font-style:normal'>stingynalty</em> (Juli 2024 — 1. Wachstum)",
+    noteText:       '<em>stingynalty</em> = 1 bis 30. Juni 2024 (außerordentliche HV am 24. März 2024).<br>Wachstum von <strong>5 ‰/Monat</strong> ab <strong>1. Juli 2024</strong>.<br><strong>cɈ</strong> = Centi-Ɉ (100 cɈ = 1 Ɉ).',
+    footerAlgo:     'Algorithmus gemäß ',
+    unitLabel:      function(u){ return u === 'cj' ? 'Tokens (cɈ)' : 'Tokens (Ɉ)'; },
+    statNow:        function(amt,val,u){ return amt+'€ jetzt erzeugen '+val+' '+u; },
+    statEnd:        function(amt,val,u,mon,yr){ return amt+'€ im '+mon+' '+yr+' erzeugen '+val+' '+u; },
+    hintNow:        function(val,u){ return '→ heute: <span style=\'font-weight:700\'>'+val+' '+u+'</span>'; },
+    adjFrozen:      'stingynalty eingefroren (0 ‰)',
+    adjPreview:     function(rate,mn,yr){ return '→ '+rate+' ‰/Monat ab '+mn+' '+yr; },
+    months:         ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'],
+    monthsShort:    ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'],
+    monthsFull:     ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'],
+  },
+  it: {
+    uiTitle:        'Simulatore di quota iniziale',
+    formula:        'Quota iniziale → <strong>j = log₂(c + 1) / <em>stingynalty</em></strong><br><em>stingynaltyₙ</em> = <em>stingynaltyₙ₋₁</em> × (1 + tasso‰) — cresce il 1° di ogni mese',
+    cardCotisations:'Quote iniziali',
+    addCurve:       '＋ Aggiungi una curva',
+    cardPeriod:     'Intervallo temporale',
+    endDate:        'Data di fine',
+    currentRate:    'Tasso attuale',
+    currentVal:     'Valore questo mese',
+    endVal:         'Valore a fine periodo',
+    adjToggle:      'Aggiustamento futuro del tasso',
+    adjFrom:        'A partire da',
+    adjRate:        'Nuovo tasso',
+    placeholder:    'Importo…',
+    chartTitle:     'Token Ɉ generati per quota iniziale',
+    chartSub:       "Dall'introduzione di <em style='color:var(--stingy);font-style:normal'>stingynalty</em> (luglio 2024 — 1ª crescita)",
+    noteText:       '<em>stingynalty</em> = 1 fino al 30 giugno 2024 (AGS del 24 marzo 2024).<br>Crescita di <strong>5 ‰/mese</strong> effettiva dal <strong>1° luglio 2024</strong>.<br><strong>cɈ</strong> = centi-Ɉ (100 cɈ = 1 Ɉ).',
+    footerAlgo:     'Algoritmo conforme a ',
+    unitLabel:      function(u){ return u === 'cj' ? 'Token (cɈ)' : 'Token (Ɉ)'; },
+    statNow:        function(amt,val,u){ return amt+'€ ora genereranno '+val+' '+u; },
+    statEnd:        function(amt,val,u,mon,yr){ return amt+'€ in '+mon+' '+yr+' genereranno '+val+' '+u; },
+    hintNow:        function(val,u){ return '→ oggi: <span style=\'font-weight:700\'>'+val+' '+u+'</span>'; },
+    adjFrozen:      'stingynalty bloccato (0 ‰)',
+    adjPreview:     function(rate,mn,yr){ return '→ '+rate+' ‰/mese da '+mn+' '+yr; },
+    months:         ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'],
+    monthsShort:    ['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic'],
+    monthsFull:     ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'],
+  },
+  uk: {
+    uiTitle:        'Симулятор початкового внеску',
+    formula:        'Початковий внесок → <strong>j = log₂(c + 1) / <em>stingynalty</em></strong><br><em>stingynaltyₙ</em> = <em>stingynaltyₙ₋₁</em> × (1 + ставка‰) — зростає 1-го кожного місяця',
+    cardCotisations:'Початкові внески',
+    addCurve:       '＋ Додати криву',
+    cardPeriod:     'Часовий діапазон',
+    endDate:        'Кінцева дата',
+    currentRate:    'Поточна ставка',
+    currentVal:     'Значення цього місяця',
+    endVal:         'Значення наприкінці',
+    adjToggle:      'Майбутнє коригування ставки',
+    adjFrom:        'Починаючи з',
+    adjRate:        'Нова ставка',
+    placeholder:    'Сума…',
+    chartTitle:     'Токени Ɉ, генеровані початковим внеском',
+    chartSub:       "З моменту введення <em style='color:var(--stingy);font-style:normal'>stingynalty</em> (липень 2024 — 1-е зростання)",
+    noteText:       '<em>stingynalty</em> = 1 до 30 червня 2024 (НЗЗ від 24 березня 2024).<br>Зростання <strong>5 ‰/місяць</strong> починаючи з <strong>1 липня 2024</strong>.<br><strong>cɈ</strong> = центи-Ɉ (100 cɈ = 1 Ɉ).',
+    footerAlgo:     'Алгоритм згідно з ',
+    unitLabel:      function(u){ return u === 'cj' ? 'Токени (cɈ)' : 'Токени (Ɉ)'; },
+    statNow:        function(amt,val,u){ return amt+'€ зараз генерують '+val+' '+u; },
+    statEnd:        function(amt,val,u,mon,yr){ return amt+'€ у '+mon+' '+yr+' генерують '+val+' '+u; },
+    hintNow:        function(val,u){ return '→ сьогодні: <span style=\'font-weight:700\'>'+val+' '+u+'</span>'; },
+    adjFrozen:      'stingynalty заморожено (0 ‰)',
+    adjPreview:     function(rate,mn,yr){ return '→ '+rate+' ‰/місяць з '+mn+' '+yr; },
+    months:         ['січень','лютий','березень','квітень','травень','червень','липень','серпень','вересень','жовтень','листопад','грудень'],
+    monthsShort:    ['січ','лют','бер','кві','тра','чер','лип','сер','вер','жов','лис','гру'],
+    monthsFull:     ['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'],
+  },
+};
 
-// stingynalty = 1.000 du 24 mars 2024 au 30 juin 2024 (AGE du 24 mars 2024)
-// Première croissance de 5‰ effective le 1er juillet 2024
-// → on démarre l'affichage en juillet 2024 (premier mois avec croissance)
+// ═══════════════════════════════════════════════════════════════════
+//  État global
+// ═══════════════════════════════════════════════════════════════════
 const ORIGIN_YEAR  = 2024;
-const ORIGIN_MONTH = 7;       // juillet 2024 : premier mois de croissance
-const S0 = 1.005;             // stingynalty au 1er juillet 2024 (= 1 * 1.005)
-const DEFAULT_RATE = 5;       // ‰/mois par défaut
+const ORIGIN_MONTH = 7;     // juillet 2024 : 1er mois avec croissance (+5‰)
+const S0           = 1.005; // stingynalty au 1er juillet 2024
+const DEFAULT_RATE = 5;     // ‰/mois
 
-const CURVE_COLORS = ['#f58220', '#2980b9', '#27ae60'];
-const CURVE_FILLS  = ['rgba(245,130,32,.07)', 'rgba(41,128,185,.07)', 'rgba(39,174,96,.07)'];
-const DEFAULT_AMOUNTS = [150];
+const CURVE_COLORS = ['#ff8012', '#7c6fff', '#2ecc71'];
+const CURVE_FILLS  = ['rgba(255,128,18,.10)','rgba(124,111,255,.10)','rgba(46,204,113,.10)'];
 
-const TODAY = new Date();
+const TODAY       = new Date();
 const TODAY_YEAR  = TODAY.getFullYear();
 const TODAY_MONTH = TODAY.getMonth() + 1;
 
-let unit = 'cj';
+let unit        = 'cj';
+let currentLang = 'fr';
 let chartInstance = null;
-const curves = [];
+const curves    = [];
 
-// ═══════════════════════════════════════════════════════════════════════
-//  Utilitaires
-// ═══════════════════════════════════════════════════════════════════════
-const log2 = x => Math.log(x) / Math.LN2;
-const mkey = (y, m) => y * 100 + m;
+// ═══════════════════════════════════════════════════════════════════
+//  i18n
+// ═══════════════════════════════════════════════════════════════════
+function t(key) { return LANGS[currentLang][key] !== undefined ? LANGS[currentLang][key] : LANGS.fr[key]; }
 
-function nextYM(y, m) {
-  return m === 12 ? [y + 1, 1] : [y, m + 1];
+function applyLang() {
+  document.documentElement.lang = currentLang;
+  document.title = t('uiTitle') + ' — foopgp';
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    el.textContent = t(el.dataset.i18n);
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+    el.innerHTML = t(el.dataset.i18nHtml);
+  });
+  document.querySelectorAll('.curve-input').forEach(function(el) {
+    el.placeholder = t('placeholder');
+  });
 }
 
-// ═══════════════════════════════════════════════════════════════════════
-//  Construction de la timeline stingynalty
-//  NB : stingynalty = 1 avant juillet 2024.
-//       On affiche à partir de juillet 2024 (S0 = 1.005 déjà appliqué).
-//       Si taux = 0 → stingynalty reste constant (pas de division par 0).
-// ═══════════════════════════════════════════════════════════════════════
-function buildTimeline(endY, endM, adjOn, adjY, adjM, adjRate) {
-  const months = [];
-  const stingy = [];
-  let s = S0;
-  let y = ORIGIN_YEAR, m = ORIGIN_MONTH;
+// ═══════════════════════════════════════════════════════════════════
+//  Maths
+// ═══════════════════════════════════════════════════════════════════
+function log2(x) { return Math.log(x) / Math.LN2; }
+function mkey(y, m) { return y * 100 + m; }
+function nextYM(y, m) { return m === 12 ? [y + 1, 1] : [y, m + 1]; }
 
+function buildTimeline(endY, endM, adjOn, adjY, adjM, adjRate) {
+  var months = [], stingy = [];
+  var s = S0, y = ORIGIN_YEAR, m = ORIGIN_MONTH;
   while (y < endY || (y === endY && m <= endM)) {
     months.push({ year: y, month: m });
     stingy.push(s);
-
-    // taux pour le mois suivant
-    const [ny, nm] = nextYM(y, m);
-    let rate = DEFAULT_RATE;
-    if (adjOn && (ny > adjY || (ny === adjY && nm >= adjM))) {
-      rate = adjRate;
-    }
-    // si taux = 0 : stingynalty figé
-    s = rate === 0 ? s : s * (1 + rate / 1000);
-    y = ny; m = nm;
+    var nm = nextYM(y, m);
+    var ny = nm[0]; var nmo = nm[1];
+    var rate = DEFAULT_RATE;
+    if (adjOn && (ny > adjY || (ny === adjY && nmo >= adjM))) rate = adjRate;
+    // rate=0 → ×1 (figé) ; rate<0 → décroissance ; rate>0 → croissance
+    var next = s * (1 + rate / 1000);
+    s = next > 0.001 ? next : 0.001;
+    y = ny; m = nmo;
   }
-  return { months, stingy };
+  return { months: months, stingy: stingy };
 }
 
-// ═══════════════════════════════════════════════════════════════════════
-//  Lecture des paramètres de l'UI
-// ═══════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════
+//  Lecture UI  (input type="month" → valeur "YYYY-MM")
+// ═══════════════════════════════════════════════════════════════════
 function getParams() {
-  const [ey, em] = document.getElementById('end-date').value.split('-').map(Number);
-  const adjOn   = document.getElementById('chk-adj').checked;
-  const adjVal  = document.getElementById('adj-date').value;
-  let adjY = 0, adjM = 0;
-  if (adjOn && adjVal) [adjY, adjM] = adjVal.split('-').map(Number);
-  const adjRate = parseFloat(document.getElementById('adj-rate').value);
-  const adjRateSafe = isNaN(adjRate) || adjRate < 0 ? 0 : adjRate;
-  return { endY: ey, endM: em, adjOn, adjY, adjM, adjRate: adjRateSafe };
+  var endVal = document.getElementById('end-date').value || '';
+  var parts  = endVal.split('-').map(Number);
+  var adjOn  = document.getElementById('chk-adj').checked;
+  var adjVal = document.getElementById('adj-date').value || '';
+  var adjY = 0, adjM = 0;
+  if (adjOn && adjVal) { var ap = adjVal.split('-').map(Number); adjY = ap[0]; adjM = ap[1]; }
+  var r = parseFloat(document.getElementById('adj-rate').value);
+  return {
+    endY: parts[0], endM: parts[1],
+    adjOn: adjOn, adjY: adjY, adjM: adjM,
+    adjRate: isNaN(r) ? 0 : r,
+  };
 }
 
-// ═══════════════════════════════════════════════════════════════════════
-//  Calcul DJI (cɈ ou Ɉ)
-// ═══════════════════════════════════════════════════════════════════════
 function dji(amount, s) {
-  const j = log2(amount + 1) / s;
+  var j = log2(amount + 1) / s;
   return unit === 'cj' ? j * 100 : j;
 }
 
-// ═══════════════════════════════════════════════════════════════════════
-//  Rendu Chart.js
-// ═══════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════
+//  Graphique
+// ═══════════════════════════════════════════════════════════════════
 function buildChart() {
-  const { endY, endM, adjOn, adjY, adjM, adjRate } = getParams();
-  if (!endY || !endM) return;
+  var p = getParams();
+  if (!p.endY || !p.endM) return;
 
-  const { months, stingy } = buildTimeline(endY, endM, adjOn, adjY, adjM, adjRate);
-  const n = months.length;
+  var L = LANGS[currentLang];
+  var tl = buildTimeline(p.endY, p.endM, p.adjOn, p.adjY, p.adjM, p.adjRate);
+  var months = tl.months, stingy = tl.stingy, n = months.length;
 
-  // Labels X : tous les 3 mois (jan, avr, juil, oct)
-  const MNAMES = ['jan','fév','mar','avr','mai','jun','jul','aoû','sep','oct','nov','déc'];
-  const labels = months.map(({ year, month }) =>
-    [1,4,7,10].includes(month) ? `${MNAMES[month-1]}\n${year}` : '');
-
-  // Index "maintenant"
-  const nowIdx = months.findIndex(({ year, month }) =>
-    mkey(year, month) === mkey(TODAY_YEAR, TODAY_MONTH));
-
-  // Index ajustement
-  const adjIdx = adjOn && adjY && adjM
-    ? months.findIndex(({ year, month }) => mkey(year, month) === mkey(adjY, adjM))
-    : -1;
-
-  // Actives
-  const active = curves.filter(c => c.amount > 0);
-
-  // Datasets DJI
-  const datasets = active.map((c, i) => ({
-    label: `${c.amount} €`,
-    data: stingy.map(s => +dji(c.amount, s).toFixed(3)),
-    borderColor:     CURVE_COLORS[i % 3],
-    backgroundColor: CURVE_FILLS[i % 3],
-    borderWidth: 2.5,
-    pointRadius: 0,
-    pointHoverRadius: 5,
-    fill: true,
-    tension: 0.35,
-    yAxisID: 'yDJI',
-  }));
-
-  // Dataset stingynalty
-  datasets.push({
-    label: 'stingynalty',
-    data: stingy.map(s => +s.toFixed(8)),
-    borderColor: 'rgba(142,68,173,.6)',
-    backgroundColor: 'transparent',
-    borderWidth: 1.5,
-    borderDash: [5, 4],
-    pointRadius: 0,
-    fill: false,
-    tension: 0.3,
-    yAxisID: 'yStingy',
+  var labels = months.map(function(d) {
+    return [1,4,7,10].indexOf(d.month) >= 0
+      ? L.monthsShort[d.month-1]+'\n'+d.year : '';
   });
 
-  // Plugin lignes verticales
-  const vlinePlugin = {
-    id: 'vlines',
-    afterDraw(chart) {
-      const ctx = chart.ctx;
-      const xScale = chart.scales.x;
-      const yScale = chart.scales.yDJI;
+  var nowIdx = -1;
+  for (var k = 0; k < months.length; k++) {
+    if (mkey(months[k].year, months[k].month) === mkey(TODAY_YEAR, TODAY_MONTH)) { nowIdx = k; break; }
+  }
+  var adjIdx = -1;
+  if (p.adjOn && p.adjY && p.adjM) {
+    for (var k = 0; k < months.length; k++) {
+      if (mkey(months[k].year, months[k].month) === mkey(p.adjY, p.adjM)) { adjIdx = k; break; }
+    }
+  }
 
-      const draw = (idx, color, dash, label) => {
+  var active = curves.filter(function(c){ return c.amount > 0; });
+
+  var datasets = active.map(function(c, i) {
+    return {
+      label: c.amount+' €',
+      data: stingy.map(function(s){ return +dji(c.amount, s).toFixed(3); }),
+      borderColor: CURVE_COLORS[i%3], backgroundColor: CURVE_FILLS[i%3],
+      borderWidth: 2.5, pointRadius: 0, pointHoverRadius: 5,
+      fill: true, tension: 0.35, yAxisID: 'yDJI',
+    };
+  });
+
+  datasets.push({
+    label: 'stingynalty',
+    data: stingy.map(function(s){ return +s.toFixed(8); }),
+    borderColor: 'rgba(224,86,160,.65)', backgroundColor: 'transparent',
+    borderWidth: 1.5, borderDash: [5,4], pointRadius: 0,
+    fill: false, tension: 0.3, yAxisID: 'yStingy',
+  });
+
+  var vlines = {
+    id: 'vlines',
+    afterDraw: function(chart) {
+      var ctx = chart.ctx, xs = chart.scales.x, ys = chart.scales.yDJI;
+      function draw(idx, color, dash, lbl) {
         if (idx < 0 || idx >= n) return;
-        const x = xScale.getPixelForValue(idx);
+        var x = xs.getPixelForValue(idx);
         ctx.save();
-        ctx.setLineDash(dash);
-        ctx.strokeStyle = color;
-        ctx.lineWidth = 1.5;
-        ctx.beginPath();
-        ctx.moveTo(x, yScale.top);
-        ctx.lineTo(x, yScale.bottom);
-        ctx.stroke();
-        if (label) {
-          ctx.setLineDash([]);
-          ctx.fillStyle = color;
-          ctx.font = 'bold 10px Nunito Sans, sans-serif';
-          ctx.textAlign = 'center';
-          ctx.fillText(label, x, yScale.top + 13);
+        ctx.setLineDash(dash); ctx.strokeStyle = color; ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.moveTo(x, ys.top); ctx.lineTo(x, ys.bottom); ctx.stroke();
+        if (lbl) {
+          ctx.setLineDash([]); ctx.fillStyle = color;
+          ctx.font = '600 10px Poppins,sans-serif'; ctx.textAlign = 'center';
+          ctx.fillText(lbl, x, ys.top+13);
         }
         ctx.restore();
-      };
-
-      if (nowIdx >= 0) draw(nowIdx, '#e74c3c', [3,3], '▼ maintenant');
-      if (adjIdx >= 0) draw(adjIdx, 'rgba(142,68,173,.75)', [6,3], '⟳');
+      }
+      if (nowIdx >= 0) draw(nowIdx, '#ff5252', [3,3], '▼');
+      if (adjIdx >= 0) draw(adjIdx, 'rgba(224,86,160,.8)', [6,3], '⟳');
     }
   };
 
-  const unitLabel = unit === 'cj' ? 'Jetons (cɈ)' : 'Jetons (Ɉ)';
-  const dp = unit === 'cj' ? 2 : 4;
+  var dp = unit === 'cj' ? 2 : 4;
+  var gc = 'rgba(255,255,255,.05)', tc = '#5c5c77', ac = '#312e55';
 
-  const cfg = {
-    type: 'line',
-    data: { labels, datasets },
-    plugins: [vlinePlugin],
+  if (chartInstance) chartInstance.destroy();
+  chartInstance = new Chart(document.getElementById('chart'), {
+    type: 'line', data: { labels: labels, datasets: datasets }, plugins: [vlines],
     options: {
-      responsive: true,
-      interaction: { mode: 'index', intersect: false },
+      responsive: true, interaction: { mode: 'index', intersect: false },
       animation: { duration: 250 },
       scales: {
         x: {
-          ticks: {
-            color: '#6c757d',
-            font: { family: 'Nunito Sans', size: 10 },
-            maxRotation: 0,
-            autoSkip: false,
-          },
-          grid: { color: '#eef0f2' },
-          border: { color: '#dde3ea' },
+          ticks: { color: tc, font: { family: 'Poppins', size: 10 }, maxRotation: 0, autoSkip: false },
+          grid: { color: gc }, border: { color: ac },
         },
         yDJI: {
-          position: 'left',
-          min: 0,           // ← AXE DÉMARRANT À 0
-          title: {
-            display: true,
-            text: unitLabel,
-            color: '#6c757d',
-            font: { family: 'Nunito Sans', size: 11 },
-          },
-          ticks: {
-            color: '#6c757d',
-            font: { family: 'Nunito Sans', size: 10 },
-          },
-          grid: { color: '#eef0f2' },
-          border: { color: '#dde3ea' },
+          position: 'left', min: 0,
+          title: { display: true, text: t('unitLabel')(unit), color: tc, font: { family: 'Poppins', size: 11 } },
+          ticks: { color: tc, font: { family: 'Poppins', size: 10 } },
+          grid: { color: gc }, border: { color: ac },
         },
         yStingy: {
           position: 'right',
-          title: {
-            display: true,
-            text: 'stingynalty',
-            color: 'rgba(142,68,173,.65)',
-            font: { family: 'Nunito Sans', size: 11 },
-          },
-          ticks: {
-            color: 'rgba(142,68,173,.65)',
-            font: { family: 'Nunito Sans', size: 10 },
-          },
-          grid: { display: false },
-          border: { color: '#dde3ea' },
+          title: { display: true, text: 'stingynalty', color: 'rgba(224,86,160,.6)', font: { family: 'Poppins', size: 11 } },
+          ticks: { color: 'rgba(224,86,160,.6)', font: { family: 'Poppins', size: 10 } },
+          grid: { display: false }, border: { color: ac },
         },
       },
       plugins: {
         legend: {
-          labels: {
-            color: '#444f5a',
-            font: { family: 'Nunito Sans', size: 11, weight: '700' },
-            boxWidth: 22, boxHeight: 2,
-            padding: 18,
-          }
+          labels: { color: '#ccc9e8', font: { family: 'Poppins', size: 11, weight: '600' }, boxWidth: 24, boxHeight: 2, padding: 18 }
         },
         tooltip: {
-          backgroundColor: '#222f3e',
-          borderColor: '#2c3e50',
-          borderWidth: 1,
-          titleColor: '#fff',
-          bodyColor: 'rgba(255,255,255,.75)',
-          titleFont: { family: 'Montserrat', weight: '700', size: 12 },
-          bodyFont: { family: 'Nunito Sans', size: 11 },
-          padding: 10,
+          backgroundColor: '#1a1838', borderColor: '#3e3a68', borderWidth: 1,
+          titleColor: '#eeedf8', bodyColor: '#8585a4',
+          titleFont: { family: 'Poppins', weight: '700', size: 12 },
+          bodyFont:  { family: 'Poppins', size: 11 }, padding: 10,
           callbacks: {
-            title: items => {
-              const { year, month } = months[items[0].dataIndex];
-              const mn = ['Janvier','Février','Mars','Avril','Mai','Juin',
-                          'Juillet','Août','Septembre','Octobre','Novembre','Décembre'][month-1];
-              return `${mn} ${year}`;
+            title: function(items) {
+              var d = months[items[0].dataIndex];
+              return L.monthsFull[d.month-1]+' '+d.year;
             },
-            label: item => {
+            label: function(item) {
               if (item.dataset.yAxisID === 'yStingy')
-                return `  stingynalty : ${Number(item.raw).toFixed(6)}`;
-              const u = unit === 'cj' ? 'cɈ' : 'Ɉ';
-              return `  ${item.dataset.label} → ${Number(item.raw).toFixed(dp)} ${u}`;
+                return '  stingynalty : '+Number(item.raw).toFixed(6);
+              var u = unit === 'cj' ? 'cɈ' : 'Ɉ';
+              return '  '+item.dataset.label+' → '+Number(item.raw).toFixed(dp)+' '+u;
             }
           }
         }
       }
     }
-  };
+  });
 
-  const canvas = document.getElementById('chart');
-  if (chartInstance) chartInstance.destroy();
-  chartInstance = new Chart(canvas, cfg);
-
-  // ── Mise à jour infos stingynalty ──
-  const curIdx2 = months.findIndex(({ year, month }) =>
-    mkey(year, month) === mkey(TODAY_YEAR, TODAY_MONTH));
+  // Infos panel stingynalty
+  var curIdx = -1;
+  for (var k = 0; k < months.length; k++) {
+    if (mkey(months[k].year, months[k].month) === mkey(TODAY_YEAR, TODAY_MONTH)) { curIdx = k; break; }
+  }
   document.getElementById('cur-stingy').textContent =
-    curIdx2 >= 0 ? stingy[curIdx2].toFixed(8) : '—';
-  document.getElementById('end-stingy').textContent =
-    stingy[n - 1].toFixed(8);
+    curIdx >= 0 ? stingy[curIdx].toFixed(8) : '—';
+  document.getElementById('end-stingy').textContent = stingy[n-1].toFixed(8);
 
   // Aperçu ajustement
-  const adjDateVal = document.getElementById('adj-date').value;
-  if (adjOn && adjDateVal && adjY && adjM) {
-    const mn = MNAMES[adjM - 1];
-    const rateStr = adjRate === 0 ? 'stingynalty figé (0‰)' : `${adjRate} ‰/mois`;
+  var adjDateVal = document.getElementById('adj-date').value;
+  if (p.adjOn && adjDateVal && p.adjY && p.adjM) {
+    var rStr = p.adjRate === 0 ? t('adjFrozen') : p.adjRate+' ‰';
     document.getElementById('adj-preview').textContent =
-      `→ ${rateStr} à partir de ${mn}. ${adjY}`;
+      t('adjPreview')(rStr, L.months[p.adjM-1], p.adjY);
   } else {
     document.getElementById('adj-preview').textContent = '';
   }
 
-  // ── Stats ──
-  buildStats(months, stingy, active, nowIdx);
-
-  // ── Hints en temps réel ──
-  updateHints(months, stingy, nowIdx);
+  buildStats(months, stingy, active, curIdx, n);
+  updateHints(stingy, curIdx);
 }
 
-// ═══════════════════════════════════════════════════════════════════════
-//  Stats
-// ═══════════════════════════════════════════════════════════════════════
-function buildStats(months, stingy, active, nowIdx) {
-  const grid = document.getElementById('stats-grid');
+// ═══════════════════════════════════════════════════════════════════
+//  Stats — wording complet, sans lignes stingynalty
+// ═══════════════════════════════════════════════════════════════════
+function buildStats(months, stingy, active, curIdx, n) {
+  var grid = document.getElementById('stats-grid');
   grid.innerHTML = '';
-  const u = unit === 'cj' ? 'cɈ' : 'Ɉ';
-  const dp = unit === 'cj' ? 1 : 3;
-  const n = months.length;
+  var u  = unit === 'cj' ? 'cɈ' : 'Ɉ';
+  var dp = unit === 'cj' ? 1 : 3;
+  var L  = LANGS[currentLang];
+  var lastMonth  = months[n-1];
+  var endMonName = L.months[lastMonth.month-1];
+  var endYr      = lastMonth.year;
 
-  addStat(grid, 'stingynalty actuel',
-    nowIdx >= 0 ? stingy[nowIdx].toFixed(6) : '—', '', '#8e44ad');
-  addStat(grid, 'stingynalty final', stingy[n-1].toFixed(6), '', '#8e44ad');
-
-  active.forEach((c, i) => {
-    const col = CURVE_COLORS[i % 3];
-    if (nowIdx >= 0) {
-      const v = dji(c.amount, stingy[nowIdx]);
-      addStat(grid, `${c.amount} € · maintenant`, v.toFixed(dp) + ' ' + u, '', col);
+  active.forEach(function(c, i) {
+    var col = CURVE_COLORS[i%3];
+    if (curIdx >= 0) {
+      var val = dji(c.amount, stingy[curIdx]).toFixed(dp);
+      addStat(grid, t('statNow')(c.amount, val, u), col);
     }
-    const vEnd = dji(c.amount, stingy[n-1]);
-    addStat(grid, `${c.amount} € · fin période`, vEnd.toFixed(dp) + ' ' + u, '', col);
+    var valEnd = dji(c.amount, stingy[n-1]).toFixed(dp);
+    addStat(grid, t('statEnd')(c.amount, valEnd, u, endMonName, endYr), col);
   });
 }
 
-function addStat(container, label, val, sub, color) {
-  const box = document.createElement('div');
+function addStat(container, sentence, color) {
+  var box = document.createElement('div');
   box.className = 'stat-box';
-  box.innerHTML = `
-    <div class="stat-label">${label}</div>
-    <div class="stat-val" style="${color ? `color:${color}` : ''}">${val}</div>
-    ${sub ? `<div style="font-size:.7rem;color:var(--gray);margin-top:.1rem">${sub}</div>` : ''}
-  `;
+  box.innerHTML = '<div class="stat-val" style="color:'+color+';font-size:.82rem;line-height:1.5">'+sentence+'</div>';
   container.appendChild(box);
 }
 
-// ═══════════════════════════════════════════════════════════════════════
-//  Hints sous les inputs (valeur aujourd'hui)
-// ═══════════════════════════════════════════════════════════════════════
-function updateHints(months, stingy, nowIdx) {
-  const u = unit === 'cj' ? 'cɈ' : 'Ɉ';
-  const dp = unit === 'cj' ? 2 : 4;
-  if (nowIdx < 0) return;
-  const s = stingy[nowIdx];
-  curves.forEach((c, i) => {
-    const el = document.getElementById(`hint-${i}`);
+// ═══════════════════════════════════════════════════════════════════
+//  Hints temps réel
+// ═══════════════════════════════════════════════════════════════════
+function updateHints(stingy, curIdx) {
+  var u  = unit === 'cj' ? 'cɈ' : 'Ɉ';
+  var dp = unit === 'cj' ? 2 : 4;
+  curves.forEach(function(c, i) {
+    var el = document.getElementById('hint-'+i);
     if (!el) return;
-    if (!c.amount || c.amount <= 0) { el.textContent = ''; return; }
-    const v = dji(c.amount, s);
-    el.innerHTML = `→ aujourd'hui : <span style="color:${CURVE_COLORS[i%3]};font-weight:700">${v.toFixed(dp)} ${u}</span>`;
+    if (!c.amount || c.amount <= 0 || curIdx < 0) { el.innerHTML = ''; return; }
+    var v = dji(c.amount, stingy[curIdx]);
+    el.style.color = CURVE_COLORS[i%3];
+    el.innerHTML = t('hintNow')(v.toFixed(dp), u);
   });
 }
 
-// ═══════════════════════════════════════════════════════════════════════
-//  Gestion des courbes
-// ═══════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════
+//  Courbes UI
+// ═══════════════════════════════════════════════════════════════════
 function renderCurves() {
-  const container = document.getElementById('curves-container');
+  var container = document.getElementById('curves-container');
   container.innerHTML = '';
-
-  curves.forEach((c, i) => {
-    const wrap = document.createElement('div');
-    wrap.innerHTML = `
-      <div class="curve-row">
-        <div class="dot" style="background:${CURVE_COLORS[i%3]}"></div>
-        <div class="input-wrap" style="flex:1">
-          <input type="number" id="curve-${i}" value="${c.amount || ''}"
-                 placeholder="Montant…" min="1" step="1">
-          <span class="unit">€</span>
-        </div>
-        ${i > 0 ? `<button class="btn-remove" data-idx="${i}" title="Supprimer">×</button>` : ''}
-      </div>
-      <div class="curve-hint" id="hint-${i}"></div>
-    `;
+  curves.forEach(function(c, i) {
+    var wrap = document.createElement('div');
+    wrap.innerHTML = [
+      '<div class="curve-row">',
+      '  <div class="dot" style="background:'+CURVE_COLORS[i%3]+';box-shadow:0 0 7px '+CURVE_COLORS[i%3]+'88"></div>',
+      '  <div class="input-wrap" style="flex:1">',
+      '    <input type="number" class="curve-input" id="curve-'+i+'"',
+      '           value="'+(c.amount||'')+'" placeholder="'+t('placeholder')+'" min="1" step="1">',
+      '    <span class="unit">€</span>',
+      '  </div>',
+      i > 0 ? '<button class="btn-remove" data-idx="'+i+'" title="×">×</button>' : '',
+      '</div>',
+      '<div class="curve-hint" id="hint-'+i+'"></div>',
+    ].join('');
     container.appendChild(wrap);
 
-    wrap.querySelector(`#curve-${i}`).addEventListener('input', e => {
+    wrap.querySelector('#curve-'+i).addEventListener('input', function(e) {
       curves[i].amount = parseFloat(e.target.value) || 0;
       buildChart();
     });
-    const rm = wrap.querySelector('.btn-remove');
-    if (rm) rm.addEventListener('click', () => {
+    var rm = wrap.querySelector('.btn-remove');
+    if (rm) rm.addEventListener('click', function() {
       curves.splice(parseInt(rm.dataset.idx), 1);
       renderCurves(); buildChart();
     });
   });
-
   document.getElementById('btn-add-curve').style.display =
     curves.length >= 3 ? 'none' : 'inline-flex';
 }
 
-// ═══════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════
 //  Init
-// ═══════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════
+function ym(date) {
+  // "YYYY-MM" pour input type="month"
+  return date.toISOString().slice(0, 7);
+}
+
+function detectLang() {
+  var nav = ((navigator.language || 'fr').slice(0, 2)).toLowerCase();
+  return ['fr','en','es','de','it','uk'].indexOf(nav) >= 0 ? nav : 'fr';
+}
+
 function init() {
-  DEFAULT_AMOUNTS.forEach(a => curves.push({ amount: a }));
+  currentLang = detectLang();
+  document.getElementById('lang-select').value = currentLang;
+
+  curves.push({ amount: 150 });
   renderCurves();
 
-  // Date de fin : +3 ans
-  const def = new Date(TODAY);
+  var def = new Date(TODAY);
   def.setFullYear(def.getFullYear() + 3);
-  document.getElementById('end-date').value = def.toISOString().slice(0, 10);
+  document.getElementById('end-date').value = ym(def);
 
-  // Date d'ajustement par défaut : +6 mois
-  const adj = new Date(TODAY);
+  var adj = new Date(TODAY);
   adj.setMonth(adj.getMonth() + 6);
-  document.getElementById('adj-date').value = adj.toISOString().slice(0, 10);
+  document.getElementById('adj-date').value = ym(adj);
 
+  applyLang();
   buildChart();
 
-  // Listeners
-  document.getElementById('btn-add-curve').addEventListener('click', () => {
+  document.getElementById('btn-add-curve').addEventListener('click', function() {
     if (curves.length < 3) { curves.push({ amount: 0 }); renderCurves(); buildChart(); }
   });
   document.getElementById('end-date').addEventListener('change', buildChart);
-  document.getElementById('chk-adj').addEventListener('change', e => {
+  document.getElementById('chk-adj').addEventListener('change', function(e) {
     document.getElementById('adj-fields').classList.toggle('open', e.target.checked);
     buildChart();
   });
   document.getElementById('adj-date').addEventListener('change', buildChart);
   document.getElementById('adj-rate').addEventListener('input', buildChart);
-
-  document.querySelectorAll('.unit-toggle button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.unit-toggle button')
-        .forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.unit-toggle button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.unit-toggle button').forEach(function(b){ b.classList.remove('active'); });
       btn.classList.add('active');
       unit = btn.dataset.unit;
       buildChart();
     });
+  });
+  document.getElementById('lang-select').addEventListener('change', function(e) {
+    currentLang = e.target.value;
+    applyLang();
+    renderCurves();
+    buildChart();
   });
 }
 

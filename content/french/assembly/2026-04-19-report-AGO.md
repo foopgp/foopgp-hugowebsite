@@ -207,3 +207,41 @@ Le **bilan financier 2025** est adopté malgré des lacunes comptables (selon Ka
 ---
  
 Ce compte rendu a été rédigé à l'aide de [VEECTORIA Pulse](https://www.veectoriapulse.com), relu et corrigé lors de la visio hebdomadaire du mardi (21 avril).
+
+---
+
+## Annexe : tableau des cotisations (pseudonymisés) au 31 décembre 2025.
+
+| dernière € contrib. | identifiant OpenPGP ID                  | nb contrib. | total € contrib. | total Ɉ généré | nb voix |
+|-----------------------|-----------------------------------------|-------------------------|------------------------|--------------|----------------|
+| 2025-12-31            | u4=BDrknFx9tDn9RivN87ldwQe_42.17-002.76 | 1                       | 2000.00 €              | 10.024879 Ɉ  | 3166           |
+| 2025-11-30            | u4=Vg2GEpmwDaENCoq5Pi_Ifwe_42.17-002.76 | 1                       | 10.00 €                | 3.178203 Ɉ   | 1782           |
+| 2025-11-27            | u4=OnNuz98sGW4fVzoYxeTf1we_42.17-002.76 | 1                       | 100.00 €               | 6.116944 Ɉ   | 2473           |
+| 2025-10-13            | u4=NXZp8D5sqvFi3vO8_IMf5Qe_50.60_005.54 | 5                       | 299.00 €               | 7.597671 Ɉ   | 2756           |
+| 2025-10-09            | u4=oSwslRTBsMIU2l7S0eBFvQe_42.17-002.76 | 1                       | 5000.00 €              | 11.345515 Ɉ  | 3368           |
+| 2025-08-27            | u4=D9SrwuxesuMU90PM8xypxQe_48.78_002.19 | 1                       | 500.00 €               | 8.363788 Ɉ   | 2892           |
+| 2025-08-17            | u4=Z9vvex4VVnCmyYaLJGrnyQe_49.02_001.15 | 1                       | 1.00 €                 | .932556 Ɉ    | 965            |
+| 2025-08-17            | u4=5vSFR8j-Vaboqv_Wubxq-Qe_47.28-002.22 | 1                       | 1.00 €                 | .932556 Ɉ    | 965            |
+| 2025-05-14            | u4=sC4bFh95b6h6sNxXiqU4uAe_42.17-002.76 | 3                       | 900.00 €               | 9.291387 Ɉ   | 3048           |
+| 2025-04-22            | u4=WQsIx62sdqqXaIQ0-hLQ_Qe_42.17-002.76 | 3                       | 34.00 €                | 5.087462 Ɉ   | 2255           |
+| 2025-03-12            | u4=DGILV1c1UJIoOFwEcnCnXQe_49.12_006.17 | 1                       | 60.00 €                | 5.670405 Ɉ   | 2381           |
+| 2025-03-02            | u4=Jz_kvDF-YA2qW_oqyeHwoge_43.66_001.48 | 1                       | 60.00 €                | 5.670405 Ɉ   | 2381           |
+| 2025-02-07            | u4=KU9Ov9dYPiLKIS0cO0GTige_42.17-002.76 | 1                       | 320.83 €               | 8.004322 Ɉ   | 2829           |
+| 2025-02-07            | u4=26b4yUVtttSSOeLjgoTmlwe_42.17-002.76 | 1                       | 320.83 €               | 8.004322 Ɉ   | 2829           |
+| 2024-11-17            | u4=Rza-qKl16GFE4WHwfPszQge_49.05_003.40 | 1                       | 30.00 €                | 4.832177 Ɉ   | 2198           |
+| 2024-11-17            | u4=KT3Sd8gv_IJBZq2lDTtBuAe_42.17-002.76 | 1                       | 2.00 €                 | 1.545925 Ɉ   | 1243           |
+| 2024-11-17            | u4=CzaJvCxLz2yfIYtgYJmO2Ae_47.39_008.04 | 1                       | 60.00 €                | 5.784667 Ɉ   | 2405           |
+| 2024-08-02            | u4=OsvDx0976s5ykaVD5qH61Qe_42.17-002.76 | 4                       | 37350.00 €             | 15.038102 Ɉ  | 3877           |
+| 2024-06-18            | u4=sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76 | 6                       | 1495.68 €              | 10.547550 Ɉ  | 3247           |
+| 2024-03-07            | u4=EGNkypBDfuVUOtRKQl0PsQe_43.30_005.38 | 1                       | 4096.00 €              | 12.000352 Ɉ  | 3464           |
+| 2024-03-07            | u4=cqzR-QkxXNd_5vjNS9TzAQe_43.30_005.38 | 1                       | 4096.00 €              | 12.000352 Ɉ  | 3464           |
+| 2023-12-27            | u4=HNvUrQeboIHyuvFbiOG2hge_42.17-002.76 | 2                       | 1012.00 €              | 9.984418 Ɉ   | 3159           |
+| 2023-12-22            | u4=D1whznRCD12hYclPoZwFqQe_42.17-002.76 | 2                       | 198.80 €               | 7.642412 Ɉ   | 2764           |
+| 2023-11-28            | u4=FSB7ZQ5q9uSkefAkda5i0ge_42.17-002.76 | 1                       | 2.00 €                 | 1.584962 Ɉ   | 1258           |
+| 2023-11-23            | u4=b6a24SF02DpTMZyjrJxDMAe_33.89_035.50 | 2                       | 32.00 €                | 5.044394 Ɉ   | 2245           |
+| 2023-11-06            | u4=fAnTRVmJi3elEutprkL6Nge_48.88_002.36 | 1                       | 16.00 €                | 4.087462 Ɉ   | 2021           |
+| 2023-10-17            | u4=Sx8SFMdM_XbpEuitRGNRwQe_42.17-002.76 | 1                       | 16.00 €                | 4.087462 Ɉ   | 2021           |
+| 2023-06-13            | u4=b8tcWJH08YMqilr2qMKY5Qe_49.25_006.04 | 1                       | 16.00 €                | 4.087462 Ɉ   | 2021           |
+| 2023-05-30            | u4=9X64R9hYIG1V8RJOAFU6_ge_42.17-002.76 | 1                       | 512.00 €               | 9.002815 Ɉ   | 3000           |
+| 2023-05-23            | u4=zvvTiAxCk4zpXbnrIBeyTAe_42.17-002.76 | 1                       | 16.00 €                | 4.087462 Ɉ   | 2021           |
+

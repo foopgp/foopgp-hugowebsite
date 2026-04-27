@@ -1042,6 +1042,10 @@ function ym(date) {
 }
 
 function detectLang() {
+  // 1. URL parameter: ?lang=de
+  const urlLang = new URLSearchParams(window.location.search).get('lang');
+  if (urlLang && ['fr','en','es','de','it','uk'].indexOf(urlLang) >= 0) return urlLang;
+  // 2. Browser language
   var nav = ((navigator.language || 'fr').slice(0, 2)).toLowerCase();
   return ['fr','en','es','de','it','uk'].indexOf(nav) >= 0 ? nav : 'fr';
 }

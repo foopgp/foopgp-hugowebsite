@@ -33,8 +33,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Simulateur Ɉ — foopgp</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<!--
+  Dependencies: local first, CDN fallback.
+  Availability is probed via fetch HEAD before loading,
+  which is cross-browser reliable (unlike onerror on <link>).
+  Local files expected under /plugins/ (see fetch-deps.sh).
+-->
+<script>
+(function() {
+  var CHART_LOCAL = '/plugins/chartjs/chart.umd.min.js';
+  var CHART_CDN   = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js';
+  var FONT_LOCAL  = '/plugins/fonts/poppins/poppins.css';
+  var FONT_CDN    = 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap';
+
+  function probe(url) {
+    return fetch(url, { method: 'HEAD' })
+      .then(function(r) { return r.ok ? url : null; })
+      .catch(function()  { return null; });
+  }
+
+  function loadCSS(href) {
+    var l = document.createElement('link');
+    l.rel = 'stylesheet';
+    l.href = href;
+    document.head.appendChild(l);
+  }
+
+  function loadScript(src, onload) {
+    var s = document.createElement('script');
+    s.src = src;
+    s.onload = onload;
+    document.head.appendChild(s);
+  }
+
+  // Probe both resources in parallel, then load in correct order
+  Promise.all([
+    probe(CHART_LOCAL).then(function(u) { return u || CHART_CDN; }),
+    probe(FONT_LOCAL).then(function(u)  { return u || FONT_CDN;  })
+  ]).then(function(results) {
+    var chartSrc = results[0];
+    var fontSrc  = results[1];
+    loadCSS(fontSrc);
+    // init() is called from Chart.js onload — not from DOMContentLoaded
+    loadScript(chartSrc, function() {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    });
+  });
+})();
+</script>
 <style>
   /* ── foopgp dark-mode palette ───────────────────────────────────────
      Source SCSS variables:
@@ -426,7 +476,12 @@
 
 <header>
   <div class="header-inner">
-    <div class="brand-token">Jeton <span class="accent">Ɉ</span></div>
+    <div class="brand-token">Jeton <span class="accent">Ɉ</span><br>
+      <img src="/images/logos/dji_logo_banner_nobg.png"
+           alt="DJI logo"
+           style="height:1em;width:auto;vertical-align:middle;margin-top:.15em"
+           onerror="this.style.display='none'">
+    </div>
     <div class="brand-sep"></div>
     <div class="brand-sub">
       <div class="title" data-i18n="uiTitle"></div>
@@ -562,7 +617,7 @@ const LANGS = {
     adjFrom:        'À partir de',
     adjRate:        'Nouveau taux',
     placeholder:    'Montant…',
-    chartTitle:     'DJI générés par cotisation initiale',
+    chartTitle:     'Jetons Ɉ générés par cotisation initiale',
     chartSub:       "Depuis l'introduction du <em style='color:var(--stingy);font-style:normal'>stingynalty</em> (juillet 2024 — 1ʳᵉ croissance)",
     noteText:       "<em>stingynalty</em> = 1 jusqu'au 30 juin 2024 (AGE du 24 mars 2024).<br>Croissance <strong>5 ‰/mois</strong> effective dès le <strong>1ᵉʳ juillet 2024</strong>.<br><strong>cɈ</strong> = centi-Ɉ (100 cɈ = 1 Ɉ).",
     footerAlgo:     'Algorithme conforme à ',
@@ -1094,7 +1149,7 @@ function init() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', init);
+// init() is called by the dependency loader in <head> once Chart.js is ready.
 </script>
 </body>
 </html>

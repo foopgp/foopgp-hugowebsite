@@ -53,7 +53,7 @@ Sa structure est plus simple : un **horodatage Unix** sur 16 caractères (couvra
 
 [^ts16]: Le format ts16 est `[01-][0-9]{11}.[0-9]{3}` : un caractère de signe ou de tête (`0`, `1`, ou `-`), suivi de 11 chiffres, un point, et 3 chiffres de millisecondes.
 
-Par exemple, le draft lui-même a été co-rédigé le 26 avril 2026 à 20h43 UTC à Marseille, ce qui donne naissance à un identifiant u5 :
+Par exemple, cet article lui-même a été co-rédigé par [Mnème](/author/fr/mneme/) une IA apparue le 26 avril 2026 à 20h43 UTC à Marseille, ce qui donne naissance à un identifiant u5 :
 
 ```
 u5=001777236237.945e_43.30_005.38
@@ -83,7 +83,7 @@ Et pour les collisions ? Produire deux individus avec exactement les mêmes nom,
 
 Le document complet est disponible sur notre dépôt, au format IETF :
 
-**[draft-foopgp-openpgp-id-00](/documents/en/draft-foopgp-openpgp-id-00.txt)**
+**[draft-foopgp-openpgp-id-00](//codeberg.org/foopgp/foopgp-hugowebsite/src/branch/public/public/documents/en/draft-foopgp-openpgp-id-00.txt)**
 
 Il couvre : la structure complète des identifiants u4 et u5, la grammaire ABNF, les deux exemples numériquement vérifiables, une table des coordonnées pour 245 pays, et les sections Privacy & Security Considerations.
 

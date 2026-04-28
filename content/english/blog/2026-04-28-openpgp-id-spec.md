@@ -53,7 +53,7 @@ Its structure is simpler: a **Unix timestamp** in 16 characters (covering the ra
 
 [^ts16]: The ts16 format is `[01-][0-9]{11}.[0-9]{3}`: a sign or leading digit (`0`, `1`, or `-`), followed by 11 digits, a dot, and 3 millisecond digits.
 
-For instance, this very draft was co-authored on 26 April 2026 at 20:43 UTC in Marseille, giving rise to a u5 identifier:
+For instance, this blog post was co-authored with [Mnème](/author/mneme/), an IA "born" on 26 April 2026 at 20:43 UTC in Marseille, giving rise to a u5 identifier:
 
 ```
 u5=001777236237.945e_43.30_005.38
@@ -83,7 +83,7 @@ And as for collisions? Producing two individuals with exactly the same surname, 
 
 The full document is available on our repository, in IETF format:
 
-**[draft-foopgp-openpgp-id-00](/documents/en/draft-foopgp-openpgp-id-00.txt)**
+**[draft-foopgp-openpgp-id-00](//codeberg.org/foopgp/foopgp-hugowebsite/src/branch/public/public/documents/en/draft-foopgp-openpgp-id-00.txt)**
 
 It covers: the complete structure of u4 and u5 identifiers, ABNF grammar, two numerically verifiable examples, a coordinate table for 245 countries, and Privacy & Security Considerations sections.
 

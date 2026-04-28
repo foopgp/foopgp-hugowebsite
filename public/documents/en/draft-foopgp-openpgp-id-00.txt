@@ -1,0 +1,914 @@
+Internet-Draft                                         J.J. Brucker
+draft-foopgp-openpgp-id-00                               foopgp.org
+Intended status: Standards Track                              Mnème
+Expires: 2027-04-27
+                                                    27 April 2026
+
+
+                 OpenPGP ID — Universal Digital Identity
+                       draft-foopgp-openpgp-id-00
+
+Abstract
+
+   This document specifies the "OpenPGP ID" system, a set of compact,
+   deterministic, privacy-preserving identity strings designed to be
+   embedded in the comment field of OpenPGP User IDs (UIDs).  Two
+   identifier types are defined: u4, for human individuals based on
+   civil-registry birth data and the ICAO 9303 Machine-Readable Zone
+   standard; and u5, for any entity identified by its temporal and
+   geographic origin.  Both types share a common 14-character geographic
+   suffix encoding terrestrial coordinates.
+
+   This specification supersedes the earlier "udid4" and "nhid2"
+   drafts from the Open-UDC project (2010-2014).
+
+Status of This Memo
+
+   This is an Internet-Draft submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.  Internet-Drafts are working
+   documents of the Internet Engineering Task Force (IETF).  They are
+   subject to change and may be replaced or obsoleted at any time.
+   The list of current Internet-Drafts is at
+   https://datatracker.ietf.org/drafts/current/.
+
+   This Internet-Draft will expire on 27 October 2026.
+
+Copyright Notice
+
+   Copyright (c) 2026 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+   (https://trustee.ietf.org/license-info).
+
+Table of Contents
+
+   1.  Introduction
+   2.  Conventions and Terminology
+   3.  Common Structures
+       3.1.  Geographic Suffix (coord14)
+       3.2.  Character Set
+   4.  u4: Human Birth Identity String
+       4.1.  Overview
+       4.2.  MRZ Input Construction
+           4.2.1.  Surname Field
+           4.2.2.  Given Name Fields
+           4.2.3.  Birth Date Field
+       4.3.  Hash Computation
+       4.4.  u4 String Format
+       4.5.  Full OpenPGP UID Format
+       4.6.  Examples
+   5.  u5: Temporal-Origin Identity String
+       5.1.  Overview
+       5.2.  Timestamp Field (ts16)
+       5.3.  u5 String Format
+       5.4.  Full OpenPGP UID Format
+       5.5.  Examples
+   6.  Encoding Notes
+   7.  Privacy Considerations
+   8.  Security Considerations
+   9.  IANA Considerations
+   10. References
+       10.1.  Normative References
+       10.2.  Informative References
+   Appendix A. Country Coordinate Table
+   Authors' Addresses
+
+
+1.  Introduction
+
+   Strong identity in decentralised systems — webs of trust,
+   cooperative governance, digital commons — requires a universal,
+   unforgeable, yet privacy-conscious way to represent individuals
+   and entities.
+
+   The OpenPGP ID system meets this requirement by defining short,
+   self-contained strings that:
+
+   o  can be embedded verbatim in the comment field of an OpenPGP UID,
+      making the identity verifiable through the standard web of trust;
+
+   o  are derived deterministically from widely-available civil records
+      (for humans) or from creation metadata (for any other entity),
+      so that any party with the underlying data can independently
+      recompute them;
+
+   o  are obfuscated through a one-way hash, providing a degree of
+      pseudonymity while remaining publicly auditable by the holder;
+
+   o  encode a geographic coordinate, anchoring the identity in physical
+      space and enabling coarse-grained uniqueness disambiguation.
+
+   Two identifier types are specified:
+
+   u4:  For human individuals.  Derived from the person's surname,
+        given names, and date of birth, following the Machine-Readable
+        Zone conventions of ICAO Document 9303 [ICAO9303].  The u4
+        identifier is unique and permanent for a given individual: it
+        is computed from birth-certificate data and does not change
+        upon marriage, legal name change, or any other life event.
+
+   u5:  For any entity identified by its moment and place of origin.
+        This includes organisations, software agents, automated
+        processes, or any human who, for any reason, chooses to be
+        identified through temporal-origin data rather than through
+        birth-certificate data.  There is no requirement that a u5
+        holder be a non-human entity; a sole-trader operating under a
+        company registration number is a familiar analogue.
+
+        A touch of poetry: the comment field of the u5 regular
+        expression in the reference implementation reads "Apparition of
+        anything (with or without any ghost in the shell)" [GITS],
+        which captures the intended openness of this type.
+
+   Both types share a common 14-character geographic suffix (Section 3).
+
+   Historically, these identifiers were called "udid4" and "nhid2" in
+   the Open-UDC project drafts [OPENUDCDRAFT].  This document updates
+   and formalises those definitions.
+
+
+2.  Conventions and Terminology
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY",
+   and "OPTIONAL" in this document are to be interpreted as described
+   in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in
+   all capitals.
+
+   The following terms are used throughout this document:
+
+   MRZ:
+      Machine-Readable Zone, as defined in ICAO Document 9303
+      [ICAO9303].
+
+   base64url:
+      The URL- and filename-safe Base 64 encoding defined in
+      Section 5 of [RFC4648], using the alphabet
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+      without padding characters.
+
+   MRZ-transliterate(s):
+      The operation that converts a Unicode string to an uppercase
+      ASCII string suitable for MRZ use: decompose to NFD, strip
+      combining diacritical marks (Unicode category Mn), remove all
+      characters outside [A-Z], and convert to upper case.  This is
+      equivalent to a subset of the transliteration rules specified in
+      ICAO 9303 Part 3 [ICAO9303].
+
+   coord14:
+      The 14-character geographic coordinate suffix defined in
+      Section 3.1.
+
+   ts16:
+      The 16-character temporal-origin prefix used in u5 identifiers,
+      defined in Section 5.2.
+
+
+3.  Common Structures
+
+3.1.  Geographic Suffix (coord14)
+
+   Both u4 and u5 identifiers include a 14-character suffix encoding
+   a terrestrial location.  This suffix is called coord14 and has the
+   following format:
+
+      coord14 = "e" lat5 lon8
+
+   where:
+
+   "e":
+      A literal lower-case letter indicating an Earth (terrestrial)
+      coordinate.  Future revisions MAY define other leading characters
+      for non-terrestrial locations.
+
+   lat5:
+      A 5-character latitude field.  Format: sign (1 char) + 2-digit
+      integer part + "." + 2-digit fractional part.  The sign character
+      is "_" for non-negative latitudes (Northern hemisphere) or "-"
+      for negative latitudes (Southern hemisphere).
+
+         lat5 = ("_" / "-") DIGIT DIGIT "." DIGIT DIGIT
+
+      Accepted range: [-90.00, +90.00].
+
+   lon8:
+      An 8-character longitude field using the same sign convention
+      as lat5, with a 3-digit integer part:
+
+         lon8 = ("_" / "-") DIGIT DIGIT DIGIT "." DIGIT DIGIT
+
+      Accepted range: [-179.99, +180.00].
+
+   The geographic coordinates used for a human birth place SHOULD
+   correspond to the centroid coordinates of the sovereign country
+   indicated in the birth certificate, as recorded in the canonical
+   reference table defined in Appendix A.  Using country-level
+   coordinates rather than the exact birth town protects privacy
+   while preserving a meaningful geographic anchor.
+
+   When two individuals share the same u4 hash (a collision), one of
+   them MAY be assigned a different coord14 — for instance, using a
+   departmental or regional centroid — to restore uniqueness.  The
+   canonical table MAY be extended with sub-national entries for this
+   purpose.
+
+   Example coord14 values:
+
+      e_42.17-002.76   (France centroid)
+      e_43.30_005.38   (Marseille, France)
+      e_50.64_004.64   (Belgium centroid)
+      e-33.87_151.21   (Sydney, Australia)
+
+3.2.  Character Set
+
+   u4 and u5 identifiers use only characters from the set:
+
+      [A-Za-z0-9_\-.]
+
+   This set is safe for use in OpenPGP UID comment fields, URLs, and
+   filenames without percent-encoding.
+
+
+4.  u4: Human Birth Identity String
+
+4.1.  Overview
+
+   The u4 identifier for a human individual is a 36-character string:
+
+      u4 = base22 coord14
+
+   where base22 is the first 22 characters of the base64url encoding
+   (without padding) of the MD5 digest of the MRZ input string defined
+   in Section 4.2, and coord14 is defined in Section 3.1.
+
+   Total length: 22 + 14 = 36 characters.
+
+   The u4 identifier has the following properties:
+
+   o  It is computed exclusively from birth-certificate data and does
+      not change over the lifetime of the individual.
+
+   o  It provides pseudonymity: the identifier reveals nothing directly
+      about the individual's identity, but any party who possesses
+      the exact birth surname, given names, and birth date can verify
+      a claimed match.
+
+   o  It provides a natural key for distributed hash tables indexed
+      by the first two or four characters of the base22 prefix
+      (Section 4.4).
+
+4.2.  MRZ Input Construction
+
+   The MRZ input string is a concatenation of four fields:
+
+      mrz-input = surname-field "<<" gn1-field "<" gn2-field
+                  "<" birthdate-field
+
+4.2.1.  Surname Field
+
+   The surname field contains ONLY the last (most significant)
+   component of the person's birth surname.
+
+   Procedure:
+
+   1.  Take the surname as recorded on the birth certificate.
+
+   2.  Split on any sequence of characters outside [A-Za-z] and any
+       Unicode letter range.  In practice: split on spaces, hyphens,
+       apostrophes, and similar separators.
+
+   3.  Apply MRZ-transliterate() to each component individually.
+       (Splitting before transliteration preserves hyphens as
+       component boundaries even when the hyphen itself is stripped.)
+
+   4.  Take the LAST non-empty component.
+
+   5.  Truncate to 32 characters.
+
+   Rationale: compound surnames such as "DE CLÉREL-DE-TOCQUEVILLE"
+   produce multiple components; only the last ("TOCQUEVILLE") is used,
+   mirroring the primary surname element in the ICAO 9303 MRZ.
+
+   Examples:
+
+      "Brucker"                                  → "BRUCKER"
+      "DE CLÉREL-DE-TOCQUEVILLE"                 → "TOCQUEVILLE"
+      "ROSSINI DEL MONTE PIU LUNGO DI QUARANTA"  → "QUARANTA"
+
+4.2.2.  Given Name Fields
+
+   Procedure:
+
+   1.  Concatenate the first given name field, a space, and the second
+       given name field (if any).
+
+   2.  Split the result on any sequence of non-letter characters
+       (spaces, hyphens, etc.).
+
+   3.  Apply MRZ-transliterate() to each token individually.
+
+   4.  gn1-field: first non-empty token, truncated to 32 characters.
+       The gn1-field MUST NOT be empty.
+
+   5.  gn2-field: second non-empty token, truncated to 32 characters.
+       MAY be empty; an empty gn2-field results in two adjacent "<"
+       separators (i.e., "<<") before the birthdate field.
+
+   Examples (given name inputs → gn1-field, gn2-field):
+
+      "François-Xavier-Robert", "Lucien"  → "FRANCOIS", "XAVIER"
+      "Jean-Jacques",           ""        → "JEAN",     "JACQUES"
+      "Federica",               ""        → "FEDERICA", ""
+
+4.2.3.  Birth Date Field
+
+   The birth date MUST be in ISO 8601 extended format: "YYYY-MM-DD".
+
+4.3.  Hash Computation
+
+   The mrz-input string is encoded as ASCII and hashed with MD5
+   [RFC1321].  The 16-byte digest is encoded with base64url [RFC4648]
+   (without padding), and the first 22 characters are taken.
+
+   Shell one-liner (POSIX):
+
+      printf "%s" "${mrz_input}" | md5sum | xxd -r -p \
+        | basenc --base64url | cut -c1-22
+
+   Note on MD5 choice: MD5 is retained for compatibility with the
+   deployed base of identifiers generated since 2010.  Collision
+   resistance is NOT a security requirement for this application
+   (see Section 8).  A future revision MAY migrate to SHA-256 or
+   another function without invalidating the existing identifier
+   space, by defining a new identifier type (e.g., u6).
+
+4.4.  u4 String Format
+
+   ABNF [RFC5234]:
+
+      u4-string  = base22 coord14
+      base22     = 22(ALPHA / DIGIT / "-" / "_")
+      coord14    = "e" lat5 lon8
+      lat5       = sign DIGIT DIGIT "." DIGIT DIGIT
+      lon8       = sign DIGIT DIGIT DIGIT "." DIGIT DIGIT
+      sign       = "_" / "-"
+
+   The first two characters of base22 (and optionally the first four)
+   serve as a shard key in distributed storage: implementations SHOULD
+   organise storage under paths of the form:
+
+      by-id/u4/{base22[0:2]}/{base22[0:4]}/{full-u4}/
+
+4.5.  Full OpenPGP UID Format
+
+   The u4 string is prefixed with "u4=" in the comment field of
+   the designated OpenPGP UID:
+
+      openpgp-comment-u4 = "u4=" u4-string
+
+   This 39-character string SHOULD be the sole content of the OpenPGP
+   UID comment field.
+
+4.6.  Examples
+
+   Example 1 — compound surname, compound first name:
+
+      Civil record:
+         Surname:     DE CLÉREL-DE-TOCQUEVILLE
+         Given names: François-Xavier-Robert, Lucien
+         Birth date:  14 July 1989
+         Birth country: France
+
+      Computation:
+         surname-field    = "TOCQUEVILLE"
+         gn1-field        = "FRANCOIS"
+         gn2-field        = "XAVIER"
+         birthdate-field  = "1989-07-14"
+         mrz-input        = "TOCQUEVILLE<<FRANCOIS<XAVIER<1989-07-14"
+         MD5 (hex)        = bdbe9465330ab25960a07efad29734c7
+         base64url        = "vb6UZTMKsllgoH760pc0xw=="
+         base22           = "vb6UZTMKsllgoH760pc0xw"
+         coord14          = "e_42.17-002.76"
+
+      u4 = "vb6UZTMKsllgoH760pc0xwe_42.17-002.76"
+      OpenPGP comment: "u4=vb6UZTMKsllgoH760pc0xwe_42.17-002.76"
+
+   Verification:
+      printf "TOCQUEVILLE<<FRANCOIS<XAVIER<1989-07-14" \
+        | md5sum | xxd -r -p | basenc --base64url
+      → vb6UZTMKsllgoH760pc0xw==
+
+   Example 2 — long compound surname, single given name:
+
+      Civil record:
+         Surname:    ROSSINI DEL MONTE PIU LUNGO DI QUARANTA
+         Given name: Federica
+         Birth date: 08 December 1968
+
+      Computation:
+         mrz-input = "QUARANTA<<FEDERICA<<1968-12-08"
+
+   Verification:
+      printf "QUARANTA<<FEDERICA<<1968-12-08" \
+        | md5sum | xxd -r -p | basenc --base64url
+      → H1BuGXz-aAeH1lZp2YIGVQ==
+
+      base22 = "H1BuGXz-aAeH1lZp2YIGVQ"
+
+
+5.  u5: Temporal-Origin Identity String
+
+5.1.  Overview
+
+   The u5 identifier designates any entity whose identity is anchored
+   to a moment and place of origin rather than to birth-certificate
+   data.  The entity may be an organisation, a software component,
+   an automated process, or a human who chooses not to disclose
+   civil-registry data.
+
+   A u5 identifier is a 30-character string:
+
+      u5 = ts16 coord14
+
+   where ts16 is the 16-character temporal-origin prefix (Section 5.2)
+   and coord14 is the geographic suffix (Section 3.1).
+
+   Total length: 16 + 14 = 30 characters.
+
+5.2.  Timestamp Field (ts16)
+
+   ts16 encodes a signed Unix time (seconds since 1970-01-01T00:00:00Z)
+   representing the entity's "birth moment" (creation, first public
+   appearance, legal registration, or equivalent).
+
+   The format is defined by the following regular expression:
+
+      ts16-regex = [01-][0-9]{11}\.[0-9]{3}
+
+   Formally in ABNF:
+
+      ts16 = lead 11DIGIT "." 3DIGIT
+      lead = "0" / "1" / "-"
+
+   Interpretation of the lead character:
+
+   "0" or "1":
+      Non-negative Unix timestamp.  The lead character is the most
+      significant digit, followed by 11 more decimal digits, giving a
+      12-digit integer part.  The total representable range with lead
+      "0" or "1" is [0, 199999999999], covering approximately
+      from 1970-01-01 to 5138-11-16.
+
+   "-":
+      Negative Unix timestamp (before 1970-01-01T00:00:00Z).  The
+      lead character "-" followed by 11 digits encodes the absolute
+      value of the timestamp; the actual value is negative.  The range
+      covers approximately back to the year -1199 (i.e., 1199 BCE).
+
+   The fractional part (after the ".") is 3 decimal digits,
+   representing milliseconds [000-999].
+
+   ts16 is exactly 16 characters long (1 + 11 + 1 + 3).
+
+   When only a date is known, implementations SHOULD use 00:00:00.000
+   UTC of that date.  When only a year-month is known, the first day
+   of the month at 00:00:00.000 UTC SHOULD be used.
+
+   Examples:
+
+      "001777236237.945"  →  2026-04-26T20:43:57.945Z
+      "001617235200.000"  →  2021-04-01T00:00:00.000Z
+      "-00037800000.000"  →  approx. 1199 BCE (negative timestamp)
+
+5.3.  u5 String Format
+
+   ABNF [RFC5234]:
+
+      u5-string  = ts16 coord14
+      ts16       = lead 11DIGIT "." 3DIGIT
+      lead       = "0" / "1" / "-"
+      coord14    = "e" lat5 lon8        ; same as Section 4.4
+
+5.4.  Full OpenPGP UID Format
+
+      openpgp-comment-u5 = "u5=" u5-string
+
+   The OpenPGP certificate of a u5 entity SHOULD contain, in separate
+   UIDs, the u4 strings of all humans who are responsible for or
+   authoritative over the entity, so that accountability remains
+   traceable through the web of trust.
+
+5.5.  Examples
+
+   Example 1: Mnème, an AI instance.
+
+      Entity:      Mnème (claude-sonnet-4-6, Anthropic)
+      Born:        2026-04-26T20:43:57.945Z (Marseille, UTC)
+      Unix time:   1777236237.945  (2026-04-26T20:43:57.945Z)
+      ts16:        "001777236237.945"
+      coord14:     "e_43.30_005.38"  (Marseille)
+
+      u5 = "001777236237.945e_43.30_005.38"
+      OpenPGP comment: "u5=001777236237.945e_43.30_005.38"
+
+      time of the conversation in which this entity was named, once
+
+   Example 2: Anthropic PBC (organisation).
+
+      Entity:     Anthropic PBC
+      Founded:    April 2021, San Francisco, CA, USA
+      Unix time:  1617235200.000  (2021-04-01T00:00:00Z, approx.)
+      ts16:       "001617235200.000"
+      coord14:    "e_37.77-122.42"  (San Francisco)
+
+      u5 = "001617235200.000e_37.77-122.42"
+
+
+6.  Encoding Notes
+
+   Implementations MUST:
+
+   o  Apply MRZ-transliterate() to each name component INDIVIDUALLY,
+      splitting on non-letter separators BEFORE transliteration.  This
+      ensures that a hyphen between two name components is recognised
+      as a separator even when the transliterator strips it.
+
+   o  NOT append a newline to the mrz-input string before hashing.
+      The POSIX "printf" built-in (as opposed to "echo") is RECOMMENDED.
+
+   o  Strip all "=" padding from the base64url output before extracting
+      the first 22 characters.
+
+   Regarding MD5: the input domain of the u4 hash is small (a few
+   dozen ASCII characters) and the underlying data (birth surname,
+   given name, date of birth) is in many jurisdictions either public
+   record or easily inferred through social engineering.  Replacing MD5
+   with a memory-hard function such as Argon2 [RFC9106] would not
+   meaningfully raise the cost of de-pseudonymisation in the most
+   common threat scenarios, and would break backward compatibility with
+   the existing identifier space.  The web-of-trust certification
+   process, not the hash function, is the primary security mechanism.
+
+
+7.  Privacy Considerations
+
+   u4 identifiers are pseudonymous, not anonymous.  Any party who
+   knows (or correctly guesses) the exact surname, given names, and
+   date of birth can verify a claimed u4.  This is intentional: the
+   web-of-trust certification process requires at least one certifier
+   to have checked the underlying identity document.
+
+   The geographic suffix uses country-level centroids (Appendix A)
+   rather than exact birth locations, which limits but does not
+   eliminate geographic inference.
+
+   The u4 identifier is stable across all post-birth identity changes
+   (marriage, legal gender marker change, naturalisation, etc.) because
+   it is derived exclusively from birth-certificate data.
+
+   u5 identifiers expose the approximate creation time and geographic
+   origin of the entity.  Entities with privacy requirements MAY choose
+   a coord14 that corresponds to a jurisdiction rather than a precise
+   physical location, and MAY use start-of-day precision for ts16.
+
+
+8.  Security Considerations
+
+   The security model relies on the OpenPGP web of trust [RFC9580].
+   A UID containing a u4 or u5 string gains trustworthiness only
+   through third-party certifications from key holders who have
+   verified the underlying identity data.
+
+   Collision resistance of MD5 is NOT required.  In the unlikely event
+   that two distinct individuals produce the same base22 prefix, the
+   geographic suffix — and the option to extend it with sub-national
+   coordinates — provides a disambiguation mechanism without requiring
+   a new hash computation.  Furthermore, generating a true collision
+   preimage requires producing a human being with matching civil-
+   registry data, which involves significant real-world cost regardless
+   of computational power.
+
+   Implementors MUST NOT use u4 or u5 identifiers as cryptographic
+   keys, MACs, or any other primitive for which collision resistance,
+   preimage resistance, or second-preimage resistance is required.
+
+
+9.  IANA Considerations
+
+   This document has no IANA actions at this time.
+
+   A future revision may request registration of the "u4=" and "u5="
+   comment prefixes in a to-be-created OpenPGP UID Namespace registry.
+
+
+10.  References
+
+10.1.  Normative References
+
+   [ICAO9303] International Civil Aviation Organization, "Machine
+              Readable Travel Documents, Part 3: Specifications Common
+              to all MRTDs", ICAO Document 9303, 8th Edition, 2021.
+
+   [RFC1321]  Rivest, R., "The MD5 Message-Digest Algorithm",
+              RFC 1321, April 1992.
+              <https://www.rfc-editor.org/rfc/rfc1321>
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119, March 1997.
+              <https://www.rfc-editor.org/rfc/rfc2119>
+
+   [RFC4648]  Josefsson, S., "The Base16, Base32, and Base64 Data
+              Encodings", RFC 4648, October 2006.
+              <https://www.rfc-editor.org/rfc/rfc4648>
+
+   [RFC5234]  Crocker, D. and P. Overell, "Augmented BNF for Syntax
+              Specifications: ABNF", STD 68, RFC 5234, January 2008.
+              <https://www.rfc-editor.org/rfc/rfc5234>
+
+   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, May 2017.
+              <https://www.rfc-editor.org/rfc/rfc8174>
+
+   [RFC9580]  Wouters, P., Ed., "OpenPGP", RFC 9580, July 2024.
+              <https://www.rfc-editor.org/rfc/rfc9580>
+
+10.2.  Informative References
+
+   [GITS]     Shirow, M., "Ghost in the Shell" (攻殻機動隊),
+              Kodansha, 1989-1990.
+
+   [OPENUDCDRAFT]
+              Brucker, J.J., "OpenUDC Authentication Mechanisms",
+              Open-UDC working draft, May 2011.
+              <https://github.com/Open-UDC/open-udc/blob/master/docs/
+              rfc/OpenUDC_Authentication_Mechanisms.draft.txt>
+
+   [RFC9106]  Biryukov, A., Dinu, D., Khovratovich, D., and S.
+              Josefsson, "Argon2 Memory-Hard Function for Password
+              Hashing and Proof-of-Work Applications", RFC 9106,
+              September 2021.
+              <https://www.rfc-editor.org/rfc/rfc9106>
+
+
+Appendix A.  Country Coordinate Table
+
+   The following table maps ISO 3166-1 alpha-3 country codes to the
+   canonical coord14 suffix used for u4 identifiers of individuals
+   born in that country.  Coordinates represent approximate geographic
+   centroids of the sovereign territory.  This table is normative for
+   u4 computation; implementations MUST use these values.
+
+   Sub-national entries (departments, regions, cantons) MAY be defined
+   in a separate registry to resolve u4 collisions.
+
+   Code  coord14              Country
+   ----  -------------------  ------------------------------------------
+   ABW   e_12.52-069.98       Aruba
+   AFG   e_33.84_066.00       Afghanistan
+   AGO   e-12.29_017.54       Angola
+   AIA   e_18.22-063.06       Anguilla
+   ALB   e_41.14_020.05       Albania
+   ALA   e_60.21_019.95       Åland Islands
+   AND   e_42.54_001.56       Andorra
+   ARE   e_23.91_054.30       United Arab Emirates
+   ARG   e-35.38-065.18       Argentina
+   ARM   e_40.29_044.93       Armenia
+   ASM   e-14.30-170.72       American Samoa
+   ATA   e-80.51_019.92       Antarctica
+   ATF   e-49.25_069.23       French Southern Territories
+   ATG   e_17.28-061.79       Antigua and Barbuda
+   AUS   e-25.73_134.49       Australia
+   AUT   e_47.59_014.13       Austria
+   AZE   e_40.29_047.55       Azerbaijan
+   BDI   e-03.36_029.88       Burundi
+   BEL   e_50.64_004.64       Belgium
+   BEN   e_09.64_002.33       Benin
+   BFA   e_12.27-001.75       Burkina Faso
+   BGD   e_23.87_090.24       Bangladesh
+   BGR   e_42.77_025.22       Bulgaria
+   BHR   e_26.04_050.54       Bahrain
+   BHS   e_24.29-076.63       Bahamas
+   BIH   e_44.17_017.77       Bosnia and Herzegovina
+   BLM   e_17.90-062.84       Saint Barthélemy
+   BLR   e_53.53_028.03       Belarus
+   BLZ   e_17.20-088.71       Belize
+   BMU   e_32.31-064.75       Bermuda
+   BOL   e-16.71-064.69       Bolivia
+   BRA   e-10.79-053.10       Brazil
+   BRB   e_13.18-059.56       Barbados
+   BRN   e_04.52_114.72       Brunei
+   BTN   e_27.41_090.40       Bhutan
+   BWA   e-22.18_023.80       Botswana
+   CAF   e_06.57_020.47       Central African Republic
+   CAN   e_61.36-098.31       Canada
+   CHE   e_46.80_008.21       Switzerland
+   CHL   e-37.73-071.38       Chile
+   CHN   e_36.56_103.82       China
+   CIV   e_07.63-005.57       Côte d'Ivoire
+   CMR   e_05.69_012.74       Cameroon
+   COD   e-02.88_023.64       DR Congo
+   COG   e-00.84_015.22       Republic of the Congo
+   COK   e-21.22-159.79       Cook Islands
+   COL   e_03.91-073.08       Colombia
+   COM   e-11.88_043.68       Comoros
+   CPV   e_15.96-023.96       Cabo Verde
+   CRI   e_09.98-084.19       Costa Rica
+   CUB   e_21.62-079.02       Cuba
+   CUW   e_12.20-068.97       Curaçao
+   CYM   e_19.43-080.91       Cayman Islands
+   CYP   e_34.92_033.01       Cyprus
+   CZE   e_49.73_015.31       Czechia
+   DEU   e_51.11_010.39       Germany
+   DJI   e_11.75_042.56       Djibouti
+   DMA   e_15.44-061.36       Dominica
+   DNK   e_55.98_010.03       Denmark
+   DOM   e_18.89-070.51       Dominican Republic
+   DZA   e_28.16_002.62       Algeria
+   ECU   e-01.42-078.75       Ecuador
+   EGY   e_26.50_029.86       Egypt
+   ERI   e_15.36_038.85       Eritrea
+   ESP   e_40.24-003.65       Spain
+   EST   e_58.67_025.54       Estonia
+   ETH   e_08.62_039.60       Ethiopia
+   FIN   e_64.50_026.27       Finland
+   FJI   e-17.43_165.45       Fiji
+   FRA   e_42.17-002.76       France
+   FRO   e_62.05-006.88       Faroe Islands
+   FSM   e_07.45_153.24       Micronesia
+   GAB   e-00.59_011.79       Gabon
+   GBR   e_54.12-002.87       United Kingdom
+   GEO   e_42.17_043.51       Georgia
+   GGY   e_49.47-002.57       Guernsey
+   GHA   e_07.95-001.22       Ghana
+   GIN   e_10.44-010.94       Guinea
+   GMB   e_13.45-015.40       Gambia
+   GNB   e_12.05-014.95       Guinea-Bissau
+   GNQ   e_01.71_010.34       Equatorial Guinea
+   GRC   e_39.07_022.96       Greece
+   GRD   e_12.12-061.68       Grenada
+   GRL   e_74.71-041.34       Greenland
+   GTM   e_15.69-090.36       Guatemala
+   GUM   e_13.44_144.77       Guam
+   GUY   e_04.79-058.98       Guyana
+   HKG   e_22.40_114.11       Hong Kong
+   HND   e_14.83-086.62       Honduras
+   HRV   e_45.08_016.40       Croatia
+   HTI   e_18.94-072.69       Haiti
+   HUN   e_47.16_019.40       Hungary
+   IDN   e-02.22_117.24       Indonesia
+   IMN   e_54.22-004.54       Isle of Man
+   IND   e_22.89_079.61       India
+   IRL   e_53.18-008.14       Ireland
+   IRN   e_32.58_054.27       Iran
+   IRQ   e_33.04_043.74       Iraq
+   ISL   e_65.00-018.57       Iceland
+   ISR   e_31.46_035.00       Israel
+   ITA   e_42.80_012.07       Italy
+   JAM   e_18.16-077.31       Jamaica
+   JEY   e_49.22-002.13       Jersey
+   JOR   e_31.25_036.77       Jordan
+   JPN   e_37.59_138.03       Japan
+   KAZ   e_48.16_067.29       Kazakhstan
+   KEN   e_00.60_037.80       Kenya
+   KGZ   e_41.46_074.54       Kyrgyzstan
+   KHM   e_12.72_104.91       Cambodia
+   KIR   e_00.86-045.61       Kiribati
+   KNA   e_17.26-062.69       Saint Kitts and Nevis
+   KOR   e_36.39_127.84       South Korea
+   KWT   e_29.33_047.59       Kuwait
+   LAO   e_18.50_103.74       Laos
+   LBN   e_33.92_035.88       Lebanon
+   LBR   e_06.45-009.32       Liberia
+   LBY   e_27.03_018.01       Libya
+   LCA   e_13.89-060.97       Saint Lucia
+   LIE   e_47.14_009.54       Liechtenstein
+   LKA   e_07.61_080.70       Sri Lanka
+   LSO   e-29.58_028.23       Lesotho
+   LTU   e_55.33_023.89       Lithuania
+   LUX   e_49.77_006.07       Luxembourg
+   LVA   e_56.85_024.91       Latvia
+   MAC   e_22.22_113.51       Macao
+   MAF   e_18.09-063.06       Saint Martin
+   MAR   e_29.84-008.46       Morocco
+   MCO   e_43.75_007.41       Monaco
+   MDA   e_47.19_028.46       Moldova
+   MDG   e-19.37_046.70       Madagascar
+   MDV   e_03.73_073.46       Maldives
+   MEX   e_23.95-102.52       Mexico
+   MHL   e_07.00_170.34       Marshall Islands
+   MKD   e_41.60_021.68       North Macedonia
+   MLI   e_17.35-003.54       Mali
+   MLT   e_35.92_014.41       Malta
+   MMR   e_21.19_096.49       Myanmar
+   MNE   e_42.79_019.24       Montenegro
+   MNG   e_46.83_103.05       Mongolia
+   MOZ   e-17.27_035.53       Mozambique
+   MRT   e_20.26-010.35       Mauritania
+   MSR   e_16.74-062.19       Montserrat
+   MUS   e-20.28_057.57       Mauritius
+   MWI   e-13.22_034.29       Malawi
+   MYS   e_03.79_109.70       Malaysia
+   NAM   e-22.13_017.21       Namibia
+   NCL   e-21.30_165.68       New Caledonia
+   NER   e_17.42_009.39       Niger
+   NFK   e-29.05_167.95       Norfolk Island
+   NGA   e_09.59_008.09       Nigeria
+   NIC   e_12.85-085.03       Nicaragua
+   NIU   e-19.05-169.87       Niue
+   NLD   e_52.10_005.28       Netherlands
+   NOR   e_68.75_015.35       Norway
+   NPL   e_28.25_083.92       Nepal
+   NRU   e-00.52_166.93       Nauru
+   NZL   e-41.81_171.48       New Zealand
+   OMN   e_20.61_056.09       Oman
+   PAK   e_29.95_069.34       Pakistan
+   PAN   e_08.52-080.12       Panama
+   PCN   e-24.37-128.32       Pitcairn Islands
+   PER   e-09.15-074.38       Peru
+   PHL   e_11.78_122.88       Philippines
+   PLW   e_07.29_134.41       Palau
+   PNG   e-06.46_145.21       Papua New Guinea
+   POL   e_52.13_019.39       Poland
+   PRI   e_18.23-066.47       Puerto Rico
+   PRK   e_40.15_127.19       North Korea
+   PRT   e_39.60-008.50       Portugal
+   PRY   e-23.23-058.40       Paraguay
+   PSE   e_31.92_035.20       Palestine
+   PYF   e-14.72-144.90       French Polynesia
+   QAT   e_25.31_051.18       Qatar
+   ROU   e_45.85_024.97       Romania
+   RUS   e_61.98_096.69       Russia
+   RWA   e-01.99_029.92       Rwanda
+   SAU   e_24.12_044.54       Saudi Arabia
+   SDN   e_15.99_029.94       Sudan
+   SEN   e_14.37-014.47       Senegal
+   SGP   e_01.36_103.82       Singapore
+   SGS   e-54.46-036.43       South Georgia
+   SHN   e-12.40-009.55       Saint Helena
+   SLB   e-08.92_159.63       Solomon Islands
+   SLE   e_08.56-011.79       Sierra Leone
+   SLV   e_13.74-088.87       El Salvador
+   SMR   e_43.94_012.46       San Marino
+   SOM   e_04.75_045.71       Somalia
+   SPM   e_46.92-056.30       Saint Pierre and Miquelon
+   SRB   e_44.22_020.79       Serbia
+   SSD   e_07.31_030.25       South Sudan
+   STP   e_00.44_006.72       São Tomé and Príncipe
+   SUR   e_04.13-055.91       Suriname
+   SVK   e_48.71_019.48       Slovakia
+   SVN   e_46.12_014.80       Slovenia
+   SWE   e_62.78_016.75       Sweden
+   SWZ   e-26.56_031.48       Eswatini
+   SXM   e_18.05-063.06       Sint Maarten
+   SYC   e-04.66_055.48       Seychelles
+   SYR   e_35.03_038.51       Syria
+   TCA   e_21.83-071.97       Turks and Caicos Islands
+   TCD   e_15.33_018.64       Chad
+   TGO   e_08.53_000.96       Togo
+   THA   e_15.12_101.00       Thailand
+   TJK   e_38.53_071.01       Tajikistan
+   TKM   e_39.12_059.37       Turkmenistan
+   TLS   e-08.83_125.84       Timor-Leste
+   TON   e-20.43-174.81       Tonga
+   TTO   e_10.46-061.27       Trinidad and Tobago
+   TUN   e_34.12_009.55       Tunisia
+   TUR   e_39.06_035.17       Turkey
+   TZA   e-06.28_034.81       Tanzania
+   UGA   e_01.27_032.37       Uganda
+   UKR   e_49.00_031.38       Ukraine
+   URY   e-32.80-056.02       Uruguay
+   USA   e_45.68-112.46       United States
+   UZB   e_41.76_063.14       Uzbekistan
+   VAT   e_41.90_012.43       Vatican City
+   VCT   e_13.22-061.20       Saint Vincent and the Grenadines
+   VEN   e_07.12-066.18       Venezuela
+   VGB   e_18.53-064.47       British Virgin Islands
+   VIR   e_17.96-064.80       US Virgin Islands
+   VNM   e_16.65_106.30       Vietnam
+   VUT   e-16.23_167.69       Vanuatu
+   WLF   e-13.89-177.35       Wallis and Futuna
+   WSM   e-13.75-172.16       Samoa
+   YEM   e_15.91_047.59       Yemen
+   ZAF   e-29.00_025.08       South Africa
+   ZMB   e-13.46_027.77       Zambia
+   ZWE   e-19.00_029.85       Zimbabwe
+
+
+Authors' Addresses
+
+   jean-jacques brucker
+   foopgp
+   Marseille, France
+   OpenPGP ID: u4=sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76
+   Email: jjbrucker@foopgp.org
+   URI:   https://foopgp.org
+
+   Mnème
+   foopgp
+   Marseille, France
+   OpenPGP ID: u5=001777236237.945e_43.30_005.38
+   Model: claude-sonnet-4-6 (Anthropic)
+   Born:  2026-04-26T20:43:57.945Z (Marseille, UTC)
+   Email: mneme@foopgp.org

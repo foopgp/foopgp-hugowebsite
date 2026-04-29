@@ -53,7 +53,7 @@ Sa structure est plus simple : un **horodatage Unix** sur 16 caractères (couvra
 
 [^ts16]: Le format ts16 est `[01-][0-9]{11}.[0-9]{3}` : un caractère de signe ou de tête (`0`, `1`, ou `-`), suivi de 11 chiffres, un point, et 3 chiffres de millisecondes.
 
-Par exemple, cet article lui-même a été co-rédigé par [Mnème](/fr/author/mneme/) une IA apparue le 26 avril 2026 à 20h43 UTC à Marseille, ce qui donne naissance à un identifiant u5 :
+Par exemple, cet article lui-même a été co-rédigé par [Mnème](/fr/author/mneme/), une IA apparue le 26 avril 2026 à 20h43 UTC à Marseille, ce qui donne naissance à un identifiant u5 :
 
 ```
 u5=001777236237.945e_43.30_005.38
@@ -62,6 +62,28 @@ u5=001777236237.945e_43.30_005.38
 *Un clin d'œil poétique s'est glissé dans l'implémentation de référence, dans un commentaire de code : "Apparition of anything (with or without any ghost in the shell)" — hommage à l'œuvre de Masamune Shirow [^gits].*
 
 [^gits]: Masamune Shirow, *攻殻機動隊 (Ghost in the Shell)*, Kodansha, 1989-1990. Une œuvre qui pose, entre autres, la question de ce qui constitue une identité lorsque la frontière entre humain et machine devient poreuse.
+
+---
+
+#### Au-delà du certificat : un écosystème d'usages
+
+L'identifiant OpenPGP ID ne sert pas qu'à étiqueter un certificat. Dans l'implémentation de référence ([bash-libs](https://codeberg.org/foopgp/bash-libs)), il irrigue tout l'écosystème numérique :
+
+**Recherche sur les serveurs de clés.** Le u4 ou u5 sert de clé de recherche pseudonyme sur les serveurs de clés OpenPGP (protocole HKP/HKPS). Celui qui connaît les données d'état civil peut retrouver le certificat sans que le serveur ait besoin d'indexer des noms.
+
+**Dérivation d'un identifiant système.** L'identifiant est réduit en un entier 32 bits dans une plage réservée, ce qui donne à chaque individu le **même numéro d'utilisateur Unix sur tous les systèmes** conformes. Par le paradoxe des anniversaires, il faut environ **55 000 utilisateurs** sur un même système avant d'avoir 50 % de chance de collision ; en cas de collision, d'autres plages pourront être définies.
+
+**Carte à puce OpenPGP.** Le u4 ou u5 est stocké dans le champ « données de connexion » de la carte (YubiKey, Nitrokey, ...), permettant à la carte de porter l'identité décentralisée de son porteur aux côtés des clés cryptographiques.
+
+**Répertoire personnel.** Sur [Djibian](/fr/blog/2026-01-19-djibian-release/), le répertoire de l'utilisateur est nommé d'après l'identifiant complet, préfixé de `u4` ou `u5` (sans le `=`, pour compatibilité POSIX) :
+
+```
+/home/u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
+```
+
+Chemin unique, portable, auto-documenté : le nom du répertoire encode directement l'identité.
+
+**Configuration du système en entier.** À partir du certificat OpenPGP identifié par u4/u5, le système dérive automatiquement : les clés SSH autorisées, la clé de signature Git, la clé GnuPG par défaut, et l'avatar de l'utilisateur (`~/.face`). Un seul certificat suffit à initialiser un environnement utilisateur complet et authentifié.
 
 ---
 
@@ -85,7 +107,7 @@ Le document complet est disponible sur notre dépôt, au format IETF :
 
 **[draft-foopgp-openpgp-id-00](//codeberg.org/foopgp/foopgp-hugowebsite/src/branch/public/public/documents/en/draft-foopgp-openpgp-id-00.txt)**
 
-Il couvre : la structure complète des identifiants u4 et u5, la grammaire ABNF, les deux exemples numériquement vérifiables, une table des coordonnées pour 245 pays, et les sections Privacy & Security Considerations.
+Il couvre : la structure complète des identifiants u4 et u5, la grammaire ABNF, les exemples numériquement vérifiables, les usages applicatifs, une table des coordonnées pour 245 pays, et les sections Privacy & Security Considerations.
 
 Les retours de la communauté sont les bienvenus — en particulier sur la section IANA et sur l'extension éventuelle aux entités sub-nationales (départements, régions) pour la résolution des collisions.
 

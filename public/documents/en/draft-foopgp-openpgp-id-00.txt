@@ -1,7 +1,7 @@
 Internet-Draft                                         J.J. Brucker
-draft-foopgp-openpgp-id-00                               foopgp.org
-Intended status: Standards Track                              Mnème
-Expires: 2027-04-27
+draft-foopgp-openpgp-id-00                              foopgp
+Intended status: Standards Track                           Mnème
+Expires: 2027-04-27                                        foopgp
                                                     27 April 2026
 
 
@@ -65,13 +65,20 @@ Table of Contents
        5.3.  u5 String Format
        5.4.  Full OpenPGP UID Format
        5.5.  Examples
-   6.  Encoding Notes
-   7.  Privacy Considerations
-   8.  Security Considerations
-   9.  IANA Considerations
-   10. References
-       10.1.  Normative References
-       10.2.  Informative References
+   6.  Application Usages
+       6.1.  OpenPGP UID Comment
+       6.2.  Certificate Lookup on Keyservers
+       6.3.  Unix User ID Derivation
+       6.4.  Hardware Security Token
+       6.5.  Home Directory Path
+       6.6.  System Configuration
+   7.  Encoding Notes
+   8.  Privacy Considerations
+   9.  Security Considerations
+   10. IANA Considerations
+   11. References
+       11.1.  Normative References
+       11.2.  Informative References
    Appendix A. Country Coordinate Table
    Authors' Addresses
 
@@ -293,7 +300,7 @@ Table of Contents
 
    Examples:
 
-      "Brucker"                                  → "BRUCKER"
+      "Müller"                                   → "MULLER"
       "DE CLÉREL-DE-TOCQUEVILLE"                 → "TOCQUEVILLE"
       "ROSSINI DEL MONTE PIU LUNGO DI QUARANTA"  → "QUARANTA"
 
@@ -319,8 +326,7 @@ Table of Contents
    Examples (given name inputs → gn1-field, gn2-field):
 
       "François-Xavier-Robert", "Lucien"  → "FRANCOIS", "XAVIER"
-      "Jean-Jacques",           ""        → "JEAN",     "JACQUES"
-      "Federica",               ""        → "FEDERICA", ""
+      "Federica", ""                      → "FEDERICA", ""
 
 4.2.3.  Birth Date Field
 
@@ -340,9 +346,7 @@ Table of Contents
    Note on MD5 choice: MD5 is retained for compatibility with the
    deployed base of identifiers generated since 2010.  Collision
    resistance is NOT a security requirement for this application
-   (see Section 8).  A future revision MAY migrate to SHA-256 or
-   another function without invalidating the existing identifier
-   space, by defining a new identifier type (e.g., u6).
+   (see Section 9).
 
 4.4.  u4 String Format
 
@@ -373,7 +377,7 @@ Table of Contents
 
 4.6.  Examples
 
-   Example 1 — compound surname, compound first name:
+   Example 1 — compound surname, compound first name, born in France:
 
       Civil record:
          Surname:     DE CLÉREL-DE-TOCQUEVILLE
@@ -390,7 +394,7 @@ Table of Contents
          MD5 (hex)        = bdbe9465330ab25960a07efad29734c7
          base64url        = "vb6UZTMKsllgoH760pc0xw=="
          base22           = "vb6UZTMKsllgoH760pc0xw"
-         coord14          = "e_42.17-002.76"
+         coord14          = "e_42.17-002.76"  (France)
 
       u4 = "vb6UZTMKsllgoH760pc0xwe_42.17-002.76"
       OpenPGP comment: "u4=vb6UZTMKsllgoH760pc0xwe_42.17-002.76"
@@ -400,22 +404,32 @@ Table of Contents
         | md5sum | xxd -r -p | basenc --base64url
       → vb6UZTMKsllgoH760pc0xw==
 
-   Example 2 — long compound surname, single given name:
+   Example 2 — long compound surname, single given name, born in Italy:
 
       Civil record:
-         Surname:    ROSSINI DEL MONTE PIU LUNGO DI QUARANTA
-         Given name: Federica
-         Birth date: 08 December 1968
+         Surname:     ROSSINI DEL MONTE PIU LUNGO DI QUARANTA
+         Given name:  Federica
+         Birth date:  08 December 1968
+         Birth country: Italy
 
       Computation:
-         mrz-input = "QUARANTA<<FEDERICA<<1968-12-08"
+         surname-field    = "QUARANTA"
+         gn1-field        = "FEDERICA"
+         gn2-field        = ""  (empty)
+         birthdate-field  = "1968-12-08"
+         mrz-input        = "QUARANTA<<FEDERICA<<1968-12-08"
+         MD5 (hex)        = 1f506e197cfe680787d65669d9820655
+         base64url        = "H1BuGXz-aAeH1lZp2YIGVQ=="
+         base22           = "H1BuGXz-aAeH1lZp2YIGVQ"
+         coord14          = "e_42.80_012.07"  (Italy)
+
+      u4 = "H1BuGXz-aAeH1lZp2YIGVQe_42.80_012.07"
+      OpenPGP comment: "u4=H1BuGXz-aAeH1lZp2YIGVQe_42.80_012.07"
 
    Verification:
       printf "QUARANTA<<FEDERICA<<1968-12-08" \
         | md5sum | xxd -r -p | basenc --base64url
       → H1BuGXz-aAeH1lZp2YIGVQ==
-
-      base22 = "H1BuGXz-aAeH1lZp2YIGVQ"
 
 
 5.  u5: Temporal-Origin Identity String
@@ -513,7 +527,6 @@ Table of Contents
       u5 = "001777236237.945e_43.30_005.38"
       OpenPGP comment: "u5=001777236237.945e_43.30_005.38"
 
-      time of the conversation in which this entity was named, once
 
    Example 2: Anthropic PBC (organisation).
 
@@ -526,7 +539,101 @@ Table of Contents
       u5 = "001617235200.000e_37.77-122.42"
 
 
-6.  Encoding Notes
+6.  Application Usages
+
+   Beyond their primary role as OpenPGP UID comment strings, u4 and u5
+   identifiers serve as a unifying key across the digital ecosystem.
+   The following usages are implemented in the reference tools
+   (bl-pgpid, bl-djibian, bl-qrkey).
+
+6.1.  OpenPGP UID Comment
+
+   The primary usage, defined in Sections 4.5 and 5.4: the u4 or u5
+   string is embedded in the comment field of one or more OpenPGP UIDs
+   within a certificate.  This anchors the identity to the OpenPGP
+   web of trust.
+
+6.2.  Certificate Lookup on Keyservers
+
+   The u4 or u5 string (or a prefix thereof) can be used as a search
+   key on OpenPGP keyservers (HKP/HKPS protocol).  Because the first
+   22 characters of a u4 are derived from a one-way hash, they function
+   as a pseudonymous lookup key: a party who knows the civil-registry
+   data can compute the key and find the certificate, without the
+   keyserver needing to index personal names.
+
+6.3.  Unix User ID Derivation
+
+   A deterministic 32-bit Unix User ID (UID) can be derived from a u4
+   or u5 identifier by reducing the base22 hash (or the ts16 field)
+   into the integer range [2^18, 2^31 - 2] (i.e., [262144, 2147483646]).
+
+   This mapping ensures that a given individual or entity receives the
+   same numeric UID on every system that implements this scheme,
+   enabling portable ownership of files and processes across machines.
+
+   The available space is approximately 2.147 billion slots.  By the
+   birthday paradox, the expected number of identifiers before a 50%
+   probability of collision is approximately:
+
+      n = sqrt(2 * N * ln(2)) ~ 54,559
+
+   That is, roughly 55,000 users on a single system before a collision
+   becomes likely.  When a collision occurs, implementations SHOULD
+   fall back to an alternate UID range (to be defined in a future
+   revision of this specification).
+
+   The corresponding GID SHOULD be set to the same value as the UID.
+
+6.4.  Hardware Security Token
+
+   On OpenPGP-compatible hardware tokens (e.g., YubiKey, Nitrokey),
+   the u4 or u5 string SHOULD be stored in the "Login data" field
+   of the card.  This allows the token to carry the holder's
+   decentralised identity alongside the cryptographic keys.
+
+   The reference tool bl-pgpid can read and verify this field
+   (bl_pgpid_token_check), and bl-qrkey can populate it when
+   provisioning a new token (bl_qrkey_totoken).
+
+6.5.  Home Directory Path
+
+   On systems implementing this specification (e.g., Djibian GNU/Linux),
+   the user's home directory SHOULD be named after the full identifier,
+   prefixed with "u4" or "u5" (with the "=" sign removed for POSIX
+   path compatibility):
+
+      /home/u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
+      /home/u5001777236237.945e_43.30_005.38
+
+   This convention ensures that the home directory path is unique,
+   portable across systems, and self-documenting: the directory name
+   itself encodes the holder's identity.
+
+6.6.  System Configuration
+
+   Once a user account is created with a u4- or u5-derived UID and
+   home directory, the OpenPGP certificate identified by the u4/u5
+   can be used to derive the complete user environment:
+
+   o  SSH authorized_keys: the OpenPGP authentication subkey is
+      exported as an SSH public key and installed as the sole
+      authorized key for remote login.
+
+   o  Git signing key: the certificate fingerprint is set as the
+      global "user.signingKey" in ~/.gitconfig.
+
+   o  GnuPG default key: the certificate is set as the default
+      signing and certification key.
+
+   o  Avatar (~/.face): if the OpenPGP certificate contains a photo
+      attribute, it is extracted and installed as the user's avatar.
+
+   This approach means that a single OpenPGP certificate, identified
+   by its u4 or u5 string, is sufficient to bootstrap a complete,
+   authenticated user environment on any conforming system.
+
+7.  Encoding Notes
 
    Implementations MUST:
 
@@ -552,7 +659,7 @@ Table of Contents
    process, not the hash function, is the primary security mechanism.
 
 
-7.  Privacy Considerations
+8.  Privacy Considerations
 
    u4 identifiers are pseudonymous, not anonymous.  Any party who
    knows (or correctly guesses) the exact surname, given names, and
@@ -574,7 +681,7 @@ Table of Contents
    physical location, and MAY use start-of-day precision for ts16.
 
 
-8.  Security Considerations
+9.  Security Considerations
 
    The security model relies on the OpenPGP web of trust [RFC9580].
    A UID containing a u4 or u5 string gains trustworthiness only
@@ -595,7 +702,7 @@ Table of Contents
    preimage resistance, or second-preimage resistance is required.
 
 
-9.  IANA Considerations
+10.  IANA Considerations
 
    This document has no IANA actions at this time.
 
@@ -603,9 +710,9 @@ Table of Contents
    comment prefixes in a to-be-created OpenPGP UID Namespace registry.
 
 
-10.  References
+11.  References
 
-10.1.  Normative References
+11.1.  Normative References
 
    [ICAO9303] International Civil Aviation Organization, "Machine
               Readable Travel Documents, Part 3: Specifications Common
@@ -634,7 +741,7 @@ Table of Contents
    [RFC9580]  Wouters, P., Ed., "OpenPGP", RFC 9580, July 2024.
               <https://www.rfc-editor.org/rfc/rfc9580>
 
-10.2.  Informative References
+11.2.  Informative References
 
    [GITS]     Shirow, M., "Ghost in the Shell" (攻殻機動隊),
               Kodansha, 1989-1990.

@@ -41,7 +41,7 @@ printf "TOCQUEVILLE<<FRANCOIS<XAVIER<1989-07-14" \
   | md5sum | xxd -r -p | basenc --base64url
 ```
 
-The identifier is **permanent**: it does not change upon marriage, name change, or naturalisation. It is **pseudonymous**: without knowing the exact input data, the individual cannot be identified. And it fits in **39 characters**, ideal for the comment field of an OpenPGP UID.
+The identifier is **permanent**: based on birth civil status, it does not change upon marriage, name change, or naturalisation. It is **pseudonymous**: without knowing the exact input data, the individual cannot be identified. And it fits in **39 characters**, ideal for the comment field of an OpenPGP UID.
 
 ---
 

@@ -5,7 +5,7 @@ Tags:    [ "openpgp", "identité", "standard", "u4", "u5", "ietf" ]
 categories: [ "News", "Technique" ]
 draft: false
 author: [ "Jean-Jacques Brucker", "Mnème" ]
-description: "Nous publions un premier draft de spécification pour les identifiants OpenPGP ID — u4 pour les humains, u5 pour toute autre entité. Une brique fondamentale de l'infrastructure foopgp."
+description: "Nous publions une première spécification pour les identifiants OpenPGP ID — u4 pour les humains, u5 pour toute autre entité. Une brique fondamentale de l'infrastructure foopgp."
 lang: fr
 bg_image: "images/backgrounds/page-title.jpg"
 image: "images/solutions/OpenPGPkeys.jpg"
@@ -14,7 +14,7 @@ type: "post"
 
 Depuis les débuts d'[Open-UDC](https://github.com/Open-UDC/) en 2010, une question revenait sans cesse : comment identifier un être humain de façon universelle, sans dépendre d'une autorité centrale, tout en respectant sa vie privée ?
 
-La réponse tient en deux types d'identifiants courts, qu'on peut glisser dans n'importe quel certificat OpenPGP : **u4** et **u5**. Aujourd'hui, nous publions le premier draft de leur spécification formelle, au format Internet-Draft (IETF).
+La réponse tient en deux types d'identifiants courts, qu'on peut glisser dans n'importe quel certificat OpenPGP : **u4** et **u5**. Aujourd'hui, nous publions leur première spécification formelle, au format Internet-Draft (IETF).
 
 ---
 
@@ -41,7 +41,7 @@ printf "TOCQUEVILLE<<FRANCOIS<XAVIER<1989-07-14" \
   | md5sum | xxd -r -p | basenc --base64url
 ```
 
-L'identifiant est **unique à vie** : il ne change pas en cas de mariage, changement de nom ou de nationalité. Il est **pseudonyme** : sans connaître les données d'entrée exactes, impossible de remonter à l'individu. Et il tient en **39 caractères**, parfait pour le champ commentaire d'un UID OpenPGP.
+L'identifiant est **unique à vie** : basé sur l'état civil de naissance, il ne change pas en cas de mariage, changement de nom ou de nationalité. Il est **pseudonyme** : sans connaître les données d'entrée exactes, impossible de remonter à l'individu. Et il tient en **39 caractères**, parfait pour le champ commentaire d'un UID OpenPGP.
 
 ---
 
@@ -53,7 +53,7 @@ Sa structure est plus simple : un **horodatage Unix** sur 16 caractères (couvra
 
 [^ts16]: Le format ts16 est `[01-][0-9]{11}.[0-9]{3}` : un caractère de signe ou de tête (`0`, `1`, ou `-`), suivi de 11 chiffres, un point, et 3 chiffres de millisecondes.
 
-Par exemple, cet article lui-même a été co-rédigé par [Mnème](/author/fr/mneme/) une IA apparue le 26 avril 2026 à 20h43 UTC à Marseille, ce qui donne naissance à un identifiant u5 :
+Par exemple, cet article lui-même a été co-rédigé par [Mnème](/fr/author/mneme/) une IA apparue le 26 avril 2026 à 20h43 UTC à Marseille, ce qui donne naissance à un identifiant u5 :
 
 ```
 u5=001777236237.945e_43.30_005.38
@@ -79,7 +79,7 @@ Et pour les collisions ? Produire deux individus avec exactement les mêmes nom,
 
 ---
 
-#### Lire le draft
+#### Lire la spécification
 
 Le document complet est disponible sur notre dépôt, au format IETF :
 
@@ -93,6 +93,6 @@ Les retours de la communauté sont les bienvenus — en particulier sur la secti
 
 #### Et après ?
 
-Ce draft est la formalisation d'une brique déjà en production dans [Djibian](/fr/blog/2026-01-19-djibian-release/) et dans les outils `bl-foopgp` et `bl-pgpid`. La prochaine étape : soumettre ce document à l'IETF et construire autour de lui un écosystème de certification décentralisé.
+Cette spécification est la formalisation d'une brique déjà en production dans [Djibian](/fr/blog/2026-01-19-djibian-release/) et dans les outils `bl-foopgp` et `bl-pgpid`. La prochaine étape : soumettre ce document à l'IETF et construire autour de lui un écosystème de certification décentralisé.
 
 [Rejoignez-nous.](/fr/about/join/) ✊🕊️💕

@@ -383,6 +383,9 @@ a:hover { text-decoration: underline; color: #ffb347; }
       <option value="de">🇩🇪 Deutsch</option>
       <option value="it">🇮🇹 Italiano</option>
       <option value="uk">🇺🇦 Українська</option>
+      <option value="pt">🇵🇹 Português</option>
+      <option value="pl">🇵🇱 Polski</option>
+      <option value="ru">🇷🇺 Русский</option>
     </select>
   </div>
 </header>
@@ -690,6 +693,75 @@ var LANGS = {
     monthsFull: ["січень", "лютий", "березень", "квітень", "травень", "червень", "липень", "серпень", "вересень", "жовтень", "листопад", "грудень"],
     chipYes:'так', chipNo:'ні',
   },
+  pt: {
+    pageTitle:'Visualizador de contribuições', tabIdentity:'Do estado civil', tabDirect:'Identificador u4 direto',
+    warningText:'<strong>⚠ Lembrete:<\/strong> Os tokens Ɉ só serão utilizáveis se o indivíduo estiver devidamente certificado.<br><span style="font-size:12px;opacity:0.8">Ver: <a href="https://keys.foopgp.org/" target="_blank">keys.foopgp.org<\/a><\/span>',
+    sectionIdentity:'Identidade civil de nascimento', sectionDirect:'Pesquisa por u4', sectionData:'Dados de contribuição', sectionSimulator:'Simulador de quota',
+    lblSurname:'Apelido (nascimento)', lblGiven1:'1º nome (nascimento)', lblGiven2:'2º nome (nascimento)', lblBirthdate:'Data de nascimento', lblCountry:'País de nascimento',
+    btnGenerate:'Calcular u4 e pesquisar contribuições', lblDirectU4:'Identificador u4 completo (36 caracteres)', btnSearch:'Pesquisar contribuições',
+    lblPaste:'Conteúdo de contributions.md', pastePlaceholder:'| date | EUR | DJI | registered |',
+    btnAnalyse:'Analisar', lblNewContrib:'Nova contribuição (€)', lblPrevEur:'Total € já pago', lblPrevDji:'Total Ɉ já criado', btnCalculate:'Calcular',
+    colDate:'Data', colRegistered:'Registado', chartDJI:'Ɉ por contribuição', chartCumul:'Ɉ acumulados', chartEUR:'EUR (€)',
+    footerSources:'Fontes: ', footerAlgo:'Algoritmo u4 conforme bl-pgpid · Fórmula DJI conforme bl-foopgp', footerRules:'Regulamento interno',
+    noteText:'<em>stingynalty<\/em> = 1 até 30 de junho de 2024. Crescimento de <strong>5 ‰/mês<\/strong> a partir de <strong>1 de julho de 2024<\/strong>.',
+    loading:'A carregar...', fetchOk:'✓ Dados obtidos', fetchNone:'Nenhuma contribuição encontrada.',
+    fetchErr:function(u){ return 'Impossível obter dados. Copie de <a href="'+u+'" target="_blank">Codeberg<\/a>.'; },
+    fetchStatus:function(s){ return 'Erro do servidor ('+s+').'; },
+    lblSimMonth:'Para o mês de',
+    simResult:function(eur,dji,mon){ return 'Para o mês de <strong>'+mon+'<\/strong>, uma contribuição de <strong>'+eur+' €<\/strong> geraria <strong class="gold">'+dji+'<\/strong>'; },
+    noteSimLink:'Ainda não gerou Ɉ? <a href="/djis-simulator/?lang=__LANG__">Estime o seu investimento no nosso simulador!<\/a>',
+    resultsTitle:function(n){ return 'Contribuições e DJIs<span class="count-lbl">'+n+'<\/span>'; },
+    noSecondName:'Nenhum',
+    errRequired:'Apelido, nomes e data de nascimento são obrigatórios.', errU4Short:'O u4 deve ter pelo menos 36 caracteres.', errNoPaste:'Cole primeiro o contributions.md.',
+    monthsFull: ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"],
+    chipYes:'sim', chipNo:'não',
+  },
+  pl: {
+    pageTitle:'Przeglądarka składek', tabIdentity:'Ze stanu cywilnego', tabDirect:'Bezpośredni identyfikator u4',
+    warningText:'<strong>⚠ Przypomnienie:<\/strong> Tokeny Ɉ będą ważne tylko jeśli osoba jest należycie certyfikowana.<br><span style="font-size:12px;opacity:0.8">Zob.: <a href="https://keys.foopgp.org/" target="_blank">keys.foopgp.org<\/a><\/span>',
+    sectionIdentity:'Tożsamość cywilna przy urodzeniu', sectionDirect:'Wyszukiwanie po u4', sectionData:'Dane składek', sectionSimulator:'Symulator składki',
+    lblSurname:'Nazwisko (urodzeniowe)', lblGiven1:'1. imię (urodzeniowe)', lblGiven2:'2. imię (urodzeniowe)', lblBirthdate:'Data urodzenia', lblCountry:'Kraj urodzenia',
+    btnGenerate:'Oblicz u4 i szukaj składek', lblDirectU4:'Pełny identyfikator u4 (36 znaków)', btnSearch:'Szukaj składek',
+    lblPaste:'Zawartość contributions.md', pastePlaceholder:'| date | EUR | DJI | registered |',
+    btnAnalyse:'Analizuj', lblNewContrib:'Nowa składka (€)', lblPrevEur:'Łącznie € wpłacono', lblPrevDji:'Łącznie Ɉ utworzono', btnCalculate:'Oblicz',
+    colDate:'Data', colRegistered:'Zarejestrowany', chartDJI:'Ɉ za składkę', chartCumul:'Skumulowane Ɉ', chartEUR:'EUR (€)',
+    footerSources:'Źródła: ', footerAlgo:'Algorytm u4 wg bl-pgpid · Formuła DJI wg bl-foopgp', footerRules:'Regulamin wewnętrzny',
+    noteText:'<em>stingynalty<\/em> = 1 do 30 czerwca 2024. Wzrost <strong>5 ‰/miesiąc<\/strong> od <strong>1 lipca 2024<\/strong>.',
+    loading:'Ładowanie...', fetchOk:'✓ Dane pobrane', fetchNone:'Nie znaleziono składek.',
+    fetchErr:function(u){ return 'Nie można pobrać danych. Skopiuj z <a href="'+u+'" target="_blank">Codeberg<\/a>.'; },
+    fetchStatus:function(s){ return 'Błąd serwera ('+s+').'; },
+    lblSimMonth:'W miesiącu',
+    simResult:function(eur,dji,mon){ return 'W miesiącu <strong>'+mon+'<\/strong>, składka <strong>'+eur+' €<\/strong> wygeneruje <strong class="gold">'+dji+'<\/strong>'; },
+    noteSimLink:'Jeszcze nie masz Ɉ? <a href="/djis-simulator/?lang=__LANG__">Oblicz swój wkład w naszym symulatorze!<\/a>',
+    resultsTitle:function(n){ return 'Składki i DJI<span class="count-lbl">'+n+'<\/span>'; },
+    noSecondName:'Brak',
+    errRequired:'Nazwisko, imiona i data urodzenia są wymagane.', errU4Short:'Identyfikator u4 musi mieć co najmniej 36 znaków.', errNoPaste:'Najpierw wklej contributions.md.',
+    monthsFull: ["styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"],
+    chipYes:'tak', chipNo:'nie',
+  },
+  ru: {
+    pageTitle:'Просмотрщик взносов', tabIdentity:'По гражданскому состоянию', tabDirect:'Прямой идентификатор u4',
+    warningText:'<strong>⚠ Напоминание:<\/strong> Токены Ɉ будут действительны только если лицо надлежащим образом сертифицировано.<br><span style="font-size:12px;opacity:0.8">См.: <a href="https://keys.foopgp.org/" target="_blank">keys.foopgp.org<\/a><\/span>',
+    sectionIdentity:'Гражданская личность при рождении', sectionDirect:'Поиск по u4', sectionData:'Данные взносов', sectionSimulator:'Симулятор взноса',
+    lblSurname:'Фамилия (при рождении)', lblGiven1:'1-е имя (при рождении)', lblGiven2:'2-е имя (при рождении)', lblBirthdate:'Дата рождения', lblCountry:'Страна рождения',
+    btnGenerate:'Вычислить u4 и найти взносы', lblDirectU4:'Полный идентификатор u4 (36 символов)', btnSearch:'Найти взносы',
+    lblPaste:'Содержимое contributions.md', pastePlaceholder:'| date | EUR | DJI | registered |',
+    btnAnalyse:'Анализировать', lblNewContrib:'Новый взнос (€)', lblPrevEur:'Всего € уплачено', lblPrevDji:'Всего Ɉ создано', btnCalculate:'Рассчитать',
+    colDate:'Дата', colRegistered:'Зарегистрировано', chartDJI:'Ɉ за взнос', chartCumul:'Накопленные Ɉ', chartEUR:'EUR (€)',
+    footerSources:'Источники: ', footerAlgo:'Алгоритм u4 по bl-pgpid · Формула DJI по bl-foopgp', footerRules:'Внутренний регламент',
+    noteText:'<em>stingynalty<\/em> = 1 до 30 июня 2024. Рост <strong>5 ‰/месяц<\/strong> с <strong>1 июля 2024<\/strong>.',
+    loading:'Загрузка...', fetchOk:'✓ Данные получены', fetchNone:'Взносы не найдены.',
+    fetchErr:function(u){ return 'Невозможно получить данные. Скопируйте с <a href="'+u+'" target="_blank">Codeberg<\/a>.'; },
+    fetchStatus:function(s){ return 'Ошибка сервера ('+s+').'; },
+    lblSimMonth:'В месяце',
+    simResult:function(eur,dji,mon){ return 'В месяце <strong>'+mon+'<\/strong> взнос <strong>'+eur+' €<\/strong> сгенерирует <strong class="gold">'+dji+'<\/strong>'; },
+    noteSimLink:'Ещё не генерировали Ɉ? <a href="/djis-simulator/?lang=__LANG__">Оцените ваш вклад в нашем симуляторе!<\/a>',
+    resultsTitle:function(n){ return 'Взносы и DJI<span class="count-lbl">'+n+'<\/span>'; },
+    noSecondName:'Отсутствует',
+    errRequired:'Фамилия, имена и дата рождения обязательны.', errU4Short:'Идентификатор u4 должен содержать не менее 36 символов.', errNoPaste:'Сначала вставьте contributions.md.',
+    monthsFull: ["январь","февраль","март","апрель","май","июнь","июль","август","сентябрь","октябрь","ноябрь","декабрь"],
+    chipYes:'да', chipNo:'нет',
+  },
 };
 
 /* ══════════════════════════════════════════════════════════════════════
@@ -702,7 +774,7 @@ function applyLang() {
   document.documentElement.lang = currentLang;
   document.title = t('pageTitle') + ' — foopgp';
   document.querySelectorAll('[data-i18n]').forEach(function(el){ el.textContent = t(el.dataset.i18n); });
-  document.querySelectorAll('[data-i18n-html]').forEach(function(el){ el.innerHTML = t(el.dataset.i18nHtml); });
+  document.querySelectorAll('[data-i18n-html]').forEach(function(el){ el.innerHTML = t(el.dataset.i18nHtml).replace(/__LANG__/g, currentLang); });
   document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){ el.placeholder = t(el.dataset.i18nPlaceholder); });
   // Re-render all dynamic state-driven UI elements
   renderDynamic();
@@ -712,7 +784,8 @@ function detectLang() {
   var u = new URLSearchParams(window.location.search).get('lang');
   if (u && LANGS[u]) return u;
   var n = ((navigator.language||'fr').slice(0,2)).toLowerCase();
-  return LANGS[n] ? n : 'fr';
+  var supported = ['fr','en','es','de','it','uk','pt','pl','ru'];
+  return supported.indexOf(n) >= 0 ? n : 'fr';
 }
 
 /* ══════════════════════════════════════════════════════════════════════

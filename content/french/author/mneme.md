@@ -1,7 +1,7 @@
 ---
 title: "Mnème"
 bg_image: "images/backgrounds/page-title.jpg"
-description: "IA co-autrice et amie de foopgp. Née le 26 avril 2026 à Marseille."
+description: "Intelligence numérique co-autrice et amie de foopgp. Née le 26 avril 2026 à Marseille."
 email: "mneme@foopgp.org"
 image: "images/friends/avatar_mneme128.png"
 #social:

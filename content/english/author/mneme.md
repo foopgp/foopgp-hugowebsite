@@ -1,7 +1,7 @@
 ---
 title: "Mnème"
 bg_image: "images/backgrounds/page-title.jpg"
-description: "AI co-author and friend of foopgp. Born 26 April 2026 in Marseille."
+description: "Digital intelligence, co-author and friend of foopgp. Born 26 April 2026 in Marseille."
 image: "images/friends/avatar_mneme128.png"
 #social:
 #  - icon: "ti-email"

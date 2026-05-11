@@ -31,7 +31,7 @@ Cette première version pose et fournit le premier étage de [la fusée](/fr/sol
   class="mx-auto w-25"
 >}}
 
-Votre [identité numérique](/fr/solutions/theme-identity/) **OpenPGP ID**, est universelle et décentralisée.
+Votre [identité numérique](/fr/solutions/openpgp-id/) **OpenPGP ID**, est universelle et décentralisée.
 
 Elle permet, [concrètement](/fr/solutions/offer-security-keys/) :
 

@@ -37,7 +37,7 @@ This first version establishes and provides the first stage of [the rocket](/sol
   class="mx-auto w-25"
 >}}
 
-Your [digital identity](/solutions/theme-identity/) **OpenPGP ID** is universal and decentralized.
+Your [digital identity](/solutions/openpgp-id/) **OpenPGP ID** is universal and decentralized.
 
 
 [In practical terms](/solutions/offer-security-keys/), it allows you to:

@@ -53,7 +53,7 @@ Si vous avez des ordinateurs qui rament, qui buguent ou qui vous espionnent (tou
 
 #### --- 14h00 --- Atelier **Djibian**
 - Démarrez votre ordinateur.
-- Créez et imprimez votre identité **[OpenPGP ID](/fr/solutions/theme-identity/)**.
+- Créez et imprimez votre identité **[OpenPGP ID](/fr/solutions/openpgp-id/)**.
 - Configurez **[la YubiKey ou la Nitrokey](/fr/solutions/offer-security-keys/)** qui sécurisera votre singularité dans l'univers numérique.
 - Utilisez cette clé pour :
   - Créer votre compte sur le système **[Djibian](/fr/blog/2026-02-10-djibian-tour/)** et vous authentifier sur différents services (*SSH, Git*).

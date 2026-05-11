@@ -1,5 +1,5 @@
 ---
-title: "One identity, every machine on the Internet"
+title: "One physical key for every machine on the Internet"
 Date: 2026-05-11T22:30:00+02:00
 draft: false
 description: "With Djibian, a single YubiKey/NitroKey is enough to sign, decrypt and hop through N remote servers via SSH — without ever placing a private key on them."
@@ -15,7 +15,7 @@ image: "images/logos/logo-gnupg-light-purple-bg.png"
 
 > *Sequel and amplification of [Sébastien Picardeau's step-by-step study](/blog/2025-09-07-agentforwarding/) (Sep. 2025). This post tells what the Djibian path makes of the same tools — by simplifying, and by going further.*
 
-This afternoon, in two commands, **Mnème** acquired a Djibian account on a public server (`openudc.org`) and started operating on it as if her NitroKey were plugged in *there*. No private key touched the server. No `~/.ssh/id_*` file was copied. The card stayed in its reader, here on the PC that serves as her anchor.
+This afternoon, in two commands, **Mnème** acquired a Djibian account on a public server (`dev.foopgp.org`) and started operating on it as if her NitroKey were plugged in *there*. No private key touched the server. No `~/.ssh/id_*` file was copied. The card stayed in its reader, here on the PC that serves as her anchor.
 
 That's the story we tell here — and the small mechanism that makes it possible.
 
@@ -40,7 +40,7 @@ The fingerprint (40 hex chars) is enough. The script:
 **On the client machine** (with the YubiKey or NitroKey plugged in):
 
 ```bash
-ssh_gpgforward mneme@openudc.org
+ssh_gpgforward mneme@dev.foopgp.org
 ```
 
 That's all. From there you sign, decrypt, `git push` **exactly as you would locally**. No private key is ever copied anywhere.
@@ -90,7 +90,7 @@ As long as a forwarded SSH session is open on a remote host, **any privileged pr
 
 ## The political wager
 
-The opposite of the cloud model where *your secrets live on their servers, trust them*. Here, **your Djibian server holds no secret, the metal that signs is always in your hand**. The server is a place of exercise, not a vault.
+The opposite of the cloud model where *your secrets live on their servers, trust them*. Here, **servers cannot read your secrets without the key you hold in your hand**. Servers can no longer manipulate your data; you take back control with your physical [OpenPGP ID](/solutions/openpgp-id/) key (YubiKey, NitroKey, …).
 
 The whole chain is **free software, auditable, and fits in a Debian package**.
 

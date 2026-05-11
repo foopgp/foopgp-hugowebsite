@@ -22,7 +22,7 @@ type: "post"
 
 **Djibian** est un système [Debian](https://www.debian.org/index.fr.html), c'est-à-dire une alternative libre et open source aux univers Windows® ou Apple®, auquel nous intégrons ou configurons vos logiciels courants, ainsi que les dernières [innovations](/fr/solutions/activity-rd/) pour vous faciliter :
 
-- La configuration de [vos](/fr/solutions/theme-identity/) [clés de sécurité](/fr/solutions/offer-security-keys/) [OpenPGP](/fr/about/openpgp/).
+- La configuration de [vos](/fr/solutions/openpgp-id/) [clés de sécurité](/fr/solutions/offer-security-keys/) [OpenPGP](/fr/about/openpgp/).
 
 - Une [authentification](/fr/solutions/theme-authentication/) forte ***et*** facile à l'usage.
 

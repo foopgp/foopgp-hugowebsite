@@ -34,7 +34,7 @@ Ainsi vous commencerez à reprendre vraiment le contrôle sur vos données qui, 
 
 À partir d'un système **[Djibian GNU/Linux](/fr/blog/2026-01-19-djibian-release/)** fraîchement installé, nous allons :
 
-- Créer votre identité **[OpenPGP ID](/fr/solutions/theme-identity/)**.
+- Créer votre identité **[OpenPGP ID](/fr/solutions/openpgp-id/)**.
 - Configurer **[la YubiKey ou la Nitrokey](/fr/solutions/offer-security-keys/)** qui sécurisera votre singularité dans l'univers numérique.
 - Utiliser cette clé pour :
   - Créer votre compte sur le système **[Djibian](/fr/blog/2026-02-10-djibian-tour/)** et s’authentifier sur différents services (*SSH, Git*).

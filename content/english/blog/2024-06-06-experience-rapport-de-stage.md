@@ -91,11 +91,11 @@ To learn more about [OpenPGP](/fr/about/openpgp/)
 
 **In summary, [pgpid](https://codeberg.org/foopgp/pgpid) helps manage and use PGP keys for secure digital usage.**
 
-Within the association, [Jean-Jacques](/fr/author/jean-jacques-brucker/) implemented this innovative system. It works as follows: when you create your [digital identity](/fr/solutions/theme-identity), it is [split](https://fr.wikipedia.org/wiki/Secret_r%C3%A9parti) into three separate QR codes. These QR codes are then printed for practical use.
+Within the association, [Jean-Jacques](/fr/author/jean-jacques-brucker/) implemented this innovative system. It works as follows: when you create your [digital identity](/fr/solutions/openpgp-id), it is [split](https://fr.wikipedia.org/wiki/Secret_r%C3%A9parti) into three separate QR codes. These QR codes are then printed for practical use.
 
 To access your digital identity, simply scan these three QR codes. Once scanned, the main private keys associated with your [OpenPGP](/fr/about/openpgp/) certificate are reconstructed. They can then be uploaded to security keys like [YubiKey](./#YubiKey) or [Nitrokey](./#nitrokey).
 
-These security keys allow the use of the private keys of your [digital identity](/fr/solutions/theme-identity) without allowing any direct access to them. Each use may require a PIN code. After three consecutive incorrect PIN attempts, the key locks. It can be unlocked with another code (PUK); otherwise, it erases its data. You will then need to reset it to restart the QR code scanning.
+These security keys allow the use of the private keys of your [digital identity](/fr/solutions/openpgp-id) without allowing any direct access to them. Each use may require a PIN code. After three consecutive incorrect PIN attempts, the key locks. It can be unlocked with another code (PUK); otherwise, it erases its data. You will then need to reset it to restart the QR code scanning.
 
 Here is an example of the QR codes used:
 
@@ -116,7 +116,7 @@ The [YubiKey](https://www.yubico.com/la-cle-yubikey/?lang=fr) is a hardware secu
 ### Nitrokey
 ![visuelnitrokey](/images/blog/2024/nitrokey_image.jpeg)
 
-[NitroKeys](https://www.nitrokey.com/) offer a comprehensive and secure solution to protect [digital identities](/fr/solutions/theme-identity) and sensitive data. Their use significantly enhances the security of systems and information while remaining practical and accessible to users. They are almost identical to the [YubiKey](./#YubiKey).
+[NitroKeys](https://www.nitrokey.com/) offer a comprehensive and secure solution to protect [digital identities](/fr/solutions/openpgp-id) and sensitive data. Their use significantly enhances the security of systems and information while remaining practical and accessible to users. They are almost identical to the [YubiKey](./#YubiKey).
 
 ---
 

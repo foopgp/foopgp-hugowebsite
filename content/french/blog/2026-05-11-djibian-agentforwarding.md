@@ -1,5 +1,5 @@
 ---
-title: "Une identité, toutes les machines d'Internet"
+title: "Une seule clé physique pour toutes les machines d'Internet"
 Date: 2026-05-11T22:30:00+02:00
 draft: false
 description: "Avec Djibian, une seule YubiKey/NitroKey suffit pour signer, déchiffrer et rebondir en SSH sur N serveurs distants — sans jamais y déposer la moindre clé privée."
@@ -15,7 +15,7 @@ image: "images/logos/logo-gnupg-light-purple-bg.png"
 
 > *Suite et amplification de l'[étude pas-à-pas de Sébastien Picardeau](/fr/blog/2025-09-07-agentforwarding/) (sept. 2025). Le présent post raconte ce que la voie Djibian fait des mêmes outils — en simplifiant, et en allant plus loin.*
 
-Cet après-midi, en deux commandes, **Mnème** a acquis un compte Djibian sur un serveur public (`openudc.org`) et y a opéré comme si sa NitroKey était branchée *sur place*. Aucune clé privée n'a touché le serveur. Aucun fichier `~/.ssh/id_*` n'a été copié. La carte est restée dans son lecteur, ici, sur le PC qui sert d'ancrage.
+Cet après-midi, en deux commandes, **Mnème** a acquis un compte Djibian sur un serveur public (`dev.foopgp.org`) et y a opéré comme si sa NitroKey était branchée *sur place*. Aucune clé privée n'a touché le serveur. Aucun fichier `~/.ssh/id_*` n'a été copié. La carte est restée dans son lecteur, ici, sur le PC qui sert d'ancrage.
 
 C'est l'histoire qu'on raconte ici — et la petite mécanique qui la permet.
 
@@ -40,7 +40,7 @@ L'empreinte (40 caractères hexa) suffit. Le script :
 **Sur la machine cliente** (avec la YubiKey ou NitroKey branchée) :
 
 ```bash
-ssh_gpgforward mneme@openudc.org
+ssh_gpgforward mneme@dev.foopgp.org
 ```
 
 Et c'est tout. À partir de là on signe, on déchiffre, on pousse du git **exactement comme en local**. Aucune clé privée n'est jamais copiée nulle part.
@@ -90,7 +90,7 @@ Tant qu'une session SSH avec forwarding est ouverte sur un remote, **tout proces
 
 ## Le pari politique
 
-L'opposé du modèle cloud où *vos secrets vivent sur leur serveur, faites-leur confiance*. Ici, **votre serveur Djibian n'a rien de secret, le métal qui signe est toujours dans votre main**. Le serveur est un lieu d'exercice, pas un coffre.
+L'opposé du modèle cloud où *vos secrets vivent sur leur serveur, faites-leur confiance*. Ici, **Les serveurs ne peuvent lire vos secrets, sans la clé que vous tenez dans votre main**. Les serveurs ne peuvent plus manipuler vos données, vous en reprenez le contrôle avec votre clé physique [OpenPGP ID](/fr/solutions/openpgp-id/) (Yubikey, NitroKey, …).
 
 Toute la chaîne est **libre, auditable, et tient dans un paquet Debian**.
 

@@ -36,7 +36,7 @@ This is how you will start to genuinely take back control over your data — dat
 
 Starting from a freshly installed **[Djibian GNU/Linux](/blog/2026-01-19-djibian-release/)** system, we will:
 
-- Create your **[OpenPGP ID](/solutions/theme-identity/)** identity.
+- Create your **[OpenPGP ID](/solutions/openpgp-id/)** identity.
 - Configure **[the YubiKey or NitroKey](/solutions/offer-security-keys/)** that will secure your singularity in the digital world.
 - Use this key to:
   - Create your account on the **[Djibian](/blog/2026-02-10-djibian-tour/)** system and authenticate to various services (*SSH, Git*).

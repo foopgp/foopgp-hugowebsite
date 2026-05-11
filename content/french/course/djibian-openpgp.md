@@ -38,6 +38,7 @@ Ainsi vous commencerez à reprendre vraiment le contrôle sur vos données qui, 
 - Configurer **[la YubiKey ou la Nitrokey](/fr/solutions/offer-security-keys/)** qui sécurisera votre singularité dans l'univers numérique.
 - Utiliser cette clé pour :
   - Créer votre compte sur le système **[Djibian](/fr/blog/2026-02-10-djibian-tour/)** et s’authentifier sur différents services (*SSH, Git*).
+  - Utiliser cette même clé **depuis n'importe quelle machine Djibian distante**, sans jamais y copier la moindre clé privée *(cf. [Djibian Agent Forwarding](/fr/blog/2026-05-11-djibian-agentforwarding/))*.
   - [Signer](/fr/solutions/signature/) vos documents et [courriels](/fr/solutions/theme-email/).
   - [Chiffrer et déchiffrer](/fr/solutions/encryption/) vos documents et [courriels](/fr/solutions/theme-email/).
   - [Certifier](/fr/solutions/theme-authentication/) vos proches et étendre votre [toile de confiance](//fr.wikipedia.org/wiki/Toile_de_confiance).

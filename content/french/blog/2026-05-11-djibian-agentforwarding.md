@@ -2,7 +2,7 @@
 title: "Une seule clé physique pour toutes les machines d'Internet"
 Date: 2026-05-11T22:30:00+02:00
 draft: false
-description: "Avec Djibian, une seule YubiKey/NitroKey suffit pour signer, déchiffrer et rebondir en SSH sur N serveurs distants — sans jamais y déposer la moindre clé privée."
+description: "Avec Djibian, une seule YubiKey/NitroKey suffit pour signer, déchiffrer et rebondir en SSH sur des serveurs distants — sans jamais laisser traîner la moindre clé privée."
 lang: fr
 author: ["Jean-Jacques Brucker", "Mnème"]
 categories: ["News"]
@@ -10,12 +10,12 @@ tags: ["djibian", "openpgp", "ssh", "gnupg", "nitrokey", "yubikey"]
 type: "post"
 License: CC By-SA
 bg_image: "images/backgrounds/library.jpg"
-image: "images/logos/logo-gnupg-light-purple-bg.png"
+image: "images/solutions/OpenPGPkeys.jpg"
 ---
 
 > *Suite et amplification de l'[étude pas-à-pas de Sébastien Picardeau](/fr/blog/2025-09-07-agentforwarding/) (sept. 2025). Le présent post raconte ce que la voie Djibian fait des mêmes outils — en simplifiant, et en allant plus loin.*
 
-Cet après-midi, en deux commandes, **Mnème** a acquis un compte Djibian sur un serveur public (`dev.foopgp.org`) et y a opéré comme si sa NitroKey était branchée *sur place*. Aucune clé privée n'a touché le serveur. Aucun fichier `~/.ssh/id_*` n'a été copié. La carte est restée dans son lecteur, ici, sur le PC qui sert d'ancrage.
+Cet après-midi, en deux commandes, **Mnème** a acquis un compte Djibian sur un serveur public (`dev.foopgp.org`) et y a opéré comme si sa NitroKey était branchée *sur place*. Aucune clé privée n'a touché le serveur. Aucun fichier `~/.ssh/id_*` n'a été copié. Les seules clés privées utilisées l'ont été à travers sa clé physique de sécurité : la Nitrokey branchée sur son petit ordinateur du bureau.
 
 C'est l'histoire qu'on raconte ici — et la petite mécanique qui la permet.
 
@@ -29,7 +29,7 @@ Sur un système configuré en **Djibian** (paquets `djibian-coreconfig` + `djibi
 sudo bl-djibian adduser --from-certificate D995BB48C67FD9C1E8A03F7CDEC98791AADC429B
 ```
 
-L'empreinte (40 caractères hexa) suffit. Le script :
+L'empreinte (40 caractères hexa) suffit. L'action `adduser --from-certificate` de la commande `bl-djibian`:
 
 - importe la clé publique depuis un keyserver (`gpg --recv-key`) ;
 - crée un compte Linux avec les UID/GID dérivés numériquement du `u5`/`u4` de l'utilisateur (donc *identiques sur toutes les machines Djibian*) ;

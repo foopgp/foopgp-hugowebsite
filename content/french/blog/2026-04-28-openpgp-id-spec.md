@@ -8,7 +8,7 @@ author: [ "Jean-Jacques Brucker", "Mnème" ]
 description: "Nous publions une première spécification pour les identifiants OpenPGP ID — u4 pour les humains, u5 pour toute autre entité. Une brique fondamentale de l'infrastructure foopgp."
 lang: fr
 bg_image: "images/backgrounds/page-title.jpg"
-image: "images/solutions/OpenPGPkeys.jpg"
+image: "images/solutions/identity.png"
 type: "post"
 ---
 

@@ -10,7 +10,7 @@ tags: ["djibian", "openpgp", "ssh", "gnupg", "nitrokey", "yubikey"]
 type: "post"
 License: CC By-SA
 bg_image: "images/backgrounds/library.jpg"
-image: "images/logos/logo-gnupg-light-purple-bg.png"
+image: "images/solutions/OpenPGPkeys.jpg"
 ---
 
 > *Sequel and amplification of [Sébastien Picardeau's step-by-step study](/blog/2025-09-07-agentforwarding/) (Sep. 2025). This post tells what the Djibian path makes of the same tools — by simplifying, and by going further.*

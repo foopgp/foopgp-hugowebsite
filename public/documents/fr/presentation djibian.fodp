@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.4" office:mimetype="application/vnd.oasis.opendocument.presentation">
- <office:meta><meta:creation-date>2026-03-26T23:54:32.340232296</meta:creation-date><dc:date>2026-04-16T13:50:05.160685203</dc:date><meta:editing-duration>PT6H46M20S</meta:editing-duration><meta:editing-cycles>37</meta:editing-cycles><meta:generator>LibreOffice/25.2.3.2$Linux_X86_64 LibreOffice_project/520$Build-2</meta:generator><meta:print-date>2026-04-15T20:19:26.039709157</meta:print-date><meta:printed-by>Fichiers PDF</meta:printed-by><meta:document-statistic meta:object-count="123"/></office:meta>
+ <office:meta><meta:creation-date>2026-03-26T23:54:32.340232296</meta:creation-date><dc:date>2026-05-12T21:25:55.584818888</dc:date><meta:editing-duration>PT6H52M42S</meta:editing-duration><meta:editing-cycles>39</meta:editing-cycles><meta:generator>LibreOffice/25.2.3.2$Linux_X86_64 LibreOffice_project/520$Build-2</meta:generator><meta:print-date>2026-04-15T20:19:26.039709157</meta:print-date><meta:printed-by>Fichiers PDF</meta:printed-by><meta:document-statistic meta:object-count="123"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="VisibleAreaTop" config:type="int">-5352</config:config-item>
-   <config:config-item config:name="VisibleAreaLeft" config:type="int">-421</config:config-item>
+   <config:config-item config:name="VisibleAreaTop" config:type="int">-5471</config:config-item>
+   <config:config-item config:name="VisibleAreaLeft" config:type="int">-404</config:config-item>
    <config:config-item config:name="VisibleAreaWidth" config:type="int">28954</config:config-item>
    <config:config-item config:name="VisibleAreaHeight" config:type="int">26579</config:config-item>
    <config:config-item-map-indexed config:name="Views">
@@ -29,16 +29,16 @@
      <config:config-item config:name="NoColors" config:type="boolean">true</config:config-item>
      <config:config-item config:name="RulerIsVisible" config:type="boolean">false</config:config-item>
      <config:config-item config:name="PageKind" config:type="short">0</config:config-item>
-     <config:config-item config:name="SelectedPage" config:type="short">0</config:config-item>
+     <config:config-item config:name="SelectedPage" config:type="short">9</config:config-item>
      <config:config-item config:name="IsLayerMode" config:type="boolean">false</config:config-item>
      <config:config-item config:name="IsDoubleClickTextEdit" config:type="boolean">true</config:config-item>
      <config:config-item config:name="IsClickChangeRotation" config:type="boolean">true</config:config-item>
      <config:config-item config:name="SlidesPerRow" config:type="short">4</config:config-item>
      <config:config-item config:name="EditMode" config:type="int">0</config:config-item>
-     <config:config-item config:name="VisibleAreaTop" config:type="int">-5352</config:config-item>
-     <config:config-item config:name="VisibleAreaLeft" config:type="int">-421</config:config-item>
-     <config:config-item config:name="VisibleAreaWidth" config:type="int">28955</config:config-item>
-     <config:config-item config:name="VisibleAreaHeight" config:type="int">26580</config:config-item>
+     <config:config-item config:name="VisibleAreaTop" config:type="int">-4709</config:config-item>
+     <config:config-item config:name="VisibleAreaLeft" config:type="int">-404</config:config-item>
+     <config:config-item config:name="VisibleAreaWidth" config:type="int">28926</config:config-item>
+     <config:config-item config:name="VisibleAreaHeight" config:type="int">25204</config:config-item>
      <config:config-item config:name="GridCoarseWidth" config:type="int">2000</config:config-item>
      <config:config-item config:name="GridCoarseHeight" config:type="int">2000</config:config-item>
      <config:config-item config:name="GridFineWidth" config:type="int">500</config:config-item>
@@ -49073,7 +49073,7 @@
   <draw:marker draw:name="Arrow" svg:viewBox="0 0 20 30" svg:d="M10 0l-10 30h20z"/>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" style:writing-mode="lr-tb"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:punctuation-wrap="simple" style:line-break="strict" loext:tab-stop-distance="0cm" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:punctuation-wrap="simple" style:line-break="strict" loext:tab-stop-distance="0cm" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="24pt" fo:language="fr" fo:country="FR" style:font-name-asian="DejaVu Sans" style:font-size-asian="24pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="DejaVu Sans" style:font-size-complex="24pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -49623,9 +49623,14 @@
   <style:style style:name="ce4" style:family="table-cell">
    <loext:graphic-properties draw:textarea-vertical-align="middle"/>
    <style:paragraph-properties fo:text-align="center" fo:border="0.43pt solid #b85c00"/>
-   <style:text-properties fo:color="#ff0000" loext:opacity="100%"/>
+   <style:text-properties fo:color="#ff3838" loext:opacity="100%"/>
   </style:style>
   <style:style style:name="ce5" style:family="table-cell">
+   <loext:graphic-properties draw:textarea-vertical-align="middle"/>
+   <style:paragraph-properties fo:text-align="center" fo:border="0.43pt solid #b85c00"/>
+   <style:text-properties fo:color="#ff0000" loext:opacity="100%"/>
+  </style:style>
+  <style:style style:name="ce6" style:family="table-cell">
    <loext:graphic-properties draw:textarea-vertical-align="middle"/>
    <style:paragraph-properties fo:text-align="center" fo:border="0.43pt solid #b85c00"/>
    <style:text-properties fo:color="#00a933" loext:opacity="100%"/>
@@ -49754,46 +49759,50 @@
   </style:style>
   <style:style style:name="P33" style:family="paragraph">
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties fo:color="#ff0000" loext:opacity="100%"/>
+   <style:text-properties fo:color="#ff3838" loext:opacity="100%"/>
   </style:style>
   <style:style style:name="P34" style:family="paragraph">
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties fo:color="#00a933" loext:opacity="100%"/>
+   <style:text-properties fo:color="#ff0000" loext:opacity="100%"/>
   </style:style>
   <style:style style:name="P35" style:family="paragraph">
-   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="115%" fo:text-align="center"/>
+   <style:paragraph-properties fo:text-align="center"/>
+   <style:text-properties fo:color="#00a933" loext:opacity="100%"/>
   </style:style>
   <style:style style:name="P36" style:family="paragraph">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="115%" fo:text-align="center" fo:text-indent="0cm"/>
+   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="115%" fo:text-align="center"/>
   </style:style>
   <style:style style:name="P37" style:family="paragraph">
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="115%" fo:text-align="center" fo:text-indent="0cm"/>
+  </style:style>
+  <style:style style:name="P38" style:family="paragraph">
    <loext:graphic-properties draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="115%" fo:text-align="center"/>
    <style:text-properties fo:font-size="32pt"/>
   </style:style>
-  <style:style style:name="P38" style:family="paragraph">
+  <style:style style:name="P39" style:family="paragraph">
    <style:paragraph-properties fo:margin-top="0.2cm" fo:margin-bottom="0cm" fo:line-height="115%"/>
   </style:style>
-  <style:style style:name="P39" style:family="paragraph">
+  <style:style style:name="P40" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:line-height="115%" fo:text-align="start" fo:text-indent="1cm"/>
   </style:style>
-  <style:style style:name="P40" style:family="paragraph">
+  <style:style style:name="P41" style:family="paragraph">
    <loext:graphic-properties draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:line-height="115%" fo:text-align="start" fo:text-indent="1cm"/>
    <style:text-properties fo:font-size="32pt"/>
   </style:style>
-  <style:style style:name="P41" style:family="paragraph">
+  <style:style style:name="P42" style:family="paragraph">
    <style:paragraph-properties fo:line-height="115%"/>
   </style:style>
-  <style:style style:name="P42" style:family="paragraph">
+  <style:style style:name="P43" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:line-height="115%" fo:text-align="center" fo:text-indent="0cm"/>
   </style:style>
-  <style:style style:name="P43" style:family="paragraph">
+  <style:style style:name="P44" style:family="paragraph">
    <loext:graphic-properties draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:line-height="115%" fo:text-align="justify"/>
    <style:text-properties fo:font-size="32pt"/>
   </style:style>
-  <style:style style:name="P44" style:family="paragraph">
+  <style:style style:name="P45" style:family="paragraph">
    <style:text-properties fo:color="#ff8012" loext:opacity="100%" fo:font-weight="bold" fo:background-color="transparent" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
@@ -49833,7 +49842,7 @@
    <style:text-properties fo:color="#ff8012" loext:opacity="100%"/>
   </style:style>
   <style:style style:name="T13" style:family="text">
-   <style:text-properties fo:color="#ff0000" loext:opacity="100%" fo:font-size="28pt" style:font-size-asian="28pt" style:font-size-complex="28pt"/>
+   <style:text-properties fo:color="#ff3838" loext:opacity="100%" fo:font-size="28pt" style:font-size-asian="28pt" style:font-size-complex="28pt"/>
   </style:style>
   <style:style style:name="T14" style:family="text">
    <style:text-properties fo:font-size="28pt" style:font-size-asian="28pt" style:font-size-complex="28pt"/>
@@ -49860,63 +49869,69 @@
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="28pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="FreeSans" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="T22" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#ff0000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="28pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#ff3838" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="28pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="T23" style:family="text">
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="FreeSans" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="T24" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#ff0000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="FreeSans" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#ff3838" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="FreeSans" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="T25" style:family="text">
-   <style:text-properties fo:color="#ff8012" loext:opacity="100%" fo:font-style="italic" fo:font-weight="normal" style:font-style-asian="italic" style:font-weight-asian="normal" style:font-style-complex="italic" style:font-weight-complex="normal"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#ff0000" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="FreeSans" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="T26" style:family="text">
-   <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt" style:font-size-complex="12pt"/>
+   <style:text-properties fo:color="#ff8012" loext:opacity="100%" fo:font-style="italic" fo:font-weight="normal" style:font-style-asian="italic" style:font-weight-asian="normal" style:font-style-complex="italic" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T27" style:family="text">
-   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+   <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt" style:font-size-complex="12pt"/>
   </style:style>
   <style:style style:name="T28" style:family="text">
-   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-style="italic" fo:font-weight="bold" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-style-complex="italic" style:font-weight-complex="bold"/>
+   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T29" style:family="text">
-   <style:text-properties fo:color="#ff0000" loext:opacity="100%"/>
+   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-style="italic" fo:font-weight="bold" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-style-complex="italic" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T30" style:family="text">
-   <style:text-properties fo:color="#00a933" loext:opacity="100%"/>
+   <style:text-properties fo:color="#ff3838" loext:opacity="100%"/>
   </style:style>
   <style:style style:name="T31" style:family="text">
-   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
+   <style:text-properties fo:color="#ff0000" loext:opacity="100%"/>
   </style:style>
   <style:style style:name="T32" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#00a933" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="28pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+   <style:text-properties fo:color="#00a933" loext:opacity="100%"/>
   </style:style>
   <style:style style:name="T33" style:family="text">
-   <style:text-properties fo:font-size="32pt" fo:font-weight="normal" style:font-size-asian="32pt" style:font-weight-asian="normal" style:font-size-complex="32pt" style:font-weight-complex="normal"/>
+   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-size="28pt" fo:font-weight="bold" style:font-size-asian="28pt" style:font-weight-asian="bold" style:font-size-complex="28pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T34" style:family="text">
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#00a933" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="28pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="WenQuanYi Micro Hei" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="FreeSans" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="T35" style:family="text">
-   <style:text-properties fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
+   <style:text-properties fo:font-size="32pt" fo:font-weight="normal" style:font-size-asian="32pt" style:font-weight-asian="normal" style:font-size-complex="32pt" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T36" style:family="text">
-   <style:text-properties fo:color="#ff0000" loext:opacity="100%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T37" style:family="text">
-   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
+   <style:text-properties fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T38" style:family="text">
-   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+   <style:text-properties fo:color="#ff3838" loext:opacity="100%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T39" style:family="text">
-   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T40" style:family="text">
-   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
+   <style:text-properties fo:color="#00a933" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T41" style:family="text">
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T42" style:family="text">
+   <style:text-properties fo:color="#ffffff" loext:opacity="100%" fo:font-size="32pt" fo:font-weight="bold" style:font-size-asian="32pt" style:font-weight-asian="bold" style:font-size-complex="32pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T43" style:family="text">
    <style:text-properties fo:color="#ff8012" loext:opacity="100%" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <text:list-style style:name="L1">
@@ -50243,7 +50258,7 @@
       <text:p text:style-name="P7"><text:span text:style-name="T5"/></text:p>
       <text:p text:style-name="P7"><text:span text:style-name="T6">16 avril 2026</text:span></text:p>
       <text:p text:style-name="P7"><text:span text:style-name="T7"/></text:p>
-      <text:p text:style-name="P7"><text:span text:style-name="T8">(u4=</text:span><text:span text:style-name="T9">sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76</text:span><text:span text:style-name="T8">)</text:span></text:p>
+      <text:p text:style-name="P7"><text:span text:style-name="T8">(u4=</text:span><text:span text:style-name="T9">sRyUhEbNU5OwyLEjfSwaX</text:span><text:span text:style-name="T9">Ae_42.17-002.76</text:span><text:span text:style-name="T8">)</text:span></text:p>
       <text:p text:style-name="P7"><text:span text:style-name="T10">&lt;jjbrucker@foopgp.org&gt;</text:span></text:p>
      </draw:text-box>
     </draw:frame>
@@ -50317,7 +50332,7 @@
    <draw:page draw:name="page3" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
     <draw:frame presentation:style-name="pr6" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.4cm" svg:y="0.628cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12">D’où tu parles ?</text:span></text:p>
+      <text:p><text:span text:style-name="T12">D’où tu </text:span><text:span text:style-name="T12">parles ?</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame presentation:style-name="pr7" draw:text-style-name="P15" draw:layer="layout" svg:width="25.199cm" svg:height="9.134cm" svg:x="1.4cm" svg:y="3.685cm" presentation:class="subtitle" presentation:user-transformed="true">
@@ -50358,17 +50373,17 @@
      <draw:text-box>
       <text:list text:style-name="L4">
        <text:list-item>
-        <text:p text:style-name="P16"><text:span text:style-name="T13">Ne pas subir</text:span><text:span text:style-name="T14"> (la décroissance),</text:span></text:p>
+        <text:p text:style-name="P16"><text:span text:style-name="T13">Ne pas subir</text:span><text:span text:style-name="T14"> (la </text:span><text:span text:style-name="T14">décroissance),</text:span></text:p>
        </text:list-item>
       </text:list>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P16"><text:span text:style-name="T14">Mais </text:span><text:span text:style-name="T15">reprendre de la maîtrise</text:span><text:span text:style-name="T14"> (de notre bonheur).</text:span></text:p>
+        <text:p text:style-name="P16"><text:span text:style-name="T14">Mais </text:span><text:span text:style-name="T15">reprendre de </text:span><text:span text:style-name="T15">la maîtrise</text:span><text:span text:style-name="T14"> (de </text:span><text:span text:style-name="T14">notre bonheur).</text:span></text:p>
        </text:list-item>
       </text:list>
       <text:list text:style-name="L4">
        <text:list-item>
-        <text:p text:style-name="P17"><text:span text:style-name="T14">Moins d’</text:span><text:span text:style-name="T13">individualisme</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T13">consommation</text:span><text:span text:style-name="T14">,</text:span></text:p>
+        <text:p text:style-name="P17"><text:span text:style-name="T14">Moins </text:span><text:span text:style-name="T14">d’</text:span><text:span text:style-name="T13">individualisme</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T13">consommation</text:span><text:span text:style-name="T14">,</text:span></text:p>
        </text:list-item>
       </text:list>
       <text:list text:style-name="L5">
@@ -50378,7 +50393,7 @@
       </text:list>
       <text:list text:style-name="L4">
        <text:list-item>
-        <text:p text:style-name="P17"><text:span text:style-name="T14">Moins d’</text:span><text:span text:style-name="T13">écrans</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T13">gadgets numériques</text:span><text:span text:style-name="T14">,</text:span></text:p>
+        <text:p text:style-name="P17"><text:span text:style-name="T14">Moins d’</text:span><text:span text:style-name="T13">écrans</text:span><text:span text:style-name="T14">, de </text:span><text:span text:style-name="T13">gadgets </text:span><text:span text:style-name="T13">numériques</text:span><text:span text:style-name="T14">,</text:span></text:p>
        </text:list-item>
       </text:list>
       <text:list text:style-name="L5">
@@ -50393,7 +50408,7 @@
       </text:list>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P16"><text:span text:style-name="T14">Plus de </text:span><text:span text:style-name="T15">transparence</text:span><text:span text:style-name="T14">*,</text:span><text:span text:style-name="T16"> d’</text:span><text:span text:style-name="T15">équité</text:span><text:span text:style-name="T14">.</text:span></text:p>
+        <text:p text:style-name="P16"><text:span text:style-name="T14">Plus de </text:span><text:span text:style-name="T15">transparence</text:span><text:span text:style-name="T14">*,</text:span><text:span text:style-name="T16"> </text:span><text:span text:style-name="T16">d’</text:span><text:span text:style-name="T15">équité</text:span><text:span text:style-name="T14">.</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -50430,28 +50445,28 @@
      <draw:text-box>
       <text:list text:style-name="L1">
        <text:list-item>
-        <text:p><text:span text:style-name="T18">Automne 2008 : crise des subprimes</text:span></text:p>
+        <text:p><text:span text:style-name="T18">Automne 2008 : </text:span><text:span text:style-name="T18">crise des subprimes</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p><text:span text:style-name="T18">Janvier 2009 : publication du code « bitcoin »</text:span></text:p>
+        <text:p><text:span text:style-name="T18">Janvier 2009 : </text:span><text:span text:style-name="T18">publication du code </text:span><text:span text:style-name="T18">« bitcoin »</text:span></text:p>
        </text:list-item>
        <text:list-item>
         <text:p><text:span text:style-name="T18">2009 &amp; 2010 : </text:span><text:span text:style-name="T18"><text:a xlink:href="https://creationmonetaire.info/" xlink:type="simple">creationmonetaire.info</text:a></text:span><text:span text:style-name="T18"><text:s/>&amp; </text:span><text:span text:style-name="T18"><text:a xlink:href="https://trm.creationmonetaire.info/" xlink:type="simple">TRM</text:a></text:span><text:span text:style-name="T18"><text:s/>(S. Laborde)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p><text:span text:style-name="T18">Janvier 2011 : projet OpenUDC (J.J. Brucker)</text:span></text:p>
+        <text:p><text:span text:style-name="T18">Janvier 2011 : projet </text:span><text:span text:style-name="T18">OpenUDC (J.J. </text:span><text:span text:style-name="T18">Brucker)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p><text:span text:style-name="T18">5 février 2011 : naissance de « la monnaie libre » (de dette)</text:span></text:p>
+        <text:p><text:span text:style-name="T18">5 février 2011 : </text:span><text:span text:style-name="T18">naissance de « la </text:span><text:span text:style-name="T18">monnaie libre » (de </text:span><text:span text:style-name="T18">dette)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p><text:span text:style-name="T18">Avril 2014 : ucoin/duniter (C. Moreau)</text:span></text:p>
+        <text:p><text:span text:style-name="T18">Avril 2014 : </text:span><text:span text:style-name="T18">ucoin/duniter (C. </text:span><text:span text:style-name="T18">Moreau)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p><text:span text:style-name="T18">8 mars 2017 : naissance June (</text:span><text:span text:style-name="T18"><text:a xlink:href="https://monnaie-libre.fr/" xlink:type="simple">monnaie-libre.fr</text:a></text:span><text:span text:style-name="T18">)</text:span></text:p>
+        <text:p><text:span text:style-name="T18">8 mars 2017 : </text:span><text:span text:style-name="T18">naissance June (</text:span><text:span text:style-name="T18"><text:a xlink:href="https://monnaie-libre.fr/" xlink:type="simple">monnaie-libre.fr</text:a></text:span><text:span text:style-name="T18">)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p><text:span text:style-name="T18">Avril 2023 : Association des amis d’OpenPGP (</text:span><text:span text:style-name="T18"><text:a xlink:href="https://foopgp.org/" xlink:type="simple">foopgp.org</text:a></text:span><text:span text:style-name="T18">)</text:span></text:p>
+        <text:p><text:span text:style-name="T18">Avril 2023 : </text:span><text:span text:style-name="T18">Association des amis </text:span><text:span text:style-name="T18">d’OpenPGP (</text:span><text:span text:style-name="T18"><text:a xlink:href="https://foopgp.org/" xlink:type="simple">foopgp.org</text:a></text:span><text:span text:style-name="T18">)</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -56564,7 +56579,7 @@
     </draw:frame>
     <draw:frame presentation:style-name="pr10" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="2.129cm" svg:x="1.401cm" svg:y="0.5cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12"><text:s/>Masses monétaires</text:span></text:p>
+      <text:p><text:span text:style-name="T12"><text:s/>Masses </text:span><text:span text:style-name="T12">monétaires</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr10" draw:text-style-name="P25" draw:layer="layout" svg:width="13.5cm" svg:height="1.5cm" svg:x="7.5cm" svg:y="2.5cm">
@@ -57835,7 +57850,7 @@
    <draw:page draw:name="page9" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
     <draw:frame presentation:style-name="pr6" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.4cm" svg:y="0.628cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12"><text:s text:c="8"/>Impact de l’IA</text:span><text:span text:style-name="T17"> <text:s text:c="2"/>(</text:span><text:span text:style-name="T17"><text:a xlink:href="https://www.insee.fr/fr/statistiques/fichier/8907467/ndc-mars-2026.pdf" xlink:type="simple">insee.fr</text:a></text:span><text:span text:style-name="T17">)</text:span></text:p>
+      <text:p><text:span text:style-name="T12"><text:s text:c="8"/>Impact </text:span><text:span text:style-name="T12">de l’IA</text:span><text:span text:style-name="T17"> <text:s text:c="2"/>(</text:span><text:span text:style-name="T17"><text:a xlink:href="https://www.insee.fr/fr/statistiques/fichier/8907467/ndc-mars-2026.pdf" xlink:type="simple">insee.fr</text:a></text:span><text:span text:style-name="T17">)</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr3" draw:text-style-name="P10" draw:layer="layout" svg:width="3.397cm" svg:height="1.187cm" svg:x="23.603cm" svg:y="14.563cm">
@@ -58923,11 +58938,11 @@
      <draw:text-box>
       <text:list text:style-name="L1">
        <text:list-item>
-        <text:p text:style-name="P26"><text:span text:style-name="T20">Dette (taux directeurs) </text:span><text:span text:style-name="T20"><text:a xlink:href="https://www.banque-france.fr/fr/publications-et-statistiques/publications/taux-dinteret-reel-et-croissance-une-relation-circulaire" xlink:type="simple">&lt;=&gt;</text:a></text:span><text:span text:style-name="T20"><text:s/>Croissance</text:span></text:p>
+        <text:p text:style-name="P26"><text:span text:style-name="T20">Dette (taux </text:span><text:span text:style-name="T20">directeurs) </text:span><text:span text:style-name="T20"><text:a xlink:href="https://www.banque-france.fr/fr/publications-et-statistiques/publications/taux-dinteret-reel-et-croissance-une-relation-circulaire" xlink:type="simple">&lt;=&gt;</text:a></text:span><text:span text:style-name="T20"><text:s/></text:span><text:span text:style-name="T20">Croissance</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P26"><text:span text:style-name="T20"><text:a xlink:href="https://fr.wikipedia.org/wiki/Richard_Cantillon#L&apos;effet_Cantillon" xlink:type="simple">Effet Cantillon</text:a></text:span><text:span text:style-name="T20"><text:s/>=&gt;</text:span><text:span text:style-name="T20"><text:line-break/></text:span><text:span text:style-name="T20">€, $, ¥, ₿ ne sont </text:span><text:span text:style-name="T21">pas du tout des étalons de mesure,</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T20">ce sont des </text:span><text:span text:style-name="T22">escroqueries</text:span><text:span text:style-name="T20"> (</text:span><text:span text:style-name="T20"><text:a xlink:href="https://www.lemonde.fr/archives/article/1974/10/29/les-faux-monnayeurs_2540038_1819218.html" xlink:type="simple">dixit</text:a></text:span><text:span text:style-name="T20"> Maurice Allais)</text:span></text:p>
-        <text:p text:style-name="P27"><text:span text:style-name="T23">=&gt; Principales sources des</text:span><text:span text:style-name="T23"><text:line-break/></text:span><text:span text:style-name="T24">tensions qui détruisent</text:span><text:span text:style-name="T24"><text:line-break/></text:span><text:span text:style-name="T23">ou menacent </text:span><text:span text:style-name="T24">l’ensemble du vivant</text:span></text:p>
+        <text:p text:style-name="P26"><text:span text:style-name="T20"><text:a xlink:href="https://fr.wikipedia.org/wiki/Richard_Cantillon#L&apos;effet_Cantillon" xlink:type="simple">Effet Cantillon</text:a></text:span><text:span text:style-name="T20"><text:s/>=&gt;</text:span><text:span text:style-name="T20"><text:line-break/></text:span><text:span text:style-name="T20">€, $, ¥, ₿ ne sont </text:span><text:span text:style-name="T21">pas du tout des </text:span><text:span text:style-name="T21">étalons de </text:span><text:span text:style-name="T21">mesure,</text:span><text:span text:style-name="T21"><text:line-break/></text:span><text:span text:style-name="T20">ce sont des </text:span><text:span text:style-name="T22">escroqueries</text:span><text:span text:style-name="T20"> (</text:span><text:span text:style-name="T20"><text:a xlink:href="https://www.lemonde.fr/archives/article/1974/10/29/les-faux-monnayeurs_2540038_1819218.html" xlink:type="simple">dixit</text:a></text:span><text:span text:style-name="T20"> Maurice Allais)</text:span></text:p>
+        <text:p text:style-name="P27"><text:span text:style-name="T23">=&gt; Principales </text:span><text:span text:style-name="T23">sources des</text:span><text:span text:style-name="T23"><text:line-break/></text:span><text:span text:style-name="T24">tensions qui </text:span><text:span text:style-name="T24">détruisent</text:span><text:span text:style-name="T25"><text:line-break/></text:span><text:span text:style-name="T23">ou menacent </text:span><text:span text:style-name="T24">l’ensemble du </text:span><text:span text:style-name="T24">vivant</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -58952,15 +58967,15 @@
    <draw:page draw:name="page11" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
     <draw:frame presentation:style-name="pr6" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.4cm" svg:y="0.628cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12">Le dji (</text:span><text:span text:style-name="T25">Ɉ</text:span><text:span text:style-name="T12">)</text:span></text:p>
+      <text:p><text:span text:style-name="T12">Le dji (</text:span><text:span text:style-name="T26">Ɉ</text:span><text:span text:style-name="T12">)</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame presentation:style-name="pr12" draw:text-style-name="P30" draw:layer="layout" svg:width="25.199cm" svg:height="4.5cm" svg:x="1.4cm" svg:y="9cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p text:style-name="P29"><text:span text:style-name="T26">Le Dji est un outil d&apos;échange et de gouvernance réservé aux adhérents de l&apos;association.</text:span></text:p>
-      <text:p text:style-name="P29"><text:span text:style-name="T26">Les contributions nominatives valent cotisations.</text:span></text:p>
-      <text:p text:style-name="P29"><text:span text:style-name="T26">Les djis calculés à partir de la date et du montant et vos contributions seront crées et attribués après validation de votre adhésion, c&apos;est-à-dire certification de votre identité numérique OpenPGP ID. </text:span></text:p>
-      <text:p text:style-name="P29"><text:span text:style-name="T26">Conformément à nos </text:span><text:span text:style-name="T26"><text:a xlink:href="https://foopgp.org/fr/about/status/" xlink:type="simple">statuts</text:a></text:span><text:span text:style-name="T26"><text:s/>et </text:span><text:span text:style-name="T26"><text:a xlink:href="https://foopgp.org/fr/about/rules-of-procedures/" xlink:type="simple">règlement intérieur</text:a></text:span><text:span text:style-name="T26">.</text:span></text:p>
+      <text:p text:style-name="P29"><text:span text:style-name="T27">Le Dji est un outil d&apos;échange et de gouvernance </text:span><text:span text:style-name="T27">réservé aux adhérents de l&apos;association.</text:span></text:p>
+      <text:p text:style-name="P29"><text:span text:style-name="T27">Les contributions nominatives valent cotisations.</text:span></text:p>
+      <text:p text:style-name="P29"><text:span text:style-name="T27">Les djis calculés à partir de la date et du montant </text:span><text:span text:style-name="T27">et vos contributions seront crées et attribués </text:span><text:span text:style-name="T27">après validation de votre adhésion, c&apos;est-à-dire </text:span><text:span text:style-name="T27">certification de votre identité numérique </text:span><text:span text:style-name="T27">OpenPGP ID. </text:span></text:p>
+      <text:p text:style-name="P29"><text:span text:style-name="T27">Conformément à nos </text:span><text:span text:style-name="T27"><text:a xlink:href="https://foopgp.org/fr/about/status/" xlink:type="simple">statuts</text:a></text:span><text:span text:style-name="T27"><text:s/>et </text:span><text:span text:style-name="T27"><text:a xlink:href="https://foopgp.org/fr/about/rules-of-procedures/" xlink:type="simple">règlement intérieur</text:a></text:span><text:span text:style-name="T27">.</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr3" draw:text-style-name="P10" draw:layer="layout" svg:width="3.397cm" svg:height="1.187cm" svg:x="23.603cm" svg:y="14.563cm">
@@ -58980,51 +58995,51 @@
       <table:table-column table:style-name="co3"/>
       <table:table-row table:style-name="ro1" table:default-cell-style-name="ce2">
        <table:table-cell table:style-name="ce1">
-        <text:p text:style-name="P31"><text:span text:style-name="T27">Devise</text:span></text:p>
+        <text:p text:style-name="P31"><text:span text:style-name="T28">Devise</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P31"><text:span text:style-name="T27">Création (futur)</text:span></text:p>
+        <text:p text:style-name="P31"><text:span text:style-name="T28">Création (futur)</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P31"><text:span text:style-name="T27">Création (maintenant)</text:span></text:p>
-       </table:table-cell>
-      </table:table-row>
-      <table:table-row table:style-name="ro1" table:default-cell-style-name="ce4">
-       <table:table-cell table:style-name="ce3">
-        <text:p text:style-name="P32"><text:span text:style-name="T28">Euro, Dollar, ...</text:span></text:p>
-       </table:table-cell>
-       <table:table-cell>
-        <text:p text:style-name="P33"><text:span text:style-name="T29">Imprévisible</text:span></text:p>
-       </table:table-cell>
-       <table:table-cell>
-        <text:p text:style-name="P33"><text:span text:style-name="T29">Réservée aux plus riches </text:span></text:p>
+        <text:p text:style-name="P31"><text:span text:style-name="T28">Création (maintenant)</text:span></text:p>
        </table:table-cell>
       </table:table-row>
       <table:table-row table:style-name="ro1">
        <table:table-cell table:style-name="ce3">
-        <text:p text:style-name="P32"><text:span text:style-name="T28">Bitcoin, Monero, ...</text:span></text:p>
-       </table:table-cell>
-       <table:table-cell table:style-name="ce5">
-        <text:p text:style-name="P34"><text:span text:style-name="T30">Prévisible</text:span></text:p>
+        <text:p text:style-name="P32"><text:span text:style-name="T29">Euro, Dollar, ...</text:span></text:p>
        </table:table-cell>
        <table:table-cell table:style-name="ce4">
-        <text:p text:style-name="P33"><text:span text:style-name="T29">Premier arrivé, premier servi.</text:span></text:p>
+        <text:p text:style-name="P33"><text:span text:style-name="T30">Imprévisible</text:span></text:p>
+       </table:table-cell>
+       <table:table-cell table:style-name="ce5">
+        <text:p text:style-name="P34"><text:span text:style-name="T30">Réservée aux plus riches</text:span><text:span text:style-name="T31"> </text:span></text:p>
        </table:table-cell>
       </table:table-row>
-      <table:table-row table:style-name="ro2" table:default-cell-style-name="ce5">
+      <table:table-row table:style-name="ro1">
        <table:table-cell table:style-name="ce3">
-        <text:p text:style-name="P32"><text:span text:style-name="T28">Dji, June.</text:span></text:p>
+        <text:p text:style-name="P32"><text:span text:style-name="T29">Bitcoin, Monero, ...</text:span></text:p>
+       </table:table-cell>
+       <table:table-cell table:style-name="ce6">
+        <text:p text:style-name="P35"><text:span text:style-name="T32">Prévisible</text:span></text:p>
+       </table:table-cell>
+       <table:table-cell table:style-name="ce4">
+        <text:p text:style-name="P33"><text:span text:style-name="T30">Premier arrivé, premier servi.</text:span></text:p>
+       </table:table-cell>
+      </table:table-row>
+      <table:table-row table:style-name="ro2" table:default-cell-style-name="ce6">
+       <table:table-cell table:style-name="ce3">
+        <text:p text:style-name="P32"><text:span text:style-name="T29">Dji, June.</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P34"><text:span text:style-name="T30">Prévisible</text:span></text:p>
+        <text:p text:style-name="P35"><text:span text:style-name="T32">Prévisible</text:span></text:p>
        </table:table-cell>
        <table:table-cell>
-        <text:p text:style-name="P34"><text:span text:style-name="T30">Parfaitement distribuée </text:span></text:p>
+        <text:p text:style-name="P35"><text:span text:style-name="T32">Parfaitement distribuée </text:span></text:p>
        </table:table-cell>
       </table:table-row>
      </table:table><draw:image>
       <office:binary-data>VkNMTVRGAQAxAAAAAAAAAAEAGwAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAAxaAAA7
-       EwAA7gEAAIkAAQAhAAAAAQAbAAAADQBJ9v//1vH//wEAAAABAAAAAQAAAAEAAAAAlgABAAIA
+       EwAA9AEAAIkAAQAhAAAAAQAbAAAADQBJ9v//1vH//wEAAAABAAAAAQAAAAEAAAAAlgABAAIA
        AAAJAAACAQAgAAAAFgBYVEVYVF9QQUlOVFNIQVBFX0JFR0lOAAAAAAAAAACVAAEABAAAAAAA
        AACKAAEARwAAAAUAQQAAAA8ATGliZXJhdGlvbiBTYW5zAAAAAAAAewIAAP//AAACAAgAAAAA
        AAAADAQAAAAAAAAAAQD/AwAAAAAAAAAAAAAAiAABAAIAAAABAIcAAQAFAAAA/////wCGAAEA
@@ -59102,7 +59117,7 @@
        JAAA6xIAAAAAjAABAAAAAAAAAgEAIAAAABYAWFRFWFRfUEFJTlRTSEFQRV9CRUdJTgAAAAAA
        AAAAlQABAAQAAAAAAAAAigABAEcAAAAFAEEAAAAPAExpYmVyYXRpb24gU2FucwAAAAAAAHsC
        AAD//wAAAgAFAAAAAAAAAAwEAAAAAAAAAAEA/wMAAAAAAAAAAAAAAIgAAQACAAAAAQCHAAEA
-       BQAAAP////8AhgABAAQAAAAAAP8AcQAEAHsAAADZKgAAIhYAAAwAAABJAG0AcAByAOkAdgBp
+       BQAAAP////8AhgABAAQAAAA4OP8AcQAEAHsAAADZKgAAIhYAAAwAAABJAG0AcAByAOkAdgBp
        AHMAaQBiAGwAZQAAAAwADAAAALAAAADBAgAAIgQAAPYEAABXBgAAlAcAACEIAABfCQAA7AkA
        AE0LAADaCwAAOw0AAAwASQBtAHAAcgDpAHYAaQBzAGkAYgBsAGUAAAAAAACVAAEABAAAAAAA
        AAAAAgEAEwAAAAkAWFRFWFRfRU9DAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DAQAAAAAA
@@ -59117,199 +59132,204 @@
        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
-       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
-       ANYaAAAUAAAAQgBpAHQAYwBvAGkAbgAsACAATQBvAG4AZQByAG8ALAAgAC4ALgAuAAAAFAAU
-       AAAAygEAAHsCAABOAwAArwQAADMGAADjBgAAZwgAABgJAADICQAA2QsAAF0NAADhDgAAQhAA
-       ADkRAAC9EgAAbRMAAB4UAADOFAAAfxUAAC8WAAAUAEIAaQB0AGMAbwBpAG4ALAAgAE0AbwBu
-       AGUAcgBvACwAIAAuAC4ALgAAAAAAAJUAAQAEAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MA
+       AAEAAgAAAAEAhwABAAUAAAD/////AIYAAQAEAAAAODj/AHEABADfAAAAx0IAACIWAAAZAAAA
+       UgDpAHMAZQByAHYA6QBlACAAYQB1AHgAIABwAGwAdQBzACAAcgBpAGMAaABlAHMAIAAAABgA
+       GAAAAMoBAAArAwAAaQQAAMoFAACdBgAA2wcAADwJAACdCgAATgsAAK8MAAAQDgAATQ8AAP4P
+       AABfEQAA7BEAAE0TAACLFAAAOxUAAA8WAACcFgAA2RcAADoZAACbGgAA2RsAABkAUgDpAHMA
+       ZQByAHYA6QBlACAAYQB1AHgAIABwAGwAdQBzACAAcgBpAGMAaABlAHMAIAAAAAAAAJUAAQAE
+       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MB
+       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MCAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MD
+       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MEAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MF
+       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MGAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MH
+       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MIAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1cI
+       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MJAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MK
+       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
+       AOkAdgBpAHMAaQBiAGwAZQAAAAAAAJUAAQAEAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MA
        AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MBAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MC
        AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MDAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0ME
        AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MFAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MG
-       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MHAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1cH
-       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MIAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MJ
-       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1cJAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MK
-       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MLAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MM
-       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MNAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MO
-       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MPAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1cP
-       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MQAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MR
-       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1cRAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MS
-       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MTAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1cT
-       AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0wAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1AA
-       AAAAAAAAAAACAQAeAAAAFABYVEVYVF9QQUlOVFNIQVBFX0VORAAAAAAAAAAAiwABAAIAAAAD
-       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
+       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
-       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
+       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
-       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
-       AgEAEwAAAAkAWFRFWFRfRU9DEAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9XEAAAAAAAAAAA
-       AgEAEwAAAAkAWFRFWFRfRU9DEQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DEgAAAAAAAAAA
-       AgEAEwAAAAkAWFRFWFRfRU9DEwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DFAAAAAAAAAAA
-       AgEAEwAAAAkAWFRFWFRfRU9DFQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DFgAAAAAAAAAA
-       AgEAEwAAAAkAWFRFWFRfRU9DFwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9XFwAAAAAAAAAA
-       AgEAEwAAAAkAWFRFWFRfRU9DGAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DGQAAAAAAAAAA
-       AgEAEwAAAAkAWFRFWFRfRU9DGgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DGwAAAAAAAAAA
-       AgEAEwAAAAkAWFRFWFRfRU9DHAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DHQAAAAAAAAAA
-       AgEAEwAAAAkAWFRFWFRfRU9XHQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9MAAAAAAAAAAAA
+       AgEAEwAAAAkAWFRFWFRfRU9DCAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DCQAAAAAAAAAA
+       AgEAEwAAAAkAWFRFWFRfRU9XCQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9MAAAAAAAAAAAA
        AgEAEwAAAAkAWFRFWFRfRU9QAAAAAAAAAAAAAgEAHgAAABQAWFRFWFRfUEFJTlRTSEFQRV9F
-       TkQAAAAAAAAAAIsAAQACAAAAAwCFAAEABQAAADMzMwABhAABAAUAAAAAAAAAAG8AAgAuAAAA
-       AQAFAMQJAABTHAAAcSQAAFMcAABxJAAAPCEAAMQJAAA8IQAAxAkAAFMcAAAAAIwAAQAAAAAA
+       TkQAAAAAAAAAAIsAAQACAAAAAwCFAAEABQAAAMzMzAABhAABAAUAAAAAAAAAAG8AAgAuAAAA
+       AQAFAHEkAABTHAAAfT4AAFMcAAB9PgAAPCEAAHEkAAA8IQAAcSQAAFMcAAAAAIwAAQAAAAAA
        AAIBACAAAAAWAFhURVhUX1BBSU5UU0hBUEVfQkVHSU4AAAAAAAAAAJUAAQAEAAAAAAAAAIoA
-       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
+       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
-       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
+       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
-       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
+       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
-       EwAAAAkAWFRFWFRfRU9DCQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9XCQAAAAAAAAAAAgEA
-       EwAAAAkAWFRFWFRfRU9MAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9QAAAAAAAAAAAAAgEA
-       HgAAABQAWFRFWFRfUEFJTlRTSEFQRV9FTkQAAAAAAAAAAIsAAQACAAAAAwCFAAEABQAAAMzM
-       zAABhAABAAUAAAAAAAAAAG8AAgAuAAAAAQAFAHEkAABTHAAAfT4AAFMcAAB9PgAAPCEAAHEk
-       AAA8IQAAcSQAAFMcAAAAAIwAAQAAAAAAAAIBACAAAAAWAFhURVhUX1BBSU5UU0hBUEVfQkVH
-       SU4AAAAAAAAAAJUAAQAEAAAAAAAAAIoAAQBHAAAABQBBAAAADwBMaWJlcmF0aW9uIFNhbnMA
-       AAAAAAB7AgAA//8AAAIABQAAAAAAAAAMBAAAAAAAAAABAP8DAAAAAAAAAAAAAACIAAEAAgAA
-       AAEAhwABAAUAAAD/////AIYAAQAEAAAAM6kAAHEABABrAAAAFywAAKQfAAAKAAAAUAByAOkA
-       dgBpAHMAaQBiAGwAZQAAAAoACgAAAKcBAAB7AgAA3AMAABkFAACmBQAA5AYAAHEHAADSCAAA
-       XwkAAMAKAAAKAFAAcgDpAHYAaQBzAGkAYgBsAGUAAAAAAACVAAEABAAAAAAAAAAAAgEAEwAA
-       AAkAWFRFWFRfRU9DAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DAQAAAAAAAAAAAgEAEwAA
-       AAkAWFRFWFRfRU9DAgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DAwAAAAAAAAAAAgEAEwAA
-       AAkAWFRFWFRfRU9DBAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBQAAAAAAAAAAAgEAEwAA
-       AAkAWFRFWFRfRU9DBgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBwAAAAAAAAAAAgEAEwAA
-       AAkAWFRFWFRfRU9DCAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DCQAAAAAAAAAAAgEAEwAA
-       AAkAWFRFWFRfRU9MAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9QAAAAAAAAAAAAAgEAHgAA
-       ABQAWFRFWFRfUEFJTlRTSEFQRV9FTkQAAAAAAAAAAIsAAQACAAAAAwCFAAEABQAAAMzMzAAB
-       hAABAAUAAAAAAAAAAG8AAgAuAAAAAQAFAH0+AABTHAAAmmMAAFMcAACaYwAAPCEAAH0+AAA8
-       IQAAfT4AAFMcAAAAAIwAAQAAAAAAAAIBACAAAAAWAFhURVhUX1BBSU5UU0hBUEVfQkVHSU4A
-       AAAAAAAAAJUAAQAEAAAAAAAAAIoAAQBHAAAABQBBAAAADwBMaWJlcmF0aW9uIFNhbnMAAAAA
-       AAB7AgAA//8AAAIABQAAAAAAAAAMBAAAAAAAAAABAP8DAAAAAAAAAAAAAACIAAEAAgAAAAEA
-       hwABAAUAAAD/////AIYAAQAEAAAAM6kAAHEABADbAAAA80MAAKQfAAAYAAAAUABhAHIAZgBh
-       AGkAdABlAG0AZQBuAHQAIABkAGkAcwB0AHIAaQBiAHUA6QBlACAAAAAYABgAAACnAQAACAMA
-       ANwDAACMBAAA7QUAAHoGAAArBwAAjAgAAJ0KAAD+CwAAXw0AABAOAADADgAAIRAAAK4QAADs
-       EQAAnBIAAHATAAD9EwAAXhUAAL8WAAAgGAAAgRkAADIaAAAYAFAAYQByAGYAYQBpAHQAZQBt
-       AGUAbgB0ACAAZABpAHMAdAByAGkAYgB1AOkAZQAgAAAAAAAAlQABAAQAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQwAAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQwEAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQwIAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQwMAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQwQAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQwUAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQwYAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQwcAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQwgAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQwkAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQwoAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQwsAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQwwAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPVwwAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQw0AAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQw4AAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQw8AAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQxAAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQxEAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQxIAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQxMAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQxQAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQxUAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPQxYAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPQxcAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPVxcAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPUxcAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPTAAAAAAAAAAAAAIBABMA
-       AAAJAFhURVhUX0VPUAAAAAAAAAAAAAIBAB4AAAAUAFhURVhUX1BBSU5UU0hBUEVfRU5EAAAA
+       EwAAAAkAWFRFWFRfRU9DCQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9MAAAAAAAAAAAAAgEA
+       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
-       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
+       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
-       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
+       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
-       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
+       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
-       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
+       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
-       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
+       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
-       TwAAAAEASQAAAAEAEwAAAAIAfT4AACoOAAB9PgAASSEAAAABAAIAAAAAAAEAAgAAAAAAAAAA
+       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
-       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
+       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
-       AQBuAAAAFQBYUEFUSFNUUk9LRV9TRVFfQkVHSU4AAAAATwAAAAEASQAAAAEAEwAAAAIAmmMA
-       ACoOAACaYwAASSEAAAABAAIAAAAAAAEAAgAAAAAAAAAAAAAAAAD2KFyPwnU6QAAAAQD2KFyP
-       wnU6QAAAAACEAAEABQAAAABcuAABhQABAAUAAAAAAAAAAG0AAwBTAAAAAgCaYwAAKg4AAJpj
-       AABJIQAABQA6AAAAAQAaAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA6QAAAAAAAAAAA
+       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
-       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
+       jAABAAAAAAA=
       </office:binary-data>
      </draw:image>
     </draw:frame>
@@ -59326,24 +59346,24 @@
       <text:p><text:span text:style-name="T12">OpenPGP</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr13" draw:text-style-name="P37" draw:layer="layout" svg:width="28cm" svg:height="10.696cm" svg:x="0cm" svg:y="2.902cm" presentation:class="subtitle" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr13" draw:text-style-name="P38" draw:layer="layout" svg:width="28cm" svg:height="10.696cm" svg:x="0cm" svg:y="2.902cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P35"><text:span text:style-name="T14">Signature + Chiffrement + Authentification</text:span></text:p>
-        <text:p text:style-name="P35"><text:span text:style-name="T14">+ Certification </text:span><text:span text:style-name="T31">décentralisée</text:span><text:span text:style-name="T14"> (Web of Trust)</text:span></text:p>
+        <text:p text:style-name="P36"><text:span text:style-name="T14">Signature + </text:span><text:span text:style-name="T14">Chiffrement + </text:span><text:span text:style-name="T14">Authentification</text:span></text:p>
+        <text:p text:style-name="P36"><text:span text:style-name="T14">+ Certification </text:span><text:span text:style-name="T33">décentralisée</text:span><text:span text:style-name="T14"> </text:span><text:span text:style-name="T14">(Web of Trust)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P36"><text:span text:style-name="T20">Technologie </text:span><text:span text:style-name="T32">éprouvée</text:span><text:span text:style-name="T20"> (1991), </text:span><text:span text:style-name="T32">ouverte</text:span><text:span text:style-name="T20"> (depuis 1996),</text:span></text:p>
+        <text:p text:style-name="P37"><text:span text:style-name="T20">Technologie </text:span><text:span text:style-name="T34">éprouvée</text:span><text:span text:style-name="T20"> (1991), </text:span><text:span text:style-name="T34">ouverte</text:span><text:span text:style-name="T20"> (depuis </text:span><text:span text:style-name="T20">1996),</text:span></text:p>
        </text:list-item>
       </text:list>
-      <text:p text:style-name="P36"><text:span text:style-name="T20"><text:tab/></text:span><text:span text:style-name="T20">en </text:span><text:span text:style-name="T32">constante évolution</text:span><text:span text:style-name="T20"> (8 RFC + many IETF drafts)</text:span></text:p>
+      <text:p text:style-name="P37"><text:span text:style-name="T20"><text:tab/></text:span><text:span text:style-name="T20">en </text:span><text:span text:style-name="T34">constante </text:span><text:span text:style-name="T34">évolution</text:span><text:span text:style-name="T20"> (8 RFC + </text:span><text:span text:style-name="T20">many IETF drafts)</text:span></text:p>
       <text:list text:continue-numbering="true" text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P36"><text:span text:style-name="T15">Interopérable</text:span><text:span text:style-name="T14"> (courriel, ssh, git, documents, paiements)</text:span></text:p>
+        <text:p text:style-name="P37"><text:span text:style-name="T15">Interopérable</text:span><text:span text:style-name="T14"> </text:span><text:span text:style-name="T14">(courriels, SSH, git, </text:span><text:span text:style-name="T14">documents, </text:span><text:span text:style-name="T14">paiements)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P35"><text:span text:style-name="T33">Outil ultime pour </text:span><text:span text:style-name="T34">contrer</text:span><text:span text:style-name="T35"> </text:span><text:span text:style-name="T36">les surveillances et manipulations de masse</text:span><text:span text:style-name="T33"> et </text:span><text:span text:style-name="T37">construire des réseaux  qui respectent nos vies privées</text:span><text:span text:style-name="T33">.</text:span></text:p>
+        <text:p text:style-name="P36"><text:span text:style-name="T35">Outil ultime pour </text:span><text:span text:style-name="T36">contrer</text:span><text:span text:style-name="T37"> </text:span><text:span text:style-name="T38">les </text:span><text:span text:style-name="T38">surveillances et </text:span><text:span text:style-name="T38">manipulations </text:span><text:span text:style-name="T38">de masse</text:span><text:span text:style-name="T35"> et </text:span><text:span text:style-name="T39">construire des </text:span><text:span text:style-name="T39">réseaux  qui </text:span><text:span text:style-name="T39">respectent nos </text:span><text:span text:style-name="T39">vies privées</text:span><text:span text:style-name="T35">.</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -59378,15 +59398,15 @@
         <text:p>Système GNU/Linux</text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P38">Fait par et pour des <text:span text:style-name="T30">humains qui se respectent</text:span></text:p>
+        <text:p text:style-name="P39">Fait par et pour des <text:span text:style-name="T32">humains qui </text:span><text:span text:style-name="T32">se respectent</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P38">Composé à 99 % de logiciels libres :</text:p>
-        <text:p><text:span text:style-name="T30">communs auditables et réparables</text:span></text:p>
+        <text:p text:style-name="P39">Composé à 99 % de logiciels libres :</text:p>
+        <text:p><text:span text:style-name="T32">communs </text:span><text:span text:style-name="T32">auditables et </text:span><text:span text:style-name="T32">réparables</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P38"><text:span text:style-name="T38">À la pointe</text:span><text:span text:style-name="T39"> de l’usage d’</text:span><text:span text:style-name="T38">OpenPGP</text:span><text:span text:style-name="T39">,</text:span></text:p>
-        <text:p><text:span text:style-name="T39">et notamment du </text:span><text:span text:style-name="T38">dji</text:span><text:span text:style-name="T27"> (Ɉ)</text:span></text:p>
+        <text:p text:style-name="P39"><text:span text:style-name="T40">À la pointe</text:span><text:span text:style-name="T41"> de </text:span><text:span text:style-name="T41">l’usage </text:span><text:span text:style-name="T41">d’</text:span><text:span text:style-name="T40">OpenPGP</text:span><text:span text:style-name="T41">,</text:span></text:p>
+        <text:p><text:span text:style-name="T41">et notamment </text:span><text:span text:style-name="T41">du </text:span><text:span text:style-name="T40">dji</text:span><text:span text:style-name="T28"> (Ɉ)</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -59414,23 +59434,23 @@
       <text:p><text:span text:style-name="T12">Bilan</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr15" draw:text-style-name="P40" draw:layer="layout" svg:width="24.5cm" svg:height="10.507cm" svg:x="2cm" svg:y="2.999cm" presentation:class="subtitle" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr15" draw:text-style-name="P41" draw:layer="layout" svg:width="24.5cm" svg:height="10.507cm" svg:x="2cm" svg:y="2.999cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P39"><text:span text:style-name="T15">Appropriation des idées</text:span><text:span text:style-name="T14"> (« Monnaie libre »)</text:span></text:p>
+        <text:p text:style-name="P40"><text:span text:style-name="T15">Appropriation des </text:span><text:span text:style-name="T15">idées</text:span><text:span text:style-name="T14"> (« Monnaie </text:span><text:span text:style-name="T14">libre »)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P39"><text:span text:style-name="T14">Cadre structuré (Statuts, RI, Siret, etc) : </text:span><text:span text:style-name="T15">foopgp.org</text:span></text:p>
+        <text:p text:style-name="P40"><text:span text:style-name="T14">Cadre structuré </text:span><text:span text:style-name="T14">(Statuts, RI, Siret, </text:span><text:span text:style-name="T14">etc) : </text:span><text:span text:style-name="T15">foopgp.org</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P39"><text:span text:style-name="T14">Outillage </text:span><text:span text:style-name="T15">posé et opérationnel</text:span><text:span text:style-name="T14"> (NextCloud, git, etc)</text:span></text:p>
+        <text:p text:style-name="P40"><text:span text:style-name="T14">Outillage </text:span><text:span text:style-name="T15">posé et </text:span><text:span text:style-name="T15">opérationnel</text:span><text:span text:style-name="T14"> </text:span><text:span text:style-name="T14">(Nextcloud, git, etc)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P39"><text:span text:style-name="T14">Identité numérique décentralisée </text:span><text:span text:style-name="T15">OpenPGP ID</text:span></text:p>
+        <text:p text:style-name="P40"><text:span text:style-name="T14">Identité </text:span><text:span text:style-name="T14">numérique </text:span><text:span text:style-name="T14">décentralisée </text:span><text:span text:style-name="T15">OpenPGP ID</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P39"><text:span text:style-name="T14">Véhicule intégrateur et catalyseur : </text:span><text:span text:style-name="T31">djibian</text:span><text:span text:style-name="T14"> </text:span></text:p>
+        <text:p text:style-name="P40"><text:span text:style-name="T14">Véhicule intégrat</text:span><text:span text:style-name="T14">eur et catalyseur : </text:span><text:span text:style-name="T33">djibian</text:span><text:span text:style-name="T14"> </text:span></text:p>
         <text:list>
          <text:list-item>
           <text:list>
@@ -59439,7 +59459,7 @@
              <text:list-item>
               <text:list>
                <text:list-item>
-                <text:p text:style-name="P39"><text:span text:style-name="T37">Réservations </text:span><text:span text:style-name="T40">et</text:span><text:span text:style-name="T37"> créations</text:span><text:span text:style-name="T37"><text:line-break/></text:span><text:span text:style-name="T37"><text:tab/></text:span><text:span text:style-name="T37"> </text:span><text:span text:style-name="T37"><text:tab/></text:span><text:span text:style-name="T37"> </text:span><text:span text:style-name="T40">des</text:span><text:span text:style-name="T37"> premiers djis </text:span><text:span text:style-name="T40">(Ɉ)</text:span></text:p>
+                <text:p text:style-name="P40"><text:span text:style-name="T39">Réservati</text:span><text:span text:style-name="T39">ons </text:span><text:span text:style-name="T42">et</text:span><text:span text:style-name="T39"> </text:span><text:span text:style-name="T39">créations</text:span><text:span text:style-name="T39"><text:line-break/></text:span><text:span text:style-name="T39"><text:tab/></text:span><text:span text:style-name="T39"> </text:span><text:span text:style-name="T39"><text:tab/></text:span><text:span text:style-name="T39"> </text:span><text:span text:style-name="T42">des</text:span><text:span text:style-name="T39"> </text:span><text:span text:style-name="T39">premiers </text:span><text:span text:style-name="T39">djis </text:span><text:span text:style-name="T42">(Ɉ)</text:span></text:p>
                </text:list-item>
               </text:list>
              </text:list-item>
@@ -59475,27 +59495,27 @@
       <text:p><text:span text:style-name="T12">Objectifs</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame presentation:style-name="pr16" draw:text-style-name="P43" draw:layer="layout" svg:width="25.199cm" svg:height="9.241cm" svg:x="1.4cm" svg:y="3.629cm" presentation:class="subtitle" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr16" draw:text-style-name="P44" draw:layer="layout" svg:width="25.199cm" svg:height="9.241cm" svg:x="1.4cm" svg:y="3.629cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
       <text:list text:style-name="L5">
        <text:list-item>
-        <text:p text:style-name="P41"><text:span text:style-name="T15">Échanger</text:span><text:span text:style-name="T14"> ses </text:span><text:span text:style-name="T15">djis</text:span></text:p>
+        <text:p text:style-name="P42"><text:span text:style-name="T15">Échanger</text:span><text:span text:style-name="T14"> ses </text:span><text:span text:style-name="T15">djis</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P41"><text:span text:style-name="T14">Améliorer la </text:span><text:span text:style-name="T15">structure</text:span><text:span text:style-name="T14"> (SCOP)</text:span></text:p>
+        <text:p text:style-name="P42"><text:span text:style-name="T14">Améliorer la </text:span><text:span text:style-name="T15">structure</text:span><text:span text:style-name="T14"> (SCOP)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P42"><text:span text:style-name="T14">Améliorer la </text:span><text:span text:style-name="T15">qualité des produits</text:span></text:p>
+        <text:p text:style-name="P43"><text:span text:style-name="T14">Améliorer la </text:span><text:span text:style-name="T15">qualité </text:span><text:span text:style-name="T15">des produits</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P42"><text:span text:style-name="T14">Accompagner la </text:span><text:span text:style-name="T15">croissance des adhésions</text:span><text:span text:style-name="T14"> (&gt; 1M)</text:span></text:p>
+        <text:p text:style-name="P43"><text:span text:style-name="T14">Accompagner la </text:span><text:span text:style-name="T15">croissance des </text:span><text:span text:style-name="T15">adhésions</text:span><text:span text:style-name="T14"> (&gt; 1M)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P42"><text:span text:style-name="T20">Accompagner la </text:span><text:span text:style-name="T32">montée en valeur du dji</text:span><text:span text:style-name="T20"> (1 Ɉ &gt; 1k€)</text:span></text:p>
+        <text:p text:style-name="P43"><text:span text:style-name="T20">Accompagner la </text:span><text:span text:style-name="T34">montée en valeur </text:span><text:span text:style-name="T34">du dji</text:span><text:span text:style-name="T20"> (1 Ɉ &gt; 1k€)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P41"><text:span text:style-name="T38">Nous libérer</text:span><text:span text:style-name="T39"> à 90 % du chiffre d’affaire</text:span></text:p>
-        <text:p text:style-name="P41"><text:span text:style-name="T38">des GAFAMPXO</text:span><text:span text:style-name="T39"> d’aujourd’hui.</text:span></text:p>
+        <text:p text:style-name="P42"><text:span text:style-name="T40">Nous libérer</text:span><text:span text:style-name="T41"> à </text:span><text:span text:style-name="T41">90 % du chiffre </text:span><text:span text:style-name="T41">d’affaire</text:span></text:p>
+        <text:p text:style-name="P42"><text:span text:style-name="T40">des </text:span><text:span text:style-name="T40">GAFAMPXO</text:span><text:span text:style-name="T41"> </text:span><text:span text:style-name="T41">d’aujourd’hui.</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -59520,7 +59540,7 @@
    <draw:page draw:name="page16" draw:style-name="dp3" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL2T0">
     <draw:frame presentation:style-name="pr17" draw:text-style-name="P13" draw:layer="layout" svg:width="25.199cm" svg:height="1.993cm" svg:x="1.5cm" svg:y="1cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T12">Merci pour votre attention</text:span></text:p>
+      <text:p><text:span text:style-name="T12">Merci pour </text:span><text:span text:style-name="T12">votre </text:span><text:span text:style-name="T12">attention</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr11" draw:text-style-name="P22" draw:layer="layout" svg:width="12.54cm" svg:height="11.879cm" svg:x="7.96cm" svg:y="3.521cm">
@@ -60141,9 +60161,9 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page17" draw:style-name="dp4" draw:master-page-name="Standard" presentation:presentation-page-layout-name="AL4T1">
-    <draw:frame presentation:style-name="pr6" draw:text-style-name="P44" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.301cm" svg:y="6.5cm" presentation:class="title" presentation:user-transformed="true">
+    <draw:frame presentation:style-name="pr6" draw:text-style-name="P45" draw:layer="layout" svg:width="25.199cm" svg:height="2.629cm" svg:x="1.301cm" svg:y="6.5cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T41">À table !</text:span></text:p>
+      <text:p><text:span text:style-name="T43">À table !</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <presentation:notes draw:style-name="dp2">

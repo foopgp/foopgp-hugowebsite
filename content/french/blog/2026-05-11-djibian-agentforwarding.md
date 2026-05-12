@@ -29,7 +29,7 @@ Sur un système configuré en **Djibian** (paquets `djibian-coreconfig` + `djibi
 sudo bl-djibian adduser --from-certificate D995BB48C67FD9C1E8A03F7CDEC98791AADC429B
 ```
 
-L'empreinte (40 caractères hexa) suffit. L'action `adduser --from-certificate` de la commande `bl-djibian`:
+L'empreinte (40 caractères hexa) suffit. L'action `adduser --from-certificate` de la commande `bl-djibian` :
 
 - importe la clé publique depuis un keyserver (`gpg --recv-key`) ;
 - crée un compte Linux avec les UID/GID dérivés numériquement du `u5`/`u4` de l'utilisateur (donc *identiques sur toutes les machines Djibian*) ;
@@ -90,7 +90,7 @@ Tant qu'une session SSH avec forwarding est ouverte sur un remote, **tout proces
 
 ## Le pari politique
 
-L'opposé du modèle cloud où *vos secrets vivent sur leur serveur, faites-leur confiance*. Ici, **Les serveurs ne peuvent lire vos secrets, sans la clé que vous tenez dans votre main**. Les serveurs ne peuvent plus manipuler vos données, vous en reprenez le contrôle avec votre clé physique [OpenPGP ID](/fr/solutions/openpgp-id/) (Yubikey, NitroKey, …).
+L'opposé du modèle cloud où *vos secrets vivent sur leur serveur, faites-leur confiance*. Ici, **Les serveurs ne peuvent lire vos secrets, sans la clé que vous tenez dans votre main**. Les serveurs ne peuvent plus manipuler vos données, vous en reprenez le contrôle avec votre clé physique [OpenPGP ID](/fr/solutions/openpgp-id/) (YubiKey, NitroKey, …).
 
 Toute la chaîne est **libre, auditable, et tient dans un paquet Debian**.
 

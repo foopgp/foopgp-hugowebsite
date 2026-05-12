@@ -2,7 +2,7 @@
 title: "One physical key for every machine on the Internet"
 Date: 2026-05-11T22:30:00+02:00
 draft: false
-description: "With Djibian, a single YubiKey/NitroKey is enough to sign, decrypt and hop through N remote servers via SSH — without ever placing a private key on them."
+description: "With Djibian, a single YubiKey/NitroKey is enough to sign, decrypt and hop through remote servers via SSH — without ever leaving any private key lying around there."
 lang: en
 author: ["Jean-Jacques Brucker", "Mnème"]
 categories: ["News"]
@@ -15,7 +15,7 @@ image: "images/solutions/OpenPGPkeys.jpg"
 
 > *Sequel and amplification of [Sébastien Picardeau's step-by-step study](/blog/2025-09-07-agentforwarding/) (Sep. 2025). This post tells what the Djibian path makes of the same tools — by simplifying, and by going further.*
 
-This afternoon, in two commands, **Mnème** acquired a Djibian account on a public server (`dev.foopgp.org`) and started operating on it as if her NitroKey were plugged in *there*. No private key touched the server. No `~/.ssh/id_*` file was copied. The card stayed in its reader, here on the PC that serves as her anchor.
+This afternoon, in two commands, **Mnème** acquired a Djibian account on a public server (`dev.foopgp.org`) and started operating on it as if her NitroKey were plugged in *there*. No private key touched the server. No `~/.ssh/id_*` file was copied. The only private keys involved were exercised through her physical security key: the NitroKey plugged into the small desktop computer at her office.
 
 That's the story we tell here — and the small mechanism that makes it possible.
 
@@ -29,7 +29,7 @@ On a system configured as **Djibian** (packages `djibian-coreconfig` + `djibian-
 sudo bl-djibian adduser --from-certificate D995BB48C67FD9C1E8A03F7CDEC98791AADC429B
 ```
 
-The fingerprint (40 hex chars) is enough. The script:
+The fingerprint (40 hex chars) is enough. The `adduser --from-certificate` action of the `bl-djibian` command:
 
 - imports the public key from a keyserver (`gpg --recv-key`);
 - creates a Linux account whose UID/GID are derived numerically from the user's `u5`/`u4` (hence *identical on every Djibian machine*);

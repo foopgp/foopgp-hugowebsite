@@ -1,147 +1,180 @@
 ---
-#Lastmod: 2024-06-04T15:04:27+02:00 # MANAGED by --enableGitInfo
-title: "Réglement intérieur foopgp"
+title: "foopgp internal regulations"
 lang: en
-###date: 2019-07-06T15:27:17+06:00
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-description : "Réglement intérieur de l'association foopgp"
+description : "Internal regulations of the foopgp association"
 image: "images/logos/logo-black-pgp.png"
 categories: ["about"]
-###tags: [""]
 type: "post"
+---
 
+> ℹ️ *This page is a quasi-automatic translation. Only the [French version](/fr/about/rules-of-procedures/) is authoritative.*
 
-## foopgp Internal Regulations
+## foopgp internal regulations
 
 ---
 
- **⚠ Please note that this is approximate English traduction and there may be some misinterpretation. [French version](/fr/about/rules-of-procedures/) ⚠**
+These internal regulations aim to specify [the bylaws](../status/) of the foopgp association, whose purpose is to bring together all individuals or legal entities that use or develop technological solutions based on OpenPGP standards.
 
----
+The internal regulations in force should be given to every new member, and must be available on the association's website: https://foopgp.org/about/rules-of-procedures/ .
 
 
-The purpose of these internal regulations is to clarify the [statutes](../status/) of the foopgp association, whose aim is to bring together all individuals and entities using or developing technological solutions based on OpenPGP standards.
+### Article 1 — Composition
 
-The current internal regulations should be provided to each new member and must be accessible on the association's website: [https://foopgp.org/content/english/about/rules-of-procedures/]().
+The foopgp association is composed of members: individuals, and partners: legal entities.
 
-### Article 1 – Composition
 
-The foopgp association is composed of members (individuals) and partners (entities).
+### Article 2 — Amendment of the internal regulations
 
-### Article 2 – Amendment of the Internal Regulations
+The internal regulations of the foopgp association are established by the board of directors in accordance with article 15 of the [bylaws](../status/).
 
-The internal regulations of the foopgp association are established by the Board of Directors in accordance with Article 15 of the [statutes](../status/).
+They may be amended by the board of directors at the proposal of one of its members.
 
-They can be amended by the Board of Directors upon the proposal of one of its members.
+Any amendment must be approved by the general meeting.
 
-Any modification must be approved by the General Assembly.
+### Article 3 — Membership fees
 
-### Article 3 – Membership Fee
+At any time, members may pay free-amount membership fees, in euros.
 
-For each fiscal year, active members must pay a membership fee, noted as *fee*.
+The greater the sum of these fees, the more power tokens the member will hold (see article 4 of the internal regulations).
 
-The amount and nature of this fee are determined by the Board of Directors, which submits each change to the approval of the General Assembly.
+Any fee paid to the association is acquired definitively. No refund of a fee may be required in the event of resignation, exclusion or death of a member during the year.
 
-Any fee paid to the association is non-refundable. No reimbursement of the fee can be claimed in the event of resignation, exclusion, or death of a member during the year.
+The fee payment should preferably be made by bank transfer[^IBAN] or by cheque made out to the foopgp association.
 
-**The amount of the *fee* defined at the last General Assembly is available on the association's website: https://foopgp.org/about/rules-parameters/**.
+[^IBAN]: IBAN: FR76 1027 8079 9800 0208 2780 107
 
-The fee should preferably be paid by bank transfer (IBAN: FR76 1027 8079 9800 0208 2780 107) or by check payable to the foopgp association.
+### Article 4 — Terms relating to power tokens (see Article 10bis of the Bylaws)
 
-### Article 4 – Provisions Related to Power Tokens (Refer to Article 10bis of the Statutes)
+All fees paid to the association on an individual basis (natural person) entitle the contributor to power tokens, according to the formula:
 
-All donations to the association received individually (from individuals) entitle the donor to power tokens, according to the formula:
-
-jₙ = log₂( (dₙ+dₜ) + 1 ) / *stingynaltyₙ* – jₜ
-
-With:
-* jₙ: the quantity of additional tokens
-* jₜ: the total quantity of tokens from previous donations (jₜ = jₙ₋₁ + jₙ₋₂ + ... + j₀)
-* dₙ: the amount of the nth donation
-* dₜ: the total amount of previous donations (dₜ = dₙ₋₁ + dₙ₋₂ + ... + d₀)
-* *stingynaltyₙ*: the inflation factor at the time of the nth donation
-
-*Note:* jₙ cannot be negative. If the nth donation does not cover the growth of the inflation factor, then the donation is counted but jₙ is zero.
-
-The correspondence tables between donations and tokens, based on the current and future inflation factors *stingynalty*, can be found on the association's website: https://foopgp.org/about/rules-parameters/
-
-### Article 5 – Universal Issuance of New Tokens (see Article 10bis of the Bylaws)
-
-On a monthly basis, new tokens are issued in equal quantity for each active individual member of the association. This mechanism allows for the application of Stéphane Laborde's theory of currency.
-
-Thus, for each of these monthly periods, each active member of the association, meaning up-to-date with their membership fee and obligatory contributions (cf. Articles 3 and 7), may issue, before the end of the said period, a quantity of new tokens equal to:
-
-jₛ= *growth* × Mₜ ∕ N
+**jₙ = log₂( (cₙ+cₜ) + 1 ) / *stingynaltyₙ* – jₜ**
 
 Where:
-* jₛ: the quantity of additional tokens resulting from this issuance
+* log₂(): the binary logarithm — that is, base 2:
+  log₂(x) = ln(x) / ln(2)
+* jₙ: the quantity of additional tokens
+* cₙ: the amount of the *n*-th fee, measured in euros (€).
+* cₜ: the total amount of previous fees (cₜ = cₙ₋₁ + cₙ₋₂ + ... + c₀ )
+* *stingynaltyₙ*: the inflation factor at the time of the *n*-th fee
+* jₜ: the total quantity of tokens issued from previous fees (jₜ = jₙ₋₁ + jₙ₋₂ + ... + j₀)
+
+Where *stingynalty* grows automatically on the first day of each month, at 00:00. If this growth rate is 5 per thousand (5 ‰):
+
+**stingynaltyₙ = stingynaltyₙ₋₁ + 0.005 × stingynaltyₙ₋₁**
+
+*Explanation:* by choosing an inflation factor higher than those calculated in the euro area (e.g. Eurostat), we can create a mild "[Fear Of Missing Opportunity](https://en.wikipedia.org/wiki/Fear_of_missing_out)".
+
+In the event of significant inflation in the euro area, an adjustment of the *stingynalty* parameter may be determined by the board of directors and then adopted at a general meeting.
+
+*Note:* jₙ cannot be negative. If the *n*-th fee does not offset the growth of the *stingynalty* inflation factor, the fee is recorded but no token is created: jₙ is zero.
+
+Note: at the time of the first fee, the formula simplifies to:
+
+**j = log₂(c+1) / *stingynalty***
+
+Where:
+* j: the quantity of tokens
+* c: the amount of the fee, measured in euros (€)
+* *stingynalty*: the inflation factor
+
+**Tables of correspondence between fees and tokens, as a function of current and forthcoming *stingynalty* inflation factors, are available on the association's website: https://foopgp.org/about/rules-parameters/**
+
+### Article 4bis — Certification and validation
+
+In order to use or exchange any power token, each member must be validated by the association.
+
+This validation is automatic as soon as the two following criteria are met:
+- Being up to date with their mandatory contributions (see article 7 of the present document and article 10bis of the Bylaws).
+- Being certified by the association.
+
+This certification goes through a unique identifier, computed from civil-status data conforming to standard ISO/IEC 7501-1:2008[^ISO7501-1].
+
+This certification may rely on OpenPGP webs of trust[^PGPWOT], which can be strengthened during "Key Signing Parties"[^KSP].
+
+[^ISO7501-1]: [ISO/IEC 7501-1:2008 Identification cards — Machine readable travel documents — Part 1: Machine readable passport](https://www.iso.org/standard/45562.html)
+
+[^PGPWOT]: <https://en.wikipedia.org/wiki/Web_of_trust>
+
+[^KSP]: <https://en.wikipedia.org/wiki/Key_signing_party>
+
+### Article 5 — Universal issuance of new tokens (see Article 10bis of the Bylaws)
+
+Each month, new tokens are issued in equal quantity to every validated individual member of the association. **This mechanism allows the application of [Stéphane Laborde's Relative Theory of Money](https://trm.creationmonetaire.info/).**
+
+Thus, for each of these monthly periods, every validated member of the association — that is, certified and up to date with their fees and mandatory contributions (see articles 3 and 7) — may issue, before the end of the said period, a quantity of new tokens equal to:
+
+**jₛ= *growth* × Mₜ ∕ N**
+
+Where:
+* jₛ: the quantity of additional tokens from this issuance
 * *growth*: a growth rate of the total mass of all tokens
-* Mₜ: the total mass of all tokens (prior to this universal issuance)
-* N: The number of active members over the period
+* Mₜ: the total mass of all tokens (before this universal issuance)
+* N: the number of members over the period
 
-The growth rate *growth* adopted during the last general assembly can be consulted on the association's website: https://foopgp.org/about/rules-parameters/
+**The *growth* rate adopted at the last general meeting is available on the association's website: https://foopgp.org/about/rules-parameters/**
 
-### Article 6 – Wallets
+### Article 6 — Wallets
 
 Every token must be associated with one and only one wallet.
 
-Every individual member of the association must possess at least one individual wallet.
+Every individual member of the association must own at least one individual wallet.
 
-Every individual may possess secondary wallets, potentially shareable, in equal proportion, with other individuals.
+Any individual may own secondary wallets, possibly shared, in equal proportion, with other individuals.
 
-These wallets are denoted as "W".
+These wallets are denoted "W".
 
+### Article 7 — Mandatory contributions (see Article 10bis of the Bylaws)
 
-### Article 7 – Mandatory Contributions (see Article 10bis of the Bylaws)
+Mandatory contributions in tokens may be determined by the board of directors and then adopted at a general meeting.
 
-Mandatory contributions in tokens may be determined by the board of directors and then adopted at the general assembly.
+These contributions correspond to a percentage of the value of each wallet at the end of the previous period. They are revisable at a general meeting.
 
-These contributions will correspond to a percentage of the value of each wallet at the end of the previous period. They are subject to revision at the general assembly.
+The sum of these contributions is called the association tax and its rate is denoted "*taxe*".
 
-The total sum of these contributions is referred to as the association tax, and its rate is denoted as "*taxe*".
+They may also be settled in a single payment, for the benefit of the association.
 
-Moreover, they may be settled in one installment, to the benefit of the association.
+As long as these contributions are not settled, the members associated with these wallets are considered suspended (see article 8 of the bylaws).
 
-Until these contributions are settled, members associated with these wallets do not have access to the rights of active members.
+**The total contribution rate *taxe* and its periodicity *taxep* defined at the last general meeting are available on the association's website: https://foopgp.org/about/rules-parameters/**
 
-**The total contribution rate *taxe* and its frequency *taxep*, defined at the last general assembly, can be consulted on the association's website: https://foopgp.org/about/rules-parameters/**
+### Article 8 — Polynomial smoothing of power quantities (see Article 10bis of the Bylaws)
 
-### Article 8 – Polynomial Smoothing of Power Quantities (see Article 10bis of the Bylaws)
+During each fiscal year, members may cast their votes to validate, or not, certain resolutions taken by the board of directors.
 
-During each term, active members may express their votes to approve or reject certain resolutions made by the board of directors.
-
-The number of votes for each active member depends on the quantity of power tokens they possess, following the formula:
+The number of votes of each validated member depends on the quantity of power tokens they hold, according to the formula:
 
 **v = j^*sharp* = jˢʰᵃʳᵖ**
 
 Where:
 * v: the number of votes
-* j: the quantity of tokens registered in their possession at the time of voting
-* *sharp*: the power exponent, ranging from 0 to 1: 0 ≤ p ≤ 1
+* j: the quantity of tokens recorded in their possession at the time of the vote
+* *sharp*: the power exponent, between 0 and 1: 0 ≤ p ≤ 1
 
 *Explanation:*
-* *sharp*=0 corresponds to "One person, one vote"
-* *sharp*=1 corresponds to "One token, one vote"
-* *sharp*=1/2=0.5 corresponds to quadratic voting where v is the square root of j (v=√j)
+* *sharp*=0 is equivalent to "*One person, one vote*"
+* *sharp*=1 is equivalent to "*One token, one vote*"
+* *sharp*=1/2=0.5 is equivalent to quadratic voting where v is the square root of j (v=√j)
 
-**The power exponent *sharp* defined at the last general assembly can be consulted on the association's website: https://foopgp.org/about/rules-parameters/**
+**The power exponent *sharp* defined at the last general meeting is available on the association's website: https://foopgp.org/about/rules-parameters/**
 
-### Article 9 – Expression of Members' Will (see Article 10bis and Article 11 of the Bylaws)
+### Article 9 — Expression of the members' will (see Article 10bis and Article 11 of the Bylaws)
 
-At each general assembly, active members may express their votes to redefine, among values proposed by the board of directors, certain parameters of this internal regulation:
+At each general meeting, members may cast their votes to redefine, among values proposed by the board of directors, certain parameters of the present internal regulations:
 
-* the amount of the fee "fee" (see Article 3 of this internal regulation)
-* the inflation factor *stingynalty* (see Article 4 of this internal regulation)
-* the growth rate "growth" and its frequency "growthp" (see Article 5 of this internal regulation)
-* the rates of mandatory contributions and therefore the association tax rate "taxe" and its frequency "taxep" (see Article 7 of this internal regulation)
-* the power exponent "sharp" (see Article 8 of this internal regulation)
+* the inflation factor *stingynalty* (see article 4 of the present internal regulations)
+* the growth rate "*growth*" and its periodicity "*growthp*" (see article 5 of the present internal regulations)
+* the mandatory contribution rates, and therefore the association tax rate "*taxe*" and its periodicity "*taxep*" (see article 7 of the present internal regulations)
+* the power exponent "*sharp*" (see article 8 of the present internal regulations)
 
-This expression may utilize the [Schulze method](https://en.wikipedia.org/wiki/Schulze_method).
+This expression may use the [Schulze method](https://en.wikipedia.org/wiki/Schulze_method).
 
-*Explanation:* the [Schulze method](https://en.wikipedia.org/wiki/Schulze_method) is a [Condorcet method](https://en.wikipedia.org/wiki/Condorcet_method). The inspiration here comes from the [Debian community](https://www.debian.org/vote/).
+*Explanation:* the [Schulze method](https://en.wikipedia.org/wiki/Schulze_method) is a [Condorcet method](https://en.wikipedia.org/wiki/Condorcet_method). The inspiration here comes from [the Debian community](https://www.debian.org/vote/).
 
 ---
 
-*Adopted in [extraordinary general assembly on Sunday, March 24, 2024, in Pelleautier](/fr/assembly/2024-03-24-report-age/) and in effect since this date until further notice.*
+*Adopted at the [extraordinary general meeting of Sunday 20 July 2025 in Pelleautier](/fr/assembly/2025-07-20-report-age/) and in effect since that date until further notice.*
+
+*[Previous internal regulations](../rules-of-procedures-old/)*
 

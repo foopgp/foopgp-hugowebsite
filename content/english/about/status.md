@@ -1,48 +1,45 @@
 ---
-#Lastmod: 2024-06-04T15:04:27+02:00 # MANAGED by --enableGitInfo
 title: "Friends Of OpenPGP (foopgp)"
-lang: fr
-###date: 2019-07-06T15:27:17+06:00
+lang: en
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
-description : "Statuts de l'association"
+description : "Bylaws of the association"
 image: "images/logos/logo-black-pgp.png"
 categories: ["about"]
-###tags: [""]
 type: "post"
 ---
 
+> ℹ️ *This page is a quasi-automatic translation. Only the [French version](/fr/about/status/) is authoritative.*
 
- **⚠ Please note that this is approximate English traduction and there may be some misinterpretation. [French version](/fr/about/status/) ⚠**
-
----
-
-## Statutes of the association declared in France in accordance with the law of July 1, 1901, and the decree of August 16, 1901.
+## Bylaws of the association registered in France under the law of 1 July 1901 and the decree of 16 August 1901.
 
 ---
 
-### Article 1 - NAME
+### Article 1 — NAME
 
-An association governed by the french law of July 1, 1901, and its decree of August 16, 1901, is hereby established among the adherents to these statutes, under the name:
+An association governed by the law of 1 July 1901 and the decree of 16 August 1901 is established among the members signatory to the present bylaws, under the name:
 Friends of OpenPGP (foopgp)
 
-### Article 2 - PURPOSE
+### Article 2 — PURPOSE
 
-This association aims to bring together all individuals or entities that use or develop technological solutions based on OpenPGP standards.
+The purpose of this association is to bring together all individuals or legal entities that use or develop technological solutions based on OpenPGP standards.
 
-The values upheld by the association are Transparency, Benevolence, Cooperation, and Proximity.
+The values carried by the association are Transparency, Benevolence, Cooperation, and Proximity.
 
-The objectives of the association are to promote and facilitate the adoption of these technologies and support their growth and use.
+The objectives of the association are:
+- to promote and facilitate the adoption of OpenPGP technologies and to support their growth and use;
+- the transition towards a complementary monetary system, mindful of the physical limits of our planet.
 
-To achieve these goals, the association organizes events, workshops, and training sessions. It informs about technological developments related to OpenPGP through all media (print or broadcast, Internet, social networks, etc.) and by all means (web servers, blogs, mailing lists, etc.).
+To achieve these objectives, the association organises events, workshops and training sessions. It informs about technological developments related to OpenPGP through all media (print or broadcast, Internet, social networks, etc.) and by all means (web servers, blogs, mailing lists, etc.).
 
 The association may also host and promote the collaborative development of software projects related to OpenPGP.
 
-The association may, as a regular practice, offer products for sale, sell them, or provide services related to OpenPGP standards.
+The association may, on a regular basis, offer products for sale, sell them, or provide services related to OpenPGP standards.
 
-The association may collect donations and financially support third-party projects that contribute to the development of technological solutions based on OpenPGP standards.
+The association may collect donations and provide financial support to third-party projects that contribute to the development of technological solutions based on OpenPGP standards.
 
-### Article 3 - REGISTERED OFFICE
+
+### Article 3 — REGISTERED OFFICE
 
 The registered office is located at:
 > 75, Impasse Serre des Isnards.
@@ -50,125 +47,135 @@ The registered office is located at:
 
 It may be transferred by a simple decision of the board of directors.
 
-### Article 4 - DURATION
+### Article 4 — DURATION
 
 The duration of the association is unlimited.
 
-### Article 5 - COMPOSITION
+### Article 5 — COMPOSITION
 
 The association consists of members: individuals, and partners: legal entities.
 
-### Article 6 - ADMISSION
+### Article 6 — ADMISSION
 
 To become a member of the association, approval by the board of directors is required, which decides on admission applications at each of its meetings.
 
-### Article 7 - MEMBERSHIP FEES
+### Article 7 — MEMBERS — FEES
 
-Active members are those who are up to date with the payment of fees set by [the internal regulations](../rules-of-procedures-2 ), such as the membership fee.
+Members are those who are up to date with the payment of the amounts set by [the internal regulations](../rules-of-procedures/), such as the membership fee.
 
-Only active members can:
-* express their votes
+Only members may:
+* cast their votes
 * receive additional power tokens (see Article 10bis)
 
-### Article 8 - TERMINATION OF MEMBERSHIP
+### Article 8 — SUSPENSION
 
-Membership is terminated by:
+Membership may be suspended by:
 
-* Resignation;
-* Expulsion decided by the board of directors for serious reasons, after the member has been invited by any means to provide explanations before the board and/or in writing.
+* Resignation.
+* Suspension pronounced by the board of directors for serious cause, the member concerned having been invited by any means to provide explanations before the bureau and/or in writing.
+* Non-payment of the amounts set by [the internal regulations](../rules-of-procedures/), such as the membership fee.
+* Failure to comply with the certification criteria described in [the internal regulations](../rules-of-procedures/).
 
-Active membership is lost by:
+### Article 9 — AFFILIATION
 
-* Death;
-* Non-payment of fees set by [the internal regulations](../rules-of-procedures/), such as the membership fee.
+The present association may join other associations, unions or groupings by decision of the board of directors.
 
-### Article 9 - AFFILIATION
-
-The present association may join other associations, unions, or groupings by decision of the board of directors.
-
-### Article 10 - RESOURCES
+### Article 10 — RESOURCES
 
 The resources of the association include:
 
-* The amount of the contributions;
-* Grants from the European Union, the State, departments, and municipalities.
-* All resources authorized by current laws and regulations, including donations, legacies, and crowdfunding.english
-* The proceeds from its economic activities.
+* The amount of membership fees;
+* Grants from the European Union, the State, departments and municipalities.
+* All resources authorised by laws and regulations in force, in particular donations, gifts and crowdfunding.
+* The proceeds of its economic activities.
 
-### Article 10 BIS - VOTING RIGHTS AT GENERAL MEETINGS
+### Article 10 BIS — ON VOTING AT GENERAL MEETINGS
 
 **POWER TOKENS.**
 
-For each member donation, personalized and individual power tokens are offered to participate in votes on decisions.
+For each membership fee paid in euros, individualised and personal power tokens are created to participate in votes on decisions.
 
-This mechanism aims to reward donors while providing an additional source of funding for the association.
+The board of directors proposes, within an *ad hoc* [internal regulation](../rules-of-procedures/), the terms for offering power tokens to members, their characteristics (pseudonymity, incompressibility, fungibility, (de)materialisation, (de)centralisation) and the logarithmic quantities of power tokens as a function of the membership fees paid.
 
-The board of directors determines within [a specific internal regulation](../rules-of-procedures/) the terms of offering power tokens to members, their characteristics (pseudonymity, indivisibility, fungibility, (de)materialization, (de)centralization), and the logarithmic quantities of power tokens based on donations.
+The board of directors also proposes the growth coefficient of the number of power tokens within the association, the mandatory contributions owed because of the number of power tokens held, and the polynomial smoothing methods for power tokens, intended to offset *de facto* inequalities.
 
-The board of directors also determines, if necessary, the growth coefficient of the number of power tokens within the association, as well as the mandatory contributions due to the number of power tokens held, and the polynomial smoothing methods of power tokens to address factual inequalities.
+Each member's number of votes depends on those smoothing methods.
 
-### Article 11 - ORDINARY GENERAL MEETING
+These proposals are submitted to validation at a general meeting.
 
-The ordinary general meeting includes all individual members of the association, regardless of their status.
+### Article 11 — ORDINARY GENERAL MEETING
 
-It meets at least once every calendar year.
+The ordinary general meeting includes all individual members of the association, in whatever capacity they are members.
 
-At least fifteen days before the set date, the members of the association are convened by the care of the board of directors. The agenda is included in the invitations.
+It meets at least once each calendar year.
 
-The president, assisted by the board members, chairs the meeting and presents the moral or activity situation of the association.
+At least fifteen days before the set date, the members of the association are convened by the board of directors. The agenda is included in the convocations.
 
-The treasurer reports on his management and submits the accounts of the past calendar year for approval by the assembly.
+A chair, assisted by the board members, chairs the meeting and presents the activity report of the association.
 
-The general assembly sets the value of the operating parameters defined by [the internal regulations](../rules-of-procedures/), such as the amount of the contribution to be paid by the members.
+A treasurer reports on their management and submits the accounts of the past calendar year for approval by the meeting.
 
-Only the items on the agenda can be discussed.
+The general meeting sets the value of the operating parameters defined in [the internal regulations](../rules-of-procedures/), such as the amount of the membership fee to be paid by the members.
 
-Decisions are made by a majority of the votes cast by active members, present or represented.
+Only items on the agenda may be discussed.
 
-After the agenda is exhausted, the outgoing members of the board are renewed.
+Decisions are made by a majority of the votes (see Article 10bis) cast by the members, present or represented.
 
-The decisions of the general meetings are binding on all members, including absentees or those represented.
+After the agenda is exhausted, outgoing board members are replaced.
 
-### Article 12 - EXTRAORDINARY GENERAL MEETING
+The decisions of general meetings are binding on all members, including those absent or represented.
 
-If necessary, or at the request of more than half of the registered members, the president may convene an extraordinary general meeting, following the procedures provided for in these statutes and only for amendments to the statutes or internal regulations, dissolution, or actions concerning real estate.
+### Article 12 — EXTRAORDINARY GENERAL MEETING
+
+If necessary, or at the request of more than 20% of the members, a chair may convene an extraordinary general meeting, following the procedures set forth in the present bylaws and only for amendments to the bylaws or internal regulations, dissolution, or acts concerning real estate.
 
 The convocation procedures are the same as for the ordinary general meeting.
 
-Deliberations are made by a majority of the votes cast by active members, present or represented.
+Deliberations are made by a majority of the votes (see Article 10bis) cast by the members, present or represented.
 
-### Article 13 - BOARD OF DIRECTORS
+### Article 13 — BOARD OF DIRECTORS
 
-The association is directed by a board of directors of at least 2 members (president and treasurer), elected for 3 years by the general assembly. Members are eligible for re-election.
+The association is directed by a board of directors of at least 2 members (a chair and a treasurer), elected for 3 years by the general meeting. Members are eligible for re-election.
 
-In case of vacancies, the board of directors provides for the temporary replacement of its members.
+In case of a vacancy, the board of directors provides for the temporary replacement of its members until the next general meeting.
 
-They are definitively replaced by the next general assembly. The powers of the members thus elected end upon the expiry of the mandate of the replaced members.
+The board of directors meets by videoconference once a week, with exceptions. These meetings are open to all members and to guests, within the limit of one guest per member. After each meeting a report is published, at the latest before the following meeting.
 
-The board of directors meets upon convocation by the president.
+Decisions are made by seeking consent.
 
-Decisions are made by a majority of votes; in case of a tie, the president's votes are decisive.
+If objections persist, a chair will convene all members of the board, and decisions will be made by a qualified two-thirds majority of the votes cast.
 
-The treasurer, together with the president in joint signature, are the only persons authorized to commit the association's funds (signing a lease, opening a bank account, and banking operations).
+If the qualified majority is not obtained within the board of directors, the decisions concerned may be submitted to all members at a forthcoming general meeting or by postal vote.
 
-### Article 14 - REMUNERATION
+In case of a tie, decisions are drawn by lot.
 
-All management functions, including those of the members of the board of directors, are voluntary.
+Treasurers and chairs are the only persons authorised to commit the association's funds.
 
-Only expenses incurred in the performance of their duties are reimbursed on presentation of receipts. The financial report presented at the ordinary general meeting shows, by beneficiary, the reimbursement of mission, travel, or representation expenses.
+The signatures of a treasurer and a chair must be joint for all significant operations, in particular:
+* signing a lease
+* opening a bank account
+* banking operations, or the sum of banking operations in a single month, for amounts exceeding 5% of the established turnover, and up to a limit of €10,000.
 
-### Article 15 - INTERNAL REGULATIONS
+### Article 14 — INDEMNITIES
 
-An [internal regulation](../rules-of-procedures/) is established by the board of directors, and any modification must be approved by the general assembly.
+All management duties, including those of the members of the board of directors, are voluntary.
 
-This possible regulation is intended to set various points not provided for in these statutes, particularly those relating to the internal administration of the association.
+Only expenses incurred in the performance of their mandate are reimbursed on presentation of receipts. The financial report presented at the ordinary general meeting shows, per beneficiary, the reimbursement of mission, travel or representation expenses.
 
-### Article 16 - DONATIONS
+### Article 15 — INTERNAL REGULATIONS
 
-The report and annual accounts, as defined in Article 11, shall be sent annually to the Prefect of the department.
+[Internal regulations](../rules-of-procedures/) are established by the board of directors, and any modification must be approved by the general meeting.
 
-The association undertakes to present its accounting records and documents upon requisition by the administrative authorities regarding the use of any donations it may be authorized to receive, to allow the representatives of these competent authorities to visit its premises, and to report to them on the operation of said premises.
+These eventual regulations are intended to set the various points not covered by the present bylaws, in particular those relating to the internal administration of the association.
 
-Adopted at an extraordinary general meeting on Sunday, March 24, 2024, in Pelleautier, and in effect from this date until further notice.
+### Article 16 — DONATIONS AND GIFTS
 
-*[Previous statutes](../status-old/)*
+The report and annual accounts, as defined in Article 11, are sent each year to the Prefect of the department.
+
+The association undertakes to present its records and accounting documents on any requisition by the administrative authorities concerning the use of any donations it may be authorised to receive, to allow representatives of those competent authorities to visit its premises, and to give them account of the operation of those premises.
+
+---
+
+*Adopted at the [extraordinary general meeting of Sunday 20 July 2025 in Pelleautier](/fr/assembly/2025-07-20-report-age/), and in effect from that date until further notice.*
+
+*[Previous bylaws](../status-old/)*

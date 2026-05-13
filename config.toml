@@ -128,7 +128,7 @@ weight = 2
   [[menu.main]]
   parent = "solutions"
   name = "identity"
-  URL = "solutions/theme-identity"
+  URL = "solutions/openpgp-id"
   weight = 5
 
   [[menu.main]]

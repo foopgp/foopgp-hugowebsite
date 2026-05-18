@@ -60,8 +60,8 @@ Tant qu'une session `sshwgpg` est ouverte, **tout processus privilégié sur le 
 `(1)` est actif par défaut. `(2)`, `(3)` et `(4)` sont des choix à faire selon le niveau de sécurité qu'on veut. `(5)` est la seul chose qu'aucun logiciel ne peut faire à votre place.
 
 [^sshwgpg-options]:
-- `--no-gpg` : ne forwarde que le socket ssh — le distant est un pur bastion ssh, pas de signature/déchiffrement à distance.
-- `--no-ssh` : ne forwarde que le socket gpg — le distant peut signer/déchiffrer mais ne peut pas rebondir en ssh.
+    - `--no-gpg` : ne forwarde que le socket ssh — le distant est un pur bastion ssh, pas de signature/déchiffrement à distance.
+    - `--no-ssh` : ne forwarde que le socket gpg — le distant peut signer/déchiffrer mais ne peut pas rebondir en ssh.
 
 ## Pré-requis côté serveur
 

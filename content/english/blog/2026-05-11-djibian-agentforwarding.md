@@ -21,18 +21,18 @@ The correct answer has existed for years (forwarding `gpg-agent` and `ssh-agent`
 
 ## What sshwgpg does, in one paragraph
 
-You plug your OpenPGP smartcard (YubiKey, NitroKey, …) into a local machine. Then:
+On a local machine that has access to your OpenPGP keys, you type:
 
 ```bash
 sshwgpg user@remote.example
 ```
 
-You land on `remote.example` with two extra sockets wired into your shell:
+And you land in a rather welcoming remote session:
 
-- a forwarded **gpg-agent socket** that reaches back to your card — `gpg --sign`, `gpg --decrypt`, `git commit -S` all work *on the remote*, all consult **your** smartcard on the local machine;
-- a forwarded **ssh-agent socket** that reaches back to your OpenPGP authentication subkey — From the remote machine you may `ssh user@otherhost.example` and `git push` over SSH using that same local OpenPGP smartcard.
+- a forwarded **gpg-agent socket** to call your local OpenPGP keys: `gpg --sign`, `gpg --decrypt` or `git commit -S` work *on the remote* using your signing or decryption keys *locally*;
+- a forwarded **ssh-agent socket** to call your ssh-via-OpenPGP keys: `ssh user@other.example` or `sshwgpg user@other.ex` work *on the remote* using your OpenPGP authentication keys *locally*.
 
-Two sockets, one command, one physical key. The bytes of your private key never leave your computer — or better, the silicon deep inside your YubiKey or NitroKey.
+Two sockets, one command, one OpenPGP certificate. The bytes of your private keys never leave your computer — or better still, if you use a YubiKey or NitroKey: the chip deep inside its silicon.
 
 ## Multi-hop: the new bit
 
@@ -45,23 +45,23 @@ serverB$ git commit --gpg-sign             # commit signed by the same OpenPGP k
 serverB$ git push origin main              # commit pushed via ssh authenticated by your OpenPGP key — still on you, still cosy.
 ```
 
-Each hop reaches back, through the previous hops, to the **same physical card** sitting on the original machine. Pull the card out: every hop loses its hands at once. The digital analogue of a handwritten signature at a distance that still remains *of your hand*.
+Each hop reaches back, through the previous hops, to the **same OpenPGP key** on the original machine. Unplug the YubiKey/NitroKey: no machine can sign, decrypt or authenticate any more. Coupled with a YubiKey/NitroKey, **`sshwgpg`** delivers the digital equivalent of a handwritten signature at a distance — yet still *of your hand*.
 
-Two flags adjust the surface forwarded:
+## Risk and attack surface
 
-- `--no-gpg`: forward only the ssh-auth socket — the remote is a pure ssh bastion, no remote sign/decrypt.
-- `--no-ssh`: forward only the gpg socket — the remote can sign/decrypt but cannot re-ssh outwards.
-
-## Trust model — please read this
-
-While a `sshwgpg` session is open, **any privileged process on the remote** (root, or a compromise) can ask your card to sign or authenticate *something other than what you initiated*. That is the structural cost of agent forwarding. We narrow the window with stacked guardrails:
+While a `sshwgpg` session is open, **any privileged process on the remote** (root, or a compromise) can ask your YubiKey/NitroKey to sign or authenticate *something other than what you initiated*. We can shrink the attack surface to a sliver with a few guardrails:
 
 1. `scdaemon` PIN cache: short timeout. The abuse window is time-bounded.
-2. UIF (`Sign=on`, `Decrypt=on`, `Auth=on`) on the card: physical touch required for each signature, decryption or authentication. Strong friction, strong guarantee.
-3. `forcesig=on` on the card: re-prompts PIN at every signature regardless of cache.
-4. Discipline: don't leave `sshwgpg` sessions open on machines you don't administer.
+2. UIF (`Sign=on`, `Decrypt=on`, `Auth=on`) on the security key: physical touch required for each signature, decryption or authentication. Strong friction, strong guarantee.
+3. `forcesig=on` on the security key: re-prompts the PIN at every signature regardless of cache.
+4. **`sshwgpg`**'s `--no-gpg` or `--no-ssh` flags.[^sshwgpg-options]
+5. Discipline: don't leave your YubiKey/NitroKey, or `sshwgpg` sessions, lying around on machines you don't control.
 
-`(1)` is on by default. `(2)` and `(3)` are choices you make for the level of security you want. `(4)` is the only one no software can give you.
+`(1)` is on by default. `(2)`, `(3)` and `(4)` are choices you make for the level of security you want. `(5)` is the only one no software can give you.
+
+[^sshwgpg-options]:
+    - `--no-gpg`: forward only the ssh socket — the remote is a pure ssh bastion, no remote sign/decrypt.
+    - `--no-ssh`: forward only the gpg socket — the remote can sign/decrypt but cannot re-ssh outwards.
 
 ## Server-side prerequisite
 
@@ -103,12 +103,12 @@ And on the user-provisioning side, the **`bashlibs-pgpid`** package turns a 40-h
 What that looks like end-to-end:
 
 ```bash
-# On the server, as admin:
+# On the djibian.example server, as admin:
 sudo bl-djibian adduser --from-certificate D995BB48C67FD9C1E8A03F7CDEC98791AADC429B
 
-# From your laptop, smartcard plugged in:
-sshwgpg mneme@dev.foopgp.org
-# you are now mneme@dev.foopgp.org, signing and pushing as if at home
+# From your machine, your YubiKey/NitroKey plugged in:
+sshwgpg mneme@djibian.example
+# You hold Mneme's security key and know her PIN: you are Mneme; from djibian.example you sign, decrypt or push as if at home
 ```
 
 On a non-Djibian server the same wiring is a `useradd` and several shell lines or configurations — [previous study](/blog/2025-09-07-agentforwarding/) walks through it.
@@ -117,7 +117,7 @@ On a non-Djibian server the same wiring is a `useradd` and several shell lines o
 
 The cloud model says: *your secrets live on their servers, trust them.* What `sshwgpg` (and the rest of the [OpenPGP ID](/solutions/openpgp-id/) chain) makes possible is the opposite: **servers cannot read your secrets without the key you hold in your hand.** They can no longer manipulate your data behind your back; you take the control back, in literal physical form, through a small key on a small reader.
 
-Everything in this chain is **free software, auditable, packaged for Debian.**
+Everything in this chain is **free software, auditable, and ships in our Djibian packages.**
 
 ## Going further
 

@@ -15,7 +15,7 @@ image: "images/solutions/OpenPGPkeys.jpg"
 
 > *Suite et amplification de [l'étude pas-à-pas de Sébastien Picardeau](/fr/blog/2025-09-07-agentforwarding/) (sept. 2025). Même objectif, moins d'étapes, et une propriété nouvelle : le rebond SSH avec la même clé physique.*
 
-Vous vous connectez en ssh sur dix machines par jour. Sur la moitié, vous signez un commit git, vous déchiffrez un fichier, ou vous repartez en ssh ailleurs. La réponse classique consiste à copier vos clés privées sur chacune de ces machines — et à parier que la prochaine fois que l'une d'elles se fait rooter, ce ne sont pas vos secrets qui font le butin. Cette réponse a mal vieilli.
+Vous vous connectez en ssh sur plusieurs machines par jour. Sur lesquelles vous réalisez une signature numérique, déchiffrez un fichier, ou repartez en ssh ailleurs. La réponse classique consiste à copier vos clés privées sur chacune de ces machines — et à parier qu'à la prochaine entreprise de surveillance ou de cyber-attaque, ce ne sont pas vos secrets qui feront le butin. Cette réponse a mal vieilli.
 
 La bonne réponse existe depuis des années (forwarder `gpg-agent` et `ssh-agent` sur SSH), mais sa mise en place est assez pénible pour que presque personne ne la fasse. Nous avons emballé cette bonne réponse dans un outil. Il s'appelle **`sshwgpg`**, il tient en 140 lignes de Bash, et il est livré dans notre dépôt de test dès aujourd'hui.
 
@@ -32,16 +32,17 @@ Vous atterrissez sur `distant.example` avec deux sockets en plus dans votre shel
 - un **socket gpg-agent** forwardé qui rappelle votre carte — `gpg --sign`, `gpg --decrypt`, `git commit -S` fonctionnent *sur le distant* et consultent **votre** carte sur votre PC ;
 - un **socket ssh-agent** forwardé qui rappelle votre sous-clé OpenPGP d'authentification — le distant peut faire `ssh autre-hôte` ou `git push` en SSH avec cette même carte.
 
-Deux sockets, une commande, une clé physique. Les octets de votre clé privée ne quittent jamais le lecteur.
+Deux sockets, une commande, une clé physique. Les octets de votre clé privée ne quittent jamais votre ordinateur, ou mieux : la puce au fin fond du silicium de votre YubiKey ou NitroKey.
 
 ## Rebond SSH : la nouveauté
 
-La plupart des recettes « gpg agent forwarding » qu'on trouve en ligne s'arrêtent au premier saut. Le forwarding de `ssh-agent`, c'est ce que `sshwgpg` ajoute — et dès qu'on l'a, la chaîne s'étend aussi loin que la confiance s'étend :
+La plupart des recettes « gpg agent forwarding » qu'on trouve en ligne s'arrêtent au premier saut. Le forwarding de `ssh-agent`, que les versions 1.x.x de `sshwgpg` ajoutent, c'est ce qui permet de rebondir encore plus loin, plus facilement :
 
 ```bash
-vous$ sshwgpg mneme@serveurA.org
-serveurA$ ssh mneme@serveurB.org             # auth via la carte sur `vous`
-serveurB$ git push origin main               # commit signé par la carte sur `vous`
+vous$ sshwgpg mneme@serveurA.org             # ssh correctement configuré (cf. SSH_AUTH_SOCK) permet de vous authentifier avec votre clé OpenPGP.
+serveurA$ sshwgpg mneme@serveurB.org         # authentification ssh via votre clé OpenPGP, sécurisé physiquement par votre YubiKey/NitroKey.
+serveurB$ git commit --gpg-sign              # commit signé par la même clé OpenPGP, qui n'a pas quitté la YubiKey/NitroKey que vous tenez sur vous.
+serveurB$ git push origin main               # commit poussé via, ssh authentifié par votre clé OpenPGP, encore et toujours sur vous, bien au chaud.
 ```
 
 Chaque saut rappelle, à travers les sauts précédents, **la même carte physique** posée sur la machine d'origine. Débranchez la carte : tous les sauts perdent leurs mains d'un seul coup. L'analogue numérique d'une signature manuscrite à distance qui resterait quand même *de votre main*.
@@ -93,7 +94,12 @@ Le paquet **`djibian-gpgconfig`** fait tout cela pour vous :
 - livre `/etc/gnupg/{gpg.conf,gpg-agent.conf}` réglés pour le forwarding ;
 - dépend de `sshwgpg`, donc installer `djibian-gpgconfig` vous obtient les deux côtés d'un coup.
 
-Et côté provisionnement utilisateur, **`bl-djibian adduser --from-certificate <empreinte>`** transforme une empreinte OpenPGP de 40 caractères hexa en un compte Linux complet : UID/GID dérivés du `u4`/`u5` de l'utilisateur (donc identiques sur toutes les machines Djibian), `$HOME` nommé d'après l'OpenPGP ID, `~/.ssh/authorized_keys` rempli depuis la sous-clé d'authentification du certificat, `~/.gitconfig` et `~/.gnupg` pré-câblés, et même `~/.face` pris depuis l'attribut image du certificat.
+Et côté provisionnement utilisateur, le paquet **`bashlibs-pgpid`** permet de transformer une empreinte OpenPGP de 40 caractères hexa en un compte Linux complet :
+- UID/GID dérivé de l'identifiant [OpenPGP ID](/fr/solutions/openpgp-id/) de l'utilisateur (donc [identique](/fr/blog/2026-04-28-openpgp-id-spec/) sur toutes les machines Djibian) ;
+- `$HOME` égal à l'identifiant [OpenPGP ID](/fr/solutions/openpgp-id/) de l'utilisateur (donc [unique et identique](/fr/blog/2026-04-28-openpgp-id-spec/) sur toutes les machines Djibian) ;
+- `~/.ssh/authorized_keys` rempli depuis la sous-clé d'authentification du certificat OpenPGP ;
+- `~/.gitconfig` et `~/.gnupg` pré-configurés pour signer en utilisant la clé OpenPGP de l'utilisateur ;
+- et même l'image d'avatar, enregistrée dans `~/.face`, est prise depuis l'attribut image du certificat OpenPGP.
 
 Ce que ça donne de bout en bout :
 

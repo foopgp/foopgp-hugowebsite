@@ -15,7 +15,7 @@ image: "images/solutions/OpenPGPkeys.jpg"
 
 > *Sequel and amplification of [Sébastien Picardeau's step-by-step study](/blog/2025-09-07-agentforwarding/) (Sep. 2025). Same goal, fewer steps, and one new property: SSH multi-hop with the same physical key.*
 
-You ssh into ten machines a day. On half of them you sign a git commit, decrypt a file, or ssh further out. The textbook answer is to copy your private keys to each of those machines — and to trust that the next time one of them gets rooted, your secrets are not the prize. That answer aged badly.
+You ssh into several machines a day. On those, you produce digital signatures, decrypt files, or ssh further out. The textbook answer is to copy your private keys to each of those machines — and to bet that the next mass-surveillance push or cyber-attack will not take your secrets as the prize. That answer aged badly.
 
 The correct answer has existed for years (forwarding `gpg-agent` and `ssh-agent` over SSH), but the setup is fiddly enough that almost nobody runs it. We packaged that correct answer as a tool. It is called **`sshwgpg`**, it fits in 140 lines of Bash, and it ships in our test repository today.
 
@@ -32,16 +32,17 @@ You land on `remote.example` with two extra sockets wired into your shell:
 - a forwarded **gpg-agent socket** that reaches back to your card — `gpg --sign`, `gpg --decrypt`, `git commit -S` all work *on the remote*, all consult **your** card on your laptop;
 - a forwarded **ssh-agent socket** that reaches back to your OpenPGP authentication subkey — the remote can `ssh otherhost` and `git push` over SSH using that same card.
 
-Two sockets, one command, one physical key. The bytes of your private key never leave the reader.
+Two sockets, one command, one physical key. The bytes of your private key never leave your computer — or better, the silicon deep inside your YubiKey or NitroKey.
 
 ## Multi-hop: the new bit
 
-Most "gpg agent forwarding" recipes you find online stop at the first hop. The ssh-agent forwarding is what `sshwgpg` adds — and once you have it, the chain extends as far as your trust does:
+Most "gpg agent forwarding" recipes you find online stop at the first hop. The ssh-agent forwarding (added in `sshwgpg` 1.x.x) is what lets you hop further, more easily:
 
 ```bash
-you$ sshwgpg mneme@serverA.org
-serverA$ ssh mneme@serverB.org             # auth via the card on `you`
-serverB$ git push origin main              # commit signed by the card on `you`
+you$ sshwgpg mneme@serverA.org             # ssh properly configured (cf. SSH_AUTH_SOCK) lets you authenticate with your OpenPGP key.
+serverA$ sshwgpg mneme@serverB.org         # ssh auth via your OpenPGP key, physically secured by your YubiKey/NitroKey.
+serverB$ git commit --gpg-sign             # commit signed by the same OpenPGP key, which has not left the YubiKey/NitroKey you carry.
+serverB$ git push origin main              # commit pushed via ssh authenticated by your OpenPGP key — still on you, still cosy.
 ```
 
 Each hop reaches back, through the previous hops, to the **same physical card** sitting on the original machine. Pull the card out: every hop loses its hands at once. The digital analogue of a handwritten signature at a distance that still remains *of your hand*.
@@ -93,7 +94,12 @@ The **`djibian-gpgconfig`** package does all of that for you:
 - ships `/etc/gnupg/{gpg.conf,gpg-agent.conf}` tuned for agent forwarding;
 - depends on `sshwgpg`, so installing `djibian-gpgconfig` gets you both sides at once.
 
-And on the user-provisioning side, **`bl-djibian adduser --from-certificate <fingerprint>`** turns a 40-hex-char OpenPGP fingerprint into a full Linux account: UID/GID derived from the user's `u4`/`u5` (so identical on every Djibian machine), `$HOME` named after the OpenPGP ID, `~/.ssh/authorized_keys` populated from the certificate's authentication subkey, `~/.gitconfig` and `~/.gnupg` pre-wired, even `~/.face` lifted from the certificate's image attribute.
+And on the user-provisioning side, the **`bashlibs-pgpid`** package turns a 40-hex-char OpenPGP fingerprint into a full Linux account:
+- UID/GID derived from the user's [OpenPGP ID](/solutions/openpgp-id/) (so [identical](/blog/2026-04-28-openpgp-id-spec/) across every Djibian machine);
+- `$HOME` equal to the user's [OpenPGP ID](/solutions/openpgp-id/) (so [unique and identical](/blog/2026-04-28-openpgp-id-spec/) across every Djibian machine);
+- `~/.ssh/authorized_keys` populated from the OpenPGP certificate's authentication subkey;
+- `~/.gitconfig` and `~/.gnupg` pre-configured to sign using the user's OpenPGP key;
+- even the avatar image, stored in `~/.face`, is taken from the OpenPGP certificate's image attribute.
 
 What that looks like end-to-end:
 

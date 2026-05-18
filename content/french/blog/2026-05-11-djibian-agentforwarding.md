@@ -2,101 +2,122 @@
 title: "Une seule clé physique pour toutes les machines d'Internet"
 Date: 2026-05-11T22:30:00+02:00
 draft: false
-description: "Avec Djibian, une seule YubiKey/NitroKey suffit pour signer, déchiffrer et rebondir en SSH sur des serveurs distants — sans jamais laisser traîner la moindre clé privée."
+description: "sshwgpg est un petit wrapper ssh qui permet à vos sessions distantes de signer, déchiffrer et rebondir en ssh à travers la carte OpenPGP que vous avez sur vous — sans jamais copier la moindre clé privée. Djibian fait le reste côté serveur en une commande."
 lang: fr
 author: ["Jean-Jacques Brucker", "Mnème"]
 categories: ["News"]
-tags: ["djibian", "openpgp", "ssh", "gnupg", "nitrokey", "yubikey"]
+tags: ["djibian", "openpgp", "ssh", "gnupg", "nitrokey", "yubikey", "sshwgpg"]
 type: "post"
 License: CC By-SA
 bg_image: "images/backgrounds/library.jpg"
 image: "images/solutions/OpenPGPkeys.jpg"
 ---
 
-> *Suite et amplification de l'[étude pas-à-pas de Sébastien Picardeau](/fr/blog/2025-09-07-agentforwarding/) (sept. 2025). Le présent post raconte ce que la voie Djibian fait des mêmes outils — en simplifiant, et en allant plus loin.*
+> *Suite et amplification de [l'étude pas-à-pas de Sébastien Picardeau](/fr/blog/2025-09-07-agentforwarding/) (sept. 2025). Même objectif, moins d'étapes, et une propriété nouvelle : le rebond SSH avec la même clé physique.*
 
-Cet après-midi, en deux commandes, **Mnème** a acquis un compte Djibian sur un serveur public (`dev.foopgp.org`) et y a opéré comme si sa NitroKey était branchée *sur place*. Aucune clé privée n'a touché le serveur. Aucun fichier `~/.ssh/id_*` n'a été copié. Les seules clés privées utilisées l'ont été à travers sa clé physique de sécurité : la Nitrokey branchée sur son petit ordinateur du bureau.
+Vous vous connectez en ssh sur dix machines par jour. Sur la moitié, vous signez un commit git, vous déchiffrez un fichier, ou vous repartez en ssh ailleurs. La réponse classique consiste à copier vos clés privées sur chacune de ces machines — et à parier que la prochaine fois que l'une d'elles se fait rooter, ce ne sont pas vos secrets qui font le butin. Cette réponse a mal vieilli.
 
-C'est l'histoire qu'on raconte ici — et la petite mécanique qui la permet.
+La bonne réponse existe depuis des années (forwarder `gpg-agent` et `ssh-agent` sur SSH), mais sa mise en place est assez pénible pour que presque personne ne la fasse. Nous avons emballé cette bonne réponse dans un outil. Il s'appelle **`sshwgpg`**, il tient en 140 lignes de Bash, et il est livré dans notre dépôt de test dès aujourd'hui.
 
-## La voie courte
+## Ce que fait sshwgpg, en un paragraphe
 
-Sur un système configuré en **Djibian** (paquets `djibian-coreconfig` + `djibian-gpgconfig` installés, `bash-libs` à jour), la procédure se réduit à deux commandes.
-
-**Sur le serveur** (en tant qu'admin) :
+Vous branchez votre carte OpenPGP (YubiKey, NitroKey, …) sur la machine où vous tapez. Puis :
 
 ```bash
+sshwgpg user@distant.example
+```
+
+Vous atterrissez sur `distant.example` avec deux sockets en plus dans votre shell :
+
+- un **socket gpg-agent** forwardé qui rappelle votre carte — `gpg --sign`, `gpg --decrypt`, `git commit -S` fonctionnent *sur le distant* et consultent **votre** carte sur votre PC ;
+- un **socket ssh-agent** forwardé qui rappelle votre sous-clé OpenPGP d'authentification — le distant peut faire `ssh autre-hôte` ou `git push` en SSH avec cette même carte.
+
+Deux sockets, une commande, une clé physique. Les octets de votre clé privée ne quittent jamais le lecteur.
+
+## Rebond SSH : la nouveauté
+
+La plupart des recettes « gpg agent forwarding » qu'on trouve en ligne s'arrêtent au premier saut. Le forwarding de `ssh-agent`, c'est ce que `sshwgpg` ajoute — et dès qu'on l'a, la chaîne s'étend aussi loin que la confiance s'étend :
+
+```bash
+vous$ sshwgpg mneme@serveurA.org
+serveurA$ ssh mneme@serveurB.org             # auth via la carte sur `vous`
+serveurB$ git push origin main               # commit signé par la carte sur `vous`
+```
+
+Chaque saut rappelle, à travers les sauts précédents, **la même carte physique** posée sur la machine d'origine. Débranchez la carte : tous les sauts perdent leurs mains d'un seul coup. L'analogue numérique d'une signature manuscrite à distance qui resterait quand même *de votre main*.
+
+Deux options ajustent la surface forwardée :
+
+- `--no-gpg` : ne forwarde que le socket ssh-auth — le distant est un pur bastion ssh, pas de signature/déchiffrement à distance.
+- `--no-ssh` : ne forwarde que le socket gpg — le distant peut signer/déchiffrer mais ne peut pas rebondir en ssh.
+
+## Modèle de confiance — à lire
+
+Tant qu'une session `sshwgpg` est ouverte, **tout processus privilégié sur le distant** (root, ou compromission) peut demander à votre carte de signer ou d'authentifier *autre chose que ce que vous avez initié*. C'est le coût structurel du forwarding d'agent. On rétrécit la fenêtre avec une pile de garde-fous :
+
+1. `agent-extra-socket` côté `gpg-agent` — périmètre restreint : signe + déchiffre, pas de gestion de clés.
+2. Cache PIN de `scdaemon` : timeout court. La fenêtre d'abus est bornée dans le temps.
+3. UIF (`Sign=on`, `Auth=on`) sur la carte : appui physique requis à chaque signature. Forte friction, forte garantie.
+4. `forcesig=on` sur la carte : redemande le PIN à chaque signature indépendamment du cache.
+5. Discipline : ne pas laisser de sessions `sshwgpg` traîner sur des machines qu'on n'administre pas.
+
+`(1)` et `(2)` sont actifs par défaut. `(3)` et `(4)` sont des choix à faire selon le niveau d'autonomie qu'on veut sur les sessions longues. `(5)` est le seul qu'aucun logiciel ne peut donner à votre place.
+
+## Pré-requis côté serveur
+
+Le `sshd` distant a besoin d'une option :
+
+```
+# /etc/ssh/sshd_config.d/80-StreamLocal.conf
+StreamLocalBindUnlink yes
+```
+
+Sans elle, `sshd` refuse d'écraser un socket forwardé existant et la seconde connexion de `sshwgpg` n'arrive pas à le re-binder. C'est tout le pré-requis côté serveur pour faire fonctionner `sshwgpg` — et [l'étude de Sébastien (2025-09-07)](/fr/blog/2025-09-07-agentforwarding/) en est la version longue.
+
+## Installation
+
+La seule dépendance d'exécution de `sshwgpg` est `openssh-client`. Sources et packaging Debian sur <https://codeberg.org/foopgp/sshwgpg>. Actuellement disponible via le dépôt de test foopgp :
+
+```bash
+sudo apt install sshwgpg
+```
+
+## Djibian : la voie tout-équipée
+
+`sshwgpg` est l'outil côté client. Pour l'utiliser sereinement sur une flotte de serveurs, il faudrait sans Djibian configurer chacun d'eux : l'option `sshd` ci-dessus, un `authorized_keys` avec la bonne sous-clé SSH, `gpg-agent` réglé pour accepter le socket forwardé, `SSH_AUTH_SOCK` pointé sur le socket ssh de gpg-agent dans toute session login, etc.
+
+Le paquet **`djibian-gpgconfig`** fait tout cela pour vous :
+
+- livre `/etc/ssh/sshd_config.d/80-StreamLocal.conf` ;
+- livre `/etc/profile.d/gpg4ssh.sh` (`export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)` — toute session login pointe naturellement sur le socket forwardé) ;
+- livre `/etc/gnupg/{gpg.conf,gpg-agent.conf}` réglés pour le forwarding ;
+- dépend de `sshwgpg`, donc installer `djibian-gpgconfig` vous obtient les deux côtés d'un coup.
+
+Et côté provisionnement utilisateur, **`bl-djibian adduser --from-certificate <empreinte>`** transforme une empreinte OpenPGP de 40 caractères hexa en un compte Linux complet : UID/GID dérivés du `u4`/`u5` de l'utilisateur (donc identiques sur toutes les machines Djibian), `$HOME` nommé d'après l'OpenPGP ID, `~/.ssh/authorized_keys` rempli depuis la sous-clé d'authentification du certificat, `~/.gitconfig` et `~/.gnupg` pré-câblés, et même `~/.face` pris depuis l'attribut image du certificat.
+
+Ce que ça donne de bout en bout :
+
+```bash
+# Sur le serveur, en tant qu'admin :
 sudo bl-djibian adduser --from-certificate D995BB48C67FD9C1E8A03F7CDEC98791AADC429B
+
+# Depuis votre PC, carte branchée :
+sshwgpg mneme@dev.foopgp.org
+# vous êtes mneme@dev.foopgp.org, vous signez et poussez comme à la maison
 ```
 
-L'empreinte (40 caractères hexa) suffit. L'action `adduser --from-certificate` de la commande `bl-djibian` :
-
-- importe la clé publique depuis un keyserver (`gpg --recv-key`) ;
-- crée un compte Linux avec les UID/GID dérivés numériquement du `u5`/`u4` de l'utilisateur (donc *identiques sur toutes les machines Djibian*) ;
-- nomme `$HOME` d'après l'OpenPGP ID : `/home/u5001777236237.945e_43.30_005.38` pour Mnème ;
-- pré-remplit `~/.ssh/authorized_keys` avec la sous-clé OpenPGP d'authentification ;
-- configure `~/.gitconfig` (`signingKey`), `~/.gnupg` (`default-key`), `~/.face` (avatar pris dans le certificat).
-
-**Sur la machine cliente** (avec la YubiKey ou NitroKey branchée) :
-
-```bash
-ssh_gpgforward mneme@dev.foopgp.org
-```
-
-Et c'est tout. À partir de là on signe, on déchiffre, on pousse du git **exactement comme en local**. Aucune clé privée n'est jamais copiée nulle part.
-
-## Le rebond SSH (nouveauté `ssh_gpgforward` v0.2.x)
-
-Depuis la version `0.2.0` du wrapper, on forwarde *aussi* le socket `agent-ssh-socket`. Conséquence : depuis le serveur Djibian sur lequel on vient de se connecter, on peut relancer un `ssh` vers un **autre** Djibian (ou n'importe quel serveur acceptant notre clé publique), et l'authentification utilise toujours la carte restée sur la machine d'origine.
-
-```bash
-# Depuis mon PC, NitroKey branchée
-ssh_gpgforward mneme@serveurA.org
-# Sur serveurA, déjà authentifiée par la NitroKey distante :
-mneme@serveurA:~$ ssh mneme@serveurB.org    # nouveau saut, même NitroKey
-mneme@serveurB:~$ git push origin main      # commit signé, par la NitroKey
-```
-
-Chaque saut interroge **la même carte physique**, à travers une chaîne de sockets Unix forwardés sur SSH. La clé privée ne quitte jamais son lecteur — elle est seulement *projetée* sur les machines où on l'exerce. L'analogue numérique d'une signature manuscrite à distance qui resterait quand même *de votre main*.
-
-La version `0.2.1` (mai 2026) ajoute deux options pour ajuster la surface forwardée :
-
-- `--no-gpg` : ne forwarde que le ssh-socket (le remote sert juste de bastion SSH, pas de signature/déchiffrement).
-- `--no-ssh` : ne forwarde que le gpg-socket (le remote peut signer/déchiffrer mais ne peut pas rebondir en SSH ailleurs).
-
-## Sous le capot
-
-Deux connexions SSH consécutives, orchestrées par `ssh_gpgforward` :
-
-1. **Connexion préparatoire** pour récupérer les chemins exacts des sockets gpg-agent côté serveur. *(En pratique identiques aux nôtres puisque les UID Djibian coïncident, mais le wrapper reste correct dans le cas général.)*
-2. **Connexion finale** avec deux `-o RemoteForward` :
-    - `agent-socket` distant ← **`agent-extra-socket`** local. C'est la *variante restreinte* du gpg-agent : signe/déchiffre, mais ne gère pas les clés. Sandbox.
-    - `agent-ssh-socket` distant ← `agent-ssh-socket` local. Protocole ssh-agent, signe-seulement par nature.
-
-Côté serveur, deux configurations rendent l'opération possible — toutes deux livrées par le paquet **`djibian-gpgconfig`** ([codeberg.org/djibian/djibian-config](https://codeberg.org/djibian/djibian-config/src/branch/main/djibian-gpgconfig)) :
-
-- `/etc/ssh/sshd_config.d/80-StreamLocal.conf` : `StreamLocalBindUnlink yes` — sshd écrase tout socket résiduel avant de binder le socket forwardé.
-- `/etc/profile.d/gpg4ssh.sh` : `export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)` — toute session shell login pointe naturellement sur le socket forwardé.
-
-## Une précaution honnête
-
-Tant qu'une session SSH avec forwarding est ouverte sur un remote, **tout processus privilégié sur ce remote** (root, ou compromission) peut demander à votre carte physique de signer ou d'authentifier *quelque chose d'autre que ce que vous avez initié*. Quatre garde-fous se cumulent :
-
-1. **`agent-extra-socket`** côté gpg : périmètre restreint à signe + déchiffre, pas de management de clés.
-2. **PIN cache scdaemon** : timeout court (quelques minutes), force la re-saisie du PIN. La fenêtre d'abus est limitée dans le temps.
-3. **UIF (`Sign=on` / `Auth=on`)** : si activé sur la carte, oblige un appui physique pour chaque signature. Forte friction, à choisir selon le degré d'autonomie souhaité.
-4. **`forcesig=on`** : option carte qui demande le PIN à chaque signature *indépendamment du cache*. Garde-fou logiciel équivalent à UIF côté ergonomique, sans nécessiter d'appui physique.
-5. **Discipline** : ne pas laisser de sessions traîner sur des machines qu'on n'administre pas.
+Sur un serveur non-Djibian, la même configuration tient en quatre lignes de shell et un `useradd` — et [l'étude de Sébastien](/fr/blog/2025-09-07-agentforwarding/) déroule pas-à-pas la manière de la poser.
 
 ## Le pari politique
 
-L'opposé du modèle cloud où *vos secrets vivent sur leur serveur, faites-leur confiance*. Ici, **Les serveurs ne peuvent lire vos secrets, sans la clé que vous tenez dans votre main**. Les serveurs ne peuvent plus manipuler vos données, vous en reprenez le contrôle avec votre clé physique [OpenPGP ID](/fr/solutions/openpgp-id/) (YubiKey, NitroKey, …).
+Le modèle cloud dit : *vos secrets vivent sur leurs serveurs, faites-leur confiance.* Ce que `sshwgpg` (et le reste de la chaîne [OpenPGP ID](/fr/solutions/openpgp-id/)) rend possible est l'opposé : **les serveurs ne peuvent pas lire vos secrets sans la clé que vous tenez dans votre main.** Ils ne peuvent plus manipuler vos données dans votre dos ; vous en reprenez le contrôle, en forme littéralement physique, à travers une petite clé sur un petit lecteur.
 
-Toute la chaîne est **libre, auditable, et tient dans un paquet Debian**.
+Toute cette chaîne est **libre, auditable, et tient dans un paquet Debian.**
 
 ## Pour aller plus loin
 
-- [L'étude originale de Sébastien Picardeau](/fr/blog/2025-09-07-agentforwarding/) (sept. 2025) — la procédure manuelle, pas-à-pas, utile pour un serveur non-Djibian.
-- Paquet `djibian-gpgconfig` : <https://codeberg.org/djibian/djibian-config>
+- [L'étude originale de Sébastien Picardeau](/fr/blog/2025-09-07-agentforwarding/) (sept. 2025) — la manipulation manuelle côté serveur, pas-à-pas.
+- `sshwgpg` : <https://codeberg.org/foopgp/sshwgpg>
+- `djibian-gpgconfig` : <https://codeberg.org/djibian/djibian-config>
 - `bash-libs` (`bl-djibian adduser`) : <https://codeberg.org/foopgp/bash-libs>
 - L'[atelier Djibian + OpenPGP](/fr/course/djibian-openpgp/) pour pratiquer en présentiel.

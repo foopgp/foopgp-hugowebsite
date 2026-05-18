@@ -83,12 +83,18 @@ systemctl restart sshd.service
 
 > L'option **StreamLocalBindUnlink** permet  de  spécifier  si un fichier de socket de domaine Unix pour la redirection de port local ou distant doit être supprimé avant d’en créer un nouveau. Si le fichier de socket existe déjà et si **StreamLocalBindUnlink** n’est pas activée, sshd ne pourra pas rediriger le port  vers  le  fichier de socket de domaine Unix. Cette option n’est utilisée que pour la redirection de port vers un fichier de socket de domaine Unix.
 
-Pour la suite, on utilise le petit script *ssh_gpgforward* qu'un gentil membre de l'association a [publié sur codeberg](https://codeberg.org/djibian/djibian-config/src/branch/main/djibian-gpgconfig/usr/bin/ssh_gpgforward) (d'où vous pouvez [le télécharger](https://codeberg.org/djibian/djibian-config/raw/branch/main/djibian-gpgconfig/usr/bin/ssh_gpgforward)).
+Pour la suite, on utilise le petit script qu'un gentil membre de l'association a publié sur codeberg. Il s'appelait à l'origine `ssh_gpgforward` ; il est aujourd'hui distribué comme paquet Debian autonome sous le nom **`sshwgpg`** ([SSH With GnuPG](https://codeberg.org/foopgp/sshwgpg), v1.1+). Sur un système Djibian / Debian :
 
 ```bash
-ssh_gpgforward user@demo.org "hostname -f | gpg --clearsign | tee  >( gpg --verify)"
+sudo apt install sshwgpg
 ```
-Et l'on peut signer, déchiffrer etc. exactement comme en local.
+
+(*Note 2026-05 : dans djibian-gpgconfig ≥ 0.10, `/usr/bin/ssh_gpgforward` est conservé comme lien symbolique de compatibilité vers `/usr/bin/sshwgpg`, donc les scripts existants et les commandes ci-dessous continuent de fonctionner.*)
+
+```bash
+sshwgpg user@demo.org "hostname -f | gpg --clearsign | tee  >( gpg --verify )"
+```
+Et l'on peut signer, déchiffrer etc. exactement comme en local. L'article [Une seule clé physique pour toutes les machines d'Internet](/fr/blog/2026-05-11-djibian-agentforwarding/) (mai 2026) déroule la variante Djibian tout-équipée de la même idée, plus le rebond SSH.
 
 Sources:
 

@@ -83,12 +83,18 @@ systemctl restart sshd.service
 
 > Option **StreamLocalBindUnlink** specifies whether to remove an existing Unix-domain socket file for local or remote port forwarding before creating a new one.  If the socket file already exists and StreamLocalBindUnlink is not enabled, sshd will be unable to forward the port to the Unix-domain socket file. This option is only used for port forwarding to a Unix-domain socket file.
 
-Next, we use the small wrapper *ssh_gpgforward* that a kind member of the association has [published on codeberg](https://codeberg.org/djibian/djibian-config/src/branch/main/djibian-gpgconfig/usr/bin/ssh_gpgforward) (where you can [download it](https://codeberg.org/djibian/djibian-config/raw/branch/main/djibian-gpgconfig/usr/bin/ssh_gpgforward)).
+Next, we use the small wrapper that a kind member of the association has published on codeberg. It was first called `ssh_gpgforward` and is now distributed as its own Debian package, **`sshwgpg`** ([SSH With GnuPG](https://codeberg.org/foopgp/sshwgpg), v1.1+). On a Djibian / Debian system:
 
 ```bash
-ssh_gpgforward user@demo.org "hostname -f | gpg --clearsign | tee  >( gpg --verify)"
+sudo apt install sshwgpg
 ```
-So we can sign, decrypt, etc. exactly as we would locally.
+
+(*Note 2026-05: in djibian-gpgconfig ≥ 0.10, `/usr/bin/ssh_gpgforward` is kept as a backward-compat symlink to `/usr/bin/sshwgpg`, so existing scripts and the snippets below keep working.*)
+
+```bash
+sshwgpg user@demo.org "hostname -f | gpg --clearsign | tee  >( gpg --verify )"
+```
+So we can sign, decrypt, etc. exactly as we would locally. The standalone post [One physical key for every machine on the Internet](/blog/2026-05-11-djibian-agentforwarding/) (May 2026) shows the Djibian batteries-included variant of the same idea, plus SSH multi-hop.
 
 Sources:
 

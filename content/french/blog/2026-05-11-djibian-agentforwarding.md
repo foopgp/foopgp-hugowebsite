@@ -49,7 +49,7 @@ Chaque saut rappelle, à travers les rebonds précédents, **la même clé OpenP
 
 ## Risques et surface d'attaque
 
-Tant qu'une session `sshwgpg` est ouverte, **tout processus privilégié sur le distant** (root, ou compromission) peut demander à votre YubiKey/NitroKey de signer ou d'authentifier *autre chose que ce que vous avez initié*. On réduit la surface d'attaque à peau de chagrin avec quelques garde-fous :
+Tant qu'une clé physique de sécurité est connectée, **tout processus privilégié** (root, ou compromission) peut demander à votre YubiKey/NitroKey de signer, déchiffrer ou authentifier *autre chose que ce que vous avez initié*. On réduit la surface d'attaque à peau de chagrin avec quelques garde-fous :
 
 1. Cache PIN de `scdaemon` : timeout court. La fenêtre d'abus est bornée dans le temps.
 2. UIF (`Sign=on`, `Decrypt=on`, `Auth=on`) sur la clé de sécurité : appui physique requis à chaque signature, déchiffrement ou authentification. Forte friction, forte garantie.
@@ -111,11 +111,11 @@ sshwgpg mneme@djibian.example
 # Vous avez la clé de sécurité de Mnème et connaissez son code PÏN : vous êtes Mnème ; depuis djibian.example : vous signez, déchiffrez ou téléchargez comme à la maison
 ```
 
-Sur un serveur non-Djibian, la même configuration tient en un `useradd` et plusieurs lignes de shell — [l'étude précédente](/fr/blog/2025-09-07-agentforwarding/) déroule pas-à-pas la manière de la poser.
+Sur un serveur non-Djibian, la même configuration tient en un `useradd` et plusieurs lignes de shell — voir [l'étude précédente](/fr/blog/2025-09-07-agentforwarding/).
 
 ## Le pari politique
 
-Le modèle cloud dit : *vos secrets vivent sur leurs serveurs, faites-leur confiance.* Ce que `sshwgpg` (et le reste de la chaîne [OpenPGP ID](/fr/solutions/openpgp-id/)) rend possible est l'opposé : **les serveurs ne peuvent pas lire vos secrets sans la clé que vous tenez dans votre main.** Ils ne peuvent plus manipuler vos données dans votre dos ; vous en reprenez le contrôle, en forme littéralement physique, à travers une petite clé sur un petit lecteur.
+Le modèle cloud dit : *vos secrets vivent sur leurs serveurs, faites-leur confiance.* Ce que `sshwgpg` (et le reste de la chaîne [OpenPGP ID](/fr/solutions/openpgp-id/)) rend possible est l'opposé : **les serveurs ne peuvent pas lire vos secrets sans la clé que vous tenez dans votre main.** Ils ne peuvent plus manipuler vos données dans votre dos ; vous en reprenez le contrôle, littéralement, à travers votre clé physique de sécurité : YubiKey ou NitroKey.
 
 Toute cette chaîne est **libre, auditable, et tient dans nos paquets Djibian.**
 

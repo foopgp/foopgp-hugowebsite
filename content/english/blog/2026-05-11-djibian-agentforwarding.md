@@ -49,7 +49,7 @@ Each hop reaches back, through the previous hops, to the **same OpenPGP key** on
 
 ## Risk and attack surface
 
-While a `sshwgpg` session is open, **any privileged process on the remote** (root, or a compromise) can ask your YubiKey/NitroKey to sign or authenticate *something other than what you initiated*. We can shrink the attack surface to a sliver with a few guardrails:
+While a physical security key is plugged in, **any privileged process** (root, or a compromise) can ask your YubiKey/NitroKey to sign, decrypt or authenticate *something other than what you initiated*. We can shrink the attack surface to a sliver with a few guardrails:
 
 1. `scdaemon` PIN cache: short timeout. The abuse window is time-bounded.
 2. UIF (`Sign=on`, `Decrypt=on`, `Auth=on`) on the security key: physical touch required for each signature, decryption or authentication. Strong friction, strong guarantee.
@@ -111,11 +111,11 @@ sshwgpg mneme@djibian.example
 # You hold Mneme's security key and know her PIN: you are Mneme; from djibian.example you sign, decrypt or push as if at home
 ```
 
-On a non-Djibian server the same wiring is a `useradd` and several shell lines or configurations — [previous study](/blog/2025-09-07-agentforwarding/) walks through it.
+On a non-Djibian server the same wiring is a `useradd` and several shell lines or configurations — see [previous study](/blog/2025-09-07-agentforwarding/).
 
 ## The political wager
 
-The cloud model says: *your secrets live on their servers, trust them.* What `sshwgpg` (and the rest of the [OpenPGP ID](/solutions/openpgp-id/) chain) makes possible is the opposite: **servers cannot read your secrets without the key you hold in your hand.** They can no longer manipulate your data behind your back; you take the control back, in literal physical form, through a small key on a small reader.
+The cloud model says: *your secrets live on their servers, trust them.* What `sshwgpg` (and the rest of the [OpenPGP ID](/solutions/openpgp-id/) chain) makes possible is the opposite: **servers cannot read your secrets without the key you hold in your hand.** They can no longer manipulate your data behind your back; you take the control back, literally, through your physical security key: a YubiKey or NitroKey.
 
 Everything in this chain is **free software, auditable, and ships in our Djibian packages.**
 

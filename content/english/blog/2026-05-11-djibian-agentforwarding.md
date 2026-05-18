@@ -17,11 +17,11 @@ image: "images/solutions/OpenPGPkeys.jpg"
 
 You ssh into several machines a day. On those, you produce digital signatures, decrypt files, or ssh further out. The textbook answer is to copy your private keys to each of those machines — and to bet that the next mass-surveillance push or cyber-attack will not take your secrets as the prize. That answer aged badly.
 
-The correct answer has existed for years (forwarding `gpg-agent` and `ssh-agent` over SSH), but the setup is fiddly enough that almost nobody runs it. We packaged that correct answer as a tool. It is called **`sshwgpg`**, it fits in 140 lines of Bash, and it ships in our test repository today.
+The correct answer has existed for years (forwarding `gpg-agent` and `ssh-agent` over SSH), but the setup is fiddly enough that almost nobody runs it. We packaged that correct answer as a tool. It is called **`sshwgpg`**, it fits in 140 lines of Bash, and it ships in [our Debian package repository](/solutions/activity-rd/#djibianfoopgporg).
 
 ## What sshwgpg does, in one paragraph
 
-You plug your OpenPGP smartcard (YubiKey, NitroKey, …) into the machine you are typing on. Then:
+You plug your OpenPGP smartcard (YubiKey, NitroKey, …) into a local machine. Then:
 
 ```bash
 sshwgpg user@remote.example
@@ -29,8 +29,8 @@ sshwgpg user@remote.example
 
 You land on `remote.example` with two extra sockets wired into your shell:
 
-- a forwarded **gpg-agent socket** that reaches back to your card — `gpg --sign`, `gpg --decrypt`, `git commit -S` all work *on the remote*, all consult **your** card on your laptop;
-- a forwarded **ssh-agent socket** that reaches back to your OpenPGP authentication subkey — the remote can `ssh otherhost` and `git push` over SSH using that same card.
+- a forwarded **gpg-agent socket** that reaches back to your card — `gpg --sign`, `gpg --decrypt`, `git commit -S` all work *on the remote*, all consult **your** smartcard on the local machine;
+- a forwarded **ssh-agent socket** that reaches back to your OpenPGP authentication subkey — From the remote machine you may `ssh user@otherhost.example` and `git push` over SSH using that same local OpenPGP smartcard.
 
 Two sockets, one command, one physical key. The bytes of your private key never leave your computer — or better, the silicon deep inside your YubiKey or NitroKey.
 
@@ -56,13 +56,12 @@ Two flags adjust the surface forwarded:
 
 While a `sshwgpg` session is open, **any privileged process on the remote** (root, or a compromise) can ask your card to sign or authenticate *something other than what you initiated*. That is the structural cost of agent forwarding. We narrow the window with stacked guardrails:
 
-1. `gpg-agent`'s `agent-extra-socket` — restricted scope: sign + decrypt, no key management.
-2. `scdaemon` PIN cache: short timeout. The abuse window is time-bounded.
-3. UIF (`Sign=on`, `Auth=on`) on the card: physical touch required for each signature. Strong friction, strong guarantee.
-4. `forcesig=on` on the card: re-prompts PIN at every signature regardless of cache.
-5. Discipline: don't leave `sshwgpg` sessions open on machines you don't administer.
+1. `scdaemon` PIN cache: short timeout. The abuse window is time-bounded.
+2. UIF (`Sign=on`, `Decrypt=on`, `Auth=on`) on the card: physical touch required for each signature, decryption or authentication. Strong friction, strong guarantee.
+3. `forcesig=on` on the card: re-prompts PIN at every signature regardless of cache.
+4. Discipline: don't leave `sshwgpg` sessions open on machines you don't administer.
 
-`(1)` and `(2)` are on by default. `(3)` and `(4)` are choices you make for the level of autonomy you want on long sessions. `(5)` is the only one no software can give you.
+`(1)` is on by default. `(2)` and `(3)` are choices you make for the level of security you want. `(4)` is the only one no software can give you.
 
 ## Server-side prerequisite
 
@@ -77,7 +76,7 @@ Without it, `sshd` refuses to overwrite an existing forwarded socket and `sshwgp
 
 ## Install
 
-`sshwgpg`'s only runtime dependency is `openssh-client`. Source and Debian packaging live at <https://codeberg.org/foopgp/sshwgpg>. Currently shipped via foopgp's test repository:
+`sshwgpg`'s only runtime dependency is `openssh-client`. Source and Debian packaging live at <https://codeberg.org/foopgp/sshwgpg>. Currently shipped via [our Debian packages repository](/solutions/activity-rd/#djibianfoopgporg):
 
 ```bash
 sudo apt install sshwgpg
@@ -112,7 +111,7 @@ sshwgpg mneme@dev.foopgp.org
 # you are now mneme@dev.foopgp.org, signing and pushing as if at home
 ```
 
-On a non-Djibian server the same wiring is four shell lines and a `useradd` — and Sébastien's [study](/blog/2025-09-07-agentforwarding/) walks through it.
+On a non-Djibian server the same wiring is a `useradd` and several shell lines or configurations — [previous study](/blog/2025-09-07-agentforwarding/) walks through it.
 
 ## The political wager
 
@@ -122,7 +121,6 @@ Everything in this chain is **free software, auditable, packaged for Debian.**
 
 ## Going further
 
-- Sébastien Picardeau's [original study](/blog/2025-09-07-agentforwarding/) (Sep. 2025) — the manual server-side walk-through.
 - `sshwgpg`: <https://codeberg.org/foopgp/sshwgpg>
 - `djibian-gpgconfig`: <https://codeberg.org/djibian/djibian-config>
 - `bash-libs` (`bl-djibian adduser`): <https://codeberg.org/foopgp/bash-libs>

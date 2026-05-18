@@ -89,7 +89,7 @@ Next, we use the small wrapper that a kind member of the association has publish
 sudo apt install sshwgpg
 ```
 
-(*Note 2026-05: in djibian-gpgconfig ≥ 0.10, `/usr/bin/ssh_gpgforward` is kept as a backward-compat symlink to `/usr/bin/sshwgpg`, so existing scripts and the snippets below keep working.*)
+(*Note 2026-05: in djibian-gpgconfig ≥ 0.10, `/usr/bin/ssh_gpgforward` is kept as a backward-compat symlink to `/usr/bin/sshwgpg`, so existing scripts keep working.*)
 
 ```bash
 sshwgpg user@demo.org "hostname -f | gpg --clearsign | tee  >( gpg --verify )"

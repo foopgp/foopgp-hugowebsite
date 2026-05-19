@@ -16,9 +16,11 @@ aliases:
 
 **OpenPGP ID** is a digital identity that is:
 
-- **universal** — usable anywhere OpenPGP is accepted (email signatures, SSH authentication, package signatures, Git certificates, …);
-- **sovereign** — your private keys are *yours*, on a physical key (YubiKey / NitroKey) you hold in your hand;
+- **universal** — characterises [all persons](/blog/2026-04-28-openpgp-id-spec/) of the solar system: physical (humans), legal (organisations), even digital (AI agents);
 - **decentralised** — no central authority, no third-party identity provider, [no cloud vault to trust](/blog/2026-05-11-djibian-agentforwarding/);
+- **respectful** — built on the strongest encryption primitives we have, so as to protect your privacy as fully as possible;
+- **interoperable** — usable anywhere OpenPGP is accepted (email signing and encryption, document signing, SSH authentication, supply-chain traceability, git, …);
+- **sovereign** — your private keys are *yours*, on a physical key (YubiKey / NitroKey) you hold in your hand;
 - **long-lived** — your `u4` or `u5` identifier is stable for life; the certificates that back it can be rotated (post-quantum migration, etc.) without changing who you are.
 
 Since [January 2026](/blog/2026-01-19-djibian-release/), **OpenPGP ID is in production**, shipped in the [Djibian GNU/Linux](/blog/2026-01-19-djibian-release/) operating system.

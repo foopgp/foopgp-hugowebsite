@@ -25,6 +25,14 @@ However, the comparison ends there, as these tokens have other very interesting 
 
 ---
 
+## And the physical security key ?
+
+As soon as a member has generated **6.42 Ɉ** through their cumulative subscriptions (i.e. ≈ €146 in May 2026), they receive a **physical security key** ([Yubikey](https://www.yubico.com/) or [Nitrokey](https://www.nitrokey.com/)) **pre-configured with their [OpenPGP ID](/blog/2026-01-19-djibian-release/)** — the cornerstone of foopgp's digital sovereignty. The threshold in euros rises by approximately 0.5% each month: this is the **stingynalty** mechanism made tangible, and an incentive to join the association sooner rather than later. [^threshold]
+
+[^threshold]: The threshold is expressed **in djis**, not in euros — so it evolves automatically and impartially with the association's monetary mechanics, with no commercial manager having to arbitrate it. The `bl-foopgp t2g 6.42` function lets anyone verify the equivalent in euros at any given date.
+
+---
+
 Ready to generate djis ?
 
 Then 🌟 [**subscribe**](//api.foopgp.org/onboarding/) [here](//api.foopgp.org/onboarding/) 🌟.

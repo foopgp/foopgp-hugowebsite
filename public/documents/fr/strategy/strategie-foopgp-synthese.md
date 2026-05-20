@@ -34,7 +34,7 @@ Tout le reste — formations, ateliers, livres, prestations — est l'**instrume
 
 Quatre sources de revenus, complémentaires :
 
-- **Adhésion + clé de sécurité offerte** — l'adhérent reçoit son OpenPGP ID matériel à l'entrée. La cotisation est libre (depuis l'AGE de juillet 2025).
+- **Adhésion** — cotisation libre depuis l'AGE de juillet 2025. À partir du palier de **6,42 Ɉ générés** par ses cotisations cumulées (≈ 146 € en mai 2026), l'adhérent reçoit sa clé de sécurité physique (Yubikey ou Nitrokey) pré-configurée avec son OpenPGP ID. Le palier en euros croît mécaniquement avec la *stingynalty* (~+0,5 %/mois) : c'est l'incitation pour les pionniers.
 - **Ateliers et formations** — déclaration prestataire de formation n° 93050099805 (préfecture PACA) ; OPCO accessible. Série mensuelle d'ateliers Djibian, conférences (Capitole du Libre, JDLL, etc.).
 - **Parrainage** — chaque nouvelle adhésion verse 10 % de la cotisation, transformés en djis sur la plateforme de change, au(x) parrain(s) à parts égales (ou à l'asso si aucun parrain). Mécanisme à un seul niveau, transparent, traçable via la web of trust OpenPGP — explicitement non-MLM.
 - **Prestations B2B de souveraineté** — aux PME et collectivités cherchant à se prémunir d'EUDI Wallet et autres tiers de confiance imposés.

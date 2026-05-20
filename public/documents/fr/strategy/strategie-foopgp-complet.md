@@ -18,8 +18,7 @@ version: "1.0"
 
 Le diagnostic économique est centré sur l'**effet Cantillon** : ceux qui créent la monnaie nouvelle décident de fait de ce qui aura de la valeur demain. Ce privilège est la racine commune de l'asymétrie sociale, de la croissance forcée, et indirectement des conflits qui détruisent le vivant. Sortir de l'effet Cantillon est une **condition nécessaire** d'une société plus harmonieuse — pas suffisante, mais indispensable.
 
-Notre modèle commercial articule quatre sources de revenus : adhésions (avec clé de sécurité offerte[^terminonoly maladroite d'un point de vu comptable, proposition d'amélioration ? ]), ateliers et formations professionnelles, parrainage à 10 % alimenté par une plateforme de change €↔Ɉ (pierre angulaire à mettre en service en 2027), et prestations B2B de souveraineté numérique pour PME et collectivités.
-
+Notre modèle commercial articule quatre sources de revenus : adhésions (incluant une clé de sécurité physique débloquée à un palier de **6,42 Ɉ générés** — soit ≈ 146 € en mai 2026, palier croissant avec la *stingynalty*), ateliers et formations professionnelles, parrainage à 10 % alimenté par une plateforme de change €↔Ɉ (pierre angulaire à mettre en service en 2027), et prestations B2B de souveraineté numérique pour PME et collectivités.
 
 L'estimation plancher de la valeur du dji, par traduction de la masse monétaire M1 de la zone euro selon notre formule de création, est de **≈ 2 369 €** (février 2026). À moyen terme, **1 Ɉ > 2 500 €** est plausible.
 
@@ -85,7 +84,7 @@ Les paramètres en vigueur (votés en AG, méthode de Schulze) :
 
 ### 5.1 Sources de revenus existantes
 
-- **Adhésions** : cotisation libre depuis l'AGE de juillet 2025. L'adhérent reçoit en contrepartie sa clé matérielle (Yubikey ou Nitrokey) configurée avec son OpenPGP ID. Élégance commerciale : on transforme un acte d'achat en geste d'adhésion, alignant l'objet vendu avec l'objet social.
+- **Adhésions** : cotisation libre depuis l'AGE de juillet 2025. À partir du palier de **6,42 Ɉ générés** par ses cotisations cumulées, l'adhérent reçoit sa **clé matérielle** (Yubikey ou Nitrokey) pré-configurée avec son OpenPGP ID. Le palier exprimé en djis (et non en euros) rend la contrepartie matérielle indépendante d'un tarif fixe : elle est conditionnée à un niveau d'engagement associatif mesurable, qui croît mécaniquement avec la *stingynalty* (cf. *5.3*). Élégance commerciale : on transforme un acte d'achat en geste d'adhésion, alignant l'objet vendu avec l'objet social.
 - **Ateliers Djibian mensuels** : série pédagogique pour découvrir et prendre en main l'écosystème.
 - **Formations professionnelles** : déclaration prestataire n° 93050099805 (préfecture PACA), donc accès aux dispositifs OPCO et CPF.
 - **Conférences et stands publics** : Capitole du Libre, JDLL, AlpOSS, Forum du numérique 04, etc. Recettes modestes mais utiles pour le sourcing d'adhérents.
@@ -110,11 +109,24 @@ Quatre garde-fous **explicitement non-MLM** :
 
 **Recherche de financements ciblés.** Des fondations de financement de logiciel libre et d'innovation sociale soutiennent ce type d'infrastructure publique numérique. La cible 2026-2027 est de financer le développement de la plateforme de change et la finalisation de Djibian Onboarding.
 
-### 5.3 La mécanique stingynalty comme outil commercial
+### 5.3 La mécanique stingynalty comme outil commercial et pédagogique
 
-La *stingynalty* (+5 ‰/mois) joue un double rôle :
+La *stingynalty* (+5 ‰/mois) joue un triple rôle :
+
 - **Économique** : absorber l'inflation de l'euro et la pression à la baisse du dividende universel mensuel.
 - **Commercial** : créer une **incitation à cotiser tôt** — chaque mois qui passe voit le coût en euros de génération du dji augmenter, et donc le rendement diminuer. C'est du pricing dynamique inscrit dans la mécanique monétaire elle-même, sans qu'aucun gestionnaire commercial ait à l'arbitrer.
+- **Pédagogique** : le palier d'attribution de la clé matérielle est exprimé en djis (**6,42 Ɉ** pour une Yubikey 5 NFC), donc son équivalent en euros monte mécaniquement chaque mois. Le nouvel adhérent voit la *stingynalty* s'incarner dans un chiffre concret, sans avoir à comprendre la formule logarithmique.
+
+| Date | Cotisations cumulées nécessaires pour atteindre 6,42 Ɉ |
+|---|---|
+| 2026-02-01 | ≈ 135,57 € |
+| 2026-05-01 | ≈ 146,08 € |
+| 2026-08-01 | ≈ 157,57 € |
+| 2026-12-01 | ≈ 174,61 € |
+| 2027-05-01 | ≈ 199,09 € |
+| 2028-05-01 | ≈ 276,43 € |
+
+Soit environ +0,5 % par mois, et un doublement en deux ans. La marge entre le palier et le coût d'achat de la clé (Yubikey 5 NFC ≈ 50-65 € HT en achat groupé) reste suffisante pour financer le reste de l'activité associative — sans pour autant constituer une vente déguisée à prix coûtant ni une cotisation symbolique avec gros avantage en nature : un équilibre qui sécurise le régime fiscal de non-lucrativité.
 
 ## 6. Plateforme de change €↔Ɉ
 

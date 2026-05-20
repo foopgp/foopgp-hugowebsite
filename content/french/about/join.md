@@ -78,6 +78,14 @@ Reprenons maintenant le cours du temps : il est tout à fait probable qu'un jour
 
 ---
 
+## Et la clé de sécurité physique ?
+
+Dès qu'il a généré **6,42 Ɉ** par ses cotisations cumulées (soit ≈ 146 € en mai 2026), chaque adhérent reçoit une **clé de sécurité physique** ([Yubikey](https://www.yubico.com/) ou [Nitrokey](https://www.nitrokey.com/)) **pré-configurée avec son [OpenPGP ID](/fr/blog/2026-01-19-djibian-release/)** — la pierre angulaire de la souveraineté numérique foopgp. Le palier en euros augmente d'environ 0,5 % chaque mois : c'est l'effet **stingynalty** rendu palpable, et une incitation à rejoindre l'association tôt plutôt que tard. [^palier]
+
+[^palier]: Le palier est exprimé **en djis**, pas en euros — donc il évolue automatiquement et impartialement avec la mécanique monétaire de l'association, sans qu'aucun gestionnaire commercial ait à l'arbitrer. La fonction `bl-foopgp t2g 6.42` permet de vérifier à tout moment l'équivalent en euros à la date courante.
+
+---
+
 ## Prêt à générer vos djis ?
 
 Alors prenez votre part et 🌟 [**inscrivez-vous**](//api.foopgp.org/onboarding/) [ici](//api.foopgp.org/onboarding/) 🌟.

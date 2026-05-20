@@ -99,7 +99,7 @@ As soon as you have generated **6.42 Ɉ** through your cumulative subscriptions,
 
 Then take your stake and 🌟 [**subscribe**](//api.foopgp.org/onboarding/) [here](//api.foopgp.org/onboarding/) 🌟.
 
-Or please [download the membership form here](/documents/fr/bulletin-adhesion-foopgp.pdf) [in French], fill it out, and send it.
+Or please [download the membership form here](/documents/fr/bulletin-adhesion-foopgp.pdf) (currently in French only), fill it out, and send it.
 
 - by post, accompanied by a cheque made out to the ***foopgp association***,
   *75 Impasse Serre des Isnards*, *05000 Pelleautier*, France.

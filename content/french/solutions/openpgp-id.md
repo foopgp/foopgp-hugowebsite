@@ -72,7 +72,7 @@ Quelques propriétés à connaître :
 
 Une fois vos clés privées fragmentées sur papiers, un autre outil foopgp lit les QR codes via une webcam ou un scanner et **grave** les clés dans une YubiKey ou une NitroKey. Les clés privées ne touchent jamais ni votre disque dur, ni un service tiers.
 
-À partir de là, votre identité s'exerce **depuis votre main** sur n'importe quelle service compatible OpenPGP : [signer](/fr/solutions/signature/), [déchiffrer](/fr/solutions/theme-email/), vous authentifier](/fr/blog/2026-05-11-djibian-agentforwarding/) — la clé physique **OpenPGP ID** protège votre vie privée et votre singularité humaine dans le monde numérique.
+À partir de là, votre identité s'exerce **depuis votre main** sur n'importe quel service compatible OpenPGP : [signer](/fr/solutions/signature/), [déchiffrer](/fr/solutions/theme-email/), [vous authentifier](/fr/blog/2026-05-11-djibian-agentforwarding/) — la clé physique **OpenPGP ID** protège votre vie privée et votre singularité humaine dans le monde numérique.
 
 ### Bref,
 

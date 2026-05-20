@@ -80,7 +80,7 @@ Reprenons maintenant le cours du temps : il est tout à fait probable qu'un jour
 
 ## Et la clé de sécurité physique ?
 
-Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous recevez une **clé de sécurité physique** ([Yubikey](https://www.yubico.com/) ou [Nitrokey](https://www.nitrokey.com/)) pour **[utiliser](/fr/blog/2026-01-19-djibian-release/) votre identité numérique décentralisée [OpenPGP ID](fr/solutions/openpgp-id/)** — la pierre angulaire de la souveraineté numérique foopgp. Le palier en euros augmente d'environ 0,5 % chaque mois : c'est l'effet **stingynalty** rendu palpable, et une incitation à rejoindre l'association tôt plutôt que tard. [^palier]
+Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous recevez une **clé de sécurité physique** ([Yubikey](https://www.yubico.com/) ou [Nitrokey](https://www.nitrokey.com/)) pour **[utiliser](/fr/blog/2026-01-19-djibian-release/) votre identité numérique décentralisée [OpenPGP ID](/fr/solutions/openpgp-id/)** — la pierre angulaire de la souveraineté numérique foopgp. Le palier en euros augmente d'environ 0,5 % chaque mois : c'est l'effet **stingynalty** rendu palpable, et une incitation à rejoindre l'association tôt plutôt que tard. [^palier]
 
 | Date | Cotisations nécessaires pour atteindre 6,42 Ɉ |
 |---|---|

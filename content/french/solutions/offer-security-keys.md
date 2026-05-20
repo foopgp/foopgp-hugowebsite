@@ -7,12 +7,15 @@ bg_image: "images/backgrounds/Cartographie.jpg"
 description : "Comment foopgp fournit les clés matérielles à ses adhérents"
 ---
 
-L'association foopgp **ne vend pas** ses clés de sécurité physiques : elle les **fournit** à ses adhérents dès que leurs cotisations cumulées ont généré la quantité de djis correspondante.
+L'association foopgp **ne vend pas** ses clés de sécurité physiques : elle les **fournit** à ses adhérents dès que leurs cotisations cumulées ont généré **6,42 Ɉ** (≈ 146 € en mai 2026).
 
-| Modèle | Palier |
-|---|---|
-| **Yubikey 5 NFC** | **6,42 Ɉ générés** (≈ 146 € en mai 2026) |
-| Nitrokey 3A NFC | *palier en cours d'arbitrage par le CA* |
+Modèles disponibles, au choix de l'adhérent et selon arrivage :
+
+- **YubiKey 5 NFC**
+- **Nitrokey 3A NFC**
+- *Bientôt* : **YubiKey 5C NFC**
+
+Toutes au même palier — l'association absorbe les différences de marge.
 
 ## Pourquoi un palier *en djis*, pas un prix en euros ?
 

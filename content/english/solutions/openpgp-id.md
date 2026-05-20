@@ -55,7 +55,7 @@ On a **Djibian** system, the **Djibian Onboarding** graphical frontend (develope
 
 ### Backup: paper QR codes, secret sharing
 
-The foopgp tools generate and print your private key as **paper fragments**, encrypted and split using a [secret sharing](https://en.wikipedia.org/wiki/Secret_sharing) (Shamir) scheme: by default, **3 fragments out of 5 printed** are enough to reconstitute the key.
+The foopgp tools generate and print your private keys as **paper fragments**, encrypted and split using a [secret sharing](https://en.wikipedia.org/wiki/Secret_sharing) (Shamir) scheme: by default, **3 fragments out of 5 printed** are enough to reconstitute the key.
 
 | ![Fragment 1/5](/images/solutions/openpgp-id/qrcode-fragment-1.png) | ![Fragment 2/5](/images/solutions/openpgp-id/qrcode-fragment-2.png) | ![Fragment 5/5](/images/solutions/openpgp-id/qrcode-fragment-5.png) |
 |:---:|:---:|:---:|
@@ -70,9 +70,9 @@ A few properties to know:
 
 ### Transposing to a physical key
 
-Once your private key has been fragmented onto paper sheets, another foopgp tool reads the QR codes via a webcam or scanner and **etches** the keys into a YubiKey or a NitroKey. The private key never touches a hard drive nor a third-party service.
+Once your private keys have been fragmented onto paper sheets, another foopgp tool reads the QR codes via a webcam or scanner and **etches** the keys into a YubiKey or a NitroKey. The private keys never touch a hard drive nor a third-party service.
 
-From there, your identity is exercised **from your hand** on any Djibian machine: [sign, decrypt, authenticate over SSH](/blog/2026-05-11-djibian-agentforwarding/) — the physical key remains the single source of signature.
+From there, your identity is exercised **from your hand** on any OpenPGP-compatible service: [sign](/solutions/signature/), [decrypt](/solutions/theme-email/), [authenticate](/blog/2026-05-11-djibian-agentforwarding/) — the **OpenPGP ID** physical key protects your privacy and your human singularity in the digital world.
 
 ### In short
 

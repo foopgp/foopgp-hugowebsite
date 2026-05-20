@@ -55,7 +55,7 @@ Sur un système **Djibian**, le frontend graphique **Djibian Onboarding** (déve
 
 ### Sauvegarde : QR codes papier, secret réparti
 
-Les outils foopgp génèrent et impriment votre clé privée sous forme de **fragments papier**, chiffrés et répartis selon un schéma de [secret réparti](https://fr.wikipedia.org/wiki/Secret_r%C3%A9parti) (Shamir) : par défaut, **3 fragments suffisent sur 5 imprimés** pour reconstituer la clé.
+Les outils foopgp génèrent et impriment vos clés privées sous forme de **fragments papier**, chiffrés et répartis selon un schéma de [secret réparti](https://fr.wikipedia.org/wiki/Secret_r%C3%A9parti) (Shamir) : par défaut, **3 fragments suffisent sur 5 imprimés** pour reconstituer la clé.
 
 | ![Fragment 1/5](/images/solutions/openpgp-id/qrcode-fragment-1.png) | ![Fragment 2/5](/images/solutions/openpgp-id/qrcode-fragment-2.png) | ![Fragment 5/5](/images/solutions/openpgp-id/qrcode-fragment-5.png) |
 |:---:|:---:|:---:|
@@ -70,9 +70,9 @@ Quelques propriétés à connaître :
 
 ### Transposition vers une clé physique
 
-Une fois votre clé privée fragmentée sur papiers, un autre outil foopgp lit les QR codes via une webcam ou un scanner et **grave** les clés dans une YubiKey ou une NitroKey. La clé privée ne touche jamais ni votre disque dur, ni un service tiers.
+Une fois vos clés privées fragmentées sur papiers, un autre outil foopgp lit les QR codes via une webcam ou un scanner et **grave** les clés dans une YubiKey ou une NitroKey. Les clés privées ne touchent jamais ni votre disque dur, ni un service tiers.
 
-À partir de là, votre identité s'exerce **depuis votre main** sur n'importe quelle machine Djibian : [signer, déchiffrer, vous authentifier en SSH](/fr/blog/2026-05-11-djibian-agentforwarding/) — la clé physique reste l'unique source de signature.
+À partir de là, votre identité s'exerce **depuis votre main** sur n'importe quelle service compatible OpenPGP : [signer](/fr/solutions/signature/), [déchiffrer](/fr/solutions/theme-email/), vous authentifier](/fr/blog/2026-05-11-djibian-agentforwarding/) — la clé physique **OpenPGP ID** protège votre vie privée et votre singularité humaine dans le monde numérique.
 
 ### Bref,
 

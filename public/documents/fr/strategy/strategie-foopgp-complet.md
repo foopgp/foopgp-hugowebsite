@@ -117,14 +117,14 @@ La *stingynalty* (+5 ‰/mois) joue un triple rôle :
 - **Commercial** : créer une **incitation à cotiser tôt** — chaque mois qui passe voit le coût en euros de génération du dji augmenter, et donc le rendement diminuer. C'est du pricing dynamique inscrit dans la mécanique monétaire elle-même, sans qu'aucun gestionnaire commercial ait à l'arbitrer.
 - **Pédagogique** : le palier d'attribution de la clé matérielle est exprimé en djis (**6,42 Ɉ** pour une Yubikey 5 NFC), donc son équivalent en euros monte mécaniquement chaque mois. Le nouvel adhérent voit la *stingynalty* s'incarner dans un chiffre concret, sans avoir à comprendre la formule logarithmique.
 
-| Date | Cotisations cumulées nécessaires pour atteindre 6,42 Ɉ |
+| Date | Cotisations nécessaires pour atteindre 6,42 Ɉ |
 |---|---|
-| 2026-02-01 | ≈ 135,57 € |
-| 2026-05-01 | ≈ 146,08 € |
-| 2026-08-01 | ≈ 157,57 € |
-| 2026-12-01 | ≈ 174,61 € |
-| 2027-05-01 | ≈ 199,09 € |
-| 2028-05-01 | ≈ 276,43 € |
+| février 2026  | ≈ 135,57 € |
+| mai 2026      | ≈ 146,08 € |
+| août 2026     | ≈ 157,57 € |
+| décembre 2026 | ≈ 174,61 € |
+| mai 2027      | ≈ 199,09 € |
+| mai 2028      | ≈ 276,43 € |
 
 Soit environ +0,5 % par mois, et un doublement en deux ans. La marge entre le palier et le coût d'achat de la clé (Yubikey 5 NFC ≈ 50-65 € HT en achat groupé) reste suffisante pour financer le reste de l'activité associative — sans pour autant constituer une vente déguisée à prix coûtant ni une cotisation symbolique avec gros avantage en nature : un équilibre qui sécurise le régime fiscal de non-lucrativité.
 

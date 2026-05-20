@@ -80,7 +80,16 @@ Reprenons maintenant le cours du temps : il est tout à fait probable qu'un jour
 
 ## Et la clé de sécurité physique ?
 
-Dès qu'il a généré **6,42 Ɉ** par ses cotisations cumulées (soit ≈ 146 € en mai 2026), chaque adhérent reçoit une **clé de sécurité physique** ([Yubikey](https://www.yubico.com/) ou [Nitrokey](https://www.nitrokey.com/)) **pré-configurée avec son [OpenPGP ID](/fr/blog/2026-01-19-djibian-release/)** — la pierre angulaire de la souveraineté numérique foopgp. Le palier en euros augmente d'environ 0,5 % chaque mois : c'est l'effet **stingynalty** rendu palpable, et une incitation à rejoindre l'association tôt plutôt que tard. [^palier]
+Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous recevez une **clé de sécurité physique** ([Yubikey](https://www.yubico.com/) ou [Nitrokey](https://www.nitrokey.com/)) pour **[utiliser](/fr/blog/2026-01-19-djibian-release/) votre identité numérique décentralisée [OpenPGP ID](fr/solutions/openpgp-id/)** — la pierre angulaire de la souveraineté numérique foopgp. Le palier en euros augmente d'environ 0,5 % chaque mois : c'est l'effet **stingynalty** rendu palpable, et une incitation à rejoindre l'association tôt plutôt que tard. [^palier]
+
+| Date | Cotisations nécessaires pour atteindre 6,42 Ɉ |
+|---|---|
+| février 2026  | ≈ 135,57 € |
+| mai 2026      | ≈ 146,08 € |
+| août 2026     | ≈ 157,57 € |
+| décembre 2026 | ≈ 174,61 € |
+| mai 2027      | ≈ 199,09 € |
+| mai 2028      | ≈ 276,43 € |
 
 [^palier]: Le palier est exprimé **en djis**, pas en euros — donc il évolue automatiquement et impartialement avec la mécanique monétaire de l'association, sans qu'aucun gestionnaire commercial ait à l'arbitrer. La fonction `bl-foopgp t2g 6.42` permet de vérifier à tout moment l'équivalent en euros à la date courante.
 

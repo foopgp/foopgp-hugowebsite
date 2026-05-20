@@ -30,13 +30,13 @@ sshwgpg user@remote.example
 And you land in a rather welcoming remote session:
 
 - a forwarded *gpg-agent* socket to call your local OpenPGP keys: `gpg --sign`, `gpg --decrypt` or `git commit -S` work *on the remote* using your signing or decryption keys *locally*;
-- a forwarded *ssh-agent* socket to call your ssh-via-OpenPGP keys: `ssh user@other.example` or `sshwgpg user@other.ex` work *on the remote* using your OpenPGP authentication keys *locally*.
+- a forwarded *gpg-agent.ssh* socket to call your local ssh-via-OpenPGP keys: `ssh user@other.example` or `sshwgpg user@other.ex` work *on the remote* using your OpenPGP authentication keys *locally*.
 
 Two sockets, one command, one OpenPGP certificate. The bytes of your private keys never leave your computer — or better still, if you use a YubiKey or NitroKey: the chip deep inside its silicon.
 
-## Multi-hop: the new bit
+## SSH & GPG hops
 
-Most "gpg agent forwarding" recipes you find online stop at the first hop. The *ssh-agent* forwarding that **sshwgpg** includes is what lets you hop further, more easily:
+Most "gpg agent forwarding" recipes you find online stop at the first hop. Forwarding the *SSH_AUTH_SOCK=...gpg-agent.ssh* socket that **sshwgpg** includes is what lets you hop further, more easily:
 
 ```bash
 you$ sshwgpg mneme@serverA.org             # ssh properly configured (cf. SSH_AUTH_SOCK) lets you authenticate with your OpenPGP key.

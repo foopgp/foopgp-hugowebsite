@@ -30,13 +30,13 @@ sshwgpg user@distant.example
 Et vous atterrissez dans une session à distance assez sympathique :
 
 - un socket *gpg-agent* redirigé pour appeler vos clés OpenPGP locales : `gpg --sign`, `gpg --decrypt` ou `git commit -S` fonctionnent *à distance* en utilisant *localement* vos clés de signature ou de déchiffrement ;
-- un socket *ssh-agent* redirigé pour appeler vos clés ssh-via-OpenPGP : `ssh user@other.example` ou `sshwgpg user@other.ex` fonctionnent *à distance* en utilisant *localement* vos clés d'authentification OpenPGP.
+- un socket *gpg-agent.ssh* redirigé pour appeler vos clés ssh-via-OpenPGP locales : `ssh user@other.example` ou `sshwgpg user@other.ex` fonctionnent *à distance* en utilisant *localement* vos clés d'authentification OpenPGP.
 
 Deux sockets, une commande, un certificat OpenPGP. Les octets de vos clés privées ne quittent jamais votre ordinateur, ou mieux si vous utilisez une YubiKey ou NitroKey : la puce au fin fond de leur silicium.
 
-## Rebond SSH : la nouveauté
+## Rebonds SSH & GPG
 
-La plupart des tutoriels « gpg agent forwarding » qu'on trouve sur Internet s'arrêtent au premier saut. La redirection de *ssh-agent* que **sshwgpg** inclut, permet de rebondir encore plus loin, plus facilement :
+La plupart des tutoriels « gpg agent forwarding » qu'on trouve sur Internet s'arrêtent au premier saut. La redirection du socket *SSH_AUTH_SOCK=...gpg-agent.ssh* que **sshwgpg** inclut, permet de rebondir encore plus loin, plus facilement :
 
 ```bash
 vous$ sshwgpg mneme@serveurA.org             # ssh correctement configuré (cf. SSH_AUTH_SOCK) permet de vous authentifier avec votre clé OpenPGP.

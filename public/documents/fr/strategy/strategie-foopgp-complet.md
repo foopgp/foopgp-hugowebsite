@@ -18,7 +18,8 @@ version: "1.0"
 
 Le diagnostic économique est centré sur l'**effet Cantillon** : ceux qui créent la monnaie nouvelle décident de fait de ce qui aura de la valeur demain. Ce privilège est la racine commune de l'asymétrie sociale, de la croissance forcée, et indirectement des conflits qui détruisent le vivant. Sortir de l'effet Cantillon est une **condition nécessaire** d'une société plus harmonieuse — pas suffisante, mais indispensable.
 
-Notre modèle commercial articule quatre sources de revenus : adhésions (avec clé de sécurité offerte), ateliers et formations professionnelles, parrainage à 10 % alimenté par une plateforme de change €↔Ɉ (pierre angulaire à mettre en service en 2027), et prestations B2B de souveraineté numérique pour PME et collectivités.
+Notre modèle commercial articule quatre sources de revenus : adhésions (avec clé de sécurité offerte[^terminonoly maladroite d'un point de vu comptable, proposition d'amélioration ? ]), ateliers et formations professionnelles, parrainage à 10 % alimenté par une plateforme de change €↔Ɉ (pierre angulaire à mettre en service en 2027), et prestations B2B de souveraineté numérique pour PME et collectivités.
+
 
 L'estimation plancher de la valeur du dji, par traduction de la masse monétaire M1 de la zone euro selon notre formule de création, est de **≈ 2 369 €** (février 2026). À moyen terme, **1 Ɉ > 2 500 €** est plausible.
 
@@ -46,9 +47,9 @@ Chaque incident démontre la même chose : la centralisation crée des points de
 2. **Obligation de croissance** : la création monétaire actuelle est gagée sur de la dette portant intérêt, ce qui force le système à produire toujours plus pour rembourser le cumul.
 3. **Croissance infinie dans un monde fini** → tensions extractivistes, conflits géopolitiques, dérèglement climatique.
 
-**Le remède partiel : la monnaie libre.** Une monnaie est dite *libre* (TRM, Théorie Relative de la Monnaie, Stéphane Laborde, 2010) si elle est créée *symétriquement* entre tous les participants par un dividende universel. Aucun acteur ne reçoit en premier ; aucun choix d'allocation n'est imposé par un créateur monétaire. Le dji applique ce principe.
+**Le remède partiel : la « monnaie libre ».** Une monnaie est dite *libre* (TRM, Théorie Relative de la Monnaie, Stéphane Laborde, 2010) si elle est créée *symétriquement* entre tous les participants par un dividende universel. Aucun acteur ne reçoit en premier ; aucun choix d'allocation n'est imposé par un créateur monétaire. Le dji applique ce principe.
 
-**Une nuance importante.** Le dji est une **condition nécessaire** d'une société qui pèse moins sur le vivant. Il n'est pas une condition *suffisante*. Une partie des tensions humaines (rivalités géopolitiques, démographie, héritages historiques) ne se règle pas par la seule réforme monétaire. Notre prudence intellectuelle nous interdit de présenter le dji comme un remède universel — il est une *pièce du puzzle*, peut-être centrale, mais pas seule.
+**Une nuance importante.** Réformer notre système monétaire ne résoudra pas l'ensemble des tensions humaines (rivalités géopolitiques, démographie, héritages historiques). Notre prudence intellectuelle nous interdit de présenter la « monnaie libre » comme un remède universel — le dji est une *pièce du puzzle*, condition nécessaire mais non-suffisante.
 
 ## 4. Trois produits, trois couches
 
@@ -113,7 +114,7 @@ Quatre garde-fous **explicitement non-MLM** :
 
 La *stingynalty* (+5 ‰/mois) joue un double rôle :
 - **Économique** : absorber l'inflation de l'euro et la pression à la baisse du dividende universel mensuel.
-- **Commercial** : créer une **incitation à cotiser tôt** — chaque mois passé sans cotiser dégrade le rendement en djis. C'est du pricing dynamique inscrit dans la mécanique monétaire elle-même, sans qu'aucun gestionnaire commercial ait à l'arbitrer.
+- **Commercial** : créer une **incitation à cotiser tôt** — chaque mois qui passe voit le coût en euros de génération du dji augmenter, et donc le rendement diminuer. C'est du pricing dynamique inscrit dans la mécanique monétaire elle-même, sans qu'aucun gestionnaire commercial ait à l'arbitrer.
 
 ## 6. Plateforme de change €↔Ɉ
 

@@ -22,10 +22,16 @@ doc="$1"
 base="${doc%.md}"
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 work_dir="$(pwd)"
-logo_path="$script_dir/../../../images/banner/foopgp+dji+djibian.png"
+pdfdoc="$(date +"%Y%m%d")-$base.pdf"
 
-# Resolve absolute logo path (chromium needs file:// for local images).
-logo_abs="$(realpath "$logo_path")"
+# relative logo path
+#logo_path="../../../../images/banner/foopgp+dji+djibian.png"
+
+# logo path for chromium (needs file:// for local images).
+#logo_path="file://$(realpath "$script_dir/$logo_path")"
+
+# compromise for both (html and pdf)
+logo_path="https://foopgp.org/images/banner/foopgp+dji+djibian.png"
 
 # Stage assets next to the input so relative href="style.css" resolves.
 cp "$script_dir/style.css" "$work_dir/style.css"
@@ -37,9 +43,11 @@ pandoc \
   --standalone \
   --template="$script_dir/template.html" \
   --metadata=lang:fr \
-  --metadata="logo-path:file://$logo_abs" \
+  --metadata="logo-path:$logo_path" \
   -o "$base.html" \
   "$doc"
+
+echo "Generated: $base.html"
 
 # Render HTML -> PDF via chromium headless.
 chromium \
@@ -48,11 +56,12 @@ chromium \
   --disable-gpu \
   --no-pdf-header-footer \
   --print-to-pdf-no-header \
-  --print-to-pdf="$base.pdf" \
+  --print-to-pdf="$pdfdoc" \
   "file://$(realpath "$base.html")" \
   2>/dev/null
 
 # Cleanup the staged stylesheet copy.
 rm -f "$work_dir/style.css"
 
-echo "Generated: $base.pdf"
+echo "Generated: $pdfdoc"
+

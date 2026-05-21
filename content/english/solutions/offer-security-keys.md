@@ -19,15 +19,16 @@ All at the same threshold — the association absorbs the margin differences.
 
 ## Why a *djis* threshold, not a price in euros?
 
-Because the threshold expressed in euros evolves automatically with the **stingynalty** — an associative inflation factor that grows by 5 per mil each month ([current parameter](/about/rules-parameters/)). The threshold is never fixed: it climbs mechanically, month after month, rewarding the pioneers.
+Because the threshold expressed in euros evolves automatically with the **stingynalty** — a factor largely offsetting inflation in euros, rising by 5 per mil each month ([current parameter](/about/rules-parameters/)). The threshold is never fixed: it climbs mechanically, month after month, rewarding the pioneers.
 
 {{< dji-threshold-chart target="6.42" >}}
 
 On the curve above, every passing month makes the *same* amount of djis more expensive in euros:
 
 - In **July 2025** (AGE of Pelleautier, introduction of the parameter): ≈ €114 for 6.42 Ɉ.
-- In **May 2026** (today): ≈ €146.
-- In **May 2028**: ≈ €276.
+- In **June 2026**: = €149.79.
+- In **May 2027**: = €199.09.
+- In **April 2028**: = €268.77.
 
 ---
 

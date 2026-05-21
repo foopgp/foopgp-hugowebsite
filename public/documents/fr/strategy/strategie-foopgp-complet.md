@@ -1,9 +1,9 @@
 ---
 title: "foopgp — stratégie complète"
 subtitle: "Sortir de l'effet Cantillon"
-date: 2026-05-08
+date: 2026-05-21
 author: "Friends of OpenPGP (foopgp)"
-version: "1.0"
+version: "1.1"
 ---
 
 > *Pour une société plus harmonieuse et respectueuse.*

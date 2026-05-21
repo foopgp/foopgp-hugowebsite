@@ -19,15 +19,16 @@ Toutes au même palier — l'association absorbe les différences de marge.
 
 ## Pourquoi un palier *en djis*, pas un prix en euros ?
 
-Parce que le palier exprimé en euros évolue automatiquement avec la **stingynalty** — un facteur d'inflation associatif qui croît chaque mois de 5 ‰ ([paramètre en vigueur](/fr/about/rules-parameters/)). Le seuil n'est jamais figé : il monte mécaniquement, mois après mois, et récompense ainsi les pionniers.
+Parce que le palier exprimé en euros évolue automatiquement avec la **stingynalty** — un facteur compensant largement l'inflation en euro, en augmentant de 5 ‰ chaque mois ([paramètre en vigueur](/fr/about/rules-parameters/)). Le seuil n'est jamais figé : il monte mécaniquement, mois après mois, et récompense ainsi les pionniers.
 
 {{< dji-threshold-chart target="6.42" >}}
 
 Sur la courbe ci-dessus, chaque mois qui passe rend la *même* quantité de djis plus chère en euros :
 
 - En **juillet 2025** (AGE de Pelleautier, introduction du paramètre) : ≈ 114 € pour 6,42 Ɉ.
-- En **mai 2026** (aujourd'hui) : ≈ 146 €.
-- En **mai 2028** : ≈ 276 €.
+- En **juin 2026**: = 149,79 €.
+- En **mai 2027**: = 199,09 €.
+- En **avril 2028**: = 268,77 €.
 
 ---
 

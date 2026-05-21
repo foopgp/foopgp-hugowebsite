@@ -29,7 +29,7 @@ On the curve above, every passing month makes the *same* amount of djis more exp
 - In **May 2026** (today): ≈ €146.
 - In **May 2028**: ≈ €276.
 
-That is approximately **+0.5% per month**, and a threshold that doubles in two years. Verification is one command away, at any date: `bl-foopgp t2g 6.42`.
+That is **+0.5% per month** ([current *stingynalty* parameter](/about/rules-parameters/), until further notice), and a threshold that doubles in two years. Verification is one command away, at any date: `bl-foopgp t2g 6.42`.
 
 ---
 

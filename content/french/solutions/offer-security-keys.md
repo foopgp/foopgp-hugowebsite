@@ -29,7 +29,7 @@ Sur la courbe ci-dessus, chaque mois qui passe rend la *même* quantité de djis
 - En **mai 2026** (aujourd'hui) : ≈ 146 €.
 - En **mai 2028** : ≈ 276 €.
 
-Soit environ **+0,5 % par mois**, et un palier qui double en deux ans. La vérification est à un appel de commande, à toute date : `bl-foopgp t2g 6.42`.
+Soit **+0,5 % par mois** ([paramètre *stingynalty* en vigueur](/fr/about/rules-parameters/), jusqu'à nouvel ordre), et un palier qui double en deux ans. La vérification est à un appel de commande, à toute date : `bl-foopgp t2g 6.42`.
 
 ---
 

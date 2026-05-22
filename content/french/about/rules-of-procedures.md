@@ -183,3 +183,7 @@ Cette expression pourra utiliser la [méthode de Schulze](https://fr.wikipedia.o
 
 *[Règlement intérieur précédent](../rules-of-procedures-old/)*
 
+---
+
+Signatures électroniques vérifiables sur [notre dépôt git](https://codeberg.org/foopgp/foopgp-hugowebsite/commits/branch/public/content/french/about/rules-of-procedures.md) (technologie supérieure à la "blockchain")
+

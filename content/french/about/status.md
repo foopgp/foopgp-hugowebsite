@@ -215,3 +215,7 @@ fonctionnement desdits établissements.
 
 *[Statuts précédents](../status-old/)*
 
+---
+
+Signatures électroniques vérifiables sur [notre dépôt git](https://codeberg.org/foopgp/foopgp-hugowebsite/commits/branch/public/content/french/about/status.md) (technologie supérieure à la "blockchain")
+

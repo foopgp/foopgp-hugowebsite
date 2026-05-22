@@ -22,7 +22,7 @@ doc="$1"
 base="${doc%.md}"
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 work_dir="$(pwd)"
-pdfdoc="$(date +"%Y%m%d")-$base.pdf"
+pdfdoc="$(dirname "$base")/$(date +"%Y%m%d")-$(basename "$base").pdf"
 
 # relative logo path
 #logo_path="../../../../images/banner/foopgp+dji+djibian.png"

@@ -20,7 +20,7 @@ Le diagnostic économique est centré sur l'**effet Cantillon** : ceux qui crée
 
 Notre modèle commercial articule quatre sources de revenus : adhésions (incluant une clé de sécurité physique débloquée à un palier de **6,42 Ɉ générés** — soit ≈ 146 € en mai 2026, palier croissant avec la *stingynalty*), ateliers et formations professionnelles, parrainage à 10 % alimenté par une plateforme de change €↔Ɉ (pierre angulaire à mettre en service en 2027), et prestations B2B de souveraineté numérique pour PME et collectivités.
 
-L'estimation plancher de la valeur du dji, par traduction de la masse monétaire M1 de la zone euro selon notre formule de création, est de **≈ 2 369 €** (février 2026). À moyen terme, **1 Ɉ > 2 500 €** est plausible.
+L'estimation plancher de la valeur future du dji, par traduction de la masse monétaire M1 de la zone euro (prise en février 2026) selon notre formule de création, est de **≈ 2 369 €**. À moyen terme (autour de l'an 2030), **1 Ɉ > 2 500 €** est plausible.
 
 ## 2. Contexte
 
@@ -256,6 +256,6 @@ Le Conseil d'Administration est élu en AGO, 3 ans renouvelable, avec rééquili
 
 Au-delà du financement, nous valorisons les partenariats qui créent des **cas d'usage concrets** : un notaire pilote, une PME pilote, une collectivité pilote, un déploiement à l'étranger. Les premiers cas d'usage tirants vaudront davantage que des subventions sans contrepartie d'usage.
 
-> **Contact** : <jjbrucker@foopgp.org> — <https://foopgp.org>
+> **Contact** : <info@foopgp.org> — <https://foopgp.org/fr/>
 > Siège social : 75 Impasse Serre des Isnards, F-05000 Pelleautier
 > SIREN 923 831 408 — Préfecture de région PACA, déclaration prestataire n° 93050099805

@@ -404,9 +404,8 @@ a:hover { text-decoration: underline; color: #ffb347; }
             data-i18n="tabDirect"></button>
   </div>
 
-  <!-- Identity mode -->
-  <div class="card" id="mode-identity">
-    <div class="card-title" data-i18n="sectionIdentity"></div>
+  <!-- Identity mode — no .card wrapper: the tabs above already split modes -->
+  <div id="mode-identity">
     <div class="form-row">
       <div class="field"><label data-i18n="lblSurname"></label>
         <input id="surname" placeholder="DUPONT"></div>
@@ -425,9 +424,8 @@ a:hover { text-decoration: underline; color: #ffb347; }
     <div id="u4-result"></div>
   </div>
 
-  <!-- Direct u4 mode -->
-  <div class="card hidden" id="mode-direct">
-    <div class="card-title" data-i18n="sectionDirect"></div>
+  <!-- Direct u4 mode — same: no .card wrapper -->
+  <div class="hidden" id="mode-direct">
     <div class="field" style="margin-bottom:.8rem">
       <label data-i18n="lblDirectU4"></label>
       <input id="direct-u4" placeholder="xXxXxXxXxXxXxXxXxXxXxXe_50.64_004.64">

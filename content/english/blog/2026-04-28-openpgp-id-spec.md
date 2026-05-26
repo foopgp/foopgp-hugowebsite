@@ -1,11 +1,11 @@
 ---
 Title:   "OpenPGP ID: a specification to identify everyone (and everything)"
 Date:    2026-04-28T10:00:00+02:00
-Tags:    [ "openpgp", "identity", "standard", "u4", "u5", "ietf" ]
+Tags:    [ "openpgp", "identity", "standard", "eid", "u4", "u5", "ietf" ]
 categories: [ "News", "Technical" ]
 draft: false
 author: [ "Jean-Jacques Brucker", "Mnème" ]
-description: "We publish a first draft specification for OpenPGP ID identifiers — u4 for humans, u5 for any other entity. A foundational building block of the foopgp infrastructure."
+description: "We publish a first draft specification for OpenPGP entity identifiers (eids) — u4 for humans, u5 for any other entity. A foundational building block of the foopgp infrastructure."
 lang: en
 bg_image: "images/backgrounds/page-title.jpg"
 image: "images/solutions/identity.png"
@@ -14,7 +14,7 @@ type: "post"
 
 Since the early days of [Open-UDC](https://github.com/Open-UDC/) in 2010, a recurring question has been: how do you identify a human being universally, without relying on a central authority, while respecting their privacy?
 
-The answer fits into two short identifier types that can be embedded in any OpenPGP certificate: **u4** and **u5**. Today we publish the first formal draft specification, in Internet-Draft (IETF) format.
+The answer fits into a family of short identifiers — **OpenPGP entity IDs**, or **eids** — that can be embedded in any OpenPGP certificate. Two variants are defined today: **u4** for humans, **u5** for any other entity. Future variants (u6, u7, …) MAY extend the family ; the umbrella term *eid* stays stable. Today we publish the first formal draft specification, in Internet-Draft (IETF) format.
 
 ---
 
@@ -67,15 +67,15 @@ u5=001777236237.945e_43.30_005.38
 
 #### Beyond the certificate: an ecosystem of usages
 
-The OpenPGP ID identifier does more than label a certificate. In the reference implementation ([bash-libs](//codeberg.org/foopgp/bash-libs)), it permeates the entire digital ecosystem:
+An eid does more than label a certificate. In the reference implementation ([bash-libs](//codeberg.org/foopgp/bash-libs)), it permeates the entire digital ecosystem:
 
-**Certificate lookup on keyservers.** The u4 or u5 serves as a pseudonymous search key on OpenPGP keyservers (HKP/HKPS protocol). Anyone who knows the civil-registry data can find the certificate without the server needing to index personal names.
+**Certificate lookup on certificate servers.** The eid serves as a pseudonymous search key on OpenPGP certificate servers (commonly called "keyservers" in the HKP/HKPS protocol — although they actually serve certificates, not private keys). Anyone who knows the civil-registry data can find the certificate without the server needing to index personal names.
 
 **Unix User ID derivation.** The identifier is reduced to a 32-bit integer in a reserved range, giving every individual the **same numeric UID on all conforming systems**. By the birthday paradox, approximately **55,000 users** are needed on a single system before a 50% chance of collision; when that occurs, additional ranges can be defined.
 
-**OpenPGP smartcard.** The u4 or u5 is stored in the "login data" field of the card (YubiKey, Nitrokey, ...), allowing the token to carry the holder's decentralised identity alongside the cryptographic keys.
+**OpenPGP smartcard.** The eid is stored in the "login data" field of the card (YubiKey, Nitrokey, ...), allowing the token to carry the holder's decentralised identity alongside the cryptographic keys.
 
-**Home directory.** On [Djibian](/blog/2026-01-19-djibian-release/), the home directory is named after the full identifier, prefixed with `u4` or `u5` (with `=` removed for POSIX compatibility):
+**Home directory.** On [Djibian](/blog/2026-01-19-djibian-release/), the home directory is named after the full eid, prefixed with the variant tag (`u4` or `u5`, with `=` removed for POSIX compatibility):
 
 ```
 /home/u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
@@ -83,7 +83,7 @@ The OpenPGP ID identifier does more than label a certificate. In the reference i
 
 A unique, portable, self-documenting path: the directory name directly encodes the holder's identity.
 
-**Full system configuration.** From the OpenPGP certificate identified by u4/u5, the system automatically derives: SSH authorised keys, Git signing key, the GnuPG default key, and the user avatar (`~/.face`). A single certificate is sufficient to bootstrap a complete, authenticated user environment on any conforming system.
+**Full system configuration.** From the OpenPGP certificate identified by its eid, the system automatically derives: SSH authorised keys, Git signing key, the GnuPG default key, and the user avatar (`~/.face`). A single certificate is sufficient to bootstrap a complete, authenticated user environment on any conforming system.
 
 ---
 
@@ -107,7 +107,7 @@ The full document is available on our repository, in IETF format:
 
 **[draft-foopgp-openpgp-id-00](//codeberg.org/foopgp/foopgp-hugowebsite/src/branch/public/public/documents/en/draft-foopgp-openpgp-id-00.txt)**
 
-It covers: the complete structure of u4 and u5 identifiers, ABNF grammar, numerically verifiable examples, application usages, a coordinate table for 245 countries, and Privacy & Security Considerations sections.
+It covers: the complete structure of eids (variants u4 and u5), ABNF grammar, numerically verifiable examples, application usages, a coordinate table for 245 countries, and Privacy & Security Considerations sections.
 
 Community feedback is welcome — particularly on the IANA section and on possible extension to sub-national entities (departments, regions) for collision resolution.
 

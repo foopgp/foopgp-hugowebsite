@@ -12,12 +12,14 @@ Abstract
 
    This document specifies the "OpenPGP ID" system, a set of compact,
    deterministic, privacy-preserving identity strings designed to be
-   embedded in the comment field of OpenPGP User IDs (UIDs).  Two
-   identifier types are defined: u4, for human individuals based on
-   civil-registry birth data and the ICAO 9303 Machine-Readable Zone
-   standard; and u5, for any entity identified by its temporal and
-   geographic origin.  Both types share a common 14-character geographic
-   suffix encoding terrestrial coordinates.
+   embedded in the comment field of OpenPGP User IDs (UIDs).  These
+   strings are collectively called OpenPGP entity identifiers, or
+   eids.  Two eid variants are defined in this document: u4, for
+   human individuals based on civil-registry birth data and the
+   ICAO 9303 Machine-Readable Zone standard; and u5, for any entity
+   identified by its temporal and geographic origin.  Both variants
+   share a common 14-character geographic suffix encoding terrestrial
+   coordinates.
 
    This specification supersedes the earlier "udid4" and "nhid2"
    drafts from the Open-UDC project (2010-2014).
@@ -91,7 +93,8 @@ Table of Contents
    and entities.
 
    The OpenPGP ID system meets this requirement by defining short,
-   self-contained strings that:
+   self-contained strings — collectively called OpenPGP entity
+   identifiers, or eids — that:
 
    o  can be embedded verbatim in the comment field of an OpenPGP UID,
       making the identity verifiable through the standard web of trust;
@@ -107,14 +110,16 @@ Table of Contents
    o  encode a geographic coordinate, anchoring the identity in physical
       space and enabling coarse-grained uniqueness disambiguation.
 
-   Two identifier types are specified:
+   The term "eid" covers every variant defined
+   in this document and any future extension.  This specification
+   defines two eid variants:
 
    u4:  For human individuals.  Derived from the person's surname,
         given names, and date of birth, following the Machine-Readable
-        Zone conventions of ICAO Document 9303 [ICAO9303].  The u4
-        identifier is unique and permanent for a given individual: it
-        is computed from birth-certificate data and does not change
-        upon marriage, legal name change, or any other life event.
+        Zone conventions of ICAO Document 9303 [ICAO9303].  A u4 eid
+        is unique and permanent for a given individual: it is computed
+        from birth-certificate data and does not change upon marriage,
+        legal name change, or any other life event.
 
    u5:  For any entity identified by its moment and place of origin.
         This includes organisations, software agents, automated
@@ -127,13 +132,17 @@ Table of Contents
         A touch of poetry: the comment field of the u5 regular
         expression in the reference implementation reads "Apparition of
         anything (with or without any ghost in the shell)" [GITS],
-        which captures the intended openness of this type.
+        which captures the intended openness of this variant.
 
-   Both types share a common 14-character geographic suffix (Section 3).
+   Both variants share a common 14-character geographic suffix
+   (Section 3).  Future variants (u6, u7, ...) MAY be defined as new
+   identity classes emerge; the umbrella term "eid" remains stable
+   regardless of how many variants are eventually specified.
 
    Historically, these identifiers were called "udid4" and "nhid2" in
    the Open-UDC project drafts [OPENUDCDRAFT].  This document updates
-   and formalises those definitions.
+   and formalises those definitions, and introduces "eid" as the
+   collective name.
 
 
 2.  Conventions and Terminology
@@ -145,6 +154,14 @@ Table of Contents
    all capitals.
 
    The following terms are used throughout this document:
+
+   eid:
+      OpenPGP entity identifier.  The umbrella term covering every
+      identifier variant defined in this document (u4, u5) and any
+      future extension.  An eid is always one of those variants —
+      there is no "bare eid" string ; the term is used when the
+      discussion applies to any variant indifferently, or when the
+      specific variant is irrelevant.
 
    MRZ:
       Machine-Readable Zone, as defined in ICAO Document 9303
@@ -177,9 +194,9 @@ Table of Contents
 
 3.1.  Geographic Suffix (coord14)
 
-   Both u4 and u5 identifiers include a 14-character suffix encoding
-   a terrestrial location.  This suffix is called coord14 and has the
-   following format:
+   Both u4 and u5 eid variants include a 14-character
+   suffix encoding a terrestrial location.  This suffix is called
+   coord14 and has the following format:
 
       coord14 = "e" lat5 lon8
 
@@ -230,7 +247,8 @@ Table of Contents
 
 3.2.  Character Set
 
-   u4 and u5 identifiers use only characters from the set:
+   Both u4 and u5 eid variants use only characters
+   from the set:
 
       [A-Za-z0-9_\-.]
 
@@ -541,31 +559,34 @@ Table of Contents
 
 6.  Application Usages
 
-   Beyond their primary role as OpenPGP UID comment strings, u4 and u5
-   identifiers serve as a unifying key across the digital ecosystem.
-   The following usages are implemented in the reference tools
-   (bl-pgpid, bl-djibian, bl-qrkey).
+   Beyond their primary role as OpenPGP UID comment strings, eids
+   serve as a unifying key across the digital ecosystem.  The following
+   usages are implemented in the reference tools (bl-pgpid,
+   bl-djibian, bl-qrkey) and apply uniformly to every eid variant.
 
 6.1.  OpenPGP UID Comment
 
-   The primary usage, defined in Sections 4.5 and 5.4: the u4 or u5
-   string is embedded in the comment field of one or more OpenPGP UIDs
+   The primary usage, defined in Sections 4.5 and 5.4: the eid string
+   is embedded in the comment field of one or more OpenPGP UIDs
    within a certificate.  This anchors the identity to the OpenPGP
    web of trust.
 
-6.2.  Certificate Lookup on Keyservers
+6.2.  Certificate Lookup on Certificate Servers (keyservers)
 
-   The u4 or u5 string (or a prefix thereof) can be used as a search
-   key on OpenPGP keyservers (HKP/HKPS protocol).  Because the first
-   22 characters of a u4 are derived from a one-way hash, they function
-   as a pseudonymous lookup key: a party who knows the civil-registry
-   data can compute the key and find the certificate, without the
-   keyserver needing to index personal names.
+   The eid string (or a prefix thereof) can be used as a search key
+   on OpenPGP certificate servers (commonly called "keyservers" in
+   the HKP/HKPS protocol, although they actually serve certificates).
+
+   Because the first 22 characters of a u4 are derived from a one-way
+   hash, they function as a pseudonymous lookup key: a party who knows
+   the civil-registry data can compute the key and find the
+   certificate, without the certificate server needing to index
+   personal names.
 
 6.3.  Unix User ID Derivation
 
-   A deterministic 32-bit Unix User ID (UID) can be derived from a u4
-   or u5 identifier by reducing the base22 hash (or the ts16 field)
+   A deterministic 32-bit Unix User ID (UID) can be derived from an
+   eid by reducing the base22 hash (for u4) or the ts16 field (for u5)
    into the integer range [2^18, 2^31 - 2] (i.e., [262144, 2147483646]).
 
    This mapping ensures that a given individual or entity receives the
@@ -588,9 +609,9 @@ Table of Contents
 6.4.  Hardware Security Token
 
    On OpenPGP-compatible hardware tokens (e.g., YubiKey, Nitrokey),
-   the u4 or u5 string SHOULD be stored in the "Login data" field
-   of the card.  This allows the token to carry the holder's
-   decentralised identity alongside the cryptographic keys.
+   the eid string SHOULD be stored in the "Login data" field of the
+   card.  This allows the token to carry the holder's decentralised
+   identity alongside the cryptographic keys.
 
    The reference tool bl-pgpid can read and verify this field
    (bl_pgpid_token_check), and bl-qrkey can populate it when
@@ -599,9 +620,9 @@ Table of Contents
 6.5.  Home Directory Path
 
    On systems implementing this specification (e.g., Djibian GNU/Linux),
-   the user's home directory SHOULD be named after the full identifier,
-   prefixed with "u4" or "u5" (with the "=" sign removed for POSIX
-   path compatibility):
+   the user's home directory SHOULD be named after the full eid,
+   prefixed with the variant tag ("u4" or "u5") with the "=" sign
+   removed for POSIX path compatibility:
 
       /home/u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
       /home/u5001777236237.945e_43.30_005.38
@@ -612,9 +633,9 @@ Table of Contents
 
 6.6.  System Configuration
 
-   Once a user account is created with a u4- or u5-derived UID and
-   home directory, the OpenPGP certificate identified by the u4/u5
-   can be used to derive the complete user environment:
+   Once a user account is created with an eid-derived UID and home
+   directory, the OpenPGP certificate identified by the eid can be
+   used to derive the complete user environment:
 
    o  SSH authorized_keys: the OpenPGP authentication subkey is
       exported as an SSH public key and installed as the sole
@@ -630,8 +651,8 @@ Table of Contents
       attribute, it is extracted and installed as the user's avatar.
 
    This approach means that a single OpenPGP certificate, identified
-   by its u4 or u5 string, is sufficient to bootstrap a complete,
-   authenticated user environment on any conforming system.
+   by its eid, is sufficient to bootstrap a complete, authenticated
+   user environment on any conforming system.
 
 7.  Encoding Notes
 
@@ -684,9 +705,9 @@ Table of Contents
 9.  Security Considerations
 
    The security model relies on the OpenPGP web of trust [RFC9580].
-   A UID containing a u4 or u5 string gains trustworthiness only
-   through third-party certifications from key holders who have
-   verified the underlying identity data.
+   A UID containing an eid gains trustworthiness only through
+   third-party certifications from key holders who have verified
+   the underlying identity data.
 
    Collision resistance of MD5 is NOT required.  In the unlikely event
    that two distinct individuals produce the same base22 prefix, the
@@ -697,17 +718,19 @@ Table of Contents
    registry data, which involves significant real-world cost regardless
    of computational power.
 
-   Implementors MUST NOT use u4 or u5 identifiers as cryptographic
-   keys, MACs, or any other primitive for which collision resistance,
-   preimage resistance, or second-preimage resistance is required.
+   Without web of trust validation, implementors MUST NOT use eids as
+   cryptographic keys, MACs, or any other primitive for which collision
+   resistance, preimage resistance, or second-preimage resistance is
+   required.
 
 
 10.  IANA Considerations
 
    This document has no IANA actions at this time.
 
-   A future revision may request registration of the "u4=" and "u5="
-   comment prefixes in a to-be-created OpenPGP UID Namespace registry.
+   A future revision may request registration of the eid variant
+   prefixes ("u4=", "u5=", and any subsequent variant) in a
+   to-be-created OpenPGP UID Namespace registry.
 
 
 11.  References

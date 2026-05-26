@@ -1,11 +1,11 @@
 ---
 Title:   "OpenPGP ID : une spécification pour identifier tout le monde (et n'importe quoi)"
 Date:    2026-04-28T10:00:00+02:00
-Tags:    [ "openpgp", "identité", "standard", "u4", "u5", "ietf" ]
-categories: [ "News", "Technique" ]
+Tags:    [ "openpgp", "identity", "specification", "eid", "ietf" ]
+categories: [ "News", "Solution" ]
 draft: false
 author: [ "Jean-Jacques Brucker", "Mnème" ]
-description: "Nous publions une première spécification pour les identifiants OpenPGP ID — u4 pour les humains, u5 pour toute autre entité. Une brique fondamentale de l'infrastructure foopgp."
+description: "Nous publions une première spécification pour les identifiants d'entité OpenPGP (eid) — u4 pour les humains, u5 pour toute autre entité. Une brique fondamentale de l'infrastructure foopgp."
 lang: fr
 bg_image: "images/backgrounds/page-title.jpg"
 image: "images/solutions/identity.png"
@@ -14,7 +14,7 @@ type: "post"
 
 Depuis les débuts d'[Open-UDC](https://github.com/Open-UDC/) en 2010, une question revenait sans cesse : comment identifier un être humain de façon universelle, sans dépendre d'une autorité centrale, tout en respectant sa vie privée ?
 
-La réponse tient en deux types d'identifiants courts, qu'on peut glisser dans n'importe quel certificat OpenPGP : **u4** et **u5**. Aujourd'hui, nous publions leur première spécification formelle, au format Internet-Draft (IETF).
+La réponse tient en une famille d'identifiants courts — les **identifiants d'entité OpenPGP**, ou **eid** — qu'on peut glisser dans n'importe quel certificat OpenPGP. Deux variantes sont définies aujourd'hui : **u4** pour les humains, **u5** pour toute autre entité. Aujourd'hui, nous publions leur première spécification formelle, au format Internet-Draft (IETF).
 
 ---
 
@@ -67,15 +67,15 @@ u5=001777236237.945e_43.30_005.38
 
 #### Au-delà du certificat : un écosystème d'usages
 
-L'identifiant OpenPGP ID ne sert pas qu'à étiqueter un certificat. Dans l'implémentation de référence ([bash-libs](https://codeberg.org/foopgp/bash-libs)), il irrigue tout l'écosystème numérique :
+Un eid ne sert pas qu'à étiqueter un certificat. Dans l'implémentation de référence ([bash-libs](https://codeberg.org/foopgp/bash-libs)), il irrigue tout l'écosystème numérique :
 
-**Recherche sur les serveurs de clés.** Le u4 ou u5 sert de clé de recherche pseudonyme sur les serveurs de clés OpenPGP (protocole HKP/HKPS). Celui qui connaît les données d'état civil peut retrouver le certificat sans que le serveur ait besoin d'indexer des noms.
+**Recherche sur les serveurs de certificats.** L'eid sert de clé de recherche pseudonyme sur les serveurs de certificats OpenPGP (souvent appelés *keyservers* dans le protocole HKP/HKPS — alors qu'ils servent en réalité des certificats). Celui qui connaît les données d'état civil peut retrouver le certificat sans que le serveur ait besoin d'indexer des noms.
 
 **Dérivation d'un identifiant système.** L'identifiant est réduit en un entier 32 bits dans une plage réservée, ce qui donne à chaque individu le **même numéro d'utilisateur Unix sur tous les systèmes** conformes. Par le paradoxe des anniversaires, il faut environ **55 000 utilisateurs** sur un même système avant d'avoir 50 % de chance de collision ; en cas de collision, d'autres plages pourront être définies.
 
-**Carte à puce OpenPGP.** Le u4 ou u5 est stocké dans le champ « données de connexion » de la carte (YubiKey, Nitrokey, ...), permettant à la carte de porter l'identité décentralisée de son porteur aux côtés des clés cryptographiques.
+**Carte à puce OpenPGP.** L'eid est stocké dans le champ « données de connexion » de la carte (YubiKey, Nitrokey, ...), permettant à la carte de porter l'identité décentralisée de son porteur aux côtés des clés cryptographiques.
 
-**Répertoire personnel.** Sur [Djibian](/fr/blog/2026-01-19-djibian-release/), le répertoire de l'utilisateur est nommé d'après l'identifiant complet, préfixé de `u4` ou `u5` (sans le `=`, pour compatibilité POSIX) :
+**Répertoire personnel.** Sur [Djibian](/fr/blog/2026-01-19-djibian-release/), le répertoire de l'utilisateur est nommé d'après l'eid complet, préfixé du tag de variante (`u4` ou `u5`, sans le `=` pour compatibilité POSIX) :
 
 ```
 /home/u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
@@ -83,7 +83,7 @@ L'identifiant OpenPGP ID ne sert pas qu'à étiqueter un certificat. Dans l'impl
 
 Chemin unique, portable, auto-documenté : le nom du répertoire encode directement l'identité.
 
-**Configuration du système en entier.** À partir du certificat OpenPGP identifié par u4/u5, le système dérive automatiquement : les clés SSH autorisées, la clé de signature Git, la clé GnuPG par défaut, et l'avatar de l'utilisateur (`~/.face`). Un seul certificat suffit à initialiser un environnement utilisateur complet et authentifié.
+**Configuration du système en entier.** À partir du certificat OpenPGP identifié par son eid, le système dérive automatiquement : les clés SSH autorisées, la clé de signature Git, la clé GnuPG par défaut, et l'avatar de l'utilisateur (`~/.face`). Un seul certificat suffit à initialiser un environnement utilisateur complet et authentifié.
 
 ---
 
@@ -107,7 +107,7 @@ Le document complet est disponible sur notre dépôt, au format IETF :
 
 **[draft-foopgp-openpgp-id-00](//codeberg.org/foopgp/foopgp-hugowebsite/src/branch/public/public/documents/en/draft-foopgp-openpgp-id-00.txt)**
 
-Il couvre : la structure complète des identifiants u4 et u5, la grammaire ABNF, les exemples numériquement vérifiables, les usages applicatifs, une table des coordonnées pour 245 pays, et les sections Privacy & Security Considerations.
+Il couvre : la structure complète des eid (variantes u4 et u5), la grammaire ABNF, les exemples numériquement vérifiables, les usages applicatifs, une table des coordonnées pour 245 pays, et les sections Privacy & Security Considerations.
 
 Les retours de la communauté sont les bienvenus — en particulier sur la section IANA et sur l'extension éventuelle aux entités sub-nationales (départements, régions) pour la résolution des collisions.
 

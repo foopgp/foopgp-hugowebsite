@@ -19,9 +19,7 @@ Abstract
    ICAO 9303 Machine-Readable Zone standard; and u5, for any entity
    identified by its temporal and geographic origin.  Both variants
    share a common 14-character geographic suffix encoding terrestrial
-   coordinates.  Future variants (u6, u7, ...) MAY extend the eid
-   family as new identity classes emerge; the umbrella term "eid"
-   refers to any current or future variant.
+   coordinates.
 
    This specification supersedes the earlier "udid4" and "nhid2"
    drafts from the Open-UDC project (2010-2014).
@@ -112,7 +110,7 @@ Table of Contents
    o  encode a geographic coordinate, anchoring the identity in physical
       space and enabling coarse-grained uniqueness disambiguation.
 
-   The word "eid" is the umbrella term covering every variant defined
+   The term "eid" covers every variant defined
    in this document and any future extension.  This specification
    defines two eid variants:
 
@@ -196,7 +194,7 @@ Table of Contents
 
 3.1.  Geographic Suffix (coord14)
 
-   Every eid (u4, u5, and any future variant) includes a 14-character
+   Both u4 and u5 eid variants include a 14-character
    suffix encoding a terrestrial location.  This suffix is called
    coord14 and has the following format:
 
@@ -249,7 +247,7 @@ Table of Contents
 
 3.2.  Character Set
 
-   eid strings (u4, u5, and any future variant) use only characters
+   Both u4 and u5 eid variants use only characters
    from the set:
 
       [A-Za-z0-9_\-.]
@@ -577,8 +575,8 @@ Table of Contents
 
    The eid string (or a prefix thereof) can be used as a search key
    on OpenPGP certificate servers (commonly called "keyservers" in
-   the HKP/HKPS protocol, although they actually serve certificates —
-   public keys plus identifiers and certifications — not private keys).
+   the HKP/HKPS protocol, although they actually serve certificates).
+
    Because the first 22 characters of a u4 are derived from a one-way
    hash, they function as a pseudonymous lookup key: a party who knows
    the civil-registry data can compute the key and find the
@@ -720,9 +718,10 @@ Table of Contents
    registry data, which involves significant real-world cost regardless
    of computational power.
 
-   Implementors MUST NOT use eids as cryptographic keys, MACs, or any
-   other primitive for which collision resistance, preimage resistance,
-   or second-preimage resistance is required.
+   Without web of trust validation, implementors MUST NOT use eids as
+   cryptographic keys, MACs, or any other primitive for which collision
+   resistance, preimage resistance, or second-preimage resistance is
+   required.
 
 
 10.  IANA Considerations

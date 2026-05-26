@@ -1,8 +1,8 @@
 ---
 Title:   "OpenPGP ID : une spécification pour identifier tout le monde (et n'importe quoi)"
 Date:    2026-04-28T10:00:00+02:00
-Tags:    [ "openpgp", "identité", "standard", "eid", "u4", "u5", "ietf" ]
-categories: [ "News", "Technique" ]
+Tags:    [ "openpgp", "identity", "specification", "eid", "ietf" ]
+categories: [ "News", "Solution" ]
 draft: false
 author: [ "Jean-Jacques Brucker", "Mnème" ]
 description: "Nous publions une première spécification pour les identifiants d'entité OpenPGP (eid) — u4 pour les humains, u5 pour toute autre entité. Une brique fondamentale de l'infrastructure foopgp."
@@ -14,7 +14,7 @@ type: "post"
 
 Depuis les débuts d'[Open-UDC](https://github.com/Open-UDC/) en 2010, une question revenait sans cesse : comment identifier un être humain de façon universelle, sans dépendre d'une autorité centrale, tout en respectant sa vie privée ?
 
-La réponse tient en une famille d'identifiants courts — les **identifiants d'entité OpenPGP**, ou **eid** — qu'on peut glisser dans n'importe quel certificat OpenPGP. Deux variantes sont définies aujourd'hui : **u4** pour les humains, **u5** pour toute autre entité. De futures variantes (u6, u7, …) pourront étendre la famille ; le terme générique *eid* reste stable. Aujourd'hui, nous publions leur première spécification formelle, au format Internet-Draft (IETF).
+La réponse tient en une famille d'identifiants courts — les **identifiants d'entité OpenPGP**, ou **eid** — qu'on peut glisser dans n'importe quel certificat OpenPGP. Deux variantes sont définies aujourd'hui : **u4** pour les humains, **u5** pour toute autre entité. Aujourd'hui, nous publions leur première spécification formelle, au format Internet-Draft (IETF).
 
 ---
 
@@ -69,7 +69,7 @@ u5=001777236237.945e_43.30_005.38
 
 Un eid ne sert pas qu'à étiqueter un certificat. Dans l'implémentation de référence ([bash-libs](https://codeberg.org/foopgp/bash-libs)), il irrigue tout l'écosystème numérique :
 
-**Recherche sur les serveurs de certificats.** L'eid sert de clé de recherche pseudonyme sur les serveurs de certificats OpenPGP (souvent appelés *keyservers* dans le protocole HKP/HKPS — alors qu'ils servent en réalité des certificats : clés publiques + identifiants + certifications, pas de clés privées). Celui qui connaît les données d'état civil peut retrouver le certificat sans que le serveur ait besoin d'indexer des noms.
+**Recherche sur les serveurs de certificats.** L'eid sert de clé de recherche pseudonyme sur les serveurs de certificats OpenPGP (souvent appelés *keyservers* dans le protocole HKP/HKPS — alors qu'ils servent en réalité des certificats). Celui qui connaît les données d'état civil peut retrouver le certificat sans que le serveur ait besoin d'indexer des noms.
 
 **Dérivation d'un identifiant système.** L'identifiant est réduit en un entier 32 bits dans une plage réservée, ce qui donne à chaque individu le **même numéro d'utilisateur Unix sur tous les systèmes** conformes. Par le paradoxe des anniversaires, il faut environ **55 000 utilisateurs** sur un même système avant d'avoir 50 % de chance de collision ; en cas de collision, d'autres plages pourront être définies.
 

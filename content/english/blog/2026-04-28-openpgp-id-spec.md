@@ -1,8 +1,8 @@
 ---
 Title:   "OpenPGP ID: a specification to identify everyone (and everything)"
 Date:    2026-04-28T10:00:00+02:00
-Tags:    [ "openpgp", "identity", "standard", "eid", "u4", "u5", "ietf" ]
-categories: [ "News", "Technical" ]
+Tags:    [ "openpgp", "identity", "specification", "eid", "ietf" ]
+categories: [ "News", "Solution" ]
 draft: false
 author: [ "Jean-Jacques Brucker", "Mnème" ]
 description: "We publish a first draft specification for OpenPGP entity identifiers (eids) — u4 for humans, u5 for any other entity. A foundational building block of the foopgp infrastructure."
@@ -14,7 +14,7 @@ type: "post"
 
 Since the early days of [Open-UDC](https://github.com/Open-UDC/) in 2010, a recurring question has been: how do you identify a human being universally, without relying on a central authority, while respecting their privacy?
 
-The answer fits into a family of short identifiers — **OpenPGP entity IDs**, or **eids** — that can be embedded in any OpenPGP certificate. Two variants are defined today: **u4** for humans, **u5** for any other entity. Future variants (u6, u7, …) MAY extend the family ; the umbrella term *eid* stays stable. Today we publish the first formal draft specification, in Internet-Draft (IETF) format.
+The answer fits into a family of short identifiers — **OpenPGP entity IDs**, or **eids** — that can be embedded in any OpenPGP certificate. Two variants are defined today: **u4** for humans, **u5** for any other entity. Today we publish the first formal draft specification, in Internet-Draft (IETF) format.
 
 ---
 
@@ -69,7 +69,7 @@ u5=001777236237.945e_43.30_005.38
 
 An eid does more than label a certificate. In the reference implementation ([bash-libs](//codeberg.org/foopgp/bash-libs)), it permeates the entire digital ecosystem:
 
-**Certificate lookup on certificate servers.** The eid serves as a pseudonymous search key on OpenPGP certificate servers (commonly called "keyservers" in the HKP/HKPS protocol — although they actually serve certificates, not private keys). Anyone who knows the civil-registry data can find the certificate without the server needing to index personal names.
+**Certificate lookup on certificate servers.** The eid serves as a pseudonymous search key on OpenPGP certificate servers (commonly called "keyservers" in the HKP/HKPS protocol — although they actually serve certificates). Anyone who knows the civil-registry data can find the certificate without the server needing to index personal names.
 
 **Unix User ID derivation.** The identifier is reduced to a 32-bit integer in a reserved range, giving every individual the **same numeric UID on all conforming systems**. By the birthday paradox, approximately **55,000 users** are needed on a single system before a 50% chance of collision; when that occurs, additional ranges can be defined.
 

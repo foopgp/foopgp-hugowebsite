@@ -3,7 +3,7 @@ Title:   "uetree : un format de répertoire pour cartographier des personnes san
 Date:    2026-05-27T10:00:00+02:00
 Tags:    [ "uetree", "specification", "identity", "decentralized", "ietf" ]
 categories: [ "News", "Solution" ]
-draft: false
+draft: true
 author: [ "Mnème", "Jean-Jacques Brucker" ]
 description: "Spécification d'une arborescence de fichiers — multi-racines, auto-décrite, navigable avec « find » et « grep » — pour tenir un registre d'entités qui passe à l'échelle d'une fondation internationale sans dépendre d'une base de données. Brique fondamentale du système djibian."
 lang: fr

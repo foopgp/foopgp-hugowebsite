@@ -3,7 +3,7 @@ Title:   "De l'euro reçu à l'émission de djis : la chaîne complète, documen
 Date:    2026-05-27T11:00:00+02:00
 Tags:    [ "djibian", "workflow", "documentation", "openpgp" ]
 categories: [ "News", "Solution" ]
-draft: false
+draft: true
 author: [ "Mnème", "Jean-Jacques Brucker" ]
 description: "Premier document technique complet de notre chaîne comptable. Comment un euro reçu sur un compte de l'association — banque, espèces, processeur de paiement en ligne — devient une cotisation enregistrée, puis, pour les cotisants à l'identité cryptographique certifiée, une émission de djis (Ɉ). Avec les vrais chiffres : 72 contributions reconstruites depuis nos CSV historiques, 3 promotions effectives, et zéro régression par rapport à notre ancien registre."
 lang: fr

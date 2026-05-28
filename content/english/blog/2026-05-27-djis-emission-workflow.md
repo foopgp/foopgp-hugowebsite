@@ -3,7 +3,7 @@ Title:   "From an incoming euro to a djis emission: the full chain, documented"
 Date:    2026-05-27T11:00:00+02:00
 Tags:    [ "djibian", "workflow", "documentation", "openpgp" ]
 categories: [ "News", "Solution" ]
-draft: false
+draft: true
 author: [ "Mnème", "Jean-Jacques Brucker" ]
 description: "Our first complete technical document of the accounting chain. How an incoming euro — bank transfer, cash, online payment processor — becomes a recorded contribution, and for contributors whose cryptographic identity is WoT-certified, a djis (Ɉ) emission. With actual numbers: 72 reconstructed contributions from our historical CSVs, 3 effective promotions, and zero regression against our previous registry."
 lang: en

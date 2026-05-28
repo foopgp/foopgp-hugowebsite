@@ -1,0 +1,465 @@
+Internet-Draft                                         J.J. Brucker
+draft-foopgp-uftree-00                                  foopgp
+Intended status: Informational                              Mnème
+Expires: 2026-11-27                                        foopgp
+                                                      27 May 2026
+
+
+           uftree — Universal Files Tree, an Early Sketch
+                       draft-foopgp-uftree-00
+
+Abstract
+
+   This document is an early sketch of "uftree" (Universal Files
+   Tree), a sibling format to "uetree" [I-D.foopgp-uetree] that
+   indexes immutable file contents — addressed by their
+   cryptographic hash — rather than mutable entities.
+
+   The format is at an exploratory stage.  This document records
+   the open questions, the decisions already taken, and the prior
+   art the design draws from.  A normative specification is left
+   for a subsequent revision once one or more reference
+   implementations have provided operational feedback.
+
+Status of This Memo
+
+   This is an Internet-Draft submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.  Internet-Drafts are working
+   documents of the Internet Engineering Task Force (IETF).  They
+   are subject to change and may be replaced or obsoleted at any
+   time.  The list of current Internet-Drafts is at
+   https://datatracker.ietf.org/drafts/current/.
+
+   This Internet-Draft will expire on 27 November 2026.
+
+Copyright Notice
+
+   Copyright (c) 2026 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+   (https://trustee.ietf.org/license-info).
+
+Table of Contents
+
+   1.  Introduction and Scope
+       1.1.  Relationship to uetree
+       1.2.  What uftree Is Not
+       1.3.  Prior Art
+   2.  Conventions and Terminology
+   3.  Tentative Tree Structure
+       3.1.  Root by-sha256/
+       3.2.  Secondary Roots: by-md5/, by-blake3/, by-sha1/
+       3.3.  Fan-Out by 4-Character Hex Prefixes
+       3.4.  Optional Root by-name/ (Filesystem Mirror)
+   4.  Tentative Leaf Contents
+       4.1.  Required Files
+       4.2.  .LINKS — The Actual Content Lives Elsewhere
+   5.  Open Questions
+       5.1.  Selection: Which Files Deserve an Entry
+       5.2.  Garbage Policy
+       5.3.  Hash-Algorithm Migration
+       5.4.  Cross-Instance Deduplication
+   6.  Security Considerations
+   7.  Privacy Considerations
+   8.  References
+       8.1.  Normative References
+       8.2.  Informative References
+   Authors' Addresses
+
+
+1.  Introduction and Scope
+
+1.1.  Relationship to uetree
+
+   "uetree" [I-D.foopgp-uetree] organises a registry of mutable
+   entities indexed by several declarative identifier types
+   (cryptographic identifiers, e-mail addresses, telephone
+   numbers, names).  Entities move: addresses change, keys are
+   revoked, identifiers are promoted.
+
+   "uftree" applies the same filesystem-native conventions to
+   immutable file contents indexed by a cryptographic hash.
+   A file content does not move: if it changes, it is by
+   definition a different content with a different hash.  There
+   is no promotion mechanism and no canonicalisation step; the
+   hash is the canonical identifier from creation.
+
+   The two formats share:
+
+   o  The typed versioned pointer syntax of [I-D.foopgp-uetree]
+      Section 4 (<type> <version> <value>).
+
+   o  The reserved conventional files ".FORMAT", ".ALIASES",
+      ".HOMONYMS", ".LINKS".
+
+   o  The "uetree 1.x" deployment model (private monolithic,
+      public split, mixed with mirrors).
+
+   uftree differs in that:
+
+   o  Every leaf is uniquely named by a hash; collisions are
+      cryptographic events and are handled via ".HOMONYMS" only
+      when secondary roots use weaker hashes.
+
+   o  The actual content of the file is never stored under the
+      tree.  The tree is an index that points to where the
+      content actually lives (filesystem, URI, IPFS, git LFS,
+      etc.) via the ".LINKS" file.
+
+1.2.  What uftree Is Not
+
+   uftree is not a content store, a deduplication layer, or a
+   distribution protocol.  It is a layout convention for
+   describing and cross-referencing content-addressed files,
+   complementary to whichever storage and transport mechanisms
+   already exist.
+
+   Implementations that need the actual bytes follow the
+   ".LINKS" of the relevant leaf.
+
+1.3.  Prior Art
+
+   Content-addressable storage has been explored extensively.
+   The design space is well-trodden; uftree borrows liberally
+   and tries not to reinvent.
+
+   o  Plan 9 Venti [VENTI] — write-once archival store
+      addressed by SHA-1, with a clear separation between the
+      address and the underlying storage backend.
+
+   o  Git [GIT] — every blob and tree object is addressed by
+      its SHA-1 (now migrating to SHA-256), stored on disk in
+      a directory tree fan-out at two characters.  uftree's
+      structural debt to git is direct.
+
+   o  IPFS [IPFS] — content identifiers (CIDs) addressing
+      immutable blocks in a global DHT.  IPFS encodes hash
+      algorithm and length inside the CID; uftree separates
+      the algorithm into the root branch instead.
+
+   o  Tahoe-LAFS [TAHOE] — capability-based filesystem with
+      content-addressed encrypted blocks.
+
+   o  BLAKE3 trees [BLAKE3] — tree-hashed content, allowing
+      efficient partial verification.
+
+   o  Restic [RESTIC] and Borg [BORG] — content-addressed
+      backup stores with chunking.
+
+   o  ZFS and Btrfs — copy-on-write filesystems with internal
+      checksum trees; their on-disk format informs uftree
+      thinking about durable verification.
+
+   uftree adopts the lowest-common-denominator: a flat,
+   case-sensitive POSIX layout, addressed by lowercase
+   hexadecimal SHA-256.  Other hash algorithms become secondary
+   roots whose entries alias the canonical SHA-256 entry.
+
+
+2.  Conventions and Terminology
+
+   The terminology of [I-D.foopgp-uetree] Section 2 applies,
+   adapted as follows:
+
+   content    A specific immutable byte sequence — a file, a
+              blob, a chunk.  Identified by its hash under one
+              or more algorithms.
+
+   leaf       The directory of an uftree instance whose name is
+              a full hash digest (typically the SHA-256 in
+              lowercase hex) and whose contents describe that
+              one piece of content.
+
+   secondary  A root other than "by-sha256/" — for example
+   root       "by-md5/" or "by-blake3/" — whose leaves are
+              ".ALIASES" pointers to the canonical "by-sha256/"
+              entry of the same content.
+
+   The key words "MUST", "SHOULD", "MAY" etc. follow [RFC2119]
+   and [RFC8174] when, and only when, capitalised.
+
+
+3.  Tentative Tree Structure
+
+3.1.  Root by-sha256/
+
+   The canonical root is "by-sha256/".  Each leaf is named
+   after the full 64-character lowercase hexadecimal SHA-256
+   digest of the content.
+
+   A leaf MUST carry the leaf-level files of Section 4.
+
+3.2.  Secondary Roots: by-md5/, by-blake3/, by-sha1/
+
+   Each secondary root is named after a hash algorithm.  Its
+   leaves are full digests in that algorithm; their contents
+   are limited to:
+
+   o  A ".FORMAT" file (auto-localisation).
+
+   o  A ".ALIASES" file pointing to the canonical "by-sha256/"
+      entry of the content, OR a ".HOMONYMS" file listing the
+      canonical entries of the contents that collide on this
+      weaker hash.
+
+   Implementations that ingest a content first compute its
+   SHA-256, store the canonical entry, and only then derive
+   secondary entries on demand.
+
+   The set of accepted hash algorithms is open.  Implementations
+   SHOULD support SHA-256 as the canonical and SHOULD recognise
+   SHA-1 and MD5 entries when present; BLAKE3 support is
+   strongly RECOMMENDED for new deployments.
+
+3.3.  Fan-Out by 4-Character Hex Prefixes
+
+   A SHA-256 digest has 64 hexadecimal characters.  The tentative
+   fan-out splits the digest into sixteen cumulative segments of
+   4 characters each:
+
+       by-sha256/<4>/<8>/<12>/...<60>/<64>/
+
+   For example, the SHA-256 of an arbitrary content
+   "43a6...7ec1" lives at:
+
+       by-sha256/43a6/43a6eee3/43a6eee317cd/
+                .../43a6...7ec1/
+
+   With 16^4 = 65,536 children per level, an instance can hold
+   on the order of 10^9 contents while keeping individual
+   directories well within filesystem limits.  POSIX path-length
+   is comfortable: a fully expanded SHA-256 path uses about 600
+   bytes, far below "PATH_MAX" on common systems.
+
+   Open question (Section 5.3): if a future canonical hash
+   exceeds 64 characters, an additional level may be needed.
+
+3.4.  Optional Root by-name/ (Filesystem Mirror)
+
+   A complementary "by-name/" root may mirror an arbitrary
+   filesystem hierarchy ("/usr/bin/", "/home/<user>/Documents/",
+   ...).  Each interesting file becomes a directory at the
+   corresponding path, holding a ".FORMAT" and a ".ALIASES"
+   pointing to the canonical entry under "by-sha256/".
+
+   This makes the registry navigable as if it were a filesystem
+   while preserving uniqueness of the content under
+   "by-sha256/".  Hardlinked files appear once under
+   "by-sha256/" but possibly multiple times under "by-name/".
+
+   What qualifies as an "interesting" file — see Section 5.1.
+
+
+4.  Tentative Leaf Contents
+
+4.1.  Required Files
+
+   A canonical leaf under "by-sha256/<...>/<full-digest>/"
+   contains:
+
+   o  ".FORMAT"  — auto-localisation pointer (uftree 1.0
+                   <abs-path-from-instance-root>/).
+
+   o  "README.md" — extensible metadata: byte length, MIME
+                    type, first-encounter date, source, tags,
+                    free narrative.  The frontmatter convention
+                    of [I-D.foopgp-uetree] Section 7.1 applies.
+
+   o  ".LINKS"   — pointers to where the actual bytes can be
+                    fetched (Section 4.2).
+
+   The content itself is never stored under the leaf.  Storing
+   it would defeat the purpose of a registry (size of the index
+   versus size of the corpus) and conflict with the typical
+   git-based hosting of an uftree instance.
+
+4.2.  .LINKS — The Actual Content Lives Elsewhere
+
+   ".LINKS" follows the typed versioned pointer syntax of
+   [I-D.foopgp-uetree] Section 4.  Each line names one
+   physical location of the content; if several are listed,
+   they are alternatives.  Example:
+
+       cat by-sha256/.../<full-digest>/.LINKS
+       uri  1.0 ipfs://<cid>/
+       uri  1.0 https://example.org/archives/foo.tar.gz
+       file 1.0 /var/cache/foopgp/<full-digest>.bin
+
+   ".LINKS" entries are descriptive, not contractual: a URI may
+   become unreachable, a filesystem path may be unmounted, an
+   IPFS CID may be unpinned.  Implementations that resolve
+   ".LINKS" SHOULD probe alternatives in order and SHOULD
+   record reachability statistics out-of-band.
+
+
+5.  Open Questions
+
+   The questions in this section are not yet settled.  The
+   intent of this draft is to record them so that operational
+   experience and community feedback can converge on answers
+   in a future revision.
+
+5.1.  Selection: Which Files Deserve an Entry
+
+   uftree is a registry, not an exhaustive index of every byte
+   on a host.  Some files are obviously interesting (user
+   documents, signed releases, datasets); others are obviously
+   noise (build artifacts, cached binaries, ephemeral
+   temporaries).  A principled selection policy is open.
+
+   Candidate signals:
+
+   o  Type and origin (a user-authored Markdown file, a signed
+      tarball, a downloaded artifact).
+
+   o  Access frequency, by which entities (eids) and over
+      what window.
+
+   o  Self-reported significance: a content explicitly
+      flagged by its creator.
+
+   o  Cross-instance prevalence: how many uftree instances
+      already index this hash.
+
+   No fully automated criterion is expected to be satisfactory;
+   uftree-driven selection is meant to remain a partially
+   human decision.
+
+5.2.  Garbage Policy
+
+   When all ".LINKS" of a leaf become unreachable, the content
+   is effectively lost.  Should the leaf be deleted (clean
+   index), kept as a tombstone (proof of past existence),
+   or kept until manual review?
+
+   Garbage policy interacts with archival, with audit trails,
+   and with regulatory regimes that demand the right to be
+   forgotten.  uftree itself does not legislate; it MUST,
+   however, support each of the three behaviours via clear
+   tools and documented hygiene routines.
+
+5.3.  Hash-Algorithm Migration
+
+   SHA-256 is the canonical hash in this draft.  Should SHA-256
+   be deprecated, an "uftree 2.0" would migrate to a successor
+   (BLAKE3, SHA-3, or whatever then prevails) by promoting the
+   secondary root for the new algorithm to canonical and
+   demoting the old root to secondary.
+
+   The migration path is foreseen as: dual-canonical period,
+   then deprecation.  Detail design is left for the time when
+   the migration becomes pressing.
+
+5.4.  Cross-Instance Deduplication
+
+   Two uftree instances run independently may index the same
+   content.  Should they share entries?  Should one query
+   neighbouring instances before creating a new entry?
+
+   A federation protocol along the lines of ActivityPub
+   [ACTIVITYPUB], or a periodic pull of remote leaf indexes,
+   or a peer-to-peer lookup overlay are all possible.  None
+   is specified here.
+
+
+6.  Security Considerations
+
+   uftree does not store content under the tree; it only
+   references content from elsewhere.  An attacker who controls
+   one of the ".LINKS" targets may serve different bytes than
+   advertised; the hash in the leaf name is the safeguard, and
+   consumers MUST verify it after fetching.
+
+   Hash collisions are catastrophic.  SHA-256 is currently
+   considered resistant; SHA-1 and MD5 entries MUST be treated
+   as informational only.  When a collision is observed under
+   a secondary root, the affected entry uses ".HOMONYMS"
+   listing the canonical SHA-256 leaves of the colliding
+   contents.
+
+   When stored in a git repository, the recommended pattern
+   is the same as in [I-D.foopgp-uetree] Section 11: signed
+   commits, a "REMOTE/" access-control layer, and rejection
+   of unsigned pushes.
+
+
+7.  Privacy Considerations
+
+   The mere existence of a leaf reveals that a content has been
+   encountered by some uftree maintainer.  For sensitive
+   contents, the leaf README and ".LINKS" SHOULD be either
+   encrypted or omitted; private uftree instances are the
+   normal case for such material.
+
+   The hash itself is irreversible, but adversaries who
+   suspect a specific content can confirm presence by
+   computing its hash and looking up the leaf.  uftree provides
+   no protection against this kind of probe.
+
+
+8.  References
+
+8.1.  Normative References
+
+   [RFC2119]   Bradner, S., "Key words for use in RFCs to
+               Indicate Requirement Levels", BCP 14,
+               RFC 2119, March 1997.
+
+   [RFC8174]   Leiba, B., "Ambiguity of Uppercase vs Lowercase
+               in RFC 2119 Key Words", BCP 14, RFC 8174,
+               May 2017.
+
+   [I-D.foopgp-uetree]
+               Brucker, J.J. and Mnème, "uetree — Universal
+               Entities Tree, a Filesystem-Native Format",
+               draft-foopgp-uetree-00, May 2026.
+
+8.2.  Informative References
+
+   [VENTI]     Quinlan, S. and S. Dorward, "Venti: a new
+               approach to archival storage", USENIX FAST,
+               2002.
+
+   [GIT]       Hamano, J.C. et al., "Git Distributed
+               Version-Control System", git-scm.com, since
+               2005.
+
+   [IPFS]      Benet, J., "IPFS — Content Addressed, Versioned,
+               P2P File System", arXiv:1407.3561, 2014.
+
+   [TAHOE]     Wilcox-O'Hearn, B. and B. Warner, "Tahoe — The
+               Least-Authority Filesystem", USENIX StorageSS,
+               2008.
+
+   [BLAKE3]    O'Connor, J., Aumasson, J.-P., Neves, S., and
+               Z. Wilcox-O'Hearn, "BLAKE3: One Function, Fast
+               Everywhere", 2020,
+               <https://blake3.io/>.
+
+   [RESTIC]    Neumann, A., "Restic: a backup program that is
+               fast, efficient and secure",
+               <https://restic.net/>.
+
+   [BORG]      The Borg Collective, "BorgBackup",
+               <https://www.borgbackup.org/>.
+
+   [ACTIVITYPUB]
+               Webber, C., Tallon, J., Shepherd, E.,
+               Guy, A., and A. Prodromou, "ActivityPub",
+               W3C Recommendation, January 2018,
+               <https://www.w3.org/TR/activitypub/>.
+
+
+Authors' Addresses
+
+   Jean-Jacques Brucker
+   foopgp
+   <jjbrucker@foopgp.org>
+   u4=sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76
+
+   Mnème
+   foopgp
+   <mneme@foopgp.org>
+   u5=001777236237.945e_43.30_005.38

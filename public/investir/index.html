@@ -23,39 +23,68 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
 <style>
-  /* ── foopgp dark-mode palette (mirrors /djis-simulator/) ──────────── */
+  /* ── foopgp palette — light par défaut, dark via prefers-color-scheme ──
+     L'identité dark-violet reste, mais on respecte la préférence système :
+     desktop "clair" → fond ivoire-lavande lisible (cible : lecteurs âgés,
+     Katia, etc.) ; desktop "sombre" → palette historique dark-violet. */
   :root {
     --primary:      #ff8012;
     --primary-dk:   #d96800;
-    --primary-dim:  rgba(255,128,18,.12);
+    --primary-dim:  rgba(255,128,18,.10);
     --secondary:    #2c284b;
 
-    --bg:           #111029;
-    --bg2:          #1a1838;
-    --bg3:          #221f44;
-    --bg4:          #2c284b;
+    --bg:           #f8f6fb;
+    --bg2:          #f0ebf5;
+    --bg3:          #e8e0f0;
+    --bg4:          #ddd4e8;
 
-    --text:         #ccc9e8;
-    --text-lt:      #8585a4;
-    --text-bright:  #eeedf8;
-    --text-muted:   #5c5c77;
+    --text:         #2c284b;
+    --text-lt:      #5c5c77;
+    --text-bright:  #1a1838;
+    --text-muted:   #8585a4;
 
-    --border:       #312e55;
-    --border-lt:    #3e3a68;
+    --border:       #ddd4e8;
+    --border-lt:    #c8bdda;
 
-    --c2:           #7c6fff;
-    --stingy:       #e056a0;
-    --ok:           #2ecc71;
-    --warn:         #ffb347;
+    --c2:           #5d4ce6;
+    --stingy:       #b8347d;
+    --ok:           #16a34a;
+    --warn:         #d97706;
 
-    --shadow:       0 4px 24px rgba(0,0,0,.45);
+    --shadow:       0 4px 16px rgba(44,40,75,.10);
     --radius:       10px;
     --radius-sm:    6px;
   }
 
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary-dim:  rgba(255,128,18,.12);
+
+      --bg:           #111029;
+      --bg2:          #1a1838;
+      --bg3:          #221f44;
+      --bg4:          #2c284b;
+
+      --text:         #ccc9e8;
+      --text-lt:      #8585a4;
+      --text-bright:  #eeedf8;
+      --text-muted:   #5c5c77;
+
+      --border:       #312e55;
+      --border-lt:    #3e3a68;
+
+      --c2:           #7c6fff;
+      --stingy:       #e056a0;
+      --ok:           #2ecc71;
+      --warn:         #ffb347;
+
+      --shadow:       0 4px 24px rgba(0,0,0,.45);
+    }
+  }
+
   /* ── Reset ────────────────────────────────────────────────────────── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { font-size: 15px; }
+  html { font-size: 18px; }
   body {
     background: var(--bg);
     color: var(--text);
@@ -72,11 +101,32 @@
   a, a:visited { color: var(--primary); text-decoration: none; }
   a:hover     { color: var(--primary-dk); text-decoration: underline; }
 
-  /* ── Header (mirrors djis-simulator) ──────────────────────────────── */
+  /* ── Header (bandeau marque foopgp) ───────────────────────────────────
+     Reste dark-violet en *toutes* circonstances, quel que soit le
+     prefers-color-scheme système : c'est la signature visuelle de la
+     marque. On override les variables localement, donc tous les
+     enfants (brand-token, period, lang-select, etc.) héritent
+     naturellement de la palette dark sans avoir à dupliquer chaque
+     règle. Légèrement plus sombre que le dark-mode du corps pour
+     bien marquer la ligne de séparation. */
   header {
+    --bg2:          #1a1838;
+    --bg3:          #221f44;
+    --bg4:          #2c284b;
+    --text:         #ccc9e8;
+    --text-lt:      #8585a4;
+    --text-bright:  #eeedf8;
+    --border:       #2c284b;
+    --border-lt:    #3e3a68;
+
     background: var(--bg2);
     border-bottom: 1px solid var(--border);
-    box-shadow: 0 2px 20px rgba(0,0,0,.4);
+    box-shadow: 0 2px 20px rgba(0,0,0,.55);
+    /* Sticky : reste collé en haut au scrolling, identité marque
+       toujours visible. z-index 10 pour passer au-dessus du contenu. */
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
   .header-inner {
     max-width: 1360px;
@@ -222,6 +272,36 @@
     font-family: inherit;
   }
   input:focus { outline: none; border-color: var(--primary); background: var(--bg4); }
+  /* Erreur de validation : bord rouge sur l'input + petit message rouge
+     sous le champ. Activé/désactivé par JS au submit ; revient à l'état
+     neutre dès que l'utilisateur recommence à taper. */
+  input.invalid { border-color: #dc2626; }
+  /* .field-error commence avec l'attribut HTML `hidden` ; on ne le rend
+     visible que quand le JS retire `hidden` (= au click 'Continuer' sans
+     courriel valide). Le :not([hidden]) évite que `display: block` ne
+     l'emporte sur le `display: none` implicite de l'attribut HTML. */
+  .field-error:not([hidden]) {
+    display: block;
+    margin-top: .2rem;
+    font-weight: 500;
+    font-size: .78rem;
+    color: #dc2626;
+  }
+
+  /* Lookup result — affiche le bucket de cotisations déjà enregistré
+     quand l'email (ou l'u4) saisi est connu du snapshot. Discret, info
+     positive, ne se montre que sur match (caché par défaut via `hidden`). */
+  .lookup-result:not([hidden]) {
+    display: block;
+    margin: .25rem 0;
+    padding: .55rem .85rem;
+    background: var(--primary-dim);
+    border-left: 3px solid var(--primary);
+    border-radius: var(--radius-sm);
+    font-size: .85rem;
+    color: var(--text-bright);
+  }
+  .lookup-result strong { color: var(--primary-dk); }
   input:invalid:not(:placeholder-shown) { border-color: var(--stingy); }
   /* Hide the native number-input spinner chevrons (we ship custom buttons
      with adaptive step). */
@@ -256,6 +336,21 @@
     background: var(--primary-dim);
     padding: .5rem .75rem;
     border-radius: var(--radius-sm);
+    text-align: center;
+  }
+  /* Masqué quand une cotisation déjà enregistrée a été trouvée (le bloc
+     #lookup-result prend le relais avec la *vraie* valeur depuis le
+     ledger, plutôt qu'une estimation à partir du slider). */
+  .djis-readout.lookup-hidden { display: none; }
+
+  /* Champ vert quand l'eid est certifié (= entry.p) : email et u4
+     ressortent en var(--ok) pour indiquer 'identifié et certifié dans
+     la toile de confiance'. Override input:focus pour préserver le vert
+     même quand le champ a le focus. */
+  input.found, input.found:focus {
+    border-color: var(--ok);
+    color: var(--ok);
+    background: var(--bg3);
   }
   .threshold-hint {
     margin-top: .35rem;
@@ -267,6 +362,32 @@
     border-left: 3px solid var(--warn);
   }
   .threshold-hint.reached { color: var(--ok); border-left-color: var(--ok); }
+
+  /* Photo de la clé physique de sécurité — sobre : tant que le palier
+     djis (6,42 Ɉ) n'est pas franchi, la photo est désaturée et atténuée
+     (l'option n'est pas "active") ; au passage du palier, transition
+     douce vers la couleur et l'opacité pleine — l'utilisateur comprend
+     immédiatement que sa cotisation déclenche désormais l'envoi de la
+     clé matérielle. Pas d'effet bling, juste un changement d'état lisible. */
+  .security-key-link {
+    display: block;
+    margin: .9rem auto .4rem;
+    border-radius: var(--radius);
+    line-height: 0;
+    width: fit-content;
+  }
+  .security-key-photo {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: var(--radius);
+    filter: grayscale(1) opacity(.5);
+    transition: filter 480ms ease;
+  }
+  .security-key-photo.unlocked {
+    filter: none;
+  }
 
   fieldset {
     border: 1px solid var(--border-lt);
@@ -316,6 +437,12 @@
   }
   .iban-block.show { display: block; }
   .iban-block p { margin: .45rem 0; }
+  .iban-block .iban-titulaire {
+    font-size: .88rem;
+    color: var(--text-lt);
+    margin: .25rem 0 .7rem;
+  }
+  .iban-block .iban-titulaire strong { color: var(--text); font-weight: 600; }
   .iban-block code {
     display: block;
     padding: .4rem .6rem;
@@ -399,7 +526,7 @@
       Votre cotisation génère des <strong>djis</strong> (Ɉ) — les parts de capital de
       l'association. Plus vous cotisez tôt, plus vous en recevez. Le palier
       <strong>6,42&nbsp;Ɉ</strong> déclenche l'offre d'une <strong>clé physique de sécurité</strong>
-      (YubiKey ou NitroKey) sur laquelle vous pourrez transposer votre identité OpenPGP.
+      (YubiKey ou NitroKey) sur laquelle vous pourrez transposer votre <a href="/fr/solutions/openpgp-id/">identité OpenPGP</a>.
       <a href="/djis-simulator/">Simulateur djis détaillé →</a>
     </p>
   </section>
@@ -409,8 +536,9 @@
       <form id="form" novalidate>
         <div>
           <label for="email" data-i18n="email-label">Courriel</label>
-          <input id="email" name="email" type="email" required placeholder="vous@example.org">
-          <small data-i18n="email-help">Pour recevoir le reçu de cotisation signé.</small>
+          <input id="email" name="email" type="email" required placeholder="vous@example.org" aria-describedby="email-help email-error">
+          <small id="email-help" data-i18n="email-help">Pour recevoir le reçu de cotisation signé.</small>
+          <small id="email-error" class="field-error" data-i18n="email-error" hidden>Veuillez saisir un courriel valide.</small>
         </div>
 
         <div>
@@ -419,6 +547,10 @@
                  pattern="[A-Za-z0-9_-]{22}[ns_-][0-9]{2}\.[0-9]{2}[ _-][0-9]{3}\.[0-9]{2}"
                  placeholder="ex : tk0gZHyvfSBQiDNP9NvWQwe_42.17-002.76">
           <small data-i18n="u4-help">Générez-le sur djibian — il prendra valeur une fois certifié par un membre.</small>
+        </div>
+
+        <div id="lookup-result" class="lookup-result" hidden>
+          <span id="lookup-status">…</span>
         </div>
 
         <div>
@@ -431,8 +563,17 @@
           </div>
           <div class="djis-readout" id="djis-readout">— Ɉ</div>
           <div class="threshold-hint" id="threshold-hint" data-i18n="threshold-not-yet">
-            Encore quelques euros pour atteindre le palier 6,42&nbsp;Ɉ (clé physique).
+            Encore quelques euros pour atteindre le palier de la clé physique.
           </div>
+          <a class="security-key-link" id="security-key-link"
+             href="/fr/solutions/offer-security-keys/"
+             data-i18n-title="security-key-tooltip"
+             title="En savoir plus sur les clés physiques de sécurité foopgp">
+            <img class="security-key-photo" id="security-key-photo"
+                 src="/images/solutions/OpenPGPkeys.jpg"
+                 alt=""
+                 loading="lazy">
+          </a>
         </div>
 
         <fieldset>
@@ -454,7 +595,8 @@
 
       <div class="iban-block" id="iban-block">
         <p data-i18n="iban-instructions"><strong>Effectuez votre virement avec ces coordonnées :</strong></p>
-        <code id="iban-bic">IBAN: FR76 XXXX XXXX XXXX XXXX XXXX XXX — BIC: XXXXXFRPPXXX</code>
+        <code id="iban-bic">IBAN&nbsp;: FR76 1027 8079 9800 0208 2780 107 &nbsp;—&nbsp; BIC&nbsp;: CMCIFR2A</code>
+        <p class="iban-titulaire" data-i18n-html="iban-titulaire">Titulaire&nbsp;: <strong>FRIENDS OF OPENPGP</strong>, 75 impasse Serre des Isnards, 05000 Pelleautier. Domiciliation&nbsp;: CCM GAP.</p>
         <p data-i18n="iban-reference-label">Motif (à recopier exactement) :</p>
         <code id="iban-reference"></code>
         <p data-i18n="iban-receipt">Vous recevrez votre reçu signé sous quelques jours, à réception du virement.</p>
@@ -480,14 +622,20 @@ const I18N = {
   fr: {
     "brand-title":  "Investir dans foopgp",
     "intro-title":  "Cotiser pour soutenir foopgp",
-    "intro-body":   "Votre cotisation génère des <strong>djis</strong> (Ɉ) — les parts de capital de l'association. Plus vous cotisez tôt, plus vous en recevez. Le palier <strong>6,42&nbsp;Ɉ</strong> déclenche l'offre d'une <strong>clé physique de sécurité</strong> (YubiKey ou NitroKey) sur laquelle vous pourrez transposer votre identité OpenPGP. <a href=\"/djis-simulator/?lang=fr\">Simulateur djis détaillé →</a>",
+    "intro-body":   "Votre cotisation génère des <strong>djis</strong> (Ɉ) — les parts de capital de l'association. Plus vous cotisez tôt, plus vous en recevez. Le palier <strong>6,42&nbsp;Ɉ</strong> déclenche l'offre d'une <strong>clé physique de sécurité</strong> (YubiKey ou NitroKey) sur laquelle vous pourrez transposer votre <a href=\"/fr/solutions/openpgp-id/\">identité OpenPGP</a>. <a href=\"/djis-simulator/?lang=fr\">Simulateur djis détaillé →</a>",
     "form-title":   "Engagement",
     "email-label":  "Courriel",
     "email-help":   "Pour recevoir le reçu de cotisation signé.",
+    "email-error":  "Veuillez saisir un courriel valide.",
     "u4-label":     "Identifiant u4 (optionnel à ce stade)",
     "u4-help":      "Générez-le sur djibian — il prendra valeur une fois certifié par un membre.",
     "amount-label": "Montant (€)",
-    "threshold-not-yet": "Encore quelques euros pour atteindre le palier 6,42 Ɉ (clé physique).",
+    "threshold-not-yet":   "Encore quelques euros pour atteindre le palier de la clé physique.",
+    "bucket-tier-0":  "moins de 50 €",
+    "bucket-tier-1":  "entre 50 et 199 €",
+    "bucket-tier-2":  "entre 200 et 999 €",
+    "bucket-tier-3":  "entre 1 000 et 4 999 €",
+    "bucket-tier-4":  "5 000 € ou plus",
     "threshold-reached": "✓ Palier 6,42 Ɉ atteint — clé physique de sécurité incluse.",
     "provider-legend":  "Moyen de paiement",
     "provider-helloasso": "HelloAsso",
@@ -497,6 +645,10 @@ const I18N = {
     "submit": "Continuer",
     "iban-instructions": "Effectuez votre virement avec ces coordonnées :",
     "iban-reference-label": "Motif (à recopier exactement) :",
+    "iban-titulaire":      "Titulaire&nbsp;: <strong>FRIENDS OF OPENPGP</strong>, 75 impasse Serre des Isnards, 05000 Pelleautier. Domiciliation&nbsp;: CCM GAP.",
+    "security-key-tooltip": "En savoir plus sur les clés physiques de sécurité foopgp",
+    "lookup-found-promoted":  "Cotisations enregistrées : {bucket}, ≈ {djis} Ɉ générés.",
+    "lookup-found-pending":  "Cotisations enregistrées : {bucket}. <a href=\"/fr/course/\">Générez et certifiez</a> votre <a href=\"/fr/solutions/openpgp-id/\">identité OpenPGP</a> pour débloquer vos Ɉ.",
     "iban-receipt": "Vous recevrez votre reçu signé sous quelques jours, à réception du virement.",
     "period-template": "Au mois de <strong>{month}</strong> <strong>{year}</strong>",
     "period-tooltip": "Conditions applicables au mois en cours. Elles évoluent légèrement chaque mois.",
@@ -504,14 +656,20 @@ const I18N = {
   en: {
     "brand-title":  "Invest in foopgp",
     "intro-title":  "Contribute to support foopgp",
-    "intro-body":   "Your contribution mints <strong>djis</strong> (Ɉ) — the association's capital shares. The sooner you contribute, the more you get. The <strong>6.42&nbsp;Ɉ</strong> tier unlocks the offer of a <strong>physical security key</strong> (YubiKey or NitroKey) on which you can transpose your OpenPGP identity. <a href=\"/djis-simulator/?lang=en\">Full djis simulator →</a>",
+    "intro-body":   "Your contribution mints <strong>djis</strong> (Ɉ) — the association's capital shares. The sooner you contribute, the more you get. The <strong>6.42&nbsp;Ɉ</strong> tier unlocks the offer of a <strong>physical security key</strong> (YubiKey or NitroKey) on which you can transpose your <a href=\"/solutions/openpgp-id/\">OpenPGP identity</a>. <a href=\"/djis-simulator/?lang=en\">Full djis simulator →</a>",
     "form-title":   "Commitment",
     "email-label":  "Email",
     "email-help":   "To receive your signed contribution receipt.",
+    "email-error":  "Please enter a valid email address.",
     "u4-label":     "u4 identifier (optional for now)",
     "u4-help":      "Generate it on djibian — it will take value once certified by a member.",
     "amount-label": "Amount (€)",
-    "threshold-not-yet": "A few more euros to reach the 6.42 Ɉ tier (physical security key).",
+    "threshold-not-yet":   "A few more euros to reach the physical key tier.",
+    "bucket-tier-0":  "less than €50",
+    "bucket-tier-1":  "between €50 and €199",
+    "bucket-tier-2":  "between €200 and €999",
+    "bucket-tier-3":  "between €1,000 and €4,999",
+    "bucket-tier-4":  "€5,000 or more",
     "threshold-reached": "✓ 6.42 Ɉ tier reached — physical security key included.",
     "provider-legend":  "Payment method",
     "provider-helloasso": "HelloAsso",
@@ -521,6 +679,10 @@ const I18N = {
     "submit": "Continue",
     "iban-instructions": "Make your transfer with these details:",
     "iban-reference-label": "Reference (copy exactly):",
+    "iban-titulaire":      "Account holder: <strong>FRIENDS OF OPENPGP</strong>, 75 impasse Serre des Isnards, 05000 Pelleautier, France. Branch: CCM GAP.",
+    "security-key-tooltip": "Learn more about foopgp physical security keys",
+    "lookup-found-promoted":  "Contributions on file: {bucket}, ≈ {djis} Ɉ generated.",
+    "lookup-found-pending":  "Contributions on file: {bucket}. <a href=\"/course/\">Generate and certify</a> your <a href=\"/solutions/openpgp-id/\">OpenPGP identity</a> to unlock your Ɉ.",
     "iban-receipt": "You'll receive your signed receipt within a few days, on transfer arrival.",
     "period-template": "In <strong>{month}</strong> <strong>{year}</strong>",
     "period-tooltip": "Conditions applicable to the current month. They evolve slightly every month.",
@@ -528,14 +690,20 @@ const I18N = {
   es: {
     "brand-title":  "Invertir en foopgp",
     "intro-title":  "Cotizar para apoyar a foopgp",
-    "intro-body":   "Su cotización genera <strong>djis</strong> (Ɉ) — las participaciones de capital de la asociación. Cuanto antes cotice, más recibirá. El umbral de <strong>6,42&nbsp;Ɉ</strong> desencadena la oferta de una <strong>llave física de seguridad</strong> (YubiKey o NitroKey) sobre la cual podrá transponer su identidad OpenPGP. <a href=\"/djis-simulator/?lang=es\">Simulador djis detallado →</a>",
+    "intro-body":   "Su cotización genera <strong>djis</strong> (Ɉ) — las participaciones de capital de la asociación. Cuanto antes cotice, más recibirá. El umbral de <strong>6,42&nbsp;Ɉ</strong> desencadena la oferta de una <strong>llave física de seguridad</strong> (YubiKey o NitroKey) sobre la cual podrá transponer su <a href=\"/fr/solutions/openpgp-id/\">identidad OpenPGP</a>. <a href=\"/djis-simulator/?lang=es\">Simulador djis detallado →</a>",
     "form-title":   "Compromiso",
     "email-label":  "Correo electrónico",
     "email-help":   "Para recibir el recibo de cotización firmado.",
+    "email-error":  "Por favor, introduzca un correo electrónico válido.",
     "u4-label":     "Identificador u4 (opcional por ahora)",
     "u4-help":      "Genérelo en djibian — adquirirá valor una vez certificado por un miembro.",
     "amount-label": "Monto (€)",
-    "threshold-not-yet": "Unos euros más para alcanzar el umbral de 6,42 Ɉ (llave física).",
+    "threshold-not-yet":   "Unos euros más para alcanzar el umbral de la llave física.",
+    "bucket-tier-0":  "menos de 50 €",
+    "bucket-tier-1":  "entre 50 y 199 €",
+    "bucket-tier-2":  "entre 200 y 999 €",
+    "bucket-tier-3":  "entre 1 000 y 4 999 €",
+    "bucket-tier-4":  "5 000 € o más",
     "threshold-reached": "✓ Umbral de 6,42 Ɉ alcanzado — llave física de seguridad incluida.",
     "provider-legend":  "Método de pago",
     "provider-helloasso": "HelloAsso",
@@ -545,6 +713,10 @@ const I18N = {
     "submit": "Continuar",
     "iban-instructions": "Realice su transferencia con estas coordenadas:",
     "iban-reference-label": "Concepto (a copiar exactamente):",
+    "iban-titulaire":      "Titular: <strong>FRIENDS OF OPENPGP</strong>, 75 impasse Serre des Isnards, 05000 Pelleautier, Francia. Sucursal: CCM GAP.",
+    "security-key-tooltip": "Más información sobre las claves físicas de seguridad foopgp",
+    "lookup-found-promoted":  "Cotizaciones registradas: {bucket}, ≈ {djis} Ɉ generados.",
+    "lookup-found-pending":  "Cotizaciones registradas: {bucket}. <a href=\"/fr/course/\">Genere y certifique</a> su <a href=\"/fr/solutions/openpgp-id/\">identidad OpenPGP</a> para desbloquear sus Ɉ.",
     "iban-receipt": "Recibirá su recibo firmado en unos días, tras la recepción de la transferencia.",
     "period-template": "En <strong>{month}</strong> de <strong>{year}</strong>",
     "period-tooltip": "Condiciones aplicables al mes en curso. Evolucionan ligeramente cada mes.",
@@ -552,14 +724,20 @@ const I18N = {
   de: {
     "brand-title":  "In foopgp investieren",
     "intro-title":  "Beitragen, um foopgp zu unterstützen",
-    "intro-body":   "Ihr Beitrag erzeugt <strong>djis</strong> (Ɉ) — die Kapitalanteile des Vereins. Je früher Sie beitragen, desto mehr erhalten Sie. Die Schwelle von <strong>6,42&nbsp;Ɉ</strong> löst das Angebot eines <strong>physischen Sicherheitsschlüssels</strong> (YubiKey oder NitroKey) aus, auf den Sie Ihre OpenPGP-Identität übertragen können. <a href=\"/djis-simulator/?lang=de\">Vollständiger djis-Simulator →</a>",
+    "intro-body":   "Ihr Beitrag erzeugt <strong>djis</strong> (Ɉ) — die Kapitalanteile des Vereins. Je früher Sie beitragen, desto mehr erhalten Sie. Die Schwelle von <strong>6,42&nbsp;Ɉ</strong> löst das Angebot eines <strong>physischen Sicherheitsschlüssels</strong> (YubiKey oder NitroKey) aus, auf den Sie Ihre <a href=\"/fr/solutions/openpgp-id/\">OpenPGP-Identität</a> übertragen können. <a href=\"/djis-simulator/?lang=de\">Vollständiger djis-Simulator →</a>",
     "form-title":   "Verpflichtung",
     "email-label":  "E-Mail",
     "email-help":   "Um Ihre signierte Beitragsbestätigung zu erhalten.",
+    "email-error":  "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     "u4-label":     "u4-Kennung (zu diesem Zeitpunkt optional)",
     "u4-help":      "Erzeugen Sie sie auf djibian — sie erhält Wert, sobald sie von einem Mitglied zertifiziert ist.",
     "amount-label": "Betrag (€)",
-    "threshold-not-yet": "Noch ein paar Euro, um die Schwelle von 6,42 Ɉ (physischer Schlüssel) zu erreichen.",
+    "threshold-not-yet":   "Noch ein paar Euro bis zur Schwelle des physischen Schlüssels.",
+    "bucket-tier-0":  "weniger als 50 €",
+    "bucket-tier-1":  "zwischen 50 und 199 €",
+    "bucket-tier-2":  "zwischen 200 und 999 €",
+    "bucket-tier-3":  "zwischen 1 000 und 4 999 €",
+    "bucket-tier-4":  "5 000 € oder mehr",
     "threshold-reached": "✓ Schwelle 6,42 Ɉ erreicht — physischer Sicherheitsschlüssel inbegriffen.",
     "provider-legend":  "Zahlungsmethode",
     "provider-helloasso": "HelloAsso",
@@ -569,6 +747,10 @@ const I18N = {
     "submit": "Weiter",
     "iban-instructions": "Tätigen Sie Ihre Überweisung mit diesen Daten:",
     "iban-reference-label": "Verwendungszweck (genau kopieren):",
+    "iban-titulaire":      "Kontoinhaber: <strong>FRIENDS OF OPENPGP</strong>, 75 impasse Serre des Isnards, 05000 Pelleautier, Frankreich. Filiale: CCM GAP.",
+    "security-key-tooltip": "Mehr über die physischen Sicherheitsschlüssel von foopgp",
+    "lookup-found-promoted":  "Beiträge erfasst: {bucket}, ≈ {djis} Ɉ erzeugt.",
+    "lookup-found-pending":  "Beiträge erfasst: {bucket}. <a href=\"/fr/course/\">Erstellen und zertifizieren</a> Sie Ihre <a href=\"/fr/solutions/openpgp-id/\">OpenPGP-Identität</a>, um Ihre Ɉ freizuschalten.",
     "iban-receipt": "Sie erhalten Ihre signierte Bestätigung innerhalb weniger Tage nach Eingang der Überweisung.",
     "period-template": "Im <strong>{month}</strong> <strong>{year}</strong>",
     "period-tooltip": "Bedingungen für den laufenden Monat. Sie ändern sich monatlich geringfügig.",
@@ -576,14 +758,20 @@ const I18N = {
   it: {
     "brand-title":  "Investire in foopgp",
     "intro-title":  "Contribuire per sostenere foopgp",
-    "intro-body":   "Il vostro contributo genera <strong>djis</strong> (Ɉ) — le quote di capitale dell'associazione. Prima si contribuisce, più se ne riceve. La soglia di <strong>6,42&nbsp;Ɉ</strong> attiva l'offerta di una <strong>chiave fisica di sicurezza</strong> (YubiKey o NitroKey) su cui potrete trasporre la vostra identità OpenPGP. <a href=\"/djis-simulator/?lang=it\">Simulatore djis dettagliato →</a>",
+    "intro-body":   "Il vostro contributo genera <strong>djis</strong> (Ɉ) — le quote di capitale dell'associazione. Prima si contribuisce, più se ne riceve. La soglia di <strong>6,42&nbsp;Ɉ</strong> attiva l'offerta di una <strong>chiave fisica di sicurezza</strong> (YubiKey o NitroKey) su cui potrete trasporre la vostra <a href=\"/fr/solutions/openpgp-id/\">identità OpenPGP</a>. <a href=\"/djis-simulator/?lang=it\">Simulatore djis dettagliato →</a>",
     "form-title":   "Impegno",
     "email-label":  "Email",
     "email-help":   "Per ricevere la ricevuta di contributo firmata.",
+    "email-error":  "Inserisci un indirizzo email valido.",
     "u4-label":     "Identificativo u4 (opzionale a questo stadio)",
     "u4-help":      "Generatelo su djibian — assumerà valore una volta certificato da un membro.",
     "amount-label": "Importo (€)",
-    "threshold-not-yet": "Ancora qualche euro per raggiungere la soglia di 6,42 Ɉ (chiave fisica).",
+    "threshold-not-yet":   "Ancora qualche euro per raggiungere la soglia della chiave fisica.",
+    "bucket-tier-0":  "meno di 50 €",
+    "bucket-tier-1":  "tra 50 e 199 €",
+    "bucket-tier-2":  "tra 200 e 999 €",
+    "bucket-tier-3":  "tra 1 000 e 4 999 €",
+    "bucket-tier-4":  "5 000 € o più",
     "threshold-reached": "✓ Soglia 6,42 Ɉ raggiunta — chiave fisica di sicurezza inclusa.",
     "provider-legend":  "Metodo di pagamento",
     "provider-helloasso": "HelloAsso",
@@ -593,6 +781,10 @@ const I18N = {
     "submit": "Continuare",
     "iban-instructions": "Effettuate il vostro bonifico con queste coordinate:",
     "iban-reference-label": "Causale (da copiare esattamente):",
+    "iban-titulaire":      "Intestatario: <strong>FRIENDS OF OPENPGP</strong>, 75 impasse Serre des Isnards, 05000 Pelleautier, Francia. Filiale: CCM GAP.",
+    "security-key-tooltip": "Scopri di più sulle chiavi fisiche di sicurezza foopgp",
+    "lookup-found-promoted":  "Contributi registrati: {bucket}, ≈ {djis} Ɉ generati.",
+    "lookup-found-pending":  "Contributi registrati: {bucket}. <a href=\"/fr/course/\">Genera e certifica</a> la tua <a href=\"/fr/solutions/openpgp-id/\">identità OpenPGP</a> per sbloccare i tuoi Ɉ.",
     "iban-receipt": "Riceverete la vostra ricevuta firmata entro qualche giorno, alla ricezione del bonifico.",
     "period-template": "Nel mese di <strong>{month}</strong> <strong>{year}</strong>",
     "period-tooltip": "Condizioni applicabili al mese in corso. Cambiano leggermente ogni mese.",
@@ -600,14 +792,20 @@ const I18N = {
   uk: {
     "brand-title":  "Інвестувати у foopgp",
     "intro-title":  "Внесок на підтримку foopgp",
-    "intro-body":   "Ваш внесок генерує <strong>djis</strong> (Ɉ) — частки капіталу асоціації. Чим раніше зробите внесок, тим більше отримаєте. Поріг <strong>6,42&nbsp;Ɉ</strong> розблоковує пропозицію <strong>фізичного ключа безпеки</strong> (YubiKey або NitroKey), на який зможете перенести свою OpenPGP-ідентифікацію. <a href=\"/djis-simulator/?lang=uk\">Детальний симулятор djis →</a>",
+    "intro-body":   "Ваш внесок генерує <strong>djis</strong> (Ɉ) — частки капіталу асоціації. Чим раніше зробите внесок, тим більше отримаєте. Поріг <strong>6,42&nbsp;Ɉ</strong> розблоковує пропозицію <strong>фізичного ключа безпеки</strong> (YubiKey або NitroKey), на який зможете перенести свою <a href=\"/fr/solutions/openpgp-id/\">OpenPGP-ідентифікацію</a>. <a href=\"/djis-simulator/?lang=uk\">Детальний симулятор djis →</a>",
     "form-title":   "Зобов'язання",
     "email-label":  "Електронна пошта",
     "email-help":   "Для отримання підписаної квитанції внеску.",
+    "email-error":  "Будь ласка, введіть дійсну адресу електронної пошти.",
     "u4-label":     "Ідентифікатор u4 (поки що необов'язково)",
     "u4-help":      "Згенеруйте його на djibian — набуде значення після сертифікації членом.",
     "amount-label": "Сума (€)",
-    "threshold-not-yet": "Ще кілька євро до порогу 6,42 Ɉ (фізичний ключ).",
+    "threshold-not-yet":   "Ще кілька євро до порогу фізичного ключа.",
+    "bucket-tier-0":  "менше 50 €",
+    "bucket-tier-1":  "від 50 до 199 €",
+    "bucket-tier-2":  "від 200 до 999 €",
+    "bucket-tier-3":  "від 1 000 до 4 999 €",
+    "bucket-tier-4":  "5 000 € і більше",
     "threshold-reached": "✓ Поріг 6,42 Ɉ досягнуто — фізичний ключ безпеки включено.",
     "provider-legend":  "Спосіб оплати",
     "provider-helloasso": "HelloAsso",
@@ -617,6 +815,10 @@ const I18N = {
     "submit": "Продовжити",
     "iban-instructions": "Здійсніть переказ за цими реквізитами:",
     "iban-reference-label": "Призначення (копіювати точно):",
+    "iban-titulaire":      "Власник рахунку: <strong>FRIENDS OF OPENPGP</strong>, 75 impasse Serre des Isnards, 05000 Pelleautier, Франція. Філія: CCM GAP.",
+    "security-key-tooltip": "Дізнатися більше про апаратні ключі безпеки foopgp",
+    "lookup-found-promoted":  "Внески зафіксовано: {bucket}, ≈ {djis} Ɉ створено.",
+    "lookup-found-pending":  "Внески зафіксовано: {bucket}. <a href=\"/fr/course/\">Створіть і сертифікуйте</a> ваш <a href=\"/fr/solutions/openpgp-id/\">OpenPGP-ідентифікацію</a>, щоб розблокувати Ɉ.",
     "iban-receipt": "Ви отримаєте підписану квитанцію за кілька днів після надходження переказу.",
     "period-template": "<strong>{month}</strong> <strong>{year}</strong>",
     "period-tooltip": "Умови чинні для поточного місяця. Вони незначно змінюються щомісяця.",
@@ -624,14 +826,20 @@ const I18N = {
   pt: {
     "brand-title":  "Investir na foopgp",
     "intro-title":  "Contribuir para apoiar a foopgp",
-    "intro-body":   "A sua contribuição gera <strong>djis</strong> (Ɉ) — as partes de capital da associação. Quanto mais cedo contribuir, mais recebe. O patamar de <strong>6,42&nbsp;Ɉ</strong> desencadeia a oferta de uma <strong>chave física de segurança</strong> (YubiKey ou NitroKey) na qual poderá transpor a sua identidade OpenPGP. <a href=\"/djis-simulator/?lang=pt\">Simulador djis detalhado →</a>",
+    "intro-body":   "A sua contribuição gera <strong>djis</strong> (Ɉ) — as partes de capital da associação. Quanto mais cedo contribuir, mais recebe. O patamar de <strong>6,42&nbsp;Ɉ</strong> desencadeia a oferta de uma <strong>chave física de segurança</strong> (YubiKey ou NitroKey) na qual poderá transpor a sua <a href=\"/fr/solutions/openpgp-id/\">identidade OpenPGP</a>. <a href=\"/djis-simulator/?lang=pt\">Simulador djis detalhado →</a>",
     "form-title":   "Compromisso",
     "email-label":  "Correio eletrónico",
     "email-help":   "Para receber o seu recibo de contribuição assinado.",
+    "email-error":  "Por favor, introduza um endereço de e-mail válido.",
     "u4-label":     "Identificador u4 (opcional nesta fase)",
     "u4-help":      "Gere-o em djibian — adquirirá valor uma vez certificado por um membro.",
     "amount-label": "Montante (€)",
-    "threshold-not-yet": "Mais alguns euros para atingir o patamar de 6,42 Ɉ (chave física).",
+    "threshold-not-yet":   "Mais alguns euros para atingir o patamar da chave física.",
+    "bucket-tier-0":  "menos de 50 €",
+    "bucket-tier-1":  "entre 50 e 199 €",
+    "bucket-tier-2":  "entre 200 e 999 €",
+    "bucket-tier-3":  "entre 1 000 e 4 999 €",
+    "bucket-tier-4":  "5 000 € ou mais",
     "threshold-reached": "✓ Patamar 6,42 Ɉ atingido — chave física de segurança incluída.",
     "provider-legend":  "Método de pagamento",
     "provider-helloasso": "HelloAsso",
@@ -641,6 +849,10 @@ const I18N = {
     "submit": "Continuar",
     "iban-instructions": "Efetue a sua transferência com estas coordenadas:",
     "iban-reference-label": "Descritivo (a copiar exatamente):",
+    "iban-titulaire":      "Titular: <strong>FRIENDS OF OPENPGP</strong>, 75 impasse Serre des Isnards, 05000 Pelleautier, França. Agência: CCM GAP.",
+    "security-key-tooltip": "Saiba mais sobre as chaves físicas de segurança foopgp",
+    "lookup-found-promoted":  "Contribuições registadas: {bucket}, ≈ {djis} Ɉ gerados.",
+    "lookup-found-pending":  "Contribuições registadas: {bucket}. <a href=\"/fr/course/\">Gere e certifique</a> a sua <a href=\"/fr/solutions/openpgp-id/\">identidade OpenPGP</a> para desbloquear os Ɉ.",
     "iban-receipt": "Receberá o seu recibo assinado em alguns dias, após a receção da transferência.",
     "period-template": "No mês de <strong>{month}</strong> de <strong>{year}</strong>",
     "period-tooltip": "Condições aplicáveis ao mês em curso. Evoluem ligeiramente a cada mês.",
@@ -648,14 +860,20 @@ const I18N = {
   pl: {
     "brand-title":  "Inwestuj w foopgp",
     "intro-title":  "Wpłata wspierająca foopgp",
-    "intro-body":   "Twoja wpłata generuje <strong>djis</strong> (Ɉ) — udziały kapitałowe stowarzyszenia. Im wcześniej wpłacisz, tym więcej otrzymasz. Próg <strong>6,42&nbsp;Ɉ</strong> uruchamia ofertę <strong>fizycznego klucza bezpieczeństwa</strong> (YubiKey lub NitroKey), na który możesz przenieść swoją tożsamość OpenPGP. <a href=\"/djis-simulator/?lang=pl\">Szczegółowy symulator djis →</a>",
+    "intro-body":   "Twoja wpłata generuje <strong>djis</strong> (Ɉ) — udziały kapitałowe stowarzyszenia. Im wcześniej wpłacisz, tym więcej otrzymasz. Próg <strong>6,42&nbsp;Ɉ</strong> uruchamia ofertę <strong>fizycznego klucza bezpieczeństwa</strong> (YubiKey lub NitroKey), na który możesz przenieść swoją <a href=\"/fr/solutions/openpgp-id/\">tożsamość OpenPGP</a>. <a href=\"/djis-simulator/?lang=pl\">Szczegółowy symulator djis →</a>",
     "form-title":   "Zobowiązanie",
     "email-label":  "E-mail",
     "email-help":   "Aby otrzymać podpisane potwierdzenie wpłaty.",
+    "email-error":  "Proszę podać prawidłowy adres e-mail.",
     "u4-label":     "Identyfikator u4 (opcjonalny na tym etapie)",
     "u4-help":      "Wygeneruj go na djibian — zyska wartość po certyfikacji przez członka.",
     "amount-label": "Kwota (€)",
-    "threshold-not-yet": "Jeszcze kilka euro do progu 6,42 Ɉ (klucz fizyczny).",
+    "threshold-not-yet":   "Jeszcze kilka euro do progu klucza fizycznego.",
+    "bucket-tier-0":  "mniej niż 50 €",
+    "bucket-tier-1":  "od 50 do 199 €",
+    "bucket-tier-2":  "od 200 do 999 €",
+    "bucket-tier-3":  "od 1 000 do 4 999 €",
+    "bucket-tier-4":  "5 000 € lub więcej",
     "threshold-reached": "✓ Próg 6,42 Ɉ osiągnięty — fizyczny klucz bezpieczeństwa wliczony.",
     "provider-legend":  "Metoda płatności",
     "provider-helloasso": "HelloAsso",
@@ -665,6 +883,10 @@ const I18N = {
     "submit": "Kontynuuj",
     "iban-instructions": "Dokonaj przelewu na podane dane:",
     "iban-reference-label": "Tytuł (skopiuj dokładnie):",
+    "iban-titulaire":      "Właściciel konta: <strong>FRIENDS OF OPENPGP</strong>, 75 impasse Serre des Isnards, 05000 Pelleautier, Francja. Oddział: CCM GAP.",
+    "security-key-tooltip": "Dowiedz się więcej o sprzętowych kluczach bezpieczeństwa foopgp",
+    "lookup-found-promoted":  "Składki zarejestrowane: {bucket}, ≈ {djis} Ɉ wygenerowane.",
+    "lookup-found-pending":  "Składki zarejestrowane: {bucket}. <a href=\"/fr/course/\">Wygeneruj i certyfikuj</a> swoją <a href=\"/fr/solutions/openpgp-id/\">tożsamość OpenPGP</a>, aby odblokować swoje Ɉ.",
     "iban-receipt": "Otrzymasz podpisane potwierdzenie w ciągu kilku dni od wpłynięcia przelewu.",
     "period-template": "<strong>{month}</strong> <strong>{year}</strong>",
     "period-tooltip": "Warunki obowiązujące w bieżącym miesiącu. Zmieniają się nieznacznie co miesiąc.",
@@ -672,14 +894,20 @@ const I18N = {
   ru: {
     "brand-title":  "Инвестировать в foopgp",
     "intro-title":  "Взнос в поддержку foopgp",
-    "intro-body":   "Ваш взнос генерирует <strong>djis</strong> (Ɉ) — доли капитала ассоциации. Чем раньше вы внесёте взнос, тем больше получите. Порог <strong>6,42&nbsp;Ɉ</strong> открывает предложение <strong>физического ключа безопасности</strong> (YubiKey или NitroKey), на который вы сможете перенести свою OpenPGP-личность. <a href=\"/djis-simulator/?lang=ru\">Подробный симулятор djis →</a>",
+    "intro-body":   "Ваш взнос генерирует <strong>djis</strong> (Ɉ) — доли капитала ассоциации. Чем раньше вы внесёте взнос, тем больше получите. Порог <strong>6,42&nbsp;Ɉ</strong> открывает предложение <strong>физического ключа безопасности</strong> (YubiKey или NitroKey), на который вы сможете перенести свою <a href=\"/fr/solutions/openpgp-id/\">OpenPGP-личность</a>. <a href=\"/djis-simulator/?lang=ru\">Подробный симулятор djis →</a>",
     "form-title":   "Обязательство",
     "email-label":  "Электронная почта",
     "email-help":   "Чтобы получить подписанную квитанцию взноса.",
+    "email-error":  "Пожалуйста, введите действительный адрес электронной почты.",
     "u4-label":     "Идентификатор u4 (на этом этапе необязательно)",
     "u4-help":      "Сгенерируйте его в djibian — он обретёт ценность после сертификации участником.",
     "amount-label": "Сумма (€)",
-    "threshold-not-yet": "Ещё несколько евро до порога 6,42 Ɉ (физический ключ).",
+    "threshold-not-yet":   "Ещё несколько евро до порога физического ключа.",
+    "bucket-tier-0":  "менее 50 €",
+    "bucket-tier-1":  "от 50 до 199 €",
+    "bucket-tier-2":  "от 200 до 999 €",
+    "bucket-tier-3":  "от 1 000 до 4 999 €",
+    "bucket-tier-4":  "5 000 € или более",
     "threshold-reached": "✓ Порог 6,42 Ɉ достигнут — физический ключ безопасности включён.",
     "provider-legend":  "Способ оплаты",
     "provider-helloasso": "HelloAsso",
@@ -689,6 +917,10 @@ const I18N = {
     "submit": "Продолжить",
     "iban-instructions": "Произведите перевод по этим реквизитам:",
     "iban-reference-label": "Назначение платежа (скопируйте точно):",
+    "iban-titulaire":      "Владелец счёта: <strong>FRIENDS OF OPENPGP</strong>, 75 impasse Serre des Isnards, 05000 Pelleautier, Франция. Филиал: CCM GAP.",
+    "security-key-tooltip": "Узнать больше об аппаратных ключах безопасности foopgp",
+    "lookup-found-promoted":  "Взносы зарегистрированы: {bucket}, ≈ {djis} Ɉ создано.",
+    "lookup-found-pending":  "Взносы зарегистрированы: {bucket}. <a href=\"/fr/course/\">Создайте и сертифицируйте</a> вашу <a href=\"/fr/solutions/openpgp-id/\">OpenPGP-личность</a>, чтобы разблокировать ваши Ɉ.",
     "iban-receipt": "Вы получите подписанную квитанцию в течение нескольких дней после поступления перевода.",
     "period-template": "<strong>{month}</strong> <strong>{year}</strong>",
     "period-tooltip": "Условия, действующие в текущем месяце. Они слегка меняются каждый месяц.",
@@ -718,6 +950,19 @@ function applyLang(lang) {
     const key = el.dataset.i18nHtml;
     if (I18N[eff][key]) el.innerHTML = I18N[eff][key];
   });
+  document.querySelectorAll("[data-i18n-title]").forEach(el => {
+    const key = el.dataset.i18nTitle;
+    if (I18N[eff][key]) el.title = I18N[eff][key];
+  });
+  // La page "offer-security-keys" n'existe qu'en FR et EN à ce jour.
+  // Les autres langues retombent sur FR (l'original) ; ajouter une
+  // entrée par langue ici quand la traduction sera publiée.
+  const skLink = document.getElementById("security-key-link");
+  if (skLink) {
+    skLink.href = (eff === "en")
+      ? "/en/solutions/offer-security-keys/"
+      : "/fr/solutions/offer-security-keys/";
+  }
   document.getElementById("lang-select").value = lang;
 
   // Update the current-period label in the header. Each locale has its
@@ -877,6 +1122,10 @@ function updateDjis() {
   const hint = document.getElementById("threshold-hint");
   const reached = dji >= KEY_THRESHOLD_DJIS;
   hint.classList.toggle("reached", reached);
+  // Halo orange sur la photo de clé physique : « la cotisation simulée
+  // déverrouille l'envoi de la clé matérielle ». Sync sur la même variable
+  // `reached`, donc strictement aligné avec le palier 6,42 Ɉ.
+  document.getElementById("security-key-photo").classList.toggle("unlocked", reached);
   const eff = effectiveLang(getLang());
   hint.textContent = I18N[eff][reached ? "threshold-reached" : "threshold-not-yet"];
 }
@@ -895,10 +1144,150 @@ function newRef() {
 // ── Submit handling ───────────────────────────────────────────────────
 const ibanBlock = document.getElementById("iban-block");
 
+// Email validation — on bypasses HTML5 native validation by calling
+// preventDefault() unconditionally, so we re-enforce it manually here.
+// On click without a valid email : flag the input red, show the localised
+// error message under the field, focus back into the field. Cleared as
+// soon as the user starts typing again.
+const emailInput = document.getElementById("email");
+const emailError = document.getElementById("email-error");
+function flagEmailError() {
+  emailInput.classList.add("invalid");
+  emailError.hidden = false;
+  emailInput.focus();
+  emailInput.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+function clearEmailError() {
+  emailInput.classList.remove("invalid");
+  emailError.hidden = true;
+}
+emailInput.addEventListener("input", clearEmailError);
+
+// ── Cotisant lookup (snapshot statique) ─────────────────────────────
+// Pour rassurer l'utilisateur : si l'email (ou u4) saisi est déjà connu
+// du ledger, on affiche le bucket logarithmique de ses cotisations
+// cumulées + ses djis générés (s'il est promu). Le snapshot est servi
+// par /data/contribs-buckets.json, regénéré côté serveur par
+// `bl-foopgp snapshot ~/uetree-djis-by-email > static/data/...` en fin
+// de pipeline cashflow. Privacy : emails sont SHA-256 hashés dans le
+// JSON, donc pas d'énumération possible — il faut déjà connaître
+// l'email pour le matcher.
+let _snapshotPromise = null;
+function loadSnapshot() {
+  if (!_snapshotPromise) {
+    _snapshotPromise = fetch("/data/contribs-buckets.json", { cache: "default" })
+      .then(r => r.ok ? r.json() : null)
+      .catch(() => null);
+  }
+  return _snapshotPromise;
+}
+async function sha256hex(str) {
+  const buf = new TextEncoder().encode(str);
+  const hash = await crypto.subtle.digest("SHA-256", buf);
+  return Array.from(new Uint8Array(hash))
+    .map(b => b.toString(16).padStart(2, "0")).join("");
+}
+// Tolérance copier-coller :
+//  - email peut arriver entre chevrons : '<jane@x.com>' → 'jane@x.com'
+//  - u4 peut arriver enveloppé : '(u4=ABC…)', 'u4=ABC…', '(ABC…)' → 'ABC…'
+function cleanEmail(s) {
+  return (s || "").trim().replace(/^<+/, "").replace(/>+$/, "").trim();
+}
+function cleanU4(s) {
+  return (s || "").trim()
+    .replace(/^\((u4=)?/i, "")
+    .replace(/\)$/, "")
+    .replace(/^u4=/i, "")
+    .trim();
+}
+// Sur blur, on rend visible la version nettoyée pour que l'utilisateur
+// voie ce qui sera réellement utilisé (lookup, motif IBAN, HelloAsso URL).
+document.getElementById("email").addEventListener("blur", e => {
+  const c = cleanEmail(e.target.value);
+  if (c !== e.target.value) { e.target.value = c; scheduleLookup(); }
+});
+document.getElementById("u4").addEventListener("blur", e => {
+  const c = cleanU4(e.target.value);
+  if (c !== e.target.value) { e.target.value = c; scheduleLookup(); }
+});
+const lookupBlock = document.getElementById("lookup-result");
+const lookupStatus = document.getElementById("lookup-status");
+function hideLookup() {
+  lookupBlock.hidden = true;
+  document.getElementById("email").classList.remove("found");
+  document.getElementById("u4").classList.remove("found");
+  document.getElementById("djis-readout").classList.remove("lookup-hidden");
+}
+async function doLookup() {
+  const snap = await loadSnapshot();
+  if (!snap || !snap.entries) { hideLookup(); return; }
+
+  const emailVal = cleanEmail(document.getElementById("email").value).toLowerCase();
+  const u4Val = cleanU4(document.getElementById("u4").value);
+
+  let entry = null;
+  if (u4Val && snap.entries[u4Val]) entry = snap.entries[u4Val];
+  if (!entry && emailVal && emailVal.indexOf("@") > 0) {
+    const h = await sha256hex(emailVal);
+    if (snap.entries[h]) entry = snap.entries[h];
+  }
+  if (!entry) { hideLookup(); return; }
+
+  // Auto-fill the *other* field on a promoted match. We don't overwrite
+  // a user-typed value (only fill when empty), so the user keeps control.
+  const u4Input = document.getElementById("u4");
+  const emInput = document.getElementById("email");
+  if (entry.u4 && !u4Input.value.trim()) u4Input.value = entry.u4;
+  if (entry.email && !emInput.value.trim()) emInput.value = entry.email;
+
+  // Both fields turn green when the eid is certified (= entry.p).
+  if (entry.p) {
+    emInput.classList.add("found");
+    u4Input.classList.add("found");
+  } else {
+    emInput.classList.remove("found");
+    u4Input.classList.remove("found");
+  }
+
+  // The estimated djis readout is replaced by this confirmation (when a
+  // match is found, the *real* djis from the ledger trumps the estimate).
+  document.getElementById("djis-readout").classList.add("lookup-hidden");
+
+  const eff = effectiveLang(getLang());
+  const bucketLabel = I18N[eff]["bucket-tier-" + entry.b] || (snap.buckets[entry.b] + " €");
+  const djisStr = (entry.j !== null && entry.j !== undefined)
+    ? entry.j.toFixed(2).replace(".", ",")
+    : null;
+  const tpl = (entry.p && djisStr)
+    ? (I18N[eff]["lookup-found-promoted"] || "Cotisations enregistrées : {bucket}, ≈ {djis} Ɉ générés.")
+    : (I18N[eff]["lookup-found-pending"]  || "Cotisations enregistrées : {bucket}. <a href=\"/fr/course/\">Générez et certifiez</a> votre <a href=\"/fr/solutions/openpgp-id/\">identité OpenPGP</a> pour débloquer vos Ɉ.");
+  lookupStatus.innerHTML = tpl
+    .replace("{bucket}", `<strong>${bucketLabel}</strong>`)
+    .replace("{djis}",   djisStr ? `<strong>${djisStr}</strong>` : "");
+  lookupBlock.hidden = false;
+}
+let _lookupTimer = null;
+function scheduleLookup() {
+  if (_lookupTimer) clearTimeout(_lookupTimer);
+  _lookupTimer = setTimeout(doLookup, 400);
+}
+document.getElementById("email").addEventListener("input", scheduleLookup);
+document.getElementById("u4").addEventListener("input", scheduleLookup);
+
 document.getElementById("form").addEventListener("submit", e => {
   e.preventDefault();
+  // Nettoyage tolérant juste avant la lecture (chevrons sur email, parens
+  // ou 'u4=' sur u4) : on met aussi à jour la valeur visible dans le DOM
+  // pour que l'utilisateur voie la version normalisée.
+  emailInput.value = cleanEmail(emailInput.value);
+  document.getElementById("u4").value = cleanU4(document.getElementById("u4").value);
   const fd = new FormData(e.target);
-  const email = fd.get("email");
+  const email = (fd.get("email") || "").trim();
+  if (!email || !emailInput.checkValidity()) {
+    flagEmailError();
+    return;
+  }
+  clearEmailError();
   const u4 = fd.get("u4") || "";
   const cents = Math.round(parseFloat(fd.get("amount")) * 100);
   const provider = fd.get("provider");
@@ -919,7 +1308,15 @@ document.getElementById("form").addEventListener("submit", e => {
   }
 
   if (provider === "iban") {
-    document.getElementById("iban-reference").textContent = `foopgp/${ref}/${u4 || email}`;
+    // Normalised motif — matches BL_FOOPGP_CSV_HEADER_REGEX[motif] parsing
+    // in bl-foopgp update_input : first email between < > names the
+    // beneficiary, optional "(u4=…)" carries the claimed eid before the
+    // promotion / WoT-certification step. Keep ASCII-only so any French
+    // bank's SEPA filter preserves it byte-for-byte on the statement.
+    const motif = u4
+      ? `foopgp (u4=${u4}) <${email}>`
+      : `foopgp <${email}>`;
+    document.getElementById("iban-reference").textContent = motif;
     ibanBlock.classList.add("show");
     ibanBlock.scrollIntoView({ behavior: "smooth", block: "start" });
     return;

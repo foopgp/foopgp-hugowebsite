@@ -95,40 +95,69 @@
        $text-color-dark : #1e1e4b
        $primary-font    : 'Poppins', sans-serif
   ─────────────────────────────────────────────────────────────────── */
+  /* Palette light par défaut, dark via prefers-color-scheme — alignement
+     avec /investir/. Les couleurs de courbes (--c1/c2/c3/stingy/now-line)
+     sont ajustées en clair pour rester lisibles sur fond ivoire. */
   :root {
     --primary:      #ff8012;
     --primary-dk:   #d96800;
-    --primary-dim:  rgba(255,128,18,.12);
+    --primary-dim:  rgba(255,128,18,.10);
     --secondary:    #2c284b;
 
-    --bg:           #111029;   /* darker than secondary */
-    --bg2:          #1a1838;   /* cards */
-    --bg3:          #221f44;   /* inputs / surfaces */
-    --bg4:          #2c284b;   /* exact secondary */
+    --bg:           #f8f6fb;
+    --bg2:          #f0ebf5;
+    --bg3:          #e8e0f0;
+    --bg4:          #ddd4e8;
 
-    --text:         #ccc9e8;   /* body text */
-    --text-lt:      #8585a4;   /* light text ($text-color-light) */
-    --text-bright:  #eeedf8;   /* headings */
-    --text-muted:   #5c5c77;   /* muted ($text-color) */
+    --text:         #2c284b;
+    --text-lt:      #5c5c77;
+    --text-bright:  #1a1838;
+    --text-muted:   #8585a4;
 
-    --border:       #312e55;
-    --border-lt:    #3e3a68;
+    --border:       #ddd4e8;
+    --border-lt:    #c8bdda;
 
-    /* chart curves */
-    --c1:           #ff8012;   /* foopgp orange – curve 1 */
-    --c2:           #7c6fff;   /* soft violet   – curve 2 */
-    --c3:           #2ecc71;   /* green         – curve 3 */
-    --stingy:       #e056a0;   /* pink/magenta  – stingynalty */
-    --now-line:     #ff5252;   /* red           – "now" marker */
+    /* chart curves — versions assombries pour contraste sur fond clair */
+    --c1:           #ff8012;
+    --c2:           #5d4ce6;
+    --c3:           #16a34a;
+    --stingy:       #b8347d;
+    --now-line:     #dc2626;
 
-    --shadow:       0 4px 24px rgba(0,0,0,.45);
+    --shadow:       0 4px 16px rgba(44,40,75,.10);
     --radius:       10px;
     --radius-sm:    6px;
   }
 
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary-dim:  rgba(255,128,18,.12);
+
+      --bg:           #111029;
+      --bg2:          #1a1838;
+      --bg3:          #221f44;
+      --bg4:          #2c284b;
+
+      --text:         #ccc9e8;
+      --text-lt:      #8585a4;
+      --text-bright:  #eeedf8;
+      --text-muted:   #5c5c77;
+
+      --border:       #312e55;
+      --border-lt:    #3e3a68;
+
+      --c2:           #7c6fff;
+      --c3:           #2ecc71;
+      --stingy:       #e056a0;
+      --now-line:     #ff5252;
+
+      --shadow:       0 4px 24px rgba(0,0,0,.45);
+    }
+  }
+
   /* ── Reset ──────────────────────────────────────────────────────── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { font-size: 15px; }
+  html { font-size: 18px; }
   body {
     background: var(--bg);
     color: var(--text);
@@ -139,10 +168,24 @@
   }
 
   /* ── Header ─────────────────────────────────────────────────────── */
+  /* Bandeau marque foopgp — dark systématique (override local des
+     variables CSS), sticky au scrolling. Aligné sur /investir/. */
   header {
+    --bg2:          #1a1838;
+    --bg3:          #221f44;
+    --bg4:          #2c284b;
+    --text:         #ccc9e8;
+    --text-lt:      #8585a4;
+    --text-bright:  #eeedf8;
+    --border:       #2c284b;
+    --border-lt:    #3e3a68;
+
     background: var(--bg2);
     border-bottom: 1px solid var(--border);
-    box-shadow: 0 2px 20px rgba(0,0,0,.4);
+    box-shadow: 0 2px 20px rgba(0,0,0,.55);
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
   .header-inner {
     max-width: 1360px;

@@ -74,32 +74,53 @@
 :root {
   --primary:     #ff8012;
   --primary-dk:  #d96800;
-  --primary-dim: rgba(255,128,18,.12);
+  --primary-dim: rgba(255,128,18,.10);
   --secondary:   #2c284b;
-  --bg:          #111029;
-  --bg2:         #1a1838;
-  --bg3:         #221f44;
-  --bg4:         #2c284b;
-  --text:        #ccc9e8;
-  --text-lt:     #8585a4;
-  --text-bright: #eeedf8;
-  --text-muted:  #5c5c77;
-  --border:      #312e55;
-  --border-lt:   #3e3a68;
-  /* chart colors */
-  --c1:          #ff8012;   /* orange – EUR bars */
-  --c2:          #7c6fff;   /* violet – DJI bars */
-  --c3:          #2ecc71;   /* green  – cumulative line */
-  --stingy:      #e056a0;
-  --now-line:    #ff5252;
-  --shadow:      0 4px 24px rgba(0,0,0,.45);
+  --bg:          #f8f6fb;
+  --bg2:         #f0ebf5;
+  --bg3:         #e8e0f0;
+  --bg4:         #ddd4e8;
+  --text:        #2c284b;
+  --text-lt:     #5c5c77;
+  --text-bright: #1a1838;
+  --text-muted:  #8585a4;
+  --border:      #ddd4e8;
+  --border-lt:   #c8bdda;
+  /* chart colors — versions assombries pour fond clair */
+  --c1:          #ff8012;
+  --c2:          #5d4ce6;
+  --c3:          #16a34a;
+  --stingy:      #b8347d;
+  --now-line:    #dc2626;
+  --shadow:      0 4px 16px rgba(44,40,75,.10);
   --radius:      10px;
   --radius-sm:   6px;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-dim: rgba(255,128,18,.12);
+    --bg:          #111029;
+    --bg2:         #1a1838;
+    --bg3:         #221f44;
+    --bg4:         #2c284b;
+    --text:        #ccc9e8;
+    --text-lt:     #8585a4;
+    --text-bright: #eeedf8;
+    --text-muted:  #5c5c77;
+    --border:      #312e55;
+    --border-lt:   #3e3a68;
+    --c2:          #7c6fff;
+    --c3:          #2ecc71;
+    --stingy:      #e056a0;
+    --now-line:    #ff5252;
+    --shadow:      0 4px 24px rgba(0,0,0,.45);
+  }
+}
+
 /* ── Reset ───────────────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 15px; }
+html { font-size: 18px; }
 body {
   background: var(--bg);
   color: var(--text);
@@ -110,10 +131,24 @@ body {
 }
 
 /* ── Header (identical structure to djis-simulator) ──────────────────────── */
+/* Bandeau marque foopgp — dark systématique (override local des variables
+   CSS), sticky au scrolling. Aligné sur /investir/ et /djis-simulator/. */
 header {
+  --bg2:         #1a1838;
+  --bg3:         #221f44;
+  --bg4:         #2c284b;
+  --text:        #ccc9e8;
+  --text-lt:     #8585a4;
+  --text-bright: #eeedf8;
+  --border:      #2c284b;
+  --border-lt:   #3e3a68;
+
   background: var(--bg2);
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 2px 20px rgba(0,0,0,.4);
+  box-shadow: 0 2px 20px rgba(0,0,0,.55);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 .header-inner {
   max-width: 820px;

@@ -7,6 +7,8 @@ description : "Le dji (Ɉ), la devise qui nous délivre."
 image: "images/logos/logo-foopgp-token-0.png"
 ---
 
+> 📣 **Notre Campagne de Juin est lancée — [soutenez-nous dès maintenant](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juin-2)**
+
 La meilleur façon de soutenir [le projet](/fr/about/white-book/) consiste à investir sous forme de **cotisations**.
 
 Ces cotisations, **à prix libre**, vous permettent d'obtenir vos premiers **jetons foopgp**, et
@@ -97,7 +99,7 @@ Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous rec
 
 ## Prêt à générer vos djis ?
 
-Alors prenez votre part et 🌟 [**inscrivez-vous**](//api.foopgp.org/onboarding/) [ici](//api.foopgp.org/onboarding/) 🌟.
+Alors prenez votre part et 🌟 [**inscrivez-vous**](/fr/investir/) [ici](/fr/investir/) 🌟.
 
 Ou veuillez [télécharger ici le bulletin d'adhésion](/documents/fr/bulletin-adhesion-foopgp.pdf), le remplir, et l'envoyer.
 

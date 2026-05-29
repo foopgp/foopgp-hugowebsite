@@ -7,6 +7,8 @@ description : "The dji (Ɉ), the currency that sets us free."
 image: "images/logos/logo-foopgp-token-0.png"
 ---
 
+> 📣 **Our June campaign is live — [support us now](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juin-2)**
+
 The best way to support [the project](/about/white-book/) is to invest in the form of **subscriptions**.
 
 These subscriptions, **at a price of your own choosing**, give you your first **foopgp tokens** and
@@ -97,7 +99,7 @@ As soon as you have generated **6.42 Ɉ** through your cumulative subscriptions,
 
 ## Ready to generate your djis?
 
-Then take your stake and 🌟 [**subscribe**](//api.foopgp.org/onboarding/) [here](//api.foopgp.org/onboarding/) 🌟.
+Then take your stake and 🌟 [**subscribe**](/investir/) [here](/investir/) 🌟.
 
 Or please [download the membership form here](/documents/fr/bulletin-adhesion-foopgp.pdf) (currently in French only), fill it out, and send it.
 

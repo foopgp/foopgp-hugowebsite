@@ -1274,8 +1274,40 @@ function scheduleLookup() {
 document.getElementById("email").addEventListener("input", scheduleLookup);
 document.getElementById("u4").addEventListener("input", scheduleLookup);
 
+// ── Provider-aware submit ─────────────────────────────────────────────
+// HelloAsso collects the contributor email itself ; we redirect without
+// query-string (decision 2026-05-29 : the u4 custom field broke the
+// funnel UX, and the bridge resolves u4 server-side via uetree-by-email
+// lookup). Pour la pédagogie inflation/stingynalty, JJB a publié 3
+// campagnes mensuelles : la fonction ci-dessous choisit la bonne selon
+// le mois courant côté navigateur (date locale du visiteur — c'est
+// assez bon pour le timezone-aware besoin ici).
+function pickHelloAssoURL() {
+  const m = new Date().getMonth() + 1;  // 1..12
+  const slug = m <= 6 ? "juin-2" : m === 7 ? "juillet" : "aout";
+  return "https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/" + slug;
+}
+
+// Toggle the email `required` HTML attribute based on the selected
+// provider : helloasso → optional (HelloAsso prompts later in its own
+// funnel), iban → mandatory (the motif needs it byte-for-byte).
+function syncEmailRequired() {
+  const sel = document.querySelector("input[name='provider']:checked");
+  emailInput.required = !sel || sel.value !== "helloasso";
+}
+document.querySelectorAll("input[name='provider']").forEach(r =>
+  r.addEventListener("change", syncEmailRequired));
+
 document.getElementById("form").addEventListener("submit", e => {
   e.preventDefault();
+  const provider = (new FormData(e.target)).get("provider");
+
+  if (provider === "helloasso") {
+    location.href = pickHelloAssoURL();
+    return;
+  }
+
+  // From here on : provider === "iban". Email is mandatory.
   // Nettoyage tolérant juste avant la lecture (chevrons sur email, parens
   // ou 'u4=' sur u4) : on met aussi à jour la valeur visible dans le DOM
   // pour que l'utilisateur voie la version normalisée.
@@ -1289,42 +1321,22 @@ document.getElementById("form").addEventListener("submit", e => {
   }
   clearEmailError();
   const u4 = fd.get("u4") || "";
-  const cents = Math.round(parseFloat(fd.get("amount")) * 100);
-  const provider = fd.get("provider");
-  const ref = newRef();
-
-  if (provider === "helloasso") {
-    // Campaign slug to be replaced with the real foopgp campaign once
-    // created. Metadata keys must match what verify_helloasso() expects
-    // on the contribution-bridge backend side.
-    const HELLOASSO_BASE = "https://www.helloasso.com/associations/foopgp/formulaires/cotisation";
-    const u = new URL(HELLOASSO_BASE);
-    u.searchParams.set("amount", (cents / 100).toFixed(2));
-    u.searchParams.set("email", email);
-    u.searchParams.set("metadata.u4", u4);
-    u.searchParams.set("metadata.ref", ref);
-    location.href = u.toString();
-    return;
-  }
-
-  if (provider === "iban") {
-    // Normalised motif — matches BL_FOOPGP_CSV_HEADER_REGEX[motif] parsing
-    // in bl-foopgp update_input : first email between < > names the
-    // beneficiary, optional "(u4=…)" carries the claimed eid before the
-    // promotion / WoT-certification step. Keep ASCII-only so any French
-    // bank's SEPA filter preserves it byte-for-byte on the statement.
-    const motif = u4
-      ? `foopgp (u4=${u4}) <${email}>`
-      : `foopgp <${email}>`;
-    document.getElementById("iban-reference").textContent = motif;
-    ibanBlock.classList.add("show");
-    ibanBlock.scrollIntoView({ behavior: "smooth", block: "start" });
-    return;
-  }
+  // Normalised motif — matches BL_FOOPGP_CSV_HEADER_REGEX[motif] parsing
+  // in bl-foopgp update_input : first email between < > names the
+  // beneficiary, optional "(u4=…)" carries the claimed eid before the
+  // promotion / WoT-certification step. Keep ASCII-only so any French
+  // bank's SEPA filter preserves it byte-for-byte on the statement.
+  const motif = u4
+    ? `foopgp (u4=${u4}) <${email}>`
+    : `foopgp <${email}>`;
+  document.getElementById("iban-reference").textContent = motif;
+  ibanBlock.classList.add("show");
+  ibanBlock.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 // ── Init ──────────────────────────────────────────────────────────────
 applyLang(getLang());
+syncEmailRequired();
 updateDjis();
 </script>
 </body>

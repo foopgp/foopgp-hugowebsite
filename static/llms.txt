@@ -31,7 +31,7 @@ unless noted otherwise. The site itself is built with Hugo from
 ## Joining and contributing
 
 - [Invest / Join — explanation (EN)](https://foopgp.org/about/join/) : what a foopgp token (dji, Ɉ) is, its expected value, the security-key threshold at 6.42 Ɉ, the stingynalty parameter.
-- [Investir — payment flow (FR only for now)](https://foopgp.org/investir/) : standalone page where you choose IBAN transfer (with a normalised motif `foopgp [(u4=…)] <email>`) or HelloAsso (online card payment, redirected to the current month's campaign).
+- [Djis emission — payment flow (FR only for now)](https://foopgp.org/djis-emission/) : standalone page where you choose IBAN transfer (with a normalised motif `foopgp [(u4=…)] <email>`) or HelloAsso (online card payment, redirected to the current month's campaign).
 - HelloAsso monthly campaigns (deliberately three of them to make the inflation × stingynalty interplay visible to visitors) :
   - [June 2026](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juin-2)
   - [July 2026](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juillet)

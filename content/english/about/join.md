@@ -99,7 +99,7 @@ As soon as you have generated **6.42 Ɉ** through your cumulative subscriptions,
 
 ## Ready to generate your djis?
 
-Then take your stake and 🌟 [**subscribe**](/investir/) [here](/investir/) 🌟.
+Then take your stake and 🌟 [**subscribe**](/djis-emission/) [here](/djis-emission/) 🌟.
 
 Or please [download the membership form here](/documents/fr/bulletin-adhesion-foopgp.pdf) (currently in French only), fill it out, and send it.
 

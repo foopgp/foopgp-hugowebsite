@@ -99,7 +99,7 @@ Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous rec
 
 ## Prêt à générer vos djis ?
 
-Alors prenez votre part et 🌟 [**inscrivez-vous**](/fr/djis-emission/) [ici](/fr/djis-emission/) 🌟.
+Alors prenez votre part et 🌟 [**inscrivez-vous**](/djis-emission/?lang=fr) [ici](/djis-emission/?lang=fr) 🌟.
 
 Ou veuillez [télécharger ici le bulletin d'adhésion](/documents/fr/bulletin-adhesion-foopgp.pdf), le remplir, et l'envoyer.
 

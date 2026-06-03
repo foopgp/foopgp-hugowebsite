@@ -150,6 +150,12 @@ URL = "solutions"
 weight = 3
   [[menu.main]]
     parent = "our activities"
+    name = "Djibian"
+    URL = "solutions/djibian"
+    weight = 0
+
+  [[menu.main]]
+    parent = "our activities"
     name = "R&D projects"
     URL = "solutions/activity-rd"
     weight = 1

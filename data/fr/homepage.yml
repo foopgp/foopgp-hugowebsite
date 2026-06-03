@@ -15,22 +15,22 @@ slider:
         link : "event"
 
     - title : "Faciliter l'adoption d'[OpenPGP](/fr/about/openpgp/) par le plus grand nombre"
-      content : "en organisant des formations et ateliers."
+      content : "à travers notre système d'exploitation GNU/Linux."
       animation_in : "up"
       animation_out : "left"
       button:
         enable : true
-        label : "Formations & Ateliers"
-        link : "course"
+        label : "Djibian"
+        link : "solutions/djibian"
 
-    - title : "Suivre les évolutions liées à [OpenPGP](/fr/about/openpgp/)"
-      content : "en relayant des informations de qualité."
+    - title : "Améliorer la connaissance et la pratique d'[OpenPGP](/fr/about/openpgp/)"
+      content : "en organisant des formations et ateliers."
       animation_in : "right"
       animation_out : "down"
       button:
         enable : true
-        label : "blog"
-        link : "blog"
+        label : "Formations & Ateliers"
+        link : "course"
 
     - title : "Accompagner les initiatives et solutions utilisant [OpenPGP](/fr/about/openpgp/)"
       content : "en récoltant et redistribuant des investissements."

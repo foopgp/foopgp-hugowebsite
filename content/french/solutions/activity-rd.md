@@ -96,4 +96,8 @@ Il utilise [une version améliorée d'Onak](https://codeberg.org/foopgp/onak), e
 
 *Remarque : sauf indication contraire, tout le contenu de foopgp-hugowebsite est sous licence [CC BY SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
 
+### ...
+
+*La liste de nos projets de R&D sur cette page est non-exhaustive.*
+
 ---

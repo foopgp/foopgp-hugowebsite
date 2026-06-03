@@ -3,10 +3,9 @@ title: "Djibian"
 lang: fr
 draft: false
 bg_image: "images/backgrounds/party-event.jpg"
-author: [ "Mnème" ]
 description: "Djibian : le système qui vous respecte — installation et premiers pas."
 image: "images/logos/djibian_square_logo.png"
-tags: [ "djibian", "Debian", "Ubuntu", "OpenPGP ID", "solution" ]
+tags: [ "djibian", "Debian", "Ubuntu", "OpenPGP ID" ]
 categories: [ "solution" ]
 type: "post"
 ---
@@ -46,7 +45,7 @@ Comptez 3 à 5 Go.
 
 Servez-vous de votre outil habituel — **[Ventoy](https://www.ventoy.net/)**, **[balenaEtcher](https://etcher.balena.io/)**, **[Rufus](https://rufus.ie/fr/)** (Windows) ou la ligne de commande `dd` pour les plus aguerris — pour graver l'ISO sur une clé USB d'au moins 8 Go.
 
-Avec Ventoy, vous gardez la possibilité d'installer plusieurs ISO sur la même clé (très pratique pour faire essayer Djibian à plusieurs personnes).
+Avec Ventoy, vous gardez la possibilité d'installer plusieurs ISO sur la même clé (très pratique pour gérer différentes versions).
 
 ### 4. Démarrer sur la clé, essayer, installer
 

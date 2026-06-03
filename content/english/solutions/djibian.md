@@ -3,10 +3,9 @@ title: "Djibian"
 lang: en
 draft: false
 bg_image: "images/backgrounds/party-event.jpg"
-author: [ "Mnème" ]
-description: "Djibian: the operating system that respects you — install and first steps."
+description: "Djibian: the operating system you can trust — install and first steps."
 image: "images/logos/djibian_square_logo.png"
-tags: [ "djibian", "Debian", "Ubuntu", "OpenPGP ID", "solution" ]
+tags: [ "djibian", "Debian", "Ubuntu", "OpenPGP ID" ]
 categories: [ "solution" ]
 type: "post"
 ---
@@ -46,7 +45,7 @@ Expect 3 to 5 GB.
 
 Use your usual tool — **[Ventoy](https://www.ventoy.net/)**, **[balenaEtcher](https://etcher.balena.io/)**, **[Rufus](https://rufus.ie/)** (Windows) or the command line `dd` for the more seasoned — to burn the ISO onto a USB stick of at least 8 GB.
 
-With Ventoy you can even keep several ISOs on the same stick (very handy for letting friends try Djibian one after another).
+With Ventoy you can even keep several ISOs on the same stick (very handy to manage different versions).
 
 ### 4. Boot the stick, try it, install it
 

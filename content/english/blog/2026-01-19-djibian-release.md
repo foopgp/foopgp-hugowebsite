@@ -1,5 +1,5 @@
 ---
-Title:   "Djibian steps into prod !"
+Title:   "Djibian goes live!"
 Date:    2026-01-20T01:30:00+02:00
 Tags:    [ "djibian", "debian" ]
 categories: [ "News" ]

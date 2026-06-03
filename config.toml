@@ -152,25 +152,25 @@ weight = 3
     parent = "our activities"
     name = "Djibian"
     URL = "solutions/djibian"
-    weight = 0
+    weight = 1
 
   [[menu.main]]
     parent = "our activities"
-    name = "R&D projects"
+    name = "R&D"
     URL = "solutions/activity-rd"
-    weight = 1
+    weight = 2
 
   [[menu.main]]
     parent = "our activities"
     name = "Training"
     URL = "course"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     parent = "our activities"
     name = "security keys"
     URL = "solutions/offer-security-keys"
-    weight = 3
+    weight = 4
 
 #  [[menu.main]]
 #    parent = "our activities"
@@ -182,7 +182,7 @@ weight = 3
     parent = "our activities"
     name = "Token Ɉ"
     URL = "about/join"
-    weight = 5
+    weight = 6
 
 [[menu.main]]
 weight = 4

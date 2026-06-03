@@ -101,4 +101,8 @@ the website you are actually watching. You may use it to improve, add or share n
 *Note: unless otherwise stated, all foopgp-hugowebsite content is under the [CC BY SA 4.0
 License](https://creativecommons.org/licenses/by-sa/4.0/).*
 
+### ...
+
+*The list of our R&D projects on this page is not exhaustive.*
+
 ---

@@ -7,7 +7,7 @@ description : "Le dji (Ɉ), la devise qui nous délivre."
 image: "images/logos/logo-foopgp-token-0.png"
 ---
 
-> 📣 **Notre Campagne de Juin est lancée — [soutenez-nous dès maintenant](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juin-2)**
+> 📣 **Juin 2026 : Notre campagne de cotisation est lancée — [soutenez-nous dès maintenant](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juin-2)**
 
 La meilleur façon de soutenir [le projet](/fr/about/white-book/) consiste à investir sous forme de **cotisations**.
 

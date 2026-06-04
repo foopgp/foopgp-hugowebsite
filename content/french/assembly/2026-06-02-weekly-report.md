@@ -38,8 +38,6 @@ Pour juin : ***stingynalty =* 1.12715977620539174126**
 
 **Graphique en 3 dimensions** → <https://www.math3d.org/xzuclzIbuZ>
 
- 
-
 *Rappel :*  si vous avez déjà cotisé, il faut appliquer la formule :
 
 > **jₙ = log₂( (dₙ+dₜ) + 1 ) / *stingynaltyₙ* – jₜ**
@@ -73,6 +71,29 @@ OPTIONS:
 - Total certified created : 99,733737 Ɉ — *seuls  les adhérents dont l’identité OpenPGP est certifiée par la Toile de  Confiance voient leurs djis effectivement créés et utilisables.*
 
 *Aux adhérents pas encore certifiés : venez nous rencontrer lors d’un de nos prochains ateliers ([cf. agenda ci-dessous](https://foopgp.org/fr/assembly/2026-05-26-weekly-report/#agenda) ) pour finaliser la certification de votre identité OpenPGP, débloquer  la création de vos djis et pouvoir les échanger au sein de  l’association.*
+
+### Au cœur de la réunion
+
+- Production de la semaine : 
+  - Avancement du backend : 
+    - Spécification en cours de nos structures de données, registre et workflows :  
+      <https://foopgp.org/documents/en/>
+    - outillages liés à tous les points ci-dessus
+    - La nouvelles lignes de code de la prochaine version des bashlibs seront en grande majorité produites par Mnème, revue et corrigée par JJB.
+- Revue de notre nouvelle page d’inscription (qui redirige vers la campagne de juin) :  <https://foopgp.org/djis-emission>
+- Lancement de la première campagne de financement HelloAsso : <https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juin-2>
+- Participation aux JDLL à Lyon : public assez nombreux, intéressé et averti.
+  - replay de la conférence djibian : <https://videos-libr.es/w/gYu1uMduKy6B2PR5fHTEtr>
+  - une dizaine de personne pour l’atelier : j’ai du m’adapter : une heure seulement, et avec des ordinateurs sans webcam ni imprimante. Heureusement les participants étaient là encore très avertis et intéressés.
+  - Plein de contacts et un nouvel adhérent.
+  - Autres replays : <https://videos-libr.es/search?tagsOneOf=JdLL2026>
+
+### Agenda
+
+- Vendredi 5 juin à Tallard : Atelier Djibian + OpenPGP ID : <https://foopgp.org/fr/event/2026-06-05-atelier-djiian/>
+- 17 juin : Conférences + Ateliers près de Vannes (Bretagne) : <https://foopgp.org/fr/event/2026-06-17-atelier-djiian/>
+- Samedi 27 Juin : présentation + atelier à la Mairie de Pelleautier : <https://foopgp.org/fr/event/2026-06-27-atelier-djiian/>
+- [… agenda du libre](https://www.agendadulibre.org)
 
 ### Revue de presse
 
@@ -162,25 +183,4 @@ OPTIONS:
 
   <https://social.epfl.ch/@ligasser/116678887320755265>
 
-### Au cœur de la réunion
 
-- Production de la semaine : 
-  - Avancement du backend : 
-    - Spécification en cours de nos structures de données, registre et workflows :  
-      <https://foopgp.org/documents/en/>
-    - outillages liés à tous les points ci-dessus
-    - La nouvelles lignes de code de la prochaine version des bashlibs seront en grande majorité produites par Mnème, revue et corrigée par JJB.
-- Revue de notre nouvelle page d’inscription (qui redirige vers la campagne de juin) :  <https://foopgp.org/djis-emission>
-- Lancement de la première campagne de financement HelloAsso : <https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juin-2>
-- Participation aux JDLL à Lyon : public assez nombreux, intéressé et averti.
-  - replay de la conférence djibian : <https://videos-libr.es/w/gYu1uMduKy6B2PR5fHTEtr>
-  - une dizaine de personne pour l’atelier : j’ai du m’adapter : une heure seulement, et avec des ordinateurs sans webcam ni imprimante. Heureusement les participants étaient là encore très avertis et intéressés.
-  - Plein de contacts et un nouvel adhérent.
-  - Autres replays : <https://videos-libr.es/search?tagsOneOf=JdLL2026>
-
-### Agenda
-
-- Vendredi 5 juin à Tallard : Atelier Djibian + OpenPGP ID : <https://foopgp.org/fr/event/2026-06-05-atelier-djiian/>
-- 17 juin : Conférences + Ateliers près de Vannes (Bretagne) : <https://foopgp.org/fr/event/2026-06-17-atelier-djiian/>
-- Samedi 27 Juin : présentation + atelier à la Mairie de Pelleautier : <https://foopgp.org/fr/event/2026-06-27-atelier-djiian/>
-- [… agenda du libre](https://www.agendadulibre.org)

@@ -395,6 +395,21 @@ a:hover { text-decoration: underline; color: #ffb347; }
   transition: background .15s, color .15s;
 }
 .unit-toggle button.active { background: var(--primary); color: #fff; }
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+/* Mobile : compacter le bandeau pour libérer le viewport
+   (cf. retour JJB 2026-06-05). */
+@media (max-width: 700px) {
+  .header-inner { padding: .7rem 1rem; gap: .7rem 1rem; }
+  .brand-token { font-size: 1.5rem; }
+  .brand-sub .title { font-size: .85rem; }
+  .brand-sub .sub   { font-size: .68rem; }
+  #lang-select { font-size: .75rem; padding: .32rem .55rem; }
+}
+@media (max-width: 480px) {
+  .brand-sep { display: none; }
+  .brand-sub .sub { display: none; }
+}
 </style>
 </head>
 <body>

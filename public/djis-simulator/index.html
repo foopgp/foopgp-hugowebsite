@@ -537,6 +537,29 @@
     /* chart first on mobile even though it is second in the DOM */
     .chart-area { order: -1; }
   }
+
+  /* Mobile : compacter le bandeau pour libérer le viewport (cf. retour
+     JJB 2026-06-05 : sur smartphone, la formule prend ~50% de l'écran
+     avant que le graphe ne soit visible). On suit le même pattern que
+     /djis-emission/ : 700px → réduction des tailles ; 480px → la
+     formule passe sur une seconde ligne pleine largeur, séparateur off. */
+  @media (max-width: 700px) {
+    .header-inner { padding: .7rem 1rem; gap: .7rem 1rem; }
+    .brand-token { font-size: 1.5rem; }
+    .brand-sub .title { font-size: .85rem; }
+    .brand-sub .sub   { font-size: .68rem; }
+    .header-formula { font-size: .68rem; padding: .45rem .8rem; line-height: 1.5; }
+    #lang-select { font-size: .75rem; padding: .32rem .55rem; }
+    main { padding: 1.2rem 1rem 2rem; }
+  }
+  @media (max-width: 480px) {
+    /* Formula goes to its own row, full width, centered ; separator off. */
+    .brand-sep { display: none; }
+    .header-formula { order: 99; flex-basis: 100%; margin-left: 0; }
+    /* Drop the "foopgp — Friends of OpenPGP" subtitle, redundant with
+       the logo + global site footer. */
+    .brand-sub .sub { display: none; }
+  }
 </style>
 </head>
 <body>

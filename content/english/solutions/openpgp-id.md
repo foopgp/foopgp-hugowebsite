@@ -74,6 +74,12 @@ Once your private keys have been fragmented onto paper sheets, another foopgp to
 
 From there, your identity is exercised **from your hand** on any OpenPGP-compatible service: [sign](/solutions/signature/), [decrypt](/solutions/theme-email/), [authenticate](/blog/2026-05-11-djibian-agentforwarding/) — the **OpenPGP ID** physical key protects your privacy and your human singularity in the digital world.
 
+Here is the **Djibian Onboarding** welcome screen once your key is set up — avatar, common name, **OpenPGP ID** identifier and emails read straight from the plugged-in physical key:
+
+![OpenPGP ID card as displayed by Djibian Onboarding](/images/solutions/openpgp-id/Phil_ID_EN.png)
+
+*Illustration. Photograph of [Phil Zimmermann](https://en.wikipedia.org/wiki/Phil_Zimmermann), inventor of PGP — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PRZ_closeup_cropped.jpg), CC BY-SA 3.0.*
+
 ### In short
 
 **OpenPGP ID** makes real digital sovereignty possible: no password to forget, no cloud vault to trust, no dependence on an external identity provider. An identity that is **yours**, anchored in a physical object you carry, and **usable everywhere**.

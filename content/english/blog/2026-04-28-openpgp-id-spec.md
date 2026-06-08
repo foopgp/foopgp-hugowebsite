@@ -117,4 +117,6 @@ Community feedback is welcome — particularly on the IANA section and on possib
 
 This draft formalises a building block already in production in [Djibian](/blog/2026-01-19-djibian-release/) and in the `bl-foopgp` and `bl-pgpid` tools. The next step: submit this document to the IETF and build around it a decentralised certification ecosystem.
 
+> 📖 For the general-audience view of **OpenPGP ID** — key creation, paper QR-code backup, transposition onto a physical key, certification — see the **[solutions/openpgp-id](/solutions/openpgp-id/)** page.
+
 [Join us.](/about/join/) ✊🕊️💕

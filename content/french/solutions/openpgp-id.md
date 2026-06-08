@@ -74,6 +74,12 @@ Une fois vos clés privées fragmentées sur papiers, un autre outil foopgp lit 
 
 À partir de là, votre identité s'exerce **depuis votre main** sur n'importe quel service compatible OpenPGP : [signer](/fr/solutions/signature/), [déchiffrer](/fr/solutions/theme-email/), [vous authentifier](/fr/blog/2026-05-11-djibian-agentforwarding/) — la clé physique **OpenPGP ID** protège votre vie privée et votre singularité humaine dans le monde numérique.
 
+Voici l'écran d'accueil de **Djibian Onboarding** une fois votre clé configurée — avatar, nom d'usage, identifiant **OpenPGP ID** et courriels lus directement depuis la clé physique branchée :
+
+![Carte d'identité OpenPGP affichée par Djibian Onboarding](/images/solutions/openpgp-id/Phil_ID_FR.png)
+
+*Illustration. Photo de [Phil Zimmermann](https://fr.wikipedia.org/wiki/Phil_Zimmermann), inventeur de PGP — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PRZ_closeup_cropped.jpg), CC BY-SA 3.0.*
+
 ### Bref,
 
 L'**OpenPGP ID** rend possible une vraie souveraineté numérique : ni mot de passe à oublier, ni coffre cloud à qui faire confiance, ni dépendance à un fournisseur d'identité externe. Une identité **à vous**, ancrée dans un objet physique que vous portez, et **utilisable partout**.

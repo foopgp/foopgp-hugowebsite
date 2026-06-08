@@ -117,4 +117,6 @@ Les retours de la communauté sont les bienvenus — en particulier sur la secti
 
 Cette spécification est la formalisation d'une brique déjà en production dans [Djibian](/fr/blog/2026-01-19-djibian-release/) et dans les outils `bl-foopgp` et `bl-pgpid`. La prochaine étape : soumettre ce document à l'IETF et construire autour de lui un écosystème de certification décentralisé.
 
+> 📖 Pour la vue grand public de l'**OpenPGP ID** — création, sauvegarde papier en QR codes, transposition sur clé physique, certification — voir la page **[solutions/openpgp-id](/fr/solutions/openpgp-id/)**.
+
 [Rejoignez-nous.](/fr/about/join/) ✊🕊️💕

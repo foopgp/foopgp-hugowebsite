@@ -52,31 +52,9 @@ Facilite également la modification des mots de passe protégeant les clés Open
 
 ### djibian.foopgp.org
 
-[Ce service](http://djibian.foopgp.org/) est notre propre [dépôt de paquets Debian](https://wiki.debian.org/DebianRepository/Setup), destiné à distribuer nos dernières versions logicielles.
+[Djibian](/fr/solutions/djibian/) est notre système d'exploitation basé sur [Debian](https://www.debian.org/index.fr.html), qui intègre tous les outils et configurations dont vous avez besoin pour retrouver votre souveraineté numérique.
 
-De cette manière, vous pouvez facilement installer nos logiciels sur vos systèmes Debian :
-
-```bash
-gpg --keyserver keys.foopgp.org --recv-keys 2C364630A2436D7E FE1349E747CF1896
-gpg --export 2C364630A2436D7E FE1349E747CF1896 | sudo tee /usr/local/share/foopgp-archive-keyring.pgp > /dev/null
-
-cat <<EOF | sudo tee /etc/apt/sources.list.d/foopgp.sources
-Types: deb
-URIs: http://djibian.foopgp.org/debs/
-Suites: ./
-Components: 
-Signed-By: /usr/local/share/foopgp-archive-keyring.pgp
-EOF
-
-sudo apt update
-
-sudo apt install bashlibs-all
-sudo apt install djibian-onboarding
-```
-
-*Remarques :*
-- *Ces paquets ayant peu de dépendances, ils pourraient être compatibles avec d'autres systèmes de type Debian : Ubuntu, Mint, etc.*
-- *Pour tester les versions de préproduction, remplacez l'URI <http://djibian.foopgp.org/debs/> par <http://djibian.foopgp.org/test/>.*
+Plus de détails [sur cette page](/fr/solutions/djibian/).
 
 ### keys.foopgp.org
 

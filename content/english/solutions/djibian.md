@@ -87,12 +87,12 @@ You'd rather keep your Debian (≥ 13) or Ubuntu (≥ 24.04)? You can enable our
 ### Enable the foopgp repository
 
 ```bash
-wget https://djibian.foopgp.org/debs/djibian-keyring_0.2.1_all.deb
-sudo dpkg -i djibian-keyring_0.2.1_all.deb && rm djibian-keyring_0.2.1_all.deb
+gpg --keyserver keys.foopgp.org --recv-keys 2C364630A2436D7E FE1349E747CF1896
+gpg --export 2C364630A2436D7E FE1349E747CF1896 | sudo tee /usr/local/share/foopgp-archive-keyring.pgp > /dev/null
 
-sudo tee /etc/apt/sources.list.d/foopgp.sources >/dev/null <<'EOF'
+cat <<EOF | sudo tee /etc/apt/sources.list.d/foopgp.sources
 Types: deb
-URIs: https://djibian.foopgp.org/debs/
+URIs: http://djibian.foopgp.org/debs/
 Suites: ./
 Components:
 Signed-By: /usr/local/share/foopgp-archive-keyring.pgp

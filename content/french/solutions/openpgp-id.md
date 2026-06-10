@@ -20,7 +20,7 @@ aliases:
 - **décentralisée** — pas d'autorité centrale, pas de fournisseur d'identité tiers, [pas de coffre cloud à qui faire confiance](/fr/blog/2026-05-11-djibian-agentforwarding/) ;
 - **respectueuse** — intègre des solutions de chiffrement ultimes, pour protéger au mieux votre vie privée ;
 - **interopérable** — utilisable partout où OpenPGP est accepté (signature et chiffrement de courriels, de documents, authentification SSH, traçabilité des chaines d'approvisionnement, git, …) ;
-- **souveraine** — vos clés privées sont *à vous*, sur une clé physique (YubiKey / NitroKey) que vous tenez dans votre main ;
+- **souveraine** — vos clés privées sont *à vous*, sur une [clé physique de sécurité](/fr/solutions/offer-security-keys/) (YubiKey / NitroKey) que vous tenez dans votre main ;
 - **pérenne** — votre identifiant `u4` ou `u5` reste stable à vie ; les certificats qui le supportent peuvent être renouvelés (rotation post-quantique, etc.) sans changer qui vous êtes.
 
 Depuis [janvier 2026](/fr/blog/2026-01-19-djibian-release/), **OpenPGP ID est en production**, livré dans le système [Djibian GNU/Linux](/fr/blog/2026-01-19-djibian-release/).

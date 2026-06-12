@@ -77,7 +77,7 @@ OPTIONS:
   - Laurent M
   - Odette T
   - Yves OM
-- Nouvelle page présentation djibian  <https://foopgp.org/fr/solutions/djibian/>  (1 bug à corriger ASAP)
+- Nouvelle page présentation djibian  <https://foopgp.org/fr/solutions/djibian/>  
 - Préparation Voyage Vannes (formulation à corriger dans le flyer ASAP)
 - Production de la semaine : 
   - Nouvelle ISO : <https://iso.foopgp.org/djibian/latest/>

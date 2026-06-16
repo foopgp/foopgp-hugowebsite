@@ -3,36 +3,12 @@
    viewBox="0 0 500 500"
    version="1.1"
    id="svg1089"
-   sodipodi:docname="Logo-jfoopgp.svg"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1091"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="0.4235"
-     inkscape:cx="135.77332"
-     inkscape:cy="435.65525"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg1089" />
   <defs
      id="defs1050">
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient2790">
       <stop
          style="stop-color:#90462f;stop-opacity:1;"
@@ -440,7 +416,6 @@
          id="stop1047" />
     </linearGradient>
     <radialGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient2790"
        id="radialGradient2792"
        cx="203.44901"
@@ -484,14 +459,10 @@
      d="M 285.8101806640625 418.1629333496094 C 127.41355759580858 451.46022910637436 86.582763671875 294.8815612792969 86.582763671875 294.8815612792969 C 86.582763671875 294.8815612792969 134.5081024169922 444.0893859863281 284.4516906738281 413.31134033203125 C 444.57799385425426 380.4431481870013 416.16082763671875 213.57582092285156 416.16082763671875 213.57582092285156 C 416.16082763671875 213.57582092285156 452.7923889160156 383.0608215332031 285.8101806640625 418.1629333496094 Z "
      style="stroke: none; fill: rgb(255, 255, 255);"
      id="path1086" />
-  <text
-     xml:space="preserve"
+  <path
+     style="font-style:italic;font-weight:bold;font-size:36.3605px;line-height:1.25;-inkscape-font-specification:'sans-serif, Bold Italic';white-space:pre;fill:#811433;stroke:url(#radialGradient2792);stroke-width:0.946889;stroke-linecap:round;stroke-linejoin:round"
+     d="m 205.67012,219.2704 h 6.83535 l -2.29029,11.75324 h 2.91168 l -0.90546,4.72261 h -2.91168 l -1.45584,7.45674 q -0.95872,4.95341 -4.13672,7.40348 -3.16023,2.45008 -8.61076,2.45008 h -1.38482 l 1.01198,-5.16646 h 1.06525 q 2.1305,0 3.46206,-1.18953 1.31381,-1.18953 1.75766,-3.49757 l 1.45584,-7.45674 h -3.33778 l 0.90546,-4.72261 h 3.33779 z"
      id="text2710"
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2712);display:inline;fill:#811433;fill-opacity:1;stroke:url(#radialGradient2792);stroke-width:0.946889;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-     transform="matrix(7.0175205,0,0,5.2877241,-1179.2959,-1006.2715)"><tspan
-       x="199.74023"
-       y="246.78173"
-       id="tspan3718"><tspan
-         style="font-style:italic;font-weight:bold;font-size:36.3605px;-inkscape-font-specification:'sans-serif, Bold Italic'"
-         id="tspan3716">Ɉ</tspan></tspan></text>
+     transform="matrix(7.0175205,0,0,5.2877241,-1179.2959,-1006.2715)"
+     aria-label="Ɉ" />
 </svg>

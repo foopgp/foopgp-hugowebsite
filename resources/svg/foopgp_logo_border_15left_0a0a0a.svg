@@ -6,15 +6,8 @@
    y="0px"
    viewBox="0 0 349.99999 70.000001"
    xml:space="preserve"
-   sodipodi:docname="foopgp_logo_border_15left_0a0a0a.svg"
    width="350"
    height="70"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   inkscape:export-filename="../../images/logos/logo-black-pgp.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -24,7 +17,6 @@
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
    id="defs49"><meshgradient
-     inkscape:collect="always"
      id="meshgradient3590"
      gradientUnits="userSpaceOnUse"
      x="38.93327"
@@ -44,7 +36,6 @@
            path="c 0,-12.3736  0,-24.7473  0,-37.1209"
            style="stop-color:#080000;stop-opacity:1"
            id="stop3602" /></meshpatch></meshrow></meshgradient><meshgradient
-     inkscape:collect="always"
      id="meshgradient3604"
      gradientUnits="userSpaceOnUse"
      x="12.422072"
@@ -64,7 +55,6 @@
            path="c 0,-13.5293  0,-27.0585  0,-40.5878"
            style="stop-color:#080000;stop-opacity:1"
            id="stop3616" /></meshpatch></meshrow></meshgradient><meshgradient
-     inkscape:collect="always"
      id="meshgradient3618"
      gradientUnits="userSpaceOnUse"
      x="60.190205"
@@ -83,34 +73,7 @@
            id="stop3628" /><stop
            path="c 0,-10.6787  0,-21.3575  0,-32.0362"
            style="stop-color:#080000;stop-opacity:1"
-           id="stop3630" /></meshpatch></meshrow></meshgradient></defs><sodipodi:namedview
-   pagecolor="#1a1a37"
-   bordercolor="#666666"
-   borderopacity="1"
-   objecttolerance="10"
-   gridtolerance="10"
-   guidetolerance="10"
-   inkscape:pageopacity="0"
-   inkscape:pageshadow="2"
-   inkscape:window-width="1920"
-   inkscape:window-height="1056"
-   id="namedview47"
-   showgrid="false"
-   fit-margin-top="0"
-   fit-margin-left="0"
-   fit-margin-right="0"
-   fit-margin-bottom="0"
-   inkscape:zoom="2.4142646"
-   inkscape:cx="189.2916"
-   inkscape:cy="16.36109"
-   inkscape:window-x="0"
-   inkscape:window-y="0"
-   inkscape:window-maximized="1"
-   inkscape:current-layer="Calque_1"
-   inkscape:document-rotation="0"
-   inkscape:showpageshadow="2"
-   inkscape:pagecheckerboard="0"
-   inkscape:deskcolor="#1a1a37" />
+           id="stop3630" /></meshpatch></meshrow></meshgradient></defs>
 <style
    type="text/css"
    id="style2">
@@ -132,22 +95,21 @@
 
 
 
-<text
-   class="st2"
+<g
    id="text18"
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:69.0918px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.359806;enable-background:new"
-   x="103.94366"
-   y="53.828014"
-   transform="scale(0.99181811,1.0082494)"><tspan
-     x="103.94366"
-     y="53.828014"
-     class="st3 st4 st5 st6"
-     id="tspan14"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:69.0918px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.359806"><tspan
-   style="fill:#0a0a0a;fill-opacity:1;stroke-width:0.359806"
-   id="tspan2801">f</tspan>oO<tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:69.0918px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0a0a0a;fill-opacity:1;stroke-width:0.359806"
-   id="tspan1946">pgp</tspan></tspan></text>
+   style="font-style:italic;font-size:69.0918px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';stroke-width:0.359806"
+   class="st2"
+   transform="scale(0.99181811,1.0082494)"
+   aria-label="foOpgp"><path
+     style="letter-spacing:-5;fill:#0a0a0a"
+     d="m 110.92193,53.828014 h 5.11279 l 6.14917,-33.164062 h 9.32739 l 0.82911,-4.629151 h -9.3274 c 1.10547,-6.010986 3.86914,-8.4291987 9.94922,-8.6364741 h 0.27637 0.76001 l 0.8291,-4.6291504 h -0.76001 -0.41455 c -8.98193,0.4145508 -14.302,4.9055176 -15.75293,13.2656245 h -5.8728 l -0.8291,4.629151 h 5.8728 z"
+     id="path1" /><path
+     style="letter-spacing:-5;fill:#ff8012"
+     d="m 150.69336,15.136608 c -6.84009,0 -12.85108,2.69458 -17.61841,7.807373 -4.07642,4.352783 -6.42554,10.294678 -6.42554,16.029297 0,9.327393 6.90918,15.75293 16.99658,15.75293 6.42554,0 11.88379,-2.487305 16.65113,-7.461914 4.1455,-4.421875 6.56372,-10.432862 6.56372,-16.374756 0,-9.396485 -6.49463,-15.75293 -16.16748,-15.75293 z m -0.8982,4.698242 c 6.84009,0 11.74561,4.836426 11.74561,11.53833 0,10.432862 -7.6001,18.654786 -17.20386,18.654786 -7.46191,0 -12.36743,-4.767334 -12.36743,-11.952881 0,-9.880127 8.15283,-18.240235 17.82568,-18.240235 z m 51.0335,-17.9638669 c -16.92749,0 -32.61133,14.9238279 -32.61133,31.0913089 0,4.698242 1.52002,9.534668 4.1455,13.058349 3.93824,5.320069 10.9856,8.705567 18.10206,8.705567 16.99658,0 32.61132,-14.854737 32.61132,-31.022217 0,-5.181885 -1.31274,-9.327393 -4.2146,-13.127441 -4.1455,-5.4582524 -10.9165,-8.7055669 -18.03295,-8.7055669 z M 199.585,6.5692253 c 10.57105,0 18.17115,7.5310057 18.17115,18.1020507 0,13.196533 -12.7129,25.35669 -26.46216,25.35669 -9.94922,0 -17.75659,-7.945557 -17.75659,-18.032959 0,-12.920166 12.85107,-25.4257817 26.0476,-25.4257817 z"
+     id="path2" /><path
+     style="letter-spacing:-5;fill:#0a0a0a"
+     d="m 227.26539,16.034801 -9.46558,51.058838 h 5.1128 l 3.66186,-19.760254 c 2.5564,4.905518 7.11646,7.392823 13.54199,7.392823 12.50562,0 23.83667,-11.054688 23.83667,-23.283936 0,-9.811035 -6.63281,-16.305664 -16.58203,-16.305664 -6.49463,0 -12.71289,2.832764 -16.16748,7.392822 l 1.17456,-6.494629 z m 19.00024,3.800049 c 7.18555,0 12.36743,5.043701 12.36743,12.091065 0,3.86914 -1.79638,8.636474 -4.35278,11.53833 -3.66186,4.214599 -8.56738,6.563721 -13.81836,6.563721 -7.04736,0 -12.29834,-5.112793 -12.29834,-11.88379 0,-4.076416 1.38184,-8.08374 3.80005,-11.054687 3.66187,-4.560059 8.98193,-7.254639 14.302,-7.254639 z m 60.63718,-3.800049 h -5.11279 l -1.24366,6.701905 c -1.79638,-2.832764 -2.55639,-3.800049 -4.00732,-4.836426 -2.5564,-1.865479 -5.66553,-2.763672 -9.32739,-2.763672 -6.771,0 -12.6438,2.763672 -17.27295,8.014649 -3.80005,4.352783 -6.14917,10.363769 -6.14917,15.545654 0,9.396484 6.77099,16.029297 16.44385,16.029297 6.77099,0 12.29834,-2.970948 15.9602,-8.567383 l -0.48364,2.556396 c -0.69092,3.661866 -1.58911,6.14917 -3.10913,8.4292 -2.90186,4.421875 -7.66919,6.840088 -13.4729,6.840088 -3.59278,0 -6.42554,-0.898194 -8.56739,-2.763672 -1.45092,-1.312745 -2.00366,-2.072754 -3.3164,-5.389161 0,-0.06909 -0.20728,-0.41455 -0.34546,-0.829101 h -4.97461 c 0.62183,3.730957 1.24365,5.665527 2.4873,7.392822 2.97095,4.145508 7.66919,6.287354 13.81836,6.287354 6.63282,0 12.57471,-2.418213 16.65113,-6.770996 3.38549,-3.592774 4.69824,-6.840088 6.21826,-14.854737 z m -20.45117,3.800049 c 7.04736,0 12.22925,4.905518 12.22925,11.53833 0,3.592774 -1.24366,7.461914 -3.45459,10.778321 -3.45459,5.112793 -8.4983,7.876465 -14.16382,7.876465 -4.2146,0 -7.73828,-1.658204 -9.60376,-4.421875 -1.45093,-2.141846 -2.34912,-5.320069 -2.34912,-8.083741 0,-3.592773 1.45092,-7.738281 3.86914,-10.77832 3.52368,-4.560059 8.15283,-6.90918 13.4729,-6.90918 z m 25.1931,-3.800049 -9.46558,51.058838 h 5.11279 l 3.66187,-19.760254 c 2.5564,4.905518 7.11645,7.392823 13.54199,7.392823 12.50562,0 23.83667,-11.054688 23.83667,-23.283936 0,-9.811035 -6.63281,-16.305664 -16.58203,-16.305664 -6.49463,0 -12.71289,2.832764 -16.16748,7.392822 l 1.17456,-6.494629 z m 19.00024,3.800049 c 7.18555,0 12.36743,5.043701 12.36743,12.091065 0,3.86914 -1.79638,8.636474 -4.35278,11.53833 -3.66187,4.214599 -8.56738,6.563721 -13.81836,6.563721 -7.04736,0 -12.29834,-5.112793 -12.29834,-11.88379 0,-4.076416 1.38184,-8.08374 3.80005,-11.054687 3.66186,-4.560059 8.98193,-7.254639 14.302,-7.254639 z"
+     id="path3" /></g>
 
 
 

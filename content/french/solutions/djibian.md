@@ -39,7 +39,7 @@ Dans le doute, prenez une image complète de votre disque (`Clonezilla` fait ça
 
 > <http://iso.foopgp.org/djibian/latest>
 
-Comptez 3 à 5 Go.
+Comptez 6 à 7 Go.
 
 ### 3. Préparer une clé USB d'installation
 
@@ -51,9 +51,7 @@ Avec Ventoy, vous gardez la possibilité d'installer plusieurs ISO sur la même 
 
 Branchez la clé, redémarrez la machine, et au logo du constructeur appuyez sur la touche du menu de boot (souvent `F2`, `F12` ou `Esc`).
 
-Choisissez **Djibian live** : le système démarre **sans rien toucher à votre disque**. Vous pouvez le tester comme bon vous semble, ouvrir le navigateur, essayer le bureau.
-
-Quand vous êtes prêt·e, double-cliquez sur **« Installer Djibian »** : l'installation est entièrement autonome, elle prend de 15 à 45 minutes, suivant la rapidité du disque dur.
+Un menu d'installation apparaît. Appuyer sur `Entrée` pour **« Installer Djibian »**, puis encore sur `Entrée` pour choisir **« Entièrement automatisé »**, puis `FlècheBas` (`🡫`) pour valider le nettoyage complet du disque dur, puis une dernière fois sur `Entrée` : l'installation est entièrement autonome, elle prend de 15 à 45 minutes, suivant la rapidité du disque dur.
 
 ### 5. Premier démarrage : laissez-vous porter
 
@@ -82,7 +80,7 @@ La vidéo ci-dessous suit un nouvel utilisateur à travers exactement cette exp�
 
 ## Voie alternative — garder votre Linux actuel, ajouter nos outils
 
-Vous tenez à votre Debian (≥ 13) ou Ubuntu (≥ 24.04) ? Vous pouvez activer notre dépôt et n'installer que les paquets qui vous intéressent.
+Vous tenez à votre Debian (≥ 13) ou Ubuntu (≥ 24.04). Vous pouvez activer notre dépôt et n'installer que les paquets qui vous intéressent.
 
 ### Activer le dépôt foopgp
 

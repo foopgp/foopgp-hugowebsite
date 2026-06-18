@@ -47,7 +47,7 @@ Servez-vous de votre outil habituel — **[Ventoy](https://www.ventoy.net/)**, *
 
 Avec Ventoy, vous gardez la possibilité d'installer plusieurs ISO sur la même clé (très pratique pour gérer différentes versions).
 
-### 4. Démarrer sur la clé, essayer, installer
+### 4. Démarrer sur la clé USB d'installation
 
 Branchez la clé, redémarrez la machine, et au logo du constructeur appuyez sur la touche du menu de boot (souvent `F2`, `F12` ou `Esc`).
 

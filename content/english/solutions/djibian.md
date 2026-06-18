@@ -47,9 +47,9 @@ Use your usual tool — **[Ventoy](https://www.ventoy.net/)**, **[balenaEtcher](
 
 With Ventoy you can even keep several ISOs on the same stick (very handy to manage different versions).
 
-### 4. Boot the stick, try it, install it
+### 4. Boot the USB installer
 
-Plug the stick in, reboot, and at the vendor logo press the boot-menu key (usually `F2`, `F12` or `Esc`).
+Plug the USB stick in, reboot, and at the vendor logo press the boot-menu key (usually `F2`, `F12` or `Esc`).
 
 An installation menu appears. Press `Enter` to **"Install Djibian"**, then `Enter` again to select **"Full Automated"**, then `KeyDown` (`🡫`) to validate wiping previous data, then `Enter` : the installation runs on its own, it takes 15 to 45 minutes depending on the speed of the hard drive.
 

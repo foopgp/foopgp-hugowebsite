@@ -496,7 +496,7 @@ Table of Contents
       significant digit, followed by 11 more decimal digits, giving a
       12-digit integer part.  The total representable range with lead
       "0" or "1" is [0, 199999999999], covering approximately
-      from 1970-01-01 to 5138-11-16.
+      from 1970-01-01 to 8307-10-01.
 
    "-":
       Negative Unix timestamp (before 1970-01-01T00:00:00Z).  The
@@ -517,7 +517,7 @@ Table of Contents
 
       "001777236237.945"  →  2026-04-26T20:43:57.945Z
       "001617235200.000"  →  2021-04-01T00:00:00.000Z
-      "-00037800000.000"  →  approx. 1199 BCE (negative timestamp)
+      "-99999999999.999"  →  approx. 1199 BCE (lower bound)
 
 5.3.  u5 String Format
 

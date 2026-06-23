@@ -50,6 +50,7 @@ Table of Contents
    2.  Conventions and Terminology
    3.  Common Structures
        3.1.  Geographic Suffix (coord14)
+           3.1.1.  Sub-national Extensions
        3.2.  Character Set
    4.  u4: Human Birth Identity String
        4.1.  Overview
@@ -79,6 +80,7 @@ Table of Contents
            6.4.5.  Reference Tools
        6.5.  Home Directory Path
        6.6.  System Configuration
+       6.7.  Avatar (User Attribute Packet)
    7.  Encoding Notes
    8.  Privacy Considerations
    9.  Security Considerations
@@ -239,9 +241,8 @@ Table of Contents
 
    When two individuals share the same u4 hash (a collision), one of
    them MAY be assigned a different coord14 — for instance, using a
-   departmental or regional centroid — to restore uniqueness.  The
-   canonical table MAY be extended with sub-national entries for this
-   purpose.
+   departmental or regional centroid — to restore uniqueness.
+   Section 3.1.1 specifies how sub-national entries are added.
 
    Example coord14 values:
 
@@ -249,6 +250,55 @@ Table of Contents
       e_43.30_005.38   (Marseille, France)
       e_50.64_004.64   (Belgium centroid)
       e-33.87_151.21   (Sydney, Australia)
+
+3.1.1.  Sub-national Extensions
+
+   The country-level table in Appendix A is the default.  When
+   collision resolution requires a finer-grained coord14, an
+   implementation MAY draw the value from a sub-national table
+   keyed by ISO 3166-2 subdivision codes [ISO3166-2].
+
+   Key format:
+
+      sub-key  = country-alpha-3 "-" subdivision-code
+
+   where country-alpha-3 is the ISO 3166-1 alpha-3 code already used
+   in Appendix A, and subdivision-code is the subdivision portion of
+   the ISO 3166-2 code (i.e., the part after the country prefix).
+
+   Example sub-keys:
+
+      FRA-75   (Paris, France)
+      FRA-13   (Bouches-du-Rhône, France)
+      USA-CA   (California, United States)
+      CHE-GE   (Geneva, Switzerland)
+
+   The coord14 value associated with a sub-key SHOULD be the
+   centroid of the corresponding administrative subdivision.
+
+   Collision-resolution procedure:
+
+   1.  Two distinct holders A and B compute the same base22 prefix
+       (Section 4.4) AND share the country-level coord14.
+
+   2.  The conflicting party (by convention, the most recently
+       provisioned eid, or by mutual agreement) re-computes its
+       coord14 from the sub-key matching the birth town's
+       widest-containing subdivision.
+
+   3.  If the collision persists, the procedure recurses with the
+       next-narrower subdivision (region → department → commune).
+
+   4.  If the holder objects to disclosing finer-grained geographic
+       data, they MAY adopt a u5 identifier instead (Section 5).
+
+   Sub-national tables MUST be published openly so that any verifier
+   can re-derive the coord14 deterministically.  Conformant tools
+   SHOULD ship a minimal built-in table and SHOULD allow operators
+   to add entries through a documented configuration mechanism.
+   Coordination of overlapping or conflicting entries between
+   independent tables is out of scope for this specification; a
+   future revision MAY define a centralised registry.
 
 3.2.  Character Set
 
@@ -796,12 +846,47 @@ Table of Contents
    o  GnuPG default key: the certificate is set as the default
       signing and certification key.
 
-   o  Avatar (~/.face): if the OpenPGP certificate contains a photo
-      attribute, it is extracted and installed as the user's avatar.
+   o  Avatar (~/.face): if the OpenPGP certificate contains a User
+      Attribute packet of subpacket type 1 (image), it is extracted
+      and installed as the user's avatar; see Section 6.7 for
+      details.
 
    This approach means that a single OpenPGP certificate, identified
    by its eid, is sufficient to bootstrap a complete, authenticated
    user environment on any conforming system.
+
+6.7.  Avatar (User Attribute Packet)
+
+   An OpenPGP certificate MAY carry an image of the holder, encoded
+   as a User Attribute packet (UAT) with image subpacket type 1, as
+   defined in Section 5.13 of [RFC9580].
+
+   Because the OpenPGP card application [OpenPGP-Card] does not
+   define a Data Object to hold an image of the cardholder, the
+   avatar lives in the OpenPGP certificate only — it does not
+   travel with the hardware token, but is fetched alongside the
+   certificate via DO 5F50 (Section 6.4.4) or any other configured
+   keyserver.
+
+   Recommended dimensions: 180x180 pixels JPEG.  Smaller sizes are
+   accepted by the reference tooling but produce coarser renders in
+   downstream artefacts (avatar tile of the system home page,
+   printable identity card, sticker).
+
+   Conformant systems SHOULD:
+
+   o  Extract the image at user provisioning time and install it as
+      ~/.face (Section 6.6) so the desktop / login manager can
+      pick it up.
+
+   o  Re-extract on every certificate refresh, so a UAT replacement
+      propagates automatically.
+
+   The reference tooling exposes this through bl-pgpid avatar
+   (extract, install, replace, revoke).  When an existing UAT is
+   replaced, the conformant tool MUST emit a revocation
+   self-signature on the superseded UAT, so consumers do not display
+   stale images.
 
 7.  Encoding Notes
 
@@ -889,6 +974,12 @@ Table of Contents
    [ICAO9303] International Civil Aviation Organization, "Machine
               Readable Travel Documents, Part 3: Specifications Common
               to all MRTDs", ICAO Document 9303, 8th Edition, 2021.
+
+   [ISO3166-2]
+              International Organization for Standardization, "Codes
+              for the representation of names of countries and their
+              subdivisions - Part 2: Country subdivision code",
+              ISO 3166-2:2020, 4th Edition, 2020.
 
    [ISO7813]  International Organization for Standardization,
               "Information technology - Identification cards -

@@ -164,7 +164,7 @@ Table of Contents
       OpenPGP entity identifier.  The umbrella term covering every
       identifier variant defined in this document (u4, u5) and any
       future extension.  An eid is always one of those variants —
-      there is no "bare eid" string ; the term is used when the
+      there is no "bare eid" string; the term is used when the
       discussion applies to any variant indifferently, or when the
       specific variant is irrelevant.
 
@@ -252,13 +252,25 @@ Table of Contents
 
 3.2.  Character Set
 
-   Both u4 and u5 eid variants use only characters
-   from the set:
+   Taken together, the u4 and u5 variants use only characters from
+   the set:
 
       [A-Za-z0-9_\-.]
 
-   This set is safe for use in OpenPGP UID comment fields, URLs, and
-   filenames without percent-encoding.
+   In detail:
+
+   o  The base22 prefix of u4 (Section 4.4) draws from
+      [A-Za-z0-9_\-] (the 64-character base64url alphabet).
+
+   o  The ts16 prefix of u5 (Section 5.2) is the only producer of "."
+      (decimal point in the seconds.milliseconds part) and the only
+      other source of "-" beyond coord14 (lead character for
+      pre-1970 timestamps).
+
+   o  coord14 (Section 3.1) uses "e", digits, "_", "-", and ".".
+
+   This combined character set is safe for use in OpenPGP UID comment
+   fields, URLs, and filenames without percent-encoding.
 
 
 4.  u4: Human Birth Identity String
@@ -353,7 +365,14 @@ Table of Contents
 
 4.2.3.  Birth Date Field
 
-   The birth date MUST be in ISO 8601 extended format: "YYYY-MM-DD".
+   The birth date MUST appear in the mrz-input string in ISO 8601
+   extended format, "YYYY-MM-DD" (e.g., "1989-07-14").
+
+   User-facing tools MAY accept other input forms (e.g., the basic
+   ISO 8601 "YYYYMMDD" form or a locale-specific date string), but
+   MUST normalise to "YYYY-MM-DD" before constructing mrz-input.
+   The hash defined in Section 4.3 is computed over the canonical
+   form only.
 
 4.3.  Hash Computation
 
@@ -576,11 +595,12 @@ Table of Contents
    within a certificate.  This anchors the identity to the OpenPGP
    web of trust.
 
-6.2.  Certificate Lookup on Certificate Servers (keyservers)
+6.2.  Certificate Lookup on Keyservers
 
    The eid string (or a prefix thereof) can be used as a search key
-   on OpenPGP certificate servers (commonly called "keyservers" in
-   the HKP/HKPS protocol, although they actually serve certificates).
+   on OpenPGP keyservers (HKP/HKPS).  Note that despite their name,
+   keyservers serve full OpenPGP certificates, not bare keys; the
+   term "certificate server" is therefore equally accurate.
 
    Because the first 22 characters of a u4 are derived from a one-way
    hash, they function as a pseudonymous lookup key: a party who knows
@@ -591,12 +611,45 @@ Table of Contents
 6.3.  Unix User ID Derivation
 
    A deterministic 32-bit Unix User ID (UID) can be derived from an
-   eid by reducing the base22 hash (for u4) or the ts16 field (for u5)
-   into the integer range [2^18, 2^31 - 2] (i.e., [262144, 2147483646]).
+   eid by reducing it into the integer range
+   [2^18, 2^31 - 2] (i.e., [262144, 2147483646]).  The lower bound
+   2^18 stays clear of the system / "human" UID ranges allocated by
+   distributions; the upper bound stops below 2^31 because several
+   tools (useradd, NFS clients, …) misbehave once the UID is
+   interpreted as a signed 32-bit integer.
 
-   This mapping ensures that a given individual or entity receives the
-   same numeric UID on every system that implements this scheme,
-   enabling portable ownership of files and processes across machines.
+   To make the mapping portable across implementations, the derivation
+   MUST proceed as follows:
+
+   1.  Compute the 16-byte raw digest H of the eid:
+
+       *  For a u4 eid: H is the MD5 digest already produced in
+          Section 4.3 (i.e., the digest of the mrz-input string,
+          before base64url encoding).
+
+       *  For a u5 eid: H is the MD5 digest of the full u5 string
+          (ts16 immediately followed by coord14, ASCII).
+
+   2.  Fold H into a single 64-bit word X by XORing its two
+       successive 8-byte halves:
+
+          X = H[0..7] XOR H[8..15]
+
+       interpreting each 8-byte slice as a big-endian unsigned
+       64-bit integer.
+
+   3.  Map X into the target range:
+
+          XUID_MIN = 2^18      = 262144
+          XUID_MAX = 2^31 - 2  = 2147483646
+          UID = (X mod (XUID_MAX - XUID_MIN)) + XUID_MIN
+
+       The "mod" here is the mathematical modulo (always
+       non-negative), not the C/POSIX "%" remainder operator.
+
+   This mapping ensures that a given individual or entity receives
+   the same numeric UID on every conforming system, enabling portable
+   ownership of files and processes across machines.
 
    The available space is approximately 2.147 billion slots.  By the
    birthday paradox, the expected number of identifiers before a 50%
@@ -637,33 +690,35 @@ Table of Contents
 
 6.4.2.  Login Data Field (DO 5E)
 
-   When populated by a conforming tool, DO 5E SHALL contain:
+   When populated by a conforming tool, DO 5E SHALL contain a
+   string conforming to the following ABNF [RFC5234]:
 
-      <eid> [" # " <utf8-display-name>]
+      do5e-content  = eid-string [SEP utf8-name]
+      eid-string    = ("u4=" u4-string) / ("u5=" u5-string)
+                                            ; Sections 4.5, 5.4
+      SEP           = SP "#" SP             ; literal " # "
+      utf8-name     = 1*UTF8-printable
+      UTF8-printable = %x20-7E / %x80-10FFFF ; printable Unicode
 
-   where:
+   The total octet length of do5e-content MUST NOT exceed 254 bytes
+   (the OpenPGP card upper bound on DO 5E [OpenPGP-Card]).
 
-   o  <eid> is the full eid string (u4=..., u5=..., or any future
-      variant), with the variant tag included verbatim.
+   Notes:
 
-   o  " # " (space, "#", space) is a deterministic magic separator.
-      Neither valid eids (Section 4.4, Section 5.3) nor email
-      addresses contain the "#" character, so the first occurrence
-      of " # " in DO 5E unambiguously delimits the eid prefix from
-      the optional UTF-8 display name.
+   o  SEP (" # ", space-hash-space) is a deterministic magic
+      separator.  Neither valid eids (Section 4.4, Section 5.3) nor
+      email addresses contain the "#" character, so the first
+      occurrence of SEP in DO 5E unambiguously delimits the eid
+      prefix from the optional UTF-8 display name.
 
-   o  <utf8-display-name> is the holder's display name, free-form
-      UTF-8 printable characters (no control characters), up to
-      (254 - len(eid) - 3) bytes.
+   o  A reader extracting the eid from DO 5E MUST stop at the first
+      occurrence of SEP (or take the whole field if no separator is
+      present).  A reader extracting the display name MUST take
+      everything that follows the first occurrence of SEP.
 
-   A reader extracting the eid from DO 5E MUST stop at the first
-   occurrence of " # " (or take the whole field if no separator is
-   present).  A reader extracting the display name MUST take
-   everything that follows the first occurrence of " # ".
-
-   For backward compatibility, readers that find no eid prefix in
-   DO 5E (legacy provisioning that stored only a display name there)
-   MAY treat the entire field as the display name.
+   o  For backward compatibility, readers that find no eid prefix in
+      DO 5E (legacy provisioning that stored only a display name
+      there) MAY treat the entire field as the display name.
 
 6.4.3.  Name of Cardholder Field (DO 5B)
 

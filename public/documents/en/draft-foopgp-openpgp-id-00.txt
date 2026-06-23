@@ -287,10 +287,8 @@ Table of Contents
        widest-containing subdivision.
 
    3.  If the collision persists, the procedure recurses with the
-       next-narrower subdivision (region → department → commune).
-
-   4.  If the holder objects to disclosing finer-grained geographic
-       data, they MAY adopt a u5 identifier instead (Section 5).
+       next-narrower subdivision (region → department → commune,
+       and below if the local registry supports it).
 
    Sub-national tables MUST be published openly so that any verifier
    can re-derive the coord14 deterministically.  Conformant tools

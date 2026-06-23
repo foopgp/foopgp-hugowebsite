@@ -72,6 +72,11 @@ Table of Contents
        6.2.  Certificate Lookup on Keyservers
        6.3.  Unix User ID Derivation
        6.4.  Hardware Security Token
+           6.4.1.  Rationale
+           6.4.2.  Login Data Field (DO 5E)
+           6.4.3.  Name of Cardholder Field (DO 5B)
+           6.4.4.  URL of Public Key Field (DO 5F50)
+           6.4.5.  Reference Tools
        6.5.  Home Directory Path
        6.6.  System Configuration
    7.  Encoding Notes
@@ -609,13 +614,102 @@ Table of Contents
 6.4.  Hardware Security Token
 
    On OpenPGP-compatible hardware tokens (e.g., YubiKey, Nitrokey),
-   the eid string SHOULD be stored in the "Login data" field of the
-   card.  This allows the token to carry the holder's decentralised
-   identity alongside the cryptographic keys.
+   several cardholder-related Data Objects (DOs) of the OpenPGP card
+   application [OpenPGP-Card] SHOULD be populated when provisioning
+   the token, so that the holder's eid travels with the cryptographic
+   keys and is readable by any conforming reader.
 
-   The reference tool bl-pgpid can read and verify this field
-   (bl_pgpid_token_check), and bl-qrkey can populate it when
-   provisioning a new token (bl_qrkey_totoken).
+6.4.1.  Rationale
+
+   The OpenPGP card application defines DO 5B "Name of cardholder"
+   as the canonical cardholder name field: 39 bytes maximum, encoded
+   according to ISO/IEC 7813 [ISO7813] (typically "<surname>"<<"<given
+   names>", with "<" substituted for spaces).  This budget is too
+   tight to carry an eid plus a UTF-8 display name, and current
+   versions of GnuPG further cap user input at 38 bytes through
+   "gpg --card-edit".
+
+   Conversely, DO 5E "Login data" is a free-form 254-byte slot whose
+   encoding the OpenPGP card specification leaves unconstrained
+   [OpenPGP-Card].  This specification therefore SHOULD use DO 5E to
+   carry both the eid and the holder's UTF-8 display name, and
+   reserves DO 5B for a single email address.
+
+6.4.2.  Login Data Field (DO 5E)
+
+   When populated by a conforming tool, DO 5E SHALL contain:
+
+      <eid> [" # " <utf8-display-name>]
+
+   where:
+
+   o  <eid> is the full eid string (u4=..., u5=..., or any future
+      variant), with the variant tag included verbatim.
+
+   o  " # " (space, "#", space) is a deterministic magic separator.
+      Neither valid eids (Section 4.4, Section 5.3) nor email
+      addresses contain the "#" character, so the first occurrence
+      of " # " in DO 5E unambiguously delimits the eid prefix from
+      the optional UTF-8 display name.
+
+   o  <utf8-display-name> is the holder's display name, free-form
+      UTF-8 printable characters (no control characters), up to
+      (254 - len(eid) - 3) bytes.
+
+   A reader extracting the eid from DO 5E MUST stop at the first
+   occurrence of " # " (or take the whole field if no separator is
+   present).  A reader extracting the display name MUST take
+   everything that follows the first occurrence of " # ".
+
+   For backward compatibility, readers that find no eid prefix in
+   DO 5E (legacy provisioning that stored only a display name there)
+   MAY treat the entire field as the display name.
+
+6.4.3.  Name of Cardholder Field (DO 5B)
+
+   When populated by a conforming tool, DO 5B SHOULD contain a
+   single email address present in a non-revoked UID of the
+   cardholder's OpenPGP certificate.  Implementations MUST NOT
+   place the holder's display name in DO 5B: doing so would shadow
+   the canonical display-name field (DO 5E, Section 6.4.2) and
+   consume the 38-byte budget that GnuPG enforces on DO 5B.
+
+6.4.4.  URL of Public Key Field (DO 5F50)
+
+   DO 5F50 SHOULD point to a URL from which the holder's OpenPGP
+   certificate can be retrieved.  HKPS lookup URLs of the form
+
+      https://<keyserver>/pks/lookup?op=get&search=0x<fingerprint>
+
+   are RECOMMENDED.  Readers MAY use this URL to fetch the
+   certificate when the cardholder's local keyring does not already
+   hold it.
+
+   A tool offering to update DO 5F50 SHOULD first verify that the
+   certificate served at the new URL contains the public counterparts
+   of every private subkey held by the token (signature, encryption,
+   and authentication subkey fingerprints).  Revoked or expired
+   subkeys SHOULD still count as present: the URL may legitimately
+   point to an archived or rolled-over certificate.
+
+6.4.5.  Reference Tools
+
+   bl-pgpid and bl-qrkey from the foopgp bash-libs implement this
+   section.  In particular:
+
+   o  bl_pgpid_token_check populates aaname[pgpid_name] from DO 5E
+      when the magic " # " separator is present, falling back to
+      DO 5B otherwise (legacy provisioning).
+
+   o  bl_qrkey_totoken writes the eid into DO 5E and accepts an
+      optional --name parameter that appends a UTF-8 display name
+      after the magic separator.
+
+   o  bl_qrkey_change_token_meta updates DO 5E (preserving the eid
+      prefix), DO 5B (after verifying the new email appears in a
+      non-revoked UID of the cert), and DO 5F50 (after verifying
+      the certificate served at the new URL holds the public
+      counterparts of the token's S/E/A subkeys).
 
 6.5.  Home Directory Path
 
@@ -740,6 +834,18 @@ Table of Contents
    [ICAO9303] International Civil Aviation Organization, "Machine
               Readable Travel Documents, Part 3: Specifications Common
               to all MRTDs", ICAO Document 9303, 8th Edition, 2021.
+
+   [ISO7813]  International Organization for Standardization,
+              "Information technology - Identification cards -
+              Financial transaction cards", ISO/IEC 7813, 4th Edition,
+              2006.
+
+   [OpenPGP-Card]
+              g10code, "Functional Specification of the OpenPGP
+              application on ISO Smart Card Operating Systems",
+              Version 3.4.1, May 2022.
+              <https://gnupg.org/ftp/specs/
+              OpenPGP-smart-card-application-3.4.1.pdf>
 
    [RFC1321]  Rivest, R., "The MD5 Message-Digest Algorithm",
               RFC 1321, April 1992.

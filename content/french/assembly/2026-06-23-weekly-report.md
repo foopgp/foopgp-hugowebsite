@@ -61,12 +61,12 @@ OPTIONS:
 
 #### Chiffres de l’association
 
-*À mettre à jour avec* `bl-foopgp inputs` *(vue d’ensemble) +* `bl-foopgp contribs --resume` *(sous-ensemble certifié) appliqués à* `uetree-djis-by-email/`*.*
+*Au 9 mai 2026, calculés avec nos nouveaux outils* `bl-foopgp` *(*`inputs` *pour la vue d’ensemble,* `contribs --resume` *pour le sous-ensemble certifié) appliqués à l’instance* `uetree-djis-by-email/`*.*
 
-- Total contributors : … - Total certified members : … / …
-- Total contribs : … - Total certified contribs : … / …
-- Total contribution : … € - Total certified contribution : … € / … €
-- Total certified created : … Ɉ — *seuls les adhérents dont l’identité OpenPGP est certifiée par la Toile de Confiance voient leurs djis effectivement créés et utilisables.*
+- Total contributors : 46 - Total certified members : 13 / 46
+- Total contribs : 86 - Total certified contribs : 36 / 86
+- Total contribution : 61 494,10 € - Total certified contribution : 42 485,47 € / 61 494,10 €
+- Total certified created : 99,733737 Ɉ — *seuls les adhérents dont l’identité OpenPGP est certifiée par la Toile de Confiance voient leurs djis effectivement créés et utilisables.*
 
 *Aux adhérents pas encore certifiés : venez nous rencontrer lors d’un de nos prochains ateliers ([cf. agenda ci-dessous](https://foopgp.org/fr/assembly/2026-06-23-weekly-report/#agenda) ) pour finaliser la certification de votre identité OpenPGP, débloquer la création de vos djis et pouvoir les échanger au sein de l’association.*
 

@@ -36,6 +36,28 @@ However, the comparison ends there, as these tokens have other very interesting 
 
 ---
 
+## Compared to currencies and cryptos?
+
+Just like cryptos, the *dji* is not a currency. Nevertheless, it is today **the best-designed and best-thought-out tool** for:
+
+- **Exchanging** value.
+
+- **Storing** value.
+
+- **Measuring** value.
+
+What gives this kind of tool its intrinsic value is **the perfect balance between its scarcity and its availability**.
+
+And the verdict is clear:
+
+- *Currencies* (euro, dollar, …): ***as much can be created as one wants***, but ***not for everyone***.
+
+- *Cryptos* (bitcoin, monero, …): ***creation is limited***, and ***not for everyone***.
+
+- *Libre currencies* (***dji***, june, …): ***creation is limited***, and ***everyone receives their share***.
+
+---
+
 ## What will the dji be worth?
 
 Suppose we are in February 2026 and that the size of the economic pie no longer moves.

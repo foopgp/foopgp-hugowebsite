@@ -36,6 +36,28 @@ Cependant, la comparaison s'arrête là, car ces jetons ont d'autres caractéris
 
 ---
 
+## Par rapport aux monnaies, aux cryptos ?
+
+Tout comme les cryptos, le *dji* n'est pas une monnaie. Toutefois c'est aujourd'hui **l'outil le mieux pensé et conçu** pour :
+
+- **Échanger** des valeurs.
+
+- **Conserver** des valeurs.
+
+- **Mesurer** des valeurs.
+
+En effet ce qui fait la valeur intrinsèque de ce genre d'outil, est **l'équilibre parfait entre sa rareté et sa disponibilité**.
+
+Et le constat est sans appel :
+
+- Les *monnaies* (euro, dollar, …) : ***on peut en créer autant que l'on veut***, mais ***pas pour tout le monde***.
+
+- Les *cryptos* (bitcoin, monero, …) : la ***création est limitée***, et c'est ***pas pour tout le monde***.
+
+- Les *monnaies libres* (***dji***, june, …) : la ***création est limitée***, et ***chacun reçoit sa part***.
+
+---
+
 ## Quel sera la valeur du dji ?
 
 Supposons que nous sommes en février 2026 et que la taille du gateau économique ne bouge plus.

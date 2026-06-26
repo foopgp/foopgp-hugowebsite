@@ -102,9 +102,9 @@ Reprenons maintenant le cours du temps : il est tout à fait probable qu'un jour
 
 ---
 
-## Et la clé de sécurité physique ?
+## Et la clé physique de sécurité ?
 
-Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous recevez une **clé de sécurité physique** ([Yubikey](https://www.yubico.com/) ou [Nitrokey](https://www.nitrokey.com/)) pour **[utiliser](/fr/blog/2026-01-19-djibian-release/) votre identité numérique décentralisée [OpenPGP ID](/fr/solutions/openpgp-id/)** — la pierre angulaire de la souveraineté numérique foopgp. Le palier en euros augmente d'environ 0,5 % chaque mois : c'est l'effet **stingynalty** rendu palpable, et une incitation à rejoindre l'association tôt plutôt que tard. [^palier]
+Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous recevez une **clé physique de sécurité** ([Yubikey](https://www.yubico.com/) ou [Nitrokey](https://www.nitrokey.com/)) pour dès aujourd'hui **[utiliser](/fr/blog/2026-01-19-djibian-release/) votre identité numérique décentralisée [OpenPGP ID](/fr/solutions/openpgp-id/)** — la pierre angulaire de votre souveraineté numérique et financière. En 2027, cette même clé de sécurité sera utilisée pour vos échanges numériques en djis (**Ɉ**). Le palier en euros augmente d'environ 0,5 % chaque mois : c'est l'effet **stingynalty** rendu palpable, et une incitation à rejoindre la migration tôt plutôt que tard. [^palier]
 
 | Date | Cotisations nécessaires pour atteindre 6,42 Ɉ |
 |---|---|
@@ -115,7 +115,7 @@ Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous rec
 | mai 2027      | ≈ 199,09 € |
 | mai 2028      | ≈ 276,43 € |
 
-[^palier]: Le palier est exprimé **en djis**, pas en euros — donc il évolue automatiquement et impartialement avec la mécanique monétaire de l'association, sans qu'aucun gestionnaire commercial ait à l'arbitrer. La fonction `bl-foopgp t2g 6.42` permet de vérifier à tout moment l'équivalent en euros à la date courante.
+[^palier]: Le palier est exprimé **en djis**, pas en euros — donc il évolue automatiquement et impartialement avec la mécanique monétaire de l'organisation, sans qu'aucun gestionnaire ait à l'arbitrer. La fonction `bl-foopgp t2g 6.42` permet de vérifier à tout moment l'équivalent en euros à la date courante.
 
 ---
 

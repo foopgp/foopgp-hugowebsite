@@ -85,7 +85,7 @@ Précisons maintenant :
 - Pression à la baisse : le « dividende universel ». [^RI5]
 - Pression à la hausse : le paramètre **stingynalty** (mis en place pour contenir la pression du « dividende universel » ou l'inflation de l'euro). [^RI4]
 - Pression à baisse puis à la hausse : Tout le monde n'a pas en moyenne 32102.19 € sur son compte en banque... [^momentum]
-- Pression à la hausse : Le dji est la part sociale d'une société qui produit des innovations comme [**OpenPGP ID**](/fr/blog/2026-01-19-djibian-release/) et [**Djibian**](/fr/blog/2026-02-10-djibian-tour/). Ces produits s'attaquent (entre autres) aux parts de marché de Microsoft et d'Apple, c'est-à-dire (rien que pour eux deux) : [7200 milliards de capitalisation (en 2025)](https://www.clubic.com/actualite-574953-non-apple-et-microsoft-ne-connaissent-pas-la-crise.html).
+- Pression à la hausse : Le dji est la part sociale d'une société qui produit des innovations comme [**OpenPGP ID**](/fr/blog/2026-01-19-djibian-release/) et [**Djibian**](/fr/solutions/djibian/). Ces produits s'attaquent (entre autres) aux parts de marché de Microsoft et d'Apple, c'est-à-dire (rien que pour eux deux) : [7200 milliards de capitalisation (en 2025)](https://www.clubic.com/actualite-574953-non-apple-et-microsoft-ne-connaissent-pas-la-crise.html).
 
 [^RI4]: Article 4 de notre [règlement intérieur](/fr/about/rules-of-procedures/#article-4---modalités-relatives-aux-jetons-de-pouvoir-confer-article-10bis-des-statuts) : <https://foopgp.org/fr/about/rules-of-procedures/>
 [^RI5]: Article 5 de notre [règlement intérieur](/fr/about/rules-of-procedures/#article-5--émission-universelle-de-nouveaux-jetons-confer-article-10bis-des-statuts) : <https://foopgp.org/fr/about/rules-of-procedures/>

@@ -9,7 +9,7 @@ image: ""
 # meta description
 description : "Friends Of OpenPGP (foopgp) brings together people who use or develop solutions based on the [OpenPGP](/about/openpgp/) standards.
    The objectives are to promote and facilitate the adoption of such technologies and to support their growth.
-   To reach them, the association organize events, workshops and training. It also host and promote the collaborative development of software projects related to [OpenPGP](/about/openpgp/), like [Djibian](/blog/2026-01-19-djibian-release/)."
+   To reach them, the association organize events, workshops and training. It also host and promote the collaborative development of software projects related to [OpenPGP](/about/openpgp/), like [Djibian](/solutions/djibian/)."
 ---
 
 ![pugs puppies](/images/about/about-us.jpg)

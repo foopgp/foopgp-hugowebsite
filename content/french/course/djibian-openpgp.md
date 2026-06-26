@@ -16,9 +16,9 @@ apply_url: "mailto:info@foopgp.org"
 
 ## Reprenez le contrôle sur vos données avec les clés de sécurité OpenPGP
 
-**[Foopgp](/fr/about/)** a sélectionné et développé des outils, intégrés dans un système d'exploitation GNU/Linux (*Debian Blends*) dénommé **[Djibian](/fr/blog/2025-09-12-welcome-djibian/)**.
+**[Foopgp](/fr/about/)** a sélectionné et développé des outils, intégrés dans un système d'exploitation GNU/Linux (*Debian Blends*) dénommé **[Djibian](/fr/solutions/djibian/)**.
 
-**[Djibian](/fr/blog/2025-09-12-welcome-djibian)** est aujourd'hui le système d'exploitation grand public le plus sûr et respectueux de votre singularité humaine.
+**[Djibian](/fr/solutions/djibian/)** est aujourd'hui le système d'exploitation grand public le plus sûr et respectueux de votre singularité humaine.
 
 L'atelier vous permettra de donner naissance à votre identité OpenPGP ID et de prendre en main **Djibian** et **votre clé de sécurité** [OpenPGP](/fr/about/openpgp/), **YubiKey ou NitroKey**.
 
@@ -37,7 +37,7 @@ Ainsi vous commencerez à reprendre vraiment le contrôle sur vos données qui, 
 - Créer votre identité **[OpenPGP ID](/fr/solutions/openpgp-id/)**.
 - Configurer **[la YubiKey ou la Nitrokey](/fr/solutions/offer-security-keys/)** qui sécurisera votre singularité dans l'univers numérique.
 - Utiliser cette clé pour :
-  - Créer votre compte sur le système **[Djibian](/fr/blog/2026-02-10-djibian-tour/)** et s’authentifier sur différents services (*SSH, Git*).
+  - Créer votre compte sur le système **[Djibian](/fr/solutions/djibian/)** et s’authentifier sur différents services (*SSH, Git*).
   - Utiliser cette même clé **depuis n'importe quelle machine Djibian distante**, sans jamais y copier la moindre clé privée *(cf. [Djibian Agent Forwarding](/fr/blog/2026-05-11-djibian-agentforwarding/))*.
   - [Signer](/fr/solutions/signature/) vos documents et [courriels](/fr/solutions/theme-email/).
   - [Chiffrer et déchiffrer](/fr/solutions/encryption/) vos documents et [courriels](/fr/solutions/theme-email/).
@@ -47,7 +47,7 @@ Ainsi vous commencerez à reprendre vraiment le contrôle sur vos données qui, 
 
 ### Install party
 
-Nous mettons à disposition quelques ordinateurs reconditionnés sous [Djibian](/fr/blog/2026-02-10-djibian-tour/), que vous pourrez acheter, en euros (€) [ou en djis (Ɉ)](https://foopgp.org/fr/about/join/).
+Nous mettons à disposition quelques ordinateurs reconditionnés sous [Djibian](/fr/solutions/djibian/), que vous pourrez acheter, en euros (€) [ou en djis (Ɉ)](https://foopgp.org/fr/about/join/).
 
 Si vous avez des ordinateurs qui rament, qui buguent ou qui vous espionnent (tous Windows ou MacOS par exemple), **nous vous aiderons** aussi à les désinfecter **en y installant Djibian**. *(N'oubliez pas de sauvegarder vos données auparavant.)*
 

@@ -75,7 +75,7 @@ An eid does more than label a certificate. In the reference implementation ([bas
 
 **OpenPGP smartcard.** The eid is stored in the "login data" field of the card (YubiKey, Nitrokey, ...), allowing the token to carry the holder's decentralised identity alongside the cryptographic keys.
 
-**Home directory.** On [Djibian](/blog/2026-01-19-djibian-release/), the home directory is named after the full eid, prefixed with the variant tag (`u4` or `u5`, with `=` removed for POSIX compatibility):
+**Home directory.** On [Djibian](/solutions/djibian/), the home directory is named after the full eid, prefixed with the variant tag (`u4` or `u5`, with `=` removed for POSIX compatibility):
 
 ```
 /home/u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
@@ -115,7 +115,7 @@ Community feedback is welcome — particularly on the IANA section and on possib
 
 #### What next?
 
-This draft formalises a building block already in production in [Djibian](/blog/2026-01-19-djibian-release/) and in the `bl-foopgp` and `bl-pgpid` tools. The next step: submit this document to the IETF and build around it a decentralised certification ecosystem.
+This draft formalises a building block already in production in [Djibian](/solutions/djibian/) and in the `bl-foopgp` and `bl-pgpid` tools. The next step: submit this document to the IETF and build around it a decentralised certification ecosystem.
 
 > 📖 For the general-audience view of **OpenPGP ID** — key creation, paper QR-code backup, transposition onto a physical key, certification — see the **[solutions/openpgp-id](/solutions/openpgp-id/)** page.
 

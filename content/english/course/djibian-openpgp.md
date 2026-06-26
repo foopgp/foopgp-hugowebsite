@@ -18,9 +18,9 @@ apply_url: "mailto:info@foopgp.org"
 
 ## Take back control over your data with OpenPGP security keys
 
-**[Foopgp](/about/)** has selected and developed a set of tools, integrated into a GNU/Linux operating system (*Debian Blends*) called **[Djibian](/blog/2025-09-12-welcome-djibian/)**.
+**[Foopgp](/about/)** has selected and developed a set of tools, integrated into a GNU/Linux operating system (*Debian Blends*) called **[Djibian](/solutions/djibian/)**.
 
-**[Djibian](/blog/2025-09-12-welcome-djibian)** is today the most secure mainstream operating system, and the one most respectful of your human singularity.
+**[Djibian](/solutions/djibian/)** is today the most secure mainstream operating system, and the one most respectful of your human singularity.
 
 The workshop will let you give birth to your OpenPGP ID identity and get hands-on with **Djibian** and **your security key** [OpenPGP](/about/openpgp/), **YubiKey or NitroKey**.
 
@@ -39,7 +39,7 @@ Starting from a freshly installed **[Djibian GNU/Linux](/blog/2026-01-19-djibian
 - Create your **[OpenPGP ID](/solutions/openpgp-id/)** identity.
 - Configure **[the YubiKey or NitroKey](/solutions/offer-security-keys/)** that will secure your singularity in the digital world.
 - Use this key to:
-  - Create your account on the **[Djibian](/blog/2026-02-10-djibian-tour/)** system and authenticate to various services (*SSH, Git*).
+  - Create your account on the **[Djibian](/solutions/djibian/)** system and authenticate to various services (*SSH, Git*).
   - Use this same key **from any remote Djibian machine** without ever copying a private key onto it *(see [Djibian Agent Forwarding](/blog/2026-05-11-djibian-agentforwarding/))*.
   - [Sign](/solutions/signature/) your documents and [emails](/solutions/theme-email/).
   - [Encrypt and decrypt](/solutions/encryption/) your documents and [emails](/solutions/theme-email/).
@@ -49,7 +49,7 @@ Starting from a freshly installed **[Djibian GNU/Linux](/blog/2026-01-19-djibian
 
 ### Install party
 
-We provide a few refurbished computers running [Djibian](/blog/2026-02-10-djibian-tour/), which you can buy in euros (€) [or in djis (Ɉ)](https://foopgp.org/about/join/).
+We provide a few refurbished computers running [Djibian](/solutions/djibian/), which you can buy in euros (€) [or in djis (Ɉ)](https://foopgp.org/about/join/).
 
 If you have computers that are sluggish, buggy, or that spy on you (any Windows or macOS box, for example), **we will help** you disinfect them **by installing Djibian on them**. *(Don't forget to back up your data first.)*
 

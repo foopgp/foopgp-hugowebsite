@@ -19,11 +19,11 @@ lang: "fr"
 
 *Parce que vos données **PERSONNELLES** sont un trésor, et la **LIBERTÉ** votre essence.*
 
-**[Foopgp](/fr/about/)** a sélectionné et développé des outils, intégrés dans un système d'exploitation GNU/Linux (*Debian Blends*) dénommé **[Djibian](/fr/blog/2025-09-12-welcome-djibian/)**.
+**[Foopgp](/fr/about/)** a sélectionné et développé des outils, intégrés dans un système d'exploitation GNU/Linux (*Debian Blends*) dénommé **[Djibian](/fr/solutions/djibian/)**.
 
-**[Djibian](/fr/blog/2026-01-19-djibian-release/)** est aujourd'hui le système le plus avancé dans l'utilisation des clés de sécurité OpenPGP, telles que la YubiKey 5 NFC ou la NitroKey 3A NFC.
+**[Djibian](/fr/solutions/djibian/)** est aujourd'hui le système le plus avancé dans l'utilisation des clés de sécurité OpenPGP, telles que la YubiKey 5 NFC ou la NitroKey 3A NFC.
 
-Autrement dit : **[Djibian](/fr/blog/2026-02-10-djibian-tour/)** est **le système d'exploitation grand public le plus sûr et respectueux de votre singularité humaine.**
+Autrement dit : **[Djibian](/fr/solutions/djibian/)** est **le système d'exploitation grand public le plus sûr et respectueux de votre singularité humaine.**
 
 ---
 
@@ -43,7 +43,7 @@ Ainsi vous commencerez à reprendre vraiment le contrôle sur vos données qui, 
 
 Si la machine rame, bugue ou vous espionne (tous les Windows ou macOS, par exemple), **nous vous aiderons à la désinfecter en y installant Djibian**. *(Pensez à sauvegarder vos données auparavant.)*
 
-Si vous n'avez pas d'ordinateur sous la main, nous mettrons à disposition quelques ordinateurs reconditionnés sous [Djibian](/fr/blog/2026-02-10-djibian-tour/), que vous pourrez utiliser sur place, ou acquérir en euros (€) [ou en djis (Ɉ)](https://foopgp.org/fr/about/join/).
+Si vous n'avez pas d'ordinateur sous la main, nous mettrons à disposition quelques ordinateurs reconditionnés sous [Djibian](/fr/solutions/djibian/), que vous pourrez utiliser sur place, ou acquérir en euros (€) [ou en djis (Ɉ)](https://foopgp.org/fr/about/join/).
 
 ---
 

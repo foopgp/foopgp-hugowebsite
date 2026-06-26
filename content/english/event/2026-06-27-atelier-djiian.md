@@ -19,11 +19,11 @@ lang: "en"
 
 *Because your **PERSONAL** data is a treasure, and **FREEDOM** your essence.*
 
-**[Foopgp](/about/)** has selected and developed a set of tools, integrated into a GNU/Linux operating system (*Debian Blends*) called **[Djibian](/blog/2025-09-12-welcome-djibian/)**.
+**[Foopgp](/about/)** has selected and developed a set of tools, integrated into a GNU/Linux operating system (*Debian Blends*) called **[Djibian](/solutions/djibian/)**.
 
-**[Djibian](/blog/2026-01-19-djibian-release/)** is today the most advanced system for using OpenPGP security keys, such as the YubiKey 5 NFC or the NitroKey 3A NFC.
+**[Djibian](/solutions/djibian/)** is today the most advanced system for using OpenPGP security keys, such as the YubiKey 5 NFC or the NitroKey 3A NFC.
 
-In other words: **[Djibian](/blog/2026-02-10-djibian-tour/)** is **the consumer operating system most respectful of your human singularity, and the safest.**
+In other words: **[Djibian](/solutions/djibian/)** is **the consumer operating system most respectful of your human singularity, and the safest.**
 
 ---
 
@@ -39,7 +39,7 @@ This way you will begin to genuinely take back control of your data — data tha
 
 ### Install party
 
-We will provide a few refurbished computers running [Djibian](/blog/2026-02-10-djibian-tour/), which you can buy in euros (€) [or in djis (Ɉ)](https://foopgp.org/fr/about/join/).
+We will provide a few refurbished computers running [Djibian](/solutions/djibian/), which you can buy in euros (€) [or in djis (Ɉ)](https://foopgp.org/fr/about/join/).
 
 If you have computers that crawl, glitch or spy on you (any Windows or macOS box, for instance), **we'll also help you disinfect them** by installing Djibian on them. *(Remember to back up your data beforehand.)*
 
@@ -55,7 +55,7 @@ If you have computers that crawl, glitch or spy on you (any Windows or macOS box
 - Create and print your **[OpenPGP ID](/solutions/openpgp-id/)** identity.
 - Set up the **[YubiKey or NitroKey](/solutions/offer-security-keys/)** that will secure your singularity in the digital world.
 - Use that key to:
-  - Create your account on **[Djibian](/blog/2026-02-10-djibian-tour/)** and authenticate to various services (*SSH, Git*).
+  - Create your account on **[Djibian](/solutions/djibian/)** and authenticate to various services (*SSH, Git*).
   - [Sign](/solutions/signature/) your documents and [emails](/solutions/theme-email/).
   - [Encrypt and decrypt](/solutions/encryption/) your documents and [emails](/solutions/theme-email/).
   - [Certify](/solutions/theme-authentication/) your peers and extend your [Web of Trust](https://en.wikipedia.org/wiki/Web_of_trust).

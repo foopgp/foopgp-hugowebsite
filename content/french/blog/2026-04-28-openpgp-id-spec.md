@@ -75,7 +75,7 @@ Un eid ne sert pas qu'à étiqueter un certificat. Dans l'implémentation de ré
 
 **Carte à puce OpenPGP.** L'eid est stocké dans le champ « données de connexion » de la carte (YubiKey, Nitrokey, ...), permettant à la carte de porter l'identité décentralisée de son porteur aux côtés des clés cryptographiques.
 
-**Répertoire personnel.** Sur [Djibian](/fr/blog/2026-01-19-djibian-release/), le répertoire de l'utilisateur est nommé d'après l'eid complet, préfixé du tag de variante (`u4` ou `u5`, sans le `=` pour compatibilité POSIX) :
+**Répertoire personnel.** Sur [Djibian](/fr/solutions/djibian/), le répertoire de l'utilisateur est nommé d'après l'eid complet, préfixé du tag de variante (`u4` ou `u5`, sans le `=` pour compatibilité POSIX) :
 
 ```
 /home/u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
@@ -115,7 +115,7 @@ Les retours de la communauté sont les bienvenus — en particulier sur la secti
 
 #### Et après ?
 
-Cette spécification est la formalisation d'une brique déjà en production dans [Djibian](/fr/blog/2026-01-19-djibian-release/) et dans les outils `bl-foopgp` et `bl-pgpid`. La prochaine étape : soumettre ce document à l'IETF et construire autour de lui un écosystème de certification décentralisé.
+Cette spécification est la formalisation d'une brique déjà en production dans [Djibian](/fr/solutions/djibian/) et dans les outils `bl-foopgp` et `bl-pgpid`. La prochaine étape : soumettre ce document à l'IETF et construire autour de lui un écosystème de certification décentralisé.
 
 > 📖 Pour la vue grand public de l'**OpenPGP ID** — création, sauvegarde papier en QR codes, transposition sur clé physique, certification — voir la page **[solutions/openpgp-id](/fr/solutions/openpgp-id/)**.
 

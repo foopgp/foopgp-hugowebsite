@@ -19,11 +19,11 @@ lang: "en"
 
 *Because your **PERSONAL** data is a treasure, and **FREEDOM** your essence.*
 
-**[Foopgp](/about/)** has selected and developed a set of tools, integrated into a GNU/Linux operating system (*Debian Blends*) called **[Djibian](/blog/2025-09-12-welcome-djibian/)**.
+**[Foopgp](/about/)** has selected and developed a set of tools, integrated into a GNU/Linux operating system (*Debian Blends*) called **[Djibian](/solutions/djibian/)**.
 
-**[Djibian](/blog/2026-01-19-djibian-release/)** is today the most advanced system for using OpenPGP security keys, such as the YubiKey 5 NFC or the NitroKey 3A NFC.
+**[Djibian](/solutions/djibian/)** is today the most advanced system for using OpenPGP security keys, such as the YubiKey 5 NFC or the NitroKey 3A NFC.
 
-In other words: **[Djibian](/blog/2026-02-10-djibian-tour/)** is **the consumer operating system most respectful of your human singularity, and the safest.**
+In other words: **[Djibian](/solutions/djibian/)** is **the consumer operating system most respectful of your human singularity, and the safest.**
 
 ---
 
@@ -43,7 +43,7 @@ This way you will begin to genuinely take back control of your data — data tha
 
 If the machine crawls, glitches or spies on you (any Windows or macOS box, for instance), **we'll help you disinfect it by installing Djibian on it**. *(Remember to back up your data beforehand.)*
 
-If you don't have a machine on hand, we'll also bring a few refurbished computers running [Djibian](/blog/2026-02-10-djibian-tour/), which you can use on site, or buy in euros (€) [or in djis (Ɉ)](https://foopgp.org/fr/about/join/).
+If you don't have a machine on hand, we'll also bring a few refurbished computers running [Djibian](/solutions/djibian/), which you can use on site, or buy in euros (€) [or in djis (Ɉ)](https://foopgp.org/fr/about/join/).
 
 ---
 

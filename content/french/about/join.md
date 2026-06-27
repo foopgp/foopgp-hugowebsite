@@ -42,7 +42,7 @@ Tout comme les cryptos, le *dji* n'est pas une monnaie. Toutefois c'est aujourd'
 
 - **Échanger** des valeurs.
 
-- **Conserver** des valeurs.
+- **Conserver** de la valeur.
 
 - **Mesurer** des valeurs.
 

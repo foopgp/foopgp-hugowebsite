@@ -40,11 +40,11 @@ However, the comparison ends there, as these tokens have other very interesting 
 
 Just like cryptos, the *dji* is not a currency. Nevertheless, it is today **the best-designed and best-thought-out tool** for:
 
-- **Exchanging** value.
+- **Exchanging** values.
 
 - **Storing** value.
 
-- **Measuring** value.
+- **Measuring** values.
 
 What gives this kind of tool its intrinsic value is **the perfect balance between its scarcity and its availability**.
 

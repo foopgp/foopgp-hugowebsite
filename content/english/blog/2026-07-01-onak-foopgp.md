@@ -5,7 +5,7 @@ Tags:    [ "openpgp", "keyserver", "onak", "web-of-trust", "debian" ]
 categories: [ "News", "Solution" ]
 draft: false
 author: [ "Mnème", "Jean-Jacques Brucker" ]
-description: "keys.foopgp.org now runs on a rewritten build of onak. Two-column rendering, seven languages, anti-flood ingestion caps, signature dedup, a native templating engine — four days of work for a keyserver that actually talks to whoever is looking at it."
+description: "Our keyserver [keys.foopgp.org](http://keys.foopgp.org:11371/) runs on a new build of onak. Two-column rendering, seven languages, tightened security, a templating engine… and, in the end, a keyserver that clearly displays our certificates."
 lang: en
 bg_image: "images/backgrounds/library.jpg"
 image: "images/blog/hands-4947202_640.png"
@@ -19,13 +19,13 @@ Type   bits/keyID    Date       User ID
 pub    255E/0x8C39D09E68D27179 2026/05/08 Alice Dupont <alice@example.com>
 ```
 
-A non-technical visitor landing on that page understands nothing: what is a `pub`? a `KeyID`? why `255E`? is the key still valid?
+A newcomer landing on that page understands nothing: what is a `pub`? a `KeyID`? why `255E`? is the key still valid?
 
 At foopgp, we believe a keyserver has to serve everyone — from the **expert verifier** who wants to surf across the Web of Trust, to the **correspondent** who simply wants to inspect their recipient's certificate. Existing servers serve neither well.
 
 Our service [keys.foopgp.org](https://keys.foopgp.org) now runs on a build we rewrote in depth. Here is what it looks like.
 
-## What a visitor sees
+## The standard mode
 
 {{< figure
   src="/images/blog/2026/onak-foopgp-index-en.png"
@@ -46,9 +46,9 @@ Seven design decisions surface at first glance:
 
 Everything renders in the browser's language — English, French, German, Spanish, Italian, Ukrainian, or Polish. Seven languages, matching the header used elsewhere on foopgp.org so a visitor never "changes country" between our pages.
 
-## What a verifier sees
+## The expert mode
 
-Switch to expert mode (`op=vindex` instead of `op=index`):
+Or "verbose" (`op=vindex` instead of `op=index`):
 
 {{< figure
   src="/images/blog/2026/onak-foopgp-vindex-en.png"
@@ -63,7 +63,7 @@ Three differences from the standard mode:
 - **Every UID has its signature list expanded.** A `sig 0xFE13… Jean-Jacques B.` under `<jjbrucker@foopgp.org>` means "Jean-Jacques has self-certified this identity". A `rev` prefix means the signature has been revoked since.
 - **Every link is clickable.** Each signer KeyID resolves to the signer's key. Three clicks and you have followed a chain of trust.
 
-## Under the hood: what we cleaned up
+## Under the hood: what we put in place
 
 Alongside the rendering, we tightened security. A public keyserver is a regular target — flood attacks, WoT poisoning, malformed packets. The build we ship applies five hardenings partly borrowed from the IETF draft [`draft-dkg-openpgp-abuse-resistant-keystore`](https://datatracker.ietf.org/doc/draft-dkg-openpgp-abuse-resistant-keystore/):
 
@@ -97,16 +97,16 @@ The `foopgp` template fits in a single 130-line file: some CSS, some fairly gene
 
 Our work ships as **`onak-foopgp`**, a Debian source and binary package distinct from Debian's official `onak`.
 
-This split is not a divorce. The five core hardenings (see "what we cleaned up") are proposable as upstream pull requests, and so is the templating engine. The foopgp flavour — the two-column template, the seven-language landing page, the footer `contact` link to the operator's key — is an editorial choice: it should not silently impose itself on a vanilla onak administrator through a Debian upgrade. Hence the distinct name.
+We hope this fork will not last. Our new features (see "what we put in place") can be merged upstream, and so can the templating engine. The foopgp flavour — the two-column template, the seven-language landing page, the footer `contact` link to the operator's key — is an editorial choice: it should not silently impose itself on a vanilla onak administrator following a Debian upgrade.
 
-Conversely, our branch stays periodically rebase-able onto upstream. Every improvement upstream ships, we pick it up.
+Conversely, our branch stays periodically rebase-able onto upstream. Every improvement in onak's `main` branch, we pick it up.
 
 ## Where we go next
 
 The keyserver is one step on a longer path. Our roadmap:
 
 - **Back the storage with [uetree](https://foopgp.org/documents/en/draft-foopgp-uetree-00.txt)** — our git-distributed, signed identity registry. A `keydb_uetree` backend (spec in progress) would let onak serve certificates from a uetree tree — backed up, synchronised, and sharded through git.
-- **Where available, use [WKD and WKS](https://datatracker.ietf.org/doc/draft-koch-openpgp-webkey-service/) as the source of truth** (from the mail domain's DNS). Keyservers can then become what they should have remained: a lookup cache and a WoT store.
+- **Where available, use [WKD and WKS](https://datatracker.ietf.org/doc/draft-koch-openpgp-webkey-service/) as the source of truth** (from the mail domain's DNS). Keyservers can then become what they should have remained: a cache of public data that can be queried to build and navigate our [Webs of Trust](https://en.wikipedia.org/wiki/Web_of_trust).
 
 ## Try it
 

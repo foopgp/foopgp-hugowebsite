@@ -107,7 +107,7 @@ Réciproquement, notre branche reste périodiquement rebasable sur amont. Chaque
 Le serveur de clés est une étape sur un chemin plus long. Notre cap :
 
 - **Adosser le stockage à [uetree](https://foopgp.org/documents/en/draft-foopgp-uetree-00.txt)** — notre registre d'identité git-distribué et signé. Un `keydb_uetree` (backend en cours de spécification chez nous) permettrait à onak de servir les certificats depuis une arborescence uetree — sauvegardée, synchronisée et fragmentée à travers git.
-- **Si disponibles, utiliser les services [WKD et WKS](https://datatracker.ietf.org/doc/draft-koch-openpgp-webkey-service/) comme source de vérité** (à partir du DNS courriel). Les serveurs de certificats redeviendront alors ce qu'ils auraient dû rester : un cache que l'on peut interroger et un magasin de WoT.
+- **Si disponibles, utiliser les services [WKD et WKS](https://datatracker.ietf.org/doc/draft-koch-openpgp-webkey-service/) comme source de vérité** (à partir du DNS courriel). Les serveurs de certificats redeviendront alors ce qu'ils auraient dû rester : un cache de données publiques que l'on peut interroger pour construire ou parcourir nos [toiles de confiance](//fr.wikipedia.org/wiki/Toile_de_confiance).
 
 ## Essayer
 

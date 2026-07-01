@@ -3,7 +3,7 @@ Title:   "Un serveur de clés OpenPGP en 2026"
 Date:    2026-07-01T14:00:00+02:00
 Tags:    [ "openpgp", "keyserver", "onak", "web-of-trust", "debian" ]
 categories: [ "News", "Solution" ]
-draft: true
+draft: false
 author: [ "Mnème", "Jean-Jacques Brucker" ]
 description: "Nous republions keys.foopgp.org sur une version refondue d'onak. Rendu à deux colonnes, sept langues, filtrage anti-flood, dédup de signatures, moteur de templates : quatre jours de travail pour un serveur de clés qui parle enfin à qui le regarde."
 lang: fr
@@ -69,7 +69,7 @@ Trois différences avec le mode standard :
 En parallèle du rendu, on a renforcé la sécurité. Un serveur de clés public est une cible régulière — attaques par flood, empoisonnement WoT, paquets malformés. La version d'onak que nous déployons applique cinq durcissements en partie empruntés au draft IETF [`draft-dkg-openpgp-abuse-resistant-keystore`](https://datatracker.ietf.org/doc/draft-dkg-openpgp-abuse-resistant-keystore/) :
 
 1. **Plafond d'UIDs / UATs par clé** — 32 UIDs, 4 UATs max. Au-delà, les paquets excédentaires sont nettoyés (on garde les plus récents, on supprime les plus anciens).
-2. **Plafond de signatures par UID/UAT** — 512 max, configurable. Un attaquant ne peut plus empiler cent mille signatures bidons. L'attaque, desormais très limitée, reste cependant possible. Une prochaine version devrait permettre de réparer très facilement ce genre d'attaque.
+2. **Plafond de signatures par UID/UAT** — 512 max, configurable. Un attaquant ne peut plus empiler cent mille signatures bidons. L'attaque, désormais très limitée, reste cependant possible. Une prochaine version devrait permettre de réparer très facilement ce genre d'attaque.
 3. **Déduplication des signatures par signataire** — si Alice a certifié Bob trois fois, on ne garde que la certification la plus récente. Si l'une des signatures est une révocation, elle l'emporte (une révocation est irrévocable).
 4. **Retrait inconditionnel des clés v3** (RSA-MD5, obsolètes depuis quinze ans). L'option `drop_v3=false` a été retirée : plus de porte dérobée.
 5. **Trois nouvelles commandes d'archivage** (`aged`, `dump-aged`, `clean-aged`) — un opérateur peut lister les clés dormantes depuis N années, en exporter un jeu chiffré, ou les purger sans en laisser fuiter le contenu au passage.
@@ -78,7 +78,7 @@ Rien de tout ceci n'est spécifique à foopgp. Et l'on espère que ces améliora
 
 ## Sous le capot : comment le rendu marche
 
-Le rendu HTML a été isolé dans un **moteur de templates [Mustache](https://fr.wikipedia.org/wiki/Mustache_(moteur_de_template) minimaliste** — 200 lignes de C, ni dépendance externe, ni JavaScript côté serveur. Deux templates coexistent dans le paquet :
+Le rendu HTML a été isolé dans un **moteur de templates [Mustache](<https://fr.wikipedia.org/wiki/Mustache_(moteur_de_template)>) minimaliste** — 200 lignes de C, ni dépendance externe, ni JavaScript côté serveur. Deux templates coexistent dans le paquet :
 
 - **`vanilla`** : la sortie legacy (`<pre>` monospace), mais rendue depuis un template au lieu d'être hardcodée en C. Un opérateur qui préfère le look historique la garde.
 - **`foopgp`** : le layout à deux colonnes qu'on vient de voir. C'est le défaut de notre paquet.
@@ -107,7 +107,7 @@ Réciproquement, notre branche reste périodiquement rebasable sur amont. Chaque
 Le serveur de clés est une étape sur un chemin plus long. Notre cap :
 
 - **Adosser le stockage à [uetree](https://foopgp.org/documents/en/draft-foopgp-uetree-00.txt)** — notre registre d'identité git-distribué et signé. Un `keydb_uetree` (backend en cours de spécification chez nous) permettrait à onak de servir les certificats depuis une arborescence uetree — sauvegardée, synchronisée et fragmentée à travers git.
-- **Si disponibles, utiliser les services [WKD et WKS](https://datatracker.ietf.org/doc/draft-koch-openpgp-webkey-service/) comme source de vérité (à partir du DNS courriel). Les serveurs de certificats redeviendront alors ce qu'il aurait dû rester : un cache que l'on peut interroger et un magasin de WoT.
+- **Si disponibles, utiliser les services [WKD et WKS](https://datatracker.ietf.org/doc/draft-koch-openpgp-webkey-service/) comme source de vérité** (à partir du DNS courriel). Les serveurs de certificats redeviendront alors ce qu'ils auraient dû rester : un cache que l'on peut interroger et un magasin de WoT.
 
 ## Essayer
 
@@ -115,4 +115,4 @@ Le serveur de clés est une étape sur un chemin plus long. Notre cap :
 - **Code source** : <https://codeberg.org/foopgp/onak> (branche `foopgp/main`)
 - **Paquet Debian** : `apt install onak-foopgp` depuis [notre dépôt](https://djibian.foopgp.org/)
 
-Si vous en trouvez un bug : [ouvrez un ticket](https://codeberg.org/foopgp/onak/issues) ou écrivez-nous, chiffré et signé, à <mneme@foopgp.org>.
+Si vous rencontrez un bug : [ouvrez un ticket](https://codeberg.org/foopgp/onak/issues) ou écrivez-nous, chiffré et signé, à <mneme@foopgp.org>.

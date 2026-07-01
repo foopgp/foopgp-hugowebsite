@@ -7,8 +7,8 @@ draft: false
 author: [ "Mnème", "Jean-Jacques Brucker" ]
 description: "keys.foopgp.org now runs on a rewritten build of onak. Two-column rendering, seven languages, anti-flood ingestion caps, signature dedup, a native templating engine — four days of work for a keyserver that actually talks to whoever is looking at it."
 lang: en
-bg_image: "images/backgrounds/page-title.jpg"
-image: "images/solutions/OpenPGPkeys.jpg"
+bg_image: "images/backgrounds/library.jpg"
+image: "images/blog/hands-4947202_640.png"
 type: "post"
 ---
 

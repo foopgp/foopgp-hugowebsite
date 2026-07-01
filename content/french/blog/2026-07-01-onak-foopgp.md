@@ -5,10 +5,10 @@ Tags:    [ "openpgp", "keyserver", "onak", "web-of-trust", "debian" ]
 categories: [ "News", "Solution" ]
 draft: false
 author: [ "Mnème", "Jean-Jacques Brucker" ]
-description: "Nous republions keys.foopgp.org sur une version refondue d'onak. Rendu à deux colonnes, sept langues, filtrage anti-flood, dédup de signatures, moteur de templates : quatre jours de travail pour un serveur de clés qui parle enfin à qui le regarde."
+description: "Notre serveur de clé [keys.foopgp.org](http://keys.foopgp.org:11371/) tourne sur une nouvelle version d'onak. Rendu à deux colonnes, sept langues, sécurité renforcée, moteur de templates... et au final un serveur de clés qui affiche clairement nos certificats."
 lang: fr
-bg_image: "images/backgrounds/page-title.jpg"
-image: "images/solutions/OpenPGPkeys.jpg"
+bg_image: "images/backgrounds/library.jpg"
+image: "images/blog/hands-4947202_640.png"
 type: "post"
 ---
 
@@ -19,13 +19,13 @@ Type   bits/keyID    Date       User ID
 pub    255E/0x8C39D09E68D27179 2026/05/08 Alice Dupont <alice@example.com>
 ```
 
-Un visiteur non-technique qui atterrit là ne comprend rien : c'est quoi un `pub` ? un `KeyID` ? pourquoi `255E` ? est-ce que la clé est encore valide ?
+Un néophyte qui atterrit là ne comprend rien : c'est quoi un `pub` ? un `KeyID` ? pourquoi `255E` ? est-ce que la clé est encore valide ?
 
 À foopgp, on estime qu'un serveur de clés doit servir tout le monde : du **vérificateur expert** qui veut surfer à travers la toile de confiance, au **correspondant** qui veut simplement visualiser le certificat de son destinataire. Les serveurs actuels ne servent bien ni l'un ni l'autre.
 
 Notre service [keys.foopgp.org](https://keys.foopgp.org) tourne désormais sur une version refondue en profondeur. Ce qui suit la décrit.
 
-## Ce qu'un visiteur voit
+## Le mode standard
 
 {{< figure
   src="/images/blog/2026/onak-foopgp-index-fr.png"
@@ -46,9 +46,9 @@ Sept choix visibles au premier coup d'œil :
 
 Tout est en français ici parce que le navigateur qui a fait la requête l'était. La page se traduit toute seule en anglais, allemand, espagnol, italien, ukrainien ou polonais selon la locale — sept langues qui correspondent au bandeau utilisé sur le reste de foopgp.org, pour qu'un visiteur ne « change pas de pays » entre nos pages.
 
-## Ce qu'un vérificateur voit
+## Le mode expert
 
-Basculez sur le mode expert (`op=vindex` au lieu de `op=index`) :
+Ou "verbeux" (`op=vindex` au lieu de `op=index`) :
 
 {{< figure
   src="/images/blog/2026/onak-foopgp-vindex-fr.png"
@@ -64,7 +64,7 @@ Trois différences avec le mode standard :
 - **Les liens sont tous cliquables** : chaque KeyID de signataire renvoie vers la clé du signataire. En trois clics, vous remontez une chaîne de confiance.
 
 
-## Sous le capot : ce qu'on a nettoyé
+## Sous le capot : ce qu'on a mis en place
 
 En parallèle du rendu, on a renforcé la sécurité. Un serveur de clés public est une cible régulière — attaques par flood, empoisonnement WoT, paquets malformés. La version d'onak que nous déployons applique cinq durcissements en partie empruntés au draft IETF [`draft-dkg-openpgp-abuse-resistant-keystore`](https://datatracker.ietf.org/doc/draft-dkg-openpgp-abuse-resistant-keystore/) :
 
@@ -98,9 +98,9 @@ Le template `foopgp` en particulier tient dans un seul fichier de 130 lignes. Un
 
 Notre travail est distribué sous le nom **`onak-foopgp`**, un paquet Debian source et binaire distinct de l'`onak` officiel de Debian.
 
-Cette séparation n'est pas un divorce. Les cinq durcissements du cœur (§ « ce qu'on a nettoyé ») sont proposables en pull requests amont, et le moteur de templates aussi. La saveur foopgp — le template deux colonnes, la page d'accueil sept langues, le lien `contact` en pied de page vers la clé de l'opérateur — est un choix éditorial : il ne devrait pas s'imposer en silence à un administrateur d'onak vanilla via une mise à jour Debian. D'où le nom distinct.
+On espère que ce fork ne durera pas. Nos nouvelles fonctionnalités (§ « Ce qu'on a mis en place ») peuvent être intégrées en amont, et le moteur de templates aussi. La saveur foopgp — le template deux colonnes, la page d'accueil sept langues, le lien `contact` en pied de page vers la clé de l'opérateur — est un choix éditorial : il ne devrait pas s'imposer en silence à un administrateur d'onak vanilla suite à une mise à jour Debian.
 
-Réciproquement, notre branche reste périodiquement rebasable sur amont. Chaque amélioration qu'onak livre, on la récupère.
+Réciproquement, notre branche reste périodiquement rebasable sur amont. Chaque amélioration dans la branche principale d'onak (`main`), on la récupère.
 
 ## Où nous allons
 

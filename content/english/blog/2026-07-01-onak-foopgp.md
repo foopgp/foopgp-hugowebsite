@@ -69,7 +69,7 @@ This is the piece nearly every existing public HKP server misses: either they no
 
 Alongside the rendering, we hardened ingestion. A public keyserver is a regular target — flood attacks, WoT poisoning, malformed packets. The build we ship applies five hardenings borrowed from the IETF draft [`draft-dkg-openpgp-abuse-resistant-keystore`](https://datatracker.ietf.org/doc/draft-dkg-openpgp-abuse-resistant-keystore/):
 
-1. **UID / UAT caps per key** — 32 UIDs, 4 UATs max. Extra packets are ignored at import (we keep the oldest ones, the entries we already know).
+1. **UID / UAT caps per key** — 32 UIDs, 4 UATs max, FIFO: the oldest excess is dropped once the cap is hit. Only the key holder can push validly-signed UIDs and UATs, so FIFO lets the holder keep evolving the active face of their certificate (rotate an old alias out, add a fresh one in). A keep-oldest cap would have ossified the certificate at whatever was published first.
 2. **Signature caps per UID / UAT** — 512 max, configurable. A key on which an attacker has stacked one hundred thousand fake signatures can no longer flood the server.
 3. **Signature dedup per signer** — if Alice has certified Bob three times, we keep only the most recent certification. If any of the signatures is a revocation, it wins (a revocation is irrevocable).
 4. **Unconditional v3 key drop** (RSA-MD5, obsolete for fifteen years). The `drop_v3=false` config toggle is gone: no backdoor.

@@ -7,8 +7,6 @@ description : "Le dji (Ɉ), la devise qui nous délivre."
 image: "images/logos/logo-foopgp-token-0.png"
 ---
 
-> 📣 **Juin 2026 : Notre campagne de cotisation est lancée — [soutenez-nous dès maintenant](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juin-2)**
-
 La meilleur façon de soutenir [le projet](/fr/about/white-book/) consiste à investir sous forme de **cotisations**.
 
 Ces cotisations, **à prix libre**, vous permettent d'obtenir vos premiers **jetons foopgp**, et
@@ -17,6 +15,9 @@ financent le travail de l'association pour permettre **la transition** d'un syst
 système plus respectueux de l'ensemble du vivant**](/fr/about/white-book/). [^wb]
 
 [^wb]: Notre [livre blanc](/fr/about/white-book/) : <https://foopgp.org/fr/about/white-book/>
+
+
+{{< helloasso-count >}}
 
 ---
 
@@ -104,7 +105,7 @@ Reprenons maintenant le cours du temps : il est tout à fait probable qu'un jour
 
 ## Et la clé physique de sécurité ?
 
-Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous recevez une **clé physique de sécurité** ([Yubikey](https://www.yubico.com/) ou [Nitrokey](https://www.nitrokey.com/)) pour dès aujourd'hui **[utiliser](/fr/blog/2026-01-19-djibian-release/) votre identité numérique décentralisée [OpenPGP ID](/fr/solutions/openpgp-id/)** — la pierre angulaire de votre souveraineté numérique et financière. En 2027, cette même clé de sécurité sera utilisée pour vos échanges numériques en djis (**Ɉ**). Le palier en euros augmente d'environ 0,5 % chaque mois : c'est l'effet **stingynalty** rendu palpable, et une incitation à rejoindre la migration tôt plutôt que tard. [^palier]
+Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous recevez une **[clé physique de sécurité](/fr/solutions/offer-security-keys/)** (Yubikey ou Nitrokey) pour dès aujourd'hui **[utiliser](/fr/blog/2026-01-19-djibian-release/) votre identité numérique décentralisée [OpenPGP ID](/fr/solutions/openpgp-id/)** — la pierre angulaire de votre souveraineté numérique et financière. En 2027, cette même clé de sécurité sera utilisée pour vos échanges numériques en djis (**Ɉ**). Le palier en euros augmente d'environ 0,5 % chaque mois : c'est l'effet **stingynalty** rendu palpable, et une incitation à rejoindre la migration tôt plutôt que tard. [^palier]
 
 | Date | Cotisations nécessaires pour atteindre 6,42 Ɉ |
 |---|---|
@@ -123,13 +124,8 @@ Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous rec
 
 Alors prenez votre part et 🌟 [**inscrivez-vous**](/djis-emission/?lang=fr) [ici](/djis-emission/?lang=fr) 🌟.
 
-Ou veuillez [télécharger ici le bulletin d'adhésion](/documents/fr/bulletin-adhesion-foopgp.pdf), le remplir, et l'envoyer.
-
-- par voie postale, accompagné d'un chèque à l'ordre de l'***association
-  foopgp***, *75 Impasse Serre des Isnards*, *05000 Pelleautier*.
-
-- par courrier électronique à [info at foopgp.org](mailto:info@foopgp.org), en indiquant la référence du
-  virement effectué en parallèle sur notre compte ***IBAN : FR76 1027 8079 9800 0208 2780 107***.
+Ou directement sur HelloAsso :
+{{< helloasso-button >}}
 
 **Bienvenue chez vous** : **nôtre** nouveau **monde** ! 🥰
 

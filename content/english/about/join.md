@@ -7,7 +7,6 @@ description : "The dji (Ɉ), the currency that sets us free."
 image: "images/logos/logo-foopgp-token-0.png"
 ---
 
-> 📣 **Our June campaign is live — [support us now](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juin-2)**
 
 The best way to support [the project](/about/white-book/) is to invest in the form of **subscriptions**.
 
@@ -17,6 +16,8 @@ economic and political system that destroys our lives and our planet, [**to a
 system more respectful of all living things**](/about/white-book/). [^wb]
 
 [^wb]: Our [white paper](/about/white-book/): <https://foopgp.org/about/white-book/>
+
+{{< helloasso-count >}}
 
 ---
 
@@ -104,7 +105,7 @@ Now let time flow again: it is quite likely that one day, **the value of one dji
 
 ## And the physical security key?
 
-As soon as you have generated **6.42 Ɉ** through your cumulative subscriptions, you receive a **physical security key** ([Yubikey](https://www.yubico.com/) or [Nitrokey](https://www.nitrokey.com/)) so that you can start **[using](/blog/2026-01-19-djibian-release/) your decentralised digital identity [OpenPGP ID](/solutions/openpgp-id/)** right away — the cornerstone of your digital and financial sovereignty. In 2027, that same security key will be used for your digital exchanges in djis (**Ɉ**). The threshold in euros rises by approximately 0.5% each month: this is the **stingynalty** mechanism made tangible, and an incentive to join the migration sooner rather than later. [^threshold]
+As soon as you have generated **6.42 Ɉ** through your cumulative subscriptions, you receive a **[physical security key](/solutions/offer-security-keys/)** (Yubikey or Nitrokey) so that you can start **[using](/blog/2026-01-19-djibian-release/) your decentralised digital identity [OpenPGP ID](/solutions/openpgp-id/)** right away — the cornerstone of your digital and financial sovereignty. In 2027, that same security key will be used for your digital exchanges in djis (**Ɉ**). The threshold in euros rises by approximately 0.5% each month: this is the **stingynalty** mechanism made tangible, and an incentive to join the migration sooner rather than later. [^threshold]
 
 | Date | Subscriptions needed to reach 6.42 Ɉ |
 |---|---|
@@ -123,13 +124,8 @@ As soon as you have generated **6.42 Ɉ** through your cumulative subscriptions,
 
 Then take your stake and 🌟 [**subscribe**](/djis-emission/?lang=en) [here](/djis-emission/?lang=en) 🌟.
 
-Or please [download the membership form here](/documents/fr/bulletin-adhesion-foopgp.pdf) (currently in French only), fill it out, and send it.
-
-- by post, accompanied by a cheque made out to the ***foopgp association***,
-  *75 Impasse Serre des Isnards*, *05000 Pelleautier*, France.
-
-- by email to [info at foopgp.org](mailto:info@foopgp.org), indicating the reference
-  of the transfer made in parallel to our account ***IBAN: FR76 1027 8079 9800 0208 2780 107***.
+Or directly on HelloAsso:
+{{< helloasso-button >}}
 
 **Welcome home**: ***our*** new **world**! 🥰
 

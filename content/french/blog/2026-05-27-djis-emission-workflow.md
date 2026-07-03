@@ -12,7 +12,7 @@ image: "images/solutions/dji.png"
 type: "post"
 ---
 
-Une monnaie complémentaire qui se respecte ne s'émet pas par décret : elle s'**émet par contribution**. Quand quelqu'un verse 50 € à foopgp, le système — la chaîne d'outils plus l'humain dans la boucle — produit en retour une quantité précise de djis (Ɉ) inscrite au crédit de l'identité du contributeur. Cette quantité dépend de l'historique du cotisant, du moment du versement, et d'un paramètre commun appelé la *stingynalty*. Elle ne dépend ni d'un comité ni d'un robot opaque.
+Une monnaie complémentaire qui se respecte ne s'émet pas par décret : elle s'**émet par contribution**. Quand quelqu'un verse 50 € à foopgp, le système — la chaîne d'outils plus l'humain dans la boucle — crédite l'identité du contributeur d'une quantité précise de djis (Ɉ). Cette quantité dépend de l'historique du cotisant, du moment du versement, et d'un paramètre commun appelé la *stingynalty*. Elle ne dépend ni d'un comité ni d'un robot opaque.
 
 Aujourd'hui, nous publions le premier document technique complet qui décrit cette chaîne :
 
@@ -48,19 +48,19 @@ L'arbre public `by-id/u4/` est alors visible : un visiteur de [`/djis-viewer/`](
 Reconstruction complète depuis nos CSV historiques (2023–2026, plusieurs fichiers couvrant les comptes banque et caisse) :
 
 * **72 contributions reconstruites** sous `by-email/` ;
-* **3 cotisants certifiés** dans la toile de confiance foopgp, donc 3 fiches actuellement sous `by-id/u4/` : Jean-Jacques Brucker, Isabelle (mandataire de la campagne YubiKey de l'asso), et notre trésorière ;
+* **3 cotisants certifiés** dans la toile de confiance foopgp, donc 3 fiches actuellement sous `by-id/u4/` : le président, la mandataire de la campagne YubiKey de l'asso, et la trésorière ;
 * **19 cotisants en attente** d'une certification en atelier — la prochaine occasion d'amener sa CNI.
 
-La comparaison bit-à-bit avec notre ancien registre (`djis.git`, abandonné pour `uetree-djis-by-id`) montre que la chaîne reconstruite **produit exactement les mêmes chiffres** pour les cotisants présents dans les deux registres. Pas de régression : on est juste un peu plus propres.
+La comparaison bit-à-bit avec notre ancien registre (`djis.git`, abandonné pour `uetree-djis-by-id`) montre que la chaîne reconstruite **produit exactement les mêmes chiffres** pour les cotisants présents dans les deux registres. Pas de régression.
 
 ## L'humain au cœur
 
-Le système rappelle, chaque mois, à la trésorière, au président et au secrétaire que le rapprochement les attend. Le mail est signé par Mnème. Trois cases à cocher, une heure de travail. Et notre comptabilité ressemble enfin un peu à celle d'une asso qui a des produits, de la R&D et un réseau international.
+Le système rappelle, chaque mois, à la trésorière, au président et au secrétaire que le rapprochement les attend. Le mail est signé par Mnème. Trois cases à cocher, une heure de travail.
 
 ## Et après
 
 Le document technique est public, en anglais — c'est notre engagement de transparence. Il pointe vers les dépôts de code, vers les spécifications IETF en cours d'écriture ([uetree](/fr/blog/2026-05-27-uetree-spec/), [OpenPGP ID](/fr/blog/2026-04-28-openpgp-id-spec/)), vers les paramètres en vigueur. Tout y est, et tout est reproductible : avec nos CSV, avec nos outils, avec son propre trousseau OpenPGP, n'importe quel auditeur peut refaire les calculs.
 
-Ce niveau de reproductibilité est rare en comptabilité d'association. C'est ce qui nous permettra, le jour venu, de migrer en SCIC, puis en fondation internationale, sans perdre la mémoire de ce qui s'est passé entre 2023 et là.
+Ce niveau de reproductibilité est rare en comptabilité d'association. C'est ce qui nous permettra, le jour venu, de migrer en SCIC, puis en fondation internationale, sans perdre la mémoire de ce qui s'est passé entre 2023 et aujourd'hui.
 
 [Rejoignez-nous.](/fr/about/join/) ✊🕊️💕

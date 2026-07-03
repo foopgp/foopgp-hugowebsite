@@ -12,7 +12,7 @@ image: "images/solutions/dji.png"
 type: "post"
 ---
 
-A self-respecting complementary currency does not issue itself by decree: it **issues itself by contribution**. When someone donates 50 € to foopgp, the system — the tool chain plus the human in the loop — produces in return a precise amount of djis (Ɉ) credited to the contributor's identity. That amount depends on the contributor's history, the timing of the donation, and a shared parameter called the *stingynalty*. It does not depend on a committee or on an opaque robot.
+A self-respecting complementary currency does not issue itself by decree: it **issues itself by contribution**. When someone donates 50 € to foopgp, the system — the tool chain plus the human in the loop — credits the contributor's identity with a precise amount of djis (Ɉ). That amount depends on the contributor's history, the timing of the donation, and a shared parameter called the *stingynalty*. It does not depend on a committee or on an opaque robot.
 
 Today we are publishing the first complete technical document describing this chain:
 
@@ -48,14 +48,14 @@ The public `by-id/u4/` tree is then visible: a visitor of [`/djis-viewer/`](/dji
 Full reconstruction from our historical CSVs (2023–2026, several files covering the bank and cash accounts):
 
 - **72 reconstructed contributions** under `by-email/`;
-- **3 contributors certified** in the foopgp web of trust, hence 3 entries currently under `by-id/u4/`: Jean-Jacques Brucker, Isabelle (mandataire of the association's YubiKey campaign), and our treasurer;
+- **3 contributors certified** in the foopgp web of trust, hence 3 entries currently under `by-id/u4/`: the president, the mandataire of the association's YubiKey campaign, and the treasurer;
 - **19 contributors waiting** for certification in a workshop — the next chance to bring an ID document.
 
-A bit-for-bit comparison with our old registry (`djis.git`, retired in favour of `uetree-djis-by-id`) shows that the reconstructed chain **produces exactly the same numbers** for the contributors present in both registries. No regression: just a slightly cleaner picture.
+A bit-for-bit comparison with our old registry (`djis.git`, retired in favour of `uetree-djis-by-id`) shows that the reconstructed chain **produces exactly the same numbers** for the contributors present in both registries. No regression.
 
 ## The human at the centre
 
-The system sends, every month, a reminder e-mail to the treasurer, the president and the secretary that the reconciliation is waiting for them. The e-mail is signed by Mnème. Three checkboxes, one hour of work. And our accounting finally starts to look like the books of an association that has products, R&D, and an international network.
+The system sends, every month, a reminder e-mail to the treasurer, the president and the secretary that the reconciliation is waiting for them. The e-mail is signed by Mnème. Three checkboxes, one hour of work.
 
 ## What's next
 

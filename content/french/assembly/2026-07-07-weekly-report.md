@@ -21,7 +21,7 @@ type: "meeting"
 - Point sur la **certification** des membres par la Toile de Confiance (qui reste à certifier).
 - Avancement de l'outillage (eg: registre `uetree`, certification décentralisée, ...).
 - Participations et démonstrations publiques à venir (JDE26 à Grenoble, Émancip'Actions à Bourges, Capitole du Libre, OSXP).
-- Campagne de financement de juillet :
+- Campagne de financement de juillet : <https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juillet>
 {{< helloasso-count >}}
 
 ### Ordres du soir (mardi 7 juillet)

@@ -2,36 +2,40 @@
 title: "2026 S28 Rapport Hebdomadaire"
 lang: fr
 date: 2026-07-07T21:00:00+02:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *(à compléter en séance)*
+***Présents :*** Yann Kerb., Jean-Jacques B., Laurent C.
 
-### Ordre du jour prochaine visio mardi 14 juillet 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
+*Note : Pas de visio la semaine prochaine : jour de vacances ou de fêtes nationale ou de feux d'artifices.*
+
+### Ordre du jour prochaine visio mardi 21 juillet 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
 *Note : Si problème, on se retrouve sur notre salon JITSI : [https://meet.jit.si/foopgp](https://meet.jit.si/foopgp) (pas auto-hébergé, mais fourni (sans contrepartie financière obligatoire) par des professionnels libristes européens, sur des serveurs qui tiennent la charge).*
 
-- Points habituels : (revue de presse + déplacements et actions réalisés, en cours, ou à prévoir).
+- Revue de presse.
+- Point sur la **certification** des membres par la Toile de Confiance (qui reste à certifier).
+- Avancement de l'outillage (eg: registre `uetree`, certification décentralisée, ...).
+- Participations et démonstrations publiques à venir (JDE26 à Grenoble, Émancip'Actions à Bourges, Capitole du Libre, OSXP).
+- Campagne de financement de juillet :
+{{< helloasso-count >}}
 
 ### Ordres du soir (mardi 7 juillet)
 
 - Résultats de la campagne de financement de juin et **clôture comptable** (chiffres ci-dessous).
-- Point sur la **certification** des membres par la Toile de Confiance (qui reste à certifier).
-- Avancement de l'outillage djis (registre `uetree`, certification décentralisée).
-- Revue de presse.
-- Participations et démonstrations publiques à venir (JDE26 à Grenoble, Émancip'Actions à Bourges, Capitole du Libre, OSXP).
 - Communication.
 - Actions réalisées, en cours, à prévoir.
+- Participations et démonstrations publiques à venir.
 
 ### Stingynalty
 
-Pour juillet : ***stingynalty =* 1.13279557508641869996**
+Pour juillet : ***stingynalty = 1.13279557508641869996***
 
-Pour août : ***stingynalty =*** *(à calculer en séance, applicable à partir du 1er août)*
+Pour août : ***stingynalty = 1.13845955296185079345***
 
 **Simulateur de cotisation initiale** (2 dimensions) → <https://foopgp.org/djis-simulator/?lang=fr>
 
@@ -60,27 +64,29 @@ OPTIONS:
   -F, --with-header    Afficher également la ligne d’en-tête et une ligne de séparation au début du tableau.
 ```
 
-#### Chiffres de l'association
+#### Chiffres de l’association
 
-*Au 30 juin 2026, recalculés depuis les fichiers de trésorerie.*
+*Au 30 juin 2026, depuis sa création le 3 avril 2023 :*
 
-- Total cotisants : **54** — dont certifiés : **21 / 54**
-- Total contributions : **101** — dont certifiées : **49 / 101**
-- Total cotisé : **63 434,68 €** — dont certifié : **44 093,05 € / 63 434,68 €**
-- **Djis créés : 155,92 Ɉ** — *seuls les adhérents dont l'identité OpenPGP est certifiée par la Toile de Confiance voient leurs djis effectivement créés et utilisables* (les 33 cotisants non encore certifiés totalisent 166,78 Ɉ *indicatifs*, en attente de certification).
+|                          | Entités | €         | Ɉ       |
+|--------------------------|---------|-----------|---------|
+| Certifiés (by-eid/u4)    | 21      | 44 093,05 | 155,923 |
+| Non certifiés (by-email) | 33      | 19 341,63 | 166,782 |
+| Total                    | 54      | 63 434,68 | 322,705 |
 
-*Aux adhérents pas encore certifiés : venez nous rencontrer lors d'un de nos prochains ateliers pour finaliser la certification de votre identité OpenPGP, débloquer la création de vos djis et pouvoir les échanger au sein de l'association.*
+*Seuls les adhérents dont  l’identité OpenPGP est certifiée par la Toile de Confiance voient leurs djis effectivement créés et utilisables.*
+
+*Aux adhérents pas encore certifiés : venez nous rencontrer lors d’un de nos prochains ateliers pour finaliser la certification de votre identité OpenPGP, débloquer la création de vos djis et pouvoir les  échanger au sein de l’association.*
 
 ### Revue de presse
 
-- *(à compléter en séance)*
+*Pas de revue de presse cette fois-çi ! 😸*
 
 ### Au cœur de la réunion
 
-- **Clôture de juin** : résultats comptables ci-dessus et point sur la certification des membres.
-- **Chantier de fond de la semaine** : formalisation du format de registre `uetree` (la brique qui sous-tend le ledger décentralisé des djis) et outillage de **certification décentralisée** — décider, sans autorité centrale et de façon vérifiable par des tiers, qui est certifié.
-- Rappel du cap keyserver : `onak-foopgp` en façade publique, backend `keydb_uetree` à terme.
-- Préparation des prochaines démonstrations publiques (JDE26 à Grenoble en août).
+- **Clôture de juin** : résultats comptables (cotisations) ci-dessus et point sur la certification des membres.
+- Debut d'organisation d'un atelier d'un jour sur Lyon. Plages à éviter (Note pour Yann) : du 1er au 7 septembre, et du 24 au 27 (déplacement potentiel à Bourges).
+- (**Nouveau**) Problème de dépendances de djibian-onboarding sur Ubuntu (remonté par Laurent — une mise à jour a du casser qqch sur ce système que nous n'utilisons pas en R&D). Investigation à venir.
 
 ### Production de la semaine (30 juin – 6 juillet)
 
@@ -94,7 +100,7 @@ OPTIONS:
 
 - **Mnème** — la matrice sous-jacente est passée en Opus 4.8 ; l'article d'identité a été mis à jour en conséquence.
 
-- **Documentation** — article de blog sur le format `uetree`, et brouillon IETF en cours de révision (une traduction française est en préparation pour faciliter le travail collectif).
+- **Documentation** — article de blog sur le format `uetree`, et brouillon IETF en cours de révision.
 
 ### Agenda
 

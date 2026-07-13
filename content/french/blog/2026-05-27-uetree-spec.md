@@ -14,7 +14,7 @@ type: "post"
 
 Comment tient-on un registre de **dix mille entités** — humains, associations, services numériques — sans base de données, sans serveur dédié, sans personne au centre ? La question peut sembler étrange en 2026 : « il y a des bases de données pour ça ». Sauf qu'une base de données, c'est une dépendance : à un logiciel, à un opérateur, à une politique de migration. Et une fondation internationale qui veut survivre à ses propres employés ne devrait pas dépendre de PostgreSQL ni d'aucun produit.
 
-Nous publions aujourd'hui la première spécification formelle de **`uetree` 1.1** — *Universal Entities Tree* — un format d'arborescence de fichiers qui répond à ce besoin. Au format Internet-Draft IETF :
+Nous publions la spécification formelle de **`uetree`** — *Universal Entities Tree* — un format d'arborescence de fichiers qui répond à ce besoin. Au format Internet-Draft IETF :
 
 **[draft-foopgp-uetree-00.txt](/documents/en/draft-foopgp-uetree-00.txt)**
 
@@ -22,7 +22,11 @@ Nous publions aujourd'hui la première spécification formelle de **`uetree` 1.1
 
 Un dépôt git, des dossiers, des fichiers texte. C'est tout. À chaque niveau du répertoire, un petit fichier `.FORMAT` dit *« je suis tel chemin dans telle instance uetree »* — l'arborescence est auto-décrite. Vous pouvez extraire un sous-arbre, le mettre sur une clé USB, le servir depuis un serveur web statique : il reste intelligible.
 
-L'arborescence est **multi-racines**. La même entité peut être indexée sous plusieurs identifiants : son [identifiant cryptographique OpenPGP](/fr/blog/2026-04-28-openpgp-id-spec/) (`by-id/u4/`), son adresse email (`by-email/`), son téléphone (`by-phone/`), son nom (`by-name/`). Quand une entité acquiert un identifiant cryptographique fort, ses fiches non-canoniques deviennent des **alias** (un fichier `.ALIASES` qui pointe vers la fiche canonique sous `by-id/`) au lieu de duplications.
+L'arborescence est **multi-racines**. La même entité peut être indexée sous plusieurs identifiants : son [identifiant cryptographique OpenPGP](/fr/blog/2026-04-28-openpgp-id-spec/) (`by-eid/u4/`), son adresse email (`by-email/`), son téléphone (`by-tel/`), son nom (`by-name/`). Quand une entité acquiert un identifiant cryptographique *certifié*, ses fiches non-canoniques deviennent des **alias** — chacune porte le même petit manifeste, qui nomme toutes les positions de l'entité et marque d'un drapeau l'unique fiche canonique — au lieu de duplications.
+
+## Chaque fiche est une carte de contact
+
+La fiche canonique d'une entité n'est pas un format maison : c'est un simple fichier **vCard 4.0** (`entity.vcf`) — celui-là même que tout téléphone, tout carnet d'adresses sait déjà lire. Glissez-le dans vos contacts : vous voyez un nom, un email, un téléphone ; et dans le champ standard `KEY`, le certificat OpenPGP de la personne, prêt à ouvrir un canal chiffré. Le registre n'a besoin d'aucun visualiseur propre — les outils sont déjà dans toutes les poches. Un arbre de cartes de contact, versionné par git, authentifié par signatures.
 
 ## Pourquoi maintenant
 
@@ -42,8 +46,6 @@ Le format distingue **branches publiques par nature** (les identifiants cryptogr
 
 La spécification est un *Internet-Draft* — un document que l'IETF examine et que la communauté peut commenter. Nous l'avons co-rédigée sur la base d'une implémentation déjà en production chez foopgp : le format n'est pas théorique, il marche sur de vrais dépôts.
 
-L'étape suivante : la soumettre à l'IETF, et démarrer l'écriture d'une version 1.2 qui intégrera les leçons des prochains mois — notamment un catalogue de règles de fusion pour rendre la promotion d'entités encore plus robuste.
-
-Et un format jumeau, **[uftree](/documents/en/draft-foopgp-uftree-00.txt)**, esquisse la même idée appliquée aux **fichiers** identifiés par leur empreinte cryptographique — le pendant immutable de l'identité mutable.
+Une **révision 1.2** est en cours, qui intègre les leçons de l'usage réel. Elle affine la séparation des responsabilités : l'arbre reste délibérément bête, tandis que *qui a le droit d'écrire où* passe dans une spécification compagnon — une petite couche de contrôle d'accès git, côté serveur — pour que les deux s'adoptent, et se raisonnent, indépendamment. Les fiches se standardisent sur vCard 4.0 ; le certificat OpenPGP, récupéré via WKD ou un serveur de clés, reste la source de vérité.
 
 [Rejoignez-nous.](/fr/about/join/) ✊🕊️💕

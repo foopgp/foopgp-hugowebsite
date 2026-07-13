@@ -1,0 +1,78 @@
+{{/*
+  Site-level override of the educenter theme's partials/head.html.
+  It exists ONLY to inject the homepage language auto-redirect below, which is
+  site-specific (it depends on foopgp.org's EN-at-/ , FR-at-/fr/ URL scheme).
+  The rest of this file is a faithful copy of themes/educenter/layouts/partials/head.html
+  — if the theme's head changes, re-sync this copy (marked between the two comments).
+*/}}
+<head>
+  <meta charset="utf-8">
+
+  {{/* BEGIN foopgp homepage language auto-redirect + remembered choice (site-specific, not in theme) */}}
+  <script>
+  // Pure JS, no dependency. Placed high in <head>, before the stylesheets, so the
+  // redirect fires before any English content is rendered (no flash).
+  (function () {
+    var KEY = "foopgp-lang";
+    var stored = null;
+    try { stored = localStorage.getItem(KEY); } catch (e) {}
+
+    // Homepage only: decide EN vs FR. An explicit remembered choice wins; otherwise
+    // fall back to the browser language. English is the default served at /, so we
+    // only ever redirect TO /fr/ — never away from a deep link (/about/, /fr/blog/…),
+    // which keeps shareable URLs stable and cannot loop (/fr/ fails the guard).
+    if (location.pathname === "/" || location.pathname === "/index.html") {
+      var want = stored || ((navigator.language || "").slice(0, 2).toLowerCase() === "fr" ? "fr" : "en");
+      if (want === "fr") location.replace("/fr/");
+    }
+
+    // Remember an EXPLICIT language switch so it overrides auto-detection next time:
+    // a French visitor who deliberately picks English on / must not be bounced back
+    // to /fr/ on later visits. The theme's #select-language <option> carries the
+    // language code in its id ("en" / "fr"); the theme's inline onchange still does
+    // the navigation, we just record the choice alongside it.
+    document.addEventListener("DOMContentLoaded", function () {
+      var sel = document.getElementById("select-language");
+      if (!sel) return;
+      sel.addEventListener("change", function () {
+        var opt = sel.options[sel.selectedIndex];
+        if (opt && opt.id) { try { localStorage.setItem(KEY, opt.id); } catch (e) {} }
+      });
+    });
+  })();
+  </script>
+  {{/* END foopgp homepage language auto-redirect + remembered choice */}}
+
+  <title>{{ .Title }}</title>
+
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  {{ with site.Params.author }}
+  <meta name="author" content="{{ . }}">{{ end }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ hugo.Generator }}
+  {{ "<!-- multilingual SEO optimizations -->" | safeHTML }}
+  {{ if .IsTranslated }}
+  {{ range .Page.AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  {{ end }}
+  {{ end }}
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+  {{ "<!-- plugins -->" | safeHTML }}
+  {{ range site.Params.plugins.css }}
+  <link rel="stylesheet" href="{{ .link | absURL }}">
+  {{ end }}
+
+  {{ "<!-- Main Stylesheet -->" | safeHTML }}
+  {{ $styles := resources.Get "scss/style.scss" | toCSS }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+
+  {{ "<!-- Favicon https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types#icon -->" | safeHTML }}
+  <link rel="icon" href="{{ "favicon.ico" | absURL }}" type="image/x-icon">
+
+</head>

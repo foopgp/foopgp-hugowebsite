@@ -1,33 +1,40 @@
 ---
-title: "OpenPGP ID"
+title: "PGP ID"
 lang: en
 draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "A universal, sovereign digital identity anchored in a physical key."
 image: "images/solutions/identity.png"
-tags: ["Identity", "OpenPGP ID", "openpgp"]
+tags: ["Identity", "PGP ID", "openpgp"]
 categories: ["solution"]
 type: "post"
 aliases:
+  - /solutions/openpgp-id/
   - /solutions/theme-identity/
 ---
 
-### OpenPGP ID, in a nutshell
+### PGP ID, in a nutshell
 
-**OpenPGP ID** is a digital identity that is:
+**PGP ID** is a digital identity that is:
 
 - **universal** — characterises [all persons](/blog/2026-04-28-openpgp-id-spec/) of the solar system: physical (humans), legal (organisations), even digital (AI agents);
 - **decentralised** — no central authority, no third-party identity provider, [no cloud vault to trust](/blog/2026-05-11-djibian-agentforwarding/);
 - **respectful** — built on the strongest encryption primitives we have, so as to protect your privacy as fully as possible;
 - **interoperable** — usable anywhere OpenPGP is accepted (email signing and encryption, document signing, SSH authentication, supply-chain traceability, git, …);
 - **sovereign** — your private keys are *yours*, on a [physical security key](/solutions/offer-security-keys/) (YubiKey / NitroKey) you hold in your hand;
-- **long-lived** — your `u4` or `u5` identifier is stable for life; the certificates that back it can be rotated (post-quantum migration, etc.) without changing who you are.
+- **long-lived** — your **EID** (*Entity IDentifier*, see below) is stable for life; the certificates that back it can be rotated (post-quantum migration, etc.) without changing who you are.
 
-Since [January 2026](/blog/2026-01-19-djibian-release/), **OpenPGP ID is in production**, shipped in the [Djibian GNU/Linux](/blog/2026-01-19-djibian-release/) operating system.
+Since [January 2026](/blog/2026-01-19-djibian-release/), **PGP ID is in production**, shipped in the [Djibian GNU/Linux](/blog/2026-01-19-djibian-release/) operating system.
+
+### The EID, your entity identifier
+
+Under the hood, your PGP ID is anchored in an **EID** (*Entity IDentifier*): a **deterministic** identifier, computed once and for all from your birth civil records (`u4` variant) or from a moment and place of origin (`u5` variant) — for instance `urn:eid:u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76`. Anyone who knows that origin data can recompute and verify your EID, **without any central registry**. It precedes your cryptographic keys and outlives them: certificates get renewed, the EID remains.
+
+> 🔎 **Digging deeper**: [the technical article](/blog/2026-04-28-openpgp-id-spec/) details how EIDs are built, and the RFC draft [draft-foopgp-urn-eid-00](//codeberg.org/foopgp/foopgp-hugowebsite/src/branch/public/public/documents/en/draft-foopgp-urn-eid-00.txt) specifies the `eid` URN namespace, meant to be reserved with IANA.
 
 ### What is a sovereign digital identity good for?
 
-In practice, your **OpenPGP ID** lets you:
+In practice, your **PGP ID** lets you:
 
 - **[Authenticate](/solutions/theme-authentication/)** without passwords on online services — including [on any remote Djibian machine](/blog/2026-05-11-djibian-agentforwarding/), without ever placing a private key on it.
 - **[Sign](/solutions/signature/)** your documents, emails, commits, contracts — *non-repudiable* proof of origin.
@@ -37,7 +44,7 @@ In practice, your **OpenPGP ID** lets you:
 
 And more broadly, [a step](/solutions/theme-vote/) toward [abolishing certain privileges](/solutions/theme-currency/), and gaining more freedom, equality, fraternity. [✊🕊️💕](/about/join/)
 
-### Giving birth to your OpenPGP ID
+### Giving birth to your PGP ID
 
 On a **Djibian** system, the **Djibian Onboarding** graphical frontend (developed by [Sébastien Picardeau](/author/sebastien-picardeau/)) guides the creation of an OpenPGP identity in about a dozen clicks:
 
@@ -49,7 +56,7 @@ On a **Djibian** system, the **Djibian Onboarding** graphical frontend (develope
 6. Verify the information.
 7. **Print the QR codes** (at least three sheets — see below).
 8. **Scan the QR codes** — the key is etched into your YubiKey/NitroKey.
-9. Done: your **OpenPGP ID** is born.
+9. Done: your **PGP ID** is born.
 
 > *Everything offline, no third-party server call. Video demo in the [release article](/blog/2026-01-19-djibian-release/).*
 
@@ -72,17 +79,17 @@ A few properties to know:
 
 Once your private keys have been fragmented onto paper sheets, another foopgp tool reads the QR codes via a webcam or scanner and **etches** the keys into a YubiKey or a NitroKey. The private keys never touch a hard drive nor a third-party service.
 
-From there, your identity is exercised **from your hand** on any OpenPGP-compatible service: [sign](/solutions/signature/), [decrypt](/solutions/theme-email/), [authenticate](/blog/2026-05-11-djibian-agentforwarding/) — the **OpenPGP ID** physical key protects your privacy and your human singularity in the digital world.
+From there, your identity is exercised **from your hand** on any OpenPGP-compatible service: [sign](/solutions/signature/), [decrypt](/solutions/theme-email/), [authenticate](/blog/2026-05-11-djibian-agentforwarding/) — the **PGP ID** physical key protects your privacy and your human singularity in the digital world.
 
-Here is the **Djibian Onboarding** welcome screen once your key is set up — avatar, common name, **OpenPGP ID** identifier and emails read straight from the plugged-in physical key:
+Here is the **Djibian Onboarding** welcome screen once your key is set up — avatar, common name, **PGP ID** identifier and emails read straight from the plugged-in physical key:
 
-![OpenPGP ID card as displayed by Djibian Onboarding](/images/solutions/openpgp-id/Phil_ID_EN.png)
+![PGP ID card as displayed by Djibian Onboarding](/images/solutions/openpgp-id/Phil_ID_EN.png)
 
 *Illustration. Photograph of [Phil Zimmermann](https://en.wikipedia.org/wiki/Phil_Zimmermann), inventor of PGP — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PRZ_closeup_cropped.jpg), CC BY-SA 3.0.*
 
 ### In short
 
-**OpenPGP ID** makes real digital sovereignty possible: no password to forget, no cloud vault to trust, no dependence on an external identity provider. An identity that is **yours**, anchored in a physical object you carry, and **usable everywhere**.
+**PGP ID** makes real digital sovereignty possible: no password to forget, no cloud vault to trust, no dependence on an external identity provider. An identity that is **yours**, anchored in a physical object you carry, and **usable everywhere**.
 
 **While others sell you technologies that enslave you, foopgp enables everyone to embrace technologies that serve us.** Safer, leaner, and entirely sovereign.
 

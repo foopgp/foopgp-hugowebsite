@@ -17,7 +17,7 @@ Votre cotisation à l'association **friends of OpenPGP (foopgp)** vient d'être 
 
 1. **Un reçu vous sera envoyé par courriel** à l'adresse que vous avez fournie, dès que notre [workflow euros → djis](/documents/en/foopgp-djis-emission-workflow.md) aura intégré votre versement (en général sous quelques jours).
 
-2. **Vos *djis* (Ɉ) seront effectivement créés** dès lors que votre identité [OpenPGP ID](/fr/blog/2026-01-19-djibian-release/) sera **certifiée par notre Toile de Confiance**.
+2. **Vos *djis* (Ɉ) seront effectivement créés** dès lors que votre identité [PGP ID](/fr/blog/2026-01-19-djibian-release/) sera **certifiée par notre Toile de Confiance**.
 
 3. Si vous n'avez **pas encore d'identité OpenPGP** (ou pas encore de certification dans notre Toile de Confiance), c'est l'étape qui débloque tout le reste. Nous vous accompagnons.
 

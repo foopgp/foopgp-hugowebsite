@@ -30,7 +30,7 @@ In other words: **[Djibian](/solutions/djibian/)** is **the consumer operating s
 ### Meet us on Saturday 27 June in Pelleautier, to
 
 1. **Understand** why it matters to build and share these new tools.
-2. **Dare to give birth to your [OpenPGP ID](/about/openpgp/) identity**, secure it with your **[YubiKey or NitroKey](/solutions/offer-security-keys/)**, and use it from your computer or smartphone.
+2. **Dare to give birth to your [PGP ID](/about/openpgp/) identity**, secure it with your **[YubiKey or NitroKey](/solutions/offer-security-keys/)**, and use it from your computer or smartphone.
 3. **Discover the power of the [dji (Ɉ)](/about/join/) token**, the social share of our digital-sovereignty society.
 
 ![OpenPGP security keys: NitroKey, YubiKey, and others](/images/solutions/OpenPGPkeys.jpg)
@@ -52,7 +52,7 @@ If you have computers that crawl, glitch or spy on you (any Windows or macOS box
 
 #### --- 16:00 --- Djibian workshop
 - Boot your machine.
-- Create and print your **[OpenPGP ID](/solutions/openpgp-id/)** identity.
+- Create and print your **[PGP ID](/solutions/pgp-id/)** identity.
 - Set up the **[YubiKey or NitroKey](/solutions/offer-security-keys/)** that will secure your singularity in the digital world.
 - Use that key to:
   - Create your account on **[Djibian](/solutions/djibian/)** and authenticate to various services (*SSH, Git*).

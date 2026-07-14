@@ -22,7 +22,7 @@ apply_url: "mailto:info@foopgp.org"
 
 **[Djibian](/solutions/djibian/)** is today the most secure mainstream operating system, and the one most respectful of your human singularity.
 
-The workshop will let you give birth to your OpenPGP ID identity and get hands-on with **Djibian** and **your security key** [OpenPGP](/about/openpgp/), **YubiKey or NitroKey**.
+The workshop will let you give birth to your PGP ID identity and get hands-on with **Djibian** and **your security key** [OpenPGP](/about/openpgp/), **YubiKey or NitroKey**.
 
 ![OpenPGP tokens: 1 nitrokey, 2 yubikey, 1 unknown (pink)](/images/solutions/OpenPGPkeys.jpg)
 
@@ -36,7 +36,7 @@ This is how you will start to genuinely take back control over your data — dat
 
 Starting from a freshly installed **[Djibian GNU/Linux](/blog/2026-01-19-djibian-release/)** system, we will:
 
-- Create your **[OpenPGP ID](/solutions/openpgp-id/)** identity.
+- Create your **[PGP ID](/solutions/pgp-id/)** identity.
 - Configure **[the YubiKey or NitroKey](/solutions/offer-security-keys/)** that will secure your singularity in the digital world.
 - Use this key to:
   - Create your account on the **[Djibian](/solutions/djibian/)** system and authenticate to various services (*SSH, Git*).

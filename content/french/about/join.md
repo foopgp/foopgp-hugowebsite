@@ -86,7 +86,7 @@ Précisons maintenant :
 - Pression à la baisse : le « dividende universel ». [^RI5]
 - Pression à la hausse : le paramètre **stingynalty** (mis en place pour contenir la pression du « dividende universel » ou l'inflation de l'euro). [^RI4]
 - Pression à baisse puis à la hausse : Tout le monde n'a pas en moyenne 32102.19 € sur son compte en banque... [^momentum]
-- Pression à la hausse : Le dji est la part sociale d'une société qui produit des innovations comme [**OpenPGP ID**](/fr/blog/2026-01-19-djibian-release/) et [**Djibian**](/fr/solutions/djibian/). Ces produits s'attaquent (entre autres) aux parts de marché de Microsoft et d'Apple, c'est-à-dire (rien que pour eux deux) : [7200 milliards de capitalisation (en 2025)](https://www.clubic.com/actualite-574953-non-apple-et-microsoft-ne-connaissent-pas-la-crise.html).
+- Pression à la hausse : Le dji est la part sociale d'une société qui produit des innovations comme [**PGP ID**](/fr/blog/2026-01-19-djibian-release/) et [**Djibian**](/fr/solutions/djibian/). Ces produits s'attaquent (entre autres) aux parts de marché de Microsoft et d'Apple, c'est-à-dire (rien que pour eux deux) : [7200 milliards de capitalisation (en 2025)](https://www.clubic.com/actualite-574953-non-apple-et-microsoft-ne-connaissent-pas-la-crise.html).
 
 [^RI4]: Article 4 de notre [règlement intérieur](/fr/about/rules-of-procedures/#article-4---modalités-relatives-aux-jetons-de-pouvoir-confer-article-10bis-des-statuts) : <https://foopgp.org/fr/about/rules-of-procedures/>
 [^RI5]: Article 5 de notre [règlement intérieur](/fr/about/rules-of-procedures/#article-5--émission-universelle-de-nouveaux-jetons-confer-article-10bis-des-statuts) : <https://foopgp.org/fr/about/rules-of-procedures/>
@@ -105,7 +105,7 @@ Reprenons maintenant le cours du temps : il est tout à fait probable qu'un jour
 
 ## Et la clé physique de sécurité ?
 
-Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous recevez une **[clé physique de sécurité](/fr/solutions/offer-security-keys/)** (Yubikey ou Nitrokey) pour dès aujourd'hui **[utiliser](/fr/blog/2026-01-19-djibian-release/) votre identité numérique décentralisée [OpenPGP ID](/fr/solutions/openpgp-id/)** — la pierre angulaire de votre souveraineté numérique et financière. En 2027, cette même clé de sécurité sera utilisée pour vos échanges numériques en djis (**Ɉ**). Le palier en euros augmente d'environ 0,5 % chaque mois : c'est l'effet **stingynalty** rendu palpable, et une incitation à rejoindre la migration tôt plutôt que tard. [^palier]
+Dès que vous avez généré **6,42 Ɉ** par vos cotisations cumulées, vous recevez une **[clé physique de sécurité](/fr/solutions/offer-security-keys/)** (Yubikey ou Nitrokey) pour dès aujourd'hui **[utiliser](/fr/blog/2026-01-19-djibian-release/) votre identité numérique décentralisée [PGP ID](/fr/solutions/pgp-id/)** — la pierre angulaire de votre souveraineté numérique et financière. En 2027, cette même clé de sécurité sera utilisée pour vos échanges numériques en djis (**Ɉ**). Le palier en euros augmente d'environ 0,5 % chaque mois : c'est l'effet **stingynalty** rendu palpable, et une incitation à rejoindre la migration tôt plutôt que tard. [^palier]
 
 | Date | Cotisations nécessaires pour atteindre 6,42 Ɉ |
 |---|---|

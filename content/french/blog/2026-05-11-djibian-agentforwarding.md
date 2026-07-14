@@ -98,8 +98,8 @@ Le paquet ***djibian-gpgconfig*** fait tout cela pour vous :
 - dépend de **sshwgpg**, donc installer ***djibian-gpgconfig*** vous obtient les deux côtés d'un coup.
 
 Et côté provisionnement utilisateur, le paquet ***bashlibs-pgpid*** permet de transformer une empreinte OpenPGP de 40 caractères hexa en un compte Linux complet :
-- UID/GID dérivé de l'identifiant [OpenPGP ID](/fr/solutions/openpgp-id/) de l'utilisateur (donc [identique](/fr/blog/2026-04-28-openpgp-id-spec/) sur toutes les machines Djibian) ;
-- *$HOME* égal à l'identifiant [OpenPGP ID](/fr/solutions/openpgp-id/) de l'utilisateur (donc [unique et identique](/fr/blog/2026-04-28-openpgp-id-spec/) sur toutes les machines Djibian) ;
+- UID/GID dérivé de l'identifiant [PGP ID](/fr/solutions/pgp-id/) de l'utilisateur (donc [identique](/fr/blog/2026-04-28-openpgp-id-spec/) sur toutes les machines Djibian) ;
+- *$HOME* égal à l'identifiant [PGP ID](/fr/solutions/pgp-id/) de l'utilisateur (donc [unique et identique](/fr/blog/2026-04-28-openpgp-id-spec/) sur toutes les machines Djibian) ;
 - *~/.ssh/authorized_keys* rempli depuis la sous-clé d'authentification du certificat OpenPGP ;
 - *~/.gitconfig* et *~/.gnupg* pré-configurés pour signer en utilisant la clé OpenPGP de l'utilisateur ;
 - et même l'image d'avatar, enregistrée dans *~/.face*, est prise depuis l'attribut image du certificat OpenPGP.
@@ -119,7 +119,7 @@ Sur un serveur non-Djibian, la même configuration tient en un `useradd` et plus
 
 ## Le pari politique
 
-Le modèle cloud dit : *vos secrets vivent sur leurs serveurs, faites-leur confiance.* Ce que **sshwgpg** (et le reste de la chaîne [OpenPGP ID](/fr/solutions/openpgp-id/)) rend possible est l'opposé : **les serveurs ne peuvent pas lire vos secrets sans la clé que vous tenez dans votre main.** Ils ne peuvent plus manipuler vos données dans votre dos ; vous en reprenez le contrôle, littéralement, à travers votre clé physique de sécurité : YubiKey ou NitroKey.
+Le modèle cloud dit : *vos secrets vivent sur leurs serveurs, faites-leur confiance.* Ce que **sshwgpg** (et le reste de la chaîne [PGP ID](/fr/solutions/pgp-id/)) rend possible est l'opposé : **les serveurs ne peuvent pas lire vos secrets sans la clé que vous tenez dans votre main.** Ils ne peuvent plus manipuler vos données dans votre dos ; vous en reprenez le contrôle, littéralement, à travers votre clé physique de sécurité : YubiKey ou NitroKey.
 
 Toute cette chaîne est **libre, auditable, et tient dans nos paquets Djibian.**
 

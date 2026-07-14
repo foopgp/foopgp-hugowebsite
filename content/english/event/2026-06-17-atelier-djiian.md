@@ -30,7 +30,7 @@ In other words: **[Djibian](/solutions/djibian/)** is **the consumer operating s
 ### Meet us on Wednesday 17 June from 14:00, at the [Coop des Vénètes](https://www.coopdesvenetes.bzh/), to
 
 1. **Understand** why it matters to build and share these new tools.
-2. **Dare to give birth to your [OpenPGP ID](/about/openpgp/) identity**, secure it with your **[YubiKey or NitroKey](/solutions/offer-security-keys/)**, and use it from your computer or smartphone.
+2. **Dare to give birth to your [PGP ID](/about/openpgp/) identity**, secure it with your **[YubiKey or NitroKey](/solutions/offer-security-keys/)**, and use it from your computer or smartphone.
 3. **Discover the power of the [dji (Ɉ)](/about/join/) token**, the social share of our digital-sovereignty society.
 
 ![OpenPGP security keys: NitroKey, YubiKey, and others](/images/solutions/OpenPGPkeys.jpg)
@@ -52,7 +52,7 @@ If you don't have a machine on hand, we'll also bring a few refurbished computer
 From 14:00, talks, workshops and discussions flow in open-workshop style:
 
 - **Djibian talk** — concepts and terminology: **Linux**, **OpenPGP**, **YubiKey**, **Libre Currency**, **dji (Ɉ)**.
-- **Djibian workshop** — create and print your **[OpenPGP ID](/solutions/openpgp-id/)**, set up your **[physical key](/solutions/offer-security-keys/)**, first use of it to [sign](/solutions/signature/), [encrypt/decrypt](/solutions/encryption/), [certify peers](/solutions/theme-authentication/), authenticate over SSH, and sign Git commits.
+- **Djibian workshop** — create and print your **[PGP ID](/solutions/pgp-id/)**, set up your **[physical key](/solutions/offer-security-keys/)**, first use of it to [sign](/solutions/signature/), [encrypt/decrypt](/solutions/encryption/), [certify peers](/solutions/theme-authentication/), authenticate over SSH, and sign Git commits.
 - **Check your djis (Ɉ) accounts** for members.
 
 The event winds down into open-floor discussions over a drink.

@@ -29,7 +29,7 @@ In other words: **[Djibian](/solutions/djibian/)** is **the consumer operating s
 
 1- **Discover** why we are building and sharing these new tools.
 
-2- Give birth to your **[OpenPGP ID](/about/openpgp/)** identity, secure it with your **[YubiKey](/solutions/offer-security-keys/)**, and use it with your computer or smartphone.
+2- Give birth to your **[PGP ID](/about/openpgp/)** identity, secure it with your **[YubiKey](/solutions/offer-security-keys/)**, and use it with your computer or smartphone.
 
 ![OpenPGP tokens: 1 nitrokey, 2 yubikey, 1 unknow (pink)](/images/solutions/OpenPGPkeys.jpg)
 
@@ -53,7 +53,7 @@ If you have computers that are slow, buggy, or spying on you (any Windows or Mac
 
 #### --- 14:00 --- **Djibian** workshop
 - Boot your computer.
-- Create and print your **[OpenPGP ID](/solutions/openpgp-id/)** identity.
+- Create and print your **[PGP ID](/solutions/pgp-id/)** identity.
 - Set up the **[YubiKey or Nitrokey](/solutions/offer-security-keys/)** that will safeguard your singularity in the digital universe.
 - Use this key to:
   - Create your account on the **[Djibian](/solutions/djibian/)** system and authenticate yourself on various services (*SSH, Git*).

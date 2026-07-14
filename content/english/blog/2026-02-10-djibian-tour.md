@@ -12,7 +12,7 @@ image: "images/blog/2026/djibian-tour.png"
 type: "post"
 ---
 
-***Note:*** *The biggest innovation « OpenPGP ID » is introduced [in the previous post](/blog/2026-01-19-djibian-release/). Please subscribe to [our mailing lists](/contact/) to get informed.*
+***Note:*** *The biggest innovation « PGP ID » is introduced [in the previous post](/blog/2026-01-19-djibian-release/). Please subscribe to [our mailing lists](/contact/) to get informed.*
 
 ---
 

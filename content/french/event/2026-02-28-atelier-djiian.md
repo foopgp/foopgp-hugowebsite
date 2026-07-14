@@ -29,7 +29,7 @@ Autrement dit : **[Djibian](/fr/solutions/djibian/)** est **le système d'exploi
 
 1- **Découvrir** pourquoi construire et partager ces nouveaux outils.
 
-2- Donner naissance à votre identité **[OpenPGP ID](/fr/about/openpgp/)**, la sécuriser avec votre **[YubiKey](/fr/solutions/offer-security-keys/)**, et l'utiliser avec votre ordinateur ou votre smartphone.
+2- Donner naissance à votre identité **[PGP ID](/fr/about/openpgp/)**, la sécuriser avec votre **[YubiKey](/fr/solutions/offer-security-keys/)**, et l'utiliser avec votre ordinateur ou votre smartphone.
 
 ![OpenPGP tokens: 1 nitrokey, 2 yubikey, 1 unknow (pink)](/images/solutions/OpenPGPkeys.jpg)
 
@@ -53,7 +53,7 @@ Si vous avez des ordinateurs qui rament, qui buguent ou qui vous espionnent (tou
 
 #### --- 14h00 --- Atelier **Djibian**
 - Démarrez votre ordinateur.
-- Créez et imprimez votre identité **[OpenPGP ID](/fr/solutions/openpgp-id/)**.
+- Créez et imprimez votre identité **[PGP ID](/fr/solutions/pgp-id/)**.
 - Configurez **[la YubiKey ou la Nitrokey](/fr/solutions/offer-security-keys/)** qui sécurisera votre singularité dans l'univers numérique.
 - Utilisez cette clé pour :
   - Créer votre compte sur le système **[Djibian](/fr/solutions/djibian/)** et vous authentifier sur différents services (*SSH, Git*).

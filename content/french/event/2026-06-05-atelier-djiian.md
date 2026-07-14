@@ -30,7 +30,7 @@ Autrement dit : **[Djibian](/fr/solutions/djibian/)** est **le système d'exploi
 ### Rendez-vous vendredi 5 juin à Tallard, pour
 
 1. **Comprendre** l'importance de construire et partager ces nouveaux outils.
-2. **Oser donner naissance à votre identité [OpenPGP ID](/fr/about/openpgp/)**, la sécuriser avec votre **[YubiKey ou NitroKey](/fr/solutions/offer-security-keys/)**, et l'utiliser depuis votre ordinateur ou votre smartphone.
+2. **Oser donner naissance à votre identité [PGP ID](/fr/about/openpgp/)**, la sécuriser avec votre **[YubiKey ou NitroKey](/fr/solutions/offer-security-keys/)**, et l'utiliser depuis votre ordinateur ou votre smartphone.
 3. **Découvrir la puissance du jeton [dji (Ɉ)](/fr/about/join/)**, la part sociale de notre société de souveraineté numérique.
 
 ![Clés de sécurité OpenPGP : NitroKey, YubiKey, et autres](/images/solutions/OpenPGPkeys.jpg)
@@ -52,7 +52,7 @@ Si vous avez des ordinateurs qui rament, qui buguent ou qui vous espionnent (tou
 
 #### --- 16h00 --- Atelier **Djibian**
 - Démarrez votre ordinateur.
-- Créez et imprimez votre identité **[OpenPGP ID](/fr/solutions/openpgp-id/)**.
+- Créez et imprimez votre identité **[PGP ID](/fr/solutions/pgp-id/)**.
 - Configurez **[la YubiKey ou la NitroKey](/fr/solutions/offer-security-keys/)** qui sécurisera votre singularité dans l'univers numérique.
 - Utilisez cette clé pour :
   - Créer votre compte sur le système **[Djibian](/fr/solutions/djibian/)** et vous authentifier sur différents services (*SSH, Git*).

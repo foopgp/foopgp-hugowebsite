@@ -17,7 +17,7 @@ Your subscription to the **friends of OpenPGP (foopgp)** association has just be
 
 1. **A receipt will be emailed to you** at the address you provided, as soon as our [euros → djis workflow](/documents/en/foopgp-djis-emission-workflow.md) has processed your contribution (typically within a few days).
 
-2. **Your *djis* (Ɉ) will actually be created** once your [OpenPGP ID](/blog/2026-01-19-djibian-release/) is **certified by our Web of Trust**.
+2. **Your *djis* (Ɉ) will actually be created** once your [PGP ID](/blog/2026-01-19-djibian-release/) is **certified by our Web of Trust**.
 
 3. If you do **not yet have an OpenPGP identity** (or no certification in our Web of Trust yet), this is the step that unlocks everything else. We will guide you through it.
 

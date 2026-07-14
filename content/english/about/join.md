@@ -86,7 +86,7 @@ Let us now refine:
 - Downward pressure: the "universal dividend". [^RI5]
 - Upward pressure: the **stingynalty** parameter (designed to contain the pressure of the "universal dividend" or euro inflation). [^RI4]
 - Downward, then upward pressure: not everyone holds €32,102.19 on average in their bank account... [^momentum]
-- Upward pressure: the dji is the social share of a company that produces innovations such as [**OpenPGP ID**](/blog/2026-01-19-djibian-release/) and [**Djibian**](/solutions/djibian/). These products take on (among others) the market shares of Microsoft and Apple, that is (for those two alone): [7,200 billion in combined market capitalisation (in 2025)](https://www.clubic.com/actualite-574953-non-apple-et-microsoft-ne-connaissent-pas-la-crise.html).
+- Upward pressure: the dji is the social share of a company that produces innovations such as [**PGP ID**](/blog/2026-01-19-djibian-release/) and [**Djibian**](/solutions/djibian/). These products take on (among others) the market shares of Microsoft and Apple, that is (for those two alone): [7,200 billion in combined market capitalisation (in 2025)](https://www.clubic.com/actualite-574953-non-apple-et-microsoft-ne-connaissent-pas-la-crise.html).
 
 [^RI4]: Article 4 of our [rules of procedures](/about/rules-of-procedures/#article-4---modalités-relatives-aux-jetons-de-pouvoir-confer-article-10bis-des-statuts): <https://foopgp.org/about/rules-of-procedures/>
 [^RI5]: Article 5 of our [rules of procedures](/about/rules-of-procedures/#article-5--émission-universelle-de-nouveaux-jetons-confer-article-10bis-des-statuts): <https://foopgp.org/about/rules-of-procedures/>
@@ -105,7 +105,7 @@ Now let time flow again: it is quite likely that one day, **the value of one dji
 
 ## And the physical security key?
 
-As soon as you have generated **6.42 Ɉ** through your cumulative subscriptions, you receive a **[physical security key](/solutions/offer-security-keys/)** (Yubikey or Nitrokey) so that you can start **[using](/blog/2026-01-19-djibian-release/) your decentralised digital identity [OpenPGP ID](/solutions/openpgp-id/)** right away — the cornerstone of your digital and financial sovereignty. In 2027, that same security key will be used for your digital exchanges in djis (**Ɉ**). The threshold in euros rises by approximately 0.5% each month: this is the **stingynalty** mechanism made tangible, and an incentive to join the migration sooner rather than later. [^threshold]
+As soon as you have generated **6.42 Ɉ** through your cumulative subscriptions, you receive a **[physical security key](/solutions/offer-security-keys/)** (Yubikey or Nitrokey) so that you can start **[using](/blog/2026-01-19-djibian-release/) your decentralised digital identity [PGP ID](/solutions/pgp-id/)** right away — the cornerstone of your digital and financial sovereignty. In 2027, that same security key will be used for your digital exchanges in djis (**Ɉ**). The threshold in euros rises by approximately 0.5% each month: this is the **stingynalty** mechanism made tangible, and an incentive to join the migration sooner rather than later. [^threshold]
 
 | Date | Subscriptions needed to reach 6.42 Ɉ |
 |---|---|

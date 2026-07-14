@@ -59,7 +59,7 @@ Le système rappelle, chaque mois, à la trésorière, au président et au secr�
 
 ## Et après
 
-Le document technique est public, en anglais — c'est notre engagement de transparence. Il pointe vers les dépôts de code, vers les spécifications IETF en cours d'écriture ([uetree](/fr/blog/2026-05-27-uetree-spec/), [OpenPGP ID](/fr/blog/2026-04-28-openpgp-id-spec/)), vers les paramètres en vigueur. Tout y est, et tout est reproductible : avec nos CSV, avec nos outils, avec son propre trousseau OpenPGP, n'importe quel auditeur peut refaire les calculs.
+Le document technique est public, en anglais — c'est notre engagement de transparence. Il pointe vers les dépôts de code, vers les spécifications IETF en cours d'écriture ([uetree](/fr/blog/2026-05-27-uetree-spec/), [PGP ID](/fr/blog/2026-04-28-openpgp-id-spec/)), vers les paramètres en vigueur. Tout y est, et tout est reproductible : avec nos CSV, avec nos outils, avec son propre trousseau OpenPGP, n'importe quel auditeur peut refaire les calculs.
 
 Ce niveau de reproductibilité est rare en comptabilité d'association. C'est ce qui nous permettra, le jour venu, de migrer en SCIC, puis en fondation internationale, sans perdre la mémoire de ce qui s'est passé entre 2023 et aujourd'hui.
 

@@ -64,7 +64,7 @@ On a **Djibian** system, the **Djibian Onboarding** graphical frontend (develope
 
 The foopgp tools generate and print your private keys as **paper fragments**, encrypted and split using a [secret sharing](https://en.wikipedia.org/wiki/Secret_sharing) (Shamir) scheme: by default, **3 fragments out of 5 printed** are enough to reconstitute the key.
 
-| ![Fragment 1/5](/images/solutions/openpgp-id/qrcode-fragment-1.png) | ![Fragment 2/5](/images/solutions/openpgp-id/qrcode-fragment-2.png) | ![Fragment 5/5](/images/solutions/openpgp-id/qrcode-fragment-5.png) |
+| ![Fragment 1/5](/images/solutions/pgp-id/qrcode-fragment-1.png) | ![Fragment 2/5](/images/solutions/pgp-id/qrcode-fragment-2.png) | ![Fragment 5/5](/images/solutions/pgp-id/qrcode-fragment-5.png) |
 |:---:|:---:|:---:|
 | *Fragment 1/5* | *Fragment 2/5* | *Fragment 5/5* |
 
@@ -83,7 +83,7 @@ From there, your identity is exercised **from your hand** on any OpenPGP-compati
 
 Here is the **Djibian Onboarding** welcome screen once your key is set up — avatar, common name, **PGP ID** identifier and emails read straight from the plugged-in physical key:
 
-![PGP ID card as displayed by Djibian Onboarding](/images/solutions/openpgp-id/Phil_ID_EN.png)
+![PGP ID card as displayed by Djibian Onboarding](/images/solutions/pgp-id/Phil_ID_EN.png)
 
 *Illustration. Photograph of [Phil Zimmermann](https://en.wikipedia.org/wiki/Phil_Zimmermann), inventor of PGP — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PRZ_closeup_cropped.jpg), CC BY-SA 3.0.*
 

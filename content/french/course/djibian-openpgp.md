@@ -20,7 +20,7 @@ apply_url: "mailto:info@foopgp.org"
 
 **[Djibian](/fr/solutions/djibian/)** est aujourd'hui le système d'exploitation grand public le plus sûr et respectueux de votre singularité humaine.
 
-L'atelier vous permettra de donner naissance à votre identité OpenPGP ID et de prendre en main **Djibian** et **votre clé de sécurité** [OpenPGP](/fr/about/openpgp/), **YubiKey ou NitroKey**.
+L'atelier vous permettra de donner naissance à votre identité PGP ID et de prendre en main **Djibian** et **votre clé de sécurité** [OpenPGP](/fr/about/openpgp/), **YubiKey ou NitroKey**.
 
 ![OpenPGP tokens: 1 nitrokey, 2 yubikey, 1 unknow (pink)](/images/solutions/OpenPGPkeys.jpg)
 
@@ -34,7 +34,7 @@ Ainsi vous commencerez à reprendre vraiment le contrôle sur vos données qui, 
 
 À partir d'un système **[Djibian GNU/Linux](/fr/blog/2026-01-19-djibian-release/)** fraîchement installé, nous allons :
 
-- Créer votre identité **[OpenPGP ID](/fr/solutions/openpgp-id/)**.
+- Créer votre identité **[PGP ID](/fr/solutions/pgp-id/)**.
 - Configurer **[la YubiKey ou la Nitrokey](/fr/solutions/offer-security-keys/)** qui sécurisera votre singularité dans l'univers numérique.
 - Utiliser cette clé pour :
   - Créer votre compte sur le système **[Djibian](/fr/solutions/djibian/)** et s’authentifier sur différents services (*SSH, Git*).

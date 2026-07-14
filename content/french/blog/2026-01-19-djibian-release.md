@@ -23,7 +23,7 @@ type: "post"
 [^CVjjb]: On pourrait même chiffrer la R&D à plus de 15 ans, si l'on en croit le [CV impressionnant du fondateur](https://domesticserver.org/myresume/) (en toute modestie bien sûr, de toute façon personne ne lit les notes de bas de page... n'est-ce pas ?).
 ---
 
-Cette première version pose et fournit le premier étage de [la fusée](/fr/solutions/activity-rd/) : **OpenPGP ID**.
+Cette première version pose et fournit le premier étage de [la fusée](/fr/solutions/activity-rd/) : **PGP ID**.
 
 {{< figure
   src="/images/solutions/OpenPGPkeys.jpg"
@@ -31,7 +31,7 @@ Cette première version pose et fournit le premier étage de [la fusée](/fr/sol
   class="mx-auto w-25"
 >}}
 
-Votre [identité numérique](/fr/solutions/openpgp-id/) **OpenPGP ID**, est universelle et décentralisée.
+Votre [identité numérique](/fr/solutions/pgp-id/) **PGP ID**, est universelle et décentralisée.
 
 Elle permet, [concrètement](/fr/solutions/offer-security-keys/) :
 

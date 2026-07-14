@@ -28,7 +28,7 @@ type: "post"
 
 ---
 
-This first version establishes and provides the first stage of [the rocket](/solutions/activity-rd/): **OpenPGP ID**.
+This first version establishes and provides the first stage of [the rocket](/solutions/activity-rd/): **PGP ID**.
 
 {{< figure
   src="/images/solutions/OpenPGPkeys.jpg"
@@ -37,7 +37,7 @@ This first version establishes and provides the first stage of [the rocket](/sol
   class="mx-auto w-25"
 >}}
 
-Your [digital identity](/solutions/openpgp-id/) **OpenPGP ID** is universal and decentralized.
+Your [digital identity](/solutions/pgp-id/) **PGP ID** is universal and decentralized.
 
 
 [In practical terms](/solutions/offer-security-keys/), it allows you to:

@@ -5,14 +5,14 @@ draft: false
 bg_image: "images/backgrounds/party-event.jpg"
 description: "Djibian: the operating system you can trust — install and first steps."
 image: "images/logos/djibian_square_logo.png"
-tags: [ "djibian", "Debian", "Ubuntu", "OpenPGP ID" ]
+tags: [ "djibian", "Debian", "Ubuntu", "PGP ID" ]
 categories: [ "solution" ]
 type: "post"
 ---
 
 **[Djibian](/blog/2025-09-12-welcome-djibian/) is for you.**
 
-It is the operating system foopgp assembles on top of [Debian](https://www.debian.org/), to give you back the control of your digital life: an [OpenPGP identity](/solutions/openpgp-id/) carried by a [physical key](/solutions/offer-security-keys/) (YubiKey or NitroKey), [encrypted email](/solutions/theme-email/), an [authentication](/solutions/theme-authentication/) that depends on no one but you, and — for members — the ability to use the [djis](/solutions/theme-currency/) as a [means of exchange](/about/join/).
+It is the operating system foopgp assembles on top of [Debian](https://www.debian.org/), to give you back the control of your digital life: an [OpenPGP identity](/solutions/pgp-id/) carried by a [physical key](/solutions/offer-security-keys/) (YubiKey or NitroKey), [encrypted email](/solutions/theme-email/), an [authentication](/solutions/theme-authentication/) that depends on no one but you, and — for members — the ability to use the [djis](/solutions/theme-currency/) as a [means of exchange](/about/join/).
 
 Djibian was also designed to run smoothly on both recent machines and *old dinosaurs* — it is also an excellent way to extend the life span of your computers.
 
@@ -59,7 +59,7 @@ The default user is **`unknow`** and its password is **`foopgp`**.
 
 On the first reboot into your new Djibian, the **`djibian-onboarding`** application starts on its own. It walks you through — **without a single command line to type** — to:
 
-- generate your **[digital OpenPGP identity](/solutions/openpgp-id/)** (asymmetric-cryptography keys are then split and printed on 5 separate sheets);
+- generate your **[digital OpenPGP identity](/solutions/pgp-id/)** (asymmetric-cryptography keys are then split and printed on 5 separate sheets);
 - scan and load the corresponding secrets onto your **physical key** (YubiKey or NitroKey, [provided by the association for free past 6.42 Ɉ cumulated](/about/join/));
 - add you as a real user of the system, with your home directory configured for your OpenPGP physical key (email decryption and signing, ssh authentication, git commit signing).
 

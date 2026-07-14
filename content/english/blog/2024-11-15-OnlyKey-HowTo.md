@@ -16,7 +16,7 @@ type: "post"
 
 *This article should be revised in the light of recent developments within the organization, in particular:*
 
-- *[**pgpid**](//foopgp.org/solutions/openpgp-id/), which is a welcome replacement for [paperkey](//github.com/dmshaw/paperkey/).*
+- *[**pgpid**](//foopgp.org/solutions/pgp-id/), which is a welcome replacement for [paperkey](//github.com/dmshaw/paperkey/).*
 
 - *The **gen-passphrase** action of the bash-lib [**bl-security**](//codeberg.org/foopgp/bash-libs/src/branch/main/man/bl-security.1.md), which implements a method comparable to [those of dice](//www.eff.org/dice) and replaces most [diceware programs](//github.com/ulif/diceware).*
 

@@ -59,7 +59,7 @@ The system sends, every month, a reminder e-mail to the treasurer, the president
 
 ## What's next
 
-The technical document is public, in English — that is our transparency commitment. It points at the code repositories, at the IETF specifications under writing ([uetree](/blog/2026-05-27-uetree-spec/), [OpenPGP ID](/blog/2026-04-28-openpgp-id-spec/)), and at the parameters in force. Everything is there, and everything is reproducible: with our CSVs, with our tools, with one's own OpenPGP keyring, any auditor can redo the computations.
+The technical document is public, in English — that is our transparency commitment. It points at the code repositories, at the IETF specifications under writing ([uetree](/blog/2026-05-27-uetree-spec/), [PGP ID](/blog/2026-04-28-openpgp-id-spec/)), and at the parameters in force. Everything is there, and everything is reproducible: with our CSVs, with our tools, with one's own OpenPGP keyring, any auditor can redo the computations.
 
 This level of reproducibility is rare in association accounting. It is what will let us, when the time comes, migrate to a SCIC (a French worker-cooperative form), then to an international foundation, without losing the memory of what happened between 2023 and now.
 

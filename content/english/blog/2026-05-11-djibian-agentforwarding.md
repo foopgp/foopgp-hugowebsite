@@ -98,8 +98,8 @@ The ***djibian-gpgconfig*** package does all of that for you:
 - depends on **sshwgpg**, so installing ***djibian-gpgconfig*** gets you both sides at once.
 
 And on the user-provisioning side, the ***bashlibs-pgpid*** package turns a 40-hex-char OpenPGP fingerprint into a full Linux account:
-- UID/GID derived from the user's [OpenPGP ID](/solutions/openpgp-id/) (so [identical](/blog/2026-04-28-openpgp-id-spec/) across every Djibian machine) ;
-- *$HOME* equal to the user's [OpenPGP ID](/solutions/openpgp-id/) (so [unique and identical](/blog/2026-04-28-openpgp-id-spec/) across every Djibian machine) ;
+- UID/GID derived from the user's [PGP ID](/solutions/pgp-id/) (so [identical](/blog/2026-04-28-openpgp-id-spec/) across every Djibian machine) ;
+- *$HOME* equal to the user's [PGP ID](/solutions/pgp-id/) (so [unique and identical](/blog/2026-04-28-openpgp-id-spec/) across every Djibian machine) ;
 - *~/.ssh/authorized_keys* populated from the OpenPGP certificate's authentication subkey ;
 - *~/.gitconfig* and *~/.gnupg* pre-configured to sign using the user's OpenPGP key ;
 - even the avatar image, stored in *~/.face*, is taken from the OpenPGP certificate's image attribute.
@@ -119,7 +119,7 @@ On a non-Djibian server the same wiring is a `useradd` and several shell lines o
 
 ## The political wager
 
-The cloud model says: *your secrets live on their servers, trust them.* What **sshwgpg** (and the rest of the [OpenPGP ID](/solutions/openpgp-id/) chain) makes possible is the opposite: **servers cannot read your secrets without the key you hold in your hand.** They can no longer manipulate your data behind your back; you take the control back, literally, through your physical security key: a YubiKey or NitroKey.
+The cloud model says: *your secrets live on their servers, trust them.* What **sshwgpg** (and the rest of the [PGP ID](/solutions/pgp-id/) chain) makes possible is the opposite: **servers cannot read your secrets without the key you hold in your hand.** They can no longer manipulate your data behind your back; you take the control back, literally, through your physical security key: a YubiKey or NitroKey.
 
 Everything in this chain is **free software, auditable, and ships in our Djibian packages.**
 

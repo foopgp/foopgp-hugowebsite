@@ -64,7 +64,7 @@ Sur un système **Djibian**, le frontend graphique **Djibian Onboarding** (déve
 
 Les outils foopgp génèrent et impriment vos clés privées sous forme de **fragments papier**, chiffrés et répartis selon un schéma de [secret réparti](https://fr.wikipedia.org/wiki/Secret_r%C3%A9parti) (Shamir) : par défaut, **3 fragments suffisent sur 5 imprimés** pour reconstituer la clé.
 
-| ![Fragment 1/5](/images/solutions/openpgp-id/qrcode-fragment-1.png) | ![Fragment 2/5](/images/solutions/openpgp-id/qrcode-fragment-2.png) | ![Fragment 5/5](/images/solutions/openpgp-id/qrcode-fragment-5.png) |
+| ![Fragment 1/5](/images/solutions/pgp-id/qrcode-fragment-1.png) | ![Fragment 2/5](/images/solutions/pgp-id/qrcode-fragment-2.png) | ![Fragment 5/5](/images/solutions/pgp-id/qrcode-fragment-5.png) |
 |:---:|:---:|:---:|
 | *Fragment 1/5* | *Fragment 2/5* | *Fragment 5/5* |
 
@@ -83,7 +83,7 @@ Une fois vos clés privées fragmentées sur papiers, un autre outil foopgp lit 
 
 Voici l'écran d'accueil de **Djibian Onboarding** une fois votre clé configurée — avatar, nom d'usage, identifiant **PGP ID** et courriels lus directement depuis la clé physique branchée :
 
-![Carte d'identité OpenPGP affichée par Djibian Onboarding](/images/solutions/openpgp-id/Phil_ID_FR.png)
+![Carte d'identité OpenPGP affichée par Djibian Onboarding](/images/solutions/pgp-id/Phil_ID_FR.png)
 
 *Illustration. Photo de [Phil Zimmermann](https://fr.wikipedia.org/wiki/Phil_Zimmermann), inventeur de PGP — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PRZ_closeup_cropped.jpg), CC BY-SA 3.0.*
 

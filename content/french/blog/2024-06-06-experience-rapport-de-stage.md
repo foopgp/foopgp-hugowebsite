@@ -91,12 +91,12 @@ Pour en savoir plus sur [Openpgp](/fr/about/openpgp/)
 
 **En résumé, [pgpid](https://codeberg.org/foopgp/pgpid) aide à gérer et utiliser les clés PGP pour des utilisations numériques sécurisées.**
 
-Dans l'association, [Jean-Jacques](/fr/author/jean-jacques-brucker/) a mis en place ce système innovant. Il fonctionne de la manière suivante : lorsque vous créez votre [identité numérique](/fr/solutions/openpgp-id),
+Dans l'association, [Jean-Jacques](/fr/author/jean-jacques-brucker/) a mis en place ce système innovant. Il fonctionne de la manière suivante : lorsque vous créez votre [identité numérique](/fr/solutions/pgp-id),
 celle-ci est [repartie](https://fr.wikipedia.org/wiki/Secret_r%C3%A9parti) en trois QR codes distincts. Ces QR codes sont ensuite imprimés pour une utilisation pratique.
 
 Pour accéder à votre identité numérique, il suffit de scanner ces trois QR codes. Une fois scannés, les principales clés privées associées à votre certificat [OpenPGP](/fr/about/openpgp/) sont reconstruites. Elle peuvent alors être poussées dans des clés de sécurité comme la [YubiKey](./#YubiKey) ou la [Nitrokey](./#nitrokey).
 
-Ces clés de sécurité permettent d'utiliser les clés privés de votre [identité numérique](/fr/solutions/openpgp-id), sans permettre aucun accès direct à ces dernières. À chaque utilisation, un code PIN peut-être demandé. Au bout de 3 erreurs successives de code PIN, la clé se bloque. Elle peut être débloquée avec un autre code (PUK), sinon elle efface ses données. Il faudra alors la réinitialiser pour recommencer le scan des QR codes.
+Ces clés de sécurité permettent d'utiliser les clés privés de votre [identité numérique](/fr/solutions/pgp-id), sans permettre aucun accès direct à ces dernières. À chaque utilisation, un code PIN peut-être demandé. Au bout de 3 erreurs successives de code PIN, la clé se bloque. Elle peut être débloquée avec un autre code (PUK), sinon elle efface ses données. Il faudra alors la réinitialiser pour recommencer le scan des QR codes.
 
 Voici un exemple des QR codes utilisés :
 
@@ -117,7 +117,7 @@ La [YubiKey](https://www.yubico.com/la-cle-yubikey/?lang=fr) est un dispositif d
 ### Nitrokey
 ![visuelnitrokey](/images/blog/2024/nitrokey_image.jpeg)
 
-Les [NitroKeys](https://www.nitrokey.com/) offrent une solution complète et sécurisée pour protéger les [identité numérique](/fr/solutions/openpgp-id) et les données sensibles. Leur utilisation permet de renforcer significativement la sécurité des systèmes et des informations, tout en restant pratiques et accessibles pour les utilisateurs. Elles sont presque identiques à la [YubiKey](./#YubiKey).
+Les [NitroKeys](https://www.nitrokey.com/) offrent une solution complète et sécurisée pour protéger les [identité numérique](/fr/solutions/pgp-id) et les données sensibles. Leur utilisation permet de renforcer significativement la sécurité des systèmes et des informations, tout en restant pratiques et accessibles pour les utilisateurs. Elles sont presque identiques à la [YubiKey](./#YubiKey).
 
 
 ---

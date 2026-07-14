@@ -30,7 +30,7 @@ Autrement dit : **[Djibian](/fr/solutions/djibian/)** est **le système d'exploi
 ### Rendez-vous mercredi 17 juin à partir de 14h00, à la [Coop des Vénètes](https://www.coopdesvenetes.bzh/), pour
 
 1. **Comprendre** l'importance de construire et partager ces nouveaux outils.
-2. **Oser donner naissance à votre identité [OpenPGP ID](/fr/about/openpgp/)**, la sécuriser avec votre **[YubiKey ou NitroKey](/fr/solutions/offer-security-keys/)**, et l'utiliser depuis votre ordinateur ou votre smartphone.
+2. **Oser donner naissance à votre identité [PGP ID](/fr/about/openpgp/)**, la sécuriser avec votre **[YubiKey ou NitroKey](/fr/solutions/offer-security-keys/)**, et l'utiliser depuis votre ordinateur ou votre smartphone.
 3. **Découvrir la puissance du jeton [dji (Ɉ)](/fr/about/join/)**, la part sociale de notre société de souveraineté numérique.
 
 ![Clés de sécurité OpenPGP : NitroKey, YubiKey, et autres](/images/solutions/OpenPGPkeys.jpg)
@@ -52,7 +52,7 @@ Si vous n'avez pas d'ordinateur sous la main, nous mettrons à disposition quelq
 À partir de 14h00, présentation, ateliers et discussions s'enchaînent en mode atelier ouvert :
 
 - **Présentation Djibian** — concepts et terminologie : **Linux**, **OpenPGP**, **YubiKey**, **Monnaie Libre**, **dji (Ɉ)**.
-- **Atelier Djibian** — création et impression de votre **[OpenPGP ID](/fr/solutions/openpgp-id/)**, configuration de votre **[clé physique](/fr/solutions/offer-security-keys/)**, première utilisation pour [signer](/fr/solutions/signature/), [chiffrer/déchiffrer](/fr/solutions/encryption/), [certifier vos proches](/fr/solutions/theme-authentication/), authentification SSH / signature Git.
+- **Atelier Djibian** — création et impression de votre **[PGP ID](/fr/solutions/pgp-id/)**, configuration de votre **[clé physique](/fr/solutions/offer-security-keys/)**, première utilisation pour [signer](/fr/solutions/signature/), [chiffrer/déchiffrer](/fr/solutions/encryption/), [certifier vos proches](/fr/solutions/theme-authentication/), authentification SSH / signature Git.
 - **Consultation de vos comptes en djis (Ɉ)** pour les adhérents.
 
 L'événement se prolonge en discussions libres autour d'un verre.

@@ -142,11 +142,6 @@ Table of Contents
         holder be a non-human entity; a sole-trader operating under a
         company registration number is a familiar analogue.
 
-        A touch of poetry: the comment field of the u5 regular
-        expression in the reference implementation reads "Apparition of
-        anything (with or without any ghost in the shell)" [GITS],
-        which captures the intended openness of this variant.
-
    Both variants share a common 14-character geographic suffix
    (Section 3).  Future variants (u6, u7, ...) MAY be defined as new
    identity classes emerge; the umbrella term "eid" remains stable

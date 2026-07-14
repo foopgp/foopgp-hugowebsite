@@ -156,8 +156,8 @@ weight = 3
 
   [[menu.main]]
     parent = "our activities"
-    name = "OpenPGP ID"
-    URL = "solutions/openpgp-id"
+    name = "PGP ID"
+    URL = "solutions/pgp-id"
     weight = 2
 
   [[menu.main]]

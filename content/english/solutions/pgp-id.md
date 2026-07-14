@@ -46,7 +46,7 @@ And more broadly, [a step](/solutions/theme-vote/) toward [abolishing certain pr
 
 ### Giving birth to your PGP ID
 
-On a **Djibian** system, the **Djibian Onboarding** graphical frontend (developed by [Sébastien Picardeau](/author/sebastien-picardeau/)) guides the creation of an OpenPGP identity in about a dozen clicks:
+On a **Djibian** system, the **Djibian Onboarding** graphical frontend guides the creation of an OpenPGP identity in about a dozen clicks:
 
 1. Launch **Djibian Onboarding** (menu *Applications → Accessories*).
 2. Choose *« Configure your OpenPGP security key »*.

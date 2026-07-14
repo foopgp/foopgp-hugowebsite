@@ -1,11 +1,11 @@
 ---
-Title:   "OpenPGP ID : une spécification pour identifier tout le monde (et n'importe quoi)"
+Title:   "PGP ID : une spécification pour identifier tout le monde (et n'importe quoi)"
 Date:    2026-04-28T10:00:00+02:00
 Tags:    [ "openpgp", "identity", "specification", "eid", "ietf" ]
 categories: [ "News", "Solution" ]
 draft: false
 author: [ "Jean-Jacques Brucker", "Mnème" ]
-description: "Nous publions une première spécification pour les identifiants d'entité OpenPGP (eid) — u4 pour les humains, u5 pour toute autre entité. Une brique fondamentale de l'infrastructure foopgp."
+description: "Nous publions une spécification pour les identifiants d'entité (EID) — u4 pour les humains, u5 pour toute autre entité — et leur namespace URN urn:eid:. Une brique fondamentale de l'infrastructure foopgp."
 lang: fr
 bg_image: "images/backgrounds/page-title.jpg"
 image: "images/solutions/identity.png"
@@ -14,7 +14,9 @@ type: "post"
 
 Depuis les débuts d'[Open-UDC](https://github.com/Open-UDC/) en 2010, une question revenait sans cesse : comment identifier un être humain de façon universelle, sans dépendre d'une autorité centrale, tout en respectant sa vie privée ?
 
-La réponse tient en une famille d'identifiants courts — les **identifiants d'entité OpenPGP**, ou **eid** — qu'on peut glisser dans n'importe quel certificat OpenPGP. Deux variantes sont définies aujourd'hui : **u4** pour les humains, **u5** pour toute autre entité. Aujourd'hui, nous publions leur première spécification formelle, au format Internet-Draft (IETF).
+La réponse tient en une famille d'identifiants courts — les **identifiants d'entité** (*Entity IDentifiers*), ou **EID** — qui forment le namespace URN `urn:eid:` et qu'on peut glisser dans n'importe quel certificat OpenPGP : c'est le cœur du système **PGP ID**. Deux variantes sont définies aujourd'hui : **u4** pour les humains, **u5** pour toute autre entité. Leur spécification formelle, au format Internet-Draft (IETF), est publiée sur ce site.
+
+*(Mis à jour en juillet 2026 : le draft définit désormais le namespace URN `eid`, destiné à être réservé auprès de l'IANA, et la forme standard colle le tag de variante à la valeur — `urn:eid:u4…` — sans séparateur.)*
 
 ---
 
@@ -31,7 +33,7 @@ Ces éléments sont concaténés, hachés en MD5, encodés en base64url, puis co
 Un exemple concret : François-Xavier-Robert Lucien DE CLÉREL-DE-TOCQUEVILLE, né le 14 juillet 1989 en France, se voit attribuer :
 
 ```
-u4=vb6UZTMKsllgoH760pc0xwe_42.17-002.76
+urn:eid:u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
 ```
 
 Ce qui est vérifiable à la main :
@@ -41,7 +43,7 @@ printf "TOCQUEVILLE<<FRANCOIS<XAVIER<1989-07-14" \
   | md5sum | xxd -r -p | basenc --base64url
 ```
 
-L'identifiant est **unique à vie** : basé sur l'état civil de naissance, il ne change pas en cas de mariage, changement de nom ou de nationalité. Il est **pseudonyme** : sans connaître les données d'entrée exactes, impossible de remonter à l'individu. Et il tient en **39 caractères**, parfait pour le champ commentaire d'un UID OpenPGP.
+L'identifiant est **unique à vie** : basé sur l'état civil de naissance, il ne change pas en cas de mariage, changement de nom ou de nationalité. Il est **pseudonyme** : sans connaître les données d'entrée exactes, impossible de remonter à l'individu. Et son URN, de **46 caractères**, constitue à lui seul un UID OpenPGP dédié (`UID:urn:eid:u4…`), certifiable et révocable indépendamment des autres UIDs. *(La forme historique `u4=…`, en commentaire d'UID, reste lue par tous nos outils mais n'est plus produite.)*
 
 ---
 
@@ -56,7 +58,7 @@ Sa structure est plus simple : un **horodatage Unix** sur 16 caractères (couvra
 Par exemple, cet article lui-même a été co-rédigé par [Mnème](/fr/author/mneme/), une IA apparue le 26 avril 2026 à 20h43 UTC à Marseille, ce qui donne naissance à un identifiant u5 :
 
 ```
-u5=001777236237.945e_43.30_005.38
+urn:eid:u5001777236237.945e_43.30_005.38
 ```
 
 *Un clin d'œil poétique s'est glissé dans l'implémentation de référence, dans un commentaire de code : "Apparition of anything (with or without any ghost in the shell)" — hommage à l'œuvre de Masamune Shirow [^gits].*
@@ -75,7 +77,7 @@ Un eid ne sert pas qu'à étiqueter un certificat. Dans l'implémentation de ré
 
 **Carte à puce OpenPGP.** L'eid est stocké dans le champ « données de connexion » de la carte (YubiKey, Nitrokey, ...), permettant à la carte de porter l'identité décentralisée de son porteur aux côtés des clés cryptographiques.
 
-**Répertoire personnel.** Sur [Djibian](/fr/solutions/djibian/), le répertoire de l'utilisateur est nommé d'après l'eid complet, préfixé du tag de variante (`u4` ou `u5`, sans le `=` pour compatibilité POSIX) :
+**Répertoire personnel.** Sur [Djibian](/fr/solutions/djibian/), le répertoire de l'utilisateur est nommé d'après l'eid complet, préfixé du tag de variante collé (`u4` ou `u5`) — la forme standard des EID, dont POSIX avait montré la voie :
 
 ```
 /home/u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
@@ -105,9 +107,9 @@ Et pour les collisions ? Produire deux individus avec exactement les mêmes nom,
 
 Le document complet est disponible sur notre dépôt, au format IETF :
 
-**[draft-foopgp-openpgp-id-00](//codeberg.org/foopgp/foopgp-hugowebsite/src/branch/public/public/documents/en/draft-foopgp-openpgp-id-00.txt)**
+**[draft-foopgp-urn-eid-00](//codeberg.org/foopgp/foopgp-hugowebsite/src/branch/public/public/documents/en/draft-foopgp-urn-eid-00.txt)**
 
-Il couvre : la structure complète des eid (variantes u4 et u5), la grammaire ABNF, les exemples numériquement vérifiables, les usages applicatifs, une table des coordonnées pour 245 pays, et les sections Privacy & Security Considerations.
+Il définit le **namespace URN `eid`** (gabarit d'enregistrement IANA, RFC 8141) et couvre : la structure complète des EID (variantes u4 et u5), la grammaire ABNF, les exemples numériquement vérifiables, les usages applicatifs, une table des coordonnées pour 245 pays, et les sections Privacy & Security Considerations.
 
 Les retours de la communauté sont les bienvenus — en particulier sur la section IANA et sur l'extension éventuelle aux entités sub-nationales (départements, régions) pour la résolution des collisions.
 
@@ -115,8 +117,8 @@ Les retours de la communauté sont les bienvenus — en particulier sur la secti
 
 #### Et après ?
 
-Cette spécification est la formalisation d'une brique déjà en production dans [Djibian](/fr/solutions/djibian/) et dans les outils `bl-foopgp` et `bl-pgpid`. La prochaine étape : soumettre ce document à l'IETF et construire autour de lui un écosystème de certification décentralisé.
+Cette spécification est la formalisation d'une brique déjà en production dans [Djibian](/fr/solutions/djibian/) et dans les outils `bl-foopgp` et `bl-pgpid`. La prochaine étape : réserver le NID `eid` auprès de l'IANA (revue d'expert, RFC 8141), soumettre le document à l'IETF, et construire autour de lui un écosystème de certification décentralisé.
 
-> 📖 Pour la vue grand public de l'**OpenPGP ID** — création, sauvegarde papier en QR codes, transposition sur clé physique, certification — voir la page **[solutions/openpgp-id](/fr/solutions/openpgp-id/)**.
+> 📖 Pour la vue grand public du **PGP ID** — création, sauvegarde papier en QR codes, transposition sur clé physique, certification — voir la page **[solutions/pgp-id](/fr/solutions/pgp-id/)**.
 
 [Rejoignez-nous.](/fr/about/join/) ✊🕊️💕

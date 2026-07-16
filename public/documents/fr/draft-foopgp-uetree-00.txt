@@ -88,10 +88,9 @@ Table des matières
        5.3.  Branche canonique : by-eid/
        5.4.  Visibilité : public par nature ou privé par nature
    6.  Ventilation des branches
-       6.1.  by-eid/u4/<2>/<4>/<6>/<u4>/
-       6.2.  by-eid/u5/<geo1>/<geo2>/<coord14>/<u5>/
-       6.3.  Branches alias : ventilation adaptative-graphème
-       6.3.1.  Forme des numéros sous by-tel/
+       6.1.  Principe : figée par version, calculable côté client
+       6.2.  Les ventilations de la version 1.2
+       6.3.  Notes par branche
        6.4.  Racines réservées pour les versions futures
    7.  Fichiers d'entrée
        7.1.  entity.vcf — l'enregistrement canonique (vCard 4.0)
@@ -546,181 +545,108 @@ Table des matières
 
 6.  Ventilation des branches
 
-   Deux régimes de ventilation (fan-out) coexistent, selon qu'une
-   branche doit ou non être commune à toutes les instances.
+   Chaque branche recourt à un ÉCLATEMENT (fan-out) pour limiter le
+   nombre d'enfants d'un répertoire.  En 1.2, TOUTES les branches
+   emploient le même principe : des préfixes imbriqués de la clé, de
+   longueur croissante, FIGÉS pour la version.
 
-   o  « by-eid/ » emploie une ventilation FIXE : sa structure est la
-      même dans toute instance uetree, indépendamment de la population
-      indexée.  C'est la branche vouée à être partagée par tous les
-      pairs — comparable à l'arbre des registres DNS —, donc sa forme
-      doit être prévisible et fusionnable sans négociation.  Sections
-      6.1 et 6.2.
+6.1.  Principe : figée par version, calculable côté client
 
-   o  Toutes les autres branches (« by-email/ », « by-tel/ »,
-      « by-name/ », et toute branche « by-* » future) emploient une
-      seule et même ventilation ADAPTATIVE-graphème (section 6.3) :
-      plates tant qu'un répertoire ne déborde pas, éclatées par préfixe
-      de graphème au-delà.  Ce sont des index alias, locaux à une
-      instance ; leur forme n'a pas à être négociée entre pairs.
+   La ventilation d'une branche est entièrement déterminée par la
+   version d'uetree.  Elle ne dépend PAS de la population indexée : deux
+   instances de la même version rangent la même clé au même endroit.
 
-   Le drapeau de topologie du « .FORMAT » (section 5.2) rend chaque
-   nœud auto-descriptif : un lecteur n'a jamais à déduire la profondeur
-   d'éclatement du nom de branche — il la lit.  C'est ce qui autorise
-   les régimes adaptatifs sans casser les lecteurs génériques.
+   Cette propriété est essentielle au modèle « serveur statique, client
+   intelligent » : un client qui cherche une clé CALCULE le chemin exact
+   depuis la clé et la version seules, puis émet une unique requête.  Le
+   serveur n'exécute aucun code — il sert des fichiers.  C'est ce qui
+   permet à une API comme vks [VKS] de rester un simple lookup ; uetree
+   en fait la règle pour toutes ses branches, ventilation comprise.
 
-6.1.  by-eid/u4/<2>/<4>/<6>/<u4>/
+   Une ventilation ADAPTATIVE (qui s'approfondirait selon le
+   remplissage) briserait cette propriété : le client ne pourrait pas
+   connaître la profondeur d'une clé sans code serveur ni sondages
+   successifs.  Elle est donc EXCLUE.  Le prix est l'absence de garantie
+   d'équilibrage (un compartiment peut se remplir plus qu'un autre) ; il
+   est assumé, et corrigeable en changeant la ventilation à une version
+   ultérieure.
 
-   Un identifiant u4 [I-D.foopgp-urn-eid] est de la forme collée
-   « u4<22-base64url><coord14> ».  Les 22 caractères de tête sont un
-   condensé (MD5 réduit en base64url), donc UNIFORMÉMENT distribués :
-   une clé de routage idéale.  L'éclatement prend trois préfixes
-   imbriqués de cette tête (le préfixe de type « u4 » n'est PAS répété
-   — on est déjà sous « by-eid/u4/ ») :
+6.2.  Les ventilations de la version 1.2
 
-       niveau 1 : les 2 premiers caractères base22
-       niveau 2 : les 4 premiers caractères base22
-       niveau 3 : les 6 premiers caractères base22
-       feuille  : l'eid collé complet (« u4… »), qui porte entity.vcf
+   Chaque branche découpe la clé en préfixes imbriqués.  « offset » est
+   le nombre de caractères de tête ignorés (pour retirer l'étiquette de
+   type « u4 »/« u5 » d'un eid) ; la feuille porte la clé et son ancre
+   (« entity.vcf », « .ALIASES » ou « .HOMONYMS »).  Les longueurs
+   comptent des CARACTÈRES Unicode (section 6.3).  Analyseur
+   de référence, en shell : « ${clé:offset:longueur} » à chaque niveau.
 
-   À 64 valeurs par caractère, l'espace terminal est
-   64^6 = 4096^3 ≈ 68,7 milliards de compartiments — du même ordre que
-   la population humaine visée, soit bien moins d'un enregistrement par
-   compartiment à saturation.  La distribution étant uniforme par
-   construction, aucun compartiment ne se remplit sensiblement plus
-   qu'un autre.
-
-   Exemple :
-
+   by-eid/u4/  offset 2, tranches 2/4/6 (tête base22, uniforme) :
        by-eid/u4/sR/sRyU/sRyUhE/\
-       u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76/
+       u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76/entity.vcf
 
-6.2.  by-eid/u5/<geo1>/<geo2>/<coord14>/<u5>/
+   by-eid/u5/  offset 2, tranches 5/8/11 (tête ts16, chronologique) :
+       by-eid/u5/00177/00177723/00177723623/\
+       u5001777236237.945e_43.30_005.38/entity.vcf
 
-   Un identifiant u5 [I-D.foopgp-urn-eid] est de la forme collée
-   « u5<ts16><coord14> », où « ts16 » est un horodatage et « coord14 »
-   le suffixe géographique « e<±lat><±lon> ».  Contrairement à u4, u5
-   n'a AUCUNE partie uniformément distribuée : la tête de « ts16 » est
-   commune à toutes les entités récentes (elle ne route pas), et les
-   coordonnées sont souvent grossières (nombre d'entités partagent un
-   même point de référence).  On route donc sur la géographie, du
-   grossier au fin :
+   by-fpr/     offset 0, tranches 5/8/11/14 :
+       by-fpr/0x8A0/0x8A08E6/0x8A08E6993/0x8A08E6993DF5/\
+       0x8A08E6993DF5B90DDF20062A3E2282D643C7FAF4/entity.vcf
 
-       niveau 1 : « e<±lat_entier><±lon_entier> »   (degré, ~111 km)
-       niveau 2 : « e<±lat.d><±lon.d> »             (0,1°, ~11 km)
-       niveau 3 : la coord14 complète               (0,01°, ~1,1 km)
-       feuille  : l'eid collé complet (« u5… »), qui porte entity.vcf
+   by-keyid/   offset 0, tranches 5/8/11/14 :
+       by-keyid/0x123/0x123456/0x123456789/0x123456789012/\
+       0x1234567890123456/.HOMONYMS
 
-   Le « e » de tête (pour « earth », la Terre) sert deux buts : ancrage
-   sémantique — tout u5 prend origine sur Terre par conception — et
-   garde-fou empêchant qu'un nom de répertoire commençant par un signe
-   moins (longitude négative) soit pris pour une option de ligne de
-   commande.
+   by-email/   offset 0, tranches 2/4/6/8 :
+       by-email/m@/m@m./m@m.de/m@m.de/m@m.de/.ALIASES
 
-   Cette ventilation est volontairement DÉSÉQUILIBRÉE : une métropole
-   dense et un océan désert relèvent du même barème.  Surtout, quand la
-   coord14 n'est qu'un centroïde partagé, les entités co-localisées
-   s'entassent dans un même compartiment de niveau 3, que la feuille
-   (l'eid complet) distingue mais que l'arbre ne subdivise pas.  Le
-   compromis est assumé en 1.x : le tri géographique, browsable et
-   stable, prime aujourd'hui sur l'équilibrage parfait.  Si la densité
-   devenait un problème opérationnel, une future catégorie d'eid
-   « uN » — définie comme un condensé de l'u5, donc uniformément
-   distribuée à la manière d'un u4 — MAY être introduite pour offrir
-   une ventilation par empreinte sans toucher au sens des u5 existants.
+   by-name/ (et toute autre « by-* »)  offset 0, tranches 1/2/3/4 :
+       by-name/X/Xî/Xî☺/Xî☺/Xî☺/.ALIASES
 
-   Il s'agit d'un éclatement déterministe, non d'un geohash : deux
-   points très proches de part et d'autre d'une frontière de niveau
-   (« 005.38 » et « 005.40 ») tombent dans des compartiments distincts.
-   Le but premier est le passage à l'échelle, non l'indexation spatiale.
+   Une clé plus courte qu'une tranche donne simplement des niveaux
+   répétés (inoffensif), comme « m@m.de » ci-dessus.
 
-   Exemple :
+6.3.  Notes par branche
 
-       by-eid/u5/e_43_005/e_43.3_005.3/e_43.30_005.38/\
-       u5001777236237.945e_43.30_005.38/
+   o  « by-eid/u4/ » : la tête base22 est un condensé uniformément
+      distribué → 64^6 = 4096^3 ≈ 68,7 milliards de compartiments,
+      équilibrés par construction.
 
-6.3.  Branches alias : ventilation adaptative-graphème
+   o  « by-eid/u5/ » : « ts16 » est un horodatage ; ses préfixes rangent
+      les entités par ORDRE CHRONOLOGIQUE (browsable), mais le haut de
+      l'arbre est temporellement GROUPÉ (les entités récentes partagent
+      la même tête).  Le déséquilibre est assumé : u5 est moins
+      volumineux, la profondeur (niveau 3 ≈ ~10 s) absorbe le
+      volume, et si la densité posait problème, une future catégorie
+      « uN » — définie comme un CONDENSÉ de l'u5, donc uniforme —
+      offrirait une ventilation par empreinte sans toucher aux u5
+      existants.
 
-   « by-email/ », « by-tel/ », « by-name/ » et toute branche « by-* »
-   future partagent UNE SEULE règle de ventilation.  Ce sont des index
-   secondaires (alias) : ils pointent vers un canonique « by-eid/ » via
-   le manifeste « .ALIASES » (section 7.2) et n'ont pas à être communs
-   entre instances.
+   o  « by-fpr/ » et « by-keyid/ » : la clé est l'empreinte (ou le key
+      ID long) OpenPGP, enregistrée avec le préfixe « 0x » et en
+      MAJUSCULES — les deux sont MUST, à la recherche comme au stockage.
+      Contrairement à vks (qui normalise sans « 0x »), uetree conserve
+      « 0x ».  L'empreinte v4 fait 40 hexits (SHA-1), la v6 en fait 64
+      (SHA-256) ; un key ID long en fait 16 (les collisions y sont
+      possibles → « .HOMONYMS »).  Ces feuilles sont des ALIAS vers le
+      canonique « by-eid/ » (l'eid précède la clé) ; leur PROJECTION
+      depuis les certificats est différée (consommateur : un backend de
+      serveur de clés).
 
-   Règle : le compartiment est PLAT — le nom de feuille est la clé
-   brute, placée directement sous la branche — et n'est éclaté par un
-   préfixe de graphème (un caractère, puis deux, etc.) QUE si le nombre
-   d'enfants directs dépasse un seuil d'exploitation (typiquement 10^4,
-   confortable pour ext4/btrfs/xfs/zfs).  L'éclatement au-delà du seuil
-   est spécifié pour une version ultérieure ; une implémentation 1.x
-   MAY rester plate.  Le drapeau « .FORMAT » de chaque nœud rend la
-   profondeur effective lisible sans convention de nom.
-
-   La clé brute par branche :
-
-       by-email/ : l'adresse complète telle que déclarée (partie
-                   domaine comparée sans casse, casse préservée à
-                   l'affichage).  Ex. « by-email/jdupont@yahoo.com/ ».
-       by-tel/   : la chaîne E.164 nue, « + » compris (section 6.3.1).
-                   Ex. « by-tel/+33612345678/ ».
-       by-name/  : le nom formaté (« FN » vCard) tel quel, sans
-                   slugation.  Ex. « by-name/Jean-Jacques Dupont/ ».
-                   C'est exactement ce que dépose l'outil de création
-                   de fiches, afin que canonisation et projection
-                   coïncident à l'octet près.
-
-   Une branche n'accepte une clé que si celle-ci est valide pour son
-   type (adresse conforme, numéro normalisable en E.164, « FN » non
-   vide) ; une clé invalide n'entre pas dans la branche en 1.x.
-
-   « by-tel/ » et « by-name/ » sont privées par nature (un numéro ou
-   un nom mis en correspondance avec une entité est une fuite de vie
-   privée) ; « by-email/ » l'est partiellement.  Cf. section 5.4.
-   « by-name/ » est en outre non canonique : deux entités peuvent
-   légitimement partager une clé — la désambiguïsation relève du
-   manifeste (section 7.3), non du chemin.
-
-   On perd ici le confort d'un arbre browsable par un humain (plus de
-   regroupement par TLD, par indicatif, par initiale) ; on y gagne
-   l'uniformité — une seule fonction pour toutes les branches présentes
-   et futures — et l'affranchissement de tout barème spécifique (Public
-   Suffix List, plans de numérotation, étiquettes de langue).
-
-6.3.1.  Forme des numéros sous by-tel/
-
-   Les numéros sont stockés exclusivement sous la forme stricte E.164
-   [E.164], « + » de tête compris, p. ex. « +33612345678 ».  Un numéro
-   non normalisable en E.164 n'entre pas dans la branche en 1.x.
-   Lorsqu'il est affiché ou inclus dans un URI, il SHOULD être rendu
-   « tel:+33612345678 » [RFC3966] ; le préfixe « tel: » n'est qu'une
-   convention de présentation et ne fait jamais partie du chemin disque.
+   o  « by-name/ » (et les « by-* » génériques, dont « by-tel/ ») : les
+      tranches comptent des CARACTÈRES Unicode, non des octets ; la clé
+      MUST être en UTF-8 et en forme de normalisation C (NFC, section
+      13) avant découpage, sinon un même nom produirait deux chemins.
 
 6.4.  Racines réservées pour les versions futures
 
-   Les noms de branches suivants sont réservés par cette spécification
-   pour un usage futur, afin d'empêcher une adoption ad hoc :
+   Le nom de branche suivant est réservé par cette spécification pour un
+   usage futur, afin d'empêcher une adoption ad hoc :
 
    o  « by-civil-status/ » — identifiants fondés sur l'état civil (nom
       de famille complet, prénoms, date et lieu de naissance).  De
       nombreux cas limites restent à trancher (diacritiques, dates
       partielles, lieux historiques, normalisation, droit applicable en
       matière de vie privée).  Non spécifié en 1.x.
-
-   o  « by-fpr/ » — recherche par empreinte de clé OpenPGP.  Comme
-      toute branche autre que « by-eid/ », elle suivrait la règle
-      adaptative-graphème de la section 6.3.  L'empreinte n'étant qu'un
-      index de plus — l'eid précède la clé et la clé le certifie, il
-      n'en dérive pas —, ses feuilles seraient des ALIAS vers le
-      canonique « by-eid/ ».  Pour la clé de feuille, l'API VKS de
-      keys.openpgp.org [VKS] offre un précédent de normalisation :
-      empreinte COMPLÈTE, hexadécimaux en MAJUSCULES et SANS préfixe
-      « 0x » (40 hexits pour une v4 SHA-1, 64 pour une v6 SHA-256) ;
-      VKS indexe aussi le key ID long (16 hexits) et fait pointer
-      l'empreinte d'une sous-clé, comme celle de la clé primaire, vers
-      la même clé.  VKS est une API de point (pas d'énumération), là où
-      une branche git est naturellement énumérable : elle inspire donc
-      le FORMAT de clé, non le mécanisme de distribution.  La partition
-      v4 / v6 et le traitement des key ID restent à préciser.  Non
-      spécifié en 1.x.
 
 7.  Fichiers d'entrée
 
@@ -1105,9 +1031,10 @@ Table des matières
    décrite par ce document, est la première version réelle :
    enregistrement canonique en vCard 4.0 (« entity.vcf »), « .FORMAT » à
    drapeau de topologie et colonnes de provenance, « .ALIASES »
-   manifeste répliqué, ventilation fixe sous « by-eid/ » et adaptative
-   ailleurs.  Les futures versions « 1.x » n'ajouteront de
-   fonctionnalités que de manière rétrocompatible.
+   manifeste répliqué, ventilation FIXE de toutes les branches (figée
+   par version, donc calculable côté client).  Les futures versions
+   « 1.x » n'ajouteront de fonctionnalités que de manière
+   rétrocompatible.
 
    Un outil qui connaît la version 1.x du format MUST tolérer la lecture
    d'instances de version 1.y où y > x : les fichiers conventionnels

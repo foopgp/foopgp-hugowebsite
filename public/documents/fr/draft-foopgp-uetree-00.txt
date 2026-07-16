@@ -301,7 +301,7 @@ Table des matières
    structuré en colonnes nommées supplémentaires, « path » restant le
    dernier champ (et pouvant alors contenir des espaces).  Un
    analyseur générique lit « type version flag » et traite le reste
-   comme opaque.
+   comme opaque ; « .HOMONYMS » (section 7.3) reste un pointeur simple.
 
 4.2.  Analyse syntaxique
 
@@ -309,14 +309,14 @@ Table des matières
 
        read type version value
 
-   C'est l'idiome recommandé pour tout outil qui lit « .FORMAT » ou
-   « .ALIASES ».  Les consommateurs MUST traiter comme des commentaires,
-   et ignorer, les lignes dont le premier caractère non blanc est
-   « # ».  Les lignes vides MUST être ignorées.
+   C'est l'idiome recommandé pour tout outil qui lit « .FORMAT »,
+   « .ALIASES » ou « .HOMONYMS ».  Les consommateurs MUST traiter comme
+   des commentaires, et ignorer, les lignes dont le premier caractère
+   non blanc est « # ».  Les lignes vides MUST être ignorées.
 
 4.3.  Fichiers conventionnels réservés
 
-   Deux noms de fichiers conventionnels utilisent la syntaxe du
+   Trois noms de fichiers conventionnels utilisent la syntaxe du
    pointeur typé et versionné à l'intérieur d'une instance uetree :
 
    o  « .FORMAT »  — exactement une ligne de pointeur.  Auto-localise
@@ -326,6 +326,11 @@ Table des matières
    o  « .ALIASES » — zéro, une ou plusieurs lignes de pointeur.  Le
       manifeste de membre d'une entité : il énumère toutes ses
       positions dans l'arbre et désigne la canonique (section 7.2).
+
+   o  « .HOMONYMS » — zéro, une ou plusieurs lignes de pointeur.  Porté
+      par une feuille d'alias que revendiquent plusieurs entités
+      distinctes (homonymes) ; énumère leurs positions canoniques
+      candidates (sections 7.3 et 8.2).
 
    Deux autres noms conventionnels sont réservés, sans employer la
    syntaxe du pointeur :
@@ -858,19 +863,29 @@ Table des matières
 
 7.3.  Fichiers d'ancrage d'une feuille
 
-   Toute feuille d'entité porte le manifeste « .ALIASES » (section 7.2)
-   en plus de son « .FORMAT ».  Deux cas :
+   Une feuille porte, en plus de son « .FORMAT », l'un des ancrages
+   suivants :
 
-   o  Feuille CANONIQUE — elle porte « entity.vcf » ET « .ALIASES », et
-      c'est sa propre position que le manifeste marque du drapeau « * ».
+   o  Feuille CANONIQUE — « entity.vcf » ET « .ALIASES » (section 7.2),
+      sa propre position étant marquée du drapeau « * » dans le
+      manifeste.
 
-   o  Feuille ALIAS — elle porte « .ALIASES » seul (drapeau « - » sur sa
-      propre position, « * » sur la position canonique).
+   o  Feuille ALIAS — « .ALIASES » seul (drapeau « - » sur sa propre
+      position, « * » sur la position canonique).
+
+   o  Feuille HOMONYME — « .HOMONYMS » (à la place de « .ALIASES »)
+      lorsqu'une même clé d'alias — un même slug « by-name/ », une même
+      adresse « by-email/ » — est revendiquée par PLUSIEURS entités
+      DISTINCTES.  « .HOMONYMS » énumère les positions canoniques
+      candidates (section 8.2).  Il est nécessaire : une feuille plate
+      ne pouvant porter qu'un seul « .ALIASES », sans lui « resolve »
+      perdrait tous les candidats sauf un.
 
    Validation (échec bruyant, réalisé par « check ») : le drapeau « * »
-   MUST apparaître exactement une fois dans un manifeste ; la position
-   qu'il marque MUST porter « entity.vcf » ; un « entity.vcf » trouvé
-   sur une position NON marquée est un record orphelin (warning).
+   MUST apparaître exactement une fois dans un manifeste « .ALIASES » ;
+   la position qu'il marque MUST porter « entity.vcf » ; un
+   « entity.vcf » trouvé sur une position NON marquée est un record
+   orphelin (warning).
 
 7.4.  Nommage des fichiers de feuille
 
@@ -953,22 +968,28 @@ Table des matières
    Un identifiant d'alias n'est pas canonique : plusieurs entités
    peuvent légitimement revendiquer la même clé — deux personnes de même
    nom sous « by-name/ », ou une adresse réellement partagée sous
-   « by-email/ ».  uetree ne pose PAS de fichier de désambiguïsation
-   dédié ; le cas se traite ainsi :
+   « by-email/ ».
 
-   o  Cas propre d'une ressource partagée (une boîte aux lettres pour
-      plusieurs personnes) : créer une ENTITÉ « u5 » pour la ressource
-      elle-même ; les humains la référencent via « RELATED »/« MEMBER ».
-      La ressource a alors son propre canonique « by-eid/u5/ ».
+   Cas propre d'une RESSOURCE partagée (une boîte aux lettres pour
+   plusieurs personnes) : créer une ENTITÉ « u5 » représentant la
+   ressource ; les humains la référencent via « RELATED »/« MEMBER ».
+   La ressource a alors son propre canonique « by-eid/u5/ », et la
+   feuille d'alias pointe vers lui sans ambiguïté.
 
-   o  Cas résiduel (deux entités distinctes revendiquant la même feuille
-      d'alias) : « resolve » (section 8.3) renvoie l'ENSEMBLE des
-      canoniques candidats, chacun annoté de son niveau de confiance.
-      Un déploiement MAY refuser la seconde revendication ou la
-      désambiguïser par un suffixe de feuille.
-
-   L'ambiguïté est ainsi un objet de première classe remonté au
+   Cas des HOMONYMES proprement dits (deux entités RÉELLEMENT distinctes
+   partageant un slug ou une adresse) : la feuille d'alias partagée
+   porte un « .HOMONYMS » (section 7.3) énumérant les positions
+   canoniques candidates.  « resolve » (section 8.3) renvoie alors
+   l'ENSEMBLE de ces canoniques, chacun annoté de son niveau de
+   confiance.  L'ambiguïté est un objet de première classe remonté au
    consommateur, jamais un écrasement silencieux.
+
+   Ce cas reste un PROBLÈME OUVERT en 1.x.  La collision est DÉTECTÉE à
+   la projection (elle émet un avertissement), mais l'écriture
+   automatique du « .HOMONYMS » et la politique exacte — fusionner,
+   refuser la seconde revendication, ou suffixer la feuille — ne sont
+   pas encore arrêtées.  Le format RÉSERVE l'ancre ; la procédure sera
+   normalisée ultérieurement.
 
 8.3.  Résolution
 

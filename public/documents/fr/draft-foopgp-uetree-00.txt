@@ -43,10 +43,13 @@ Résumé
    instances uetree indépendantes qui peuvent se publier, se partager
    ou se référencer les unes les autres.
 
-   Ce document définit la version 1.1 de uetree.  La version 1.0 a été
-   publiée en mai 2026.  La version 1.1 ajoute une recommandation
-   normative sur le nommage des fichiers de feuille, afin de faciliter
-   les fusions lors de la promotion d'une entité.
+   Ce document définit la version 1.2 de uetree.  Les versions 1.0 et
+   1.1, esquissées en 2026, n'ont existé qu'en développement ; la 1.2
+   est la première version réellement déployée.  Elle adopte vCard 4.0
+   [RFC6350] comme format d'enregistrement canonique (« entity.vcf »),
+   enrichit le pointeur « .FORMAT » d'un drapeau de topologie et de
+   colonnes de provenance, et fait de « .ALIASES » un manifeste
+   répliqué à résolution en temps constant.
 
 Statut de ce mémo
 
@@ -91,16 +94,14 @@ Table des matières
        6.3.1.  Forme des numéros sous by-tel/
        6.4.  Racines réservées pour les versions futures
    7.  Fichiers d'entrée
-       7.1.  README.md
-       7.2.  .ALIASES — pointeurs intra-structure
-       7.3.  .HOMONYMS — désambiguïsation
-       7.4.  .LINKS — pointeurs extra-structure
-       7.5.  Exclusion mutuelle des fichiers d'ancrage d'une entrée
-       7.6.  Nommage des fichiers de feuille (1.1)
+       7.1.  entity.vcf — l'enregistrement canonique (vCard 4.0)
+       7.2.  .ALIASES — manifeste répliqué de l'entité
+       7.3.  Fichiers d'ancrage d'une feuille
+       7.4.  Nommage des fichiers de feuille
    8.  Opérations canoniques
        8.1.  Promotion
        8.2.  Désambiguïsation
-       8.3.  Résolution des chaînes d'alias
+       8.3.  Résolution
    9.  Modes de déploiement
        9.1.  Instance monolithique privée
        9.2.  Instances publiques scindées
@@ -169,6 +170,15 @@ Table des matières
       l'idée d'une arborescence de répertoires comme structure de
       données auto-descriptive.
 
+   o  vCard 4.0 [RFC6350] et CardDAV [RFC6352].  uetree ADOPTE vCard 4.0
+      comme format de son enregistrement canonique (« entity.vcf »,
+      section 7.1) plutôt que d'inventer un schéma.  Il ne réimplémente
+      PAS la couche de synchronisation serveur-de-carnet de CardDAV :
+      celle-ci est remplacée par git signé appliqué à n'importe quelle
+      branche de l'arbre.  Différence de fond : dans uetree l'identité
+      est une clé primaire AUTO-CERTIFIANTE (l'eid, certifié par le
+      certificat OpenPGP), non un « UID » opaque choisi par le client.
+
    uetree se distingue de ces travaux en ce qu'il n'est ni un protocole
    de résolution de noms, ni une base de données, mais une convention
    d'agencement de système de fichiers.  Il décrit comment disposer les
@@ -191,18 +201,19 @@ Table des matières
               peut être connue sous plusieurs identifiants.
 
    identifiant Une chaîne qui désigne une entité.  Les identifiants se
-              répartissent en types : empreintes numériques (généralement
-              issues de fonction de hachage cryptographique), adresses e-mail, numéros de
-              téléphone au format E.164, noms lisibles par un humain.
+              répartissent en types : empreintes numériques
+              (généralement issues d'une fonction de hachage
+              cryptographique), adresses e-mail, numéros de téléphone au
+              format E.164, noms lisibles par un humain.
 
-   eid        OpenPGP Entity Identifier (identifiant d'entité OpenPGP),
-              tel que défini dans [I-D.foopgp-openpgp-id].  Deux
-              variantes sont en usage : u4 (humains, dérivé de l'état
-              civil) et u5 (toute autre entité, dérivé d'un horodatage
-              et d'une origine géographique).  Ce document traite les
-              eid comme un genre particulier d'identifiant
-              numérique ; le format ne dépend pas de leur
-              structure interne.
+   eid        Entity IDentifier (identifiant d'entité), tel que défini
+              dans [I-D.foopgp-urn-eid].  Deux variantes sont en usage :
+              u4 (humains, dérivé de l'état civil) et u5 (toute autre
+              entité, dérivé d'un horodatage et d'une origine
+              géographique).  Un eid s'écrit sous forme collée
+              « u4<valeur> » ou « u5<valeur> ».  Ce document traite les
+              eid comme un genre particulier d'identifiant numérique ;
+              le format ne dépend pas de leur structure interne.
 
    instance   Un déploiement particulier de uetree : une hiérarchie de
               répertoires qui suit cette spécification, éventuellement
@@ -228,7 +239,7 @@ Table des matières
 
    Le format « uetree » est la convention décrite dans ce document.
    Il est versionné.  Les outils peuvent déclarer qu'ils implémentent
-   « uetree 1.1 » de la même façon qu'ils déclarent implémenter
+   « uetree 1.2 » de la même façon qu'ils déclarent implémenter
    HTTP/1.1 ou TLS 1.3.
 
    Une instance de uetree est une arborescence de répertoires
@@ -238,10 +249,21 @@ Table des matières
    différentes, des contrôles d'accès différents et des ensembles
    d'entités différents.
 
+   Le format ne suppose pas une source unique de vérité, mais un ORDRE
+   DE CONFIANCE des sources : ① le certificat OpenPGP complet obtenu par
+   WKD, ② le même certificat obtenu d'un serveur de clés, ③ le fichier
+   « entity.vcf » (section 7.1), qui peut embarquer le certificat
+   minimalisé et des liens vers les certificats complets.  Les index
+   (« .ALIASES », branches « by-* ») sont des PROJECTIONS de
+   « entity.vcf » ; celui-ci est rafraîchi depuis la source supérieure
+   disponible.  Toute ambiguïté ou violation SHOULD dégrader
+   bruyamment, jamais par un écrasement silencieux.
+
    Le format ne prescrit pas comment les instances communiquent entre
-   elles.  Les références inter-instances peuvent s'exprimer sous forme
-   d'entrées « .LINKS » (section 7.4) portant des URI ; toute
-   intégration plus poussée est laissée aux parties qui déploient.
+   elles.  Les références inter-instances s'expriment sous forme de
+   pointeurs uetree (section 4.1) — typiquement dans un « .ALIASES » —
+   pouvant désigner un nœud d'une autre instance ; toute intégration
+   plus poussée est laissée aux parties qui déploient.
 
 
 4.  Pointeur typé et versionné
@@ -255,10 +277,9 @@ Table des matières
 
    o  <type> : la famille du pointeur.  Types définis dans ce
       document : « uetree » (pointeur intra- ou inter-instance vers un
-      nœud uetree), « uftree » (pointeur vers un nœud uftree), « uri »
-      (URI générique [RFC3986]) et « file » (chemin POSIX absolu).
-      Des versions futures ou des spécifications sœurs MAY enregistrer
-      d'autres types.
+      nœud uetree), « uri » (URI générique [RFC3986]) et « file »
+      (chemin POSIX absolu).  Des versions futures ou des
+      spécifications sœurs MAY enregistrer d'autres types.
 
    o  <version> : la version syntaxique de la famille, p. ex. « 1.0 »,
       « 1.1 », « 2.0 ».  Les consommateurs qui ne reconnaissent pas une
@@ -279,8 +300,7 @@ Table des matières
    structuré en colonnes nommées supplémentaires, « path » restant le
    dernier champ (et pouvant alors contenir des espaces).  Un
    analyseur générique lit « type version flag » et traite le reste
-   comme opaque ; les autres fichiers (« .HOMONYMS ») restent des
-   pointeurs simples.
+   comme opaque.
 
 4.2.  Analyse syntaxique
 
@@ -288,35 +308,33 @@ Table des matières
 
        read type version value
 
-   C'est l'idiome recommandé pour tout outil qui lit « .FORMAT »,
-   « .ALIASES », « .HOMONYMS » ou « .LINKS ».  Les consommateurs MUST
-   traiter comme des commentaires, et ignorer, les lignes dont le
-   premier caractère non blanc est « # ».  Les lignes vides MUST être
-   ignorées.
+   C'est l'idiome recommandé pour tout outil qui lit « .FORMAT » ou
+   « .ALIASES ».  Les consommateurs MUST traiter comme des commentaires,
+   et ignorer, les lignes dont le premier caractère non blanc est
+   « # ».  Les lignes vides MUST être ignorées.
 
 4.3.  Fichiers conventionnels réservés
 
-   Quatre noms de fichiers conventionnels utilisent la syntaxe du
+   Deux noms de fichiers conventionnels utilisent la syntaxe du
    pointeur typé et versionné à l'intérieur d'une instance uetree :
 
    o  « .FORMAT »  — exactement une ligne de pointeur.  Auto-localise
       le répertoire dans lequel il se trouve (section 5.2).  Requis à
       chaque niveau d'une instance.
 
-   o  « .ALIASES » — zéro, une ou plusieurs lignes de pointeur.
-      Références intra-structure — typiquement des pointeurs uetree
-      vers des feuilles canoniques situées ailleurs dans la même
-      instance, ou dans une autre instance (section 7.2).
+   o  « .ALIASES » — zéro, une ou plusieurs lignes de pointeur.  Le
+      manifeste de membre d'une entité : il énumère toutes ses
+      positions dans l'arbre et désigne la canonique (section 7.2).
 
-   o  « .HOMONYMS » — zéro, une ou plusieurs lignes de pointeur.
-      Références vers des feuilles sœurs qui partagent un identifiant
-      dérivé sans partager d'identité sémantique, utilisées pour la
-      désambiguïsation des noms et des empreintes faibles (section 7.3).
+   Deux autres noms conventionnels sont réservés, sans employer la
+   syntaxe du pointeur :
 
-   o  « .LINKS »   — zéro, une ou plusieurs lignes de pointeur.
-      Références extra-structure : URI, chemins de système de fichiers,
-      tout ce qui est extérieur à l'espace de noms propre à uetree
-      (section 7.4).
+   o  « entity.vcf » — l'enregistrement canonique d'une entité, une
+      fiche vCard 4.0 [RFC6350] brute sur disque (section 7.1).
+
+   o  « GITREMOTE/ » — un répertoire de configuration déclarative,
+      côté client, destiné aux couches de contrôle d'accès git
+      (section 11).
 
    Aucun autre nom de fichier n'est réservé par cette spécification.
    Les outils MUST ignorer les fichiers qu'ils ne reconnaissent pas.
@@ -331,7 +349,6 @@ Table des matières
 
        <racine-instance>/
        ├── .FORMAT
-       ├── README.md            (description humaine au niveau instance)
        ├── by-eid/
        │   ├── .FORMAT
        │   ├── u4/...
@@ -345,7 +362,7 @@ Table des matières
        ├── by-name/
        │   ├── .FORMAT
        │   └── ...
-       └── REMOTE/              (optionnel, lorsqu'hébergé dans un dépôt
+       └── GITREMOTE/           (optionnel, lorsqu'hébergé dans un dépôt
                                  git sous la couche de contrôle d'accès
                                  décrite en section 11)
 
@@ -467,8 +484,7 @@ Table des matières
    entité qu'elle indexe.  Les sous-branches sous « by-eid/ » sont
    nommées d'après la variante d'identifiant qu'elles utilisent :
 
-   o  « by-eid/u4/ » pour la variante u4 de l'identifiant d'entité
-      OpenPGP ;
+   o  « by-eid/u4/ » pour la variante u4 de l'identifiant d'entité ;
    o  « by-eid/u5/ » pour la variante u5 ;
    o  toute future variante d'identifiant conçue pour être non
       ambiguë, résistante à la contrefaçon et publiable.
@@ -504,10 +520,10 @@ Table des matières
    publique si le titulaire utilise OpenPGP ouvertement, ou sensible
    sinon.
 
-   Dimension B — le contenu.  Le « README.md » et les autres fichiers
+   Dimension B — le contenu.  Le « entity.vcf » et les autres fichiers
    d'une feuille peuvent être publics ou chiffrés, indépendamment de la
-   branche.  Une feuille sous « by-eid/u5/ » peut porter un README en
-   clair ; une feuille de la même branche peut porter un README chiffré
+   branche.  Une feuille sous « by-eid/u5/ » peut porter un record en
+   clair ; une feuille de la même branche peut porter un record chiffré
    destiné à un seul cercle.
 
    La règle opérationnelle est donc :
@@ -683,32 +699,68 @@ Table des matières
       partielles, lieux historiques, normalisation, droit applicable en
       matière de vie privée).  Non spécifié en 1.x.
 
+   o  « by-fpr/ » — recherche par empreinte de clé OpenPGP.  Comme
+      toute branche autre que « by-eid/ », elle suivrait la règle
+      adaptative-graphème de la section 6.3.  L'empreinte n'étant qu'un
+      index de plus — l'eid précède la clé et la clé le certifie, il
+      n'en dérive pas —, ses feuilles seraient des ALIAS vers le
+      canonique « by-eid/ ».  La partition v4 (SHA-1) / v6 (SHA-256) et
+      le rôle du key ID restent à préciser.  Non spécifié en 1.x.
+
 7.  Fichiers d'entrée
 
-7.1.  README.md
+7.1.  entity.vcf — l'enregistrement canonique (vCard 4.0)
 
-   Un répertoire feuille MUST contenir exactement l'un de « README.md »,
-   « .ALIASES » ou « .HOMONYMS » (section 7.5).  Lorsqu'une feuille est
-   l'enregistrement canonique d'une entité, elle porte « README.md ».
+   L'enregistrement canonique d'une entité est un fichier
+   « entity.vcf » : une fiche vCard 4.0 [RFC6350] brute sur disque — le
+   format disque EST vCard, sans couche intermédiaire.  La feuille
+   canonique le porte, en plus de son « .ALIASES » (section 7.2) et de
+   son « .FORMAT ».  La documentation humaine ne fait PAS partie de la
+   spécification : un déployeur MAY poser un « README.md » non normatif
+   à côté ; uetree ne le référence pas.
 
-   Le contenu de « README.md » est du Markdown de forme libre en
-   uetree 1.0 et 1.1.  Les implémentations SHOULD néanmoins suivre ces
-   conventions :
+   Propriétés vCard employées :
 
-   o  Un bloc de frontmatter YAML optionnel tout au début, utilisé pour
-      des métadonnées structurées.  Les clés recommandées incluent
-      « email », « eid-claimed », « first-source-csv » (pour les flux
-      de trésorerie), etc.  Les clés à la sémantique inconnue MUST être
-      préservées par les lecteurs et restituées à l'identique par les
-      écrivains (loi de Postel).
+   o  « FN » — REQUIS.  Le nom formaté ; un record dont « FN » ne peut
+      être rempli est un échec bruyant.  Le slug « by-name » en dérive
+      (section 13).
 
-   o  Un titre de premier niveau fournissant un court intitulé humain.
+   o  « UID » — l'eid sous forme d'URN collée, « urn:eid:u4<valeur> »
+      ou « urn:eid:u5<valeur> » (section 12).  Une entité pas encore
+      promue MAY porter un autre UID (p. ex. fondé sur son adresse)
+      jusqu'à l'acquisition d'un eid.
 
-   o  Un corps narratif libre, incluant éventuellement des liens vers
-      d'autres feuilles exprimés sous forme d'URI uetree (section 12).
+   o  « KIND » — « individual » (défaut pour u4), « group », « org » ou
+      « location ».  uetree enregistre des entités, pas seulement des
+      humains.
 
-   Des versions futures pourront rendre certaines clés YAML
-   obligatoires.  D'ici là, les lecteurs SHOULD tolérer la variation.
+   o  « KEY » — DEUX fois (voir l'exemple ci-dessous) : un pointeur vers
+      le certificat OpenPGP COMPLET et à jour côté serveur, et le
+      certificat MINIMALISÉ embarqué en clair — clés publiques et
+      dernières auto-signatures (révocation éventuelle comprise), SANS
+      les UAT.
+
+   o  « PHOTO » — les UAT (avatars) non révoqués à l'instant de
+      (re)génération du record.
+
+   o  « EMAIL », « TEL;TYPE=voice », « GEO », « LANG », « URL »,
+      « RELATED »/« MEMBER » (relations entité↔entité) — selon la vCard.
+
+   Exemple des deux propriétés « KEY » (repliées ici pour la largeur) :
+
+       KEY;MEDIATYPE=application/pgp-keys:\
+       https://keys.foopgp.org/pks/lookup?op=get&search=0x<fpr>
+       KEY:data:application/pgp-keys;base64,<cert minimalisé en base64>
+
+   Le corps de « entity.vcf » n'est pas signé en propre : son autorité
+   vient de la signature git du commit qui l'introduit (le OWNER, cf.
+   section 7.2.1) et, pour les propriétés transcrites d'un certificat,
+   du « KEY » embarqué (auto-signatures re-vérifiables hors ligne) ou de
+   la re-résolution du certificat vivant.  Conformément à l'ordre de
+   confiance des sources (section 3), un outil RAFRAÎCHIT le record
+   depuis la source supérieure disponible (WKD, serveur de clés) plutôt
+   que de se fier au seul cert minimalisé embarqué, qui peut être
+   périmé (révocation plus récente).
 
 7.2.  .ALIASES — manifeste répliqué de l'entité
 
@@ -791,108 +843,49 @@ Table des matières
    source souveraine.
 
 
-7.3.  .HOMONYMS — désambiguïsation
+7.3.  Fichiers d'ancrage d'une feuille
 
-   Lorsqu'un identifiant dérivé — typiquement un slug sous
-   « by-name/ », ou une empreinte faible dans [I-D.foopgp-uftree] —
-   recouvre plusieurs entités distinctes sans lien sémantique, le
-   répertoire du slug ne contient ni « README.md » ni « .ALIASES »,
-   mais un fichier « .HOMONYMS » listant les feuilles de
-   désambiguïsation.
+   Toute feuille d'entité porte le manifeste « .ALIASES » (section 7.2)
+   en plus de son « .FORMAT ».  Deux cas :
 
-   Exemple :
+   o  Feuille CANONIQUE — elle porte « entity.vcf » ET « .ALIASES », et
+      c'est sa propre position que le manifeste marque du drapeau « * ».
 
-       cat by-name/sylvie-renaud/.HOMONYMS
-       uetree 1.1 /by-name/sylvie-renaud-1/
-       uetree 1.1 /by-name/sylvie-renaud-marseille/
+   o  Feuille ALIAS — elle porte « .ALIASES » seul (drapeau « - » sur sa
+      propre position, « * » sur la position canonique).
 
-   Les implémentations SHOULD présenter les homonymes à l'utilisateur
-   et le laisser choisir, ou les remonter comme liste de
-   désambiguïsation aux consommateurs en amont.
+   Validation (échec bruyant, réalisé par « check ») : le drapeau « * »
+   MUST apparaître exactement une fois dans un manifeste ; la position
+   qu'il marque MUST porter « entity.vcf » ; un « entity.vcf » trouvé
+   sur une position NON marquée est un record orphelin (warning).
 
-7.4.  .LINKS — pointeurs extra-structure
+7.4.  Nommage des fichiers de feuille
 
-   Un fichier « .LINKS » dans un répertoire feuille référence des
-   ressources extérieures à l'instance uetree : URI arbitraires, chemins
-   POSIX, CID IPFS, empreintes de blobs git, etc.  C'est le pendant de
-   « .ALIASES » pour les références qui quittent l'espace de noms
-   structuré.
-
-   Exemple :
-
-       cat by-eid/u4/.../.../<u4>/.LINKS
-       uri  1.0 https://example.org/about/
-       uri  1.0 keys.foopgp.org/pks/lookup?op=index&search=0x<fpr>
-       file 1.0 /var/lib/foopgp/photos/<u4>.jpg
-
-   L'ensemble exact des types acceptés est ouvert et peut s'étendre :
-   de nouveaux types sont enregistrés par des spécifications sœurs sans
-   nécessiter de nouvelle version de uetree.
-
-7.5.  Exclusion mutuelle des fichiers d'ancrage d'une entrée
-
-   Un répertoire d'entrée bien formé contient exactement l'un des trois
-   fichiers d'ancrage suivants, en plus de son « .FORMAT » :
-
-       README.md      ← le répertoire décrit une entité canonique
-                        unique.
-
-       .ALIASES       ← le répertoire pointe vers un autre emplacement
-                        canonique (l'entité a été déplacée ou promue).
-
-       .HOMONYMS      ← le répertoire porte un identifiant dérivé
-                        ambigu (slug ou empreinte faible) recouvrant
-                        plusieurs entités sans lien.
-
-   « .LINKS » est orthogonal : il MAY coexister avec « README.md », ou
-   se tenir seul dans une entrée uftree où aucune description humaine
-   n'est appropriée.
-
-7.6.  Nommage des fichiers de feuille (1.1)
-
-   L'expérience opérationnelle de la promotion d'entité (section 8.1) a
-   montré que les fusions de feuilles entre deux instances — par
-   exemple le passage de « by-email/<e>/ » à « by-eid/u4/<u4>/ » lors
-   d'une certification — doivent être sûres face à des conflits de
-   fichiers arbitraires.  Les fichiers aux noms génériques tels qu'une
-   simple date, un simple libellé ou un simple compteur risquent des
-   écrasements silencieux.
-
-   uetree 1.1 ajoute donc une règle de niveau SHOULD :
+   La promotion d'entité (section 8.1) et la fusion d'instances
+   (section 9) déplacent le contenu d'une feuille vers une autre.  Les
+   fichiers aux noms génériques — une simple date, un libellé, un
+   compteur — risquent des écrasements silencieux.  uetree pose donc une
+   règle de niveau SHOULD :
 
       Tout fichier d'un répertoire feuille, autre que les fichiers
-      conventionnels réservés (« .FORMAT », « README.md »,
-      « .ALIASES », « .HOMONYMS », « .LINKS »), SHOULD porter un nom de
-      fichier intrinsèquement unique — suffisamment spécifique pour
-      qu'aucune collision ne survienne lorsque le contenu d'une feuille
-      est fusionné dans une autre.
+      conventionnels réservés (« .FORMAT », « entity.vcf »,
+      « .ALIASES »), SHOULD porter un nom intrinsèquement unique —
+      assez spécifique pour qu'aucune collision ne survienne lorsque le
+      contenu d'une feuille est fusionné dans une autre.
 
-   Le motif recommandé est de préfixer le nom de fichier par un
-   horodatage ISO 8601 à la seconde, suivi d'un libellé de source.  Par
-   exemple, un reçu produit par un flux de trésorerie :
+   Le motif recommandé préfixe le nom par un horodatage ISO 8601 à la
+   seconde, suivi d'un libellé de source.  Par exemple, un reçu produit
+   par un flux de trésorerie :
 
        receipt/2026-05-12T14:32:08+00:00_HelloAsso_foopgp.asc
 
-   L'exception est « README.md », qui est singulier par conception et
-   dont la fusion est toujours un acte éditorial explicite.
-
    Certains fichiers ont un contenu structuré, ligne par ligne, qui se
-   prête à une fusion automatique par concaténation et tri du contenu ;
-   de tels fichiers MAY partager un nom générique entre feuilles, à
-   condition que l'outil qui réalise la fusion sache les combiner.
-   uetree 1.1 laisse à l'implémentation le catalogue des noms de
-   fichiers fusionnables ; des versions futures MAY le normaliser via un
-   fichier « /.MERGE-RULES » à la racine de l'instance.
-
-   Rétrocompatibilité :
-
-   o  Une instance « uetree 1.0 » ne porte pas cette obligation ; un
-      outil 1.1 rencontrant des noms en collision dans une instance 1.0
-      émet un avertissement et se rabat sur une résolution manuelle.
-
-   o  Une instance « uetree 1.1 » qui contient néanmoins des noms
-      génériques en collision est dans un état non conforme et devrait
-      être réparée en renommant les fichiers fautifs.
+   prête à une fusion par concaténation et tri ; de tels fichiers MAY
+   partager un nom générique entre feuilles, à condition que l'outil de
+   fusion sache les combiner.  uetree laisse à l'implémentation le
+   catalogue des noms fusionnables ; une version future MAY le
+   normaliser via un fichier « /.MERGE-RULES » à la racine de
+   l'instance.
 
 
 8.  Opérations canoniques
@@ -905,64 +898,79 @@ Table des matières
    certification, dans un système de confiance externe, d'un
    identifiant fort (eid) que l'entité est connue pour détenir.
 
-   La procédure canonique est :
+   La promotion est une opération de PUR SYSTÈME DE FICHIERS ; elle
+   n'appelle pas git (la synchronisation git est une étape distincte,
+   cf. section 11).  La procédure :
 
    1.  Vérifier, dans le système de confiance pertinent (par exemple la
-       toile de confiance foopgp [I-D.foopgp-openpgp-id]), que l'eid
-       revendiqué est lié à un justificatif d'identité vérifié.
+       toile de confiance foopgp [I-D.foopgp-urn-eid]), que l'eid
+       revendiqué est certifié.  Un certificat portant plusieurs eids
+       vivants est INVALIDE et ignoré (pas de sélection « primaire »).
 
-   2.  Calculer le chemin cible sous « by-eid/<branche>/<id>/ » en
-       appliquant les règles d'éclatement de la section 6.
+   2.  Calculer le chemin cible sous « by-eid/<u4|u5>/… » par les
+       règles de ventilation de la section 6.
 
-   3.  Déplacer (« git mv » ou déplacement de système de fichiers) le
-       « README.md » de la feuille source vers la cible.  Déplacer de
-       même tous les fichiers propres à la feuille (sous réserve de
-       l'unicité de la section 7.6).  Lorsqu'un fichier existe à la fois
-       à la source et à la cible et que l'outil connaît pour lui une
-       règle de fusion par contenu, le fusionner sur place à la cible ;
-       sinon, avorter la promotion et exiger une résolution manuelle.
+   3.  Déplacer (« mv », pas « git mv ») « entity.vcf » et tous les
+       fichiers propres de la feuille source vers la cible (sous
+       réserve de l'unicité de la section 7.4).  En cas de collision
+       sans règle de fusion connue, avorter et exiger une résolution
+       manuelle.
 
-   4.  À la feuille source, remplacer le « README.md » déplacé par un
-       fichier « .ALIASES » pointant vers la nouvelle position
-       canonique.  Préserver le « .FORMAT » de la source.
+   4.  Réécrire l'« UID » de « entity.vcf » vers la forme eid
+       « urn:eid:u4<valeur> » (section 12).
 
-   5.  Mettre à jour la chaîne de fichiers « .FORMAT » le long du
-       chemin cible pour que chaque répertoire intermédiaire soit
-       correctement auto-localisé.
+   5.  Régénérer les manifestes « .ALIASES » de toutes les positions de
+       l'entité par projection déterministe (section 7.2) : la position
+       « by-eid/ » y devient canonique (« * »), la source devient
+       alias (« - »).
 
-   Cette procédure laisse le chemin source résoluble : les utilisateurs
-   ou outils qui ne connaissent l'entité que par son identifiant non
-   canonique (une ancienne adresse e-mail, un numéro de téléphone, un
-   slug) peuvent toujours parcourir la chaîne d'alias pour atteindre la
-   feuille canonique.
+   6.  Mettre à jour la chaîne des « .FORMAT » le long du chemin cible
+       (drapeau de topologie, provenance) pour que chaque répertoire
+       intermédiaire soit correctement auto-localisé.
+
+   La promotion étant une APPROPRIATION (l'instance revalide l'entité au
+   regard de sa propre toile de confiance), l'« owner-eid » de la chaîne
+   canonique est estampillé à l'identité qui promeut (section 5.2.1).
+   Le chemin source reste résoluble : un consommateur qui ne connaît que
+   l'identifiant non canonique atteint le canonique en une seule lecture
+   de manifeste (section 8.3).
 
 8.2.  Désambiguïsation
 
-   Lorsqu'une seconde entité partage légitimement un slug « by-name/ »,
-   la procédure canonique (section 6.5) est :
+   Un identifiant d'alias n'est pas canonique : plusieurs entités
+   peuvent légitimement revendiquer la même clé — deux personnes de même
+   nom sous « by-name/ », ou une adresse réellement partagée sous
+   « by-email/ ».  uetree ne pose PAS de fichier de désambiguïsation
+   dédié ; le cas se traite ainsi :
 
-   1.  Déplacer le « README.md » de la première entité vers un
-       répertoire de slug désambiguïsé, p. ex. « sylvie-renaud-1/ ».
+   o  Cas propre d'une ressource partagée (une boîte aux lettres pour
+      plusieurs personnes) : créer une ENTITÉ « u5 » pour la ressource
+      elle-même ; les humains la référencent via « RELATED »/« MEMBER ».
+      La ressource a alors son propre canonique « by-eid/u5/ ».
 
-   2.  Créer un nouveau répertoire de slug pour la seconde entité,
-       p. ex. « sylvie-renaud-2/ » ou « sylvie-renaud-naturopathe/»,
-       avec son propre « README.md » et sa chaîne « .FORMAT ».
+   o  Cas résiduel (deux entités distinctes revendiquant la même feuille
+      d'alias) : « resolve » (section 8.3) renvoie l'ENSEMBLE des
+      canoniques candidats, chacun annoté de son niveau de confiance.
+      Un déploiement MAY refuser la seconde revendication ou la
+      désambiguïser par un suffixe de feuille.
 
-   3.  Remplacer le « README.md » du répertoire de slug d'origine par
-       un fichier « .HOMONYMS » listant les deux nouveaux emplacements.
+   L'ambiguïté est ainsi un objet de première classe remonté au
+   consommateur, jamais un écrasement silencieux.
 
-8.3.  Résolution des chaînes d'alias
+8.3.  Résolution
 
-   Un résolveur qui suit les pointeurs « .ALIASES » MUST détecter les
-   cycles et s'arrêter en cas de cycle.  Implémentation recommandée :
+   La résolution est en TEMPS CONSTANT et sans traversée.  Depuis
+   n'importe quelle position d'une entité, un outil lit le manifeste
+   « .ALIASES » (section 7.2) et suit sa ligne marquée « * » pour
+   atteindre directement le canonique.  Il n'y a pas de chaîne de
+   pointeurs à dérouler, donc pas de cycle possible.
 
-   o  Maintenir un ensemble des chemins canoniques déjà visités.
-
-   o  Refuser de récurser si un chemin est rencontré une seconde fois.
-
-   o  Limiter la profondeur de récursion à une petite constante (par
-      exemple seize) et avorter avec une erreur si la limite est
-      atteinte.
+   « resolve <identifiant> » renvoie un ENSEMBLE de positions
+   canoniques (généralement un singleton), chacune annotée de son
+   niveau de confiance : « certified » quand la position résolue est
+   sous « by-eid/ » (l'eid y est certifié), « claimed » sinon (feuille
+   d'alias pas encore reliée à un eid certifié — cf. la vérification
+   email/SMS, chantier ouvert).
 
 
 9.  Modes de déploiement
@@ -1002,8 +1010,8 @@ Table des matières
    post-receive (par exemple une scission de sous-arbre par
    « git filter-repo » ou un script de miroir incrémental périodique).
 
-   Ce mode combine la commodité opérationnelle (source unique de
-   vérité, mises à jour atomiques) et la sûreté de publication (seules
+   Ce mode combine la commodité opérationnelle (point d'écriture
+   unique, mises à jour atomiques) et la sûreté de publication (seules
    les branches publiables atteignent le monde), au prix d'un risque de
    divergence si le processus de miroir échoue silencieusement.  Les
    opérateurs SHOULD surveiller le retard du miroir.
@@ -1011,26 +1019,24 @@ Table des matières
 
 10.  Versionnage et dégradation gracieuse
 
-   « uetree 1.0 » est la version initiale publiée.  « uetree 1.1 » est
-   la version décrite par ce document ; elle ajoute la règle de nommage
-   des fichiers de feuille de la section 7.6 et est par ailleurs
-   rétrocompatible.  Les futures versions « 1.x » n'ajouteront de
-   nouvelles fonctionnalités que de manière rétrocompatible :
-   éclatement plus profond, syntaxe « .ALIASES » plus riche, nouvelles
-   branches, fichiers conventionnels supplémentaires au niveau de la
-   feuille.
+   « uetree 1.0 » et « uetree 1.1 », esquissées en 2026, n'ont existé
+   qu'en développement et ne sont pas déployées.  « uetree 1.2 »,
+   décrite par ce document, est la première version réelle :
+   enregistrement canonique en vCard 4.0 (« entity.vcf »), « .FORMAT » à
+   drapeau de topologie et colonnes de provenance, « .ALIASES »
+   manifeste répliqué, ventilation fixe sous « by-eid/ » et adaptative
+   ailleurs.  Les futures versions « 1.x » n'ajouteront de
+   fonctionnalités que de manière rétrocompatible.
 
-   Un outil qui connaît la version 1.x du format MUST tolérer la
-   lecture d'instances de version 1.y où y > x : les fichiers
-   conventionnels inconnus SHOULD être ignorés avec un avertissement,
-   les types de pointeurs inconnus dans « .LINKS » SHOULD être écartés,
-   les éclatements plus profonds SHOULD être parcourus.
+   Un outil qui connaît la version 1.x du format MUST tolérer la lecture
+   d'instances de version 1.y où y > x : les fichiers conventionnels
+   inconnus SHOULD être ignorés avec un avertissement, les colonnes
+   supplémentaires d'un pointeur SHOULD être traitées comme opaques, les
+   éclatements plus profonds SHOULD être parcourus.
 
-   « uetree 2.0 » est réservé aux changements cassants — adoption de la
-   Public Suffix List pour « by-email/ », éclatement fondé sur une
-   empreinte pour « by-eid/u4/ », ou toute autre transformation qu'un
-   outil 1.x ne peut accommoder.  Les implémentations MUST refuser de
-   traiter une instance 2.0 avec une logique limitée à 1.x.
+   « uetree 2.0 » est réservé aux changements cassants qu'un outil 1.x
+   ne pourrait accommoder.  Les implémentations MUST refuser de traiter
+   une instance 2.0 avec une logique limitée à 1.x.
 
 
 11.  Interaction avec les couches de contrôle d'accès
@@ -1038,30 +1044,40 @@ Table des matières
    Une instance uetree hébergée dans un dépôt git utilise typiquement
    une couche de contrôle d'accès externe pour imposer qui peut pousser
    quels commits.  Le format lui-même ne spécifie pas de contrôle
-   d'accès ; le motif recommandé, utilisé par les implémentations de
-   référence, est de stocker les politiques d'accès sous un
-   sous-répertoire réservé de premier niveau « REMOTE/ », dont le
-   contenu est lu par un hook « pre-receive » sur le dépôt nu.
+   d'accès ; il RÉSERVE le répertoire de premier niveau « GITREMOTE/ »,
+   une configuration DÉCLARATIVE côté client (versionnée et poussée avec
+   l'arbre), consommée par des hooks « pre-receive » CÔTÉ SERVEUR.  Les
+   exécutables des hooks vivent côté serveur (dépôt nu), PAS dans
+   « GITREMOTE/ » : configuration cliente et outil serveur sont de
+   natures opposées.
 
-   Le chemin « REMOTE/ » est réservé par convention : les outils MUST
-   l'ignorer lorsqu'ils calculent l'univers des entités, et les
-   politiques de contrôle d'accès SHOULD restreindre qui peut le
-   modifier.
+   Le contenu de « GITREMOTE/ » (ACL par eid, rejet des commits non
+   signés ou non fast-forward, référence unique acceptée, paramètres de
+   consensus) fait l'objet d'une SPÉCIFICATION COMPAGNON, « git access
+   control », indépendante de uetree et partagée avec le registre
+   décentralisé djis.  Le présent document ne la détaille pas.
 
-   La séparation entre « .FORMAT » (ce qui est ici) et les fichiers de
-   contrôle d'accès (qui peut modifier quoi) est intentionnelle : elle
-   permet à chacune des deux couches d'évoluer indépendamment.
+   Le chemin « GITREMOTE/ » est réservé par convention : les outils MUST
+   l'ignorer lorsqu'ils calculent l'univers des entités.  La séparation
+   entre « .FORMAT »/« .ALIASES » (ce qui est ici) et le contrôle
+   d'accès (qui peut modifier quoi) est intentionnelle : chaque couche
+   évolue indépendamment.
 
 
 12.  Schéma d'URI (non normatif)
 
    Le format de pointeur typé et versionné est compatible avec une
-   lecture en URI : un pointeur « uetree 1.1 /by-eid/u4/sR/sRyU/<u4>/ »
-   se traduit naturellement en un URI de la forme
-   « uetree:/by-eid/u4/sR/sRyU/<u4>/ ».  Au sein d'une même instance
-   hôte, de tels URI identifient un nœud sans ambiguïté.  Les références
-   inter-instances étendraient la syntaxe avec une composante
-   d'autorité, par exemple « uetree://<hôte>/by-eid/u4/<u4>/ ».
+   lecture en URI : un pointeur uetree désignant
+   « /by-eid/u4/sR/sRyU/sRyUhE/<u4>/ » se traduit naturellement en un
+   URI de la forme « uetree:/by-eid/u4/sR/sRyU/sRyUhE/<u4>/ ».  Au sein
+   d'une même instance hôte, de tels URI identifient un nœud sans
+   ambiguïté.  Les références inter-instances ajouteraient une
+   composante d'autorité, p. ex. « uetree://<hôte>/by-eid/u4/<u4>/ ».
+
+   À ne pas confondre avec l'« UID » de « entity.vcf » : celui-ci est
+   l'URN d'IDENTITÉ de l'entité, « urn:eid:u4<valeur> » (collée, sans
+   séparateur), stable et indépendante de l'instance qui l'héberge — là
+   où l'URI « uetree: » désigne une POSITION dans un arbre.
 
    Ce document n'enregistre pas formellement le schéma d'URI
    « uetree ».  L'enregistrement pourra suivre une fois qu'une ou
@@ -1071,18 +1087,17 @@ Table des matières
 
 13.  Internationalisation
 
-   « by-name/ » est la seule branche à dépendance linguistique
-   intrinsèque ; elle porte une étiquette de langue BCP 47 [RFC5646] au
-   niveau 1 et emploie la normalisation NFC (section 6.5).
+   « by-name/ » est la branche à dépendance linguistique intrinsèque.
+   Sa clé est le nom formaté (« FN » de la vCard) tel quel, en UTF-8 et
+   en forme de normalisation Unicode C [UAX15] (NFC) — sans
+   translittération ASCII, emojis compris.  La ventilation étant plate
+   (section 6.3), il n'y a pas de niveau d'étiquette de langue : la
+   langue préférée de l'entité est portée par la propriété « LANG » de
+   « entity.vcf », étiquette BCP 47 [RFC5646].
 
-   Les fichiers « README.md » sont agnostiques quant à la langue par
-   défaut ; l'auteur SHOULD déclarer la langue au moyen d'une clé de
-   frontmatter YAML « lang: » fixée à une étiquette BCP 47.  Les
-   traductions vivent dans des fichiers compagnons nommés
-   « README.md.<tag> », p. ex. « README.md.en » ou « README.md.zh-Hant ».
-   Les outils qui ne connaissent que « README.md » ignorent
-   silencieusement les compagnons de traduction, préservant la
-   compatibilité avec l'écosystème Markdown au sens large.
+   « FN » étant REQUIS (section 7.1), toute entité valide possède une
+   feuille « by-name » ; elle reste de toute façon joignable par eid,
+   e-mail ou téléphone.
 
 
 14.  Considérations IANA
@@ -1093,9 +1108,10 @@ Table des matières
    ultérieure, un enregistrement sous le registre « Provisional URI
    Scheme » serait demandé conformément à la RFC 7595.
 
-   Si les types de pointeurs de « .LINKS » étaient déplacés vers un
-   registre tenu de façon centralisée, un enregistrement sous la
-   politique « Specification Required » [RFC8126] serait demandé.
+   Le champ « UID » des enregistrements « entity.vcf » emploie l'espace
+   de noms d'URN « eid », dont l'enregistrement auprès de l'IANA est
+   demandé par la spécification compagnon [I-D.foopgp-urn-eid] ; le
+   présent document n'en demande pas lui-même.
 
 
 15.  Considérations de vie privée
@@ -1138,27 +1154,26 @@ Table des matières
 
    Le format repose sur des signatures apposées sur le contenu pour
    l'authenticité.  Lorsqu'il est stocké dans un dépôt git, le motif
-   recommandé est d'exiger des commits signés et de définir, dans un
-   fichier de politique externe (« REMOTE/pre-receive.acl » dans
-   l'implémentation de référence), l'ensemble des signataires autorisés
-   et la profondeur des écritures qu'ils peuvent réaliser.
+   recommandé est d'exiger des commits signés et de définir les
+   signataires autorisés et la profondeur de leurs écritures dans la
+   configuration « GITREMOTE/ » (section 11), appliquée par un hook
+   « pre-receive » côté serveur.
 
    uetree lui-même ne définit aucune primitive cryptographique.  Tous
    les identifiants sont pris comme des chaînes opaques ; leur
    infalsifiabilité est de la responsabilité des schémas qui les
-   produisent ([I-D.foopgp-openpgp-id] pour les eid, [RFC5321] pour les
+   produisent ([I-D.foopgp-urn-eid] pour les eid, [RFC5321] pour les
    adresses e-mail, [E.164] pour les numéros de téléphone).
 
-   Les outils qui suivent « .ALIASES » ou « .LINKS » MUST assainir les
-   valeurs de pointeur qu'ils lisent — ne jamais les exécuter, ne
-   jamais supposer qu'elles renvoient à des emplacements sûrs — et MUST
-   détecter les cycles (section 8.3).
+   Les outils qui lisent « .ALIASES » MUST assainir les valeurs de
+   pointeur — ne jamais les exécuter, ne jamais supposer qu'elles
+   renvoient à des emplacements sûrs.  La résolution étant en temps
+   constant (section 8.3), aucune détection de cycle n'est nécessaire.
 
-   Lorsque des pointeurs « .LINKS » référencent des ressources
-   externes, aller chercher ces ressources peut divulguer le fait que
-   le consommateur était en train de lire une feuille particulière.
-   Les outils SHOULD permettre aux opérateurs de désactiver la
-   résolution automatique des « .LINKS ».
+   Les propriétés « KEY », « PHOTO » et « URL » de « entity.vcf »
+   peuvent référencer des ressources externes ; aller les chercher peut
+   divulguer qu'un consommateur lisait une feuille particulière.  Les
+   outils SHOULD permettre d'en désactiver la résolution automatique.
 
 
 17.  Références
@@ -1192,10 +1207,15 @@ Table des matières
    [UAX15]     Davis, M. et K. Whistler, "Unicode Normalization
                Forms", Unicode Standard Annex #15, 2024.
 
-   [I-D.foopgp-openpgp-id]
-               Brucker, J.J. et Mnème, "OpenPGP ID — Universal
-               Digital Identity", draft-foopgp-openpgp-id-00,
-               avril 2026.
+   [RFC6350]   Perreault, S., "vCard Format Specification",
+               RFC 6350, août 2011.
+
+   [RFC6868]   Daboo, C., "Parameter Value Encoding in iCalendar
+               and vCard", RFC 6868, février 2013.
+
+   [I-D.foopgp-urn-eid]
+               Brucker, J.J. et Mnème, "The 'eid' URN Namespace",
+               draft-foopgp-urn-eid-00, 2026.
 
 17.2.  Références informatives
 
@@ -1237,10 +1257,9 @@ Table des matières
    [PSL]       Mozilla Foundation, "Public Suffix List",
                <https://publicsuffix.org/>.
 
-   [I-D.foopgp-uftree]
-               Brucker, J.J. et Mnème, "uftree — Universal Files
-               Tree, an Early Sketch", draft-foopgp-uftree-00,
-               mai 2026.
+   [RFC6352]   Daboo, C., "CardDAV: vCard Extensions to Web
+               Distributed Authoring and Versioning (WebDAV)",
+               RFC 6352, août 2011.
 
 
 Adresses des auteurs

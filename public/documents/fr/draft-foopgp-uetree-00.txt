@@ -102,6 +102,7 @@ Table des matières
        8.1.  Promotion
        8.2.  Désambiguïsation
        8.3.  Résolution
+       8.4.  Cas aux limites et dégradation prédictible
    9.  Modes de déploiement
        9.1.  Instance monolithique privée
        9.2.  Instances publiques scindées
@@ -704,8 +705,17 @@ Table des matières
       adaptative-graphème de la section 6.3.  L'empreinte n'étant qu'un
       index de plus — l'eid précède la clé et la clé le certifie, il
       n'en dérive pas —, ses feuilles seraient des ALIAS vers le
-      canonique « by-eid/ ».  La partition v4 (SHA-1) / v6 (SHA-256) et
-      le rôle du key ID restent à préciser.  Non spécifié en 1.x.
+      canonique « by-eid/ ».  Pour la clé de feuille, l'API VKS de
+      keys.openpgp.org [VKS] offre un précédent de normalisation :
+      empreinte COMPLÈTE, hexadécimaux en MAJUSCULES et SANS préfixe
+      « 0x » (40 hexits pour une v4 SHA-1, 64 pour une v6 SHA-256) ;
+      VKS indexe aussi le key ID long (16 hexits) et fait pointer
+      l'empreinte d'une sous-clé, comme celle de la clé primaire, vers
+      la même clé.  VKS est une API de point (pas d'énumération), là où
+      une branche git est naturellement énumérable : elle inspire donc
+      le FORMAT de clé, non le mécanisme de distribution.  La partition
+      v4 / v6 et le traitement des key ID restent à préciser.  Non
+      spécifié en 1.x.
 
 7.  Fichiers d'entrée
 
@@ -778,16 +788,19 @@ Table des matières
 
    où « flag » vaut « * » pour l'UNIQUE position canonique et « - »
    pour chaque position alias.  « ctime », « mtime » et « owner-eid »
-   ont le même sens qu'en section 5.2 et, le manifeste étant répliqué,
-   sont identiques dans toutes les copies.
+   ont le même sens qu'en section 5.2.  Une implémentation les
+   estampille d'après la LIAISON de l'entité (sa feuille canonique) : le
+   même « ctime » et le même « owner-eid » sur toutes les lignes,
+   « mtime » à « - » (section 7.2.1).  Le manifeste étant en outre
+   répliqué, il est identique dans toutes les copies.
 
    Exemple (le même contenu dans chaque « .ALIASES » de l'entité) :
 
        uetree 1.2 * 1777236237 - u4aBcd…e_44.83_001.55 \
        /by-eid/u4/aB/aBcd/aBcdEf/u4aBcd…e_44.83_001.55/
-       uetree 1.2 - 1777236240 - u4aBcd…e_44.83_001.55 \
+       uetree 1.2 - 1777236237 - u4aBcd…e_44.83_001.55 \
        /by-email/jdupont@yahoo.com/
-       uetree 1.2 - 1777236240 - u4aBcd…e_44.83_001.55 \
+       uetree 1.2 - 1777236237 - u4aBcd…e_44.83_001.55 \
        /by-name/Jean-Jacques Dupont/
 
    Propriétés :
@@ -971,6 +984,53 @@ Table des matières
    sous « by-eid/ » (l'eid y est certifié), « claimed » sinon (feuille
    d'alias pas encore reliée à un eid certifié — cf. la vérification
    email/SMS, chantier ouvert).
+
+8.4.  Cas aux limites et dégradation prédictible
+
+   Ces cas (informatifs) découlent du principe directeur : la source
+   suit un ordre de confiance (section 3), les index sont des
+   projections, « resolve » renvoie un ensemble, et l'ambiguïté est un
+   objet de première classe — jamais un écrasement silencieux.
+
+   R1  Adresse (ou numéro) partagée par plusieurs entités.  Le nœud
+       d'alias est un point de jointure : cas propre, une ENTITÉ « u5 »
+       représente la ressource partagée (section 8.2) ; cas résiduel,
+       « resolve » renvoie l'ensemble des candidats.
+
+   R2  Certificat portant plusieurs eids vivants : INVALIDE, ignoré
+       avant tout traitement.  Un certificat valide porte au plus un eid
+       vivant [I-D.foopgp-urn-eid] ; pas de sélection « primaire ».
+
+   R3  UID ou UAT révoqué ou expiré : seuls les éléments valides à
+       l'instant de (re)génération se projettent (« by-email »,
+       « by-tel ») ou vont en « PHOTO ».  La source supérieure (WKD,
+       serveur) prime si elle porte une révocation plus récente que le
+       certificat embarqué.
+
+   R4  Squat d'identifiant (e-mail/tél non certifié) : la feuille reste
+       INDICATIVE.  « resolve » l'annote « claimed » (vs « certified »
+       sous « by-eid/ »).  Des procédures de vérification e-mail/SMS
+       sont un chantier ouvert.
+
+   R5  Collision d'eid : impossible par construction.  Une collision de
+       condensé u4 se résout en raffinant la coord14 (procédure
+       récursive [I-D.foopgp-urn-eid]), non au niveau de l'arbre ;
+       « by-eid/ » est donc sans collision.
+
+   R6  Cycle de résolution : impossible.  Le manifeste répliqué et son
+       drapeau donnent le canonique en une lecture (section 8.3) — il
+       n'y a pas de chaîne de pointeurs à suivre.
+
+   R7  Nom.  « FN » est REQUIS (échec bruyant sinon) ; la clé
+       « by-name » est le nom en Unicode (emojis compris), sans
+       translittération.  Une entité reste joignable par eid, e-mail ou
+       téléphone même si son nom pose problème.
+
+   R8  Multi-instances : une fonctionnalité, non un cas limite (un arbre
+       distinct par application).  La fusion est possible mais non
+       obligatoire : même eid → fusion (noms de fichiers uniques,
+       section 7.4, record réconcilié par ordre de confiance) ; même
+       adresse mais eids différents → nouvelle entité « u5 » (R1).
 
 
 9.  Modes de déploiement
@@ -1256,6 +1316,10 @@ Table des matières
 
    [PSL]       Mozilla Foundation, "Public Suffix List",
                <https://publicsuffix.org/>.
+
+   [VKS]       keys.openpgp.org, "Verifying Keyserver (VKS) API",
+               <https://keys.openpgp.org/about/api>.  API de fait
+               (non normalisée), définie par l'implémentation Hagrid.
 
    [RFC6352]   Daboo, C., "CardDAV: vCard Extensions to Web
                Distributed Authoring and Versioning (WebDAV)",

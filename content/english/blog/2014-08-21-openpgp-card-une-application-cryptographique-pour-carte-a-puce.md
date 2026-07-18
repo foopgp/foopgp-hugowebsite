@@ -1,1 +1,0 @@
-../../french/blog/2014-08-21-openpgp-card-une-application-cryptographique-pour-carte-a-puce.md

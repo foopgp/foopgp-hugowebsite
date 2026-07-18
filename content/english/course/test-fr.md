@@ -1,1 +1,0 @@
-../../french/course/test-fr.md

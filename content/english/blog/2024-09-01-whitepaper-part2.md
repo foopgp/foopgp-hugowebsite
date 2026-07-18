@@ -1,1 +1,0 @@
-../../french/blog/2024-09-01-whitepaper-part2.md

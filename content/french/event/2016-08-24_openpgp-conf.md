@@ -1,1 +1,0 @@
-../../english/event/2016-08-24_openpgp-conf.md

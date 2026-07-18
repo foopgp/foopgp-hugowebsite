@@ -1,4 +1,0 @@
-This document has been renamed and refocused on the "eid" URN
-namespace registration.  Please see:
-
-   https://foopgp.org/documents/en/draft-foopgp-urn-eid-00.txt

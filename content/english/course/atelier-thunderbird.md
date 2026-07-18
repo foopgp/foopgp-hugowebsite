@@ -1,1 +1,0 @@
-../../french/course/atelier-thunderbird.md

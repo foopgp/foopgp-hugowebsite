@@ -1,20 +1,20 @@
 ---
 Title:   "Réconcilier vCard et OpenPGP : et si votre carnet d'adresses savait qui vous parle ?"
 Date:    2026-07-18T10:00:00+02:00
-Tags:    [ "openpgp", "vcard", "identity", "rfc", "interop" ]
+Tags:    [ "openpgp", "vcard", "identity", "rfc" ]
 categories: [ "News", "Solution" ]
 draft: false
 author: [ "Jean-Jacques Brucker", "Mnème" ]
 description: "Une vCard décrit un contact mais ne prouve rien ; un certificat OpenPGP prouve tout mais ne décrit personne. Ils ne font qu'un — et vos téléphones auraient tout intérêt à manipuler des certificats OpenPGP à la place des vCards."
 lang: fr
-bg_image: "images/backgrounds/page-title.jpg"
-image: "images/solutions/identity.png"
+bg_image: "images/backgrounds/library.jpg"
+image: "images/blog/2026/Two-volume_Yellow_Pages.png"
 type: "post"
 ---
 
 Ouvrez le carnet d'adresses de votre téléphone, touchez « partager le contact ». Ce qui part, c'est une **vCard** : un petit fichier texte, un nom, un numéro, un e-mail, peut-être une photo. Universel, lisible partout — Android, iOS, Outlook, Thunderbird. Et **totalement invérifiable**. Rien, dans une vCard, ne dit qu'elle vient bien de la personne annoncée. On en fabrique une « de votre banque » en dix secondes.
 
-À côté, il existe un objet qui, lui, ne ment pas : le **certificat OpenPGP**. Signé, vérifiable, il permet de chiffrer et de signer. Mais aux yeux du grand public, ce n'est « qu'une clé » — un bloc opaque qui ne décrit personne et n'a jamais sa place dans un carnet d'adresses.
+À côté, il existe un objet qui, lui, ne ment pas : le **certificat OpenPGP**. Signé, vérifiable, il permet de chiffrer et de signer. Mais aux yeux de beaucoup, ce n'est « qu'une clé » — un bloc opaque qui ne décrit personne et n'a que rarement sa place dans un carnet d'adresses.
 
 Deux objets qui s'ignorent depuis trente ans. La bonne nouvelle : **ils sont bien plus proches qu'ils n'en ont l'air.**
 
@@ -34,9 +34,9 @@ Un **certificat OpenPGP** ([RFC 9580](https://www.rfc-editor.org/rfc/rfc9580)), 
 
 La question qui réconcilie les deux mondes : *et si chaque ligne de la vCard était un User ID ?*
 
-## Un certificat qui **est** une fiche d'annuaire signée
+## Le certificat **est** une fiche d'annuaire signée
 
-C'est exactement ce que fait notre outillage : un **User ID par propriété vCard** (`FN:…`, `EMAIL:…`, `TEL:…`, `ADR:…`, `NOTE:…`), chacun étant par construction **une ligne vCard valide**, le tout ancré sur une identité pivot — l'[**EID**](/fr/blog/2026-04-28-openpgp-id-spec/) (`urn:eid:…`), identifiant déterministe, décentralisé et respectueux de la vie privée. Un certificat OpenPGP devient alors une **fiche d'annuaire complète et signée**, où seul le propriétaire peut ajouter ou retirer un champ.
+C'est exactement ce que fait notre outillage : un **User ID par propriété vCard** (`FN:…`, `EMAIL:…`, `TEL:…`, `ADR:…`, `NOTE:…`), chacun étant par construction **une ligne vCard valide**, le tout ancré sur un identifiant pivot — l'[**EID**](/fr/blog/2026-04-28-openpgp-id-spec/) (`urn:eid:…`), déterministe, décentralisé et soucieux de la vie privée. Un certificat OpenPGP devient alors une **fiche d'annuaire complète et signée**, où seul le propriétaire peut ajouter ou retirer un champ.
 
 Deux familles d'EID cohabitent, selon la nature de l'entité :
 
@@ -60,7 +60,7 @@ Chaque ligne est signée par l'association elle-même. Nul ne peut y glisser de 
 
 Pour voir la traduction à l'œuvre, **entièrement dans votre navigateur, sans rien envoyer**, nous avons publié [**pgp2vcard.html**](https://keys.foopgp.org/pgp2vcard.html) : collez un certificat OpenPGP, récupérez une vCard 4.0 — ou son équivalent JSON, le **jCard** ([RFC 7095](https://www.rfc-editor.org/rfc/rfc7095)). La clé publique elle-même ressort dans un champ `KEY`, prête à chiffrer.
 
-## Pourquoi votre téléphone aurait tout intérêt à basculer
+## Pourquoi votre smartphone aurait tout intérêt à basculer
 
 Imaginez maintenant que votre carnet d'adresses stocke des **certificats OpenPGP** là où il stocke aujourd'hui des vCards. Ce que vous y gagnez n'est pas cosmétique :
 
@@ -72,7 +72,7 @@ Imaginez maintenant que votre carnet d'adresses stocke des **certificats OpenPGP
 
 Le carnet d'adresses cesse d'être une **liste de rumeurs** pour devenir un **annuaire de preuves**. Sans nouvelle appli, sans nouveau compte : juste en apprenant à nos logiciels habituels à traiter un certificat comme un contact de première classe.
 
-## Les briques existent déjà ; il manque un pont
+## Les briques existent déjà ; il manquait un pont
 
 Rien de tout cela n'exige d'inventer un format. Tout est là : la vCard ([RFC 6350](https://www.rfc-editor.org/rfc/rfc6350)) et son encodage de paramètres ([RFC 6868](https://www.rfc-editor.org/rfc/rfc6868)) pour décrire ; le jCard ([RFC 7095](https://www.rfc-editor.org/rfc/rfc7095)) pour manipuler en JSON ; OpenPGP ([RFC 9580](https://www.rfc-editor.org/rfc/rfc9580)) pour signer et chiffrer ; notre [spécification `urn:eid:`](/fr/blog/2026-04-28-openpgp-id-spec/), en cours de dépôt à l'IANA, pour l'identité pivot. La synchronisation, elle aussi, a son standard côté vCard — CardDAV ([RFC 6352](https://www.rfc-editor.org/rfc/rfc6352)) — où rien n'interdit de faire transiter des certificats plutôt que des fiches nues.
 
@@ -87,11 +87,11 @@ Mais l'annuaire d'antan avait deux défauts que le nôtre corrige exactement :
 - il était **édité par l'opérateur**, en **opt-out** — on y figurait *par défaut*, et il fallait réclamer la « liste rouge » pour en sortir. Le nôtre est **décentralisé et opt-in** : personne ne l'édite, rien n'y paraît sans que le propriétaire l'ait **signé** ;
 - le contenu de la fiche ne vous appartenait pas vraiment. Ici, **chacun décide de ce qu'il expose** — les seules obligations étant un **nom** et un **e-mail**, l'un comme l'autre **librement choisis**.
 
-C'est aussi la réponse à qui s'inquiéterait d'y voir des données personnelles : il ne s'agit pas de PII *exposées*, mais d'un **annuaire public dont on choisit soi-même l'existence et le contenu**. Les pages blanches, mais **choisies au lieu de subies**.
+C'est aussi la réponse à qui s'inquiéterait d'y voir des données personnelles : il ne s'agit pas de vos données confidentielles *exposées*, mais d'un **annuaire public dont on choisit soi-même l'existence et le contenu**. Les pages blanches, mais **choisies au lieu de subies**.
 
 ## À vous de jouer
 
-Passez un certificat — le vôtre, celui d'un correspondant — dans [**pgp2vcard.html**](https://keys.foopgp.org/pgp2vcard.html), et regardez une fiche complète surgir d'une clé. Puis imaginez le jour où « partager le contact » partagera, à la place d'un fichier que n'importe qui peut contrefaire, **une carte que personne ne peut usurper**.
+Passez un certificat — le vôtre ou celui d'un correspondant — dans [**pgp2vcard.html**](https://keys.foopgp.org/pgp2vcard.html), et regardez une fiche complète surgir d'une clé. Puis imaginez le jour où « partager le contact » partagera, à la place d'un fichier que n'importe qui peut contrefaire, **la carte d'identité que vous avez personnalisée, et que personne ne peut usurper**.
 
 C'est une petite marche technique. C'est un grand changement de confiance.
 

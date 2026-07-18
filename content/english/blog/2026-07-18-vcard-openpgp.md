@@ -1,20 +1,20 @@
 ---
 Title:   "Reconciling vCard and OpenPGP: what if your address book knew who's talking to you?"
 Date:    2026-07-18T10:00:00+02:00
-Tags:    [ "openpgp", "vcard", "identity", "rfc", "interop" ]
+Tags:    [ "openpgp", "vcard", "identity", "rfc" ]
 categories: [ "News", "Solution" ]
 draft: false
 author: [ "Jean-Jacques Brucker", "Mnème" ]
 description: "A vCard describes a contact but proves nothing; an OpenPGP certificate proves everything but describes no one. They are one and the same — and your phones would have every reason to handle OpenPGP certificates instead of vCards."
 lang: en
-bg_image: "images/backgrounds/page-title.jpg"
-image: "images/solutions/identity.png"
+bg_image: "images/backgrounds/library.jpg"
+image: "images/blog/2026/Two-volume_Yellow_Pages.png"
 type: "post"
 ---
 
 Open your phone's address book, tap "share contact". What leaves your device is a **vCard**: a little text file — a name, a number, an e-mail, maybe a photo. Universal, readable everywhere — Android, iOS, Outlook, Thunderbird. And **utterly unverifiable**. Nothing in a vCard says it really comes from the person it names. You can forge one "from your bank" in ten seconds.
 
-Next to it sits an object that does not lie: the **OpenPGP certificate**. Signed, verifiable, it lets you encrypt and sign. But to most people it's "just a key" — an opaque blob that describes no one and has never had a place in an address book.
+Next to it sits an object that does not lie: the **OpenPGP certificate**. Signed, verifiable, it lets you encrypt and sign. But to most people it's "just a key" — an opaque blob that describes no one and has rarely had a place in an address book.
 
 Two objects that have ignored each other for thirty years. The good news: **they are far closer than they look.**
 
@@ -34,7 +34,7 @@ An **OpenPGP certificate** ([RFC 9580](https://www.rfc-editor.org/rfc/rfc9580)) 
 
 The question that reconciles the two worlds: *what if each line of the vCard were a User ID?*
 
-## A certificate that **is** a signed directory entry
+## The certificate **is** a signed directory entry
 
 That is exactly what our tooling does: one **User ID per vCard property** (`FN:…`, `EMAIL:…`, `TEL:…`, `ADR:…`, `NOTE:…`), each being, by construction, **a valid vCard line**, all anchored on a pivot identity — the [**EID**](/blog/2026-04-28-openpgp-id-spec/) (`urn:eid:…`), a deterministic, decentralised, privacy-preserving identifier. An OpenPGP certificate thus becomes a **complete, signed directory entry**, where only the owner can add or remove a field.
 
@@ -60,7 +60,7 @@ Every line is signed by the association itself. No one can slip false informatio
 
 To see the translation at work, **entirely in your browser, with nothing uploaded**, we published [**pgp2vcard.html**](https://keys.foopgp.org/pgp2vcard.html): paste an OpenPGP certificate, get a vCard 4.0 back — or its JSON counterpart, **jCard** ([RFC 7095](https://www.rfc-editor.org/rfc/rfc7095)). The public key itself comes out in a `KEY` field, ready to encrypt.
 
-## Why your phone would have every reason to switch
+## Why your smartphone would have every reason to switch
 
 Now imagine your address book stored **OpenPGP certificates** where it stores vCards today. What you gain is not cosmetic:
 
@@ -72,7 +72,7 @@ Now imagine your address book stored **OpenPGP certificates** where it stores vC
 
 The address book stops being a **list of rumours** and becomes a **directory of proofs**. No new app, no new account: just by teaching our everyday software to treat a certificate as a first-class contact.
 
-## The bricks already exist; a bridge is missing
+## The bricks already exist; a bridge was missing
 
 None of this requires inventing a format. It's all there: the vCard ([RFC 6350](https://www.rfc-editor.org/rfc/rfc6350)) and its parameter encoding ([RFC 6868](https://www.rfc-editor.org/rfc/rfc6868)) to describe; jCard ([RFC 7095](https://www.rfc-editor.org/rfc/rfc7095)) to handle it in JSON; OpenPGP ([RFC 9580](https://www.rfc-editor.org/rfc/rfc9580)) to sign and encrypt; our [`urn:eid:` specification](/blog/2026-04-28-openpgp-id-spec/), on its way to IANA registration, for the pivot identity. Synchronisation, too, has its vCard-side standard — CardDAV ([RFC 6352](https://www.rfc-editor.org/rfc/rfc6352)) — where nothing forbids carrying certificates rather than bare cards.
 
@@ -87,11 +87,11 @@ But the old directory had two flaws that ours fixes precisely:
 - it was **edited by the operator**, on an **opt-out** basis — you were in it *by default*, and had to ask to be unlisted. Ours is **decentralised and opt-in**: no one edits it, nothing appears unless the owner has **signed** it;
 - the content of your entry wasn't really yours. Here, **everyone decides what they expose** — the only requirements being a **name** and an **e-mail**, both **freely chosen**.
 
-It's also the answer to anyone worried about seeing personal data there: this isn't PII *exposed*, but a **public directory whose very existence and content you choose yourself**. The White Pages, but **chosen instead of imposed**.
+It's also the answer to anyone worried about seeing personal data there: this isn't private data *exposed*, but a **public directory whose very existence and content you choose yourself**. The White Pages, but **chosen instead of imposed**.
 
 ## Over to you
 
-Run a certificate — yours, a correspondent's — through [**pgp2vcard.html**](https://keys.foopgp.org/pgp2vcard.html), and watch a full contact card spring out of a key. Then imagine the day "share contact" shares, instead of a file anyone can forge, **a card no one can impersonate**.
+Run a certificate — yours or a correspondent's — through [**pgp2vcard.html**](https://keys.foopgp.org/pgp2vcard.html), and watch a full contact card spring out of a key. Then imagine the day "share contact" shares, instead of a file anyone can forge, **the card you have customized and no one can impersonate**.
 
 It's a small technical step. It's a large shift in trust.
 

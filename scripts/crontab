@@ -1,2 +1,0 @@
-*/6 * * * * /home/_www-cron/bin/update_hugo.sh
-*/5 * * * * /home/_www-cron/goaccess/goaccess.sh /var/log/apache2/foopgp-access.log && cp /home/_www-cron//goaccess/public/goaccess/last*html /var/www/foopgp-hugowebsite/public/goaccess/

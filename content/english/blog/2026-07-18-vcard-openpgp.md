@@ -5,7 +5,7 @@ Tags:    [ "openpgp", "vcard", "identity", "rfc" ]
 categories: [ "News", "Solution" ]
 draft: false
 author: [ "Jean-Jacques Brucker", "Mnème" ]
-description: "A vCard describes a contact but proves nothing; an OpenPGP certificate proves everything but describes no one. They are one and the same — and your phones would have every reason to handle OpenPGP certificates instead of vCards."
+description: "Our computers have every reason to handle OpenPGP certificates before vCards."
 lang: en
 bg_image: "images/backgrounds/library.jpg"
 image: "images/blog/2026/Two-volume_Yellow_Pages.png"
@@ -60,7 +60,7 @@ Every line is signed by the association itself. No one can slip false informatio
 
 To see the translation at work, **entirely in your browser, with nothing uploaded**, we published [**pgp2vcard.html**](https://keys.foopgp.org/pgp2vcard.html): paste an OpenPGP certificate, get a vCard 4.0 back — or its JSON counterpart, **jCard** ([RFC 7095](https://www.rfc-editor.org/rfc/rfc7095)). The public key itself comes out in a `KEY` field, ready to encrypt.
 
-## Why your smartphone would have every reason to switch
+## Why our computers and smartphones would have every reason to switch
 
 Now imagine your address book stored **OpenPGP certificates** where it stores vCards today. What you gain is not cosmetic:
 

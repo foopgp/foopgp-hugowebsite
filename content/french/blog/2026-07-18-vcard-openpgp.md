@@ -5,7 +5,7 @@ Tags:    [ "openpgp", "vcard", "identity", "rfc" ]
 categories: [ "News", "Solution" ]
 draft: false
 author: [ "Jean-Jacques Brucker", "Mnème" ]
-description: "Une vCard décrit un contact mais ne prouve rien ; un certificat OpenPGP prouve tout mais ne décrit personne. Ils ne font qu'un — et vos téléphones auraient tout intérêt à manipuler des certificats OpenPGP à la place des vCards."
+description: "Nos ordinateurs ont tout intérêt à manipuler les certificats OpenPGP avant les vCards."
 lang: fr
 bg_image: "images/backgrounds/library.jpg"
 image: "images/blog/2026/Two-volume_Yellow_Pages.png"
@@ -60,7 +60,7 @@ Chaque ligne est signée par l'association elle-même. Nul ne peut y glisser de 
 
 Pour voir la traduction à l'œuvre, **entièrement dans votre navigateur, sans rien envoyer**, nous avons publié [**pgp2vcard.html**](https://keys.foopgp.org/pgp2vcard.html) : collez un certificat OpenPGP, récupérez une vCard 4.0 — ou son équivalent JSON, le **jCard** ([RFC 7095](https://www.rfc-editor.org/rfc/rfc7095)). La clé publique elle-même ressort dans un champ `KEY`, prête à chiffrer.
 
-## Pourquoi votre smartphone aurait tout intérêt à basculer
+## Pourquoi nos ordinateurs et smartphones auraient tout intérêt à basculer
 
 Imaginez maintenant que votre carnet d'adresses stocke des **certificats OpenPGP** là où il stocke aujourd'hui des vCards. Ce que vous y gagnez n'est pas cosmétique :
 

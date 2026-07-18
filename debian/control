@@ -1,0 +1,24 @@
+Source: foopgp-hugowebsite
+Section: web
+Priority: optional
+Maintainer: Jean-Jacques Brucker <jjbrucker@foopgp.org>
+Uploaders: Mnèmê <mneme@foopgp.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://foopgp.org
+Vcs-Git: https://codeberg.org/foopgp/foopgp-hugowebsite.git
+Vcs-Browser: https://codeberg.org/foopgp/foopgp-hugowebsite
+Rules-Requires-Root: no
+
+Package: foopgp-hugowebsite
+Architecture: all
+Depends: ${misc:Depends}, hugo, git, apache2, cron, goaccess
+Description: deployment tooling for the Friends of OpenPGP website
+ Installs the machinery to serve foopgp.org from a Hugo site on a fresh host:
+ an Apache virtual host, a cron job that pulls the site sources from codeberg
+ (with a github mirror) and rebuilds public/ with Hugo when they change, and a
+ goaccess statistics job. Everything runs as the www-data user.
+ .
+ It does NOT ship the website content itself. The site is a git clone that the
+ update job bootstraps under /var/www/foopgp-hugowebsite/ on its first run
+ (or when the operator triggers it) ; see /usr/share/doc/foopgp-hugowebsite.

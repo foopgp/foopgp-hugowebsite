@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+# The apache vhost ships as sites-available/foopgp.conf (operator: a2ensite foopgp).
+override_dh_install:
+	dh_install
+	install -D -m 0644 scripts/apache2-foopgp.conf \
+		debian/foopgp-hugowebsite/etc/apache2/sites-available/foopgp.conf

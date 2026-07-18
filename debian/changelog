@@ -1,0 +1,10 @@
+foopgp-hugowebsite (1.0) unstable; urgency=medium
+
+  * Initial packaging of the website deployment tooling: Apache vhost
+    (sites-available/foopgp.conf, ServerAlias www.foopgp.org), a www-data cron
+    that pulls from codeberg (github mirror configured) and rebuilds public/
+    with hugo --minify when sources moved, bootstrapping the /var/www clone on
+    first run, and a goaccess stats job publishing into public/goaccess/.
+  * FHS layout: scripts in /usr/share, logs in /var/log/foopgp-hugowebsite.
+
+ -- Mnèmê <mneme@foopgp.org>  Sat, 18 Jul 2026 06:59:34 +0200

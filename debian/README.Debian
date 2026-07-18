@@ -1,0 +1,59 @@
+foopgp-hugowebsite for Debian
+=============================
+
+This package installs the tooling to serve https://foopgp.org from its Hugo
+sources. It does NOT contain the website: the site is a git clone that the
+update job bootstraps under /var/www/foopgp-hugowebsite/ on its first run.
+
+What the package installs
+-------------------------
+  /usr/share/foopgp-hugowebsite/update_hugo.sh   pull sources + `hugo --minify`
+  /usr/share/foopgp-hugowebsite/goaccess.sh       access-log stats → public/goaccess/
+  /etc/cron.d/foopgp-hugowebsite                  run both as www-data (6 / 5 min)
+  /etc/apache2/sites-available/foopgp.conf        the virtual host
+  /var/log/foopgp-hugowebsite/                    update_hugo.sh log
+
+Bringing a fresh host online
+----------------------------
+  sudo apt install foopgp-hugowebsite
+
+  # Serve the virtual host:
+  sudo a2ensite foopgp
+  sudo service apache2 reload
+
+  # The cron bootstraps the clone within ~6 min. To build immediately:
+  sudo -u www-data /usr/share/foopgp-hugowebsite/update_hugo.sh
+
+The update job clones from codeberg (origin) and configures a github mirror
+remote; `git pull` always follows origin — the mirrors are never force-pushed.
+
+Out of scope — DNS
+------------------
+Point the domain at this host. Create A (and AAAA for IPv6) records:
+
+  foopgp.org.        A     <this-host-IPv4>
+  www.foopgp.org.    A     <this-host-IPv4>
+  foopgp.org.        AAAA  <this-host-IPv6>   # if available
+  www.foopgp.org.    AAAA  <this-host-IPv6>
+
+For high availability you may publish several A/AAAA records (DNS round-robin),
+or front the hosts with a load balancer / CDN. Verify with:
+
+  dig +short foopgp.org
+  getent hosts foopgp.org
+
+Out of scope — HTTPS (Let's Encrypt / certbot)
+----------------------------------------------
+The shipped vhost is HTTP (:80) only. Once DNS resolves to this host, obtain and
+auto-install a certificate — certbot edits the apache config and adds the :443
+vhost and the HTTP→HTTPS redirect for you:
+
+  sudo apt install certbot python3-certbot-apache
+  sudo certbot --apache -d foopgp.org -d www.foopgp.org
+
+Renewal is handled automatically by the certbot systemd timer / cron; test it:
+
+  sudo certbot renew --dry-run
+
+(The -d list must match the vhost's ServerName + ServerAlias, i.e. both
+foopgp.org and www.foopgp.org.)

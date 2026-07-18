@@ -1,0 +1,2 @@
+scripts/update_hugo.sh usr/share/foopgp-hugowebsite
+scripts/goaccess.sh    usr/share/foopgp-hugowebsite

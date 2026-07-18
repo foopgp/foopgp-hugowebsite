@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    configure)
+        # www-data owns its log dir (it runs the cron scripts).
+        chown www-data:www-data /var/log/foopgp-hugowebsite 2>/dev/null || true
+        ;;
+esac
+
+#DEBHELPER#
+exit 0

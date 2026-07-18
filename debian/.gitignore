@@ -1,0 +1,5 @@
+/files
+/.debhelper/
+/foopgp-hugowebsite/
+/*.substvars
+/*.debhelper.log

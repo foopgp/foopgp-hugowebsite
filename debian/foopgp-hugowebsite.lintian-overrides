@@ -1,0 +1,3 @@
+# Deployment cron by design (site refresh every 6 min, stats every 5) — a
+# systemd timer would only duplicate it. cron is the chosen mechanism.
+foopgp-hugowebsite: missing-systemd-timer-for-cron-script [etc/cron.d/foopgp-hugowebsite]

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# use example: goaccess.sh /var/log/apache2/foopgp-access.log
+
 set -e
 
 ACCESSLOG=${ACCESSLOG:-$1}

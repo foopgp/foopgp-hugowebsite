@@ -12,15 +12,15 @@ image: "images/blog/2026/Two-volume_Yellow_Pages.png"
 type: "post"
 ---
 
-Ouvrez le carnet d'adresses de votre téléphone, touchez « partager le contact ». Ce qui part, c'est une **vCard** : un petit fichier texte, un nom, un numéro, un e-mail, peut-être une photo. Universel, lisible partout — Android, iOS, Outlook, Thunderbird. Et **totalement invérifiable**. Rien, dans une vCard, ne dit qu'elle vient bien de la personne annoncée. On en fabrique une « de votre banque » en dix secondes.
+Ouvrez le carnet d'adresses de votre smartphone, touchez « partager le contact ». Ce qui part, c'est une **vCard** : un petit fichier texte, un nom, un numéro, un e-mail, peut-être une photo. Universel, lisible partout — Android, iOS, Outlook, Thunderbird. Et **totalement invérifiable**. Rien, dans une vCard, ne dit qu'elle vient bien de la personne annoncée. On peut en fabrique une, par exemple « de votre banque », en quelques secondes.
 
-À côté, il existe un objet qui, lui, ne ment pas : le **certificat OpenPGP**. Signé, vérifiable, il permet de chiffrer et de signer. Mais aux yeux de beaucoup, ce n'est « qu'une clé » — un bloc opaque qui ne décrit personne et n'a que rarement sa place dans un carnet d'adresses.
+À côté, il existe un objet qui, lui, ne ment pas : le **certificat OpenPGP**. Signé, vérifiable dans la toile de confiance, il permet de signer, déchiffrer et s'authentifier. Mais aux yeux de beaucoup, ce n'est « qu'une clé » — un bloc opaque qui ne décrit personne et que peu d'entre nous ont rangé dans leur carnet d'adresses.
 
 Deux objets qui s'ignorent depuis trente ans. La bonne nouvelle : **ils sont bien plus proches qu'ils n'en ont l'air.**
 
 ---
 
-## Une vCard, ce sont des lignes ; un certificat, ce sont des identités
+## Une vCard, ce sont des lignes ; un certificat, ce sont des lignes certifiées
 
 Une **vCard 4.0** ([RFC 6350](https://www.rfc-editor.org/rfc/rfc6350)) n'est qu'une suite de lignes `PROPRIÉTÉ:valeur` :
 
@@ -30,9 +30,9 @@ EMAIL:etamine@example.org
 TEL;TYPE=voice:+33612345678
 ```
 
-Un **certificat OpenPGP** ([RFC 9580](https://www.rfc-editor.org/rfc/rfc9580)), lui, c'est une clé publique **plus une liste d'identités** — les *User IDs*. Chaque User ID est une petite chaîne de texte, **auto-signée indépendamment** par la clé, et **révocable une par une**.
+Un **certificat OpenPGP** ([RFC 9580](https://www.rfc-editor.org/rfc/rfc9580)), lui, c'est une clé publique **plus une liste de données certifiées** — les *User IDs*. Chaque User ID est une petite chaîne de texte, **auto-signée indépendamment** par la clé, et **révocable une par une**.
 
-La question qui réconcilie les deux mondes : *et si chaque ligne de la vCard était un User ID ?*
+La question qui réconcilie les deux mondes : *Et le certificat OpenPGP certifiait les données vCard ?*
 
 ## Le certificat **est** une fiche d'annuaire signée
 
@@ -76,22 +76,30 @@ Le carnet d'adresses cesse d'être une **liste de rumeurs** pour devenir un **an
 
 Rien de tout cela n'exige d'inventer un format. Tout est là : la vCard ([RFC 6350](https://www.rfc-editor.org/rfc/rfc6350)) et son encodage de paramètres ([RFC 6868](https://www.rfc-editor.org/rfc/rfc6868)) pour décrire ; le jCard ([RFC 7095](https://www.rfc-editor.org/rfc/rfc7095)) pour manipuler en JSON ; OpenPGP ([RFC 9580](https://www.rfc-editor.org/rfc/rfc9580)) pour signer et chiffrer ; notre [spécification `urn:eid:`](/fr/blog/2026-04-28-openpgp-id-spec/), en cours de dépôt à l'IANA, pour l'identité pivot. La synchronisation, elle aussi, a son standard côté vCard — CardDAV ([RFC 6352](https://www.rfc-editor.org/rfc/rfc6352)) — où rien n'interdit de faire transiter des certificats plutôt que des fiches nues.
 
-Le pont tient en une idée : *une propriété vCard = un User ID OpenPGP*. Il est déjà outillé et réversible. Ce qui manque n'est pas la technique : c'est que les carnets d'adresses grand public acceptent enfin de lire, d'écrire et de synchroniser des certificats.
+Le pont tient en une idée : *une propriété vCard = un User ID OpenPGP*. Il est déjà outillé et réversible. Ce qui manque n'est pas la technique : c'est que les carnets d'adresses grand public acceptent enfin de lire et transmettre des certificats OpenPGP.
 
 ## Un air de déjà-vu : les pages blanches, mais choisies
 
 Cet annuaire public de fiches signées, au fond, vous le connaissez. Souvenez-vous des **pages blanches**, ce gros annuaire que les PTT — bien avant France Télécom, bien avant Orange — déposaient dans chaque foyer : les particuliers, classés par nom. Et son jumeau, les **pages jaunes** : les professionnels, classés par métier. Presque chaque pays avait les siens (*Yellow Pages*, *Gelbe Seiten*, *Pagine Gialle*, *Páginas Amarillas*…). La distinction se retrouve, native, dans l'EID : **u4, ce sont les pages blanches** ; **u5, les pages jaunes**.
 
-Mais l'annuaire d'antan avait deux défauts que le nôtre corrige exactement :
+Mais les annuaires OpenPGP ont sur ces annuaires d'antan deux avantages majeurs :
 
-- il était **édité par l'opérateur**, en **opt-out** — on y figurait *par défaut*, et il fallait réclamer la « liste rouge » pour en sortir. Le nôtre est **décentralisé et opt-in** : personne ne l'édite, rien n'y paraît sans que le propriétaire l'ait **signé** ;
-- le contenu de la fiche ne vous appartenait pas vraiment. Ici, **chacun décide de ce qu'il expose** — les seules obligations étant un **nom** et un **e-mail**, l'un comme l'autre **librement choisis**.
+- Les annuaires d'antan étaient édités et centralisés par l'opérateur. Les annuaires OpenPGP sont **décentralisés et contrôlés par les utilisateurs eux-mêmes**.
+- Les annuaires d'antan exposaient, sans votre consentement, vos données personelles. Dans les anuaires OpenPGP **chacun décide de ce qu'il expose** — les seules obligations étant d'aposer, à coté de votre EID : un **nom** et un **e-mail**, que vous pouvez **librement choisir et modifier**.
 
-C'est aussi la réponse à qui s'inquiéterait d'y voir des données personnelles : il ne s'agit pas de vos données confidentielles *exposées*, mais d'un **annuaire public dont on choisit soi-même l'existence et le contenu**. Les pages blanches, mais **choisies au lieu de subies**.
+Pour résumer : les pages blanches ou jaunes, mais **sous votre contrôle**.
 
 ## À vous de jouer
 
-Passez un certificat — le vôtre ou celui d'un correspondant — dans [**pgp2vcard.html**](https://keys.foopgp.org/pgp2vcard.html), et regardez une fiche complète surgir d'une clé. Puis imaginez le jour où « partager le contact » partagera, à la place d'un fichier que n'importe qui peut contrefaire, **la carte d'identité que vous avez personnalisée, et que personne ne peut usurper**.
+Vous pouvez téléverser ou rechercher un certificat sur [notre serveur de clé](https://keys.foopgp.org), puis cliquer sur le bouton vCard :
+
+![vCard_button.png](/images/blog/2026/vCard_button.png)
+
+Le certificat sera analysé par [**pgp2vcard.html**](https://keys.foopgp.org/pgp2vcard.html), et transformé en un fichier vCard (*\*.vcf*), c'est à dire la carte de visite que vous pouvez télécharger et importer dans tous vos actuels carnets d'adresse numériques.
+
+![vCard_download.png](/images/blog/2026/vCard_download.png)
+
+Maintenant vous voyez le futur de vos applications soigneusement choisies : lorsque que appuierez sur « partager le contact » elles transmettront, à la place de vCards que n'importe qui peut contrefaire, **des cartes d'identité personnalisées, que personne ne peut usurper**.
 
 C'est une petite marche technique. C'est un grand changement de confiance.
 

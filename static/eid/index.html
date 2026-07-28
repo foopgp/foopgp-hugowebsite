@@ -1542,6 +1542,9 @@
 					<option value="es">Español</option>
 					<option value="de">Deutsch</option>
 					<option value="ua">українська</option>
+					<option value="pt">Português</option>
+					<option value="pl">Polski</option>
+					<option value="ru">Русский</option>
 				</select>
 			</div>
 
@@ -1680,12 +1683,7 @@
 
 	</form>
 
-	<p style="margin-top: 2em; font-size: 0.9em">
-		En savoir plus sur l'identifiant d'entité (EID) :
-		<a href="https://foopgp.org/fr/solutions/pgp-id/">PGP&nbsp;ID / EID</a> ·
-		<a href="https://foopgp.org/fr/blog/2026-04-28-openpgp-id-spec/">spécification</a> ·
-		<a href="https://foopgp.org/">foopgp.org</a>
-	</p>
+	<p id="learnmore" style="margin-top: 2em; font-size: 0.9em"></p>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", () => {
@@ -1721,9 +1719,9 @@
 				fr: {
 					title: "EID - Créez Votre ID International",
 					yourInformation: "Vos informations :",
-					givenNames: "Vos prénoms (à la naissancе) :",
-					surname: "Votre nom de famille (à la naissancе) :",
-					birthDate: "Votre date de naissancе :",
+					givenNames: "Vos prénoms (à la naissance) :",
+					surname: "Votre nom de famille (à la naissance) :",
+					birthDate: "Votre date de naissance :",
 					day: "Jour",
 					month: "Mois",
 					months: [
@@ -1858,6 +1856,102 @@
 					udidInfo:
 						"Ваш EID — це унікальний код, що дозволяє ідентифікувати вас лише раз у всьому світі без розкриття вашого справжнього імені.",
 				},
+				pt: {
+					title: "EID - Crie o Seu Identificador de Entidade",
+					yourInformation: "As suas informações:",
+					givenNames: "Os seus nomes próprios (à nascença):",
+					surname: "O seu apelido (à nascença):",
+					birthDate: "A sua data de nascimento:",
+					day: "Dia",
+					month: "Mês",
+					months: [
+						"Janeiro",
+						"Fevereiro",
+						"Março",
+						"Abril",
+						"Maio",
+						"Junho",
+						"Julho",
+						"Agosto",
+						"Setembro",
+						"Outubro",
+						"Novembro",
+						"Dezembro",
+					],
+					birthplace: "O seu país de nascimento:",
+					reset: "Repor",
+					generate: "Gerar o seu EID",
+					udidInfo:
+						"O seu EID é um código único para o identificar apenas uma vez, em todo o mundo, sem revelar o seu verdadeiro nome.",
+				},
+				pl: {
+					title: "EID - Utwórz swój identyfikator podmiotu",
+					yourInformation: "Twoje dane:",
+					givenNames: "Twoje imiona (z urodzenia):",
+					surname: "Twoje nazwisko (z urodzenia):",
+					birthDate: "Twoja data urodzenia:",
+					day: "Dzień",
+					month: "Miesiąc",
+					months: [
+						"Styczeń",
+						"Luty",
+						"Marzec",
+						"Kwiecień",
+						"Maj",
+						"Czerwiec",
+						"Lipiec",
+						"Sierpień",
+						"Wrzesień",
+						"Październik",
+						"Listopad",
+						"Grudzień",
+					],
+					birthplace: "Twój kraj urodzenia:",
+					reset: "Resetuj",
+					generate: "Wygeneruj swój EID",
+					udidInfo:
+						"Twój EID to unikalny kod, który identyfikuje Cię tylko raz, na całym świecie, bez ujawniania Twojego prawdziwego imienia i nazwiska.",
+				},
+				ru: {
+					title: "EID - Создайте свой идентификатор сущности",
+					yourInformation: "Ваши данные:",
+					givenNames: "Ваши имена (при рождении):",
+					surname: "Ваша фамилия (при рождении):",
+					birthDate: "Ваша дата рождения:",
+					day: "День",
+					month: "Месяц",
+					months: [
+						"Январь",
+						"Февраль",
+						"Март",
+						"Апрель",
+						"Май",
+						"Июнь",
+						"Июль",
+						"Август",
+						"Сентябрь",
+						"Октябрь",
+						"Ноябрь",
+						"Декабрь",
+					],
+					birthplace: "Ваша страна рождения:",
+					reset: "Сбросить",
+					generate: "Сгенерировать ваш EID",
+					udidInfo:
+						"Ваш EID — это уникальный код, позволяющий идентифицировать вас лишь один раз во всём мире, не раскрывая вашего настоящего имени.",
+				},
+			};
+
+			const learnMoreI18n = {
+				en: { text: "Learn more about the Entity Identifier (EID):", spec: "specification" },
+				fr: { text: "En savoir plus sur l'identifiant d'entité (EID) :", spec: "spécification" },
+				it: { text: "Per saperne di più sull'identificatore di entità (EID) :", spec: "specifica" },
+				es: { text: "Más información sobre el identificador de entidad (EID) :", spec: "especificación" },
+				de: { text: "Mehr über den Entitäts-Identifikator (EID):", spec: "Spezifikation" },
+				ua: { text: "Дізнайтеся більше про ідентифікатор сутності (EID):", spec: "специфікація" },
+				pt: { text: "Saiba mais sobre o identificador de entidade (EID):", spec: "especificação" },
+				pl: { text: "Dowiedz się więcej o identyfikatorze podmiotu (EID):", spec: "specyfikacja" },
+				ru: { text: "Подробнее об идентификаторе сущности (EID):", spec: "спецификация" },
 			};
 
 			function translatePage(lang) {
@@ -1881,6 +1975,17 @@
 				document.getElementById("reset").value = t.reset;
 				document.getElementById("generate").value = t.generate;
 				document.querySelector("#generated h4").textContent = t.udidInfo;
+
+				const lm = learnMoreI18n[lang] || learnMoreI18n.en;
+				const base = (lang === "fr") ? "https://foopgp.org/fr" : "https://foopgp.org";
+				const lmEl = document.getElementById("learnmore");
+				if (lmEl) {
+					lmEl.innerHTML =
+						lm.text + " " +
+						'<a href="' + base + '/solutions/pgp-id/">PGP&nbsp;ID / EID</a> \u00b7 ' +
+						'<a href="' + base + '/blog/2026-04-28-openpgp-id-spec/">' + lm.spec + '</a> \u00b7 ' +
+						'<a href="https://foopgp.org/">foopgp.org</a>';
+				}
 			}
 
 			function getQueryParam(param) {

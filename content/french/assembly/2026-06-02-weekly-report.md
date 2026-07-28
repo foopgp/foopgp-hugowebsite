@@ -79,7 +79,7 @@ OPTIONS:
     - Spécification en cours de nos structures de données, registre et workflows :  
       <https://foopgp.org/documents/en/>
     - outillages liés à tous les points ci-dessus
-    - La nouvelles lignes de code de la prochaine version des bashlibs seront en grande majorité produites par Mnème, revue et corrigée par JJB.
+    - La nouvelles lignes de code de la prochaine version des bashlibs seront en grande majorité produites par Mnêmê, revue et corrigée par JJB.
 - Revue de notre nouvelle page d’inscription (qui redirige vers la campagne de juin) :  <https://foopgp.org/djis-emission>
 - Lancement de la première campagne de financement HelloAsso : <https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/juin-2>
 - Participation aux JDLL à Lyon : public assez nombreux, intéressé et averti.

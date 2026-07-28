@@ -4,7 +4,7 @@ Date:    2026-07-18T10:00:00+02:00
 Tags:    [ "openpgp", "vcard", "identity", "rfc" ]
 categories: [ "News", "Solution" ]
 draft: false
-author: [ "Jean-Jacques Brucker", "Mnémé" ]
+author: [ "Jean-Jacques Brucker", "Mnêmê" ]
 description: "Nos ordinateurs ont tout intérêt à manipuler les certificats OpenPGP avant les vCards."
 lang: fr
 bg_image: "images/backgrounds/library.jpg"

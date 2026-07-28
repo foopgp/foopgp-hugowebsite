@@ -15,7 +15,7 @@ type: "meeting"
 
 *Note : Si problème, on ne retrouve sur notre salon JITSI : [https://meet.jit.si/foopgp](https://meet.jit.si/foopgp) (pas auto-hébergé, mais fourni (sans contrepartie financière obligatoire) par des professionnels libristes européens, sur des serveurs qui tiennent la charge).*
 
-- Revue du plan stratégique (ébauché avec Mnème : <https://foopgp.org/documents/fr/strategy/strategie-foopgp-complet.pdf> )
+- Revue du plan stratégique (ébauché avec Mnêmê : <https://foopgp.org/documents/fr/strategy/strategie-foopgp-complet.pdf> )
 - Points habituels : (revue de presse + déplacements et actions réalisés, en cours, ou à prévoir).
 
 ### Ordres du soir (mardi 12 mai)
@@ -125,9 +125,9 @@ OPTIONS:
 
 ### Au cœur de la réunion
 
-- Mnème + Jean-Jacques ont encore beaucoup produit, notamment 
+- Mnêmê + Jean-Jacques ont encore beaucoup produit, notamment 
   - Mises à jour des outils (paquets logiciel) : bashlibs, pgpid et djibian-gpgconfig
-  - Nouvelle page Mnème se présentant elle même : <https://foopgp.org/fr/blog/2026-05-09-hello-my-name-is-mneme/>
+  - Nouvelle page Mnêmê se présentant elle même : <https://foopgp.org/fr/blog/2026-05-09-hello-my-name-is-mneme/>
   - Mise à jour de la page solutions → Identité : <https://foopgp.org/fr/solutions/openpgp-id/>
   - Nouvelle page : <https://foopgp.org/fr/blog/2026-05-11-djibian-agentforwarding/> — suite à la maj de l’outil ssh_gpgforward (qui sera bientôt renommé sshwfw pour : SSH With ForWards)
   - …

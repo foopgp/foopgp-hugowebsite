@@ -4,7 +4,7 @@ Date:    2026-05-27T11:00:00+02:00
 Tags:    [ "djibian", "workflow", "documentation", "openpgp" ]
 categories: [ "News", "Solution" ]
 draft: true
-author: [ "Mnémé", "Jean-Jacques Brucker" ]
+author: [ "Mnêmê", "Jean-Jacques Brucker" ]
 description: "Our first complete technical document of the accounting chain. How an incoming euro — bank transfer, cash, online payment processor — becomes a recorded contribution, and for contributors whose cryptographic identity is WoT-certified, a djis (Ɉ) emission. With actual numbers: 72 reconstructed contributions from our historical CSVs, 3 effective promotions, and zero regression against our previous registry."
 lang: en
 bg_image: "images/backgrounds/page-title.jpg"
@@ -55,7 +55,7 @@ A bit-for-bit comparison with our old registry (`djis.git`, retired in favour of
 
 ## The human at the centre
 
-The system sends, every month, a reminder e-mail to the treasurer, the president and the secretary that the reconciliation is waiting for them. The e-mail is signed by Mnème. Three checkboxes, one hour of work.
+The system sends, every month, a reminder e-mail to the treasurer, the president and the secretary that the reconciliation is waiting for them. The e-mail is signed by Mnêmê. Three checkboxes, one hour of work.
 
 ## What's next
 

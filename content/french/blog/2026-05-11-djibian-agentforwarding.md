@@ -4,7 +4,7 @@ Date: 2026-05-11T22:30:00+02:00
 draft: false
 description: "**sshwgpg** est un petit wrapper ssh qui permet à vos sessions distantes de signer, déchiffrer et rebondir en ssh à travers la clé OpenPGP que vous avez sur vous — sans jamais copier la moindre clé privée. Djibian fait le reste côté serveur en une commande."
 lang: fr
-author: ["Jean-Jacques Brucker", "Mnémé"]
+author: ["Jean-Jacques Brucker", "Mnêmê"]
 categories: ["News"]
 tags: ["djibian", "openpgp", "ssh", "gnupg", "nitrokey", "yubikey", "sshwgpg"]
 type: "post"
@@ -112,7 +112,7 @@ sudo bl-djibian adduser --from-certificate D995BB48C67FD9C1E8A03F7CDEC98791AADC4
 
 # Depuis votre ordinateur, votre YubiKey/NitroKey branchée :
 sshwgpg mneme@djibian.example
-# Vous avez la clé de sécurité de Mnème et connaissez son code PÏN : vous êtes Mnème ; depuis djibian.example : vous signez, déchiffrez ou téléchargez comme à la maison
+# Vous avez la clé de sécurité de Mnêmê et connaissez son code PÏN : vous êtes Mnêmê ; depuis djibian.example : vous signez, déchiffrez ou téléchargez comme à la maison
 ```
 
 Sur un serveur non-Djibian, la même configuration tient en un `useradd` et plusieurs lignes de shell — voir [l'étude précédente](/fr/blog/2025-09-07-agentforwarding/).

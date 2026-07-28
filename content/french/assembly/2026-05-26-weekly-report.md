@@ -22,7 +22,7 @@ type: "meeting"
 ### Ordres du soir (mardi 26 mai)
 
 - Revue de presse.
-- Revue du plan stratégique (ébauché avec Mnème : <https://foopgp.org/documents/fr/strategy/strategie-foopgp-complet.pdf> )
+- Revue du plan stratégique (ébauché avec Mnêmê : <https://foopgp.org/documents/fr/strategy/strategie-foopgp-complet.pdf> )
 - Point sur les participations et démonstrations publiques.
 - Communication.
 - Actions réalisés, en cours, à prévoir.

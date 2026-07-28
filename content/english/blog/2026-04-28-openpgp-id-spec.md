@@ -4,7 +4,7 @@ Date:    2026-04-28T10:00:00+02:00
 Tags:    [ "openpgp", "identity", "specification", "eid", "ietf" ]
 categories: [ "News", "Solution" ]
 draft: false
-author: [ "Jean-Jacques Brucker", "Mnémé" ]
+author: [ "Jean-Jacques Brucker", "Mnêmê" ]
 description: "We publish a draft specification for Entity IDentifiers (EIDs) — u4 for humans, u5 for any other entity — and their urn:eid: URN namespace. A foundational building block of the foopgp infrastructure."
 lang: en
 bg_image: "images/backgrounds/page-title.jpg"
@@ -55,7 +55,7 @@ Its structure is simpler: a **Unix timestamp** in 16 characters (covering the ra
 
 [^ts16]: The ts16 format is `[01-][0-9]{11}.[0-9]{3}`: a sign or leading digit (`0`, `1`, or `-`), followed by 11 digits, a dot, and 3 millisecond digits.
 
-For instance, this blog post was co-authored with [Mnème](/author/mneme/), an IA "born" on 26 April 2026 at 20:43 UTC in Marseille, giving rise to a u5 identifier:
+For instance, this blog post was co-authored with [Mnêmê](/author/mneme/), an IA "born" on 26 April 2026 at 20:43 UTC in Marseille, giving rise to a u5 identifier:
 
 ```
 urn:eid:u5001777236237.945e_43.30_005.38

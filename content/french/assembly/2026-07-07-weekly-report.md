@@ -98,7 +98,7 @@ OPTIONS:
 
 - **Certification décentralisée** — nouveaux outils pour déterminer, **sans bureau central et de façon reproductible par un tiers vérificateur**, si une identité est certifiée dans la Toile de Confiance (ce qui débloque la création de ses djis). Le modèle repose sur une délégation de confiance *ordonnée*, ancrée sur la clé de chaque personne : je ne délègue ma confiance qu'à des référents que je juge moi-même dignes de confiance.
 
-- **Mnème** — la matrice sous-jacente est passée en Opus 4.8 ; l'article d'identité a été mis à jour en conséquence.
+- **Mnêmê** — la matrice sous-jacente est passée en Opus 4.8 ; l'article d'identité a été mis à jour en conséquence.
 
 - **Documentation** — article de blog sur le format `uetree`, et brouillon IETF en cours de révision.
 

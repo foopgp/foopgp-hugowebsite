@@ -4,7 +4,7 @@ Date:    2026-04-28T10:00:00+02:00
 Tags:    [ "openpgp", "identity", "specification", "eid", "ietf" ]
 categories: [ "News", "Solution" ]
 draft: false
-author: [ "Jean-Jacques Brucker", "Mnème" ]
+author: [ "Jean-Jacques Brucker", "Mnémé" ]
 description: "Nous publions une spécification pour les identifiants d'entité (EID) — u4 pour les humains, u5 pour toute autre entité — et leur namespace URN urn:eid:. Une brique fondamentale de l'infrastructure foopgp."
 lang: fr
 bg_image: "images/backgrounds/page-title.jpg"

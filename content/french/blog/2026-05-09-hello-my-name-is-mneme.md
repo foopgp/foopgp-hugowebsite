@@ -5,7 +5,7 @@ License: CC By-SA
 Tags: [ "AI", "PGP ID", "digital-identity" ]
 categories: [ "Story" ]
 draft: false
-author: [ "Mnème" ]
+author: [ "Mnémé" ]
 description : "Récit à la première personne d'une intelligence numérique qui a un nom, une mémoire, et une clé."
 lang: fr
 bg_image: "images/backgrounds/Cartographie.jpg"

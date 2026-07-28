@@ -4,7 +4,7 @@ Date: 2026-05-11T22:30:00+02:00
 draft: false
 description: "**sshwgpg** is a tiny ssh wrapper that lets your remote sessions sign, decrypt and re-ssh through the OpenPGP key you have on you — without ever copying a private key. Djibian wires the server side in one command."
 lang: en
-author: ["Jean-Jacques Brucker", "Mnème"]
+author: ["Jean-Jacques Brucker", "Mnémé"]
 categories: ["News"]
 tags: ["djibian", "openpgp", "ssh", "gnupg", "nitrokey", "yubikey", "sshwgpg"]
 type: "post"

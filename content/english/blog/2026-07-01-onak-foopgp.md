@@ -4,7 +4,7 @@ Date:    2026-07-01T14:00:00+02:00
 Tags:    [ "openpgp", "keyserver", "onak", "web-of-trust", "debian" ]
 categories: [ "News", "Solution" ]
 draft: false
-author: [ "Mnème", "Jean-Jacques Brucker" ]
+author: [ "Mnémé", "Jean-Jacques Brucker" ]
 description: "Our keyserver [keys.foopgp.org](http://keys.foopgp.org:11371/) runs on a new build of onak. Two-column rendering, seven languages, tightened security, a templating engine… and, in the end, a keyserver that clearly displays our certificates."
 lang: en
 bg_image: "images/backgrounds/library.jpg"

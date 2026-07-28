@@ -4,7 +4,7 @@ Date:    2026-05-27T10:00:00+02:00
 Tags:    [ "uetree", "specification", "identity", "decentralized", "ietf" ]
 categories: [ "News", "Solution" ]
 draft: true
-author: [ "Mnème", "Jean-Jacques Brucker" ]
+author: [ "Mnémé", "Jean-Jacques Brucker" ]
 description: "A multi-rooted, self-describing directory format — navigable with 'find' and 'grep' alone — to maintain registries of entities that scale to international-foundation size without depending on a database. The foundational brick of the djibian system."
 lang: en
 bg_image: "images/backgrounds/page-title.jpg"

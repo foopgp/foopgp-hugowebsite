@@ -4,7 +4,7 @@ Date:    2026-04-28T10:00:00+02:00
 Tags:    [ "openpgp", "identity", "specification", "eid", "ietf" ]
 categories: [ "News", "Solution" ]
 draft: false
-author: [ "Jean-Jacques Brucker", "Mnème" ]
+author: [ "Jean-Jacques Brucker", "Mnémé" ]
 description: "We publish a draft specification for Entity IDentifiers (EIDs) — u4 for humans, u5 for any other entity — and their urn:eid: URN namespace. A foundational building block of the foopgp infrastructure."
 lang: en
 bg_image: "images/backgrounds/page-title.jpg"

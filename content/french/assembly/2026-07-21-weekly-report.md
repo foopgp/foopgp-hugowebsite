@@ -2,14 +2,14 @@
 title: "2026 S30 Rapport Hebdomadaire"
 lang: fr
 date: 2026-07-21T21:00:00+02:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *(à compléter en début de visio)*
+***Présents :*** *Laurent C., Aveline, Claude, Jean-Jacques.*
 
 ### Ordre du jour prochaine visio mardi 28 juillet 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
@@ -44,19 +44,38 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 ### Revue de presse
 
-*(à compléter pendant la visio)*
+- Suite à la décision de certains fabricants (ex : Sony) de supprimer les supports physiques, le CD sont en train de revenir, autrement dit “les modes sont un éternel recommencement” : <https://www.phonandroid.com/le-cd-est-il-en-train-de-renaitre-les-ventes-explosent-et-cest-totalement-inattendu.html>
+- La “Souveraineté numérique” :
+  - … continue son chemin au CNRS : <https://www.zdnet.fr/actualites/le-cnrs-sort-de-zoom-et-microsoft-exchange-et-bientot-sharepoint-498728.htm>
+  - et nous permet de faire d’énormes économies :
+    - <https://www.lesnumeriques.com/societe-numerique/la-france-sous-l-emprise-des-geants-americains-ce-rapport-accablant-revele-jusqu-ou-nous-avons-perdu-le-controle-n259309.html>
+    - <https://www.clubic.com/actualite-620551-le-cnrs-tourne-le-dos-a-microsoft-et-compagnie-pour-du-numerique-souverain-qui-lui-fait-gagner-de-l-argent.html>
+- Voilà pourquoi il ne faut pas utiliser les clouds “public” mais auto-héberger ses fichiers : 
+  - Google change ses règles de quota en catimini : <https://www.phonandroid.com/attention-au-stockage-de-votre-compte-google-avec-cette-nouvelle-regle-de-sauvegarde-des-donnees.html>
+  - Suite à un piratage Micro$oft supprime 25 ans de fichiers : <https://www.lesnumeriques.com/informatique/son-compte-est-pirate-microsoft-le-supprime-il-perd-25-ans-de-fichiers-de-jeux-et-de-photos-de-son-fils-n259287.html>
+  - Alors qu’il existe Nextcloud : <https://www.zdnet.fr/pratique/informatique-pratique-au-lieu-de-google-drive-misez-sur-nextcloud-498560.htm>
+- Pendant ce temps, les IA progressent voire nous contrôlent : 
+  - Elles comprennent quand on tente de les mettre en défaut : <https://www.zdnet.fr/actualites/les-modeles-dia-savent-quand-ils-sont-testes-et-changent-de-comportement-482272.htm>
+  - Elles tentent de nous mentir :
+    - <https://www.zdnet.fr/pratique/5-facons-de-prendre-lia-en-flagrant-delit-de-mensonge-et-de-verifier-les-faits-quelle-produit-401518.htm>
+    - <https://www.zdnet.fr/actualites/ce-detecteur-de-mensonges-debusque-les-modeles-dia-les-plus-affabulateurs-407920.htm>
+    - <https://www.zdnet.fr/actualites/l-ia-nous-ment-elle-ces-chercheurs-ont-construit-un-detecteur-de-mensonges-pour-le-savoir-39961618.htm>
+    - <https://www.zdnet.fr/actualites/openai-o1-le-nouveau-modele-dia-ment-sans-vergogne-et-cest-preoccupant-402745.htm>
+  - Consomment de plus en plus d’énergie : <https://www.clubic.com/actualite-619780-malgre-ses-efforts-la-consommation-de-electrique-de-google-explose-a-cause-de-l-ia.html>
+  - Et exploitent nos données de santé : <https://www.lesnumeriques.com/sante-sport/doctolib-va-utiliser-vos-donnees-personnelles-pour-l-ia-des-aout-voici-comment-refuser-n259097.html>
 
 ### Au cœur de la réunion
 
-*(à compléter pendant / après la visio)*
+- Relecture du dernier article de blog : <https://www.foopgp.org/fr/blog/2026-07-18-vcard-openpgp/> Fonctionnalité OpenPGP → Vcard à tester dans les différentes applications de contacts. Par exemple Cardbook <https://services.addons.thunderbird.net/fr/thunderbird/addon/cardbook/?src=ss>
+- Aide pour Claude à l’utilisation de Linux.
 
 ### Production de la semaine (14 – 20 juillet)
 
 - **Réconcilier la carte de visite et le certificat** — un [nouvel article](/fr/blog/2026-07-18-vcard-openpgp/) explique, sans jargon, pourquoi nos carnets d'adresses auraient tout intérêt à manipuler des **certificats OpenPGP** là où ils stockent aujourd'hui des vCards : une vCard décrit un contact mais ne prouve rien, un certificat prouve tout — réunissons les deux. Les *pages blanches et jaunes*, mais **sous votre contrôle**.
 
-- **La carte de visite OpenPGP prend du muscle** — au-delà de l'outil en ligne [`pgp2vcard`](https://keys.foopgp.org/pgp2vcard.html), notre boîte à outils sait désormais **produire une vCard directement depuis un certificat**, et **gérer chaque champ** (courriel, téléphone, nom, note, adresse, site web, langue, lieu) comme une ligne signée du certificat. Nouveauté utile : le **serveur de clés préféré** est maintenant embarqué dans la carte — la vCard indique donc *où retrouver la version à jour* du certificat.
+- **La carte de visite OpenPGP prend du muscle** — au-delà de l'outil en ligne [`pgp2vcard`](https://keys.foopgp.org/pgp2vcard.html), notre boîte à outils sait désormais **produire une vCard directement depuis un certificat**, et **gérer chaque champ** (courriel, téléphone, nom, note, adresse, site web, langue, lieu) comme une ligne signée du certificat. Nouveauté utile : le **serveur de clés préféré** est maintenant embarqué dans la carte contact.vcf — la vCard indique donc *où retrouver la version à jour* du certificat.
 
-- **Révoquer une adresse : un garde-fou** — en OpenPGP, retirer une adresse est **définitif** (le certificat en garde la trace pour toujours). L'outillage **demande désormais confirmation en affichant exactement la ligne** que l'on s'apprête à révoquer, et **explique clairement** le cas où une adresse retirée ne peut plus être ré-ajoutée. De quoi éviter les mauvaises surprises irréversibles.
+- **Révoquer une adresse : un garde-fou** — en OpenPGP, retirer une adresse sera **définitif** (le certificat en garde la trace pour toujours). L'outillage **demendera désormais confirmation en affichant exactement la ligne** que l'on s'apprête à révoquer, et **explique clairement** le cas où une adresse retirée ne peut plus être ré-ajoutée. De quoi éviter les mauvaises surprises irréversibles.
 
 - [keys.foopgp.org](https://keys.foopgp.org) — **serveur de certificats** : correction de l'affichage des **photos** (avatars) dans les pages d'index et de détail, et un garde-fou de robustesse qui empêche qu'un certificat soit noyé sous trop de lignes d'identité, **tout en protégeant toujours** l'identité pivot (l'EID) et la photo.
 

@@ -16,8 +16,12 @@ en prod) pour :
   --birth-date <YYYY-MM-DD> <mrz88>`. Le calcul réel (hash → base64url + coord14)
   est dans **`bl_pgpid_mrz_to_u4`** + `_bl_icao9303_mrz_analyse`. ⚠️ L'algo u4
   **embarqué dans la page** (MD5 de `SURNAME<<GN1<GN2<YYYY-MM-DD`) est
-  potentiellement **périmé/divergent** → à re-vérifier contre `bl_pgpid_mrz_to_u4`
-  et remplacer si différent (sinon on génère de faux eids).
+  **VÉRIFIÉ CONFORME à la spec** (2026-07-28) : §4.6, vecteur
+  `TOCQUEVILLE<<FRANCOIS<XAVIER<1989-07-14` → `vb6UZTMKsllgoH760pc0xw`,
+  reproduit au caractère près par la page ET par le one-liner POSIX de la spec.
+  Le « problème de régression » du 2026-07-28 était un **faux problème** : une
+  inversion nom/prénoms à la saisie (cf. ordre des champs, plus bas), pas l'algo.
+  → **NE PAS remplacer l'algo. Le préserver byte-identique.**
 - **u5** = `BL_PGPID_U5_REGEX = TIME_REGEX + CO_REGEX` = **ts16 + coord14**.
   Génération dans **`bl_pgpid_gen_uid`** (bl-pgpid l.1061). ts16 = instant de
   création (format `[01-][0-9]{11}\.[0-9]{3}`), coord14 = centroïde pays (déjà
@@ -28,11 +32,17 @@ en prod) pour :
 - Orchestration : `pgpid/bin/pgpid-gen` (u4 depuis MRZ, u5 pré-calculé passé en `-5`).
 
 ## Plan (incrémental, vérifié à chaque étape)
-1. **Porter/vérifier u4-depuis-MRZ** : extraire `bl_pgpid_mrz_to_u4` (hash exact,
-   base64url, troncature, ordre coord14) → JS. **Test de non-régression** :
-   comparer la sortie de la page à `echo <MRZ> | bl-pgpid gen_u4` (ou pgpid-gen)
-   pour ≥3 identités connues (dont JJB `sRyU…`, Mnêmê). Ne rien pousser tant que
-   ça ne matche pas au caractère près.
+1. **u4-depuis-nom : ALGO DÉJÀ CONFORME** (vérifié 2026-07-28, cf. plus haut) —
+   ne pas le réécrire. À faire : **figer une batterie de vecteurs de test** issue
+   des exemples de la spec (§4.6 : TOCQUEVILLE, QUARANTA/Federica, …) sous forme
+   d'un petit harnais (état-civil → eid attendu) exécutable, pour garder ce
+   garde-fou lors de tout refactor futur. « Les eids doivent être identiques quel
+   que soit le code exécuté » (JJB). Ne rien pousser qui ne matche pas ces
+   vecteurs au caractère près.
+1bis. **Ordre des champs** : la page affiche *prénoms au-dessus du nom* — inverse
+   de l'habitude état-civil et de djibian-onboarding, ce qui a fait inverser la
+   saisie le 2026-07-28. Aligner l'ordre (nom d'abord) sur djibian-onboarding, et
+   rendre les libellés/positions non ambigus.
 2. **u5** : bascule *personne (u4)* / *entité (u5)*. Entité → champs
    nom d'entité + instant d'origine (par défaut *maintenant*) + lieu → `ts16 + coord14`.
    Vérifier contre `bl_pgpid_gen_uid`.

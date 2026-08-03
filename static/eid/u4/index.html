@@ -22,10 +22,13 @@
  and is licensed with Creative Commons Attribution License 3.0
 -->
 
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Generate a u4 Entity Identifier from birth civil records — surname, given names, date and country of birth. The identifier reveals none of it. Computed in your browser, nothing is sent anywhere." />
+	<link rel="canonical" href="https://foopgp.org/eid/u4/" />
 	<title>Generate your u4 Entity Identifier</title>
 
 	<script type="text/javascript">
@@ -1552,7 +1555,7 @@
 			<option value="it">Italiano</option>
 			<option value="es">Español</option>
 			<option value="de">Deutsch</option>
-			<option value="ua">Українська</option>
+			<option value="uk">Українська</option>
 			<option value="pt">Português</option>
 			<option value="pl">Polski</option>
 			<option value="ru">Русский</option>
@@ -1853,7 +1856,7 @@
 					udidInfo:
 						"Ihre EID ist ein einzigartiger Code, mit dem Sie weltweit einmalig identifiziert werden können, ohne Ihren echten Namen preiszugeben.",
 				},
-				ua: {
+				uk: {
 					title: "Згенеруйте свій ідентифікатор сутності u4",
 					yourInformation: "Ваша інформація:",
 					givenNames: "Ваші імена (при народженні):",
@@ -1974,7 +1977,7 @@
 				it: { another: "Crea un altro EID", spec: "Specifica" },
 				es: { another: "Crear otro EID", spec: "Especificación" },
 				de: { another: "Eine andere EID erstellen", spec: "Spezifikation" },
-				ua: { another: "Створити інший EID", spec: "Специфікація" },
+				uk: { another: "Створити інший EID", spec: "Специфікація" },
 				pt: { another: "Criar outro EID", spec: "Especificação" },
 				pl: { another: "Utwórz inny EID", spec: "Specyfikacja" },
 				ru: { another: "Создать другой EID", spec: "Спецификация" },
@@ -1985,6 +1988,7 @@
 				if (!t) return;
 
 				document.title = t.title;
+				document.documentElement.lang = lang;
 				document.getElementById("t_title").textContent = t.title;
 				document.querySelector("h3").textContent = t.yourInformation;
 				// td 0 / 2 are the two name labels — surname now comes first.
@@ -2019,7 +2023,7 @@
 			function pickLang() {
 				const norm = s => {
 					const c = (s || "").slice(0, 2).toLowerCase();
-					return (c === "uk") ? "ua" : (translations[c] ? c : "");
+					return translations[c] ? c : "";
 				};
 				const url = norm(new URLSearchParams(location.search).get("lang"));
 				if (url) return url;

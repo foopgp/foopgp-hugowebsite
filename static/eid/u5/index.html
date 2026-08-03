@@ -10,10 +10,12 @@
  fail silently.
 -->
 
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8" />
+	<meta name="description" content="Generate a u5 Entity Identifier for an association, a company, a software component or any non-human entity, from a moment and a place of origin. Computed in your browser, nothing is sent anywhere." />
+	<link rel="canonical" href="https://foopgp.org/eid/u5/" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Generate your u5 Entity Identifier</title>
 
@@ -130,7 +132,7 @@
 			<option value="it">Italiano</option>
 			<option value="es">Español</option>
 			<option value="de">Deutsch</option>
-			<option value="ua">Українська</option>
+			<option value="uk">Українська</option>
 			<option value="pt">Português</option>
 			<option value="pl">Polski</option>
 			<option value="ru">Русский</option>
@@ -465,7 +467,7 @@
 				nores: "Nichts gefunden.", neterr: "Suche nicht verfügbar — Koordinaten von Hand eingeben.",
 				viaip: "Keine Browser-Position; Abfrage bei einem Dritten über Ihre IP-Adresse…",
 				spec: "Spezifikation", another: "Eine andere EID erstellen", home: "foopgp.org" },
-			ua: { title: "Згенеруйте свій ідентифікатор сутності u5", step1: "Крок 1 з 2", step2: "Крок 2 з 2",
+			uk: { title: "Згенеруйте свій ідентифікатор сутності u5", step1: "Крок 1 з 2", step2: "Крок 2 з 2",
 				placeh: "Місце виникнення", placehint: "Де сутність з'явилася. Знайдіть його, клацніть на карті або скористайтеся своїм положенням.",
 				dateh: "Момент виникнення", datehint: "Створення, перша поява, юридична реєстрація — те, що сутність вважає своїм народженням. Вводиться за вашим місцевим часом.",
 				resh: "Ваш ідентифікатор u5", search: "Пошук", herebtn: "Тут", nowbtn: "Зараз", copy: "Копіювати", copied: "Скопійовано",
@@ -514,6 +516,7 @@
 			curLang = translations[lang] ? lang : "en";
 			const t = T();
 			document.title = t.title;
+			document.documentElement.lang = curLang;
 			const map = { title: "title", step1: "step1", step2: "step2", placeh: "placeh",
 				placehint: "placehint", dateh: "dateh", datehint: "datehint", resh: "resh",
 				lat: "lat", lon: "lon", date: "date", time: "time", ms: "ms" };
@@ -534,7 +537,7 @@
 		function pickLang() {
 			const norm = s => {
 				const c = (s || "").slice(0, 2).toLowerCase();
-				return (c === "uk") ? "ua" : (translations[c] ? c : "");
+				return translations[c] ? c : "";
 			};
 			const url = norm(new URLSearchParams(location.search).get("lang"));
 			if (url) return url;

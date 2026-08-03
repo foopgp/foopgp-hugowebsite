@@ -16,6 +16,8 @@ Depuis les débuts d'[Open-UDC](https://github.com/Open-UDC/) en 2010, une quest
 
 La réponse tient en une famille d'identifiants courts — les **identifiants d'entité** (*Entity IDentifiers*), ou **EID** — qui forment le namespace URN `urn:eid:` et qu'on peut glisser dans n'importe quel certificat OpenPGP : c'est le cœur du système **PGP ID**. Deux variantes sont définies aujourd'hui : **u4** pour les humains, **u5** pour toute autre entité. Leur spécification formelle, au format Internet-Draft (IETF), est publiée sur ce site.
 
+> ✨ **Calculez le vôtre** : [générateur d'EID](/eid/) — [u4](/eid/u4/) depuis votre état civil, [u5](/eid/u5/) depuis un instant et un lieu. Tout se calcule dans votre navigateur : aucune de vos données ne quitte votre machine.
+
 *(Mis à jour en juillet 2026 : le draft définit désormais le namespace URN `eid`, destiné à être réservé auprès de l'IANA, et la forme standard colle le tag de variante à la valeur — `urn:eid:u4…` — sans séparateur.)*
 
 ---

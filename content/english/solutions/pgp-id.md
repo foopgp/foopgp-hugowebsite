@@ -28,7 +28,9 @@ Since [January 2026](/blog/2026-01-19-djibian-release/), **PGP ID is in producti
 
 ### The EID, your entity identifier
 
-Under the hood, your PGP ID is anchored in an **EID** (*Entity IDentifier*): a **deterministic** identifier, computed once and for all from your birth civil records (`u4` variant) or from a moment and place of origin (`u5` variant) — for instance `urn:eid:u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76`. Anyone who knows that origin data can recompute and verify your EID, **without any central registry**. It precedes your cryptographic keys and outlives them: certificates get renewed, the EID remains.
+Under the hood, your PGP ID is anchored in an **EID** (*Entity IDentifier*): a **deterministic** identifier, computed once and for all from your birth civil records (`u4` variant) or from a moment and place of origin (`u5` variant) — for instance `urn:eid:u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76`. Anyone can recompute, verify and certify your EID from that origin data, **without any central service or registry**. It precedes your cryptographic keys and outlives them: certificates get renewed, the EID remains.
+
+> ✨ **Try it**: [generate your EID](/eid/) right in your browser.
 
 > 🔎 **Digging deeper**: [the technical article](/blog/2026-04-28-openpgp-id-spec/) details how EIDs are built, and the RFC draft [draft-foopgp-urn-eid-00](//codeberg.org/foopgp/foopgp-hugowebsite/src/branch/public/public/documents/en/draft-foopgp-urn-eid-00.txt) specifies the `eid` URN namespace, meant to be reserved with IANA.
 

@@ -7,11 +7,13 @@
  Self-contained: no external resource, copy this file anywhere and it works.
 -->
 
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Generate an EID, the short deterministic identifier behind PGP ID: u4 for a person with civil-registry data (ICAO 9303 / ISO 7501), u5 for any other entity. Computed in your browser, nothing is sent anywhere." />
+	<link rel="canonical" href="https://foopgp.org/eid/" />
 	<title>Generate your Entity Identifiers</title>
 
 	<style type="text/css">
@@ -167,7 +169,7 @@
 			<option value="it">Italiano</option>
 			<option value="es">Español</option>
 			<option value="de">Deutsch</option>
-			<option value="ua">Українська</option>
+			<option value="uk">Українська</option>
 			<option value="pt">Português</option>
 			<option value="pl">Polski</option>
 			<option value="ru">Русский</option>
@@ -253,7 +255,7 @@
 				u5w: "Für einen Verein, ein Unternehmen, eine Softwarekomponente, einen automatisierten Prozess — oder eine Person, die ihre Personenstandsdaten nicht preisgeben möchte. Verankert an einem Zeitpunkt und einem Ort des Ursprungs.",
 				spec: "Spezifikation", about: "Was ist PGP ID?", home: "foopgp.org"
 			},
-			ua: {
+			uk: {
 				title: "Згенеруйте свої ідентифікатори сутностей",
 				lead: "<strong>EID</strong> — це короткий, детермінований і децентралізований ідентифікатор. Ніхто його не видає і ніхто не може його відкликати: будь-хто з тими самими вихідними даними обчислить точно той самий рядок. Оберіть потрібний вид.",
 				u4h: "u4 — особа",
@@ -294,6 +296,7 @@
 		function translatePage(lang) {
 			const t = translations[lang] || translations.en;
 			document.title = t.title;
+			document.documentElement.lang = lang;
 			for (const k of ["title", "lead", "u4h", "u4w", "u5h", "u5w"]) {
 				const el = document.getElementById("t_" + k);
 				if (el) el.innerHTML = t[k];
@@ -313,7 +316,7 @@
 		function pickLang() {
 			const norm = s => {
 				const c = (s || "").slice(0, 2).toLowerCase();
-				return (c === "uk") ? "ua" : (translations[c] ? c : "");
+				return translations[c] ? c : "";
 			};
 			const url = norm(new URLSearchParams(location.search).get("lang"));
 			if (url) return url;

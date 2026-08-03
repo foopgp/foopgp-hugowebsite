@@ -3,3 +3,8 @@
 
 User-agent: *
 Disallow: /search
+
+# Hugo's own sitemap covers content/ only. The EID generator lives in static/,
+# hence a second, hand-written one.
+Sitemap: https://foopgp.org/sitemap.xml
+Sitemap: https://foopgp.org/eid/sitemap.xml

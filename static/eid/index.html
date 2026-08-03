@@ -141,10 +141,14 @@
 			text-align: center;
 		}
 
+		/* Les logos restent côte à côte : ils rapetissent, ils ne s'empilent pas. */
 		@media (max-width: 600px) {
 			.image-container {
-				flex-direction: column;
 				gap: 20px;
+			}
+
+			.image-container img {
+				width: 80px;
 			}
 		}
 	</style>

@@ -103,8 +103,18 @@
 		.image-container img { width: 110px; height: auto; cursor: pointer; }
 		.language-switcher { display: flex; justify-content: center; margin-top: 1.2em; }
 		#language { max-width: 200px; text-align: center; }
+		/* Les logos restent côte à côte : ils rapetissent, ils ne s'empilent pas. */
 		@media (max-width: 600px) {
-			.image-container { flex-direction: column; gap: 20px; }
+			.image-container { gap: 20px; }
+			.image-container img { width: 80px; }
+		}
+
+		/* 32 caractères en chasse fixe débordent d'une carte de téléphone ;
+		   tronqué, l'identifiant ne sert à rien. Champ en lecture seule, donc
+		   pas de zoom iOS à craindre. */
+		@media (max-width: 480px) {
+			#out { font-size: 0.82em; padding: .7em .3em; }
+			.urn { font-size: .72em; }
 		}
 		a, a:visited, a:active { color: #ff7f00; }
 		.attrib a, .attrib a:visited { color: #b9b3d0; }

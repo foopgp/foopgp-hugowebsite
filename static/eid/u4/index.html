@@ -1135,52 +1135,45 @@
 				if (to_focus == null) to_focus = documentElement(id);
 			};
 
+			/* MRZ-transliterate(), § 2 de draft-foopgp-urn-eid-00 : décomposer
+			   en NFD, retirer les diacritiques (catégorie Mn), majuscules,
+			   ne garder que [A-Z]. Volontairement SANS convention nationale :
+			   « Müller » donne MULLER, pas MUELLER — c'est la spec qui tranche,
+			   et c'est pourquoi la ligne reconstituée est montrée à relire. */
+			var mrzTranslit = function (s) {
+				return s.normalize("NFD").replace(/\p{Mn}/gu, "")
+					.toUpperCase().replace(/[^A-Z]/g, "").slice(0, 32);
+			};
+
+			/* Découpe AVANT translittération (§ 4.2.1 étape 2) : le trait
+			   d'union reste une frontière de composant même une fois retiré. */
+			var mrzComponents = function (value) {
+				return normalizeSpaces(value || "")
+					.split(/[^\p{L}\p{N}]+/u)
+					.map(mrzTranslit)
+					.filter(function (c) { return c !== ""; });
+			};
+
 			var checkfirstname = function (id) {
-				var name = documentElement(id).value;
-				name = normalizeSpaces(name);
-				name = name.toUpperCase();
-				name = name.replace(/[;, -]+/g, "<") + "<<";
-				var matches = name.match(/[^<A-Z]/);
-				if (matches != null) {
-					setMessageAfterElement(
-						id,
-						"Invalid character: " + matches.join(", "),
-					);
+				var parts = mrzComponents(documentElement(id).value);
+				if (!parts.length) {
+					setMessageAfterElement(id, t_msg.givenNeeded);
 					foc(id);
 					return null;
 				}
-				var nameMatch = name.match(/[A-Z]+<[A-Z]*</);
-				if (!nameMatch) {
-					setMessageAfterElement(id, "Insert given names");
-					foc(id);
-					return null;
-				}
-				setMessageAfterElement(id); // Clear any message
-				return nameMatch;
+				setMessageAfterElement(id);
+				return parts[0] + "<" + (parts[1] || "") + "<";
 			};
 
 			var checklastname = function (id) {
-				var name = documentElement(id).value;
-				name = normalizeSpaces(name);
-				name = name.toUpperCase();
-				name = name.replace(/[;, -]+/g, "<");
-				var matches = name.match(/[^<A-Z]/);
-				if (matches != null) {
-					setMessageAfterElement(
-						id,
-						"Invalid character: " + matches.join(", "),
-					);
+				var parts = mrzComponents(documentElement(id).value);
+				if (!parts.length) {
+					setMessageAfterElement(id, t_msg.surnameNeeded);
 					foc(id);
 					return null;
 				}
-				var nameMatch = name.match(/[A-Z]+$/);
-				if (!nameMatch) {
-					setMessageAfterElement(id, "Insert surname/family name");
-					foc(id);
-					return null;
-				}
-				setMessageAfterElement(id); // Clear any message
-				return nameMatch;
+				setMessageAfterElement(id);
+				return parts[parts.length - 1];   // § 4.2.1 : le DERNIER composant
 			};
 
 			var firstname = checkfirstname("firstname");
@@ -1351,6 +1344,16 @@
 		input[type="button"]:hover,
 		input[type="submit"]:hover {
 			background-color: #e06d00;
+		}
+
+		/* Discret : gris, petit, sous la ligne reconstituée. */
+		.mrzcheck {
+			max-width: 34em;
+			margin: 1.2em auto 0.5em auto;
+			font-size: 0.82em;
+			line-height: 1.45;
+			color: #b9b3d0;
+			text-align: left;
 		}
 
 		button.copy {
@@ -1658,8 +1661,9 @@
 		</div>
 
 		<div class="hidden" id="generated">
-			<input id="tohash" style="font-family: fixed, courier" size="50" title="Data hidden by the EID" type="text" />
-			<br />
+			<p class="mrzcheck" id="t_mrzcheck"></p>
+			<input id="tohash" style="font-family: fixed, courier" size="50" title="Data hidden by the EID"
+				type="text" onclick="this.select()" />
 			<h4 id="t_udidinfo">Your Entity Identifier (EID):</h4>
 			<input id="udid4" style="font-family: fixed, courier" size="50" title="Your EID"
 				type="text" onclick="this.select()" />
@@ -1691,6 +1695,9 @@
 					pickCountry: "Pick a country from the list",
 					copy: "Copy",
 					copied: "Copied",
+					mrzCheck: "Check this line: it alone determines your EID. Accents are dropped without any national convention — \u00abMüller\u00bb gives MULLER, not MUELLER, so it may differ from your passport.",
+					givenNeeded: "Give at least one given name in Latin letters",
+					surnameNeeded: "Give a surname in Latin letters",
 					udidInfo:
 						"Your EID is a unique code to identify you only once, worldwide, without revealing your real name.",
 				},
@@ -1712,6 +1719,9 @@
 					pickCountry: "Choisissez un pays dans la liste",
 					copy: "Copier",
 					copied: "Copié",
+					mrzCheck: "Relisez cette ligne : c'est elle seule qui détermine votre EID. Les accents sont retirés sans convention nationale — «\u00a0Müller\u00a0» donne MULLER et non MUELLER, elle peut donc différer de votre passeport.",
+					givenNeeded: "Indiquez au moins un prénom en lettres latines",
+					surnameNeeded: "Indiquez un nom de famille en lettres latines",
 					udidInfo:
 						"Votre EID est un code unique pour vous identifier une seule fois, dans le monde entier, sans révéler votre vrai nom.",
 				},
@@ -1733,6 +1743,9 @@
 					pickCountry: "Scegli un paese dall'elenco",
 					copy: "Copia",
 					copied: "Copiato",
+					mrzCheck: "Rileggi questa riga: è lei sola a determinare il tuo EID. Gli accenti vengono rimossi senza convenzioni nazionali — «Müller» dà MULLER, non MUELLER, quindi può differire dal tuo passaporto.",
+					givenNeeded: "Indica almeno un nome in lettere latine",
+					surnameNeeded: "Indica un cognome in lettere latine",
 					udidInfo:
 						"Il tuo EID è un codice unico per identificarti una sola volta, in tutto il mondo, senza rivelare il tuo vero nome.",
 				},
@@ -1754,6 +1767,9 @@
 					pickCountry: "Elija un país de la lista",
 					copy: "Copiar",
 					copied: "Copiado",
+					mrzCheck: "Relea esta línea: solo ella determina su EID. Los acentos se eliminan sin convención nacional — «Müller» da MULLER, no MUELLER, por lo que puede diferir de su pasaporte.",
+					givenNeeded: "Indique al menos un nombre en letras latinas",
+					surnameNeeded: "Indique un apellido en letras latinas",
 					udidInfo:
 						"Tu EID es un código único para identificarte una vez, en todo el mundo, sin revelar tu verdadero nombre.",
 				},
@@ -1775,6 +1791,9 @@
 					pickCountry: "Wählen Sie ein Land aus der Liste",
 					copy: "Kopieren",
 					copied: "Kopiert",
+					mrzCheck: "Prüfen Sie diese Zeile: allein sie bestimmt Ihre EID. Diakritika entfallen ohne nationale Konvention — «Müller» ergibt MULLER, nicht MUELLER, sie kann also von Ihrem Pass abweichen.",
+					givenNeeded: "Geben Sie mindestens einen Vornamen in lateinischen Buchstaben an",
+					surnameNeeded: "Geben Sie einen Nachnamen in lateinischen Buchstaben an",
 					udidInfo:
 						"Ihre EID ist ein einzigartiger Code, mit dem Sie weltweit einmalig identifiziert werden können, ohne Ihren echten Namen preiszugeben.",
 				},
@@ -1796,6 +1815,9 @@
 					pickCountry: "Оберіть країну зі списку",
 					copy: "Копіювати",
 					copied: "Скопійовано",
+					mrzCheck: "Перечитайте цей рядок: лише він визначає ваш EID. Діакритика знімається без національних правил — «Müller» дає MULLER, а не MUELLER, тож рядок може відрізнятися від паспорта.",
+					givenNeeded: "Вкажіть хоча б одне ім'я латинськими літерами",
+					surnameNeeded: "Вкажіть прізвище латинськими літерами",
 					udidInfo:
 						"Ваш EID — це унікальний код, що дозволяє ідентифікувати вас лише раз у всьому світі без розкриття вашого справжнього імені.",
 				},
@@ -1817,6 +1839,9 @@
 					pickCountry: "Escolha um país da lista",
 					copy: "Copiar",
 					copied: "Copiado",
+					mrzCheck: "Releia esta linha: só ela determina o seu EID. Os acentos são removidos sem convenção nacional — «Müller» dá MULLER, não MUELLER, pelo que pode diferir do seu passaporte.",
+					givenNeeded: "Indique pelo menos um nome próprio em letras latinas",
+					surnameNeeded: "Indique um apelido em letras latinas",
 					udidInfo:
 						"O seu EID é um código único para o identificar apenas uma vez, em todo o mundo, sem revelar o seu verdadeiro nome.",
 				},
@@ -1838,6 +1863,9 @@
 					pickCountry: "Wybierz kraj z listy",
 					copy: "Kopiuj",
 					copied: "Skopiowano",
+					mrzCheck: "Sprawdź ten wiersz: to on jedyny wyznacza Twój EID. Znaki diakrytyczne są usuwane bez konwencji narodowych — «Müller» daje MULLER, a nie MUELLER, więc może różnić się od paszportu.",
+					givenNeeded: "Podaj co najmniej jedno imię literami łacińskimi",
+					surnameNeeded: "Podaj nazwisko literami łacińskimi",
 					udidInfo:
 						"Twój EID to unikalny kod, który identyfikuje Cię tylko raz, na całym świecie, bez ujawniania Twojego prawdziwego imienia i nazwiska.",
 				},
@@ -1859,6 +1887,9 @@
 					pickCountry: "Выберите страну из списка",
 					copy: "Копировать",
 					copied: "Скопировано",
+					mrzCheck: "Перечитайте эту строку: только она определяет ваш EID. Диакритика снимается без национальных правил — «Müller» даёт MULLER, а не MUELLER, поэтому строка может отличаться от паспорта.",
+					givenNeeded: "Укажите хотя бы одно имя латинскими буквами",
+					surnameNeeded: "Укажите фамилию латинскими буквами",
 					udidInfo:
 						"Ваш EID — это уникальный код, позволяющий идентифицировать вас лишь один раз во всём мире, не раскрывая вашего настоящего имени.",
 				},
@@ -1904,6 +1935,7 @@
 				document.getElementById("generate").value = t.generate;
 				document.getElementById("t_udidinfo").textContent = t.udidInfo;
 				document.getElementById("t_btncopy").textContent = t.copy;
+				document.getElementById("t_mrzcheck").textContent = t.mrzCheck;
 
 				const f = footerI18n[lang] || footerI18n.en;
 				const base = (lang === "fr") ? "https://foopgp.org/fr/" : "https://foopgp.org/";

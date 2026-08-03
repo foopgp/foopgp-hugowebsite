@@ -112,12 +112,67 @@
 			border: 1px solid #6b6390;
 			border-radius: 4px;
 			padding: .25em;
-			margin-top: 2em;
+		}
+
+		.image-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 40px;
+			margin-top: 20px;
+		}
+
+		.image-container img {
+			width: 110px;
+			height: auto;
+			cursor: pointer;
+		}
+
+		.language-switcher {
+			display: flex;
+			justify-content: center;
+			margin-top: 1.2em;
+		}
+
+		#language {
+			max-width: 200px;
+			text-align: center;
+		}
+
+		@media (max-width: 600px) {
+			.image-container {
+				flex-direction: column;
+				gap: 20px;
+			}
 		}
 	</style>
 </head>
 
 <body>
+
+	<!-- foopgp and Open-UDC: where the EID comes from. -->
+	<div class="image-container">
+		<a href="https://foopgp.org/" target="_blank" rel="noopener">
+			<img src="https://foopgp.org/images/logos/foopgp_logo_white.png" alt="foopgp_association" />
+		</a>
+		<a href="https://github.com/Open-UDC" target="_blank" rel="noopener">
+			<img src="https://foopgp.org/images/logos/openUDC_logo.png" alt="openUDC_project" />
+		</a>
+	</div>
+
+	<div class="language-switcher">
+		<select id="language" onchange="translatePage(this.value)">
+			<option value="en">English</option>
+			<option value="fr">Français</option>
+			<option value="it">Italiano</option>
+			<option value="es">Español</option>
+			<option value="de">Deutsch</option>
+			<option value="ua">Українська</option>
+			<option value="pt">Português</option>
+			<option value="pl">Polski</option>
+			<option value="ru">Русский</option>
+		</select>
+	</div>
 
 	<h1 id="t_title">Generate your Entity Identifiers</h1>
 
@@ -148,20 +203,6 @@
 			<div class="sample">u5001777236237.945e_43.30_005.38</div>
 		</a>
 	</div>
-
-	<p class="info">
-		<select id="language" onchange="translatePage(this.value)">
-			<option value="en">English</option>
-			<option value="fr">Français</option>
-			<option value="it">Italiano</option>
-			<option value="es">Español</option>
-			<option value="de">Deutsch</option>
-			<option value="ua">Українська</option>
-			<option value="pt">Português</option>
-			<option value="pl">Polski</option>
-			<option value="ru">Русский</option>
-		</select>
-	</p>
 
 	<p class="info" id="t_more"></p>
 

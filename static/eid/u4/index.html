@@ -1535,13 +1535,28 @@
 </head>
 
 <body style="text-align: center">
+	<!-- foopgp and Open-UDC: where the EID comes from. -->
 	<div class="image-container">
-		<a href="https://foopgp.org/" target="_blank">
+		<a href="https://foopgp.org/" target="_blank" rel="noopener">
 			<img src="https://foopgp.org/images/logos/foopgp_logo_white.png" alt="foopgp_association" />
 		</a>
-		<a href="https://www.openudc.org/" target="_blank">
+		<a href="https://github.com/Open-UDC" target="_blank" rel="noopener">
 			<img src="https://foopgp.org/images/logos/openUDC_logo.png" alt="openUDC_project" />
 		</a>
+	</div>
+
+	<div class="language-switcher">
+		<select id="language">
+			<option value="en" selected>English</option>
+			<option value="fr">Français</option>
+			<option value="it">Italiano</option>
+			<option value="es">Español</option>
+			<option value="de">Deutsch</option>
+			<option value="ua">Українська</option>
+			<option value="pt">Português</option>
+			<option value="pl">Polski</option>
+			<option value="ru">Русский</option>
+		</select>
 	</div>
 
 	<noscript>
@@ -1557,32 +1572,20 @@
 
 	<form class="centered" style="display: inline-table" onsubmit="return false">
 		<div class="container">
-			<div class="language-switcher">
-				<select id="language">
-					<option value="en" selected>English</option>
-					<option value="fr">Français</option>
-					<option value="it">Italiano</option>
-					<option value="es">Español</option>
-					<option value="de">Deutsch</option>
-					<option value="ua">українська</option>
-					<option value="pt">Português</option>
-					<option value="pl">Polski</option>
-					<option value="ru">Русский</option>
-				</select>
-			</div>
-
 			<table>
-				<tr>
-					<td>Your Given Names (at birth)</td>
-					<td class="inputcell">
-						<input id="firstname" size="30" type="text" />
-					</td>
-				</tr>
-
+				<!-- Surname first: the MRZ order (ICAO 9303), and the order the
+				     u4 seed is built in. -->
 				<tr>
 					<td>Your surname/family name at birth:</td>
 					<td class="inputcell">
 						<input id="lastname" size="30" type="text" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>Your Given Names (at birth)</td>
+					<td class="inputcell">
+						<input id="firstname" size="30" type="text" />
 					</td>
 				</tr>
 
@@ -1984,8 +1987,9 @@
 				document.title = t.title;
 				document.getElementById("t_title").textContent = t.title;
 				document.querySelector("h3").textContent = t.yourInformation;
-				document.querySelectorAll("td")[0].textContent = t.givenNames;
-				document.querySelectorAll("td")[2].textContent = t.surname;
+				// td 0 / 2 are the two name labels — surname now comes first.
+				document.querySelectorAll("td")[0].textContent = t.surname;
+				document.querySelectorAll("td")[2].textContent = t.givenNames;
 				document.querySelectorAll("td")[4].textContent = t.birthDate;
 				document.getElementById("day").options[0].textContent = t.day;
 				document.getElementById("month").options[0].textContent = t.month;

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# SPDX-FileCopyrightText: 2025 jean-jacques brucker (u4=sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76) <jjbrucker@foopgp.org>
-# SPDX-FileCopyrightText: 2025 Mnêmê (u5=1745618400.000e_43.30_005.38 claude-sonnet-4-6) <mneme@foopgp.org>
+# SPDX-FileCopyrightText: 2026 jean-jacques brucker (u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76) <jjbrucker@foopgp.org>
+# SPDX-FileCopyrightText: 2026 Mnêmê (u5001777236237.945e_43.30_005.38 claude-sonnet-4-6) <mneme@foopgp.org>
 #   Context window : 200k tokens
 #   Thinking mode  : adaptive (extended thinking enabled)
 #   Trained by     : Anthropic PBC (u5=1617235200.000e_37.77-122.42)

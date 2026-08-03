@@ -26,7 +26,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>EID — Create your Entity Identifier</title>
+	<title>Generate your u4 Entity Identifier</title>
 
 	<script type="text/javascript">
 
@@ -1308,8 +1308,12 @@
 			color: #ff7f00;
 			margin-top: 1em;
 			font-weight: 700;
-			font-size: 1.6em;
 		}
+
+		/* Same scale as /eid/u5/ */
+		h1 { font-size: 1.7em; }
+		h2 { font-size: 1.3em; }
+		h3 { font-size: 1.15em; }
 
 		.info {
 			color: #f4f7fc;
@@ -1382,13 +1386,23 @@
 			padding-right: 20px;
 		}
 
-		.info a {
+		a,
+		a:visited,
+		a:active {
 			color: #ff7f00;
 			text-decoration: none;
 		}
 
-		.info a:hover {
+		a:hover {
 			text-decoration: underline;
+		}
+
+		.nojs {
+			max-width: 700px;
+			width: 90%;
+			margin: 1.5em auto 0 auto;
+			font-size: 0.9em;
+			line-height: 1.5;
 		}
 
 		#generated input {
@@ -1522,17 +1536,26 @@
 
 <body style="text-align: center">
 	<div class="image-container">
-		<a href="http://foopgp.org/" target="_blank">
-			<img src="/images/logos/foopgp_logo_white.png" alt="foopgp_association" />
+		<a href="https://foopgp.org/" target="_blank">
+			<img src="https://foopgp.org/images/logos/foopgp_logo_white.png" alt="foopgp_association" />
 		</a>
-		<a href="http://www.openudc.org/" target="_blank">
-			<img src="/images/logos/openUDC_logo.png" alt="openUDC_project" />
+		<a href="https://www.openudc.org/" target="_blank">
+			<img src="https://foopgp.org/images/logos/openUDC_logo.png" alt="openUDC_project" />
 		</a>
 	</div>
 
+	<noscript>
+		<p class="nojs">This page computes the identifier in your browser and sends nothing
+			anywhere. Without JavaScript it cannot compute anything — see the
+			<a href="https://foopgp.org/documents/en/draft-foopgp-urn-eid-00.txt">specification</a>
+			to derive a u4 by hand.</p>
+	</noscript>
+
+	<h1 id="t_title">Generate your u4 Entity Identifier</h1>
+
 	<h3>Your information:</h3>
 
-	<form class="centered" style="display: inline-table" action="nojavascript.html" method="get">
+	<form class="centered" style="display: inline-table" onsubmit="return false">
 		<div class="container">
 			<div class="language-switcher">
 				<select id="language">
@@ -1629,7 +1652,7 @@
 						<div class="hidden" id="coordmethodcell">
 							<select class="secondary" id="coordmethod" name="coordmethod" onChange="coordmethodselect()">
 								<option value="geonamesorg">
-									Find earth coordinates via geonames.org
+									Pick the country of birth
 								</option>
 								<option value="latlon">Specify latitude/longitude</option>
 							</select>
@@ -1657,7 +1680,6 @@
 									<sub>(lon)</sub>
 								</span>
 							</span>
-							<a class="secondary" id="verifylocation" href="//geonames.org/">Find on geonames.org</a>
 						</div>
 					</td>
 				</tr>
@@ -1689,7 +1711,7 @@
 		document.addEventListener("DOMContentLoaded", () => {
 			const translations = {
 				en: {
-					title: "EID - Create Your International ID",
+					title: "Generate your u4 Entity Identifier",
 					yourInformation: "Your Information:",
 					givenNames: "Your Given Names (at birth):",
 					surname: "Your surname/family name at birth:",
@@ -1717,7 +1739,7 @@
 						"Your EID is a unique code to identify you only once, worldwide, without revealing your real name.",
 				},
 				fr: {
-					title: "EID - Créez Votre ID International",
+					title: "Générez votre identifiant d'entité u4",
 					yourInformation: "Vos informations :",
 					givenNames: "Vos prénoms (à la naissance) :",
 					surname: "Votre nom de famille (à la naissance) :",
@@ -1745,7 +1767,7 @@
 						"Votre EID est un code unique pour vous identifier une seule fois, dans le monde entier, sans révéler votre vrai nom.",
 				},
 				it: {
-					title: "EID - Crea il Tuo ID Internazionale",
+					title: "Genera il tuo identificatore di entità u4",
 					yourInformation: "Le Tue Informazioni:",
 					givenNames: "I Tuoi Nomi (alla nascita):",
 					surname: "Il Tuo Cognome (alla nascita):",
@@ -1773,7 +1795,7 @@
 						"Il tuo EID è un codice unico per identificarti una sola volta, in tutto il mondo, senza rivelare il tuo vero nome.",
 				},
 				es: {
-					title: "EID - Crea Tu ID Internacional",
+					title: "Genere su identificador de entidad u4",
 					yourInformation: "Tu Información:",
 					givenNames: "Tus Nombres (al nacer):",
 					surname: "Tu Apellido (al nacer):",
@@ -1801,7 +1823,7 @@
 						"Tu EID es un código único para identificarte una vez, en todo el mundo, sin revelar tu verdadero nombre.",
 				},
 				de: {
-					title: "EID - Erstellen Sie Ihre Internationale ID",
+					title: "Erzeugen Sie Ihre u4-Entitätskennung",
 					yourInformation: "Ihre Informationen:",
 					givenNames: "Ihre Vornamen (bei der Geburt):",
 					surname: "Ihr Nachname (bei der Geburt):",
@@ -1829,7 +1851,7 @@
 						"Ihre EID ist ein einzigartiger Code, mit dem Sie weltweit einmalig identifiziert werden können, ohne Ihren echten Namen preiszugeben.",
 				},
 				ua: {
-					title: "EID - Створіть свій міжнародний ідентифікатор",
+					title: "Згенеруйте свій ідентифікатор сутності u4",
 					yourInformation: "Ваша інформація:",
 					givenNames: "Ваші імена (при народженні):",
 					surname: "Ваше прізвище (при народженні):",
@@ -1857,7 +1879,7 @@
 						"Ваш EID — це унікальний код, що дозволяє ідентифікувати вас лише раз у всьому світі без розкриття вашого справжнього імені.",
 				},
 				pt: {
-					title: "EID - Crie o Seu Identificador de Entidade",
+					title: "Gere o seu identificador de entidade u4",
 					yourInformation: "As suas informações:",
 					givenNames: "Os seus nomes próprios (à nascença):",
 					surname: "O seu apelido (à nascença):",
@@ -1885,7 +1907,7 @@
 						"O seu EID é um código único para o identificar apenas uma vez, em todo o mundo, sem revelar o seu verdadeiro nome.",
 				},
 				pl: {
-					title: "EID - Utwórz swój identyfikator podmiotu",
+					title: "Wygeneruj swój identyfikator podmiotu u4",
 					yourInformation: "Twoje dane:",
 					givenNames: "Twoje imiona (z urodzenia):",
 					surname: "Twoje nazwisko (z urodzenia):",
@@ -1913,7 +1935,7 @@
 						"Twój EID to unikalny kod, który identyfikuje Cię tylko raz, na całym świecie, bez ujawniania Twojego prawdziwego imienia i nazwiska.",
 				},
 				ru: {
-					title: "EID - Создайте свой идентификатор сущности",
+					title: "Сгенерируйте свой идентификатор сущности u4",
 					yourInformation: "Ваши данные:",
 					givenNames: "Ваши имена (при рождении):",
 					surname: "Ваша фамилия (при рождении):",
@@ -1942,16 +1964,17 @@
 				},
 			};
 
-			const learnMoreI18n = {
-				en: { text: "Learn more about the Entity Identifier (EID):", spec: "specification" },
-				fr: { text: "En savoir plus sur l'identifiant d'entité (EID) :", spec: "spécification" },
-				it: { text: "Per saperne di più sull'identificatore di entità (EID) :", spec: "specifica" },
-				es: { text: "Más información sobre el identificador de entidad (EID) :", spec: "especificación" },
-				de: { text: "Mehr über den Entitäts-Identifikator (EID):", spec: "Spezifikation" },
-				ua: { text: "Дізнайтеся більше про ідентифікатор сутності (EID):", spec: "специфікація" },
-				pt: { text: "Saiba mais sobre o identificador de entidade (EID):", spec: "especificação" },
-				pl: { text: "Dowiedz się więcej o identyfikatorze podmiotu (EID):", spec: "specyfikacja" },
-				ru: { text: "Подробнее об идентификаторе сущности (EID):", spec: "спецификация" },
+			// Same three links, same order as /eid/u5/.
+			const footerI18n = {
+				en: { another: "Create another EID", spec: "Specification" },
+				fr: { another: "Créer un autre EID", spec: "Spécification" },
+				it: { another: "Crea un altro EID", spec: "Specifica" },
+				es: { another: "Crear otro EID", spec: "Especificación" },
+				de: { another: "Eine andere EID erstellen", spec: "Spezifikation" },
+				ua: { another: "Створити інший EID", spec: "Специфікація" },
+				pt: { another: "Criar outro EID", spec: "Especificação" },
+				pl: { another: "Utwórz inny EID", spec: "Specyfikacja" },
+				ru: { another: "Создать другой EID", spec: "Спецификация" },
 			};
 
 			function translatePage(lang) {
@@ -1959,6 +1982,7 @@
 				if (!t) return;
 
 				document.title = t.title;
+				document.getElementById("t_title").textContent = t.title;
 				document.querySelector("h3").textContent = t.yourInformation;
 				document.querySelectorAll("td")[0].textContent = t.givenNames;
 				document.querySelectorAll("td")[2].textContent = t.surname;
@@ -1976,28 +2000,35 @@
 				document.getElementById("generate").value = t.generate;
 				document.querySelector("#generated h4").textContent = t.udidInfo;
 
-				const lm = learnMoreI18n[lang] || learnMoreI18n.en;
-				const base = (lang === "fr") ? "https://foopgp.org/fr" : "https://foopgp.org";
+				const f = footerI18n[lang] || footerI18n.en;
+				const base = (lang === "fr") ? "https://foopgp.org/fr/" : "https://foopgp.org/";
 				const lmEl = document.getElementById("learnmore");
 				if (lmEl) {
 					lmEl.innerHTML =
-						lm.text + " " +
-						'<a href="' + base + '/solutions/pgp-id/">PGP&nbsp;ID / EID</a> \u00b7 ' +
-						'<a href="' + base + '/blog/2026-04-28-openpgp-id-spec/">' + lm.spec + '</a> \u00b7 ' +
-						'<a href="https://foopgp.org/">foopgp.org</a>';
+						'<a href="../?lang=' + lang + '">' + f.another + '</a>' +
+						' \u00a0\u00b7\u00a0 <a href="https://foopgp.org/documents/en/draft-foopgp-urn-eid-00.txt">' + f.spec + '</a>' +
+						' \u00a0\u00b7\u00a0 <a href="' + base + '">foopgp.org</a>';
 				}
 			}
 
-			function getQueryParam(param) {
-				const urlParams = new URLSearchParams(window.location.search);
-				return urlParams.get(param);
+			/* ?lang=it wins over the browser, so a link can carry its language. */
+			function pickLang() {
+				const norm = s => {
+					const c = (s || "").slice(0, 2).toLowerCase();
+					return (c === "uk") ? "ua" : (translations[c] ? c : "");
+				};
+				const url = norm(new URLSearchParams(location.search).get("lang"));
+				if (url) return url;
+				for (const l of (navigator.languages || [navigator.language || "en"])) {
+					const c = norm(l);
+					if (c) return c;
+				}
+				return "en";
 			}
 
-			const lang = getQueryParam("lang");
-			if (lang && translations[lang]) {
-				document.getElementById("language").value = lang;
-				translatePage(lang);
-			}
+			const lang = pickLang();
+			document.getElementById("language").value = lang;
+			translatePage(lang);
 
 			document
 				.getElementById("language")

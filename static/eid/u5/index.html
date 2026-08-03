@@ -15,7 +15,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>u5 — Create your Entity Identifier</title>
+	<title>Generate your u5 Entity Identifier</title>
 
 	<style type="text/css">
 		body {
@@ -31,12 +31,12 @@
 		h2 { color: #ff7f00; font-size: 1.15em; margin: 0 0 .2em 0; }
 
 		.card {
-			display: inline-block;
+			display: block;
 			padding: 1.6em;
 			background-color: #3f3757;
 			border-radius: 8px;
 			box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
-			margin-top: 1.5em;
+			margin: 1.5em auto 0 auto;
 			max-width: 700px;
 			width: 90%;
 			text-align: left;
@@ -62,8 +62,11 @@
 		button:hover { background-color: #6b5c8a; }
 		button.primary { background-color: #ff7f00; color: #2c284b; border-color: #ff7f00; font-weight: 700; }
 		button.primary:hover { background-color: #ffa040; }
+		button.accent { font-weight: 700; }
 
-		.row { display: flex; flex-wrap: wrap; gap: .5em; align-items: center; margin-bottom: .6em; }
+		/* flex-end, not center: a bare button must sit on the same baseline as
+		   inputs that carry a label above them. */
+		.row { display: flex; flex-wrap: wrap; gap: .5em; align-items: flex-end; margin-bottom: .6em; }
 		.row > .grow { flex: 1 1 200px; min-width: 0; }
 		label.f { display: block; font-size: .85em; color: #b9b3d0; margin-bottom: .2em; }
 
@@ -93,7 +96,8 @@
 		.utc { font-size: .78em; color: #b9b3d0; margin-top: .25em; }
 		.warn { color: #ffb060; font-size: .85em; margin-top: .5em; }
 		.info { font-size: .88em; margin-top: 1.6em; line-height: 1.6; }
-		.info a, .hint a { color: #ff7f00; }
+		a, a:visited, a:active { color: #ff7f00; }
+		.attrib a, .attrib a:visited { color: #b9b3d0; }
 		select { background-color: #2c284b; color: #f4f7fc; border: 1px solid #6b6390;
 			border-radius: 4px; padding: .25em; }
 	</style>
@@ -101,7 +105,7 @@
 
 <body>
 
-	<h1 id="t_title">Create a u5 Entity Identifier</h1>
+	<h1 id="t_title">Generate your u5 Entity Identifier</h1>
 
 	<!-- ── 1. PLACE (asked first, on purpose) ─────────────────────────── -->
 	<div class="card">
@@ -114,7 +118,7 @@
 			<input class="grow" type="text" id="q" placeholder="Marseille, France"
 				onkeydown="if(event.key==='Enter'){event.preventDefault();search();}" />
 			<button type="button" onclick="search()" id="t_btnsearch">Search</button>
-			<button type="button" onclick="here()" id="t_btnhere">Here</button>
+			<button type="button" class="accent" onclick="here()" id="t_btnhere">Here</button>
 		</div>
 		<ul id="results"></ul>
 
@@ -165,7 +169,7 @@
 				<input type="number" id="ms" min="0" max="999" value="0" style="width:100%"
 					oninput="compute()" />
 			</div>
-			<button type="button" onclick="now()" id="t_btnnow">Now</button>
+			<button type="button" class="accent" onclick="now()" id="t_btnnow">Now</button>
 		</div>
 		<div class="utc" id="utcline"></div>
 		<div class="warn" id="datewarn"></div>
@@ -200,7 +204,9 @@
 		/* ── u5 = ts16 coord14 — draft-foopgp-urn-eid-00 §5 ───────────────
 		   ts16 : signed Unix time. Lead '0'/'1' → 12-digit integer part ;
 		          lead '-' → 11 digits holding the ABSOLUTE value.
-		   coord14 : "e" lat5 lon8, sign '_' positive / '-' negative.        */
+		   coord14 : "e" lat5 lon8. The sign encodes the hemisphere, not the
+		             rounded magnitude: -0.004 is "-00.00", never "_00.00".
+		             Rounding is half-to-even, the spec being silent.        */
 
 		function ts16(msEpoch) {
 			const neg = msEpoch < 0, abs = Math.abs(msEpoch);
@@ -210,13 +216,17 @@
 			           : String(s).padStart(12, "0") + frac;
 		}
 
+		function round2(v) {
+			const x = v * 100, f = Math.floor(x), d = x - f;
+			// 1e-9 absorbs the float error that makes 0.015*100 === 1.4999…
+			const n = (Math.abs(d - 0.5) < 1e-9) ? (f % 2 === 0 ? f : f + 1)
+			                                     : (d > 0.5 ? f + 1 : f);
+			return n / 100;
+		}
+
 		function coord14(lat, lon) {
-			// Sign is decided AFTER rounding: -0.004 and +0.004 both round to
-			// 00.00 and must yield the same string, not e-00.00 vs e_00.00.
-			const f = (v, w) => {
-				const s = Math.abs(v).toFixed(2).padStart(w, "0");
-				return ((v < 0 && parseFloat(s) !== 0) ? "-" : "_") + s;
-			};
+			const f = (v, w) => (v < 0 ? "-" : "_")
+				+ Math.abs(round2(v)).toFixed(2).padStart(w, "0");
 			return "e" + f(lat, 5) + f(lon, 6);
 		}
 
@@ -386,7 +396,7 @@
 
 		/* ── i18n ───────────────────────────────────────────────────────── */
 		const translations = {
-			en: { title: "Create a u5 Entity Identifier", step1: "Step 1 of 2", step2: "Step 2 of 2",
+			en: { title: "Generate your u5 Entity Identifier", step1: "Step 1 of 2", step2: "Step 2 of 2",
 				placeh: "Place of origin", placehint: "Where the entity came into being. Search for it, click the map, or use your current position.",
 				dateh: "Moment of origin", datehint: "Creation, first public appearance, legal registration — whichever the entity considers its birth. Entered in your local time.",
 				resh: "Your u5 identifier", search: "Search", herebtn: "Here", nowbtn: "Now", copy: "Copy", copied: "Copied",
@@ -395,8 +405,8 @@
 				nodate: "Enter a date to obtain the identifier.", before1970: "Before 1970 — encoded as a negative timestamp, which the specification allows.",
 				nores: "Nothing found.", neterr: "Search unavailable — enter the coordinates by hand.",
 				viaip: "No browser position; asking a third party from your IP address…",
-				spec: "Specification", u4: "Need a u4 instead?", home: "foopgp.org" },
-			fr: { title: "Créez un identifiant d'entité u5", step1: "Étape 1 sur 2", step2: "Étape 2 sur 2",
+				spec: "Specification", another: "Create another EID", home: "foopgp.org" },
+			fr: { title: "Générez votre identifiant d'entité u5", step1: "Étape 1 sur 2", step2: "Étape 2 sur 2",
 				placeh: "Lieu d'origine", placehint: "Là où l'entité est apparue. Cherchez-le, cliquez sur la carte, ou utilisez votre position actuelle.",
 				dateh: "Instant d'origine", datehint: "Création, première apparition publique, enregistrement légal — ce que l'entité considère comme sa naissance. Saisi dans votre heure locale.",
 				resh: "Votre identifiant u5", search: "Chercher", herebtn: "Ici", nowbtn: "Maintenant", copy: "Copier", copied: "Copié",
@@ -405,8 +415,8 @@
 				nodate: "Saisissez une date pour obtenir l'identifiant.", before1970: "Avant 1970 — encodé en horodatage négatif, ce que la spécification prévoit.",
 				nores: "Rien trouvé.", neterr: "Recherche indisponible — saisissez les coordonnées à la main.",
 				viaip: "Pas de position du navigateur ; interrogation d'un tiers à partir de votre adresse IP…",
-				spec: "Spécification", u4: "Besoin d'un u4 ?", home: "foopgp.org" },
-			it: { title: "Crea un identificatore di entità u5", step1: "Passo 1 di 2", step2: "Passo 2 di 2",
+				spec: "Spécification", another: "Créer un autre EID", home: "foopgp.org" },
+			it: { title: "Genera il tuo identificatore di entità u5", step1: "Passo 1 di 2", step2: "Passo 2 di 2",
 				placeh: "Luogo di origine", placehint: "Dove l'entità è nata. Cercalo, clicca sulla mappa o usa la tua posizione.",
 				dateh: "Momento di origine", datehint: "Creazione, prima apparizione pubblica, registrazione legale — ciò che l'entità considera la propria nascita. Inserito nell'ora locale.",
 				resh: "Il tuo identificatore u5", search: "Cerca", herebtn: "Qui", nowbtn: "Adesso", copy: "Copia", copied: "Copiato",
@@ -415,8 +425,8 @@
 				nodate: "Inserisci una data per ottenere l'identificatore.", before1970: "Prima del 1970 — codificato come timestamp negativo, previsto dalla specifica.",
 				nores: "Nessun risultato.", neterr: "Ricerca non disponibile — inserisci le coordinate a mano.",
 				viaip: "Nessuna posizione dal browser; interrogazione di terzi tramite il tuo indirizzo IP…",
-				spec: "Specifica", u4: "Ti serve un u4?", home: "foopgp.org" },
-			es: { title: "Cree un identificador de entidad u5", step1: "Paso 1 de 2", step2: "Paso 2 de 2",
+				spec: "Specifica", another: "Crea un altro EID", home: "foopgp.org" },
+			es: { title: "Genere su identificador de entidad u5", step1: "Paso 1 de 2", step2: "Paso 2 de 2",
 				placeh: "Lugar de origen", placehint: "Donde nació la entidad. Búsquelo, haga clic en el mapa o use su posición actual.",
 				dateh: "Momento de origen", datehint: "Creación, primera aparición pública, registro legal — lo que la entidad considere su nacimiento. Introducido en su hora local.",
 				resh: "Su identificador u5", search: "Buscar", herebtn: "Aquí", nowbtn: "Ahora", copy: "Copiar", copied: "Copiado",
@@ -425,8 +435,8 @@
 				nodate: "Introduzca una fecha para obtener el identificador.", before1970: "Antes de 1970 — codificado como marca de tiempo negativa, previsto por la especificación.",
 				nores: "No se encontró nada.", neterr: "Búsqueda no disponible — introduzca las coordenadas a mano.",
 				viaip: "Sin posición del navegador; consultando a un tercero desde su dirección IP…",
-				spec: "Especificación", u4: "¿Necesita un u4?", home: "foopgp.org" },
-			de: { title: "Erstellen Sie eine u5-Entitätskennung", step1: "Schritt 1 von 2", step2: "Schritt 2 von 2",
+				spec: "Especificación", another: "Crear otro EID", home: "foopgp.org" },
+			de: { title: "Erzeugen Sie Ihre u5-Entitätskennung", step1: "Schritt 1 von 2", step2: "Schritt 2 von 2",
 				placeh: "Ursprungsort", placehint: "Wo die Entität entstanden ist. Suchen Sie ihn, klicken Sie auf die Karte oder nutzen Sie Ihre Position.",
 				dateh: "Ursprungszeitpunkt", datehint: "Gründung, erstes öffentliches Auftreten, Eintragung — was die Entität als ihre Geburt ansieht. Eingabe in Ihrer Ortszeit.",
 				resh: "Ihre u5-Kennung", search: "Suchen", herebtn: "Hier", nowbtn: "Jetzt", copy: "Kopieren", copied: "Kopiert",
@@ -435,8 +445,8 @@
 				nodate: "Geben Sie ein Datum ein, um die Kennung zu erhalten.", before1970: "Vor 1970 — als negativer Zeitstempel codiert, wie die Spezifikation es vorsieht.",
 				nores: "Nichts gefunden.", neterr: "Suche nicht verfügbar — Koordinaten von Hand eingeben.",
 				viaip: "Keine Browser-Position; Abfrage bei einem Dritten über Ihre IP-Adresse…",
-				spec: "Spezifikation", u4: "Brauchen Sie eine u4?", home: "foopgp.org" },
-			ua: { title: "Створіть ідентифікатор сутності u5", step1: "Крок 1 з 2", step2: "Крок 2 з 2",
+				spec: "Spezifikation", another: "Eine andere EID erstellen", home: "foopgp.org" },
+			ua: { title: "Згенеруйте свій ідентифікатор сутності u5", step1: "Крок 1 з 2", step2: "Крок 2 з 2",
 				placeh: "Місце виникнення", placehint: "Де сутність з'явилася. Знайдіть його, клацніть на карті або скористайтеся своїм положенням.",
 				dateh: "Момент виникнення", datehint: "Створення, перша поява, юридична реєстрація — те, що сутність вважає своїм народженням. Вводиться за вашим місцевим часом.",
 				resh: "Ваш ідентифікатор u5", search: "Пошук", herebtn: "Тут", nowbtn: "Зараз", copy: "Копіювати", copied: "Скопійовано",
@@ -445,8 +455,8 @@
 				nodate: "Введіть дату, щоб отримати ідентифікатор.", before1970: "До 1970 — кодується від'ємною міткою часу, що передбачено специфікацією.",
 				nores: "Нічого не знайдено.", neterr: "Пошук недоступний — введіть координати вручну.",
 				viaip: "Немає положення від браузера; запит до третьої сторони за вашою IP-адресою…",
-				spec: "Специфікація", u4: "Потрібен u4?", home: "foopgp.org" },
-			pt: { title: "Crie um identificador de entidade u5", step1: "Passo 1 de 2", step2: "Passo 2 de 2",
+				spec: "Специфікація", another: "Створити інший EID", home: "foopgp.org" },
+			pt: { title: "Gere o seu identificador de entidade u5", step1: "Passo 1 de 2", step2: "Passo 2 de 2",
 				placeh: "Local de origem", placehint: "Onde a entidade surgiu. Procure-o, clique no mapa ou use a sua posição atual.",
 				dateh: "Momento de origem", datehint: "Criação, primeira aparição pública, registo legal — o que a entidade considerar o seu nascimento. Introduzido na sua hora local.",
 				resh: "O seu identificador u5", search: "Procurar", herebtn: "Aqui", nowbtn: "Agora", copy: "Copiar", copied: "Copiado",
@@ -455,8 +465,8 @@
 				nodate: "Introduza uma data para obter o identificador.", before1970: "Antes de 1970 — codificado como carimbo temporal negativo, previsto na especificação.",
 				nores: "Nada encontrado.", neterr: "Pesquisa indisponível — introduza as coordenadas à mão.",
 				viaip: "Sem posição do navegador; a consultar terceiros a partir do seu endereço IP…",
-				spec: "Especificação", u4: "Precisa de um u4?", home: "foopgp.org" },
-			pl: { title: "Utwórz identyfikator podmiotu u5", step1: "Krok 1 z 2", step2: "Krok 2 z 2",
+				spec: "Especificação", another: "Criar outro EID", home: "foopgp.org" },
+			pl: { title: "Wygeneruj swój identyfikator podmiotu u5", step1: "Krok 1 z 2", step2: "Krok 2 z 2",
 				placeh: "Miejsce powstania", placehint: "Gdzie podmiot powstał. Wyszukaj je, kliknij mapę lub użyj swojej pozycji.",
 				dateh: "Moment powstania", datehint: "Utworzenie, pierwsze publiczne wystąpienie, rejestracja — to, co podmiot uznaje za swoje narodziny. Wprowadzane w czasie lokalnym.",
 				resh: "Twój identyfikator u5", search: "Szukaj", herebtn: "Tutaj", nowbtn: "Teraz", copy: "Kopiuj", copied: "Skopiowano",
@@ -465,8 +475,8 @@
 				nodate: "Wprowadź datę, aby uzyskać identyfikator.", before1970: "Przed 1970 — kodowane jako ujemny znacznik czasu, co przewiduje specyfikacja.",
 				nores: "Nic nie znaleziono.", neterr: "Wyszukiwanie niedostępne — wprowadź współrzędne ręcznie.",
 				viaip: "Brak pozycji z przeglądarki; zapytanie do strony trzeciej na podstawie Twojego adresu IP…",
-				spec: "Specyfikacja", u4: "Potrzebujesz u4?", home: "foopgp.org" },
-			ru: { title: "Создайте идентификатор сущности u5", step1: "Шаг 1 из 2", step2: "Шаг 2 из 2",
+				spec: "Specyfikacja", another: "Utwórz inny EID", home: "foopgp.org" },
+			ru: { title: "Сгенерируйте свой идентификатор сущности u5", step1: "Шаг 1 из 2", step2: "Шаг 2 из 2",
 				placeh: "Место возникновения", placehint: "Где возникла сущность. Найдите его, щёлкните по карте или используйте своё положение.",
 				dateh: "Момент возникновения", datehint: "Создание, первое публичное появление, юридическая регистрация — то, что сущность считает своим рождением. Вводится по вашему местному времени.",
 				resh: "Ваш идентификатор u5", search: "Поиск", herebtn: "Здесь", nowbtn: "Сейчас", copy: "Копировать", copied: "Скопировано",
@@ -475,7 +485,7 @@
 				nodate: "Введите дату, чтобы получить идентификатор.", before1970: "До 1970 — кодируется отрицательной меткой времени, что предусмотрено спецификацией.",
 				nores: "Ничего не найдено.", neterr: "Поиск недоступен — введите координаты вручную.",
 				viaip: "Нет положения от браузера; запрос к третьей стороне по вашему IP-адресу…",
-				spec: "Спецификация", u4: "Нужен u4?", home: "foopgp.org" }
+				spec: "Спецификация", another: "Создать другой EID", home: "foopgp.org" }
 		};
 
 		let curLang = "en";
@@ -484,7 +494,7 @@
 		function translatePage(lang) {
 			curLang = translations[lang] ? lang : "en";
 			const t = T();
-			document.title = "u5 — " + t.title;
+			document.title = t.title;
 			const map = { title: "title", step1: "step1", step2: "step2", placeh: "placeh",
 				placehint: "placehint", dateh: "dateh", datehint: "datehint", resh: "resh",
 				lat: "lat", lon: "lon", date: "date", time: "time", ms: "ms" };
@@ -495,15 +505,29 @@
 			$("t_btncopy").textContent = t.copy;
 			const base = (curLang === "fr") ? "https://foopgp.org/fr/" : "https://foopgp.org/";
 			$("t_more").innerHTML =
-				'<a href="../u4/">' + t.u4 + '</a>'
+				'<a href="../?lang=' + curLang + '">' + t.another + '</a>'
 				+ ' &nbsp;·&nbsp; <a href="https://foopgp.org/documents/en/draft-foopgp-urn-eid-00.txt">' + t.spec + '</a>'
 				+ ' &nbsp;·&nbsp; <a href="' + base + '">' + t.home + '</a>';
 			compute();
 		}
 
+		/* ?lang=it wins over the browser, so a link can carry its language. */
+		function pickLang() {
+			const norm = s => {
+				const c = (s || "").slice(0, 2).toLowerCase();
+				return (c === "uk") ? "ua" : (translations[c] ? c : "");
+			};
+			const url = norm(new URLSearchParams(location.search).get("lang"));
+			if (url) return url;
+			for (const l of (navigator.languages || [navigator.language || "en"])) {
+				const c = norm(l);
+				if (c) return c;
+			}
+			return "en";
+		}
+
 		(function () {
-			const nav = (navigator.language || "en").slice(0, 2).toLowerCase();
-			const lang = (nav === "uk") ? "ua" : (translations[nav] ? nav : "en");
+			const lang = pickLang();
 			$("language").value = lang;
 			translatePage(lang);
 			drawMap();

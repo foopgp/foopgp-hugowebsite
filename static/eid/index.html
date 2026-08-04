@@ -141,7 +141,7 @@
 			text-align: center;
 		}
 
-		/* Les logos restent côte à côte : ils rapetissent, ils ne s'empilent pas. */
+		/* Logos stay side by side: they shrink, they do not stack. */
 		@media (max-width: 600px) {
 			.image-container {
 				gap: 20px;
@@ -336,7 +336,7 @@
 			document.getElementById("door_u4").href = "u4/?lang=" + lang;
 			document.getElementById("door_u5").href = "u5/?lang=" + lang;
 
-			// « title » = description pour les lecteurs d'écran, bulle à la souris.
+			// "title" doubles as a screen-reader description and a mouse tooltip.
 			document.getElementById("door_u4").title = t.tipU4;
 			document.getElementById("door_u5").title = t.tipU5;
 			document.getElementById("language").title = t.tipLang;

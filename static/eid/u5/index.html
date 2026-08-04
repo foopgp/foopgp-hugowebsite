@@ -103,15 +103,15 @@
 		.image-container img { width: 110px; height: auto; cursor: pointer; }
 		.language-switcher { display: flex; justify-content: center; margin-top: 1.2em; }
 		#language { max-width: 200px; text-align: center; }
-		/* Les logos restent côte à côte : ils rapetissent, ils ne s'empilent pas. */
+		/* Logos stay side by side: they shrink, they do not stack. */
 		@media (max-width: 600px) {
 			.image-container { gap: 20px; }
 			.image-container img { width: 80px; }
 		}
 
-		/* 32 caractères en chasse fixe débordent d'une carte de téléphone ;
-		   tronqué, l'identifiant ne sert à rien. Champ en lecture seule, donc
-		   pas de zoom iOS à craindre. */
+		/* 32 monospace characters overflow a phone-sized card, and a truncated
+		   identifier is useless. The field is read-only, so shrinking it below
+		   16px cannot trigger the iOS focus zoom. */
 		@media (max-width: 480px) {
 			#out { font-size: 0.82em; padding: .7em .3em; }
 			.urn { font-size: .72em; }
@@ -622,8 +622,8 @@
 				+ ' &nbsp;·&nbsp; <a href="https://foopgp.org/documents/en/draft-foopgp-urn-eid-00.txt">' + t.spec + '</a>'
 				+ ' &nbsp;·&nbsp; <a href="' + base + '">' + t.home + '</a>';
 
-			/* Bulles contextuelles : « title » est annoncé comme description
-			   par les lecteurs d'écran, les contrôles ayant déjà un label. */
+			/* Tooltips. Every control already has a label, so "title" is
+			   announced as its DESCRIPTION rather than taken for its name. */
 			const tips = {
 				language: t.tipLang, q: t.tipQuery, t_btnsearch: t.tipSearch,
 				t_btnhere: t.tipHere, mapwrap: t.tipMap, lat: t.precision,

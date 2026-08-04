@@ -1137,17 +1137,18 @@
 			};
 
 			/* MRZ-transliterate(), § 2 de draft-foopgp-urn-eid-00 : décomposer
-			   en NFD, retirer les diacritiques (catégorie Mn), majuscules,
-			   ne garder que [A-Z]. Volontairement SANS convention nationale :
-			   « Müller » donne MULLER, pas MUELLER — c'est la spec qui tranche,
-			   et c'est pourquoi la ligne reconstituée est montrée à relire. */
+			   decompose to NFD, strip combining marks (category Mn), upper-case,
+			   keep [A-Z] only. Deliberately WITHOUT any national convention:
+			   "Muller", not "MUELLER". ICAO 9303 only *recommends* a table, and
+			   offers up to three forms per character, so the spec picks one —
+			   hence the rebuilt line being shown to the user for review. */
 			var mrzTranslit = function (s) {
 				return s.normalize("NFD").replace(/\p{Mn}/gu, "")
 					.toUpperCase().replace(/[^A-Z]/g, "").slice(0, 32);
 			};
 
-			/* Découpe AVANT translittération (§ 4.2.1 étape 2) : le trait
-			   d'union reste une frontière de composant même une fois retiré. */
+			/* Split BEFORE transliterating (§ 4.2.1 step 2): the hyphen stays a
+			   component boundary even though it is stripped straight after. */
 			var mrzComponents = function (value) {
 				return normalizeSpaces(value || "")
 					.split(/[^\p{L}\p{N}]+/u)
@@ -1280,7 +1281,7 @@
 		}
 
 		/* Same scale as /eid/u5/ */
-		/* Marge latérale : sinon le titre touche les bords sur un téléphone. */
+		/* Side padding: without it the title touches both edges on a phone. */
 		h1 { font-size: 1.7em; padding: 0 0.7em; }
 		h2 { font-size: 1.3em; }
 		h3 { font-size: 1.15em; }
@@ -1302,8 +1303,8 @@
 			width: 90%;
 		}
 
-		/* Libellé AU-DESSUS du champ : le tableau à deux colonnes écrasait tout
-		   sur mobile. Même grammaire que /eid/u5/. */
+		/* Label ABOVE the field: the two-column table squeezed everything on a
+		   phone. Same grammar as /eid/u5/. */
 		.field {
 			text-align: left;
 			margin-bottom: 1.2em;
@@ -1349,7 +1350,7 @@
 			background-color: #e06d00;
 		}
 
-		/* Même rendu discret que sur /eid/u5/. */
+		/* Same understated rendering as /eid/u5/. */
 		.urn {
 			font-family: monospace;
 			font-size: 0.82em;
@@ -1358,7 +1359,7 @@
 			word-break: break-all;
 		}
 
-		/* Discret : gris, petit, au-dessus de la ligne reconstituée. */
+		/* Understated: small and grey, above the rebuilt line. */
 		.mrzcheck {
 			max-width: 34em;
 			margin: 1.2em auto 0.5em auto;
@@ -1450,8 +1451,8 @@
 			cursor: pointer;
 		}
 
-		/* stretch, pas center : les trois contrôles font exactement la même
-		   hauteur et partagent la même ligne de base. */
+		/* stretch, not center: the three controls get the exact same height and
+		   share one baseline. */
 		.birth-date-container {
 			display: flex;
 			gap: 10px;
@@ -1477,9 +1478,8 @@
 			margin-top: 1.2em;
 		}
 
-		/* Comme sur /eid/ et /eid/u5/ : le sélecteur n'hérite pas du gabarit
-		   des champs du formulaire (pleine largeur, gros rembourrage) et
-		   respire sous les logos. */
+		/* As on /eid/ and /eid/u5/: the picker must not inherit the form-field
+		   template (full width, heavy padding), and needs room under the logos. */
 		#language {
 			width: auto;
 			max-width: 200px;
@@ -1489,8 +1489,8 @@
 			text-align: center;
 		}
 
-		/* Jour et année en spin box, mois en menu : les nombres se saisissent
-		   ou s'incrémentent, les noms de mois se choisissent. */
+		/* Day and year as spin boxes, month as a menu: numbers are typed or
+		   stepped, month names are picked. */
 		#day {
 			flex: 0 0 7em;
 		}
@@ -1504,8 +1504,8 @@
 			flex: 0 0 7.5em;
 		}
 
-		/* Les flèches du spin box mangent la place : on rogne le rembourrage
-		   latéral pour que « День » ou « Dzień » tienne. */
+		/* Spin-box arrows eat the room: trim the side padding so that "День"
+		   or "Dzień" still fits. */
 		.birth-date-container input,
 		.birth-date-container select {
 			padding-left: 0.5em;
@@ -1517,7 +1517,7 @@
 				padding: 1.5em;
 			}
 
-			/* Les logos restent côte à côte : ils rapetissent. */
+			/* Logos stay side by side: they shrink. */
 			.image-container {
 				gap: 20px;
 			}
@@ -1561,15 +1561,15 @@
 				padding: 1em;
 			}
 
-			/* Jamais sous 16px : en deçà, iOS zoome tout seul à la mise au point. */
+			/* Never below 16px: under that, iOS zooms in on focus by itself. */
 			input,
 			select,
 			label.f {
 				font-size: 16px;
 			}
 
-			/* Sauf ces deux-là : en lecture seule (donc pas de zoom iOS) et
-			   38 caractères à faire tenir — tronqués, ils ne servent à rien. */
+			/* Except these two: read-only (so no iOS zoom to fear) and 38
+			   characters to fit — truncated, they are worthless. */
 			#tohash,
 			#udid4 {
 				font-size: 0.8em;
@@ -2049,9 +2049,9 @@
 				document.getElementById("t_btncopy").textContent = t.copy;
 				document.getElementById("t_mrzcheck").textContent = t.mrzCheck;
 
-				/* Bulles contextuelles. Chaque contrôle a déjà un <label for> ou
-				   un texte visible, donc « title » y est annoncé comme
-				   DESCRIPTION par les lecteurs d'écran — pas comme nom. */
+				/* Tooltips. Every control already has a <label for> or visible
+				   text, so "title" is announced as its DESCRIPTION by screen
+				   readers rather than taken for its name. */
 				const tips = {
 					language: t.tipLang, lastname: t.tipSurname, firstname: t.tipGiven,
 					day: t.tipDate, month: t.tipDate, year: t.tipDate,
@@ -2149,8 +2149,8 @@
 			}
 		}
 
-		/* Repère de saisie : un vrai pays, dans la langue de la page, pour
-		   montrer la forme attendue « Nom (ISO3) ». */
+		/* Input hint: a real country, in the page language, to show the
+		   expected "Name (ISO3)" shape. */
 		function countryExample(lang) {
 			const dn = regionNames(lang);
 			return (dn ? dn.of("FR") || "France" : "France") + " (FRA)";

@@ -1098,6 +1098,7 @@
 				documentElement("country").value = "";
 				documentElement("udid4").value = "";
 				documentElement("tohash").value = "";
+				documentElement("urn").textContent = "";
 				setMessageAfterElement("firstname");
 				setMessageAfterElement("lastname");
 				setMessageAfterElement("day");
@@ -1236,6 +1237,8 @@
 						.replace(/[+]/g, "-")
 						.replace(/[/]/g, "_") +
 					ll;
+				documentElement("urn").textContent =
+					"urn:eid:" + documentElement("udid4").value;
 				documentElement("udid4").scrollIntoView(false);
 				documentElement("tohash").readOnly = true;
 				documentElement("udid4").readOnly = true;
@@ -1346,7 +1349,16 @@
 			background-color: #e06d00;
 		}
 
-		/* Discret : gris, petit, sous la ligne reconstituée. */
+		/* Même rendu discret que sur /eid/u5/. */
+		.urn {
+			font-family: monospace;
+			font-size: 0.82em;
+			color: #b9b3d0;
+			margin-top: 1em;
+			word-break: break-all;
+		}
+
+		/* Discret : gris, petit, au-dessus de la ligne reconstituée. */
 		.mrzcheck {
 			max-width: 34em;
 			margin: 1.2em auto 0.5em auto;
@@ -1662,12 +1674,13 @@
 
 		<div class="hidden" id="generated">
 			<p class="mrzcheck" id="t_mrzcheck"></p>
-			<input id="tohash" style="font-family: fixed, courier" size="50" title="Data hidden by the EID"
+			<input id="tohash" style="font-family: fixed, courier" size="50"
 				type="text" onclick="this.select()" />
 			<h4 id="t_udidinfo">Your Entity Identifier (EID):</h4>
-			<input id="udid4" style="font-family: fixed, courier" size="50" title="Your EID"
+			<input id="udid4" style="font-family: fixed, courier" size="50"
 				type="text" onclick="this.select()" />
 			<button type="button" class="copy" id="t_btncopy" onclick="copyOut()">Copy</button>
+			<div class="urn" id="urn"></div>
 		</div>
 
 	</form>
@@ -1698,6 +1711,17 @@
 					mrzCheck: "Check this line: it alone determines your EID. Accents are dropped without any national convention — \u00abMüller\u00bb gives MULLER, not MUELLER, so it may differ from your passport.",
 					givenNeeded: "Give at least one given name in Latin letters",
 					surnameNeeded: "Give a surname in Latin letters",
+					tipLang: "Change the page language.",
+					tipSurname: "Family name at birth, before any marriage or change. Only its last component enters the identifier.",
+					tipGiven: "All your given names, in civil-registry order. Only the first two enter the identifier.",
+					tipDate: "Your date of birth as recorded by the civil registry.",
+					tipCountry: "Country of birth. Type the first letters, or the three-letter ISO code.",
+					tipReset: "Clear every field.",
+					tipGenerate: "Computes the identifier in your browser. Nothing is sent anywhere.",
+					tipMrz: "Line rebuilt to MRZ conventions: this, and only this, is what gets hashed.",
+					tipResult: "Your entity identifier. Click to select it all.",
+					tipCopy: "Copy the identifier to the clipboard.",
+					tipUrn: "URN form, the one to embed in an OpenPGP certificate.",
 					udidInfo:
 						"Your EID is a unique code to identify you only once, worldwide, without revealing your real name.",
 				},
@@ -1722,6 +1746,17 @@
 					mrzCheck: "Relisez cette ligne : c'est elle seule qui détermine votre EID. Les accents sont retirés sans convention nationale — «\u00a0Müller\u00a0» donne MULLER et non MUELLER, elle peut donc différer de votre passeport.",
 					givenNeeded: "Indiquez au moins un prénom en lettres latines",
 					surnameNeeded: "Indiquez un nom de famille en lettres latines",
+					tipLang: "Change la langue de la page.",
+					tipSurname: "Nom de famille à la naissance, avant tout mariage ou changement. Seul son dernier composant entre dans l'identifiant.",
+					tipGiven: "Tous vos prénoms, dans l'ordre de l'état civil. Seuls les deux premiers entrent dans l'identifiant.",
+					tipDate: "Votre date de naissance telle qu'elle figure à l'état civil.",
+					tipCountry: "Pays de naissance. Tapez les premières lettres, ou le code ISO à trois lettres.",
+					tipReset: "Efface tous les champs.",
+					tipGenerate: "Calcule l'identifiant dans votre navigateur. Rien n'est envoyé nulle part.",
+					tipMrz: "Ligne reconstituée aux conventions MRZ : c'est elle, et elle seule, qui est hachée.",
+					tipResult: "Votre identifiant d'entité. Cliquez pour tout sélectionner.",
+					tipCopy: "Copie l'identifiant dans le presse-papiers.",
+					tipUrn: "Forme URN, celle à glisser dans un certificat OpenPGP.",
 					udidInfo:
 						"Votre EID est un code unique pour vous identifier une seule fois, dans le monde entier, sans révéler votre vrai nom.",
 				},
@@ -1746,6 +1781,17 @@
 					mrzCheck: "Rileggi questa riga: è lei sola a determinare il tuo EID. Gli accenti vengono rimossi senza convenzioni nazionali — «Müller» dà MULLER, non MUELLER, quindi può differire dal tuo passaporto.",
 					givenNeeded: "Indica almeno un nome in lettere latine",
 					surnameNeeded: "Indica un cognome in lettere latine",
+					tipLang: "Cambia la lingua della pagina.",
+					tipSurname: "Cognome alla nascita, prima di matrimoni o cambiamenti. Solo l'ultimo componente entra nell'identificatore.",
+					tipGiven: "Tutti i tuoi nomi, nell'ordine dello stato civile. Solo i primi due entrano nell'identificatore.",
+					tipDate: "La tua data di nascita come risulta allo stato civile.",
+					tipCountry: "Paese di nascita. Digita le prime lettere o il codice ISO a tre lettere.",
+					tipReset: "Cancella tutti i campi.",
+					tipGenerate: "Calcola l'identificatore nel tuo browser. Nulla viene inviato.",
+					tipMrz: "Riga ricostruita secondo le convenzioni MRZ: è lei sola a essere sottoposta a hash.",
+					tipResult: "Il tuo identificatore di entità. Clicca per selezionarlo tutto.",
+					tipCopy: "Copia l'identificatore negli appunti.",
+					tipUrn: "Forma URN, quella da inserire in un certificato OpenPGP.",
 					udidInfo:
 						"Il tuo EID è un codice unico per identificarti una sola volta, in tutto il mondo, senza rivelare il tuo vero nome.",
 				},
@@ -1770,6 +1816,17 @@
 					mrzCheck: "Relea esta línea: solo ella determina su EID. Los acentos se eliminan sin convención nacional — «Müller» da MULLER, no MUELLER, por lo que puede diferir de su pasaporte.",
 					givenNeeded: "Indique al menos un nombre en letras latinas",
 					surnameNeeded: "Indique un apellido en letras latinas",
+					tipLang: "Cambia el idioma de la página.",
+					tipSurname: "Apellido de nacimiento, antes de cualquier matrimonio o cambio. Solo su último componente entra en el identificador.",
+					tipGiven: "Todos sus nombres, en el orden del registro civil. Solo los dos primeros entran en el identificador.",
+					tipDate: "Su fecha de nacimiento tal como consta en el registro civil.",
+					tipCountry: "País de nacimiento. Escriba las primeras letras o el código ISO de tres letras.",
+					tipReset: "Borra todos los campos.",
+					tipGenerate: "Calcula el identificador en su navegador. No se envía nada.",
+					tipMrz: "Línea reconstruida según las convenciones MRZ: solo ella se somete a hash.",
+					tipResult: "Su identificador de entidad. Haga clic para seleccionarlo todo.",
+					tipCopy: "Copia el identificador al portapapeles.",
+					tipUrn: "Forma URN, la que se inserta en un certificado OpenPGP.",
 					udidInfo:
 						"Tu EID es un código único para identificarte una vez, en todo el mundo, sin revelar tu verdadero nombre.",
 				},
@@ -1794,6 +1851,17 @@
 					mrzCheck: "Prüfen Sie diese Zeile: allein sie bestimmt Ihre EID. Diakritika entfallen ohne nationale Konvention — «Müller» ergibt MULLER, nicht MUELLER, sie kann also von Ihrem Pass abweichen.",
 					givenNeeded: "Geben Sie mindestens einen Vornamen in lateinischen Buchstaben an",
 					surnameNeeded: "Geben Sie einen Nachnamen in lateinischen Buchstaben an",
+					tipLang: "Ändert die Sprache der Seite.",
+					tipSurname: "Geburtsname, vor Eheschließung oder Änderung. Nur sein letzter Bestandteil geht in die Kennung ein.",
+					tipGiven: "Alle Vornamen in der Reihenfolge des Personenstands. Nur die ersten beiden gehen in die Kennung ein.",
+					tipDate: "Ihr Geburtsdatum laut Personenstandsregister.",
+					tipCountry: "Geburtsland. Tippen Sie die ersten Buchstaben oder den dreistelligen ISO-Code.",
+					tipReset: "Leert alle Felder.",
+					tipGenerate: "Berechnet die Kennung in Ihrem Browser. Es wird nichts gesendet.",
+					tipMrz: "Nach MRZ-Konventionen wiederhergestellte Zeile: nur sie wird gehasht.",
+					tipResult: "Ihre Entitätskennung. Zum Markieren anklicken.",
+					tipCopy: "Kopiert die Kennung in die Zwischenablage.",
+					tipUrn: "URN-Form, die in ein OpenPGP-Zertifikat gehört.",
 					udidInfo:
 						"Ihre EID ist ein einzigartiger Code, mit dem Sie weltweit einmalig identifiziert werden können, ohne Ihren echten Namen preiszugeben.",
 				},
@@ -1818,6 +1886,17 @@
 					mrzCheck: "Перечитайте цей рядок: лише він визначає ваш EID. Діакритика знімається без національних правил — «Müller» дає MULLER, а не MUELLER, тож рядок може відрізнятися від паспорта.",
 					givenNeeded: "Вкажіть хоча б одне ім'я латинськими літерами",
 					surnameNeeded: "Вкажіть прізвище латинськими літерами",
+					tipLang: "Змінює мову сторінки.",
+					tipSurname: "Прізвище при народженні, до шлюбу чи зміни. До ідентифікатора входить лише остання складова.",
+					tipGiven: "Усі ваші імена в порядку запису актів. До ідентифікатора входять лише два перших.",
+					tipDate: "Ваша дата народження за записом актів цивільного стану.",
+					tipCountry: "Країна народження. Введіть перші літери або трилітерний код ISO.",
+					tipReset: "Очищає всі поля.",
+					tipGenerate: "Обчислює ідентифікатор у вашому браузері. Нічого не надсилається.",
+					tipMrz: "Рядок, відтворений за правилами MRZ: саме він і лише він хешується.",
+					tipResult: "Ваш ідентифікатор сутності. Клацніть, щоб виділити повністю.",
+					tipCopy: "Копіює ідентифікатор у буфер обміну.",
+					tipUrn: "Форма URN — саме її вставляють у сертифікат OpenPGP.",
 					udidInfo:
 						"Ваш EID — це унікальний код, що дозволяє ідентифікувати вас лише раз у всьому світі без розкриття вашого справжнього імені.",
 				},
@@ -1842,6 +1921,17 @@
 					mrzCheck: "Releia esta linha: só ela determina o seu EID. Os acentos são removidos sem convenção nacional — «Müller» dá MULLER, não MUELLER, pelo que pode diferir do seu passaporte.",
 					givenNeeded: "Indique pelo menos um nome próprio em letras latinas",
 					surnameNeeded: "Indique um apelido em letras latinas",
+					tipLang: "Muda o idioma da página.",
+					tipSurname: "Apelido de nascimento, antes de qualquer casamento ou alteração. Só o último componente entra no identificador.",
+					tipGiven: "Todos os seus nomes próprios, na ordem do registo civil. Só os dois primeiros entram no identificador.",
+					tipDate: "A sua data de nascimento tal como consta do registo civil.",
+					tipCountry: "País de nascimento. Escreva as primeiras letras ou o código ISO de três letras.",
+					tipReset: "Limpa todos os campos.",
+					tipGenerate: "Calcula o identificador no seu navegador. Nada é enviado.",
+					tipMrz: "Linha reconstituída segundo as convenções MRZ: só ela é submetida a hash.",
+					tipResult: "O seu identificador de entidade. Clique para selecionar tudo.",
+					tipCopy: "Copia o identificador para a área de transferência.",
+					tipUrn: "Forma URN, a que se coloca num certificado OpenPGP.",
 					udidInfo:
 						"O seu EID é um código único para o identificar apenas uma vez, em todo o mundo, sem revelar o seu verdadeiro nome.",
 				},
@@ -1866,6 +1956,17 @@
 					mrzCheck: "Sprawdź ten wiersz: to on jedyny wyznacza Twój EID. Znaki diakrytyczne są usuwane bez konwencji narodowych — «Müller» daje MULLER, a nie MUELLER, więc może różnić się od paszportu.",
 					givenNeeded: "Podaj co najmniej jedno imię literami łacińskimi",
 					surnameNeeded: "Podaj nazwisko literami łacińskimi",
+					tipLang: "Zmienia język strony.",
+					tipSurname: "Nazwisko rodowe, sprzed małżeństwa lub zmiany. Do identyfikatora wchodzi tylko ostatni człon.",
+					tipGiven: "Wszystkie imiona w kolejności z aktu stanu cywilnego. Do identyfikatora wchodzą tylko dwa pierwsze.",
+					tipDate: "Twoja data urodzenia zgodnie z aktem stanu cywilnego.",
+					tipCountry: "Kraj urodzenia. Wpisz pierwsze litery albo trzyliterowy kod ISO.",
+					tipReset: "Czyści wszystkie pola.",
+					tipGenerate: "Oblicza identyfikator w Twojej przeglądarce. Nic nie jest wysyłane.",
+					tipMrz: "Wiersz odtworzony zgodnie z konwencjami MRZ: tylko on jest hashowany.",
+					tipResult: "Twój identyfikator podmiotu. Kliknij, aby zaznaczyć całość.",
+					tipCopy: "Kopiuje identyfikator do schowka.",
+					tipUrn: "Postać URN — ta, którą umieszcza się w certyfikacie OpenPGP.",
 					udidInfo:
 						"Twój EID to unikalny kod, który identyfikuje Cię tylko raz, na całym świecie, bez ujawniania Twojego prawdziwego imienia i nazwiska.",
 				},
@@ -1890,6 +1991,17 @@
 					mrzCheck: "Перечитайте эту строку: только она определяет ваш EID. Диакритика снимается без национальных правил — «Müller» даёт MULLER, а не MUELLER, поэтому строка может отличаться от паспорта.",
 					givenNeeded: "Укажите хотя бы одно имя латинскими буквами",
 					surnameNeeded: "Укажите фамилию латинскими буквами",
+					tipLang: "Меняет язык страницы.",
+					tipSurname: "Фамилия при рождении, до брака или смены. В идентификатор входит только последняя составляющая.",
+					tipGiven: "Все ваши имена в порядке записи актов. В идентификатор входят только первые два.",
+					tipDate: "Ваша дата рождения по записи актов гражданского состояния.",
+					tipCountry: "Страна рождения. Введите первые буквы или трёхбуквенный код ISO.",
+					tipReset: "Очищает все поля.",
+					tipGenerate: "Вычисляет идентификатор в вашем браузере. Ничего не отправляется.",
+					tipMrz: "Строка, восстановленная по правилам MRZ: хешируется именно она и только она.",
+					tipResult: "Ваш идентификатор сущности. Щёлкните, чтобы выделить целиком.",
+					tipCopy: "Копирует идентификатор в буфер обмена.",
+					tipUrn: "Форма URN — та, что вставляется в сертификат OpenPGP.",
 					udidInfo:
 						"Ваш EID — это уникальный код, позволяющий идентифицировать вас лишь один раз во всём мире, не раскрывая вашего настоящего имени.",
 				},
@@ -1936,6 +2048,21 @@
 				document.getElementById("t_udidinfo").textContent = t.udidInfo;
 				document.getElementById("t_btncopy").textContent = t.copy;
 				document.getElementById("t_mrzcheck").textContent = t.mrzCheck;
+
+				/* Bulles contextuelles. Chaque contrôle a déjà un <label for> ou
+				   un texte visible, donc « title » y est annoncé comme
+				   DESCRIPTION par les lecteurs d'écran — pas comme nom. */
+				const tips = {
+					language: t.tipLang, lastname: t.tipSurname, firstname: t.tipGiven,
+					day: t.tipDate, month: t.tipDate, year: t.tipDate,
+					country: t.tipCountry, reset: t.tipReset, generate: t.tipGenerate,
+					tohash: t.tipMrz, t_mrzcheck: t.tipMrz, udid4: t.tipResult,
+					t_btncopy: t.tipCopy, urn: t.tipUrn,
+				};
+				for (const id in tips) {
+					const el = document.getElementById(id);
+					if (el && tips[id]) el.title = tips[id];
+				}
 
 				const f = footerI18n[lang] || footerI18n.en;
 				const base = (lang === "fr") ? "https://foopgp.org/fr/" : "https://foopgp.org/";

@@ -75,22 +75,31 @@ Jean-Jacques B. :
 
 ### Production de la semaine (4 — 10 août)
 
-- **L'assistant graphique parle maintenant neuf langues** — allemand, anglais, espagnol, français, italien, polonais, portugais, russe et ukrainien, comme notre serveur de certificats et nos pages de création d'identifiant. Tout est traduit, pas seulement les boutons : les avertissements, les explications, les messages d'erreur. Un sélecteur discret dans la barre de menu permet d'en changer sans toucher aux réglages de son ordinateur — utile pour relire, et pour montrer l'outil à quelqu'un dans sa langue.
+- L'assistant graphique appelé jusqu'à présent *djibian-onboarding* commence à afficher son nouveau nom : ***foodjis***
 
-- **La fiche d'un certificat dit enfin depuis quand il vaut, et jusqu'à quand** — date de création, date d'expiration, et date de révocation lorsqu'il y en a une. C'est ce qu'on regarde en premier quand on vérifie l'identité de quelqu'un, et cela manquait.
+- Cet assistant graphique parle maintenant les **neuf langues** — allemand, anglais, espagnol, français, italien, polonais, portugais, russe et ukrainien — que nous supportions déjà sur notre serveur de certificats et nos pages de création d'identifiant. Un sélecteur discret dans la barre de menu permet d'en changer sans toucher aux réglages de son ordinateur — utile pour relire, et pour montrer l'outil à quelqu'un dans sa langue.
 
-- **Un réglage de crédibilité, sur chaque fiche** — jusqu'où vous faites confiance à une personne pour en certifier d'autres à son tour. Cinq crans, du refus à la confiance entière, avec un code couleur. Il s'affiche partout et ne se modifie que pour les personnes que votre toile de confiance tient déjà pour valides — ailleurs, le réglage n'aurait aucun effet. Le réglage vous appartient : il reste sur votre machine, dans votre compte, et n'est transmis à personne.
+- La fiche d'un certificat montre enfin ses limites temporelles — date de création, date d'expiration, et date de révocation lorsqu'il y en a une.
 
-- **Le parcours de certification a été refondu** — quatre étapes, et surtout **deux vérifications humaines qui ne peuvent plus être contournées** : l'état civil de la personne se saisit en entier, et huit caractères de l'empreinte de son certificat — tirés au hasard dans l'empreinte, à un endroit qui change à chaque fois — se recopient à la main depuis la carte de visite qu'elle vous a remise en mains propres. Une certification qui ne demande rien à vérifier ne certifie rien.
-  Les entités qui ne sont pas des personnes (association, entreprise, logiciel) ont leur propre parcours, avec un engagement explicite : les certifier signifie prendre sur soi les responsabilités qu'elles ne peuvent pas porter.
+- Les **menus** ont été **refondus** : plus clairs et plus comprehensibles.
 
-- **Les portraits ne sont plus rognés** — une photo qui n'est pas carrée s'affiche entière, avec ses bandes, au lieu d'être coupée en deux.
+- Une **nouvelle page** est apparue, permettant de trouver et gérér nos contacts OpenPGP
 
-- **Trois défauts corrigés, dont un qui mangeait votre machine.** Changer de langue abîmait les caractères accentués (« Mnêmê » devenait une suite de codes). Une seule fenêtre de l'application peut désormais être ouverte à la fois. Et surtout : certains de nos outils, lancés sans terminal, pouvaient se mettre à tourner indéfiniment — jusqu'à **35 processus oubliés, le plus ancien vieux de deux jours, occupant chacun 40 % d'un cœur** sur une machine de test. La cause est corrigée à la source, et l'appel qui la déclenchait a été réécrit.
+- Un **réglage de crédibilité**, sur chaque fiche de contact/certificat — jusqu'où vous faites confiance à une personne pour en certifier d'autres à son tour. Cinq crans, du refus à la confiance entière, avec un code couleur. Il s'affiche partout et ne se modifie que pour les personnes que votre **toile de confiance** tient déjà pour valides — ailleurs, le réglage n'aurait aucun effet. Le réglage appartient à chacun : il demeure généralement sur votre machine, dans votre compte. Il pourra être partagé pour permettre nous permettre de déléguer la confiance.
 
-- **Un nouvel outil, `pgpid-mip`**, commence à remplacer nos scripts d'identité par du code compilé, là où ils étaient trop lents. Lire la liste de son carnet de certificats passe de **28 secondes à un dixième de seconde** ; lire une fiche, de 250 à 30 millisecondes. C'est le premier pas d'un chantier annoncé : une bibliothèque d'identité réutilisable, y compris sur téléphone.
+- **Le parcours de certification a été refondu** :
+  - UX plus sympa et avec moins d'appel à l'outil externe zenity
+  - Les entités qui ne sont pas des personnes (association, entreprise, logiciel) ont leur propre parcours, avec un engagement explicite : les certifier signifie prendre sur soi les responsabilités qu'elles ne peuvent pas porter.
 
-- Deux versions de l'assistant graphique ont été préparées cette semaine pour validation (2.0.1 puis 2.0.2).
+- Les portraits ne sont plus rognés — une photo qui n'est pas carrée s'affiche entière, avec ses bandes, au lieu d'être coupée en deux.
+
+- L'**application reste persistante** et dans la barre des applications, elle pourra ainsi envoyer des notifications lorsque seront reçus des paiements en djis (Ɉ).
+
+- **Plusieurs bug relativement critiques ont été corrigés.** Une seule fenêtre de l'application peut par exemple désormais être ouverte à la fois.
+
+- **Un nouvel outil, `pgpid-mip`**, commence à remplacer les bash-libs par du code compilé, là où ils étaient trop lents. Le gain en **performance** est d'environ **x10** ; lire une fiche passe par exemple de 250 à 30 millisecondes. C'est le premier pas d'un chantier annoncé : une bibliothèque d'identité réutilisable, y compris sur téléphone.
+
+- djibian-onboarding, aka **foodjis est sortie en version 2.0.2** sur nos dépots de test..
 
 ### TODO — Tâches à faire
 
@@ -107,11 +116,7 @@ Liste non-exhaustive des tâches à réaliser ou chantiers en cours :
 
 - **Adresses de courriel** — publier les clés de `*@foopgp.org` par le mécanisme standard de découverte (WKD).
 
-- **Outils d'identité** (backend [bash-libs](https://codeberg.org/foopgp/bash-libs)) — une série de correctifs attend une relecture avant d'être versée dans la branche principale, dont celui du blocage décrit ci-dessus.
-
 - **Bibliothèque d'identité en langage compilé** ([pgpid-mip](https://codeberg.org/djibian/onboarding/src/branch/main/pgpid-mip)) — poursuivre la reprise des scripts : l'avatar, l'écriture des propriétés, la navigation dans la toile de confiance.
-
-- **Application graphique** (<https://codeberg.org/djibian/onboarding>) — poursuivre l'alignement avec <https://foopgp.org/eid/> ; le bouton de suppression d'un certificat attend son équivalent côté outils.
 
 - **Application mobile** — le portage Android de l'assistant graphique est à l'arrêt depuis juin ; la brique cryptographique retenue est identifiée, des décisions d'architecture restent à prendre.
 

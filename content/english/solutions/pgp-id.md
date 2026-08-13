@@ -20,7 +20,7 @@ aliases:
 - **universal** — characterises [all persons](/blog/2026-04-28-openpgp-id-spec/) of the solar system: physical (humans), legal (organisations), even digital (AI agents);
 - **decentralised** — no central authority, no third-party identity provider, [no cloud vault to trust](/blog/2026-05-11-djibian-agentforwarding/);
 - **respectful** — built on the strongest encryption primitives we have, so as to protect your privacy as fully as possible;
-- **interoperable** — usable anywhere OpenPGP is accepted (email signing and encryption, document signing, SSH authentication, supply-chain traceability, git, …);
+- **interoperable** — usable anywhere PGP is accepted (email signing and encryption, document signing, SSH authentication, supply-chain traceability, git, …);
 - **sovereign** — your private keys are *yours*, on a [physical security key](/solutions/offer-security-keys/) (YubiKey / NitroKey) you hold in your hand;
 - **long-lived** — your **EID** (*Entity IDentifier*, see below) is stable for life; the certificates that back it can be rotated (post-quantum migration, etc.) without changing who you are.
 
@@ -48,16 +48,16 @@ And more broadly, [a step](/solutions/theme-vote/) toward [abolishing certain pr
 
 ### Giving birth to your PGP ID
 
-On a **Djibian** system, the **Djibian Onboarding** graphical frontend guides the creation of an OpenPGP identity in about a dozen clicks:
+On a **Djibian** system, the **foodjis** graphical assistant guides the creation of a PGP identity in about a dozen clicks:
 
-1. Launch **Djibian Onboarding** (menu *Applications → Accessories*).
-2. Choose *« Configure your OpenPGP security key »*.
-3. Insert your **YubiKey** or **NitroKey** — it is detected automatically.
-4. First time? *« Create my OpenPGP identity »*.
-5. Fill in birth name, given names, date of birth, country of birth, email.
-6. Verify the information.
-7. **Print the QR codes** (at least three sheets — see below).
-8. **Scan the QR codes** — the key is etched into your YubiKey/NitroKey.
+1. Launch **foodjis** (menu *Applications → Accessories → djibian-onboarding*).
+2. Menu **PGP ID → *Generate an identity***.
+3. Choose what is being identified: a **person** (`u4` variant) or **another entity** — association, company, software (`u5` variant).
+4. Fill in the birth civil status — or, for another entity, its place and instant of origin.
+5. Verify the information, then give an email address.
+6. **Print the QR codes** (five sheets, of which three will be enough to rebuild the key — see below).
+7. Insert your **YubiKey** or **NitroKey**, then menu **PGP ID → *Set up a key***.
+8. **Scan the QR codes** — the private keys are etched into the physical key.
 9. Done: your **PGP ID** is born.
 
 > *Everything offline, no third-party server call. Video demo in the [release article](/blog/2026-01-19-djibian-release/).*
@@ -81,13 +81,13 @@ A few properties to know:
 
 Once your private keys have been fragmented onto paper sheets, another foopgp tool reads the QR codes via a webcam or scanner and **etches** the keys into a YubiKey or a NitroKey. The private keys never touch a hard drive nor a third-party service.
 
-From there, your identity is exercised **from your hand** on any OpenPGP-compatible service: [sign](/solutions/signature/), [decrypt](/solutions/theme-email/), [authenticate](/blog/2026-05-11-djibian-agentforwarding/) — the **PGP ID** physical key protects your privacy and your human singularity in the digital world.
+From there, your identity is exercised **from your hand** on any PGP-compatible service: [sign](/solutions/signature/), [decrypt](/solutions/theme-email/), [authenticate](/blog/2026-05-11-djibian-agentforwarding/) — the **PGP ID** physical key protects your privacy and your human singularity in the digital world.
 
-Here is the **Djibian Onboarding** welcome screen once your key is set up — avatar, common name, **PGP ID** identifier and emails read straight from the plugged-in physical key:
+Here is the **foodjis** welcome screen once your key is set up. Everything on it is read from the plugged-in physical key: avatar, common name, **EID**, certificate fingerprint, validity dates, number of certifications received, emails and other details. The slider at the bottom is the **credibility** *you* grant that identity to certify others — it stays on your machine until you choose to share it:
 
-![PGP ID card as displayed by Djibian Onboarding](/images/solutions/pgp-id/Phil_ID_EN.png)
+![PGP ID card as displayed by foodjis](/images/solutions/pgp-id/Phil_ID_EN.png)
 
-*Illustration. Photograph of [Phil Zimmermann](https://en.wikipedia.org/wiki/Phil_Zimmermann), inventor of PGP — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PRZ_closeup_cropped.jpg), CC BY-SA 3.0.*
+*Illustration — a demonstration certificate, rebuilt from the fragments printed above: the EID is indeed the same one. Photograph of [Phil Zimmermann](https://en.wikipedia.org/wiki/Phil_Zimmermann), inventor of PGP — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PRZ_closeup_cropped.jpg), CC BY-SA 3.0.*
 
 ### In short
 

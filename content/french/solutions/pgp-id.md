@@ -20,7 +20,7 @@ aliases:
 - **universelle** — caractérise [toutes les personnes](/fr/blog/2026-04-28-openpgp-id-spec/) physiques (humains), morales (organisations), ou mêmes numériques (Agent IA) du système solaire ;
 - **décentralisée** — pas d'autorité centrale, pas de fournisseur d'identité tiers, [pas de coffre cloud à qui faire confiance](/fr/blog/2026-05-11-djibian-agentforwarding/) ;
 - **respectueuse** — intègre des solutions de chiffrement ultimes, pour protéger au mieux votre vie privée ;
-- **interopérable** — utilisable partout où OpenPGP est accepté (signature et chiffrement de courriels, de documents, authentification SSH, traçabilité des chaines d'approvisionnement, git, …) ;
+- **interopérable** — utilisable partout où PGP est accepté (signature et chiffrement de courriels, de documents, authentification SSH, traçabilité des chaines d'approvisionnement, git, …) ;
 - **souveraine** — vos clés privées sont *à vous*, sur une [clé physique de sécurité](/fr/solutions/offer-security-keys/) (YubiKey / NitroKey) que vous tenez dans votre main ;
 - **pérenne** — votre **EID** (*identifiant d'entité*, voir ci-dessous) reste stable à vie ; les certificats qui le supportent peuvent être renouvelés (rotation post-quantique, etc.) sans changer qui vous êtes.
 
@@ -48,16 +48,16 @@ Et plus généralement, [d'avancer](/fr/solutions/theme-vote/) vers [l'abolition
 
 ### Donner naissance à votre PGP ID
 
-Sur un système **Djibian**, le frontend graphique **Djibian Onboarding** guide la création d'une identité OpenPGP en une dizaine de clics :
+Sur un système **Djibian**, l'assistant graphique **foodjis** guide la création d'une identité PGP en une dizaine de clics :
 
-1. Lancer **Djibian Onboarding** (menu *Applications → Accessoires*).
-2. Choisir *« Configurer votre clé de sécurité OpenPGP »*.
-3. Insérer votre **YubiKey** ou **NitroKey** — elle est détectée automatiquement.
-4. Première fois ? *« Créer mon identité OpenPGP »*.
-5. Renseigner nom de naissance, prénoms, date de naissance, pays de naissance, courriel.
-6. Vérifier les informations.
-7. **Imprimer les QR codes** (3 feuilles minimum, voir ci-dessous).
-8. **Scanner les QR codes** — la clé est gravée dans votre YubiKey/NitroKey.
+1. Lancer **foodjis** (menu *Applications → Accessoires → djibian-onboarding*).
+2. Menu **PGP ID → *Générer une identité***.
+3. Choisir ce que l'on identifie : une **personne** (variante `u4`) ou une **autre entité** — association, entreprise, logiciel (variante `u5`).
+4. Renseigner l'état civil de naissance — ou, pour une autre entité, le lieu et l'instant d'origine.
+5. Vérifier les informations, puis indiquer un courriel.
+6. **Imprimer les QR codes** (5 feuilles, dont 3 suffiront à reconstituer la clé — voir ci-dessous).
+7. Insérer votre **YubiKey** ou **NitroKey**, puis menu **PGP ID → *Configurer une clé***.
+8. **Scanner les QR codes** — les clés privées sont gravées dans la clé physique.
 9. Et voilà : votre **PGP ID** est née.
 
 > *Le tout, hors-ligne, sans aucun appel à un serveur tiers. Démo vidéo dans [l'article de release](/fr/blog/2026-01-19-djibian-release/).*
@@ -81,17 +81,17 @@ Quelques propriétés à connaître :
 
 Une fois vos clés privées fragmentées sur papiers, un autre outil foopgp lit les QR codes via une webcam ou un scanner et **grave** les clés dans une YubiKey ou une NitroKey. Les clés privées ne touchent jamais ni votre disque dur, ni un service tiers.
 
-À partir de là, votre identité s'exerce **depuis votre main** sur n'importe quel service compatible OpenPGP : [signer](/fr/solutions/signature/), [déchiffrer](/fr/solutions/theme-email/), [vous authentifier](/fr/blog/2026-05-11-djibian-agentforwarding/) — la clé physique **PGP ID** protège votre vie privée et votre singularité humaine dans le monde numérique.
+À partir de là, votre identité s'exerce **depuis votre main** sur n'importe quel service compatible PGP : [signer](/fr/solutions/signature/), [déchiffrer](/fr/solutions/theme-email/), [vous authentifier](/fr/blog/2026-05-11-djibian-agentforwarding/) — la clé physique **PGP ID** protège votre vie privée et votre singularité humaine dans le monde numérique.
 
-Voici l'écran d'accueil de **Djibian Onboarding** une fois votre clé configurée — avatar, nom d'usage, identifiant **PGP ID** et courriels lus directement depuis la clé physique branchée :
+Voici l'écran d'accueil de **foodjis** une fois votre clé configurée. Tout y est lu depuis la clé physique branchée : avatar, nom d'usage, **EID**, empreinte du certificat, dates de validité, nombre de certifications reçues, courriels et autres coordonnées. La réglette du bas est la **crédibilité** que *vous* accordez à cette identité pour en certifier d'autres — elle ne quitte pas votre machine tant que vous ne la partagez pas :
 
-![Carte d'identité OpenPGP affichée par Djibian Onboarding](/images/solutions/pgp-id/Phil_ID_FR.png)
+![Carte d'identité PGP ID affichée par foodjis](/images/solutions/pgp-id/Phil_ID_FR.png)
 
-*Illustration. Photo de [Phil Zimmermann](https://fr.wikipedia.org/wiki/Phil_Zimmermann), inventeur de PGP — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PRZ_closeup_cropped.jpg), CC BY-SA 3.0.*
+*Illustration — certificat de démonstration, reconstitué depuis les fragments imprimés ci-dessus : c'est bien le même EID. Photo de [Phil Zimmermann](https://fr.wikipedia.org/wiki/Phil_Zimmermann), inventeur de PGP — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PRZ_closeup_cropped.jpg), CC BY-SA 3.0.*
 
 ### Bref,
 
-L'**PGP ID** rend possible une vraie souveraineté numérique : ni mot de passe à oublier, ni coffre cloud à qui faire confiance, ni dépendance à un fournisseur d'identité externe. Une identité **à vous**, ancrée dans un objet physique que vous portez, et **utilisable partout**.
+**PGP ID** rend possible une vraie souveraineté numérique : ni mot de passe à oublier, ni coffre cloud à qui faire confiance, ni dépendance à un fournisseur d'identité externe. Une identité **à vous**, ancrée dans un objet physique que vous portez, et **utilisable partout**.
 
 **Quand d'autres vous vendent des technologies qui vous asservissent, foopgp permet à tous de s'approprier des technologies qui nous servent.** Plus sûres, plus sobres, et entièrement souveraines.
 

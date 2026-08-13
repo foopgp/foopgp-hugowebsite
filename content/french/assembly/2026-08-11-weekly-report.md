@@ -2,28 +2,29 @@
 title: "2026 S33 Rapport Hebdomadaire"
 lang: fr
 date: 2026-08-11T21:00:00+02:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *Aveline G., François R., Dom. V., Didier L., Laurent C., Jean-Jacques B..*
+***Présents :*** *Aveline G., François R., Dom. V., Didier L., Laurent C., Jean-Jacques B.*
 
 ### Ordre du jour prochaine visio mardi 18 août 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
-*Note : Si problème, on se retrouve sur notre salon JITSI : [https://meet.jit.si/foopgp](https://meet.jit.si/foopgp)  (pas auto-hébergé, mais fourni (sans contrepartie financière  obligatoire) par des professionnels libristes européens, sur des  serveurs qui tiennent la charge).*
+*Note : Si problème, on se retrouve sur notre salon JITSI : [https://meet.jit.si/foopgp](https://meet.jit.si/foopgp) (pas auto-hébergé, mais fourni (sans contrepartie financière obligatoire) par des professionnels libristes européens, sur des serveurs qui tiennent la charge).*
 
 - Points habituels : (revue de presse + déplacements + revue des travaux réalisés, en cours, ou à prévoir **pour l’association**).
 - **Chiffres de juillet**, si la clôture a pu être passée d’ici là.
 - Point sur la **certification** des membres par la Toile de Confiance (qui reste à certifier).
 - Campagne de financement d’août : <https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/fr-2026-08>
+{{< helloasso-count >}}
 
 ### Ordres du soir (mardi 11 août)
 
 - Points habituels : (revue de presse + déplacements et actions réalisés, en cours, ou à prévoir).
-- **Chiffres de juillet** après clôture campagne cotisations de juillet — *la  clôture n’a pas encore été passée : le dernier apport au journal  comptable date du 3 juillet. Les chiffres ci-dessous restent donc ceux  du 30 juin.*
+- **Chiffres de juillet** après clôture campagne cotisations de juillet — *la clôture n’a pas encore été passée : le dernier apport au journal comptable date du 3 juillet. Les chiffres ci-dessous restent donc ceux du 30 juin.*
 - Point sur la **certification** des membres par la Toile de Confiance.
 - **Démonstration de la nouvelle version de l’assistant graphique** djibian-onboarding aka **foodjis**
 
@@ -41,34 +42,34 @@ Pour septembre : ***stingynalty = 1.14415185072666004741***
 
 > **jₙ = log₂( (dₙ+dₜ) + 1 ) / *stingynaltyₙ* – jₜ**
 
-Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)  .
+Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/).
 
 #### Chiffres de l’association
 
-*La clôture comptable de juillet **n’a pas encore été passée** — le dernier apport au journal date du 3 juillet. Ci-dessous, les chiffres du 30 juin, déjà publiés dans le [compte rendu du 7 juillet](http://localhost:1313/fr/assembly/2026-07-07-weekly-report/) .*
+*La clôture comptable de juillet **n’a pas encore été passée** — le dernier apport au journal date du 3 juillet. Ci-dessous, les chiffres du 30 juin, déjà publiés dans le [compte rendu du 7 juillet](/fr/assembly/2026-07-07-weekly-report/) .*
 
 *Au 30 juin 2026, depuis sa création le 3 avril 2023 :*
 
-|                          | Entités | €         | Ɉ       |
+| | Entités | € | Ɉ |
 |--------------------------|---------|-----------|---------|
-| Certifiés (by-eid/u4)    | 21      | 44 093,05 | 155,923 |
-| Non certifiés (by-email) | 33      | 19 341,63 | 166,782 |
-| Total                    | 54      | 63 434,68 | 322,705 |
+| Certifiés (by-eid/u4) | 21 | 44 093,05 | 155,923 |
+| Non certifiés (by-email) | 33 | 19 341,63 | 166,782 |
+| Total | 54 | 63 434,68 | 322,705 |
 
-*Seuls les adhérents dont l’identité OpenPGP est certifiée par la  Toile de Confiance voient leurs djis effectivement créés et utilisables.*
+*Seuls les adhérents dont l’identité PGP est certifiée par la Toile de Confiance voient leurs djis effectivement créés et utilisables.*
 
-*Aux adhérents pas encore certifiés : venez nous rencontrer lors  d’un de nos prochains ateliers pour finaliser la certification de votre  identité OpenPGP, débloquer la création de vos djis et pouvoir les  échanger au sein de l’association.*
+*Aux adhérents pas encore certifiés : venez nous rencontrer lors d’un de nos prochains ateliers pour finaliser la certification de votre identité PGP, débloquer la création de vos djis et pouvoir les échanger au sein de l’association.*
 
 ### Revue de presse
 
 François R. :
 
-- « Cyber Resilience Act : la Fondation Eclipse lance une plateforme gratuite pour sauver l’open source de la noyade réglementaire » - via la revue de presse @aprilorg (toujours aussi fournie  ) 
-  <https://goodtech.info/eclipse-foundation-cyber-resilience-act-orc-learning-hub/> 
+- « Cyber Resilience Act : la Fondation Eclipse lance une plateforme gratuite pour sauver l’open source de la noyade réglementaire » - via la revue de presse @aprilorg (toujours aussi fournie  )
+  <https://goodtech.info/eclipse-foundation-cyber-resilience-act-orc-learning-hub/>
   <https://framapiaf.org/@pylapp/117073310125087321>
-- The European government has approved new legislation that makes it easier for consumers to keep their devices working longer. Manufacturers must soon offer better repair options for consumers and repair shops. This includes everything from washing machines and vacuums to tablets and smartphones. 
-  Under this new rule, if you repair instead of replace, you may qualify for an extra year of warranty! Check out the full report from Tagesschau at the link below. 
-  <https://www.tagesschau.de/video/video-1624362.html> 
+- The European government has approved new legislation that makes it easier for consumers to keep their devices working longer. Manufacturers must soon offer better repair options for consumers and repair shops. This includes everything from washing machines and vacuums to tablets and smartphones.
+  Under this new rule, if you repair instead of replace, you may qualify for an extra year of warranty! Check out the full report from Tagesschau at the link below.
+  <https://www.tagesschau.de/video/video-1624362.html>
   <https://mastodon.social/@iFixit/117033425736679880>
 - This is interesting news.
 
@@ -85,7 +86,7 @@ François R. :
 
   The solution? Simple! Express your privacy preferences once, for example via your browser or device, and have them respected permanently.
 
-  A proposal to end this tracking circus is currently on the table of EU lawmakers – and could easily simplify things for everyone in the European Union. 
+  A proposal to end this tracking circus is currently on the table of EU lawmakers – and could easily simplify things for everyone in the European Union.
 
    <https://killthecookiebanner.eu/>
 
@@ -152,7 +153,7 @@ François R. :
   <https://arxiv.org/pdf/2602.16800>
 
   <https://ioc.exchange/@tellyworth/117006499268171990>
-- La semaine de quatre jours promise par des entreprises d’IA serait plutôt de 90 heures (via la BBC) 
+- La semaine de quatre jours promise par des entreprises d’IA serait plutôt de 90 heures (via la BBC)
 
   <https://www.bbc.com/news/articles/cvgx4yd1gl2o>
 - Un développeur a une idée : faire une app qui indique ce que tu peux voir dans le ciel nocturne.
@@ -165,14 +166,14 @@ François R. :
 
   <https://boitam.eu/@joachim/117070480556660820>
 
-  Plot twist : l’appli initiale sous MIT… était elle-même vibecodée par Claude 
+  Plot twist : l’appli initiale sous MIT… était elle-même vibecodée par Claude
 
   <https://github.com/mbeher2200/DarkHours>
-- Démarchage téléphonique : tout change dans quelques jours 
+- Démarchage téléphonique : tout change dans quelques jours
 
   <https://korben.info/demarchage-telephonique-tout-change-dans-quelques-jours.html>
 
-  <https://infosec.exchange/@nono2357/116985237185705269> 
+  <https://infosec.exchange/@nono2357/116985237185705269>
   <https://next.ink/249950/fin-de-bloctel-interdiction-du-demarchage-des-le-11-aout-on-fait-le-point/>
 
   <https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:56lvkl2sub3gvojlzknbwczb/post/3mspnx34u6223>
@@ -216,54 +217,56 @@ Jean-Jacques B. :
 ### Au cœur de la réunion
 
 - Démonstration de la nouvelle version (2.0.x) de djibian-onboarding, aka foodjis.
-  - Nouvelle ergonomie, offrant plus de fonctionnalitées tout en étant un peu épurée.
-  - Nouveaux paramètres vCard intégrés contrôlable depuis la clé de sécurité PGP ID
-  - Visualisations des certificats sous la forme d’une liste de contacts
+  - Nouvelle ergonomie, offrant plus de fonctionnalités tout en étant un peu épurée.
+  - Nouveaux paramètres vCard intégrés, contrôlables depuis la clé de sécurité PGP ID
+  - Visualisation des certificats sous la forme d’une liste de contacts
   - exportation au format .vcf (vCard)
   - génération des cartes de visites
   - Outil de recherche et d’importation de certificats
   - Rafraîchissement récursif des certificats
   - Et pour finir le plus innovant : réglage de la crédibilité dans chaque fiche de contact, et impact immédiat sur la toile de confiance.
 - Validation de cette nouvelle version qui est partie en prod, en direct live le soir même.
-- Arrêt de la date du prochain atelier : le 4 septembre après-midi à Tallard (chez Olivier).
+- Fixation de la date du prochain atelier : le 4 septembre après-midi à Tallard (chez Olivier).
 
 ### Production de la semaine (4 — 10 août)
 
 - L’assistant graphique appelé jusqu’à présent *djibian-onboarding* commence à afficher son nouveau nom : ***foodjis***
-- Cet assistant graphique parle maintenant les **neuf langues**  — allemand, anglais, espagnol, français, italien, polonais, portugais,  russe et ukrainien — que nous supportions déjà sur notre serveur de  certificats et nos pages de création d’identifiant. Un sélecteur discret  dans la barre de menu permet d’en changer sans toucher aux réglages de  son ordinateur — utile pour relire, et pour montrer l’outil à quelqu’un  dans sa langue.
-- La fiche d’un certificat montre enfin ses limites temporelles — date  de création, date d’expiration, et date de révocation lorsqu’il y en a  une.
-- Les **menus** ont été **refondus** : plus clairs et plus comprehensibles.
-- Une **nouvelle page** est apparue, permettant de trouver et gérér nos contacts OpenPGP
-- Un **réglage de crédibilité**, sur chaque fiche de  contact/certificat — jusqu’où vous faites confiance à une personne pour  en certifier d’autres à son tour. Cinq crans, du refus à la confiance  entière, avec un code couleur. Il s’affiche partout et ne se modifie que  pour les personnes que votre **toile de confiance** tient  déjà pour valides — ailleurs, le réglage n’aurait aucun effet. Le  réglage appartient à chacun : il demeure généralement sur votre machine,  dans votre compte. Il pourra être partagé pour permettre nous permettre  de déléguer la confiance.
+- Cet assistant graphique parle maintenant les **neuf langues** — allemand, anglais, espagnol, français, italien, polonais, portugais, russe et ukrainien — que nous supportions déjà sur notre serveur de certificats et nos pages de création d’identifiant. Un sélecteur discret dans la barre de menu permet d’en changer sans toucher aux réglages de son ordinateur — utile pour relire, et pour montrer l’outil à quelqu’un dans sa langue.
+- La fiche d’un certificat montre enfin ses limites temporelles — date de création, date d’expiration, et date de révocation lorsqu’il y en a une.
+- Les **menus** ont été **refondus** : plus clairs et plus compréhensibles.
+- Une **nouvelle page** est apparue, permettant de trouver et gérer nos contacts PGP
+- Un **réglage de crédibilité**, sur chaque fiche de contact/certificat — jusqu’où vous faites confiance à une personne pour en certifier d’autres à son tour. Cinq crans, du refus à la confiance entière, avec un code couleur. Il s’affiche partout et ne se modifie que pour les personnes que votre **toile de confiance** tient déjà pour valides — ailleurs, le réglage n’aurait aucun effet. Le réglage appartient à chacun : il demeure généralement sur votre machine, dans votre compte. Il pourra être partagé pour permettre nous permettre de déléguer la confiance.
 - **Le parcours de certification a été refondu** :
   - UX plus sympa et avec moins d’appel à l’outil externe zenity
-  - Les entités qui ne sont pas des personnes (association, entreprise,  logiciel) ont leur propre parcours, avec un engagement explicite : les  certifier signifie prendre sur soi les responsabilités qu’elles ne  peuvent pas porter.
-- Les portraits ne sont plus rognés — une photo qui n’est pas carrée  s’affiche entière, avec ses bandes, au lieu d’être coupée en deux.
+  - Les entités qui ne sont pas des personnes (association, entreprise, logiciel) ont leur propre parcours, avec un engagement explicite : les certifier signifie prendre sur soi les responsabilités qu’elles ne peuvent pas porter.
+- Les portraits ne sont plus rognés — une photo qui n’est pas carrée s’affiche entière, avec ses bandes, au lieu d’être coupée en deux.
 - L’**application reste persistante** et dans la barre des applications, elle pourra ainsi envoyer des notifications lorsque seront reçus des paiements en djis (Ɉ).
-- **Plusieurs bug relativement critiques ont été corrigés.** Une seule fenêtre de l’application peut par exemple désormais être ouverte à la fois.
-- **Un nouvel outil,** `pgpid-mip`, commence à remplacer les bash-libs par du code compilé, là où ils étaient trop lents. Le gain en **performance** est d’environ **x10**  ; lire une fiche passe par exemple de 250 à 30 millisecondes. C’est le  premier pas d’un chantier annoncé : une bibliothèque d’identité  réutilisable, y compris sur téléphone.
-- djibian-onboarding, aka **foodjis est sortie en version 2.0.2** sur nos dépots de test..
+- **Plusieurs bugs relativement critiques ont été corrigés.** Une seule fenêtre de l’application peut par exemple désormais être ouverte à la fois.
+- **Un nouvel outil,** `pgpid-mip`, commence à remplacer les bash-libs par du code compilé, là où ils étaient trop lents. Le gain en **performance** est d’environ **x10** ; lire une fiche passe par exemple de 250 à 30 millisecondes. C’est le premier pas d’un chantier annoncé : une bibliothèque d’identité réutilisable, y compris sur téléphone.
+- djibian-onboarding, aka **foodjis est sortie en version 2.0.2** sur nos dépôts de test.
 
 ### TODO — Tâches à faire
 
 Liste non-exhaustive des tâches à réaliser ou chantiers en cours :
 
-- **Comptabilité €** ([dépôt](https://codeberg.org/foopgp/foopgp-cashflow)  git non-public) — **passer la clôture de juillet** (en  attente depuis le 3 juillet), puis automatiser la chaîne HelloAsso : se  rapprocher du temps réel plutôt que d’une reprise mensuelle, et  remercier automatiquement. L’essentiel est déjà écrit et testé depuis  juin ; ce qui manque est une mise en service.
-- **Comptabilité Ɉ** — Finaliser [les innovations et concepts sous-jacents](https://foopgp.org/documents/en/) [1](http://localhost:1313/fr/assembly/2026-08-11-weekly-report/#fn:1)[2](http://localhost:1313/fr/assembly/2026-08-11-weekly-report/#fn:2), comme celui d’**arbres universels d’entités** ([spécifications](https://foopgp.org/documents/en/draft-foopgp-uetree-00.txt)  et [code](https://codeberg.org/foopgp/bash-libs/src/branch/main/bin/bl-uetree) ). Et démarrer le frontend (dépot et paquet à créer).
+- **Comptabilité €** ([dépôt](https://codeberg.org/foopgp/foopgp-cashflow) git non-public) — **passer la clôture de juillet** (en attente depuis le 3 juillet), puis automatiser la chaîne HelloAsso : se rapprocher du temps réel plutôt que d’une reprise mensuelle, et remercier automatiquement. L’essentiel est déjà écrit et testé depuis juin ; ce qui manque est une mise en service.
+- **Comptabilité Ɉ** — Finaliser [les innovations et concepts sous-jacents](https://foopgp.org/documents/en/)[^emission][^ledger], comme celui d’**arbres universels d’entités** ([spécifications](https://foopgp.org/documents/en/draft-foopgp-uetree-00.txt) et [code](https://codeberg.org/foopgp/bash-libs/src/branch/main/bin/bl-uetree)). Et démarrer le frontend (dépot et paquet à créer).
 
+[^emission]: https://foopgp.org/documents/en/foopgp-djis-emission-workflow.md
+[^ledger]: https://foopgp.org/documents/en/foopgp-djis-decentralized-ledger.md
 
-- **Serveur de certificats** ([onak-foopgp](https://codeberg.org/foopgp/onak)  → <https://keys.foopgp.org/> ) — durcissement et redondance.
+- **Serveur de certificats** ([onak-foopgp](https://codeberg.org/foopgp/onak) → <https://keys.foopgp.org/>) — durcissement et redondance.
 - **Adresses de courriel** — publier les clés de `*@foopgp.org` par le mécanisme standard de découverte (WKD).
-- **Bibliothèque d’identité en langage compilé** ([pgpid-mip](https://codeberg.org/djibian/onboarding/src/branch/main/pgpid-mip) ) — poursuivre la reprise des scripts : l’avatar, l’écriture des propriétés, la navigation dans la toile de confiance.
-- **Application mobile** — le portage Android de  l’assistant graphique est à l’arrêt depuis juin ; la brique  cryptographique retenue est identifiée, des décisions d’architecture  restent à prendre.
-- **Djibian** (la plupart de [nos dépots git](https://codeberg.org/djibian) ) — Maintenance continue : prise en compte des retours utilisateur,  préselection de logiciels pertinents, pré-configuration des logiciels  que nous mettons en avant (eg: xfce, evolution, thunderbird, …), etc.
+- **Bibliothèque d’identité en langage compilé** ([pgpid-mip](https://codeberg.org/djibian/onboarding/src/branch/main/pgpid-mip)) — poursuivre la reprise des scripts : l’avatar, l’écriture des propriétés, la navigation dans la toile de confiance.
+- **Application mobile** — le portage Android de l’assistant graphique est à l’arrêt depuis juin ; la brique cryptographique retenue est identifiée, des décisions d’architecture restent à prendre.
+- **Djibian** (la plupart de [nos dépôts git](https://codeberg.org/djibian)) — Maintenance continue : prise en compte des retours utilisateur, présélection de logiciels pertinents, pré-configuration des logiciels que nous mettons en avant (eg: xfce, evolution, thunderbird, …), etc.
 
 ### Agenda
 
 - 20 — 22 août à Grenoble : [JDE26](https://journees.lesecologistes.fr/)
 - Vendredi 4 Septembre après-midi : Atelier djibian + clés de sécurité + foodjis sur Tallard
 - L’April invite à participer à la « Fête des Possibles » 2026 pour toucher de nouveaux publics.
-  - Une nouvelle édition de la Fête des Possibles, initiée et coordonnée  par le Collectif pour une Transition Citoyenne, aura lieu du 11  septembre au 11 octobre 2026. Des centaines d’événements seront  organisés partout en France et en Belgique pour valoriser les actions  concrètes en faveur d’un avenir plus durable et solidaire.
+  - Une nouvelle édition de la Fête des Possibles, initiée et coordonnée par le Collectif pour une Transition Citoyenne, aura lieu du 11 septembre au 11 octobre 2026. Des centaines d’événements seront organisés partout en France et en Belgique pour valoriser les actions concrètes en faveur d’un avenir plus durable et solidaire.
   - <https://linuxfr.org/news/l-april-invite-a-participer-a-la-fete-des-possibles-2026-pour-toucher-de-nouveaux-publics>
   - <https://framapiaf.org/@marnic/116986780887404776>
 - 24 — 27 septembre à Bourges : [Émancip’Actions](https://emancipactions.fr/)

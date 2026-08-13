@@ -224,7 +224,7 @@
 				tipLang: "Change the page language.",
 				tipU4: "Open the u4 generator — a person with civil-registry data.",
 				tipU5: "Open the u5 generator — any other entity.",
-				spec: "Specification", about: "What is PGP ID?", home: "foopgp.org"
+				spec: "Specification", about: "What is PGP ID?", home: "foopgp.org", keys: "Key server"
 			},
 			fr: {
 				title: "Générez vos identifiants d'entité",
@@ -236,7 +236,7 @@
 				tipLang: "Change la langue de la page.",
 				tipU4: "Ouvre le générateur u4 — une personne dotée d'un état civil.",
 				tipU5: "Ouvre le générateur u5 — toute autre entité.",
-				spec: "Spécification", about: "Qu'est-ce que PGP ID ?", home: "foopgp.org"
+				spec: "Spécification", about: "Qu'est-ce que PGP ID ?", home: "foopgp.org", keys: "Serveur de clés"
 			},
 			it: {
 				title: "Genera i tuoi identificatori di entità",
@@ -248,7 +248,7 @@
 				tipLang: "Cambia la lingua della pagina.",
 				tipU4: "Apre il generatore u4 — una persona con dati di stato civile.",
 				tipU5: "Apre il generatore u5 — qualsiasi altra entità.",
-				spec: "Specifica", about: "Che cos'è PGP ID?", home: "foopgp.org"
+				spec: "Specifica", about: "Che cos'è PGP ID?", home: "foopgp.org", keys: "Server di chiavi"
 			},
 			es: {
 				title: "Genere sus identificadores de entidad",
@@ -260,7 +260,7 @@
 				tipLang: "Cambia el idioma de la página.",
 				tipU4: "Abre el generador u4 — una persona con datos de registro civil.",
 				tipU5: "Abre el generador u5 — cualquier otra entidad.",
-				spec: "Especificación", about: "¿Qué es PGP ID?", home: "foopgp.org"
+				spec: "Especificación", about: "¿Qué es PGP ID?", home: "foopgp.org", keys: "Servidor de claves"
 			},
 			de: {
 				title: "Erzeugen Sie Ihre Entitätskennungen",
@@ -272,7 +272,7 @@
 				tipLang: "Ändert die Sprache der Seite.",
 				tipU4: "Öffnet den u4-Generator — eine Person mit Personenstandsdaten.",
 				tipU5: "Öffnet den u5-Generator — jede andere Entität.",
-				spec: "Spezifikation", about: "Was ist PGP ID?", home: "foopgp.org"
+				spec: "Spezifikation", about: "Was ist PGP ID?", home: "foopgp.org", keys: "Schlüsselserver"
 			},
 			uk: {
 				title: "Згенеруйте свої ідентифікатори сутностей",
@@ -284,7 +284,7 @@
 				tipLang: "Змінює мову сторінки.",
 				tipU4: "Відкриває генератор u4 — особа з даними цивільного стану.",
 				tipU5: "Відкриває генератор u5 — будь-яка інша сутність.",
-				spec: "Специфікація", about: "Що таке PGP ID?", home: "foopgp.org"
+				spec: "Специфікація", about: "Що таке PGP ID?", home: "foopgp.org", keys: "Сервер ключів"
 			},
 			pt: {
 				title: "Gere os seus identificadores de entidade",
@@ -296,7 +296,7 @@
 				tipLang: "Muda o idioma da página.",
 				tipU4: "Abre o gerador u4 — uma pessoa com dados de registo civil.",
 				tipU5: "Abre o gerador u5 — qualquer outra entidade.",
-				spec: "Especificação", about: "O que é PGP ID?", home: "foopgp.org"
+				spec: "Especificação", about: "O que é PGP ID?", home: "foopgp.org", keys: "Servidor de chaves"
 			},
 			pl: {
 				title: "Wygeneruj swoje identyfikatory podmiotów",
@@ -308,7 +308,7 @@
 				tipLang: "Zmienia język strony.",
 				tipU4: "Otwiera generator u4 — osoba z danymi stanu cywilnego.",
 				tipU5: "Otwiera generator u5 — każdy inny podmiot.",
-				spec: "Specyfikacja", about: "Czym jest PGP ID?", home: "foopgp.org"
+				spec: "Specyfikacja", about: "Czym jest PGP ID?", home: "foopgp.org", keys: "Serwer kluczy"
 			},
 			ru: {
 				title: "Сгенерируйте свои идентификаторы сущностей",
@@ -320,7 +320,7 @@
 				tipLang: "Меняет язык страницы.",
 				tipU4: "Открывает генератор u4 — человек с данными актов гражданского состояния.",
 				tipU5: "Открывает генератор u5 — любая другая сущность.",
-				spec: "Спецификация", about: "Что такое PGP ID?", home: "foopgp.org"
+				spec: "Спецификация", about: "Что такое PGP ID?", home: "foopgp.org", keys: "Сервер ключей"
 			}
 		};
 
@@ -345,7 +345,10 @@
 			document.getElementById("t_more").innerHTML =
 				'<a href="https://foopgp.org/documents/en/draft-foopgp-urn-eid-00.txt">' + t.spec + '</a>'
 				+ ' &nbsp;·&nbsp; <a href="' + base + 'solutions/pgp-id/">' + t.about + '</a>'
-				+ ' &nbsp;·&nbsp; <a href="' + base + '">' + t.home + '</a>';
+				+ ' &nbsp;·&nbsp; <a href="' + base + '">' + t.home + '</a>'
+				// The key server serves a copy of these pages, and is where
+				// the identifier one mints here ends up published.
+				+ ' &nbsp;·&nbsp; <a href="https://keys.foopgp.org/">' + t.keys + '</a>';
 		}
 
 		/* ?lang=it wins over the browser, so a link can carry its language. */

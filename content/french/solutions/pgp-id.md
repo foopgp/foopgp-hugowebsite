@@ -48,7 +48,7 @@ Et plus généralement, [d'avancer](/fr/solutions/theme-vote/) vers [l'abolition
 
 ### Donner naissance à votre PGP ID
 
-Sur un système **Djibian**, l'assistant graphique **foodjis** guide la création d'une identité PGP en une dizaine de clics :
+Sur un système **Djibian**, l'assistant graphique **foodjis** *(djibian-onboarding)* guide la création d'une identité PGP en une dizaine de clics :
 
 1. Lancer **foodjis** (menu *Applications → Accessoires → djibian-onboarding*).
 2. Menu **PGP ID → *Générer une identité***.
@@ -83,9 +83,9 @@ Une fois vos clés privées fragmentées sur papiers, un autre outil foopgp lit 
 
 À partir de là, votre identité s'exerce **depuis votre main** sur n'importe quel service compatible PGP : [signer](/fr/solutions/signature/), [déchiffrer](/fr/solutions/theme-email/), [vous authentifier](/fr/blog/2026-05-11-djibian-agentforwarding/) — la clé physique **PGP ID** protège votre vie privée et votre singularité humaine dans le monde numérique.
 
-Voici l'écran d'accueil de **foodjis** une fois votre clé configurée. Tout y est lu depuis la clé physique branchée : avatar, nom d'usage, **EID**, empreinte du certificat, dates de validité, nombre de certifications reçues, courriels et autres coordonnées. La réglette du bas est la **crédibilité** que *vous* accordez à cette identité pour en certifier d'autres — elle ne quitte pas votre machine tant que vous ne la partagez pas :
+Voici l'écran d'accueil de **foodjis** *(djibian-onboarding)* une fois votre clé configurée. Tout y est lu depuis la clé physique branchée : avatar, nom d'usage, **EID**, empreinte du certificat, dates de validité, nombre de certifications reçues, courriels et autres coordonnées. La réglette du bas est la **crédibilité** que *vous* accordez à cette identité pour en certifier d'autres — elle ne quitte pas votre machine tant que vous ne la partagez pas :
 
-![Carte d'identité PGP ID affichée par foodjis](/images/solutions/pgp-id/Phil_ID_FR.png)
+![Carte d'identité PGP ID affichée par foodjis (djibian-onboarding)](/images/solutions/pgp-id/Phil_ID_FR.png)
 
 *Illustration — certificat de démonstration, reconstitué depuis les fragments imprimés ci-dessus : c'est bien le même EID. Photo de [Phil Zimmermann](https://fr.wikipedia.org/wiki/Phil_Zimmermann), inventeur de PGP — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PRZ_closeup_cropped.jpg), CC BY-SA 3.0.*
 

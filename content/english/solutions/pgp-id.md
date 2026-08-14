@@ -48,7 +48,7 @@ And more broadly, [a step](/solutions/theme-vote/) toward [abolishing certain pr
 
 ### Giving birth to your PGP ID
 
-On a **Djibian** system, the **foodjis** graphical assistant guides the creation of a PGP identity in about a dozen clicks:
+On a **Djibian** system, the **foodjis** *(djibian-onboarding)* graphical assistant guides the creation of a PGP identity in about a dozen clicks:
 
 1. Launch **foodjis** (menu *Applications → Accessories → djibian-onboarding*).
 2. Menu **PGP ID → *Generate an identity***.
@@ -83,9 +83,9 @@ Once your private keys have been fragmented onto paper sheets, another foopgp to
 
 From there, your identity is exercised **from your hand** on any PGP-compatible service: [sign](/solutions/signature/), [decrypt](/solutions/theme-email/), [authenticate](/blog/2026-05-11-djibian-agentforwarding/) — the **PGP ID** physical key protects your privacy and your human singularity in the digital world.
 
-Here is the **foodjis** welcome screen once your key is set up. Everything on it is read from the plugged-in physical key: avatar, common name, **EID**, certificate fingerprint, validity dates, number of certifications received, emails and other details. The slider at the bottom is the **credibility** *you* grant that identity to certify others — it stays on your machine until you choose to share it:
+Here is the **foodjis** *(djibian-onboarding)* welcome screen once your key is set up. Everything on it is read from the plugged-in physical key: avatar, common name, **EID**, certificate fingerprint, validity dates, number of certifications received, emails and other details. The slider at the bottom is the **credibility** *you* grant that identity to certify others — it stays on your machine until you choose to share it:
 
-![PGP ID card as displayed by foodjis](/images/solutions/pgp-id/Phil_ID_EN.png)
+![PGP ID card as displayed by foodjis (djibian-onboarding)](/images/solutions/pgp-id/Phil_ID_EN.png)
 
 *Illustration — a demonstration certificate, rebuilt from the fragments printed above: the EID is indeed the same one. Photograph of [Phil Zimmermann](https://en.wikipedia.org/wiki/Phil_Zimmermann), inventor of PGP — [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PRZ_closeup_cropped.jpg), CC BY-SA 3.0.*
 

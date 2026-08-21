@@ -2,14 +2,14 @@
 title: "2026 S34 Rapport Hebdomadaire"
 lang: fr
 date: 2026-08-18T21:00:00+02:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *Aveline G., François R., Dom. V., Didier L., Laurent C., Jean-Jacques B..*
+***Présents :*** *François R., François A., Didier L., Laurent C., Jean-Jacques B..*
 
 ### Ordre du jour prochaine visio mardi 25 août 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
@@ -131,7 +131,7 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 - Assistance auprès de François A.
 - Petit bug d’incohérence relevé sur sa fiche d’identité
 - Petite et seconde démonstration de foodjis
-- **Décision de priorité : le portage Android de foodjis**, et l’échange de djis (Ɉ) depuis l’assistant lui-même — avec la clé de sécurité, comme pour l’identité. Une monnaie qui ne s’échange que devant un ordinateur portable ne s’échange pas ; c’est le téléphone qui décide si elle vit. Ce chantier était à l’arrêt depuis juin : il repasse devant.
+- **Décision de priorité : le portage Android de foodjis**, et l’échange de djis (Ɉ) depuis l’assistant lui-même — avec la clé de sécurité, comme pour l’identité.
 
 ### Production de la semaine (11 — 17 août)
 
@@ -142,14 +142,14 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
   - **brancher une clé de sécurité met à jour la liste des contacts** sans qu’il faille quitter la page et y revenir ;
   - lorsqu’une clé est **refusée**, l’application dit maintenant *pourquoi*, en reprenant mot pour mot ce que l’outil de vérification a constaté — au lieu d’un simple « clé invalide » ;
   - un **bouton de retour** est présent sur toutes les étapes ;
-  - les fiches de contact montrent les **dates d’expiration passées en rouge**, et le bouton « Certifier » reste visible même lorsqu’il ne peut pas servir, avec la raison en infobulle. Un bouton qui disparaît laisse se demander si la chose est possible ; un bouton grisé qui s’explique, non.
+  - les fiches de contact montrent les **dates d’expiration passées en rouge**, et le bouton « Certifier » reste visible même lorsqu’il ne peut pas servir, avec la raison en infobulle.
 - **Le serveur de certificats a été réorganisé** — <https://keys.foopgp.org/> :
   - une **page d’accueil** présente les services, et le serveur de clés proprement dit vit désormais sous `/pks/` ;
   - les **pages de création d’identifiant** y sont servies directement, sans quitter le site ;
   - sur la fiche d’un certificat, **adresse, téléphone, site et lieu sont devenus cliquables** ;
   - le **chercheur de chemin de confiance** — qui trouve la chaîne de certifications menant d’une clé à une autre — est proposé depuis l’accueil, signalé comme expérimental, et n’accepte plus que des identifiants de clé valides.
-- **Une faille a été trouvée et corrigée en production sur ce serveur.** L’un de ses points d’entrée acceptait qu’un visiteur annonce lui-même la taille de sa requête, et réservait la mémoire correspondante avant de lire quoi que ce soit : quelques requêtes suffisaient à faire tomber le service. La demande est désormais bornée. Les deux correctifs ont été proposés à l’auteur du logiciel d’origine, séparément, car ils concernent aussi les autres serveurs qui l’utilisent.
-- **Djibian** : les *backports* de Debian sont maintenant configurés par le système lui-même, ce qui rend installables des logiciels récents comme Telegram — et seulement si personne ne les a déjà configurés autrement. Au passage, la clé qui signe notre dépôt de paquets **ne fait plus autorité que sur ce dépôt** : jusqu’ici elle aurait pu signer n’importe quelle source de logiciels de la machine.
+- **Une faille a été trouvée et corrigée en production sur ce serveur.** L’un de ses points d’entrée acceptait qu’un visiteur annonce lui-même la taille de sa requête, et réservait la mémoire correspondante avant de lire quoi que ce soit : quelques requêtes suffisaient à faire tomber le service. Les deux correctifs ont été proposés à l’auteur du logiciel d’origine, séparément, car ils concernent aussi les autres serveurs qui l’utilisent.
+- **Djibian** : les *backports* de Debian sont maintenant configurés par le système lui-même, ce qui rend installables des logiciels récents comme Telegram.
 
 
 ### TODO — Tâches à faire

@@ -9,14 +9,16 @@ image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *(à compléter en séance)*
+***Présents :*** *François R, Jean-Jacques B, Didier L.*
+
+***Excusé :*** *Laurent C.*
 
 ### Ordre du jour prochaine visio mardi 1er septembre 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
 *Note : Si problème, on se retrouve sur notre salon JITSI : [https://meet.jit.si/foopgp](https://meet.jit.si/foopgp)  (pas auto-hébergé, mais fourni (sans contrepartie financière  obligatoire) par des professionnels libristes européens, sur des  serveurs qui tiennent la charge).*
 
 - Points habituels : (revue de presse + déplacements + revue des travaux réalisés, en cours, ou à prévoir **pour l’association**).
-- **Chiffres arrêtés au 7 août**, une fois les trois points ci-dessous éclaircis.
+- **Chiffres des cotisations arrêtés au 7 août**.
 - Point sur la **certification** des membres par la Toile de Confiance (qui reste à certifier).
 - Campagne de financement de septembre.
 - Préparation de l’**atelier du vendredi 4 septembre à Tallard**.
@@ -24,11 +26,7 @@ type: "meeting"
 ### Ordres du soir (mardi 25 août)
 
 - Points habituels : (revue de presse + déplacements et actions réalisés, en cours, ou à prévoir).
-- **Retour des JDE26 à Grenoble** (20 — 22 août).
-- **Point comptable** : la reprise des mois de juin, juillet et août a été passée cette semaine — le journal courait jusqu’au 24 juin, il court désormais jusqu’au 7 août. Trois points restent à trancher avant de publier les chiffres (voir plus bas).
 - Point sur la **certification** des membres par la Toile de Confiance.
-- Campagne de financement d’août : <https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/fr-2026-08>
-- **Pourquoi nos courriels chiffrés ne partaient plus** — la cause a été trouvée cette semaine, et elle n’est pas où nous la cherchions (voir plus bas).
 
 ### Stingynalty
 
@@ -60,33 +58,86 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 *Seuls les adhérents dont l’identité PGP ID est certifiée par la  Toile de Confiance voient leurs djis effectivement créés et utilisables.*
 
-*Aux adhérents pas encore certifiés : venez nous rencontrer lors  d’un de nos prochains ateliers pour finaliser la certification de votre  identité, débloquer la création de vos djis et pouvoir les  échanger au sein de l’association.*
+*Aux adhérents pas encore certifiés : venez nous rencontrer lors  d’un de nos prochains ateliers pour finaliser la certification de votre  identité, débloquer la création de vos djis et pouvoir les échanger au sein de l’association.*
 
 ### Revue de presse
 
-*(à compléter)*
+- AliExpress diffusait discrètement des signaux audio inaudibles via le navigateur pour créer une empreinte numérique unique permettant d'identifier et de suivre les appareils des utilisateurs
+
+  <https://securite.developpez.com/actu/386424/AliExpress-diffusait-discretement-des-signaux-audio-inaudibles-via-le-navigateur-pour-creer-une-empreinte-numerique-unique-permettant-d-identifier-et-de-suivre-les-appareils-des-utilisateurs/>
+
+  <https://mamot.fr/@Steve12L/117155517906199835>
+
+  AliExpress Silent WebAudio Fingerprinting Uses Bluetooth Hardware
+
+  <https://beyondmachines.net/event_details/aliexpress-silent-webaudio-fingerprinting-uses-bluetooth-hardware-9-o-c-m-i/gD2P6Ple2L>
+
+  <https://infosec.exchange/@beyondmachines1/117150140129131878>
+
+- Une femme dénonce un médecin qui portait des lunettes connectées Meta lors d'une consultation où elle a dû se déshabiller : « il faudrait les interdire ».
+
+  L'incident a suscité un tollé en ligne
+
+  <https://droit.developpez.com/actu/386097/Une-femme-denonce-un-medecin-qui-portait-des-lunettes-connectees-Meta-lors-d-une-consultation-ou-elle-a-du-se-deshabiller-il-faudrait-les-interdire-L-incident-a-suscite-un-tolle-en-ligne/>
+
+  <https://mstdn.fr/@Grrr/117120752014254216>
+
+-  Courts Find Platforms Addictive and Dangerous by Design | TechPolicy.Press <https://www.techpolicy.press/courts-find-platforms-addictive-and-dangerous-by-design/> 
+
+  « Addictive and Dangerous by Design » ? Oh bah ça alors ! #réseauxsociaux 
+
+   Note commentée <https://veille.louisderrac.com/shaare/_HnhtA> 
+
+  <https://framapiaf.org/@louisderrac/117094107314860994>
+
+- "Meta a déposé un brevet pour des lunettes qui notent vos amis et effacent les moins intéressants"
+  <https://www.journaldugeek.com/2026/08/21/meta-a-depose-un-brevet-pour-des-lunettes-qui-notent-vos-amis-et-effacent-les-moins-interessants/>
+  <https://framapiaf.org/@gaby_wald/117138153238493579>
+
+- « Alphabet, Amazon, Meta et Microsoft, endettés à hauteur de 356 milliards de $, \[...\] n'ont plus suffisamment de liquidités pour s’autofinancer et doivent recourir au marché, sur lequel leurs emprunts font concurrence à ceux du Trésor, alimentant la hausse des rendements servis aux investisseurs. »
+  <https://www.lemonde.fr/economie/article/2026/08/20/aux-etats-unis-la-demande-de-capitaux-pour-l-ia-et-la-defense-provoque-un-debut-de-crise-de-la-dette_6750441_3234.html>
+  <https://mamot.fr/@felix/117127212643362127>
+
+- tmobile gets to experience classic security meme in real life:
+  <https://techcrunch.com/2026/08/19/t-mobile-chopped-a-cable-to-expel-chinese-hackers-from-its-network/>
+  <https://infosec.exchange/@paul_ipv6/117123646574683682>
+
+- LB: this is *fucking nuts*.
+  on certain AMD CPUs you can just poke a random MMIO address from ring 0 and change the memory controller's scrambling pattern, on a live system, which completely jumbles the mapping between physical addresses and DRAM IC coordinates. since all memory protection features (IOMMU, SMM boundaries, etc.) are based on physical addresses, it bypasses *all of them*. you can read AND WRITE the SMM, fTPM, and even the C6 microcode save regions. wild.
+  <https://furry.engineer/@soatok/117089469038278431>
+  <https://chaos.social/@gsuberland/117089697867842435>
+
+- Interoperable Europe Act : le partage devient un principe, l'Open Source un moyen. Notre décryptage du volet ouvert du paquet « souveraineté technologique » :
+   <https://inno3.fr/blog/interoperable-europe-act-open-source/>
 
 ### Au cœur de la réunion
 
-*(à compléter en séance)*
+- 3 nouvelles qui, si elles se concrétisent, engendrent des décisions à soumettre à l’ensemble des adhérents :
+  - Adhésion à une association internationale en formation “pour la paix” sur Marseille, très intéressée par nos solutions.
+  - Adhésion à une association sur Septème-les-Vallons, aussi en formation, pour héberger des projets d’économie sociale et solidaire (comme les nôtres) en mettant à disposition un bien ayant appartenu à la SNCF.
+  - Déplacement du siège social à l’adresse du point précédent
+- JJ a préféré rester travailler et profiter de ses enfants plutôt que d'aller faire de la communication aux JDE de Grenoble.
+- Discussion avec Didier sur la nécessité de transparence afin de permettre à grande échelle la confiance et la justice.
+- Projet d’achat d’un smartphone Murena auprès de Laurent, afin de développer notre application Android.
+- Fourniture de laptop par Laurent.
 
 ### Production de la semaine (18 — 25 août)
 
-- **La bibliothèque d’identité a quitté le dépôt de l’assistant graphique et a pris son nom.** Elle s’appelait *pgpid-mip* — *mip* pour « migration en cours » —, elle s’appelle désormais **pgpid** et vit dans [son propre dépôt](https://codeberg.org/foopgp/pgpid) , avec son paquet. L’assistant graphique ne l’embarque plus : il l’utilise. La question « où cette bibliothèque vivra-t-elle » figurait dans nos tâches depuis juin ; elle est réglée.
-- **Elle sait maintenant tout ce que faisaient les scripts.** Se sont ajoutées cette semaine : créer une paire de clés, la déplacer sur une clé de sécurité, en changer les codes, écrire ce qu’un certificat dit de son porteur, vouloir pour quelqu’un d’autre, imprimer un secret sur papier et le relire, et recalculer la confiance. Vingt-cinq actions en tout. Les scripts en langage de commande qui restent ne s’appuient plus du tout sur les anciennes bibliothèques.
-- **Les actions qui touchent une clé de sécurité ont été vérifiées sur une vraie clé**, prêtée pour l’occasion : déplacement du secret, compteurs d’essais, déblocage, et les trois mentions que la clé porte sur son détenteur. Une clé de sécurité se bloque au bout de trois essais.
-- **Le papier est redevenu lisible.** L’identité imprimée sur les QR codes ne retient plus que trois mentions : le nom, l’identifiant, une adresse. L’identité complète produisait un code que le format ne sait pas encoder : cela ne s’imprimait pas. Les feuilles produites par l’ancienne et la nouvelle version se relisent l’une l’autre.
-- **Elle parle nos neuf langues.** Trois cent soixante et un messages traduits en allemand, anglais, espagnol, français, italien, polonais, portugais, russe et ukrainien — et autant de **pages de manuel**, engendrées depuis l’aide de l’outil lui-même plutôt que réécrites à côté, ce qui évite qu’elles se contredisent.
-- **Un paquet Debian** est prêt, avec ses pages de manuel et ses traductions. Le durcissement du binaire, que la distribution laisse partiellement de côté, a été activé : la vérification de conformité ne signale plus rien.
-- **Licence : tout est passé en GPL-3.0-only**, dépôt de la bibliothèque et assistant graphique compris. Chaque fichier le déclare lui-même. La matière que nous transportons sans en être les auteurs — spécifications, images de documents, données d’apprentissage — est désormais signalée comme telle. L’assistant graphique disait jusqu’ici quatre choses différentes selon l’endroit où on le lisait.
-- **Pourquoi les courriels chiffrés ne partaient plus.** Nous pensions à un défaut du logiciel de courrier ; c’est le moteur de chiffrement lui-même qui refuse. Deux défauts, trouvés et corrigés cette semaine : il consultait la mauvaise mention d’identité lorsqu’un certificat porte une photographie, et il écartait un certificat entier dès qu’une ancienne mention d’une adresse avait été révoquée — même lorsqu’une mention valide portait la même adresse. Les correctifs passent l’intégralité des tests du logiciel d’origine et leur sont proposés. Comme la plupart de nos correspondants sont sous Djibian, la correction leur parviendra par nos dépôts sans attendre.
+- **La bibliothèque d’identité a quitté le dépôt de l’assistant graphique et a pris son nom.** Elle s’appelait *pgpid-mip* — *mip* pour « migration in progress » —, elle s’appelle désormais **pgpid** et vit dans [le dépôt initial du même nom](https://codeberg.org/foopgp/pgpid). L’assistant graphique ne l’embarque plus : il l’utilise.
+- **Pgpid couvre l’ensemble des bash-libs bl-pgpid et bl-pgpkey.** Se sont ajoutées cette semaine : créer une paire de clés, la déplacer sur une clé de sécurité, en changer les codes, écrire ce qu’un certificat dit de son porteur, vouloir pour quelqu’un d’autre, imprimer un secret sur papier et le relire, et recalculer la confiance. Vingt-cinq actions en tout. Les scripts en langage de commande qui restent ne s’appuient plus du tout sur les anciennes bibliothèques.
+- **pgpid parle nos neuf langues.** Trois cent soixante et un messages traduits en allemand, anglais, espagnol, français, italien, polonais, portugais, russe et ukrainien — et autant de **pages de manuel**, engendrées depuis l’aide de l’outil lui-même plutôt que réécrites à côté, ce qui évite qu’elles se contredisent.
+- **Le paquet pgpid (.deb) sera bientôt livré sur nos dépots de test**
+- **Evolution n’arrivait plus à envoyer des courriels chiffrés à certaines adresse.** Le problème venait du moteur de chiffrement lui-même (GnuPG) sur certains certificats intensément modifiés. Trois patches ont été produits, ils seront inclus dans une prochaine mise à jour de djibian :
+  - (Bug) : il consultait la mauvaise mention d’identité lorsqu’un certificat porte une photographie
+  - (Bug) : il écartait un certificat entier  dès qu’une ancienne mention d’une adresse avait été révoquée — même  lorsqu’une mention valide portait la même adresse.
+  - (Amélioration) : pourvoir passer des courriel avec les chevrons <latéraux> à l’option --recipient
 
 ### TODO — Tâches à faire
 
 Liste non-exhaustive des tâches à réaliser ou chantiers en cours :
 
-- **Comptabilité €** ([dépôt](https://codeberg.org/foopgp/foopgp-cashflow)  git non-public) — la reprise de juin à août est passée ; reste à **éclaircir les trois points ci-dessus**, puis à automatiser la chaîne HelloAsso : se rapprocher du temps réel plutôt que d’une reprise mensuelle, et remercier automatiquement. L’essentiel est écrit et testé depuis juin ; ce qui manque est une mise en service.
-- **Comptabilité Ɉ** — relancer le calcul des djis sur les apports de l’été, et **comprendre les lignes à zéro**. Puis finaliser [les innovations et concepts sous-jacents](https://foopgp.org/documents/en/) [^emission][^ledger], comme celui d’**arbres universels d’entités** ([spécifications](https://foopgp.org/documents/en/draft-foopgp-uetree-00.txt)  et [code](https://codeberg.org/foopgp/bash-libs/src/branch/main/bin/bl-uetree) ). Et démarrer le frontend (dépot et paquet à créer).
+- **Comptabilité €** ([dépôt](https://codeberg.org/foopgp/foopgp-cashflow)  git non-public) — automatiser la chaîne HelloAsso : se rapprocher du temps réel plutôt que d’une reprise manuelle, et remercier automatiquement. L’essentiel est écrit et testé depuis juin ; ce qui manque est une mise en service.
+- **Comptabilité Ɉ** — finaliser [les innovations et concepts sous-jacents](https://foopgp.org/documents/en/) [1](http://localhost:1313/fr/assembly/2026-08-25-weekly-report/#fn:1)[2](http://localhost:1313/fr/assembly/2026-08-25-weekly-report/#fn:2), comme celui d’**arbres universels d’entités** ([spécifications](https://foopgp.org/documents/en/draft-foopgp-uetree-00.txt)  et [code](https://codeberg.org/foopgp/bash-libs/src/branch/main/bin/bl-uetree) ). Et démarrer le frontend (dépot et paquet à créer).
 - **Moteur de chiffrement** — faire aboutir les correctifs proposés en amont, et livrer la version corrigée dans nos dépôts.
 - **Serveur de certificats** ([onak-foopgp](https://codeberg.org/foopgp/onak)  → <https://keys.foopgp.org/> ) — durcissement et redondance.
 - **Adresses de courriel** — publier les clés de `*@foopgp.org` par le mécanisme standard de découverte (WKD).
@@ -102,9 +153,11 @@ Liste non-exhaustive des tâches à réaliser ou chantiers en cours :
   - <https://linuxfr.org/news/l-april-invite-a-participer-a-la-fete-des-possibles-2026-pour-toucher-de-nouveaux-publics>
   - <https://framapiaf.org/@marnic/116986780887404776>
 - 24 — 27 septembre à Bourges : [Émancip’Actions](https://emancipactions.fr/)
-- 14 & 15 novembre 2026 : [Capitole du Libre à Toulouse](https://capitoledulibre.org/)
+- 14 & 15 novembre 2026 : [Capitole du Libre à Toulouse](https://capitoledulibre.org/) (à priori nous n’irons pas, privilégiant le développement local).
 - 9 et 10 décembre 2026 : [OSXP Paris — Porte de Versailles](https://www.opensource-experience.com/)
 - [… agenda du libre](https://www.agendadulibre.org)
+
+---
 
 [^emission]: https://foopgp.org/documents/en/foopgp-djis-emission-workflow.md
 [^ledger]: https://foopgp.org/documents/en/foopgp-djis-decentralized-ledger.md

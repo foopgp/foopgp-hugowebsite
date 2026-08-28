@@ -46,15 +46,15 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 #### Chiffres de l’association
 
-*La reprise comptable a été passée cette semaine : le journal, qui s’arrêtait au 24 juin, court maintenant jusqu’au **7 août 2026**. Les chiffres en euros sont établis ; **la colonne Ɉ ne l’est pas encore** et sera complétée une fois les trois points ci-dessous éclaircis. Ils sont donc donnés à titre provisoire.*
+*La reprise comptable est achevée : le journal, qui s’arrêtait au 24 juin, court jusqu’au **7 août 2026**, et **la colonne Ɉ — qui manquait la semaine dernière — est maintenant établie**.*
 
-*Au 7 août 2026, depuis la création de l’association le 3 avril 2023 : **106 cotisations, 66 588,68 €, 58 cotisants**. Environ **71 % des euros** sont adossés à un certificat entré dans la Toile de Confiance, mais seulement **34 % des cotisants** — l’écart tient aux plus grosses contributions, qui viennent de personnes déjà certifiées.*
+*Au 7 août 2026, depuis la création de l’association le 3 avril 2023 : **106 cotisations, 66 588,68 €, 58 cotisants**.*
 
-*Trois points à éclaircir avant publication :*
+*Parmi eux, **22 cotisants sont certifiés** dans la Toile de Confiance : **71 % des euros** y sont adossés, mais seulement **38 % des cotisants** — l’écart tient aux plus grosses contributions, qui viennent de personnes déjà certifiées. Ces 22 identités totalisent 52 cotisations, 47 253,05 € et **162,721425 Ɉ créés**.*
 
-1. *une cotisation a perdu la mention de son bénéficiaire lors de la régénération du journal — elle est encore comptée, mais disparaîtrait d’une reconstruction ;*
-2. *le calcul des Ɉ n’a pas été relancé depuis ces ajouts, et cinq lignes de 2026 y figurent à zéro — à comprendre avant d’émettre ;*
-3. *les nouvelles certifications prononcées depuis juin ne sont pas encore reportées.*
+*Deux de ces certifications ont été prononcées depuis juin et restent à reporter dans le registre public : 250,00 € et 12,270247 Ɉ, déjà comptés ci-dessus.*
+
+*Sur les réserves de la semaine dernière : le calcul des Ɉ a été relancé sur l’ensemble du registre — deux cotisations n’y étaient pas descendues, et deux montants y figuraient à tort à zéro. Les trois lignes qui restent à zéro le sont légitimement : un petit versement ajouté à une contribution déjà importante ne crée rien de mesurable, la création décroissant fortement avec le cumul déjà versé. Reste un point à éclaircir : une cotisation a perdu la mention de son bénéficiaire lors de la régénération du journal — elle est encore comptée, mais disparaîtrait d’une reconstruction.*
 
 *Seuls les adhérents dont l’identité PGP ID est certifiée par la  Toile de Confiance voient leurs djis effectivement créés et utilisables.*
 

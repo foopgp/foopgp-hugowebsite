@@ -46,7 +46,7 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 #### Chiffres de l’association
 
-*Le journal des cotisations, qui s’arrêtait au 24 juin, court maintenant jusqu’au **7 août 2026**.
+*Le journal des cotisations, qui s’arrêtait au 24 juin, court maintenant jusqu’au **7 août 2026**.*
 
 *Au 7 août 2026, depuis la création de l’association le 3 avril 2023 : **106 cotisations, 66 588,68 €, 58 cotisants**.*
 

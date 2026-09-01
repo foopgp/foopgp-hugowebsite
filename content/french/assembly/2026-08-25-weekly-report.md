@@ -2,7 +2,7 @@
 title: "2026 S35 Rapport Hebdomadaire"
 lang: fr
 date: 2026-08-25T21:00:00+02:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/banner/foopgp+dji+djibian.png"
@@ -11,7 +11,7 @@ type: "meeting"
 
 ***Présents :*** *François R, Jean-Jacques B, Didier L.*
 
-***Excusé :*** *Laurent C.*
+***Excusé :*** *Laurent C., Aveline R.*
 
 ### Ordre du jour prochaine visio mardi 1er septembre 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
@@ -46,15 +46,11 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 #### Chiffres de l’association
 
-*La reprise comptable est achevée : le journal, qui s’arrêtait au 24 juin, court jusqu’au **7 août 2026**, et **la colonne Ɉ — qui manquait la semaine dernière — est maintenant établie**.*
+*Le journal des cotisations, qui s’arrêtait au 24 juin, court maintenant jusqu’au **7 août 2026**.
 
 *Au 7 août 2026, depuis la création de l’association le 3 avril 2023 : **106 cotisations, 66 588,68 €, 58 cotisants**.*
 
 *Parmi eux, **22 cotisants sont certifiés** dans la Toile de Confiance : **71 % des euros** y sont adossés, mais seulement **38 % des cotisants** — l’écart tient aux plus grosses contributions, qui viennent de personnes déjà certifiées. Ces 22 identités totalisent 52 cotisations, 47 253,05 € et **162,721425 Ɉ créés**.*
-
-*Deux de ces certifications ont été prononcées depuis juin et restent à reporter dans le registre public : 250,00 € et 12,270247 Ɉ, déjà comptés ci-dessus.*
-
-*Sur les réserves de la semaine dernière : le calcul des Ɉ a été relancé sur l’ensemble du registre — deux cotisations n’y étaient pas descendues, et deux montants y figuraient à tort à zéro. Les trois lignes qui restent à zéro le sont légitimement : un petit versement ajouté à une contribution déjà importante ne crée rien de mesurable, la création décroissant fortement avec le cumul déjà versé. Reste un point à éclaircir : une cotisation a perdu la mention de son bénéficiaire lors de la régénération du journal — elle est encore comptée, mais disparaîtrait d’une reconstruction.*
 
 *Seuls les adhérents dont l’identité PGP ID est certifiée par la  Toile de Confiance voient leurs djis effectivement créés et utilisables.*
 

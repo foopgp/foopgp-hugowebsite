@@ -99,14 +99,13 @@ EOF
 sudo apt update
 ```
 
-### Three packages, and you're set
+### Two packages, and you're set
 
 ```bash
-sudo apt install djibian-gpgconfig djibian-onboarding pgpid
+sudo apt install foodjis pgpid
 ```
 
-- **`djibian-onboarding`** — the same graphical application as step 5 above. Launch it after install, follow along. The gentlest route in.
-- **`djibian-gpgconfig`** — the OpenPGP settings that make daily use of a physical key smooth (sensible PIN cache, card parameters, keyserver choice).
+- **`foodjis`** — the same graphical application as step 5 above. Launch it after install, follow along. The gentlest route in.
 - **`pgpid`** — the command-line version, for those who prefer. Just two commands, all-in:
 
   ```bash

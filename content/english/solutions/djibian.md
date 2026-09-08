@@ -39,7 +39,7 @@ If in doubt, take a full disk image (`Clonezilla` does this very well); you can 
 
 > <http://iso.foopgp.org/djibian/latest>
 
-Expect 6 to 7 GB.
+*Expect 2 to 3 GB.*
 
 ### 3. Prepare a USB installer
 
@@ -80,7 +80,7 @@ The video below follows a new user through exactly that experience:
 
 ## Alternative path — keep your current Linux, add our tools
 
-You'd rather keep your Debian (≥ 13) or Ubuntu (≥ 24.04). You can enable our repository and install only the packages that interest you.
+You'd rather keep your **Debian** (≥ 13), **Ubuntu** (≥ 24.04) or **Linux Mint** (≥ 21.3). You can enable our repository and install only the packages that interest you.
 
 ### Enable the foopgp repository
 

@@ -39,7 +39,7 @@ Dans le doute, prenez une image complète de votre disque (`Clonezilla` fait ça
 
 > <http://iso.foopgp.org/djibian/latest>
 
-Comptez 6 à 7 Go.
+*Comptez 2 à 3 Go.*
 
 ### 3. Préparer une clé USB d'installation
 
@@ -80,7 +80,7 @@ La vidéo ci-dessous suit un nouvel utilisateur à travers exactement cette exp�
 
 ## Voie alternative — garder votre Linux actuel, ajouter nos outils
 
-Vous tenez à votre Debian (≥ 13) ou Ubuntu (≥ 24.04). Vous pouvez activer notre dépôt et n'installer que les paquets qui vous intéressent.
+Vous tenez à votre **Debian** (≥ 13), **Ubuntu** (≥ 24.04), ou **Linux Mint** (≥ 21.3). Vous pouvez activer notre dépôt et n'installer que les paquets qui vous intéressent.
 
 ### Activer le dépôt foopgp
 

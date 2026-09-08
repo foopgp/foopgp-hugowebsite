@@ -2,7 +2,7 @@
 
 > French non-profit association developing free-software tools and IETF-track
 > standards around OpenPGP : a sovereign decentralised digital identity
-> (OpenPGP ID), an associative currency token (the dji — Ɉ — created
+> (PGP ID), an associative currency token (the dji — Ɉ — created
 > rigorously from members' contributions), and a Debian-based personal OS
 > (djibian). Cooperative, transparent, kind, locally rooted.
 
@@ -21,8 +21,8 @@ unless noted otherwise. The site itself is built with Hugo from
 
 ## Core specifications
 
-- [OpenPGP ID — what and why (EN)](https://foopgp.org/solutions/openpgp-id/) : portable identity backed by a PGP key, validated by Web of Trust certifications. Designed to replace OAuth/OIDC for asso-scale federations.
-- [IETF draft : OpenPGP ID](https://foopgp.org/documents/en/draft-foopgp-openpgp-id-00.txt) : the wire format and verification semantics.
+- [PGP ID — what and why (EN)](https://foopgp.org/solutions/pgp-id/) : portable identity backed by a PGP key, validated by Web of Trust certifications. Designed to replace OAuth/OIDC for asso-scale federations.
+- [IETF draft : the 'eid' URN namespace](https://foopgp.org/documents/en/draft-foopgp-urn-eid-00.txt) : entity identifiers (eid), the u4 and u5 variants, and their IANA registration. Supersedes draft-foopgp-openpgp-id-00, which is now a stub pointing here.
 - [IETF draft : uetree](https://foopgp.org/documents/en/draft-foopgp-uetree-00.txt) : local file-tree registry mapping canonical email ↔ identifier, with `.ALIASES` and `.FORMAT` markers.
 - [IETF draft : uftree](https://foopgp.org/documents/en/draft-foopgp-uftree-00.txt) : forest extension — many uetree instances cooperating across servers.
 - [Djis emission workflow (EN)](https://foopgp.org/documents/en/foopgp-djis-emission-workflow.md) : how a contribution in euros becomes Ɉ on a member's wallet.
@@ -56,7 +56,7 @@ unless noted otherwise. The site itself is built with Hugo from
 - [2026-05-27 — uetree specification (EN)](https://foopgp.org/blog/2026-05-27-uetree-spec/).
 - [2026-05-11 — Djibian agent forwarding (EN)](https://foopgp.org/blog/2026-05-11-djibian-agentforwarding/) : portable identity over SSH without copying private keys.
 - [2026-05-09 — Hello, my name is Mnêmê (EN)](https://foopgp.org/blog/2026-05-09-hello-my-name-is-mneme/) : introduction of the AI assistant working with foopgp on memory, emissions, infrastructure.
-- [2026-04-28 — OpenPGP ID specification (EN)](https://foopgp.org/blog/2026-04-28-openpgp-id-spec/).
+- [2026-04-28 — PGP ID specification (EN)](https://foopgp.org/blog/2026-04-28-openpgp-id-spec/) : the URL keeps the old spelling, the subject is PGP ID.
 - [2026-02-10 — Djibian tour (EN)](https://foopgp.org/blog/2026-02-10-djibian-tour/) : walkthrough of the Debian-based personal OS.
 - [2026-01-19 — Djibian release (EN)](https://foopgp.org/blog/2026-01-19-djibian-release/).
 

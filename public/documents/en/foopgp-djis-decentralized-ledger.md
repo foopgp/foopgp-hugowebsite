@@ -618,7 +618,7 @@ Two reasons:
 - **uetree 1.1 specification** —
   [draft-foopgp-uetree-00.txt](./draft-foopgp-uetree-00.txt).
 
-- **OpenPGP ID specification** —
+- **PGP ID specification** —
   [draft-foopgp-openpgp-id-00.txt](./draft-foopgp-openpgp-id-00.txt).
 
 - **foopgp Euro → djis upstream workflow** —

@@ -12,7 +12,7 @@ type: "post"
 
 **[Djibian](/blog/2025-09-12-welcome-djibian/) is for you.**
 
-It is the operating system foopgp assembles on top of [Debian](https://www.debian.org/), to give you back the control of your digital life: an [OpenPGP identity](/solutions/pgp-id/) carried by a [physical key](/solutions/offer-security-keys/) (YubiKey or NitroKey), [encrypted email](/solutions/theme-email/), an [authentication](/solutions/theme-authentication/) that depends on no one but you, and — for members — the ability to use the [djis](/solutions/theme-currency/) as a [means of exchange](/about/join/).
+It is the operating system foopgp assembles on top of [Debian](https://www.debian.org/), to give you back the control of your digital life: an [PGP identity](/solutions/pgp-id/) carried by a [physical key](/solutions/offer-security-keys/) (YubiKey or NitroKey), [encrypted email](/solutions/theme-email/), an [authentication](/solutions/theme-authentication/) that depends on no one but you, and — for members — the ability to use the [djis](/solutions/theme-currency/) as a [means of exchange](/about/join/).
 
 Djibian was also designed to run smoothly on both recent machines and *old dinosaurs* — it is also an excellent way to extend the life span of your computers.
 
@@ -59,9 +59,9 @@ The default user is **`unknow`** and its password is **`foopgp`**.
 
 On the first reboot into your new Djibian, the **`djibian-onboarding`** application starts on its own. It walks you through — **without a single command line to type** — to:
 
-- generate your **[digital OpenPGP identity](/solutions/pgp-id/)** (asymmetric-cryptography keys are then split and printed on 5 separate sheets);
+- generate your **[digital PGP identity](/solutions/pgp-id/)** (asymmetric-cryptography keys are then split and printed on 5 separate sheets);
 - scan and load the corresponding secrets onto your **physical key** (YubiKey or NitroKey, [provided by the association for free past 6.42 Ɉ cumulated](/about/join/));
-- add you as a real user of the system, with your home directory configured for your OpenPGP physical key (email decryption and signing, ssh authentication, git commit signing).
+- add you as a real user of the system, with your home directory configured for your PGP physical key (email decryption and signing, ssh authentication, git commit signing).
 
 The video below follows a new user through exactly that experience:
 
@@ -119,7 +119,7 @@ sudo apt install foodjis pgpid
 
 ## Going further
 
-- 🎓 **[Djibian + OpenPGP workshop](/course/djibian-openpgp/)** — 4 hours in person, free. We start from a freshly-installed Djibian, generate your identity, configure your physical key, and verify together that everything signs / decrypts / authenticates. You walk away with a complete working chain. [Upcoming sessions.](/event/)
+- 🎓 **[Djibian + PGP workshop](/course/djibian-openpgp/)** — 4 hours in person, free. We start from a freshly-installed Djibian, generate your identity, configure your physical key, and verify together that everything signs / decrypts / authenticates. You walk away with a complete working chain. [Upcoming sessions.](/event/)
 
 - 💬 **Demonstration: an encrypted email, end-to-end.**
 
@@ -130,7 +130,7 @@ sudo apt install foodjis pgpid
   sub_en="/videos/2026/sous-titre-en-mail-chiffre.vtt"
 >}}
 
-*See also: [OpenPGP-secured email](/solutions/theme-email/).*
+*See also: [PGP-secured email](/solutions/theme-email/).*
 
 - 🔐 **[A single physical key for every machine on the Internet](/blog/2026-05-11-djibian-agentforwarding/)** — `sshwgpg`, shipped in our packages, lets you hop over ssh to any machine without copying a single private key.
 

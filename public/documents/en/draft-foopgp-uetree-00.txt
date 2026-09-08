@@ -1050,7 +1050,7 @@ Table of Contents
                Forms", Unicode Standard Annex #15, 2024.
 
    [I-D.foopgp-openpgp-id]
-               Brucker, J.J. and Mnème, "OpenPGP ID — Universal
+               Brucker, J.J. and Mnème, "PGP ID — Universal
                Digital Identity", draft-foopgp-openpgp-id-00,
                April 2026.
 

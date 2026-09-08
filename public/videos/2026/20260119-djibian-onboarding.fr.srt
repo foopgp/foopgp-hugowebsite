@@ -4,7 +4,7 @@ Si votre page Unboarding n'est pas lancée automatiquement, vous allez en bas à
 
 2
 00:00:08,020 --> 00:00:11,940
-Une fois lancé, vous cliquez sur <Configurer votre clé de sécurité OpenPGP ID>.
+Une fois lancé, vous cliquez sur <Configurer votre clé de sécurité PGP ID>.
 
 3 
 00:00:12,460 --> 00:00:12,980

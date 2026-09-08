@@ -87,7 +87,7 @@ Un eid ne sert pas qu'à étiqueter un certificat. Dans l'implémentation de ré
 
 Chemin unique, portable, auto-documenté : le nom du répertoire encode directement l'identité.
 
-**Configuration du système en entier.** À partir du certificat OpenPGP identifié par son eid, le système dérive automatiquement : les clés SSH autorisées, la clé de signature Git, la clé GnuPG par défaut, et l'avatar de l'utilisateur (`~/.face`). Un seul certificat suffit à initialiser un environnement utilisateur complet et authentifié.
+**Configuration du système en entier.** À partir du certificat PGP identifié par son eid, le système dérive automatiquement : les clés SSH autorisées, la clé de signature Git, la clé GnuPG par défaut, et l'avatar de l'utilisateur (`~/.face`). Un seul certificat suffit à initialiser un environnement utilisateur complet et authentifié.
 
 ---
 

@@ -24,7 +24,7 @@ Sortir de l'effet Cantillon n'est pas une condition suffisante de la paix, mais 
 
 | Couche | Produit | Promesse |
 |---|---|---|
-| **1.** | **OpenPGP ID** sécurisé par une clé matérielle (Yubikey, Nitrokey) | Une identité numérique souveraine, dérivée minimalement de l'état civil, mathématiquement vérifiable, transportable, non délivrée par un État ni par un GAFAM. |
+| **1.** | **PGP ID** sécurisé par une clé matérielle (Yubikey, Nitrokey) | Une identité numérique souveraine, dérivée minimalement de l'état civil, mathématiquement vérifiable, transportable, non délivrée par un État ni par un GAFAM. |
 | **2.** | **Djibian** (assemblage Debian) | Un système d'exploitation libre intégrant nos innovations — destiné à essaimer dans d'autres distributions et écosystèmes. |
 | **3.** | **dji** (jeton Ɉ) | Une monnaie libre, à émission universelle (TRM Laborde), sans privilège de création. La concrétisation économique du paradigme. |
 
@@ -34,7 +34,7 @@ Tout le reste — formations, ateliers, livres, prestations — est l'**instrume
 
 Quatre sources de revenus, complémentaires :
 
-- **Adhésion** — cotisation libre depuis l'AGE de juillet 2025. À partir du palier de **6,42 Ɉ générés** par ses cotisations cumulées (≈ 146 € en mai 2026), l'adhérent reçoit sa clé de sécurité physique (Yubikey ou Nitrokey) pré-configurée avec son OpenPGP ID. Le palier en euros croît mécaniquement avec la *stingynalty* (~+0,5 %/mois) : c'est l'incitation pour les pionniers.
+- **Adhésion** — cotisation libre depuis l'AGE de juillet 2025. À partir du palier de **6,42 Ɉ générés** par ses cotisations cumulées (≈ 146 € en mai 2026), l'adhérent reçoit sa clé de sécurité physique (Yubikey ou Nitrokey) pré-configurée avec son PGP ID. Le palier en euros croît mécaniquement avec la *stingynalty* (~+0,5 %/mois) : c'est l'incitation pour les pionniers.
 - **Ateliers et formations** — déclaration prestataire de formation n° 93050099805 (préfecture PACA) ; OPCO accessible. Série mensuelle d'ateliers Djibian, conférences (Capitole du Libre, JDLL, etc.).
 - **Parrainage** — chaque nouvelle adhésion verse 10 % de la cotisation, transformés en djis sur la plateforme de change, au(x) parrain(s) à parts égales (ou à l'asso si aucun parrain). Mécanisme à un seul niveau, transparent, traçable via la web of trust OpenPGP — explicitement non-MLM.
 - **Prestations B2B de souveraineté** — aux PME et collectivités cherchant à se prémunir d'EUDI Wallet et autres tiers de confiance imposés.
@@ -72,7 +72,7 @@ Calcul, dans l'hypothèse simple où le pouvoir d'achat actuel de la zone euro e
 **Pressions à la hausse** au-delà du plancher :
 
 - **Adoption** : ≈ 99 % des citoyens de la zone euro sont *en-dessous* des 32 102 € moyens. Lorsqu'ils basculent sur le dji, l'écart se reporte sur le prix.
-- **Momentum** : si même 1 % des plus riches achètent en dji ce que foopgp produit (OpenPGP ID, Djibian, prestations), la demande dépasse la base.
+- **Momentum** : si même 1 % des plus riches achètent en dji ce que foopgp produit (PGP ID, Djibian, prestations), la demande dépasse la base.
 - **Parts sociales** : le dji est aussi la part d'un projet qui s'attaque aux parts de marché de Microsoft et Apple (~7 200 Md$ de capitalisation cumulée en 2025).
 
 **Pression à la baisse** : le dividende universel mensuel (4 ‰), partiellement absorbé par la stingynalty (+5 ‰/mois).

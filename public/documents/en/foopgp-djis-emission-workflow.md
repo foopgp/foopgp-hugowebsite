@@ -799,7 +799,7 @@ hook that refuses unsigned pushes (cf.
 - **uftree early sketch** —
   [draft-foopgp-uftree-00.txt](./draft-foopgp-uftree-00.txt).
 
-- **OpenPGP ID specification** —
+- **PGP ID specification** —
   [draft-foopgp-openpgp-id-00.txt](./draft-foopgp-openpgp-id-00.txt).
 
 - **bash-libs** —

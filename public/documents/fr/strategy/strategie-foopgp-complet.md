@@ -12,7 +12,7 @@ version: "1.1"
 
 **foopgp** est une association loi 1901 (Pelleautier, 05000), déclarée prestataire de formation, qui développe et fait essaimer trois produits emboîtés :
 
-1. **OpenPGP ID** : une identité numérique souveraine portée par une clé matérielle (Yubikey, Nitrokey).
+1. **PGP ID** : une identité numérique souveraine portée par une clé matérielle (Yubikey, Nitrokey).
 2. **Djibian** : un assemblage Debian (Debian Blend) qui intègre l'ensemble de nos innovations et est destiné à être repris par d'autres distributions.
 3. **dji** (jeton Ɉ) : une monnaie libre à émission universelle, sans privilège de création, qui concrétise notre paradigme.
 
@@ -52,7 +52,7 @@ Chaque incident démontre la même chose : la centralisation crée des points de
 
 ## 4. Trois produits, trois couches
 
-### 4.1 OpenPGP ID
+### 4.1 PGP ID
 
 Un **identifiant numérique** dérivé minimalement de l'état civil (formule `u4`) ou du timestamp de naissance (formule `u5`), mathématiquement vérifiable, transportable. Cet identifiant est embarqué dans un **certificat OpenPGP** lui-même hébergé sur une **clé matérielle** (Yubikey, Nitrokey).
 
@@ -84,7 +84,7 @@ Les paramètres en vigueur (votés en AG, méthode de Schulze) :
 
 ### 5.1 Sources de revenus existantes
 
-- **Adhésions** : cotisation libre depuis l'AGE de juillet 2025. À partir du palier de **6,42 Ɉ générés** par ses cotisations cumulées, l'adhérent reçoit sa **clé matérielle** (Yubikey ou Nitrokey) pré-configurée avec son OpenPGP ID. Le palier exprimé en djis (et non en euros) rend la contrepartie matérielle indépendante d'un tarif fixe : elle est conditionnée à un niveau d'engagement associatif mesurable, qui croît mécaniquement avec la *stingynalty* (cf. *5.3*). Élégance commerciale : on transforme un acte d'achat en geste d'adhésion, alignant l'objet vendu avec l'objet social.
+- **Adhésions** : cotisation libre depuis l'AGE de juillet 2025. À partir du palier de **6,42 Ɉ générés** par ses cotisations cumulées, l'adhérent reçoit sa **clé matérielle** (Yubikey ou Nitrokey) pré-configurée avec son PGP ID. Le palier exprimé en djis (et non en euros) rend la contrepartie matérielle indépendante d'un tarif fixe : elle est conditionnée à un niveau d'engagement associatif mesurable, qui croît mécaniquement avec la *stingynalty* (cf. *5.3*). Élégance commerciale : on transforme un acte d'achat en geste d'adhésion, alignant l'objet vendu avec l'objet social.
 - **Ateliers Djibian mensuels** : série pédagogique pour découvrir et prendre en main l'écosystème.
 - **Formations professionnelles** : déclaration prestataire n° 93050099805 (préfecture PACA), donc accès aux dispositifs OPCO et CPF.
 - **Conférences et stands publics** : Capitole du Libre, JDLL, AlpOSS, Forum du numérique 04, etc. Recettes modestes mais utiles pour le sourcing d'adhérents.
@@ -171,14 +171,14 @@ La question pertinente n'est donc pas *« pour qui ? »* mais *« quels premiers
 
 EUDI Wallet est piloté par les États membres et imposera à terme un wallet officiel d'identité numérique à l'échelle européenne. Trois différences fondamentales :
 
-| Critère | EUDI Wallet | foopgp / OpenPGP ID |
+| Critère | EUDI Wallet | foopgp / PGP ID |
 |---|---|---|
 | **Architecture** | Centralisée (PKI étatique) | Décentralisée (web of trust OpenPGP) |
 | **Confidentialité** | Métadonnées accessibles à l'État | Chiffrement intégré, opacité des usages |
 | **Interopérabilité** | Limitée aux services publics et partenaires agréés | Universelle (mail, SSH, Git, signature, vote, monnaie) |
 | **Risque** | Point de défaillance unique (panne, piratage, contrôle politique) | Pas de point unique |
 
-Ces différences sont structurelles : EUDI Wallet ne peut pas, par construction, fournir les trois avantages qu'offre OpenPGP ID.
+Ces différences sont structurelles : EUDI Wallet ne peut pas, par construction, fournir les trois avantages qu'offre PGP ID.
 
 ### 8.2 Face aux cryptomonnaies (Bitcoin, Ethereum, etc.)
 
@@ -232,7 +232,7 @@ Les cryptomonnaies grand public résolvent le problème de la *décentralisation
 
 ### 10.5 Complexité pédagogique
 
-*Risque* : la chaîne complète (OpenPGP ID + clé matérielle + Djibian + dji + plateforme de change + monnaie libre TRM) est conceptuellement dense. Un utilisateur non-technique peut décrocher avant d'avoir saisi la valeur.
+*Risque* : la chaîne complète (PGP ID + clé matérielle + Djibian + dji + plateforme de change + monnaie libre TRM) est conceptuellement dense. Un utilisateur non-technique peut décrocher avant d'avoir saisi la valeur.
 *Atténuation* : ateliers physiques mensuels, plaquette de communication simplifiée, cas d'usage concrets (mails sécurisés, signature de documents) qui amorcent l'engagement avant d'aborder la couche monétaire.
 
 ## 11. Gouvernance

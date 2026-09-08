@@ -36,7 +36,7 @@ Do you have the QR codes? <No>.
 
 10
 00:00:19,200 --> 00:00:21,260
-<Create my OpenPGP identity>.
+<Create my PGP identity>.
 
 11
 00:00:21,360 --> 00:00:21,880

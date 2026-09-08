@@ -58979,7 +58979,7 @@
      <draw:text-box>
       <text:p text:style-name="P29"><text:span text:style-name="T26">Le Dji est un outil d&apos;échange et de gouvernance réservé aux adhérents de l&apos;association.</text:span></text:p>
       <text:p text:style-name="P29"><text:span text:style-name="T26">Les contributions nominatives valent cotisations.</text:span></text:p>
-      <text:p text:style-name="P29"><text:span text:style-name="T26">Les djis calculés à partir de la date et du montant et vos contributions seront crées et attribués après validation de votre adhésion, c&apos;est-à-dire certification de votre identité numérique OpenPGP ID. </text:span></text:p>
+      <text:p text:style-name="P29"><text:span text:style-name="T26">Les djis calculés à partir de la date et du montant et vos contributions seront crées et attribués après validation de votre adhésion, c&apos;est-à-dire certification de votre identité numérique PGP ID. </text:span></text:p>
       <text:p text:style-name="P29"><text:span text:style-name="T26">Conformément à nos </text:span><text:span text:style-name="T26"><text:a xlink:href="https://foopgp.org/fr/about/status/" xlink:type="simple">statuts</text:a></text:span><text:span text:style-name="T26"><text:s/>et </text:span><text:span text:style-name="T26"><text:a xlink:href="https://foopgp.org/fr/about/rules-of-procedures/" xlink:type="simple">règlement intérieur</text:a></text:span><text:span text:style-name="T26">.</text:span></text:p>
      </draw:text-box>
     </draw:frame>
@@ -59452,7 +59452,7 @@
         <text:p text:style-name="P40"><text:span text:style-name="T13">Outillage </text:span><text:span text:style-name="T14">posé et opérationnel</text:span><text:span text:style-name="T13"> (Nextcloud, git, etc)</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P40"><text:span text:style-name="T13">Identité numérique décentralisée </text:span><text:span text:style-name="T14">OpenPGP ID</text:span></text:p>
+        <text:p text:style-name="P40"><text:span text:style-name="T13">Identité numérique décentralisée </text:span><text:span text:style-name="T14">PGP ID</text:span></text:p>
        </text:list-item>
        <text:list-item>
         <text:p text:style-name="P40"><text:span text:style-name="T13">Véhicule intégrateur et catalyseur : </text:span><text:span text:style-name="T32">djibian</text:span><text:span text:style-name="T13"> </text:span></text:p>

@@ -12,7 +12,7 @@ type: "post"
 
 **[Djibian](/fr/blog/2025-09-12-welcome-djibian/) est fait pour vous.**
 
-C'est le système d'exploitation que foopgp assemble, sur la base de [Debian](https://www.debian.org/index.fr.html), pour vous redonner le contrôle de votre vie numérique : une [identité OpenPGP](/fr/solutions/pgp-id/) portée par une [clé physique](/fr/solutions/offer-security-keys/) (YubiKey ou NitroKey), des [courriels chiffrés](/fr/solutions/theme-email/), une [authentification](/fr/solutions/theme-authentication/) qui ne dépend de personne d'autre que vous, et la possibilité, pour les adhérents, d'utiliser les [djis](/fr/solutions/theme-currency/) comme [monnaie d'échange](/fr/about/join/).
+C'est le système d'exploitation que foopgp assemble, sur la base de [Debian](https://www.debian.org/index.fr.html), pour vous redonner le contrôle de votre vie numérique : une [identité PGP](/fr/solutions/pgp-id/) portée par une [clé physique](/fr/solutions/offer-security-keys/) (YubiKey ou NitroKey), des [courriels chiffrés](/fr/solutions/theme-email/), une [authentification](/fr/solutions/theme-authentication/) qui ne dépend de personne d'autre que vous, et la possibilité, pour les adhérents, d'utiliser les [djis](/fr/solutions/theme-currency/) comme [monnaie d'échange](/fr/about/join/).
 
 Djibian a aussi été pensé pour fonctionner aussi bien sur des machines récentes que sur des *ordinosaures* — c'est un excellent moyen pour prolonger la durée de vie de vos ordinateurs.
 
@@ -59,9 +59,9 @@ L'utilisateur par défaut est **`unknow`** et son mot de passe est **`foopgp`**.
 
 Au premier redémarrage sur votre nouveau Djibian, l'application **`djibian-onboarding`** se lance toute seule. Elle vous accompagne pas à pas — **sans aucune ligne de commande à saisir** — pour :
 
-- générer votre **[identité numérique OpenPGP](/fr/solutions/pgp-id/)** (des clés de cryptographie asymétrique sont alors réparties et imprimées sur 5 feuilles différentes) ;
+- générer votre **[identité numérique PGP](/fr/solutions/pgp-id/)** (des clés de cryptographie asymétrique sont alors réparties et imprimées sur 5 feuilles différentes) ;
 - scanner et charger les secrets correspondants sur votre **clé physique** (YubiKey ou NitroKey, [fournie gratuitement par l'asso au-delà de 6,42 Ɉ cumulés](/fr/about/join/)) ;
-- vous ajouter en tant que vrai utilisateur du système, avec votre répertoire personnel configuré pour votre clé physique OpenPGP (déchiffrement et signature de courriels, authentification ssh, signature de commits git).
+- vous ajouter en tant que vrai utilisateur du système, avec votre répertoire personnel configuré pour votre clé physique PGP (déchiffrement et signature de courriels, authentification ssh, signature de commits git).
 
 La vidéo ci-dessous suit un nouvel utilisateur à travers exactement cette expérience :
 
@@ -119,7 +119,7 @@ sudo apt install foodjis pgpid
 
 ## Aller plus loin
 
-- 🎓 **[Atelier Djibian + OpenPGP](/fr/course/djibian-openpgp/)** — 4 heures en présentiel, gratuit. On démarre d'un Djibian fraîchement installé, on génère votre identité, on configure votre clé physique, on vérifie ensemble que tout signe / déchiffre / s'authentifie. Vous repartez avec une chaîne complète opérationnelle. [Voir les prochaines sessions.](/fr/event/)
+- 🎓 **[Atelier Djibian + PGP](/fr/course/djibian-openpgp/)** — 4 heures en présentiel, gratuit. On démarre d'un Djibian fraîchement installé, on génère votre identité, on configure votre clé physique, on vérifie ensemble que tout signe / déchiffre / s'authentifie. Vous repartez avec une chaîne complète opérationnelle. [Voir les prochaines sessions.](/fr/event/)
 
 - 💬 **Démonstration : un courriel chiffré, de bout en bout.**
 
@@ -130,7 +130,7 @@ sudo apt install foodjis pgpid
   sub_en="/videos/2026/sous-titre-en-mail-chiffre.vtt"
 >}}
 
-*Voir aussi : [Courriel sécurisé OpenPGP](/fr/solutions/theme-email/).*
+*Voir aussi : [Courriel sécurisé PGP](/fr/solutions/theme-email/).*
 
 - 🔐 **[Une seule clé physique pour toutes les machines d'Internet](/fr/blog/2026-05-11-djibian-agentforwarding/)** — `sshwgpg`, livré dans nos paquets, vous permet de rebondir en ssh sur n'importe quelle machine sans copier la moindre clé privée.
 

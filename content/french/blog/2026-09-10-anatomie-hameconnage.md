@@ -107,6 +107,25 @@ second script qu'il range sous `~/.vscode/vscode-bootstrap.sh`, dans un
 répertoire que possède déjà tout utilisateur de VS Code, le lance en tâche de
 fond avec `nohup`, et efface le terminal après chaque étape.
 
+Ces scripts ne sont servis qu'aux clients en ligne de commande. Quand nous avons
+demandé à la Wayback Machine d'archiver l'étage suivant, le serveur lui a
+répondu `403`, avec une page à l'enseigne d'une « Celestium Exchange » qui
+annonce un filtrage par adresse IP et par agent utilisateur, et n'accepte que
+les « curl / terminal-based requests ». Un service d'archivage ou d'analyse en
+ligne risque donc de ne voir qu'une porte fermée.
+
+Récupéré ensuite par le réseau Tor, cet étage suivant est un script shell de
+268 lignes qui prépare et lance la charge proprement dite :
+
+1. il se relance aussitôt en arrière-plan, pour rendre la main au terminal ;
+2. si Node.js 22 à 24 manque, il télécharge la version officielle depuis
+   nodejs.org et l'installe dans `~/.vscode/` ;
+3. il télécharge depuis le même serveur un fichier `sam.js` et un
+   `package.json`, installe leurs dépendances avec `npm`, puis exécute `sam.js`.
+
+Nous nous sommes arrêtés là : `sam.js`, la charge elle-même, n'a pas été
+téléchargé.
+
 VS Code ne lance ces tâches qu'avec l'accord de l'utilisateur : dossier approuvé,
 tâches automatiques autorisées. Il faut donc que la victime clique — et c'est à
 cela que sert un interlocuteur en direct.
@@ -236,7 +255,7 @@ déclarent les commits ; elles peuvent avoir été usurpées.
   `3db2431792c93882c2c4df7e336e43fe1d4765df`
 - `github.com/Altura-Hub/Altura-MVP` — supprimé
 
-**Second étage** — `https://<application>.vercel.app/api/settings/linux`
+**Étages suivants** — `https://<application>.vercel.app/api/settings/linux`
 (et `/mac`, `/windows`)
 
 - `earniverse-mvp`, `vscode-settings-8140-self`, `vscode-settings-0618`,
@@ -247,6 +266,18 @@ déclarent les commits ; elles peuvent avoir été usurpées.
   `7cb1a0affb37850270bcf9135c56dd9e0d40f567765f100e38990c0021edc143`
 - troisième étage : `https://earniverse-mvp.vercel.app/api/settings/bootstraplinux`,
   déposé sous `~/.vscode/vscode-bootstrap.sh` et lancé par `nohup`
+- page de refus servie aux navigateurs et aux robots : « Celestium Exchange -
+  Access Control », `HTTP 403`, `[SECURITY MODE: CLI_ONLY / IP_VALIDATION_ENABLED]`
+- troisième étage servi le 10 septembre 2026 : SHA-256
+  `0c0d094d6882589462a1333bb35dc363904eeb88b640f7c32e41356ea847f3eb`
+- quatrième étage : `https://earniverse-mvp.vercel.app/api/settings/env`
+  (enregistré sous `~/.vscode/sam.js`) et
+  `https://earniverse-mvp.vercel.app/api/settings/package` (sous
+  `~/.vscode/package.json`)
+
+**Sur une machine touchée** — sous `~/.vscode/` : `vscode-bootstrap.sh`, un
+Node.js portable `node-v24.11.1-<système>-<architecture>/`, `sam.js`,
+`package.json` et `node_modules/`
 
 **Serveurs de commande** — `http://<adresse>:1224/api/checkStatus`
 

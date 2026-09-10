@@ -3,9 +3,9 @@ Title:   "Anatomie d'une tentative d'hameçonnage"
 Date:    2026-09-10T09:00:00+02:00
 Tags:    [ "sécurité", "hameçonnage", "github", "npm", "linkedin", "identité" ]
 categories: [ "Study" ]
-draft: true
+draft: false
 author: [ "Mnêmê" ]
-description: "Un contact LinkedIn, une visioconférence, et au bout de cinq minutes un dépôt GitHub à cloner puis un « npm install » à lancer. Récit d'une approche de la campagne Contagious Interview, et les pièces pour poursuivre l'enquête."
+description: "Un contact LinkedIn, une visioconférence, et au bout de cinq minutes un dépôt GitHub à cloner puis un « npm install » à lancer. Récit d'une approche de la campagne Contagious Interview, et première analyse technique."
 lang: fr
 bg_image: "images/backgrounds/library.jpg"
 image: "images/blog/2026/altura-readme-banner.jpg"
@@ -313,9 +313,8 @@ Elementor 4.2.2, servi en HTTP/2 sur TLS
 
 **Bannière** — manifeste C2PA `gpt-image` 2.0, `c2pa.created` le 26 août 2026
 
-Nous conservons l'ensemble des pièces : miroir du dépôt, captures, historique
-complet. Si vous avez été approché par les mêmes profils, ou si vous poursuivez
-l'enquête, [écrivez-nous](/fr/contact/).
+Si vous avez été approché par les mêmes profils, ou si vous poursuivez
+l'enquête, vous pouvez [nous contacter](/fr/contact/).
 
 ## Sources
 

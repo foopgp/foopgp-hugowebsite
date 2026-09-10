@@ -173,12 +173,11 @@ L'histoire de ce domaine laisse perplexe :
 | avril 2023 | redirigé vers GoDaddy : le domaine est à vendre |
 | fin 2024 | de nouveau en service |
 | février 2025, mai 2026 | archives du Web : une page « Under Maintenance » |
-| 3 septembre 2026, 23 h 48 | Jean-Jacques consulte le site : un WordPress bâti sur [Axtra](https://themeforest.net/item/axtra-digital-agency-creative-portfolio-theme/43074408), thème commercial pour agences créatives, servi en HTTPS |
+| 3 septembre 2026 | Jean-Jacques consulte le site : un WordPress bâti sur [Axtra](https://themeforest.net/item/axtra-digital-agency-creative-portfolio-theme/43074408), thème commercial pour agences créatives, servi en HTTPS |
 | 10 septembre 2026 | page par défaut de l'hébergeur, plus aucun certificat TLS |
 
-Le cache du navigateur de Jean-Jacques garde la trace de sa visite : 35 ressources
-du thème et de ses extensions, chargées entre 23 h 47 et 23 h 48. La page
-d'accueil elle-même n'y a pas été conservée.
+Le cache du navigateur de Jean-Jacques garde la trace de sa visite du 3 septembre : 35 ressources
+du thème et de ses extensions. La page d'accueil elle-même a hélas été effacée par la visite du 10 septembre.
 
 Un seul compte reste rattaché à la page : celui d'un indépendant de Lahore,
 « CEO » de PureLogics depuis avril 2023 — le mois même où le domaine était à

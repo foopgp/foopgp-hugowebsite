@@ -12,7 +12,7 @@ Rules-Requires-Root: no
 
 Package: foopgp-hugowebsite
 Architecture: all
-Depends: ${misc:Depends}, hugo, git, apache2, cron, goaccess
+Depends: ${misc:Depends}, hugo, git, apache2, cron, goaccess, logrotate
 Description: deployment tooling for the Friends of OpenPGP website
  Installs the machinery to serve foopgp.org from a Hugo site on a fresh host:
  an Apache virtual host, a cron job that pulls the site sources from codeberg

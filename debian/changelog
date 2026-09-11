@@ -1,3 +1,11 @@
+foopgp-hugowebsite (1.1) unstable; urgency=medium
+
+  * debian/control: depend on logrotate
+  * cron.d: run the goaccess job as www-data + adm group
+  * goaccess.sh: read logs by exact path, and fail safe
+
+ -- jjbrucker <jjbrucker@foopgp.org>  Fri, 11 Sep 2026 17:18:08 +0200
+
 foopgp-hugowebsite (1.0) unstable; urgency=medium
 
   * Initial packaging of the website deployment tooling: Apache vhost

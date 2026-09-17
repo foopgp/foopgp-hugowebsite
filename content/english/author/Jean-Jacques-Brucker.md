@@ -17,7 +17,7 @@ social:
   - icon : "ti-world"
     link : "https://domesticserver.org/myresume/"
   - icon : "ti-gnupg"
-    link : "/keys/OpenPGP_0xD6BFFE1349E747CF1896.asc"
+    link : "https://keys.foopgp.org/pks/lookup?op=index&search=0x5A4C3C2BEB86516D53BAD6BFFE1349E747CF1896"
 ---
 
 More than 15 years of experience in Linux systems (GNU and embedded), networks,

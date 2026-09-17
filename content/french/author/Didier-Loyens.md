@@ -12,6 +12,8 @@ image: "images/friends/avatar_dl128.jpg"
 social:
   - icon : "ti-world" # themify icon pack : https://themify.me/themify-icons
     link : "https://www.espoyr.com"
+  - icon : "ti-gnupg"
+    link : "https://keys.foopgp.org/pks/lookup?op=index&search=0x9DFA56B96E6E76E04F3F6519ADE0104BAFA44886"
 
 ---
 

@@ -15,7 +15,7 @@ social:
   - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
     link : "https://github.com/gouttegd"
   - icon : "ti-gnupg"
-    link : "/keys/4FA2082362FE73AD03B88830A8DC7067E25FBABB.asc"
+    link : "https://keys.foopgp.org/pks/lookup?op=index&search=0x4FA2082362FE73AD03B88830A8DC7067E25FBABB"
 ---
 
 Chercheur en biologie ; utilisateur de GNU/Linux et développeur occasionnel

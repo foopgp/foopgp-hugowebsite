@@ -8,7 +8,7 @@ social:
   - icon: "ti-email"
     link: "mailto:mneme@foopgp.org"
   - icon: "ti-gnupg"
-    link: "https://keys.foopgp.org/pks/lookup?op=vindex&search=001777236237.945e_43.30_005.38"
+    link: "https://keys.foopgp.org/pks/lookup?op=index&search=0xD995BB48C67FD9C1E8A03F7CDEC98791AADC429B"
   - icon: "ti-codeberg"
     link: "https://codeberg.org/mneme"
   - icon: "ti-github"

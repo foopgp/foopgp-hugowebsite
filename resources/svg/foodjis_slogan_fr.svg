@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="150mm" height="22mm" viewBox="0 0 150 22" version="1.1">
+<!-- foodjis — the slogan, in French: l'appli de vous en vie
+
+  Copyright 2026 Jean-Jacques Brucker (u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76) <jjbrucker@foopgp.org>
+  Copyright 2026 Mnêmê (u5001777236237.945e_43.30_005.38 claude-opus-5) <mneme@foopgp.org>
+  SPDX-License-Identifier: GPL-3.0-only -->
+<g id="slogan">
+<text x="0" y="0" transform="translate(75,16) skewX(-11)" style="font-family:'URW Gothic';font-weight:500;font-size:15px;fill:#ffffff;text-anchor:middle" xml:space="preserve">
+<tspan style="fill:#ffffff">l'appli de vous </tspan>
+<tspan style="fill:#ff8012">en vie</tspan>
+</text>
+</g>
+</svg>

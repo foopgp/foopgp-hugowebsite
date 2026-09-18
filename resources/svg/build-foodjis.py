@@ -56,27 +56,41 @@ LICENCE = (
 )
 
 
-def nested(path, x, y, side, ident):
-    """Another drawing, placed whole with its own viewBox.
+def placed(path, x, y, side, ident):
+    """Another drawing, put in a group that maps its viewBox into a box.
 
-    Nested rather than copied path by path: the icon's groups carry
-    transforms, and taking the paths alone once drew a small pug with its
-    ears cut off.
+    A group with a transform rather than a nested `<svg>`: nesting is legal
+    SVG and renders, but Inkscape leaves it out of the drawing it exports,
+    which once cropped a poster's mark down to its name and lost the pug
+    (2026-09-18). All the children come along, groups and their own
+    transforms included -- taking the paths alone was the other way to lose
+    the pug, ears first.
     """
     root = ET.parse(path).getroot()
-    holder = ET.Element("{%s}svg" % SVG, {
-        "x": "%g" % x, "y": "%g" % y,
-        "width": "%g" % side, "height": "%g" % side,
-        "viewBox": root.get("viewBox", "0 0 250 250"),
+    w, h = [float(v) for v in root.get("viewBox", "0 0 250 250").split()[2:]]
+    scale = min(side / w, side / h)
+    group = ET.Element("{%s}g" % SVG, {
+        "transform": "translate(%.4f,%.4f) scale(%.6f)"
+                     % (x + (side - w * scale) / 2, y + (side - h * scale) / 2, scale),
         "id": ident,
+        # Clipped to the viewBox, because a viewBox clips and a group does
+        # not: the application icon carries a purple rectangle and the word
+        # "djibian" *outside* its box, invisible there and floating over the
+        # stars here until this clip existed (2026-09-18).
+        "clip-path": "url(#clip-%s)" % ident,
+    })
+    defs = ET.SubElement(group, "{%s}defs" % SVG)
+    clip = ET.SubElement(defs, "{%s}clipPath" % SVG, {"id": "clip-%s" % ident})
+    ET.SubElement(clip, "{%s}rect" % SVG, {
+        "x": "0", "y": "0", "width": "%g" % w, "height": "%g" % h,
     })
     for child in list(root):
-        holder.append(child)
-    return holder
+        group.append(child)
+    return group
 
 
 def pug(x, y, side):
-    return nested(PUG, x, y, side, "pug")
+    return placed(PUG, x, y, side, "pug")
 
 
 def qr(x, y, side, link=LINK):
@@ -84,7 +98,7 @@ def qr(x, y, side, link=LINK):
     out = os.path.join(TMP, "qr.svg")
     subprocess.run(["qrencode", "-t", "SVG", "-m", "2", "-l", "M",
                     "-o", out, link], check=True)
-    return nested(out, x, y, side, "qr")
+    return placed(out, x, y, side, "qr")
 
 
 def wordmark(cx, base, size, anchor="middle", ji=False):
@@ -108,10 +122,15 @@ def wordmark(cx, base, size, anchor="middle", ji=False):
         "style": (
             "font-family:'%s';font-weight:500;font-size:%gpx;fill:%s;"
             "text-anchor:%s;letter-spacing:%gpx"
-            % (FONT, size, WHITE, anchor, -size * 0.014)
+            % (FONT, size, WHITE, anchor, -size * 0.055)
         ),
     })
-    big, small = size * 1.16, size * 0.905
+    # Measured on the model (poster_french_foopgp.svg, the top mark exported
+    # and looked at): the *first* o is the ordinary letter and the *second*
+    # is the enlarged one -- not the other way round, which is how I drew it
+    # first (JJB, 2026-09-18). And the tracking is tight enough that the
+    # glyphs nearly touch.
+    big = size * 1.28
 
     def span(text, **style):
         el = ET.SubElement(t, "{%s}tspan" % SVG)
@@ -121,11 +140,11 @@ def wordmark(cx, base, size, anchor="middle", ji=False):
                                      for k, v in style.items()))
 
     span("f")
-    # The big o hangs a little below the line, as a larger circle does when
-    # it is centred on the smaller letters rather than sat on the baseline.
+    span("o", fill=ORANGE)
+    # The big one hangs a little below the line, as a larger circle does when
+    # it is centred on the letters rather than sat on the baseline.
     span("o", font_size="%gpx" % big, fill=ORANGE,
-         baseline_shift="%gpx" % (-(big - size) * 0.42))
-    span("o", font_size="%gpx" % small, fill=ORANGE)
+         baseline_shift="%gpx" % (-(big - size) * 0.30))
     for letter in "djis":
         span(letter, fill=ORANGE if (ji and letter in "ji") else WHITE)
     return group
@@ -212,59 +231,43 @@ write("foodjis_logo_banner.svg", page(
     wordmark(17.0, 11.6, 10.6, anchor="start"),
 ))
 
-# --- 2. the name alone, for a page that brings its own ground ------------
+# --- 2. the name alone, on the house ground ------------------------------
+# With the ground and not on nothing: white letters on a transparent square
+# vanish the moment somebody drops them on a white page (JJB, 2026-09-18).
 write("foodjis_logo_wordmark.svg", page(
     46, 13,
-    "foodjis — the name alone, no ground",
+    "foodjis — the name alone, on the house purple",
     wordmark(23, 10.4, 10.6),
-    ground=None,
 ))
 
 write("foodjis_logo_wordmark_ji.svg", page(
     46, 13,
     "foodjis — the variant: the two o's, and the ji of djibian, in orange",
     wordmark(23, 10.4, 10.6, ji=True),
+))
+
+# --- 3. the mark as the poster and the roll-up carry it ------------------
+# Pug above, name below, on nothing: it is grafted onto the stars.
+write("foodjis_logo_mark.svg", page(
+    130, 112,
+    "foodjis — the stacked mark: the pug, the name under it. To be grafted.",
+    pug(19, 0, 92),
+    wordmark(65, 109, 29),
     ground=None,
 ))
 
-# --- 3. the poster, A3 upright -------------------------------------------
-poster = [
-    pug(98.5, 26, 100),
-    wordmark(148.5, 176, 46),
-    slogan(148.5, 210, 18),
-]
-for i, text in enumerate(PROMISES):
-    poster.append(line(28, 262 + i * 17, "Ɉ", 12, fill=ORANGE, slant=SLANT))
-    poster.append(line(41, 262 + i * 17, text, 9.2, fill=WHITE))
-poster += [
-    qr(30, 352, 44),
-    line(84, 368, "foopgp.org", 13, fill=WHITE, slant=SLANT),
-    line(84, 380, "l'identité numérique qui vous appartient", 8, fill=FADED),
-    line(84, 391, "logiciel libre, GPL-3.0-only — association foopgp", 7, fill=FADED),
-]
-write("foodjis_affiche_A3_fr.svg", page(
-    297, 420, "foodjis — the poster, A3 upright, in French", *poster))
+# --- 4. the slogan, alone, to be grafted the same way -------------------
+write("foodjis_slogan_fr.svg", page(
+    150, 22,
+    "foodjis — the slogan, in French: l'appli de vous en vie",
+    slogan(75, 16, 15),
+    ground=None,
+))
 
-# --- 4. the kakemono, 85 by 200 cm ---------------------------------------
-# Read standing, from two or three metres: the top third carries the mark,
-# the middle the sentence and the promises, the foot the code. Widths are
-# counted rather than hoped for -- URW Gothic averages about half its size
-# per character, and the longest promise is 51 of them.
-kake = [
-    pug(255, 130, 340),
-    wordmark(425, 700, 150),
-    slogan(425, 810, 56),
-]
-for i, text in enumerate(PROMISES):
-    kake.append(line(105, 1010 + i * 88, "Ɉ", 44, fill=ORANGE, slant=SLANT))
-    kake.append(line(160, 1010 + i * 88, text, 26, fill=WHITE))
-kake += [
-    qr(300, 1520, 250),
-    line(425, 1830, "foopgp.org", 62, fill=WHITE, anchor="middle", slant=SLANT),
-    line(425, 1880, "l'identité numérique qui vous appartient", 28,
-         fill=FADED, anchor="middle"),
-    line(425, 1950, "logiciel libre, GPL-3.0-only — association foopgp", 24,
-         fill=FADED, anchor="middle"),
-]
-write("foodjis_kakemono_85x200_fr.svg", page(
-    850, 2000, "foodjis — the roll-up, 85 by 200 cm, in French", *kake))
+print("""
+Ensuite, pour l'imprimeur : passer les lettres en courbes
+    inkscape --export-type=svg --export-text-to-path \\
+             --export-filename=X_paths.svg X.svg
+puis greffer la marque et le slogan dans les gabarits de la maison
+    python3 graft-foodjis.py
+""")

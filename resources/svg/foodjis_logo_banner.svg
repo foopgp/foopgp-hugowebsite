@@ -6,7 +6,12 @@
   Copyright 2026 Mnêmê (u5001777236237.945e_43.30_005.38 claude-opus-5) <mneme@foopgp.org>
   SPDX-License-Identifier: GPL-3.0-only -->
 <rect x="0" y="0" width="61.9125" height="15.875" style="fill:#31264b" id="ground" />
-<svg x="0.8" y="0.8" width="14.2" height="14.2" viewBox="0 0 249.99999 250" id="pug">
+<g transform="translate(0.8000,0.8000) scale(0.056800)" id="pug" clip-path="url(#clip-pug)">
+<defs>
+<clipPath id="clip-pug">
+<rect x="0" y="0" width="250" height="250" />
+</clipPath>
+</defs>
 <metadata id="metadata51">
 <rdf:RDF>
 <ns2:Work rdf:about="">
@@ -87,12 +92,12 @@
 </g>
 <path style="font-style:italic;font-size:25.6057px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';letter-spacing:-1.29259px;word-spacing:0px;fill:#ff8012" d="m 93.875847,73.000825 h 2.525563 l -1.687876,8.701937 h 2.388031 l -0.412591,2.075462 h -2.388032 l -1.275284,6.588967 q -0.662647,3.375751 -2.237998,4.901091 -1.575351,1.525339 -4.413482,1.525339 h -0.962715 l 0.412592,-2.125473 h 0.787676 q 1.675372,0 2.550567,-0.937708 0.862692,-0.937709 1.337798,-3.363249 l 1.275284,-6.588967 h -2.388032 l 0.412592,-2.075462 h 2.388032 z" id="text18-3" class="st2" transform="translate(74.190007,-21.380616) scale(0.97315513,1.0275854)" aria-label="Ɉ" />
 </g>
-</svg>
+</g>
 <g transform="translate(17,11.6) skewX(-11)" id="wordmark">
-<text x="0" y="0" style="font-family:'URW Gothic';font-weight:500;font-size:10.6px;fill:#ffffff;text-anchor:start;letter-spacing:-0.1484px">
+<text x="0" y="0" style="font-family:'URW Gothic';font-weight:500;font-size:10.6px;fill:#ffffff;text-anchor:start;letter-spacing:-0.583px">
 <tspan>f</tspan>
-<tspan style="font-size:12.296px;fill:#ff8012;baseline-shift:-0.71232px">o</tspan>
-<tspan style="font-size:9.593px;fill:#ff8012">o</tspan>
+<tspan style="fill:#ff8012">o</tspan>
+<tspan style="font-size:13.568px;fill:#ff8012;baseline-shift:-0.8904px">o</tspan>
 <tspan style="fill:#ffffff">d</tspan>
 <tspan style="fill:#ffffff">j</tspan>
 <tspan style="fill:#ffffff">i</tspan>

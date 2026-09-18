@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="13mm" viewBox="0 0 46 13" version="1.1">
+<!-- foodjis — the name alone, no ground
+
+  Copyright 2026 Jean-Jacques Brucker (u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76) <jjbrucker@foopgp.org>
+  Copyright 2026 Mnêmê (u5001777236237.945e_43.30_005.38 claude-opus-5) <mneme@foopgp.org>
+  SPDX-License-Identifier: GPL-3.0-only -->
+<g transform="translate(23,10.4) skewX(-11)" id="wordmark">
+<text x="0" y="0" style="font-family:'URW Gothic';font-weight:500;font-size:10.6px;fill:#ffffff;text-anchor:middle;letter-spacing:-0.1484px">
+<tspan>f</tspan>
+<tspan style="font-size:12.296px;fill:#ff8012;baseline-shift:-0.71232px">o</tspan>
+<tspan style="font-size:9.593px;fill:#ff8012">o</tspan>
+<tspan style="fill:#ffffff">d</tspan>
+<tspan style="fill:#ffffff">j</tspan>
+<tspan style="fill:#ffffff">i</tspan>
+<tspan style="fill:#ffffff">s</tspan>
+</text>
+</g>
+</svg>

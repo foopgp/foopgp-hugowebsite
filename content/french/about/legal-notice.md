@@ -34,40 +34,55 @@ En vue d’adapter le site aux demandes de nos visiteurs, nous analysons cependa
 données recueillies (adresse IP, User-Agent…) sont [accessibles à tous](/goaccess/last2w.html). Si autant de transparence
 vous dérange, nous vous conseillons d'utiliser [TOR](https://fr.wikipedia.org/wiki/Tor_%28r%C3%A9seau%29) ou de modifier votre [User-Agent](https://www.howtogeek.com/113439/how-to-change-your-browsers-user-agent-without-installing-any-extensions/).
 
-## Les applications
+## Logiciel foodjis
 
-Ce qui précède parle du site. Voici ce qui vaut pour les applications que
-l'association publie — aujourd'hui **foodjis**, sur Android.
+Foodjis est l'application grand public qui intègre la plupart de nos innovations :
+- EID
+- PGP ID sauvegardé sur des fragments papier (partage de secret de Shamir)
+- PGP ID sur clé de sécurité OpenPGP (par exemple YubiKey, NitroKey, …)
+- Exportation d'un certificat PGP vers vCard
+- Certification forte
+- Toile de confiance facile à construire et à partager
+- …
 
-Elles ne créent aucun compte, n'affichent aucune publicité et ne mesurent
-aucune audience : il n'y a rien à collecter, et rien ne nous est envoyé au
-seul fait de les utiliser.
+### Politique de confidentialité
 
-Ce qui quitte votre appareil, et seulement quand vous le demandez, c'est un
-**certificat OpenPGP** — un document public par nature — envoyé aux **serveurs
-de clés inscrits dans la configuration**. L'application en propose un par
-défaut, celui de l'association, et vous pouvez le remplacer par ceux que vous
-voulez. Un certificat porte ce que vous y avez mis : une ou plusieurs adresses
-électroniques, le nom ou le pseudonyme que vous vous donnez, éventuellement un
-portrait, et, si votre identifiant PGP ID en comporte un, un lieu arrondi à
-deux décimales — environ un kilomètre. L'application lit aussi sur ces mêmes
-serveurs les certificats **publics** des personnes que vous cherchez. Ces
-échanges se font en HTTPS ; comme tout serveur web, un serveur de clés garde
-des traces d'accès.
+Le logiciel foodjis n'affiche aucune publicité, ne mesure aucune audience et ne
+collecte aucune donnée à l'insu de ses utilisateurs.
 
-À savoir avant de publier : **un certificat publié ne se reprend pas.** Les
-serveurs de clés se recopient entre eux et ne suppriment rien — c'est la nature
-d'OpenPGP, pas une décision de l'application. Ce qui se fait, et que
-l'application sait faire, c'est le **révoquer** : signer la déclaration qui dit
-que cette identité n'est plus valable, et la publier à son tour.
+Les seules données que le logiciel foodjis échange à travers le réseau, et
+notamment Internet, sont des **certificats PGP** — documents publics par nature.
 
-Le reste ne quitte pas l'appareil. Votre clé secrète n'y est même jamais : elle
-reste dans votre clé de sécurité, qui signe sans jamais la livrer. Le code PIN
-n'est gardé qu'en mémoire, et pour la durée que vous avez fixée. Le journal de
-session disparaît avec la session.
+Les certificats portent ce que les utilisateurs y ont mis, au minimum :
+- une adresse électronique
+- un identifiant unique et décentralisé (EID)
+- un nom ou un pseudonyme
 
-Ces applications sont libres, sous licence GPL-3.0-only : leur code source est
-remis à quiconque en détient une et le demande. Une question, une demande :
+Ces certificats sont envoyés aux **serveurs de clés inscrits dans la
+configuration**. L'application en propose un par défaut, celui de l'association,
+et les utilisateurs peuvent le remplacer à leur guise.
+
+L'application retrouve et importe depuis ces mêmes serveurs les certificats
+**publics** que les autres utilisateurs fournissent. Ces échanges se font en
+HTTPS ; comme tout serveur web, un serveur de clés peut garder des journaux
+d'accès.
+
+À savoir : **un certificat publié ne peut être effacé.** Les serveurs de clés se
+recopient entre eux et ne suppriment rien — c'est la nature même de la
+technologie PGP. Ce qui se fait, et que l'utilisateur peut faire à travers
+foodjis, c'est **révoquer** : déclarer publiquement qu'une identité ou un
+certificat n'est plus valable.
+
+Aucune autre donnée personnelle n'est vue par le logiciel. Les clés secrètes de
+cryptographie ne sont même pas gérées directement par le logiciel : elles le sont
+par les clés de sécurité OpenPGP, qui les manipulent sans jamais les exposer. Le
+code PIN de ces clés de sécurité ne peut être gardé qu'en mémoire, et pour la
+durée que l'utilisateur choisit. Le journal de session disparaît avec la session.
+
+### Licence
+
+Toutes les versions de foodjis sont libres, sous licence GPL-3.0-only : leur code
+source est remis sur simple demande adressée à
 [info@foopgp.org](mailto:info@foopgp.org).
 
 ## Propriété intellectuelle

@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "/"
+baseURL = "https://foopgp.org/"
 title = "Friends of OpenPGP"
 theme = "educenter"
 # post pagination
@@ -288,7 +288,7 @@ target="_blank"
 ################################### English language #####################################
 [Languages.en]
 languageName = "en 🇺🇸 🇬🇧 ..."
-languageCode = "en_US"
+languageCode = "en-US"
 contentDir = "content/english"
 weight = 1
 copyright = "Copyright &copy; 2020-2026. [Thanks](https://codeberg.org/foopgp/foopgp-hugowebsite) to [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"
@@ -297,7 +297,7 @@ copyright = "Copyright &copy; 2020-2026. [Thanks](https://codeberg.org/foopgp/fo
 ################################### French language #####################################
 [Languages.fr]
 languageName = "fr 🇫🇷 🇨🇩 ..."
-languageCode = "fr_FR"
+languageCode = "fr-FR"
 contentDir = "content/french"
 weight = 2
 copyright = "Copyright &copy; 2020-2026. [Généré](https://codeberg.org/foopgp/foopgp-hugowebsite) grâce à [Hugo](https://gohugo.io) & [themefisher](https://themefisher.com)"

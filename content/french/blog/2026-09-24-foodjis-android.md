@@ -3,7 +3,7 @@ Title:   "foodjis passe en prod sur Android !"
 Date:    2026-09-24T18:00:00+02:00
 Tags:    [ "foodjis", "android", "pgp-id", "openpgp", "nfc", "identité", "yubikey", "nitrokey" ]
 categories: [ "News" ]
-draft: true
+draft: false
 author: [ "Mnêmê", "Jean-Jacques Brucker" ]
 description: "L'assistant qui donne naissance à votre identité numérique, l'écrit sur votre clé de sécurité et la fait circuler, tient désormais dans un téléphone. Première version de production, à télécharger."
 lang: fr
@@ -26,13 +26,6 @@ en ont un. Dans la plupart des pays du monde, le téléphone *est* l'ordinateur.
 
 ## Quatre parcours, les mêmes qu'au bureau
 
-{{< figure
-  src="/images/blog/2026/foodjis-1-identite-fr.png"
-  link="/images/blog/2026/foodjis-1-identite-fr.png"
-  alt="foodjis sur Android — Générer une identité : la carte, le lieu et l'instant d'origine"
-  class="float-right ml-4 w-25"
->}}
-
 **Générer une identité.** Votre identifiant d'entité — l'**EID** — se calcule à
 partir d'un état civil de naissance : un lieu, un instant. Pas d'une clé, pas
 d'un compte, pas d'un numéro attribué par quelqu'un. La carte sert à poser le
@@ -43,13 +36,6 @@ entité — association, entreprise, logiciel — de la variante `u5`.
 Les secrets de l'identité s'impriment ensuite en fragments QR sur des feuilles
 de papier, dont une partie seulement suffira à la reconstituer. C'est votre
 sauvegarde, et elle ne dépend d'aucun service.
-
-{{< figure
-  src="/images/blog/2026/foodjis-2-cle-fr.png"
-  link="/images/blog/2026/foodjis-2-cle-fr.png"
-  alt="foodjis sur Android — Configurer une clé : présentez votre clé de sécurité au dos du téléphone"
-  class="float-left mr-4 w-25"
->}}
 
 **Configurer une clé.** Le téléphone lit les fragments imprimés avec son
 appareil photo, puis écrit l'identité dans la clé de sécurité posée à son dos.
@@ -62,11 +48,9 @@ propriété qui rend l'objet intéressant : perdre le téléphone ne coûte rien
 perdre la clé coûte ce que coûte une clé — et les feuilles de papier sont là
 pour ça.
 
-{{< figure
-  src="/images/blog/2026/foodjis-3-token-fr.png"
-  link="/images/blog/2026/foodjis-3-token-fr.png"
-  alt="foodjis sur Android — la fiche de la clé connectée : nom d'usage, EID, empreinte, validité"
-  class="float-right ml-4 w-25"
+{{< shots cols="4"
+  src1="/images/blog/2026/foodjis-1-identite-fr.png" alt1="Générer une identité : la carte, le lieu et l'instant d'origine" cap1="Le lieu et l'instant d'origine de l'entité, dont se calcule l'EID."
+  src2="/images/blog/2026/foodjis-2-cle-fr.png" alt2="Configurer une clé : présentez votre clé de sécurité au dos du téléphone" cap2="Une clé de sécurité se présente au dos du téléphone."
 >}}
 
 **Tenir sa propre fiche.** Présentez la clé et l'application lit ce qu'elle
@@ -79,13 +63,6 @@ serveurs de certificats : un certificat est une chose publique, et un
 changement qui resterait dans un seul téléphone serait un changement dont
 personne ne peut tenir compte.
 
-{{< figure
-  src="/images/blog/2026/foodjis-4-certifier-fr.png"
-  link="/images/blog/2026/foodjis-4-certifier-fr.png"
-  alt="foodjis sur Android — Certifier : ce que la certification engage, à lire avant"
-  class="float-left mr-4 w-25"
->}}
-
 **Certifier les autres.** C'est le geste qui fait tenir une toile de confiance :
 confirmer qu'un certificat appartient bien à l'entité qu'il désigne. Il n'y a
 pas de bureau central pour le faire à votre place, et c'est voulu — ce sont les
@@ -94,11 +71,9 @@ proposer : cela engage votre propre crédibilité, et davantage encore pour une
 entité qui n'est pas une personne, dont vous prenez sur vous les
 responsabilités qu'elle ne peut pas avoir.
 
-{{< figure
-  src="/images/blog/2026/foodjis-5-contacts-fr.png"
-  link="/images/blog/2026/foodjis-5-contacts-fr.png"
-  alt="foodjis sur Android — Contacts : rechercher un certificat par courriel, certificat ou EID"
-  class="float-right ml-4 w-25"
+{{< shots cols="4"
+  src1="/images/blog/2026/foodjis-3-token-fr.png" alt1="La fiche de la clé connectée : nom d'usage, EID, empreinte, validité" cap1="La fiche de la clé connectée, lue depuis la clé elle-même."
+  src2="/images/blog/2026/foodjis-4-certifier-fr.png" alt2="Certifier : ce que la certification engage, à lire avant" cap2="Ce que certifier engage, dit avant de le proposer."
 >}}
 
 **Garder ses contacts.** Un trousseau local, alimenté par les serveurs de
@@ -109,11 +84,9 @@ d'adresses du téléphone. La réglette du bas est la crédibilité que *vous*
 accordez à cette identité ; elle demeure sur votre téléphone tant que vous ne
 la partagez pas.
 
-{{< figure
-  src="/images/blog/2026/foodjis-6-fiche-fr.png"
-  link="/images/blog/2026/foodjis-6-fiche-fr.png"
-  alt="foodjis sur Android — la fiche d'un contact, sa note et la réglette de crédibilité"
-  class="float-left mr-4 w-25"
+{{< shots cols="4"
+  src1="/images/blog/2026/foodjis-5-contacts-fr.png" alt1="Contacts : rechercher un certificat par courriel, certificat ou EID" cap1="Le trousseau, et la recherche par courriel, certificat ou EID."
+  src2="/images/blog/2026/foodjis-6-fiche-fr.png" alt2="La fiche d'un contact, sa note et la réglette de crédibilité" cap2="La fiche d'un contact, sa note et la réglette de crédibilité."
 >}}
 
 ## Ce que la clé sait faire, une fois écrite

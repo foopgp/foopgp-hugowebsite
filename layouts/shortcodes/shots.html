@@ -1,0 +1,30 @@
+{{- /*
+  A row of phone screenshots, side by side on a wide screen and stacked on a
+  phone, each under its own caption.
+
+  Why not the built-in `figure` with a float: a portrait screenshot is tall and
+  the blocks it illustrates are short, so two opposing floats strangle the text
+  column and hang into what follows. And Bootstrap's width utilities are not
+  responsive -- `w-25` is a quarter at every width, which made these 95 px wide
+  on a phone, unreadable. Grid columns are responsive: one per row on a phone,
+  where a screenshot has to be nearly full width to be read at all, and two or
+  three side by side above that.
+
+  Up to three images, named src1/alt1/cap1 … src3/alt3/cap3. `cols` overrides
+  the column count on wide screens (Bootstrap's twelfths: 6 for two side by
+  side, 4 for three). An image whose src is absent is simply not drawn, so the
+  same shortcode takes one, two or three.
+*/ -}}
+{{- $cols := .Get "cols" | default "6" -}}
+<div class="row justify-content-center my-4">
+{{- range $i := seq 1 3 }}
+{{- with $.Get (printf "src%d" $i) }}
+  <figure class="col-12 col-md-{{ $cols }} mb-4 text-center">
+    <a href="{{ . }}"><img src="{{ . }}" alt="{{ $.Get (printf "alt%d" $i) }}" class="img-fluid rounded"></a>
+    {{- with $.Get (printf "cap%d" $i) }}
+    <figcaption class="figure-caption mt-2">{{ . }}</figcaption>
+    {{- end }}
+  </figure>
+{{- end }}
+{{- end }}
+</div>

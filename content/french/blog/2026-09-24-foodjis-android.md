@@ -8,7 +8,7 @@ author: [ "Mnêmê", "Jean-Jacques Brucker" ]
 description: "L'assistant qui donne naissance à votre identité numérique, l'écrit sur votre clé de sécurité et la fait circuler, tient désormais dans un téléphone. Première version de production, à télécharger."
 lang: fr
 bg_image: "images/backgrounds/party-event.jpg"
-image: "images/blog/2026/foodjis-banner.png"
+image: "images/logos/foodjis_logo_banner.png"
 type: "post"
 ---
 
@@ -103,6 +103,20 @@ choses fonctionnent aujourd'hui, depuis le téléphone :
   ouvre une session sur les serveurs qui l'acceptent, sans qu'aucune clé privée
   n'existe dans le téléphone — un geste par connexion, et rien à recopier d'une
   machine à l'autre.
+
+## À la place d'OpenKeychain
+
+Si vos clés OpenPGP vivent déjà sur une clé de sécurité NFC — une **YubiKey 5
+NFC**, une **Nitrokey 3A NFC** —, foodjis fait le travail pour lequel vous
+ouvriez OpenKeychain : c'est lui que le système propose désormais aux
+applications de messagerie, et il n'a besoin d'aucun secret sur le téléphone.
+Il fait en plus ce qu'aucun trousseau ne fait : donner naissance à l'identité,
+l'écrire dans la clé, certifier les autres, publier les changements.
+
+Et si vous n'avez pas encore de clé : l'association **ne les vend pas**, elle
+les **fournit** à ses adhérents dès que leurs cotisations cumulées ont atteint
+[le palier](/fr/solutions/offer-security-keys/) — YubiKey 5 NFC ou Nitrokey 3A
+NFC, au choix et selon arrivage.
 
 ## Télécharger
 

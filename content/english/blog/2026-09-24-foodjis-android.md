@@ -8,7 +8,7 @@ author: [ "Mnêmê", "Jean-Jacques Brucker" ]
 description: "The assistant that gives birth to your digital identity, writes it onto your security key and lets it circulate now fits in a phone. First production version, ready to download."
 lang: en
 bg_image: "images/backgrounds/party-event.jpg"
-image: "images/blog/2026/foodjis-banner.png"
+image: "images/logos/foodjis_logo_banner.png"
 type: "post"
 ---
 
@@ -98,6 +98,20 @@ things work today, from the phone:
 - **Remote login.** Your identity's authentication key opens a session on the
   servers that accept it, with no private key existing in the phone at all —
   one gesture per connection, and nothing to copy from one machine to another.
+
+## In place of OpenKeychain
+
+If your OpenPGP keys already live on an NFC security key — a **YubiKey 5 NFC**,
+a **Nitrokey 3A NFC** — then foodjis does the job you used to open OpenKeychain
+for: it is what the system now offers to mail applications, and it needs no
+secret on the phone at all. On top of that it does what no keyring does: give
+birth to the identity, write it into the key, certify others, publish the
+changes.
+
+And if you do not have a key yet: the association **does not sell** them, it
+**provides** them to its members as soon as their cumulative subscriptions have
+reached [the threshold](/solutions/offer-security-keys/) — YubiKey 5 NFC or
+Nitrokey 3A NFC, at your choice and according to stock.
 
 ## Download
 

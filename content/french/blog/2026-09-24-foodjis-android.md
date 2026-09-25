@@ -141,9 +141,10 @@ demande aucun logiciel.
 ## Ce qui vient
 
 Le dépôt du magasin est en cours de validation. La version qui y sera
-distribuée portera une autre signature que celle-ci : elle ne s'installera donc
-pas par-dessus, et il faudra désinstaller celle-ci — c'est la règle d'Android,
-et nous la dirons clairement le jour où cela arrivera.
+distribuée est une **autre application** que celle-ci : elle porte son propre
+nom, comme elle porte sa propre signature, et s'installera donc **à côté** —
+rien à désinstaller, et chacune garde son trousseau. La réserve sur les
+signatures ne vaut qu'entre deux constructions d'une même application.
 
 Le reste est écrit dans nos rapports d'assemblée, semaine après semaine :
 l'identité sur la carte est le premier étage, la [signature](/fr/solutions/signature/),

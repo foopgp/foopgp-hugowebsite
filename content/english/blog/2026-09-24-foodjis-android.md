@@ -134,10 +134,11 @@ journey where another device is needed, and it asks for no software.
 
 ## What comes next
 
-The store account is being verified. The version distributed there will carry a
-different signature from this one: it will therefore not install over it, and
-this one will have to be uninstalled first — that is Android's rule, and we will
-say so plainly on the day it happens.
+The store account is being verified. The version distributed there is a
+**different application** from this one: it carries its own name, as it carries
+its own signature, and will therefore install **beside** it — nothing to
+uninstall, and each keeps its own keyring. The caveat about signatures only
+holds between two builds of one application.
 
 The rest is written in our assembly reports, week after week: the identity on
 the key is the first stage, [signing](/solutions/signature/),

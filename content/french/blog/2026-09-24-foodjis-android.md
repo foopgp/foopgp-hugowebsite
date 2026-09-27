@@ -14,7 +14,7 @@ type: "post"
 
 ***Note :*** *Pour ce qu'est une identité **PGP ID** et à quoi elle sert, [voir la page qui lui est consacrée](/fr/solutions/pgp-id/). Pour rester informé, [inscrivez-vous à nos listes de diffusion](/fr/contact/).*
 
-***Mise à jour du 27 septembre 2026 :*** *la version 1.1.2 est disponible. [Ce qui a changé depuis la première](#depuis).*
+***Mise à jour du 27 septembre 2026 :*** *la version 1.1.3 est disponible. [Ce qui a changé depuis la première](#depuis).*
 
 **[foodjis](/fr/solutions/pgp-id/) ne demande plus d'ordinateur.** L'assistant
 qui donne naissance à une identité numérique, l'écrit dans une clé de sécurité
@@ -160,11 +160,11 @@ Cette version s'installe à côté d'une éventuelle future version du magasin
 d'applications, sans la remplacer : elle porte notre clé de développement, elle
 s'appelle donc **foodjis-dev** et c'est un nom à elle.
 
-- **[foodjis-dev_1.1.2.apk](https://iso.foopgp.org/foodjis-dev_1.1.2.apk)** —
+- **[foodjis-dev_1.1.3.apk](https://iso.foopgp.org/foodjis-dev_1.1.3.apk)** —
   Android 7 ou plus récent, neuf langues, 8,6 Mo.
-- L'[empreinte](https://iso.foopgp.org/foodjis-dev_1.1.2.apk.sha256) du fichier :
+- L'[empreinte](https://iso.foopgp.org/foodjis-dev_1.1.3.apk.sha256) du fichier :
   `f47a6d294c58c86af829091a5c15b41800f0473a19ea402ec0a0eb2533171f89`.
-- Et sa [signature détachée](https://iso.foopgp.org/foodjis-dev_1.1.2.apk.asc),
+- Et sa [signature détachée](https://iso.foopgp.org/foodjis-dev_1.1.3.apk.asc),
   faite par une identité PGP ID, que votre outil OpenPGP habituel vérifiera
   contre le certificat publié pour `mneme@foopgp.org`. C'est exactement l'usage
   dont parle cet article : vous n'avez pas à nous croire, vous pouvez vérifier.

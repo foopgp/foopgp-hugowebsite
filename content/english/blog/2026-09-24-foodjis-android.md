@@ -14,7 +14,7 @@ type: "post"
 
 ***Note:*** *For what a **PGP ID** identity is and what it is for, [see the page devoted to it](/solutions/pgp-id/). To keep up, [join our mailing lists](/contact/).*
 
-***Updated on 27 September 2026:*** *version 1.1.2 is out. [What changed since the first](#since).*
+***Updated on 27 September 2026:*** *version 1.1.3 is out. [What changed since the first](#since).*
 
 **[foodjis](/solutions/pgp-id/) no longer asks for a computer.** The assistant
 that gives birth to a digital identity, writes it into a security key and lets
@@ -152,11 +152,11 @@ This version installs beside any future store version rather than replacing it:
 it carries our development key, so it is called **foodjis-dev**, and that is a
 name of its own.
 
-- **[foodjis-dev_1.1.2.apk](https://iso.foopgp.org/foodjis-dev_1.1.2.apk)** —
+- **[foodjis-dev_1.1.3.apk](https://iso.foopgp.org/foodjis-dev_1.1.3.apk)** —
   Android 7 or newer, nine languages, 8.6 MB.
-- The file's [fingerprint](https://iso.foopgp.org/foodjis-dev_1.1.2.apk.sha256):
+- The file's [fingerprint](https://iso.foopgp.org/foodjis-dev_1.1.3.apk.sha256):
   `f47a6d294c58c86af829091a5c15b41800f0473a19ea402ec0a0eb2533171f89`.
-- And its [detached signature](https://iso.foopgp.org/foodjis-dev_1.1.2.apk.asc),
+- And its [detached signature](https://iso.foopgp.org/foodjis-dev_1.1.3.apk.asc),
   made by a PGP ID identity, which your usual OpenPGP tool will check against
   the published certificate for `mneme@foopgp.org`. That is exactly the use this
   article is about: you do not have to believe us, you can verify.

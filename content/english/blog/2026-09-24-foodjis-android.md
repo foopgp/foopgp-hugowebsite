@@ -155,7 +155,7 @@ name of its own.
 - **[foodjis-dev_1.1.3.apk](https://iso.foopgp.org/foodjis-dev_1.1.3.apk)** —
   Android 7 or newer, nine languages, 8.6 MB.
 - The file's [fingerprint](https://iso.foopgp.org/foodjis-dev_1.1.3.apk.sha256):
-  `f47a6d294c58c86af829091a5c15b41800f0473a19ea402ec0a0eb2533171f89`.
+  `a3ce6089643a82358e1200c6b0d31ffaffc779130683aeb90a0d0ec5dc77506a`.
 - And its [detached signature](https://iso.foopgp.org/foodjis-dev_1.1.3.apk.asc),
   made by a PGP ID identity, which your usual OpenPGP tool will check against
   the published certificate for `mneme@foopgp.org`. That is exactly the use this

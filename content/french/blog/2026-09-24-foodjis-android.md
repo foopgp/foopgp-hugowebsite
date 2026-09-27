@@ -14,6 +14,8 @@ type: "post"
 
 ***Note :*** *Pour ce qu'est une identité **PGP ID** et à quoi elle sert, [voir la page qui lui est consacrée](/fr/solutions/pgp-id/). Pour rester informé, [inscrivez-vous à nos listes de diffusion](/fr/contact/).*
 
+***Mise à jour du 27 septembre 2026 :*** *la version 1.1.2 est disponible. [Ce qui a changé depuis la première](#depuis).*
+
 **[foodjis](/fr/solutions/pgp-id/) ne demande plus d'ordinateur.** L'assistant
 qui donne naissance à une identité numérique, l'écrit dans une clé de sécurité
 et la fait circuler existe désormais sur Android, avec les mêmes parcours et le
@@ -118,17 +120,51 @@ les **fournit** à ses adhérents dès que leurs cotisations cumulées ont attei
 [le palier](/fr/solutions/offer-security-keys/) — YubiKey 5 NFC ou Nitrokey 3A
 NFC, au choix et selon arrivage.
 
+## Depuis la première version {#depuis}
+
+**Chiffrer et déchiffrer.** Une page du menu chiffre un texte pour vos
+contacts — eux seuls pourront le lire —, signé par votre clé si vous le voulez.
+Elle ouvre un message chiffré pour vous, collé ou reçu dans un fichier, avec
+votre clé ou avec son mot de passe, et vérifie un message seulement signé. Un
+tel fichier, ouvert depuis n'importe quelle application, y mène directement.
+
+**Vos crédibilités voyagent.** Vous pouvez désormais exporter l'ensemble des
+crédibilités accordées dans un fichier signé par votre clé, et reprendre celles
+d'une personne à qui vous accordez une entière crédibilité — *prudemment*, pour
+les seules identités que vous n'avez pas encore jugées, *dévotement*, en
+acceptant toutes ses notes, ou
+*radicalement* : les crédibilités peuvent monter ou passer à « aucune », mais
+toute « aucune » y demeure. C'est le même fichier que sur Djibian.
+
+**Persistance.** Activée par défaut, elle permet à l'application de rester en
+arrière-plan. Le code PIN est gardé pendant tout le délai choisi, jusqu'à douze
+heures. Vos certificats sont rafraîchis automatiquement, par lots où ceux dont
+vous avez besoin se mêlent à d'autres, à des heures sans rapport avec votre
+usage : vous apprenez ainsi à temps qu'une clé a été révoquée, sans dire aux
+serveurs quand vous vous servez de l'application. Le prix en est un peu de
+réseau et de batterie ; si la persistance est désactivée, rien ne tourne quand
+l'application est fermée.
+
+**Plus rapide.** Avec des centaines de contacts, tout s'ouvre sans attendre :
+la toile de confiance est calculée en arrière-plan, et gardée d'un
+lancement à l'autre.
+
+Et encore : une étape 🌎 sur l'accueil pour parcourir les contacts et votre
+toile de confiance ; « sortir par le haut » amène partout à l'écran précédent ;
+et si Android est configuré pour vibrer lors des appuis, une vibration indique
+quand la clé peut quitter le dos du téléphone.
+
 ## Télécharger
 
 Cette version s'installe à côté d'une éventuelle future version du magasin
 d'applications, sans la remplacer : elle porte notre clé de développement, elle
 s'appelle donc **foodjis-dev** et c'est un nom à elle.
 
-- **[foodjis-dev_1.0.3.apk](https://iso.foopgp.org/foodjis-dev_1.0.3.apk)** —
-  Android 7 ou plus récent, neuf langues, 8,4 Mo.
-- L'[empreinte](https://iso.foopgp.org/foodjis-dev_1.0.3.apk.sha256) du fichier :
-  `03a6c328d6d56ad115fa7aec05037cdbe619dd5c9dbf06205bbcc8cb3c5d0ec7`.
-- Et sa [signature détachée](https://iso.foopgp.org/foodjis-dev_1.0.3.apk.asc),
+- **[foodjis-dev_1.1.2.apk](https://iso.foopgp.org/foodjis-dev_1.1.2.apk)** —
+  Android 7 ou plus récent, neuf langues, 8,6 Mo.
+- L'[empreinte](https://iso.foopgp.org/foodjis-dev_1.1.2.apk.sha256) du fichier :
+  `f47a6d294c58c86af829091a5c15b41800f0473a19ea402ec0a0eb2533171f89`.
+- Et sa [signature détachée](https://iso.foopgp.org/foodjis-dev_1.1.2.apk.asc),
   faite par une identité PGP ID, que votre outil OpenPGP habituel vérifiera
   contre le certificat publié pour `mneme@foopgp.org`. C'est exactement l'usage
   dont parle cet article : vous n'avez pas à nous croire, vous pouvez vérifier.
@@ -146,6 +182,12 @@ nom, comme elle porte sa propre signature, et s'installera donc **à côté** �
 rien à désinstaller, et chacune garde son trousseau. La réserve sur les
 signatures ne vaut qu'entre deux constructions d'une même application.
 
-Le reste est écrit dans nos rapports d'assemblée, semaine après semaine :
-l'identité sur la carte est le premier étage, la [signature](/fr/solutions/signature/),
-le [courriel](/fr/solutions/theme-email/) et les comptes en Ɉ sont les suivants.
+Le projet avance bien, semaine après semaine :
+
+- Premier étage : l'identité sur papier, puis sur clé de sécurité ✅
+- Deuxième étage : gestion des données du certificat et de la toile de confiance ✅
+- Troisième étage : [signature](/fr/solutions/signature/), [chiffrement et
+  déchiffrement](/fr/solutions/encryption/), notamment des
+  [courriels](/fr/solutions/theme-email/) ✅
+- Dernier étage : gestion de nos comptes en Ɉ 🔜
+

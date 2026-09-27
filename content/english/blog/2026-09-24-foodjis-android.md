@@ -14,6 +14,8 @@ type: "post"
 
 ***Note:*** *For what a **PGP ID** identity is and what it is for, [see the page devoted to it](/solutions/pgp-id/). To keep up, [join our mailing lists](/contact/).*
 
+***Updated on 27 September 2026:*** *version 1.1.2 is out. [What changed since the first](#since).*
+
 **[foodjis](/solutions/pgp-id/) no longer asks for a computer.** The assistant
 that gives birth to a digital identity, writes it into a security key and lets
 it circulate now exists on Android, with the same journeys and the same words
@@ -113,17 +115,48 @@ And if you do not have a key yet: the association **does not sell** them, it
 reached [the threshold](/solutions/offer-security-keys/) — YubiKey 5 NFC or
 Nitrokey 3A NFC, at your choice and according to stock.
 
+## Since the first version {#since}
+
+**Encrypting and decrypting.** A page in the menu encrypts a text for your
+contacts — they alone will be able to read it —, signed by your key if you
+wish. It opens a message encrypted for you, pasted or received as a file, with
+your key or with its password, and checks a message that is only signed. Such a
+file, opened from any application, leads straight to it.
+
+**Your credibilities travel.** You can now export all the credibilities you
+have granted to a file signed by your key, and take up those of someone you
+grant full credibility — *cautiously*, for the identities you have not judged
+yet, *devotedly*, accepting every one of their notes, or *radically*:
+credibilities may rise or go to "none", but any "none" stays. It is the same
+file as on Djibian.
+
+**Persistence.** On by default, it lets the application stay in the
+background. The PIN is held for the whole time chosen, up to twelve hours. Your
+certificates are refreshed automatically, in batches where the ones you need
+are mixed with others, at hours unrelated to your use: so you learn in time
+that a key was revoked, without telling the servers when you use the
+application. The price is a little network and battery; with persistence
+switched off, nothing runs while the application is closed.
+
+**Faster.** With hundreds of contacts, everything opens without waiting: the web
+of trust is worked out in the background, and kept from one start to the next.
+
+And also: a 🌎 step on the home page to walk the contacts and your web of trust;
+"leaving by the top" goes back to the previous screen everywhere; and if Android
+is set to vibrate on touch, a vibration tells you when the key may leave the
+back of the phone.
+
 ## Download
 
 This version installs beside any future store version rather than replacing it:
 it carries our development key, so it is called **foodjis-dev**, and that is a
 name of its own.
 
-- **[foodjis-dev_1.0.3.apk](https://iso.foopgp.org/foodjis-dev_1.0.3.apk)** —
-  Android 7 or newer, nine languages, 8.4 MB.
-- The file's [fingerprint](https://iso.foopgp.org/foodjis-dev_1.0.3.apk.sha256):
-  `03a6c328d6d56ad115fa7aec05037cdbe619dd5c9dbf06205bbcc8cb3c5d0ec7`.
-- And its [detached signature](https://iso.foopgp.org/foodjis-dev_1.0.3.apk.asc),
+- **[foodjis-dev_1.1.2.apk](https://iso.foopgp.org/foodjis-dev_1.1.2.apk)** —
+  Android 7 or newer, nine languages, 8.6 MB.
+- The file's [fingerprint](https://iso.foopgp.org/foodjis-dev_1.1.2.apk.sha256):
+  `f47a6d294c58c86af829091a5c15b41800f0473a19ea402ec0a0eb2533171f89`.
+- And its [detached signature](https://iso.foopgp.org/foodjis-dev_1.1.2.apk.asc),
   made by a PGP ID identity, which your usual OpenPGP tool will check against
   the published certificate for `mneme@foopgp.org`. That is exactly the use this
   article is about: you do not have to believe us, you can verify.
@@ -140,6 +173,11 @@ its own signature, and will therefore install **beside** it — nothing to
 uninstall, and each keeps its own keyring. The caveat about signatures only
 holds between two builds of one application.
 
-The rest is written in our assembly reports, week after week: the identity on
-the key is the first stage, [signing](/solutions/signature/),
-[mail](/solutions/theme-email/) and the Ɉ accounts are the ones above it.
+The project is moving well, week after week:
+
+- First stage: the identity on paper, then on a security key ✅
+- Second stage: managing the certificate's data and the web of trust ✅
+- Third stage: [signing](/solutions/signature/), [encryption and
+  decryption](/solutions/encryption/), not least of
+  [mail](/solutions/theme-email/) ✅
+- Last stage: managing our Ɉ accounts 🔜

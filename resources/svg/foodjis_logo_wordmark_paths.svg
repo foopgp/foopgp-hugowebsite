@@ -1,69 +1,149 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
-   width="46mm"
-   height="13mm"
-   viewBox="0 0 46 13"
+   width="1024"
+   height="500"
+   viewBox="0 0 270.93333 132.29167"
    version="1.1"
-   id="svg7"
-   sodipodi:docname="foodjis_logo_wordmark.svg"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="foodjis_logo_wordmark_paths.svg"
+   inkscape:export-filename="foodjis_logo_wordmark.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs7" />
   <sodipodi:namedview
-     id="namedview7"
+     id="namedview1"
      pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
+     bordercolor="#666666"
+     borderopacity="1.0"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm" />
-  <!-- foodjis — the name alone, on the house purple
+     inkscape:document-units="mm"
+     inkscape:zoom="0.218554"
+     inkscape:cx="400.35872"
+     inkscape:cy="-272.24393"
+     inkscape:window-width="1680"
+     inkscape:window-height="1026"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="55.60144"
+       y="80.254913"
+       width="210.34131"
+       height="63.46957"
+       id="rect3" />
+    <clipPath
+       id="clip-pug">
+        <rect
+   x="0"
+   y="0"
+   width="250"
+   height="250"
+   id="rect1" />
 
-  Copyright 2026 Jean-Jacques Brucker (u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76) <jjbrucker@foopgp.org>
-  Copyright 2026 Mnêmê (u5001777236237.945e_43.30_005.38 claude-opus-5) <mneme@foopgp.org>
-  SPDX-License-Identifier: GPL-3.0-only -->
-  <rect
-     x="0"
-     y="0"
-     width="46"
-     height="13"
-     style="fill:#31264b"
-     id="ground" />
+      </clipPath>
+    <clipPath
+       id="clipPath6">
+        <rect
+   x="0"
+   y="0"
+   width="250"
+   height="250"
+   id="rect6" />
+
+      </clipPath>
+    <linearGradient
+       id="linearGradient6">
+        <stop
+   style="stop-color:#da2a2a;stop-opacity:1;"
+   offset="0"
+   id="stop6" />
+
+      </linearGradient>
+    <linearGradient
+       id="linearGradient7">
+        <stop
+   style="stop-color:#1a1a37;stop-opacity:0;"
+   offset="0"
+   id="stop7" />
+
+      </linearGradient>
+  </defs>
   <g
-     transform="translate(23,10.4) skewX(-11)"
-     id="wordmark">
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#31264b;stroke-width:0.71468"
+       id="rect19561"
+       width="292.17377"
+       height="143.35817"
+       x="-8.6572685"
+       y="-4.7825303" />
+    <text
+       class="st2"
+       id="text18"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:69.557px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-2.7152px;word-spacing:0px;stroke-width:0.400979;enable-background:new"
+       x="34.227577"
+       y="75.852661"
+       transform="scale(1.0410561,0.96056303)"><tspan
+         x="34.227577"
+         y="75.852661"
+         class="st3 st4 st5 st6"
+         id="tspan14"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:69.557px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-2.7152px;stroke-width:0.400979"
+         rotate="0 3 0 0 0 0"><tspan
+           style="font-size:58.8347px;letter-spacing:-2.7152px;fill:#ff8012;fill-opacity:1;stroke-width:0.400979"
+           id="tspan3788"
+           rotate="3 0">o</tspan><tspan
+           id="tspan3796"
+           style="font-size:68.6408px;letter-spacing:-2.7152px;fill:#ff8012;fill-opacity:1;stroke-width:0.400979"><tspan
+             style="letter-spacing:-0.650344px;fill:#ff8012;fill-opacity:1;stroke-width:0.400979"
+             id="tspan1">o</tspan><tspan
+             style="fill:#ffffff;stroke-width:0.400979"
+             id="tspan3">djis</tspan></tspan></tspan></text>
     <g
-       id="text7"
-       style="font-weight:500;font-size:10.6px;font-family:'URW Gothic';letter-spacing:-0.583px;text-anchor:middle;fill:#ffffff"
-       aria-label="foodjis">
-      <path
-         d="m -14.582423,0 h 0.7844 v -5.0880002 h 1.4416 v -0.7102 h -1.4416 c -0.0106,-0.9752 0.371,-1.3144001 1.4416,-1.3250001 v -0.7102 c -1.4946,0 -2.2472,0.689 -2.226,2.0352001 h -0.901 v 0.7102 h 0.901 z"
-         id="path7" />
-      <path
-         style="fill:#ff8012"
-         d="m -9.4202319,-5.9360002 c -1.7278001,0 -3.0422001,1.3038 -3.0422001,2.9998001 0,1.7914001 1.3038,3.0740001 3.1058001,3.0740001 1.696,0 2.9468001,-1.2826 2.9468001,-3.0210001 0,-1.7702001 -1.2614001,-3.0528001 -3.0104001,-3.0528001 z m 0,0.7208 c 1.2826,0 2.2154,0.9858 2.2154,2.3426001 0,1.3356 -0.9116,2.28960008 -2.173,2.28960008 -1.3356001,0 -2.2896001,-0.96460008 -2.2896001,-2.33200008 0,-1.3144001 0.9646,-2.3002001 2.2472001,-2.3002001 z"
-         id="path8" />
-      <path
-         style="font-size:13.568px;baseline-shift:-0.8904px;fill:#ff8012"
-         d="m -2.0837524,-6.7076799 c -2.2115839,0 -3.8940159,1.668864 -3.8940159,3.8397439 0,2.29299201 1.668864,3.93472 3.9754239,3.93472 2.17088001,0 3.771904,-1.64172799 3.771904,-3.86688 0,-2.2658559 -1.61459199,-3.9075839 -3.853312,-3.9075839 z m 0,0.922624 c 1.64172802,0 2.835712,1.261824 2.835712,2.9985279 0,1.709568 -1.16684798,2.930688 -2.78144,2.930688 -1.7095679,0 -2.9306879,-1.234688 -2.9306879,-2.98496 0,-1.6824319 1.234688,-2.9442559 2.8764159,-2.9442559 z"
-         id="path9" />
-      <path
-         d="m 8.3496254,-7.8334003 h -0.7844 v 2.9574001 c -0.5724,-0.689 -1.3674001,-1.06 -2.2790001,-1.06 -1.7596001,0 -3.0846001,1.3144 -3.0846001,3.0528001 0,1.7172001 1.3674,3.0210001 3.1588001,3.0210001 0.9752,0 1.6112001,-0.34980001 2.2048001,-1.1872 V 0 h 0.7844 z m -3.0846001,2.6182001 c 1.2932001,0 2.3320001,1.0282 2.3320001,2.3002001 0,1.2826 -1.0176,2.33200008 -2.2578001,2.33200008 -1.3356,0 -2.3426001,-1.00700008 -2.3426001,-2.34260008 0,-1.2720001 1.0070001,-2.2896001 2.2684001,-2.2896001 z"
-         id="path10" />
-      <path
-         d="m 9.918419,-5.7982002 h -0.7844 v 5.39540019 C 9.144619,0.79500003 8.837219,1.2402 7.9574189,1.2826 V 2.0352001 C 9.314219,1.9610001 9.992619,1.1236 9.918419,-0.40280001 Z m -0.7844,-0.6996 h 0.7844 v -1.3356001 h -0.7844 z"
-         id="path11" />
-      <path
-         d="m 10.671009,0 h 0.7844 v -5.7982002 h -0.7844 z m 0,-6.4978002 h 0.7844 v -1.3356001 h -0.7844 z"
-         id="path12" />
-      <path
-         d="m 11.731018,-1.7066001 c 0.0106,1.12360008 0.742,1.8444001 1.8656,1.8444001 1.0494,0 1.7702,-0.74200002 1.7702,-1.8020001 0,-0.7102 -0.3286,-1.1978 -1.007,-1.484 -0.8904,-0.371 -0.9328,-0.3816 -1.0918,-0.4664 -0.3604,-0.1802 -0.53,-0.424 -0.53,-0.7632001 0,-0.4664 0.371,-0.8374 0.8374,-0.8374 0.5088,0 0.8056,0.2968 0.848,0.848 h 0.795 c -0.0318,-0.9328 -0.6996,-1.5688 -1.6324,-1.5688 -0.9434,0 -1.643,0.689 -1.643,1.6324 0,0.4240001 0.1484,0.7738001 0.4346,1.0388001 0.2438,0.2226 0.2544,0.2332 1.0706,0.5618 0.901,0.371 1.1236,0.583 1.1236,1.113 0,0.5830001 -0.4028,1.00700008 -0.9752,1.00700008 -0.6572,0 -1.0494,-0.40280002 -1.0918,-1.12360008 z"
-         id="path13" />
+       id="g24160-9"
+       transform="matrix(-2.3984346,0,0.23534209,-2.6295676,239.87936,287.13152)"
+       style="fill:#f6f4fa;fill-opacity:1;stroke:none;stroke-opacity:0.985167">
+      <text
+         class="st2"
+         id="text18-3-1"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.7067px;line-height:1;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-0.683841px;word-spacing:0px;fill:#f6f4fa;fill-opacity:1;stroke:none;stroke-width:0.136663;stroke-opacity:0.985167;enable-background:new"
+         x="91.393814"
+         y="97.781052"
+         transform="scale(1.0236254,0.97691987)"><tspan
+           x="91.393814"
+           y="97.781052"
+           class="st3 st4 st5 st6"
+           id="tspan14-6-2"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.7067px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-1.19673px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.136663;stroke-opacity:0.985167"
+           rotate="0">Ɉ</tspan></text>
     </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(1.6258627,0,0,1.6258627,-38.552114,-76.166873)"
+       id="text3"
+       style="font-style:italic;font-size:40px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Italic';text-align:center;letter-spacing:-1.2px;word-spacing:0px;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#ff8012;fill-opacity:1"><tspan
+         x="136.82045"
+         y="116.65087"
+         id="tspan10"><tspan
+           style="font-style:normal;font-weight:bold;font-size:16px;-inkscape-font-specification:'Sans, Bold'"
+           id="tspan6">PGP</tspan><tspan
+           style="fill:#f2f2f2"
+           id="tspan8"> ID</tspan><tspan
+           style="font-style:normal;font-weight:bold;font-size:16px;-inkscape-font-specification:'Sans, Bold'"
+           id="tspan9"> </tspan></tspan></text>
   </g>
 </svg>

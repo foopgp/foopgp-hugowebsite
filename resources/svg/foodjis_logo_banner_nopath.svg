@@ -159,11 +159,11 @@
        style="font-style:italic;font-size:40px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Italic';text-align:center;letter-spacing:-1.2px;word-spacing:0px;white-space:pre;shape-inside:url(#rect3);fill:#ff8012;fill-opacity:1"><tspan
          x="136.82045"
          y="116.65087"
-         id="tspan6"><tspan
+         id="tspan7"><tspan
            style="font-style:normal;font-weight:bold;font-size:16px;-inkscape-font-specification:'Sans, Bold'"
-           id="tspan2">PGP</tspan><tspan
-           style="fill:#ffffff"
-           id="tspan5"> ID</tspan></tspan></text><g
+           id="tspan2">PGP </tspan><tspan
+           style="fill:#f2f2f2"
+           id="tspan5">ID</tspan></tspan></text><g
        transform="matrix(0.06944983,0,0,0.06944983,0.40804007,-0.76275501)"
        id="pug"
        clip-path="url(#clip-pug)">

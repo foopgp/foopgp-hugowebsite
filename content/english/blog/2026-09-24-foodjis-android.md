@@ -14,7 +14,7 @@ type: "post"
 
 ***Note:*** *For what a **PGP ID** identity is and what it is for, [see the page devoted to it](/solutions/pgp-id/). To keep up, [join our mailing lists](/contact/).*
 
-***Updated on 27 September 2026:*** *version 1.1.3 is out. [What changed since the first](#since).*
+***Updated on 30 September 2026:*** *version 1.2.1 is out; what it brings will be the subject of a coming article. [What changed since the first](#since).*
 
 **[foodjis](/solutions/pgp-id/) no longer asks for a computer.** The assistant
 that gives birth to a digital identity, writes it into a security key and lets
@@ -158,7 +158,7 @@ name of its own.
   `a37c042bf3ebb4108b9531477afac78d29efa196b05301aeb77da49b823a1617`.
 - And its [detached signature](https://iso.foopgp.org/foodjis-dev_1.2.1.apk.asc),
   made by a PGP ID identity, which your usual OpenPGP tool will check against
-  the published certificate for `mneme@foopgp.org`. That is exactly the use this
+  the published certificate for `jjbrucker@foopgp.org`. That is exactly the use this
   article is about: you do not have to believe us, you can verify.
 
 A brand-new security key wants three seconds of power from any USB port before

@@ -158,7 +158,7 @@ name of its own.
   `a37c042bf3ebb4108b9531477afac78d29efa196b05301aeb77da49b823a1617`.
 - And its [detached signature](https://iso.foopgp.org/foodjis-dev_1.2.1.apk.asc),
   made by a PGP ID identity, which your usual OpenPGP tool will check against
-  the published certificate for `jjbrucker@foopgp.org`. That is exactly the use this
+  the published certificate for `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76`. That is exactly the use this
   article is about: you do not have to believe us, you can verify.
 
 A brand-new security key wants three seconds of power from any USB port before

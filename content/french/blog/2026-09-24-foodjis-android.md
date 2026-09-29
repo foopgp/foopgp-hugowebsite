@@ -166,7 +166,7 @@ s'appelle donc **foodjis-dev** et c'est un nom à elle.
   `a37c042bf3ebb4108b9531477afac78d29efa196b05301aeb77da49b823a1617`.
 - Et sa [signature détachée](https://iso.foopgp.org/foodjis-dev_1.2.1.apk.asc),
   faite par une identité PGP ID, que votre outil OpenPGP habituel vérifiera
-  contre le certificat publié pour `jjbrucker@foopgp.org`. C'est exactement l'usage
+  contre le certificat publié pour `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76`. C'est exactement l'usage
   dont parle cet article : vous n'avez pas à nous croire, vous pouvez vérifier.
 
 Une clé de sécurité neuve veut trois secondes d'alimentation sur n'importe quel

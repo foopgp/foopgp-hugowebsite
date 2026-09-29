@@ -160,11 +160,11 @@ Cette version s'installe à côté d'une éventuelle future version du magasin
 d'applications, sans la remplacer : elle porte notre clé de développement, elle
 s'appelle donc **foodjis-dev** et c'est un nom à elle.
 
-- **[foodjis-dev_1.1.3.apk](https://iso.foopgp.org/foodjis-dev_1.1.3.apk)** —
+- **[foodjis-dev_1.2.1.apk](https://iso.foopgp.org/foodjis-dev_1.2.1.apk)** —
   Android 7 ou plus récent, neuf langues, 8,6 Mo.
-- L'[empreinte](https://iso.foopgp.org/foodjis-dev_1.1.3.apk.sha256) du fichier :
-  `a3ce6089643a82358e1200c6b0d31ffaffc779130683aeb90a0d0ec5dc77506a`.
-- Et sa [signature détachée](https://iso.foopgp.org/foodjis-dev_1.1.3.apk.asc),
+- L'[empreinte](https://iso.foopgp.org/foodjis-dev_1.2.1.apk.sha256) du fichier :
+  `a37c042bf3ebb4108b9531477afac78d29efa196b05301aeb77da49b823a1617`.
+- Et sa [signature détachée](https://iso.foopgp.org/foodjis-dev_1.2.1.apk.asc),
   faite par une identité PGP ID, que votre outil OpenPGP habituel vérifiera
   contre le certificat publié pour `mneme@foopgp.org`. C'est exactement l'usage
   dont parle cet article : vous n'avez pas à nous croire, vous pouvez vérifier.

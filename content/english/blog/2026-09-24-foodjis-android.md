@@ -152,11 +152,11 @@ This version installs beside any future store version rather than replacing it:
 it carries our development key, so it is called **foodjis-dev**, and that is a
 name of its own.
 
-- **[foodjis-dev_1.1.3.apk](https://iso.foopgp.org/foodjis-dev_1.1.3.apk)** —
+- **[foodjis-dev_1.2.1.apk](https://iso.foopgp.org/foodjis-dev_1.2.1.apk)** —
   Android 7 or newer, nine languages, 8.6 MB.
-- The file's [fingerprint](https://iso.foopgp.org/foodjis-dev_1.1.3.apk.sha256):
-  `a3ce6089643a82358e1200c6b0d31ffaffc779130683aeb90a0d0ec5dc77506a`.
-- And its [detached signature](https://iso.foopgp.org/foodjis-dev_1.1.3.apk.asc),
+- The file's [fingerprint](https://iso.foopgp.org/foodjis-dev_1.2.1.apk.sha256):
+  `a37c042bf3ebb4108b9531477afac78d29efa196b05301aeb77da49b823a1617`.
+- And its [detached signature](https://iso.foopgp.org/foodjis-dev_1.2.1.apk.asc),
   made by a PGP ID identity, which your usual OpenPGP tool will check against
   the published certificate for `mneme@foopgp.org`. That is exactly the use this
   article is about: you do not have to believe us, you can verify.

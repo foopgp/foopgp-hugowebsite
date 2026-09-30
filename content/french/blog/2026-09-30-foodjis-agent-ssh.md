@@ -72,10 +72,13 @@ ssh moi@mon-serveur.org
 git clone moi@mon-serveur.org:mon-depot.git
 ```
 
-foodjis **ne se montre que lorsqu'un serveur accepte votre clé** : un serveur
-qui ne la connaît pas passe directement à ses autres méthodes, sans que rien
-ne s'affiche sur le téléphone. Quand il l'accepte, foodjis apparaît par-dessus
-Termux, qui reste visible derrière : votre code PIN d'abord — en précisant
+À chaque connexion, foodjis propose vos clés au serveur et le dit d'un mot
+bref (« Clés de foodjis proposées pour l'authentification SSH ») ; le clavier
+de Termux se referme un instant, le temps de cet échange. Un serveur qui ne
+connaît pas votre clé passe à ses autres méthodes (« … non utilisées par le
+serveur SSH »), sans rien vous demander. Quand il l'accepte, foodjis apparaît
+par-dessus Termux, qui reste visible derrière : votre code PIN d'abord — en
+précisant
 quelle clé de sécurité est attendue —, puis « Présentez votre clé de
 sécurité ». Une coche, « Vous pouvez éloigner la clé de sécurité », et la
 session s'ouvre.

@@ -67,10 +67,13 @@ ssh me@my-server.org
 git clone me@my-server.org:my-repo.git
 ```
 
-foodjis **only shows itself when a server accepts your key**: a server that
-does not know it goes straight to its other methods, and nothing appears on
-the phone. When it does, foodjis comes up over Termux, which stays in sight
-behind: your PIN first — saying which security key is expected —, then
+At every connection, foodjis offers your keys to the server and says so in a
+passing word ("foodjis's keys offered for SSH authentication"); Termux's
+keyboard closes for a moment, the time of that exchange. A server that does not
+know your key goes on to its other methods ("… not used by the SSH server"),
+asking you nothing. When it accepts it, foodjis comes up over Termux, which
+stays in sight behind: your PIN first — saying which security key is
+expected —, then
 "Present your security key". A tick, "You can take the security key away",
 and the session opens.
 

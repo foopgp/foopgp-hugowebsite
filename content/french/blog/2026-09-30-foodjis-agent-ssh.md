@@ -23,7 +23,7 @@ le téléphone ne fait que lui transmettre la question du serveur, et vous
 présentez la clé.
 
 {{< video
-  src="/videos/2026/2026-09-30-foodjis-ssh-agent.mp4"
+  src="/largefiles/videos/2026/2026-09-30-foodjis-ssh-agent.mp4"
   type="video/mp4"
 >}}
 
@@ -91,8 +91,11 @@ ajoute sa version et celle de foodjis qui répond.
 ## Ce qui reste à venir
 
 - **Signer ses commits** avec la même clé.
-- Aujourd'hui, un petit relais fait le lien entre Termux et foodjis. Nous
-  proposerons à Termux de reconnaître lui-même un agent SSH extérieur, ce qui
-  le rendrait inutile.
+- Aujourd'hui, `sshwfoodjis` sert d'intermédiaire : `ssh` cherche son agent
+  derrière un fichier spécial du répertoire de Termux, qu'une autre
+  application ne peut pas créer, et foodjis ne peut répondre que sur le réseau
+  interne du téléphone. Nous proposerons à Termux de savoir lui-même joindre
+  un agent SSH fourni par une autre application : `sshwfoodjis` ne serait plus
+  nécessaire.
 - Le tout est libre (GPL-3.0) ; `sshwfoodjis` vit dans le dépôt
   [sshwgpg](https://codeberg.org/foopgp/sshwgpg).

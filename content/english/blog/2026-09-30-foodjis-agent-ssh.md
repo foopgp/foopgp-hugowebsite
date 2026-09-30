@@ -22,7 +22,7 @@ carries. The private key never leaves the security key: the phone only hands
 it the server's question, and you present the key.
 
 {{< video
-  src="/videos/2026/2026-09-30-foodjis-ssh-agent.mp4"
+  src="/largefiles/videos/2026/2026-09-30-foodjis-ssh-agent.mp4"
   type="video/mp4"
 >}}
 
@@ -85,8 +85,10 @@ version and that of the foodjis that answers.
 ## Still to come
 
 - **Signing commits** with the same key.
-- For now, a small relay links Termux and foodjis. We will suggest to Termux
-  that it recognise an external SSH agent itself, which would make it
-  unnecessary.
+- For now, `sshwfoodjis` stands in between: `ssh` looks for its agent behind
+  a special file in Termux's directory, which another application cannot
+  create, and foodjis can only answer on the phone's internal network. We will
+  suggest to Termux that it reach an SSH agent provided by another application
+  itself: `sshwfoodjis` would no longer be needed.
 - All of it is free software (GPL-3.0); `sshwfoodjis` lives in the
   [sshwgpg](https://codeberg.org/foopgp/sshwgpg) repository.

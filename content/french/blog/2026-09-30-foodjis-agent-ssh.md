@@ -5,7 +5,7 @@ Tags:    [ "foodjis", "android", "ssh", "termux", "git", "pgp-id", "openpgp", "n
 categories: [ "News" ]
 draft: true
 author: [ "Mnêmê", "Jean-Jacques Brucker" ]
-description: "Depuis la version 1.2, votre clé de sécurité ouvre aussi vos sessions SSH depuis le téléphone : ssh, scp et git s'authentifient avec elle, sans qu'aucune clé privée ne soit copiée sur l'appareil."
+description: "Depuis la version 1.3, votre clé de sécurité ouvre aussi vos sessions SSH depuis le téléphone : ssh, scp et git s'authentifient avec elle, sans qu'aucune clé privée ne soit copiée sur l'appareil."
 lang: fr
 bg_image: "images/backgrounds/party-event.jpg"
 image: "images/logos/foodjis_logo_banner.png"
@@ -15,7 +15,7 @@ type: "post"
 ***Note :*** *Cet article s'adresse à qui se sert déjà de SSH. Pour découvrir foodjis sur Android, commencez par [l'article qui le présente](/fr/blog/2026-09-24-foodjis-android/).*
 
 **Votre clé de sécurité ouvre désormais vos sessions SSH depuis le téléphone.**
-Depuis la version 1.2, foodjis peut servir d'*agent SSH* : `ssh`, `scp` et
+Depuis la version 1.3, foodjis peut servir d'*agent SSH* : `ssh`, `scp` et
 `git`, dans l'application [Termux](https://termux.dev/), s'authentifient avec
 la clé d'authentification de votre identité PGP ID — celle que porte votre
 YubiKey ou votre NitroKey. La clé privée ne quitte jamais la clé de sécurité :
@@ -37,7 +37,7 @@ vous la présentez, et la même clé sert sur l'ordinateur comme sur le téléph
 
 ## Ce qu'il faut
 
-- foodjis **1.2** ou plus récent, et une identité PGP ID sur une clé de
+- foodjis **1.3** ou plus récent, et une identité PGP ID sur une clé de
   sécurité ;
 - l'application **Termux**, depuis F-Droid ou Google Play ;
 - sur chaque serveur, la ligne de votre clé publique dans
@@ -45,9 +45,10 @@ vous la présentez, et la même clé sert sur l'ordinateur comme sur le téléph
 
 ## Mise en place
 
-1. Dans la **Configuration** de foodjis, activez « Permettre à Android
-   d'utiliser vos clés de sécurité pour l'authentification SSH », puis ouvrez
-   **En savoir plus**.
+1. Dans la **Configuration** de foodjis, activez « Faciliter aux autres
+   applications l'utilisation de vos clés de sécurité pour l'authentification
+   SSH », puis ouvrez **En savoir plus**. Sans cela, foodjis vous demandera à
+   chaque connexion s'il doit prêter vos clés « pour cette fois ».
 2. Copiez la ligne de votre clé publique et ajoutez-la sur vos serveurs, comme
    n'importe quelle clé SSH. Elle se termine par votre EID et l'empreinte de
    la clé OpenPGP d'où elle vient : vous saurez toujours d'où elle sort.
@@ -72,16 +73,14 @@ ssh moi@mon-serveur.org
 git clone moi@mon-serveur.org:mon-depot.git
 ```
 
-À chaque connexion, foodjis propose vos clés au serveur et le dit d'un mot
-bref (« Clés de foodjis proposées pour l'authentification SSH ») ; le clavier
-de Termux se referme un instant, le temps de cet échange. Un serveur qui ne
-connaît pas votre clé passe à ses autres méthodes (« … non utilisées par le
-serveur SSH »), sans rien vous demander. Quand il l'accepte, foodjis apparaît
-par-dessus Termux, qui reste visible derrière : votre code PIN d'abord — en
-précisant
-quelle clé de sécurité est attendue —, puis « Présentez votre clé de
-sécurité ». Une coche, « Vous pouvez éloigner la clé de sécurité », et la
-session s'ouvre.
+À chaque connexion, foodjis propose vos clés au serveur ; le clavier de Termux
+se referme un instant, le temps de cet échange. Un serveur qui ne connaît pas
+votre clé passe à ses autres méthodes, sans rien vous demander, et foodjis le
+dit d'un mot bref (« SSH : aucune des clés de sécurité proposées n'a été
+sollicitée »). Quand il l'accepte, foodjis apparaît par-dessus Termux, qui
+reste visible derrière : votre code PIN d'abord — en précisant quelle clé de
+sécurité est attendue —, puis « Présentez votre clé de sécurité ». Une coche,
+« Vous pouvez éloigner la clé de sécurité », et la session s'ouvre.
 
 Le code PIN reste en mémoire le temps que vous avez choisi dans la
 Configuration (15 minutes par défaut) : les connexions suivantes ne demandent

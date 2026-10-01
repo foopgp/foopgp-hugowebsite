@@ -5,7 +5,7 @@ Tags:    [ "foodjis", "android", "ssh", "termux", "git", "pgp-id", "openpgp", "n
 categories: [ "News" ]
 draft: true
 author: [ "Mnêmê", "Jean-Jacques Brucker" ]
-description: "Since version 1.2, your security key also opens your SSH sessions from the phone: ssh, scp and git authenticate with it, and no private key is ever copied onto the device."
+description: "Since version 1.3, your security key also opens your SSH sessions from the phone: ssh, scp and git authenticate with it, and no private key is ever copied onto the device."
 lang: en
 bg_image: "images/backgrounds/party-event.jpg"
 image: "images/logos/foodjis_logo_banner.png"
@@ -15,7 +15,7 @@ type: "post"
 ***Note:*** *This article is for those who already use SSH. To discover foodjis on Android, start with [the article that introduces it](/blog/2026-09-24-foodjis-android/).*
 
 **Your security key now opens your SSH sessions from the phone.** Since
-version 1.2, foodjis can act as an *SSH agent*: `ssh`, `scp` and `git`, in the
+version 1.3, foodjis can act as an *SSH agent*: `ssh`, `scp` and `git`, in the
 [Termux](https://termux.dev/) application, authenticate with the
 authentication key of your PGP ID identity — the one your YubiKey or NitroKey
 carries. The private key never leaves the security key: the phone only hands
@@ -36,15 +36,17 @@ serves on the computer and on the phone.
 
 ## What you need
 
-- foodjis **1.2** or later, and a PGP ID identity on a security key;
+- foodjis **1.3** or later, and a PGP ID identity on a security key;
 - the **Termux** application, from F-Droid or Google Play;
 - on each server, the line of your public key in `~/.ssh/authorized_keys` —
   foodjis gives it to you to copy.
 
 ## Setting up
 
-1. In foodjis's **Configuration**, turn on "Let Android use your security keys
-   for SSH authentication", then open **Learn more**.
+1. In foodjis's **Configuration**, turn on "Make it easier for other
+   applications to use your security keys for SSH authentication", then open
+   **Learn more**. Without it, foodjis asks at each connection whether to lend
+   your keys "for this time".
 2. Copy the line of your public key and add it on your servers, like any SSH
    key. It ends with your EID and the fingerprint of the OpenPGP key it comes
    from: you will always know where it came from.
@@ -67,15 +69,14 @@ ssh me@my-server.org
 git clone me@my-server.org:my-repo.git
 ```
 
-At every connection, foodjis offers your keys to the server and says so in a
-passing word ("foodjis's keys offered for SSH authentication"); Termux's
-keyboard closes for a moment, the time of that exchange. A server that does not
-know your key goes on to its other methods ("… not used by the SSH server"),
-asking you nothing. When it accepts it, foodjis comes up over Termux, which
-stays in sight behind: your PIN first — saying which security key is
-expected —, then
-"Present your security key". A tick, "You can take the security key away",
-and the session opens.
+At every connection, foodjis offers your keys to the server; Termux's keyboard
+closes for a moment, the time of that exchange. A server that does not know
+your key goes on to its other methods, asking you nothing, and foodjis says so
+in a passing word ("SSH: none of the security keys offered was asked for").
+When it accepts it, foodjis comes up over Termux, which stays in sight behind:
+your PIN first — saying which security key is expected —, then "Present your
+security key". A tick, "You can take the security key away", and the session
+opens.
 
 The PIN stays in memory for the time you chose in the Configuration
 (15 minutes by default): the next connections only ask for the key. An `scp`

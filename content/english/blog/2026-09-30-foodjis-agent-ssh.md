@@ -26,6 +26,7 @@ A demonstration, with a security key set up by foodjis (PGP ID):
 {{< video
   src="/largefiles/videos/2026/2026-10-01-foodjis-ssh-agent-en.mp4"
   type="video/mp4"
+  max-height="80vh"
 >}}
 
 ## Why
@@ -75,8 +76,10 @@ against your smartphone's NFC reader, or plug into your computer's USB port.
    sshwfoodjis --install
    ```
 
-   `ssh`, `scp` or `git` now ask foodjis for the key, with nothing else to
-   set. `sshwfoodjis --uninstall` undoes it, and so does removing the package.
+   In every new terminal, `ssh`, `scp` or `git` now ask foodjis for the key,
+   with nothing else to set. `sshwfoodjis --uninstall` undoes it, and so does
+   removing the package. For one connection, with nothing installed:
+   `sshwfoodjis me@my-server.org`.
 
 ## In use
 
@@ -103,10 +106,30 @@ version, and which foodjis application it woke.
 ## Signing git commits
 
 For now, Termux's `gpg` cannot yet talk to foodjis to use your PGP ID security
-key.
+key. But git can also sign commits with an SSH key, and since version 1.3.3,
+foodjis signs them: the security key's prompt then says "Signing a git
+commit". It signs SSH logins and git commits only, so that another
+application cannot have it sign something else.
 
-git can also sign commits with an SSH key, and foodjis is its agent: that is
-the way we are preparing. For now, foodjis signs SSH logins only — on purpose,
-so that another application cannot have it sign something else under cover of
-a login. Accepting git's signatures too, saying plainly on screen that it is a
-commit being signed, will come with a coming version.
+In Termux, once and for all (after `sshwfoodjis --install`, in a new
+terminal):
+
+```
+git config --global user.email me@example.org
+git config --global gpg.format ssh
+git config --global user.signingkey "key::$(ssh-add -L | head -n 1)"
+git config --global commit.gpgsign true
+echo "$(git config user.email) namespaces=\"git\" $(ssh-add -L | head -n 1)" >> ~/.ssh/allowed_signers
+git config --global gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
+```
+
+Then, as usual:
+
+```
+git commit -m "My first commit signed by my security key"
+git log --show-signature -1
+```
+
+foodjis asks for the key, and `git log` answers `Good "git" signature for
+me@example.org`. The last two lines of the setup only serve that check: git
+wants to know which key may sign for which address.

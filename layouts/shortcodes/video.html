@@ -11,6 +11,7 @@
   {{ if eq (.Get "loop") "true" }}loop{{ end }}
   {{ if eq (.Get "muted") "true" }}muted{{ end }}
   {{ with .Get "poster" }}poster="{{ . }}"{{ end }}
+  {{ with .Get "max-height" }}style="max-height: {{ . }}; width: auto; max-width: 100%; display: block; margin: 0 auto;"{{ end }}
   playsinline
 >
 

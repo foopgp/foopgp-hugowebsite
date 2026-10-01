@@ -25,6 +25,7 @@ Démonstration, avec une clé de sécurité configurée par foodjis (PGP ID) :
 {{< video
   src="/largefiles/videos/2026/2026-10-01-foodjis-ssh-agent-fr.mp4"
   type="video/mp4"
+  max-height="80vh"
 >}}
 
 ## Pourquoi
@@ -77,9 +78,10 @@ NFC de votre ordiphone comme au port USB de votre ordinateur.
    sshwfoodjis --install
    ```
 
-   `ssh`, `scp` ou `git` demandent désormais la clé à foodjis, sans autre
-   réglage. `sshwfoodjis --uninstall` défait cette configuration, et
-   désinstaller le paquet la défait aussi.
+   Dans tout nouveau terminal, `ssh`, `scp` ou `git` demandent désormais la
+   clé à foodjis, sans autre réglage. `sshwfoodjis --uninstall` défait cette
+   configuration, et désinstaller le paquet la défait aussi. Pour une seule
+   connexion, sans rien installer : `sshwfoodjis moi@mon-serveur.org`.
 
 ## À l'usage
 
@@ -106,11 +108,32 @@ ajoute sa version, et quelle application foodjis il a réveillée.
 ## Signer ses commits git
 
 Aujourd'hui, l'outil `gpg` de Termux ne sait pas encore parler à foodjis pour
-utiliser votre clé de sécurité PGP ID.
+utiliser votre clé de sécurité PGP ID. Mais git sait aussi signer ses commits
+avec une clé SSH, et depuis la version 1.3.3, foodjis les signe : la fenêtre de
+la clé de sécurité dit alors « Signature d'un commit git ». Il ne signe que des
+connexions SSH et des commits git, pour qu'une autre application ne puisse pas
+lui faire signer autre chose.
 
-git sait aussi signer ses commits avec une clé SSH, et foodjis en est l'agent :
-c'est la voie que nous préparons. Pour l'instant, foodjis ne signe que des
-connexions SSH — c'est voulu, pour qu'une autre application ne puisse pas lui
-faire signer autre chose sous couvert d'une connexion. Accepter aussi les
-signatures de git, en disant clairement à l'écran que c'est un commit qu'on
-signe, viendra avec une prochaine version.
+Dans Termux, une fois pour toutes (après `sshwfoodjis --install`, dans un
+nouveau terminal) :
+
+```
+git config --global user.email moi@exemple.org
+git config --global gpg.format ssh
+git config --global user.signingkey "key::$(ssh-add -L | head -n 1)"
+git config --global commit.gpgsign true
+echo "$(git config user.email) namespaces=\"git\" $(ssh-add -L | head -n 1)" >> ~/.ssh/allowed_signers
+git config --global gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
+```
+
+Puis, comme d'habitude :
+
+```
+git commit -m "Mon premier commit signé par ma clé de sécurité"
+git log --show-signature -1
+```
+
+foodjis demande la clé, et `git log` répond `Good "git" signature for
+moi@exemple.org`. Les deux dernières lignes de la configuration ne servent qu'à
+cette vérification : git veut savoir quelle clé a le droit de signer pour
+quelle adresse.

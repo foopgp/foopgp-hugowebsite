@@ -84,7 +84,7 @@ or a `git clone` asks no more than a session: we have cloned over SSH from our
 servers, from Codeberg and from GitHub.
 
 To see what happens, `ssh`'s own `-v` is enough: `sshwfoodjis` adds its
-version and that of the foodjis that answers.
+version, and which foodjis application it woke.
 
 ## Still to come
 

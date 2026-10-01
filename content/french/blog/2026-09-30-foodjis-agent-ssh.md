@@ -88,7 +88,7 @@ que la clé. Un `scp` ou un `git clone` ne demandent pas plus qu'une session :
 nous avons cloné en SSH depuis nos serveurs, depuis Codeberg et depuis GitHub.
 
 Pour voir ce qui se passe, l'option `-v` de `ssh` suffit : `sshwfoodjis` y
-ajoute sa version et celle de foodjis qui répond.
+ajoute sa version, et quelle application foodjis il a réveillée.
 
 ## Ce qui reste à venir
 

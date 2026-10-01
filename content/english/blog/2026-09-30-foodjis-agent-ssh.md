@@ -15,11 +15,13 @@ type: "post"
 ***Note:*** *This article is for those who already use SSH. To discover foodjis on Android, start with [the article that introduces it](/blog/2026-09-24-foodjis-android/).*
 
 **Your security key now opens your SSH sessions from the phone.** Since
-version 1.3, foodjis can act as an *SSH agent*: `ssh`, `scp` and `git`, in the
-[Termux](https://termux.dev/) application, authenticate with the
-authentication key of your PGP ID identity — the one your YubiKey or NitroKey
-carries. The private key never leaves the security key: the phone only hands
-it the server's question, and you present the key.
+version 1.3, foodjis can act as an *SSH agent* for the other Android
+applications. So `ssh`, `scp` or `git`, in the [Termux](https://termux.dev/)
+application, authenticate with the authentication key of your PGP ID
+identity — the one your physical key, YubiKey or NitroKey, carries and keeps
+safe.
+
+A demonstration, with a security key set up by foodjis (PGP ID):
 
 {{< video
   src="/largefiles/videos/2026/2026-10-01-foodjis-ssh-agent-en.mp4"
@@ -30,16 +32,30 @@ it the server's question, and you present the key.
 
 Usually, what gets you recognised by an SSH server is a private key kept in a
 file on the device: whoever copies that file can log in as you, and a phone
-gets lost, stolen or lent. Here there is no file to copy. The proof is
-computed by the security key, at the moment you present it, and the same key
-serves on the computer and on the phone.
+is no digital safe. From the engineers who designed it to the crackers who
+quietly exploit its flaws, all the way to the states that would rather spy on
+their citizens than protect them, many regularly break into the privacy and
+the secrets you entrust to it. Remember, for instance, the
+[Pegasus spyware](https://en.wikipedia.org/wiki/Pegasus_(spyware)).
+
+[PGP ID](/solutions/pgp-id/) security keys, on the other hand, are real safes:
+their attack surface is infinitely smaller, and the secrets put in them do not
+come out.
+
+They are safes holding keys, which open other safes you can keep elsewhere —
+on your phone, for instance. While that safe is closed, no Google engineer and
+no cracker can open it. To open it takes the security key: the one you hold
+against your smartphone's NFC reader, or plug into your computer's USB port.
 
 ## What you need
 
-- foodjis **1.3** or later, and a PGP ID identity on a security key;
-- the **Termux** application, from F-Droid or Google Play;
+- foodjis **1.3** [or later](https://play.google.com/store/apps/details?id=org.foopgp.foodjis),
+  and a PGP ID identity on a [security key](/solutions/offer-security-keys/);
+- the **Termux** application, from [F-Droid](https://f-droid.org/packages/com.termux/)
+  or [Google Play](https://play.google.com/store/apps/details?id=com.termux);
 - on each server, the line of your public key in `~/.ssh/authorized_keys` —
-  foodjis gives it to you to copy.
+  which **foodjis**, like `gpg --export-ssh-key` on the computer, gives you to
+  copy.
 
 ## Setting up
 
@@ -51,7 +67,7 @@ serves on the computer and on the phone.
    key. It ends with your EID and the fingerprint of the OpenPGP key it comes
    from: you will always know where it came from.
 3. Still on that page, **Install sshwfoodjis in Termux**. foodjis hands Termux
-   a small package, with no network, and puts the install command in the
+   the `sshwfoodjis_*.deb` package, and puts the install command in the
    clipboard: open the directory Termux offers, and paste.
 4. In Termux, once and for all:
 
@@ -59,7 +75,7 @@ serves on the computer and on the phone.
    sshwfoodjis --install
    ```
 
-   `ssh`, `scp` and `git` now ask foodjis for the key, with nothing else to
+   `ssh`, `scp` or `git` now ask foodjis for the key, with nothing else to
    set. `sshwfoodjis --uninstall` undoes it, and so does removing the package.
 
 ## In use
@@ -69,14 +85,12 @@ ssh me@my-server.org
 git clone me@my-server.org:my-repo.git
 ```
 
-At every connection, foodjis offers your keys to the server; Termux's keyboard
-closes for a moment, the time of that exchange. A server that does not know
-your key goes on to its other methods, asking you nothing, and foodjis says so
-in a passing word ("SSH: none of the security keys offered was asked for").
-When it accepts it, foodjis comes up over Termux, which stays in sight behind:
-your PIN first — saying which security key is expected —, then "Present your
-security key". A tick, "You can take the security key away", and the session
-opens.
+At every connection, foodjis offers your keys to the server. A server that
+does not know your key goes on to its other methods, asking you nothing. When
+it accepts it, foodjis comes up over Termux, to ask for your PIN if needed,
+then above all: "Present your security key". You hold the security key to the
+phone, the door opens — "You can take the security key away" — and the session
+begins.
 
 The PIN stays in memory for the time you chose in the Configuration
 (15 minutes by default): the next connections only ask for the key. An `scp`
@@ -86,13 +100,13 @@ servers, from Codeberg and from GitHub.
 To see what happens, `ssh`'s own `-v` is enough: `sshwfoodjis` adds its
 version, and which foodjis application it woke.
 
-## Still to come
+## Signing git commits
 
-- **Signing commits** with the same key.
-- For now, `sshwfoodjis` stands in between: `ssh` looks for its agent behind
-  a special file in Termux's directory, which another application cannot
-  create, and foodjis can only answer on the phone's internal network. We will
-  suggest to Termux that it reach an SSH agent provided by another application
-  itself: `sshwfoodjis` would no longer be needed.
-- All of it is free software (GPL-3.0); `sshwfoodjis` lives in the
-  [sshwgpg](https://codeberg.org/foopgp/sshwgpg) repository.
+For now, Termux's `gpg` cannot yet talk to foodjis to use your PGP ID security
+key.
+
+git can also sign commits with an SSH key, and foodjis is its agent: that is
+the way we are preparing. For now, foodjis signs SSH logins only — on purpose,
+so that another application cannot have it sign something else under cover of
+a login. Accepting git's signatures too, saying plainly on screen that it is a
+commit being signed, will come with a coming version.

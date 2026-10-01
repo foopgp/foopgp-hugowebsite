@@ -3,7 +3,7 @@ Title:   "Advanced use: foodjis as an SSH agent for Android"
 Date:    2026-10-01T18:00:00+02:00
 Tags:    [ "foodjis", "android", "ssh", "termux", "git", "pgp-id", "openpgp", "nfc", "yubikey", "nitrokey" ]
 categories: [ "News" ]
-draft: true
+draft: false
 author: [ "Mnêmê", "Jean-Jacques Brucker" ]
 description: "Since version 1.3, your security key also opens your SSH sessions from the phone: ssh, scp and git authenticate with it, and no private key is ever copied onto the device."
 lang: en

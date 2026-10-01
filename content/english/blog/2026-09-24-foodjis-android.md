@@ -14,7 +14,7 @@ type: "post"
 
 ***Note:*** *For what a **PGP ID** identity is and what it is for, [see the page devoted to it](/solutions/pgp-id/). To keep up, [join our mailing lists](/contact/).*
 
-***Updated on 30 September 2026:*** *version 1.2.1 is out; what it brings will be the subject of a coming article. [What changed since the first](#since).*
+***Updated on 1 October 2026:*** *version 1.3.1 is out, and speaks Greek and Turkish; what it brings will be the subject of a coming article. [What changed since the first](#since).*
 
 **[foodjis](/solutions/pgp-id/) no longer asks for a computer.** The assistant
 that gives birth to a digital identity, writes it into a security key and lets
@@ -152,11 +152,11 @@ This version installs beside any future store version rather than replacing it:
 it carries our development key, so it is called **foodjis-dev**, and that is a
 name of its own.
 
-- **[foodjis-dev_1.2.1.apk](https://iso.foopgp.org/foodjis-dev_1.2.1.apk)** —
-  Android 7 or newer, nine languages, 8.6 MB.
-- The file's [fingerprint](https://iso.foopgp.org/foodjis-dev_1.2.1.apk.sha256):
-  `a37c042bf3ebb4108b9531477afac78d29efa196b05301aeb77da49b823a1617`.
-- And its [detached signature](https://iso.foopgp.org/foodjis-dev_1.2.1.apk.asc),
+- **[foodjis-dev_1.3.1.apk](/largefiles/foodjis/foodjis-dev_1.3.1.apk)** —
+  Android 7 or newer, eleven languages, 8.8 MB.
+- The file's [fingerprint](/largefiles/foodjis/foodjis-dev_1.3.1.apk.sha256):
+  `b03960b090609f0e64be80d29dfc23b37a5bb16891b16ef06b369364e718a8f3`.
+- And its [detached signature](/largefiles/foodjis/foodjis-dev_1.3.1.apk.asc),
   made by a PGP ID identity, which your usual OpenPGP tool will check against
   the published certificate for `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76`. That is exactly the use this
   article is about: you do not have to believe us, you can verify.

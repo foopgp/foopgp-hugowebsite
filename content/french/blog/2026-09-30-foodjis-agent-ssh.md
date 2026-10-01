@@ -15,13 +15,13 @@ type: "post"
 ***Note :*** *Cet article s'adresse à qui se sert déjà de SSH. Pour découvrir foodjis sur Android, commencez par [l'article qui le présente](/fr/blog/2026-09-24-foodjis-android/).*
 
 **Votre clé de sécurité ouvre désormais vos sessions SSH depuis le téléphone.**
-Depuis la version 1.3, foodjis peut servir d'*agent SSH* : `ssh`, `scp` et
+Depuis la version 1.3, foodjis peut servir d'*agent SSH* pour les autres applications
+Android. Ainsi`ssh`, `scp` ou
 `git`, dans l'application [Termux](https://termux.dev/), s'authentifient avec
-la clé d'authentification de votre identité PGP ID — celle que porte votre
-YubiKey ou votre NitroKey. La clé privée ne quitte jamais la clé de sécurité :
-le téléphone ne fait que lui transmettre la question du serveur, et vous
-présentez la clé.
+la clé d'authentification de votre identité PGP ID — celle que porte et sécurise votre
+clé physique, YubiKey ou NitroKey.
 
+Démonstration, à partir de clé de sécurité configuré avec foodjis (PGP ID) :
 {{< video
   src="/largefiles/videos/2026/2026-10-01-foodjis-ssh-agent-fr.mp4"
   type="video/mp4"
@@ -31,17 +31,20 @@ présentez la clé.
 
 D'ordinaire, ce qui vous fait reconnaître d'un serveur SSH est une clé privée
 rangée dans un fichier de l'appareil : qui copie ce fichier peut se connecter à
-votre place, et un téléphone se perd, se vole ou se prête. Ici, il n'y a pas de
-fichier à copier. La preuve est calculée par la clé de sécurité, au moment où
-vous la présentez, et la même clé sert sur l'ordinateur comme sur le téléphone.
+votre place, et le téléphone n'est pas un coffre-fort numérique. De nombreuses personnes,
+à commencer par les ingénieurs qui l'ont conçu, en passant par des hackers qui exploitent discrètement les failles, pour finir par les États qui préfèrent espionner ses citoyens au lieu de les protéger, de nombreuses personnes violent régulièrement toute l'intimité ou les secrets que vous pouvez lui confier. Rappelez-vous par exemple du [logiciel Pegasus](https://fr.wikipedia.org/wiki/Pegasus_(logiciel_espion)).
+
+Les clés de sécurité [PGP ID](/fr/solutions/pgp-id/) sont elles de vrais coffre-forts : la surface d'attaque est infinement plus petite, et les secrets injectés n'ont aucune chance de ressortir.
+
+Ce sont des coffres qui contiennent des clés, qui permette d'ouvrir d'autres coffres, que vous pouvez stocker ailleurs, par exemple sur votre téléphone. Quand ce coffre est fermé aucun ingénieurs de Google ou hacker malveillant ne peut l'ouvrir. Et pour l'ouvrir, il faut la clé de sécurité. Celle que vous présentez au lecteur NFC de votre ordiphone, comme au lecteur USB de votre ordinateur. 
 
 ## Ce qu'il faut
 
-- foodjis **1.3** ou plus récent, et une identité PGP ID sur une clé de
-  sécurité ;
-- l'application **Termux**, depuis F-Droid ou Google Play ;
+- foodjis **1.3** [ou plus récent](lien vers le play store), et une identité PGP ID sur une [clé de
+  sécurité](/fr/solutions/offer-security-keys/) ;
+- l'application **Termux**, depuis [F-Droid](lien termux F-Droid) ou [Google Play](lien de termux sur google play) ;
 - sur chaque serveur, la ligne de votre clé publique dans
-  `~/.ssh/authorized_keys` — foodjis vous la donne à copier.
+  `~/.ssh/authorized_keys` — que **foodjis** comme `gpg --export-ssh-key` donne à copier.
 
 ## Mise en place
 
@@ -53,7 +56,7 @@ vous la présentez, et la même clé sert sur l'ordinateur comme sur le téléph
    n'importe quelle clé SSH. Elle se termine par votre EID et l'empreinte de
    la clé OpenPGP d'où elle vient : vous saurez toujours d'où elle sort.
 3. Toujours sur cette page, **Installer sshwfoodjis dans Termux**. foodjis
-   confie à Termux un petit paquet, sans passer par le réseau, et place la
+   confie à Termux le paquet sshwfoodjis_\*.deb, et place la
    commande d'installation dans le presse-papier : ouvrez le répertoire que
    Termux propose, et collez.
 4. Dans Termux, une fois pour toutes :
@@ -62,7 +65,7 @@ vous la présentez, et la même clé sert sur l'ordinateur comme sur le téléph
    sshwfoodjis --install
    ```
 
-   `ssh`, `scp` et `git` demandent désormais la clé à foodjis, sans autre
+   `ssh`, `scp` ou `git` demandent désormais la clé à foodjis, sans autre
    réglage. `sshwfoodjis --uninstall` défait cette configuration, et
    désinstaller le paquet la défait aussi.
 
@@ -73,14 +76,11 @@ ssh moi@mon-serveur.org
 git clone moi@mon-serveur.org:mon-depot.git
 ```
 
-À chaque connexion, foodjis propose vos clés au serveur ; le clavier de Termux
-se referme un instant, le temps de cet échange. Un serveur qui ne connaît pas
-votre clé passe à ses autres méthodes, sans rien vous demander, et foodjis le
-dit d'un mot bref (« SSH : aucune des clés de sécurité proposées n'a été
-sollicitée »). Quand il l'accepte, foodjis apparaît par-dessus Termux, qui
-reste visible derrière : votre code PIN d'abord — en précisant quelle clé de
-sécurité est attendue —, puis « Présentez votre clé de sécurité ». Une coche,
-« Vous pouvez éloigner la clé de sécurité », et la session s'ouvre.
+À chaque connexion, foodjis propose vos clés au serveur. Un serveur qui ne connaît pas
+votre clé passe à ses autres méthodes, sans rien vous demander. Quand il l'accepte, foodjis
+apparaît par-dessus Termux, pour demander éventuellement votre code PIN puis surtout
+« Présentez votre clé de sécurité ». Vous approchez votre la clé de sécurité pour ouvrir la porte,
+la session s'ouvre, et « Vous pouvez éloigner la clé de sécurité ».
 
 Le code PIN reste en mémoire le temps que vous avez choisi dans la
 Configuration (15 minutes par défaut) : les connexions suivantes ne demandent

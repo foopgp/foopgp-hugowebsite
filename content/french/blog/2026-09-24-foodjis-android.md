@@ -14,7 +14,7 @@ type: "post"
 
 ***Note :*** *Pour ce qu'est une identité **PGP ID** et à quoi elle sert, [voir la page qui lui est consacrée](/fr/solutions/pgp-id/). Pour rester informé, [inscrivez-vous à nos listes de diffusion](/fr/contact/).*
 
-***Mise à jour du 1er octobre 2026 :*** *la version 1.3.1 est disponible, et parle grec et turc ; ses nouveautés feront l'objet d'un prochain article. [Ce qui a changé depuis la première](#depuis).*
+***Mise à jour du 1er octobre 2026 :*** *la version 1.3.2 est disponible, et parle grec et turc ; ses nouveautés feront l'objet d'un prochain article. [Ce qui a changé depuis la première](#depuis).*
 
 **[foodjis](/fr/solutions/pgp-id/) ne demande plus d'ordinateur.** L'assistant
 qui donne naissance à une identité numérique, l'écrit dans une clé de sécurité
@@ -156,15 +156,15 @@ quand la clé peut quitter le dos du téléphone.
 
 ## Télécharger
 
-Cette version s'installe à côté d'une éventuelle future version du magasin
-d'applications, sans la remplacer : elle porte notre clé de développement, elle
-s'appelle donc **foodjis-dev** et c'est un nom à elle.
+C'est la version du magasin Google Play, signée par la même clé : installée
+d'ici ou de là, l'une met l'autre à jour, et les téléphones qui refusent les
+applications d'une clé de développement l'acceptent.
 
-- **[foodjis-dev_1.3.1.apk](/largefiles/foodjis/foodjis-dev_1.3.1.apk)** —
-  Android 7 ou plus récent, onze langues, 8,8 Mo.
-- L'[empreinte](/largefiles/foodjis/foodjis-dev_1.3.1.apk.sha256) du fichier :
-  `b03960b090609f0e64be80d29dfc23b37a5bb16891b16ef06b369364e718a8f3`.
-- Et sa [signature détachée](/largefiles/foodjis/foodjis-dev_1.3.1.apk.asc),
+- **[foodjis_1.3.2.apk](/largefiles/foodjis/foodjis_1.3.2.apk)** —
+  Android 7 ou plus récent, onze langues, 7,6 Mo.
+- L'[empreinte](/largefiles/foodjis/foodjis_1.3.2.apk.sha256) du fichier :
+  `46063c9e470a8fc329938b579dffe752e67ae9238a81ab3ba0d2bfdff694c0aa`.
+- Et sa [signature détachée](/largefiles/foodjis/foodjis_1.3.2.apk.asc),
   faite par une identité PGP ID, que votre outil OpenPGP habituel vérifiera
   contre le certificat publié pour `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76`. C'est exactement l'usage
   dont parle cet article : vous n'avez pas à nous croire, vous pouvez vérifier.

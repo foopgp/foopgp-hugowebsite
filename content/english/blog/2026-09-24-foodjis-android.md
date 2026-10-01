@@ -148,15 +148,15 @@ back of the phone.
 
 ## Download
 
-This version installs beside any future store version rather than replacing it:
-it carries our development key, so it is called **foodjis-dev**, and that is a
-name of its own.
+This is the Google Play version, signed with the same key: installed from here
+or from there, each updates the other, and phones that refuse applications
+signed with a development key accept it.
 
-- **[foodjis-dev_1.3.1.apk](/largefiles/foodjis/foodjis-dev_1.3.1.apk)** —
-  Android 7 or newer, eleven languages, 8.8 MB.
-- The file's [fingerprint](/largefiles/foodjis/foodjis-dev_1.3.1.apk.sha256):
-  `b03960b090609f0e64be80d29dfc23b37a5bb16891b16ef06b369364e718a8f3`.
-- And its [detached signature](/largefiles/foodjis/foodjis-dev_1.3.1.apk.asc),
+- **[foodjis_1.3.1.apk](/largefiles/foodjis/foodjis_1.3.1.apk)** —
+  Android 7 or newer, eleven languages, 7.7 MB.
+- The file's [fingerprint](/largefiles/foodjis/foodjis_1.3.1.apk.sha256):
+  `6482571a4c4e618c8532a0478f559327aa5176f8c444f4a5a0e65a6f4cb8bedc`.
+- And its [detached signature](/largefiles/foodjis/foodjis_1.3.1.apk.asc),
   made by a PGP ID identity, which your usual OpenPGP tool will check against
   the published certificate for `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76`. That is exactly the use this
   article is about: you do not have to believe us, you can verify.

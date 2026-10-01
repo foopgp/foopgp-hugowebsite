@@ -156,15 +156,15 @@ quand la clé peut quitter le dos du téléphone.
 
 ## Télécharger
 
-C'est la version du magasin Google Play, signée par la même clé : installée
-d'ici ou de là, l'une met l'autre à jour, et les téléphones qui refusent les
-applications d'une clé de développement l'acceptent.
+Cette version s'installe à côté d'une éventuelle future version du magasin
+d'applications, sans la remplacer : elle porte notre clé de développement, elle
+s'appelle donc **foodjis-dev** et c'est un nom à elle.
 
-- **[foodjis_1.3.1.apk](/largefiles/foodjis/foodjis_1.3.1.apk)** —
-  Android 7 ou plus récent, onze langues, 7,7 Mo.
-- L'[empreinte](/largefiles/foodjis/foodjis_1.3.1.apk.sha256) du fichier :
-  `6482571a4c4e618c8532a0478f559327aa5176f8c444f4a5a0e65a6f4cb8bedc`.
-- Et sa [signature détachée](/largefiles/foodjis/foodjis_1.3.1.apk.asc),
+- **[foodjis-dev_1.3.1.apk](/largefiles/foodjis/foodjis-dev_1.3.1.apk)** —
+  Android 7 ou plus récent, onze langues, 8,8 Mo.
+- L'[empreinte](/largefiles/foodjis/foodjis-dev_1.3.1.apk.sha256) du fichier :
+  `b03960b090609f0e64be80d29dfc23b37a5bb16891b16ef06b369364e718a8f3`.
+- Et sa [signature détachée](/largefiles/foodjis/foodjis-dev_1.3.1.apk.asc),
   faite par une identité PGP ID, que votre outil OpenPGP habituel vérifiera
   contre le certificat publié pour `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76`. C'est exactement l'usage
   dont parle cet article : vous n'avez pas à nous croire, vous pouvez vérifier.

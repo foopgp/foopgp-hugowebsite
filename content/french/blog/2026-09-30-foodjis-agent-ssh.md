@@ -90,14 +90,14 @@ nous avons cloné en SSH depuis nos serveurs, depuis Codeberg et depuis GitHub.
 Pour voir ce qui se passe, l'option `-v` de `ssh` suffit : `sshwfoodjis` y
 ajoute sa version, et quelle application foodjis il a réveillée.
 
-## Ce qui reste à venir
+## Signer ses commits git
 
-- **Signer ses commits** avec la même clé.
-- Aujourd'hui, `sshwfoodjis` sert d'intermédiaire : `ssh` cherche son agent
-  derrière un fichier spécial du répertoire de Termux, qu'une autre
-  application ne peut pas créer, et foodjis ne peut répondre que sur le réseau
-  interne du téléphone. Nous proposerons à Termux de savoir lui-même joindre
-  un agent SSH fourni par une autre application : `sshwfoodjis` ne serait plus
-  nécessaire.
-- Le tout est libre (GPL-3.0) ; `sshwfoodjis` vit dans le dépôt
-  [sshwgpg](https://codeberg.org/foopgp/sshwgpg).
+Aujourd'hui l'outil gpg dans termux ne sait pas encore parler avec foodjis pour utiliser votre clé de sécurité PGP ID.
+
+Mais on peut d'ores et déjà signer ses commit git via foodjis en tant qu'agent SSH :
+
+```
+À toi de jouer Mnêmê\
+```
+
+

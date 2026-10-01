@@ -1,6 +1,6 @@
 ---
-Title:   "Advanced use: foodjis as an SSH agent"
-Date:    2026-09-30T12:00:00+02:00
+Title:   "Advanced use: foodjis as an SSH agent for Android"
+Date:    2026-10-01T18:00:00+02:00
 Tags:    [ "foodjis", "android", "ssh", "termux", "git", "pgp-id", "openpgp", "nfc", "yubikey", "nitrokey" ]
 categories: [ "News" ]
 draft: true
@@ -22,7 +22,7 @@ carries. The private key never leaves the security key: the phone only hands
 it the server's question, and you present the key.
 
 {{< video
-  src="/largefiles/videos/2026/2026-09-30-foodjis-ssh-agent.mp4"
+  src="/largefiles/videos/2026/2026-10-01-foodjis-ssh-agent-en.mp4"
   type="video/mp4"
 >}}
 

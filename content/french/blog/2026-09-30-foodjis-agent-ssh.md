@@ -1,6 +1,6 @@
 ---
-Title:   "Utilisation (avancée) de foodjis comme agent SSH"
-Date:    2026-09-30T12:00:00+02:00
+Title:   "Utilisation (avancée) de foodjis comme agent SSH pour Android"
+Date:    2026-10-01T18:00:00+02:00
 Tags:    [ "foodjis", "android", "ssh", "termux", "git", "pgp-id", "openpgp", "nfc", "yubikey", "nitrokey" ]
 categories: [ "News" ]
 draft: true
@@ -23,7 +23,7 @@ le téléphone ne fait que lui transmettre la question du serveur, et vous
 présentez la clé.
 
 {{< video
-  src="/largefiles/videos/2026/2026-09-30-foodjis-ssh-agent.mp4"
+  src="/largefiles/videos/2026/2026-10-01-foodjis-ssh-agent-fr.mp4"
   type="video/mp4"
 >}}
 

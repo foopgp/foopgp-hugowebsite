@@ -78,7 +78,7 @@ Table of Contents
      4.7.  PHOTO . . . . . . . . . . . . . . . . . . . . . . . . . .   8
      4.8.  Line Folding  . . . . . . . . . . . . . . . . . . . . . .   8
      4.9.  jCard . . . . . . . . . . . . . . . . . . . . . . . . . .   8
-   5.  Example . . . . . . . . . . . . . . . . . . . . . . . . . . .   9
+   5.  Example . . . . . . . . . . . . . . . . . . . . . . . . . . .   8
    6.  Implementation Status . . . . . . . . . . . . . . . . . . . .   9
    7.  Security Considerations . . . . . . . . . . . . . . . . . . .  10
    8.  Privacy Considerations  . . . . . . . . . . . . . . . . . . .  10
@@ -317,18 +317,18 @@ Internet-Draft              OpenPGP and vCard               October 2026
    closing bracket.  The address of the primary User ID -- the standing
    User ID whose newest self-signature carries the Primary User ID
    subpacket (Section 5.2.3.27 of [RFC9580]) -- is written first, with
-   PREF=1, which is the address an address book offers first.  The other
-   addresses follow with PREF=2, 3 and so on, in the order of the User
-   IDs:
+   PREF=1 (Section 5.3 of [RFC6350]), which is the address an address
+   book offers first.  The other addresses are written without a PREF
+   parameter, in the order of the User IDs:
 
    EMAIL;PREF=1:alice@example.org
-   EMAIL;PREF=2:alice@work.example.org
+   EMAIL:alice@work.example.org
 
-   If the primary User ID carries no address, or if no User ID is
-   flagged primary, no address is given PREF=1: the holder has not put
-   one forward, and an implementation MUST NOT choose one in their name.
-
-
+   A certificate can only designate one primary User ID, and says
+   nothing of the order of the others.  If the primary User ID carries
+   no address, or if no User ID is flagged primary, no address is given
+   a PREF parameter: an implementation MUST NOT rank addresses the
+   holder has not ranked.
 
 
 
@@ -345,8 +345,8 @@ Internet-Draft              OpenPGP and vCard               October 2026
 
    UID:urn:eid:u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
 
-   When there is none, an implementation MAY derive the vCard UID from
-   the deprecated comment form of a legacy User ID (Section 3.5),
+   When there is none, an implementation SHOULD derive the vCard UID
+   from the deprecated comment form of a legacy User ID (Section 3.5),
    written as the URN of [I-D.foopgp-urn-eid].  If the standing User IDs
    name several different entity identifiers, an implementation SHOULD
    NOT write any UID, and SHOULD warn that the certificate does not name
@@ -381,11 +381,11 @@ Internet-Draft              OpenPGP and vCard               October 2026
        MUST be ignored: it is not for a third party to say where a
        certificate lives.
 
-
-
-
-
-
+   If the certificate names no keyserver, the implementation's default
+   keyserver is used.  The keyserver URI is turned into an HTTP URL by
+   mapping the scheme hkps to https and hkp to http, adding the port
+   11371 to hkp when none is given, and appending a legacy HKP "get"
+   lookup ([I-D.ietf-openpgp-hkp]) for the primary key fingerprint.  The
 
 
 
@@ -394,16 +394,12 @@ Brucker & Mnêmê           Expires 5 April 2027                  [Page 7]
 Internet-Draft              OpenPGP and vCard               October 2026
 
 
-   If the certificate names no keyserver, the implementation's default
-   keyserver is used.  The keyserver URI is turned into an HTTP URL by
-   mapping the scheme hkps to https and hkp to http, adding the port
-   11371 to hkp when none is given, and appending a legacy HKP "get"
-   lookup ([I-D.ietf-openpgp-hkp]) for the primary key fingerprint.  The
-   fingerprint SHOULD be written in lower case, so that two tools
-   rendering the same certificate write the same card:
+   fingerprint SHOULD be written in upper case, as fingerprints and key
+   IDs usually are, so that two tools rendering the same certificate
+   write the same card:
 
    KEY;MEDIATYPE=application/pgp-keys:https://keys.example.org/pks/lo
-    okup?op=get&search=0x<fingerprint>
+    okup?op=get&search=0x<FINGERPRINT>
 
    The inline copy is the binary Transferable Public Key (Section 10.1
    of [RFC9580]), encoded in base64 as a data URI:
@@ -440,6 +436,10 @@ Internet-Draft              OpenPGP and vCard               October 2026
 
    The same card MAY be produced as a jCard [RFC7095].
 
+5.  Example
+
+   A certificate whose standing User IDs are:
+
 
 
 
@@ -450,18 +450,14 @@ Brucker & Mnêmê           Expires 5 April 2027                  [Page 8]
 Internet-Draft              OpenPGP and vCard               October 2026
 
 
-5.  Example
-
-   A certificate whose standing User IDs are:
-
    UID:urn:eid:u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
    FN:François-Xavier de Tocqueville
    François-Xavier de Tocqueville <fx@example.org>
    TEL:+33612345678
    NOTE:Ingénieur\, horticulteur
 
-   and whose self-signatures name hkps://keys.example.org as preferred
-   keyserver, is rendered as:
+   whose name-addr User ID is flagged primary, and whose self-signatures
+   name hkps://keys.example.org as preferred keyserver, is rendered as:
 
    BEGIN:VCARD
    VERSION:4.0
@@ -472,7 +468,7 @@ Internet-Draft              OpenPGP and vCard               October 2026
    TEL:+33612345678
    NOTE:Ingénieur\, horticulteur
    KEY;MEDIATYPE=application/pgp-keys:https://keys.example.org/pks/lo
-    okup?op=get&search=0x<fingerprint>
+    okup?op=get&search=0x<FINGERPRINT>
    KEY:data:application/pgp-keys;base64,<base64>
    END:VCARD
 
@@ -497,6 +493,10 @@ Internet-Draft              OpenPGP and vCard               October 2026
    *  pgp2vcard, a page served by keys.foopgp.org (JavaScript, in the
       browser): renders a pasted certificate as a vCard or a jCard,
       including the KIND and GEO inferences of Section 4.5.
+
+
+
+
 
 
 

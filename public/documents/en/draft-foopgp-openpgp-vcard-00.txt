@@ -73,21 +73,21 @@ Table of Contents
      4.2.  FN  . . . . . . . . . . . . . . . . . . . . . . . . . . .   6
      4.3.  Carried Properties  . . . . . . . . . . . . . . . . . . .   6
      4.4.  EMAIL . . . . . . . . . . . . . . . . . . . . . . . . . .   6
-     4.5.  UID, KIND and GEO . . . . . . . . . . . . . . . . . . . .   6
+     4.5.  UID, KIND and GEO . . . . . . . . . . . . . . . . . . . .   7
      4.6.  KEY . . . . . . . . . . . . . . . . . . . . . . . . . . .   7
      4.7.  PHOTO . . . . . . . . . . . . . . . . . . . . . . . . . .   8
      4.8.  Line Folding  . . . . . . . . . . . . . . . . . . . . . .   8
      4.9.  jCard . . . . . . . . . . . . . . . . . . . . . . . . . .   8
-   5.  Example . . . . . . . . . . . . . . . . . . . . . . . . . . .   8
+   5.  Example . . . . . . . . . . . . . . . . . . . . . . . . . . .   9
    6.  Implementation Status . . . . . . . . . . . . . . . . . . . .   9
-   7.  Security Considerations . . . . . . . . . . . . . . . . . . .   9
+   7.  Security Considerations . . . . . . . . . . . . . . . . . . .  10
    8.  Privacy Considerations  . . . . . . . . . . . . . . . . . . .  10
    9.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  10
    10. References  . . . . . . . . . . . . . . . . . . . . . . . . .  10
      10.1.  Normative References . . . . . . . . . . . . . . . . . .  10
      10.2.  Informative References . . . . . . . . . . . . . . . . .  11
    Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .  11
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  11
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  12
 
 1.  Introduction
 
@@ -314,21 +314,21 @@ Internet-Draft              OpenPGP and vCard               October 2026
    For each standing name-addr User ID, the address between the last
    pair of angle brackets is written as an EMAIL property, provided that
    it contains an "@" and that nothing but whitespace follows the
-   closing bracket.  Addresses are numbered with the PREF parameter,
-   starting at 1, in the order of the User IDs:
+   closing bracket.  The address of the primary User ID -- the standing
+   User ID whose newest self-signature carries the Primary User ID
+   subpacket (Section 5.2.3.27 of [RFC9580]) -- is written first, with
+   PREF=1, which is the address an address book offers first.  The other
+   addresses follow with PREF=2, 3 and so on, in the order of the User
+   IDs:
 
    EMAIL;PREF=1:alice@example.org
+   EMAIL;PREF=2:alice@work.example.org
 
-   An implementation MAY instead give PREF=1 to the address of the
-   primary User ID, which is the one an address book offers first, and
-   number the others after it.
+   If the primary User ID carries no address, or if no User ID is
+   flagged primary, no address is given PREF=1: the holder has not put
+   one forward, and an implementation MUST NOT choose one in their name.
 
-4.5.  UID, KIND and GEO
 
-   A standing UID property User ID is written as it stands
-   (Section 4.3):
-
-   UID:urn:eid:u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
 
 
 
@@ -337,6 +337,13 @@ Brucker & Mnêmê           Expires 5 April 2027                  [Page 6]
 
 Internet-Draft              OpenPGP and vCard               October 2026
 
+
+4.5.  UID, KIND and GEO
+
+   A standing UID property User ID is written as it stands
+   (Section 4.3):
+
+   UID:urn:eid:u4vb6UZTMKsllgoH760pc0xwe_42.17-002.76
 
    When there is none, an implementation MAY derive the vCard UID from
    the deprecated comment form of a legacy User ID (Section 3.5),
@@ -358,7 +365,7 @@ Internet-Draft              OpenPGP and vCard               October 2026
    gains certifications and loses User IDs, and once inline, so that the
    card is usable on its own.
 
-   The address SHOULD be that of the keyserver the certificate prefers,
+   The address MUST be that of the keyserver the certificate prefers,
    chosen as follows:
 
    1.  For each User ID, take its newest self-signature (type 0x10 to
@@ -374,10 +381,21 @@ Internet-Draft              OpenPGP and vCard               October 2026
        MUST be ignored: it is not for a third party to say where a
        certificate lives.
 
+
+
+
+
+
+
+
+
+Brucker & Mnêmê           Expires 5 April 2027                  [Page 7]
+
+Internet-Draft              OpenPGP and vCard               October 2026
+
+
    If the certificate names no keyserver, the implementation's default
-   keyserver is used.  An implementation MAY use its own configured
-   keyserver instead of the certificate's, for the privacy reason given
-   in Section 7.  The keyserver URI is turned into an HTTP URL by
+   keyserver is used.  The keyserver URI is turned into an HTTP URL by
    mapping the scheme hkps to https and hkp to http, adding the port
    11371 to hkp when none is given, and appending a legacy HKP "get"
    lookup ([I-D.ietf-openpgp-hkp]) for the primary key fingerprint.  The
@@ -386,13 +404,6 @@ Internet-Draft              OpenPGP and vCard               October 2026
 
    KEY;MEDIATYPE=application/pgp-keys:https://keys.example.org/pks/lo
     okup?op=get&search=0x<fingerprint>
-
-
-
-Brucker & Mnêmê           Expires 5 April 2027                  [Page 7]
-
-Internet-Draft              OpenPGP and vCard               October 2026
-
 
    The inline copy is the binary Transferable Public Key (Section 10.1
    of [RFC9580]), encoded in base64 as a data URI:
@@ -429,6 +440,16 @@ Internet-Draft              OpenPGP and vCard               October 2026
 
    The same card MAY be produced as a jCard [RFC7095].
 
+
+
+
+
+
+Brucker & Mnêmê           Expires 5 April 2027                  [Page 8]
+
+Internet-Draft              OpenPGP and vCard               October 2026
+
+
 5.  Example
 
    A certificate whose standing User IDs are:
@@ -441,14 +462,6 @@ Internet-Draft              OpenPGP and vCard               October 2026
 
    and whose self-signatures name hkps://keys.example.org as preferred
    keyserver, is rendered as:
-
-
-
-
-Brucker & Mnêmê           Expires 5 April 2027                  [Page 8]
-
-Internet-Draft              OpenPGP and vCard               October 2026
-
 
    BEGIN:VCARD
    VERSION:4.0
@@ -479,12 +492,19 @@ Internet-Draft              OpenPGP and vCard               October 2026
    *  foodjis for Android (Kotlin): writes FN, NOTE, TEL, ADR, URL, LANG
       and GEO User IDs from a security key, and upgrades legacy
       certificates before any change; renders a certificate as a vCard
-      to share it, giving PREF=1 to the address of the primary User ID
-      and taking the KEY address from its own configured keyserver.
+      to share it.
 
    *  pgp2vcard, a page served by keys.foopgp.org (JavaScript, in the
       browser): renders a pasted certificate as a vCard or a jCard,
       including the KIND and GEO inferences of Section 4.5.
+
+
+
+
+Brucker & Mnêmê           Expires 5 April 2027                  [Page 9]
+
+Internet-Draft              OpenPGP and vCard               October 2026
+
 
 7.  Security Considerations
 
@@ -495,17 +515,6 @@ Internet-Draft              OpenPGP and vCard               October 2026
    vCard rendered from a certificate SHOULD show which lines are
    certified, or at least the validity of the certificate as a whole.
 
-
-
-
-
-
-
-Brucker & Mnêmê           Expires 5 April 2027                  [Page 9]
-
-Internet-Draft              OpenPGP and vCard               October 2026
-
-
    A vCard rendered from a certificate is only as trustworthy as the
    certificate it was rendered from.  A vCard that merely carries a KEY
    property is not thereby authenticated: the key in it must be checked
@@ -513,10 +522,10 @@ Internet-Draft              OpenPGP and vCard               October 2026
 
    The keyserver address in a KEY property is chosen by the
    certificate's holder.  Fetching it tells that keyserver that the card
-   is being used; an application MAY prefer its own keyserver.  Only the
-   holder's own self-signatures may choose it (Section 4.6); otherwise
-   any third party could redirect the card's updates by certifying a
-   User ID with a Preferred Key Server subpacket.
+   is being used.  Only the holder's own self-signatures may choose it
+   (Section 4.6); otherwise any third party could redirect the card's
+   updates by certifying a User ID with a Preferred Key Server
+   subpacket.
 
    Free-text values are written into User IDs and vCards verbatim except
    for escaping.  An implementation MUST escape values when writing
@@ -545,15 +554,6 @@ Internet-Draft              OpenPGP and vCard               October 2026
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/rfc/rfc2119>.
 
-   [RFC5322]  Resnick, P., Ed., "Internet Message Format", RFC 5322,
-              DOI 10.17487/RFC5322, October 2008,
-              <https://www.rfc-editor.org/rfc/rfc5322>.
-
-   [RFC6350]  Perreault, S., "vCard Format Specification", RFC 6350,
-              DOI 10.17487/RFC6350, August 2011,
-              <https://www.rfc-editor.org/rfc/rfc6350>.
-
-
 
 
 
@@ -561,6 +561,14 @@ Brucker & Mnêmê           Expires 5 April 2027                 [Page 10]
 
 Internet-Draft              OpenPGP and vCard               October 2026
 
+
+   [RFC5322]  Resnick, P., Ed., "Internet Message Format", RFC 5322,
+              DOI 10.17487/RFC5322, October 2008,
+              <https://www.rfc-editor.org/rfc/rfc5322>.
+
+   [RFC6350]  Perreault, S., "vCard Format Specification", RFC 6350,
+              DOI 10.17487/RFC6350, August 2011,
+              <https://www.rfc-editor.org/rfc/rfc6350>.
 
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
@@ -602,14 +610,6 @@ Acknowledgments
    members of the foopgp association, whose experience of real mail
    clients decided Section 3.3.
 
-Authors' Addresses
-
-   Jean-Jacques Brucker
-   foopgp
-   Email: jjbrucker@foopgp.org
-
-
-
 
 
 
@@ -618,16 +618,16 @@ Brucker & Mnêmê           Expires 5 April 2027                 [Page 11]
 Internet-Draft              OpenPGP and vCard               October 2026
 
 
+Authors' Addresses
+
+   Jean-Jacques Brucker
+   foopgp
+   Email: jjbrucker@foopgp.org
+
+
    Mnêmê
    foopgp
    Email: mneme@foopgp.org
-
-
-
-
-
-
-
 
 
 

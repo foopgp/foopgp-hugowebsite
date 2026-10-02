@@ -14,7 +14,7 @@ type: "post"
 
 ***Note :*** *Pour ce qu'est une identité **PGP ID** et à quoi elle sert, [voir la page qui lui est consacrée](/fr/solutions/pgp-id/). Pour rester informé, [inscrivez-vous à nos listes de diffusion](/fr/contact/).*
 
-***Mise à jour du 1er octobre 2026 :*** *la version 1.3.3 est disponible ; elle parle grec et turc, et signe vos commits git ; ses nouveautés feront l'objet d'un prochain article. [Ce qui a changé depuis la première](#depuis).*
+***Mise à jour du 2 octobre 2026 :*** *la version 1.3.4 est disponible ; elle vérifie un fichier contre sa signature détachée — l'APK ci-dessous par exemple — et sait signer un message sans le chiffrer. [Ce qui a changé depuis la première](#depuis).*
 
 **[foodjis](/fr/solutions/pgp-id/) ne demande plus d'ordinateur.** L'assistant
 qui donne naissance à une identité numérique, l'écrit dans une clé de sécurité
@@ -160,13 +160,14 @@ C'est la version du magasin Google Play, signée par la même clé : installée
 d'ici ou de là, l'une met l'autre à jour, et les téléphones qui refusent les
 applications d'une clé de développement l'acceptent.
 
-- **[foodjis_1.3.3.apk](/largefiles/foodjis/foodjis_1.3.3.apk)** —
+- **[foodjis_1.3.4.apk](/largefiles/foodjis/foodjis_1.3.4.apk)** —
   Android 7 ou plus récent, onze langues, 7,7 Mo.
-- L'[empreinte](/largefiles/foodjis/foodjis_1.3.3.apk.sha256) du fichier :
-  `2e8563a78ea7211674f2700d2afbb204e07c401fab52954e9172deccadb14c64`.
-- Et sa [signature détachée](/largefiles/foodjis/foodjis_1.3.3.apk.asc),
+- L'[empreinte](/largefiles/foodjis/foodjis_1.3.4.apk.sha256) du fichier :
+  `73a8be30d9e762a532842e8b6428c584628d917d7588edc5b0964d61f397eeaa`.
+- Et sa [signature détachée](/largefiles/foodjis/foodjis_1.3.4.apk.asc),
   faite par une identité PGP ID, que votre outil OpenPGP habituel vérifiera
-  contre le certificat publié pour `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76`. C'est exactement l'usage
+  contre le certificat publié pour `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76` —
+  foodjis lui-même aussi, depuis la 1.3.4, sur sa page Chiffrer / déchiffrer. C'est exactement l'usage
   dont parle cet article : vous n'avez pas à nous croire, vous pouvez vérifier.
 
 Une clé de sécurité neuve veut trois secondes d'alimentation sur n'importe quel

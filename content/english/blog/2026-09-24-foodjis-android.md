@@ -14,7 +14,7 @@ type: "post"
 
 ***Note:*** *For what a **PGP ID** identity is and what it is for, [see the page devoted to it](/solutions/pgp-id/). To keep up, [join our mailing lists](/contact/).*
 
-***Updated on 1 October 2026:*** *version 1.3.3 is out; it speaks Greek and Turkish, and signs your git commits; what it brings will be the subject of a coming article. [What changed since the first](#since).*
+***Updated on 2 October 2026:*** *version 1.3.4 is out; it checks a file against its detached signature — the APK below, for instance — and can sign a message without encrypting it. [What changed since the first](#since).*
 
 **[foodjis](/solutions/pgp-id/) no longer asks for a computer.** The assistant
 that gives birth to a digital identity, writes it into a security key and lets
@@ -152,13 +152,14 @@ This is the Google Play version, signed with the same key: installed from here
 or from there, each updates the other, and phones that refuse applications
 signed with a development key accept it.
 
-- **[foodjis_1.3.3.apk](/largefiles/foodjis/foodjis_1.3.3.apk)** —
+- **[foodjis_1.3.4.apk](/largefiles/foodjis/foodjis_1.3.4.apk)** —
   Android 7 or newer, eleven languages, 7.7 MB.
-- The file's [fingerprint](/largefiles/foodjis/foodjis_1.3.3.apk.sha256):
-  `2e8563a78ea7211674f2700d2afbb204e07c401fab52954e9172deccadb14c64`.
-- And its [detached signature](/largefiles/foodjis/foodjis_1.3.3.apk.asc),
+- The file's [fingerprint](/largefiles/foodjis/foodjis_1.3.4.apk.sha256):
+  `73a8be30d9e762a532842e8b6428c584628d917d7588edc5b0964d61f397eeaa`.
+- And its [detached signature](/largefiles/foodjis/foodjis_1.3.4.apk.asc),
   made by a PGP ID identity, which your usual OpenPGP tool will check against
-  the published certificate for `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76`. That is exactly the use this
+  the published certificate for `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76` —
+  and so will foodjis itself, since 1.3.4, on its Encrypt / decrypt page. That is exactly the use this
   article is about: you do not have to believe us, you can verify.
 
 A brand-new security key wants three seconds of power from any USB port before

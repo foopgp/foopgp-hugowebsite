@@ -12,6 +12,8 @@ image: "images/blog/2026/Two-volume_Yellow_Pages.png"
 type: "post"
 ---
 
+***Updated on 2 October 2026:*** *an e-mail address no longer takes the form of an `EMAIL:…` User ID: mail clients do not understand it. It stays an ordinary `Name <address>` User ID, which becomes the vCard's `EMAIL`.*
+
 Open your smartphone's address book, tap "share contact". What leaves your device is a **vCard**: a little text file — a name, a number, an e-mail, maybe a photo. Universal, readable everywhere — Android, iOS, Outlook, Thunderbird. And **utterly unverifiable**. Nothing in a vCard says it really comes from the person it names. You can forge one, say "from your bank", in seconds.
 
 Next to it sits an object that does not lie: the **OpenPGP certificate**. Signed, verifiable in the web of trust, it lets you sign, decrypt and authenticate. But to many, it's "just a key" — an opaque blob that describes no one and that few of us have filed away in our address book.
@@ -36,7 +38,7 @@ The question that reconciles the two worlds: *what if the OpenPGP certificate ce
 
 ## The certificate **is** a signed directory entry
 
-That is exactly what our tooling does: one **User ID per vCard property** (`FN:…`, `EMAIL:…`, `TEL:…`, `ADR:…`, `NOTE:…`), each being, by construction, **a valid vCard line**, all anchored on a pivot identifier — the [**EID**](/blog/2026-04-28-openpgp-id-spec/) (`urn:eid:…`), deterministic, decentralised and privacy-preserving. An OpenPGP certificate thus becomes a **complete, signed directory entry**, where only the owner can add or remove a field.
+That is exactly what our tooling does: one **User ID per vCard property** (`FN:…`, `TEL:…`, `ADR:…`, `NOTE:…`), each being, by construction, **a valid vCard line**, all anchored on a pivot identifier — the [**EID**](/blog/2026-04-28-openpgp-id-spec/) (`urn:eid:…`), deterministic, decentralised and privacy-preserving. An OpenPGP certificate thus becomes a **complete, signed directory entry**, where only the owner can add or remove a field. The e-mail address is the exception: it keeps the usual `Name <address>` form, which mail clients read.
 
 Two families of EID coexist, depending on the nature of the entity:
 

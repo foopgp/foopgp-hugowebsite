@@ -12,6 +12,8 @@ image: "images/blog/2026/Two-volume_Yellow_Pages.png"
 type: "post"
 ---
 
+***Mise à jour du 2 octobre 2026 :*** *une adresse électronique ne prend plus la forme d'un User ID `EMAIL:…` : les logiciels de messagerie ne le comprennent pas. Elle reste un User ID ordinaire, `Nom <adresse>`, qui devient l'`EMAIL` de la vCard.*
+
 Ouvrez le carnet d'adresses de votre smartphone, touchez « partager le contact ». Ce qui part, c'est une **vCard** : un petit fichier texte, un nom, un numéro, un e-mail, peut-être une photo. Universel, lisible partout — Android, iOS, Outlook, Thunderbird. Et **totalement invérifiable**. Rien, dans une vCard, ne dit qu'elle vient bien de la personne annoncée. On peut en fabriquer une, par exemple « de votre banque », en quelques secondes.
 
 À côté, il existe un objet qui, lui, ne ment pas : le **certificat OpenPGP**. Signé, vérifiable dans la toile de confiance, il permet de signer, déchiffrer et s'authentifier. Mais aux yeux de beaucoup, ce n'est « qu'une clé » — un bloc opaque qui ne décrit personne et que peu d'entre nous ont rangé dans leur carnet d'adresses.
@@ -36,7 +38,7 @@ La question qui réconcilie les deux mondes : *Et si le certificat OpenPGP certi
 
 ## Le certificat **est** une fiche d'annuaire signée
 
-C'est exactement ce que fait notre outillage : un **User ID par propriété vCard** (`FN:…`, `EMAIL:…`, `TEL:…`, `ADR:…`, `NOTE:…`), chacun étant par construction **une ligne vCard valide**, le tout ancré sur un identifiant pivot — l'[**EID**](/fr/blog/2026-04-28-openpgp-id-spec/) (`urn:eid:…`), déterministe, décentralisé et soucieux de la vie privée. Un certificat OpenPGP devient alors une **fiche d'annuaire complète et signée**, où seul le propriétaire peut ajouter ou retirer un champ.
+C'est exactement ce que fait notre outillage : un **User ID par propriété vCard** (`FN:…`, `TEL:…`, `ADR:…`, `NOTE:…`), chacun étant par construction **une ligne vCard valide**, le tout ancré sur un identifiant pivot — l'[**EID**](/fr/blog/2026-04-28-openpgp-id-spec/) (`urn:eid:…`), déterministe, décentralisé et soucieux de la vie privée. Un certificat OpenPGP devient alors une **fiche d'annuaire complète et signée**, où seul le propriétaire peut ajouter ou retirer un champ. L'adresse électronique fait exception : elle garde la forme habituelle `Nom <adresse>`, que lisent les logiciels de messagerie.
 
 Deux familles d'EID cohabitent, selon la nature de l'entité :
 

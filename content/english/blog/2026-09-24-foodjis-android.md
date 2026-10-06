@@ -14,7 +14,7 @@ type: "post"
 
 ***Note:*** *For what a **PGP ID** identity is and what it is for, [see the page devoted to it](/solutions/pgp-id/). To keep up, [join our mailing lists](/contact/).*
 
-***Updated on 6 October 2026:*** *version 1.3.5 is withdrawn: it could no longer generate an identity. Version 1.3.4 is offered below again, until 1.3.6 is out; it checks a file against its detached signature — the APK below, for instance — and can sign a message without encrypting it. [What changed since the first](#since).*
+***Updated on 6 October 2026:*** *version 1.3.6 is out; it replaces 1.3.5, withdrawn because it could no longer generate an identity. It encrypts or signs any file, opened or shared from another application; since 1.3.4, it checks a file against its detached signature — the APK below, for instance — and can sign a message without encrypting it. [What changed since the first](#since).*
 
 **[foodjis](/solutions/pgp-id/) no longer asks for a computer.** The assistant
 that gives birth to a digital identity, writes it into a security key and lets
@@ -152,11 +152,11 @@ This is the Google Play version, signed with the same key: installed from here
 or from there, each updates the other, and phones that refuse applications
 signed with a development key accept it.
 
-- **[foodjis_1.3.4.apk](/largefiles/foodjis/foodjis_1.3.4.apk)** —
-  Android 7 or newer, eleven languages, 7.7 MB.
-- The file's [fingerprint](/largefiles/foodjis/foodjis_1.3.4.apk.sha256):
-  `73a8be30d9e762a532842e8b6428c584628d917d7588edc5b0964d61f397eeaa`.
-- And its [detached signature](/largefiles/foodjis/foodjis_1.3.4.apk.asc),
+- **[foodjis_1.3.6.apk](/largefiles/foodjis/foodjis_1.3.6.apk)** —
+  Android 7 or newer, eleven languages, 4.7 MB.
+- The file's [fingerprint](/largefiles/foodjis/foodjis_1.3.6.apk.sha256):
+  `b33619b72df4eeb5fe783f6ed447ae8271f0e96112599cd42b196b09edc10280`.
+- And its [detached signature](/largefiles/foodjis/foodjis_1.3.6.apk.asc),
   made by a PGP ID identity, which your usual OpenPGP tool will check against
   the published certificate for `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76` —
   and so will foodjis itself, since 1.3.4, on its Encrypt / decrypt page. That is exactly the use this

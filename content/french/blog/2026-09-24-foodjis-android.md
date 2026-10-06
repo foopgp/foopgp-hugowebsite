@@ -14,7 +14,7 @@ type: "post"
 
 ***Note :*** *Pour ce qu'est une identité **PGP ID** et à quoi elle sert, [voir la page qui lui est consacrée](/fr/solutions/pgp-id/). Pour rester informé, [inscrivez-vous à nos listes de diffusion](/fr/contact/).*
 
-***Mise à jour du 6 octobre 2026 :*** *la version 1.3.5 est retirée : elle ne savait plus générer une identité. La 1.3.4 est de nouveau proposée ci-dessous, en attendant la 1.3.6 ; elle vérifie un fichier contre sa signature détachée — l'APK ci-dessous par exemple — et sait signer un message sans le chiffrer. [Ce qui a changé depuis la première](#depuis).*
+***Mise à jour du 6 octobre 2026 :*** *la version 1.3.6 est disponible ; elle remplace la 1.3.5, retirée parce qu'elle ne savait plus générer une identité. Elle chiffre ou signe tout fichier, ouvert ou partagé depuis une autre application ; depuis la 1.3.4, elle vérifie un fichier contre sa signature détachée — l'APK ci-dessous par exemple — et sait signer un message sans le chiffrer. [Ce qui a changé depuis la première](#depuis).*
 
 **[foodjis](/fr/solutions/pgp-id/) ne demande plus d'ordinateur.** L'assistant
 qui donne naissance à une identité numérique, l'écrit dans une clé de sécurité
@@ -160,11 +160,11 @@ C'est la version du magasin Google Play, signée par la même clé : installée
 d'ici ou de là, l'une met l'autre à jour, et les téléphones qui refusent les
 applications d'une clé de développement l'acceptent.
 
-- **[foodjis_1.3.4.apk](/largefiles/foodjis/foodjis_1.3.4.apk)** —
-  Android 7 ou plus récent, onze langues, 7,7 Mo.
-- L'[empreinte](/largefiles/foodjis/foodjis_1.3.4.apk.sha256) du fichier :
-  `73a8be30d9e762a532842e8b6428c584628d917d7588edc5b0964d61f397eeaa`.
-- Et sa [signature détachée](/largefiles/foodjis/foodjis_1.3.4.apk.asc),
+- **[foodjis_1.3.6.apk](/largefiles/foodjis/foodjis_1.3.6.apk)** —
+  Android 7 ou plus récent, onze langues, 4,7 Mo.
+- L'[empreinte](/largefiles/foodjis/foodjis_1.3.6.apk.sha256) du fichier :
+  `b33619b72df4eeb5fe783f6ed447ae8271f0e96112599cd42b196b09edc10280`.
+- Et sa [signature détachée](/largefiles/foodjis/foodjis_1.3.6.apk.asc),
   faite par une identité PGP ID, que votre outil OpenPGP habituel vérifiera
   contre le certificat publié pour `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76` —
   foodjis lui-même aussi, depuis la 1.3.4, sur sa page Chiffrer / déchiffrer. C'est exactement l'usage

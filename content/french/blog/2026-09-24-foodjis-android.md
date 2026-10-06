@@ -14,7 +14,7 @@ type: "post"
 
 ***Note :*** *Pour ce qu'est une identité **PGP ID** et à quoi elle sert, [voir la page qui lui est consacrée](/fr/solutions/pgp-id/). Pour rester informé, [inscrivez-vous à nos listes de diffusion](/fr/contact/).*
 
-***Mise à jour du 6 octobre 2026 :*** *la version 1.3.7 est disponible ; tout fichier s'ouvre désormais avec foodjis depuis un explorateur de fichiers, pour être chiffré ou signé, ou importé si c'est un certificat. La 1.3.5 a été retirée : elle ne savait plus générer une identité ; depuis la 1.3.4, elle vérifie un fichier contre sa signature détachée — l'APK ci-dessous par exemple — et sait signer un message sans le chiffrer. [Ce qui a changé depuis la première](#depuis).*
+***Mise à jour du 6 octobre 2026 :*** *la version 1.3.7 est disponible ; tout fichier s'ouvre désormais avec foodjis depuis un explorateur de fichiers, pour être chiffré ou signé, ou importé si c'est un certificat. Depuis la 1.3.4, l'application vérifie un fichier contre sa signature détachée — l'APK ci-dessous par exemple — et sait signer un message sans le chiffrer. La 1.3.5, qui ne savait plus générer une identité, a été retirée. [Ce qui a changé depuis la première](#depuis).*
 
 **[foodjis](/fr/solutions/pgp-id/) ne demande plus d'ordinateur.** L'assistant
 qui donne naissance à une identité numérique, l'écrit dans une clé de sécurité

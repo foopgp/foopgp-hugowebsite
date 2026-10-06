@@ -14,7 +14,7 @@ type: "post"
 
 ***Note:*** *For what a **PGP ID** identity is and what it is for, [see the page devoted to it](/solutions/pgp-id/). To keep up, [join our mailing lists](/contact/).*
 
-***Updated on 6 October 2026:*** *version 1.3.7 is out; any file now opens with foodjis from a file manager, to be encrypted or signed, or imported if it is a certificate. Version 1.3.5 was withdrawn: it could no longer generate an identity; since 1.3.4, it checks a file against its detached signature — the APK below, for instance — and can sign a message without encrypting it. [What changed since the first](#since).*
+***Updated on 6 October 2026:*** *version 1.3.7 is out; any file now opens with foodjis from a file manager, to be encrypted or signed, or imported if it is a certificate. Since 1.3.4, the application checks a file against its detached signature — the APK below, for instance — and can sign a message without encrypting it. Version 1.3.5, which could no longer generate an identity, was withdrawn. [What changed since the first](#since).*
 
 **[foodjis](/solutions/pgp-id/) no longer asks for a computer.** The assistant
 that gives birth to a digital identity, writes it into a security key and lets

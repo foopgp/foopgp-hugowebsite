@@ -31,7 +31,7 @@ On the curve above, every passing month makes the *same* amount of djis more exp
 
 So save money and make your purchasing power grow — **invest now** in the foopgp association:
 
-{{< helloasso-button >}}
+{{< helloasso-widget >}}
 
 🚨 ***On HelloAsso, give the e-mail address you put in the digital identity held on your security key: it is the link between the two, and what lets you generate your djis (Ɉ).*** 🚨
 

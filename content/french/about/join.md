@@ -16,8 +16,7 @@ système plus respectueux de l'ensemble du vivant**](/fr/about/white-book/). [^w
 
 [^wb]: Notre [livre blanc](/fr/about/white-book/) : <https://foopgp.org/fr/about/white-book/>
 
-
-{{< helloasso-count >}}
+{{< helloasso-button >}}
 
 ---
 

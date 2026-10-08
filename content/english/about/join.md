@@ -17,7 +17,7 @@ system more respectful of all living things**](/about/white-book/). [^wb]
 
 [^wb]: Our [white paper](/about/white-book/): <https://foopgp.org/about/white-book/>
 
-{{< helloasso-count >}}
+{{< helloasso-button >}}
 
 ---
 

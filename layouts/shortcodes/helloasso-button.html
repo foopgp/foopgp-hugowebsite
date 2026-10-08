@@ -8,7 +8,7 @@
   browser, the month it is read in: a page built on the 30th is still read on
   the 2nd.
 */ -}}
-{{- $base := "https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/fr-" -}}
+{{- $base := print "https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/" (cond (eq .Page.Lang "fr") "fr" "en") "-" -}}
 {{- $id := printf "helloassoButton-%d" .Ordinal -}}
 <p style="text-align:center;margin:1.5em 0;">
   <a id="{{ $id }}" class="btn btn-primary" style="text-decoration:none;" target="_blank" rel="noopener" href="{{ $base }}{{ now.Format "2006-01" }}">{{ i18n "subscribe_button" }}</a>

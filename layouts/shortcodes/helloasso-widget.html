@@ -1,11 +1,10 @@
 {{- /*
   helloasso-widget — this month's subscription campaign, HelloAsso's own
-  form in a frame. There is one campaign a month, named after it: the
-  address is written when the site is built, then set again by the
-  reader's browser. HelloAsso chooses the form's language from the
-  browser's (French, English, Spanish).
+  form in a frame. There is one campaign a month and per language, named
+  after both (fr-2026-10, en-2026-10): the page's language chooses, and
+  the month is set by the reader's browser.
 */ -}}
-{{- $base := "https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/fr-" -}}
+{{- $base := print "https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/" (cond (eq .Page.Lang "fr") "fr" "en") "-" -}}
 {{- $id := printf "haWidget-%d" .Ordinal -}}
 <iframe id="{{ $id }}" title="{{ i18n "subscribe_button" }}"
         allow="payment 'self' https://paymenthub.helloassopay.com https://helloasso.com"

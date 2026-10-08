@@ -31,9 +31,9 @@ Sur la courbe ci-dessus, chaque mois qui passe rend la *même* quantité de djis
 
 Alors économisez et faites fructifier votre pouvoir d'achat — **investissez dès maintenant** dans l'association foopgp :
 
-{{< helloasso-widget >}}
-
 🚨 ***Renseignez sur HelloAsso l'adresse courriel que vous mettez dans votre identité numérique sur votre clé de sécurité : c'est elle qui fait le lien et vous permet de générer vos djis (Ɉ).*** 🚨
+
+{{< helloasso-widget >}}
 
 ---
 

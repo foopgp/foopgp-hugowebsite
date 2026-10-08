@@ -14,19 +14,17 @@
   var frame = document.getElementById("{{ $id }}");
   var now = new Date();
   var month = now.getFullYear() + "-" + ("0" + (now.getMonth() + 1)).slice(-2);
-  // The form says how tall it is, and is believed while it loads only:
-  // past its first page it asks for a little more than it has, whatever
-  // it has, and would grow without end.
-  var SETTLE = 2000;
-  var settled = 0;
+  // The form says how tall it is, and is believed up to a ceiling: past
+  // its first page it asks for a little more than it has, whatever it
+  // has, and would grow without end; and it puts its button to go on at
+  // its very bottom, however far that is. Beyond the ceiling it scrolls.
+  var CEILING = 1200;
   window.addEventListener("message", function (e) {
     if (!/(^|\.)helloasso\.com$/.test(new URL(e.origin).hostname)) return;
     var height = e.data && e.data.height;
     if (!height) return;
-    if (!settled) settled = Date.now() + SETTLE;
-    if (Date.now() > settled) return;
-    var borders = frame.offsetHeight - frame.clientHeight;
-    if (height + borders > frame.offsetHeight) frame.style.height = Math.ceil(height) + borders + "px";
+    height = Math.min(Math.ceil(height) + frame.offsetHeight - frame.clientHeight, CEILING);
+    if (height > frame.offsetHeight) frame.style.height = height + "px";
   });
   frame.src = "{{ $base }}" + month + "/widget";
 })();

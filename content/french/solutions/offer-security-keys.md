@@ -26,10 +26,13 @@ Parce que le palier exprimé en euros évolue automatiquement avec la **stingyna
 Sur la courbe ci-dessus, chaque mois qui passe rend la *même* quantité de djis plus chère en euros :
 
 - En **juillet 2025** (AGE de Pelleautier, introduction du paramètre) : ≈ 114 € pour 6,42 Ɉ.
-- En **juin 2026**: = 149,79 €.
 - En **mai 2027**: = 199,09 €.
 - En **avril 2028**: = 268,77 €.
 
+Alors économisez et faite fructifier votre pouvoir d'achat — **investissez dès maintenant** dans l'association foopgp :
+
+{{< helloasso-button >}}
+
 ---
 
-***Pour découvrir les nombreux usages que vous pouvez faire de ces clés, nous vous invitons à [consulter nos formations](/fr/course).***
+*Pour découvrir les nombreux usages que vous pouvez faire de ces clés, nous vous invitons à [consulter nos formations](/fr/course).*

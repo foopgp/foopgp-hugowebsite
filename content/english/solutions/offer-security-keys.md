@@ -7,7 +7,7 @@ bg_image: "images/backgrounds/Cartographie.jpg"
 description : "How foopgp provides hardware security keys to its members"
 ---
 
-foopgp **does not sell** its physical security keys: it **provides** them to its members as soon as their cumulative subscriptions have generated **6.42 Ɉ** (≈ €146 in May 2026).
+foopgp **does not sell** its physical security keys: it **provides** them to its members as soon as their cumulative subscriptions have generated **6.42 Ɉ** ({{< dji-threshold-now target="6.42" >}}).
 
 Available models, at the member's choice and according to stock:
 
@@ -26,10 +26,15 @@ Because the threshold expressed in euros evolves automatically with the **stingy
 On the curve above, every passing month makes the *same* amount of djis more expensive in euros:
 
 - In **July 2025** (AGE of Pelleautier, introduction of the parameter): ≈ €114 for 6.42 Ɉ.
-- In **June 2026**: = €149.79.
 - In **May 2027**: = €199.09.
 - In **April 2028**: = €268.77.
 
+So save money and make your purchasing power grow — **invest now** in the foopgp association:
+
+{{< helloasso-button >}}
+
+🚨 ***On HelloAsso, give the e-mail address you put in the digital identity held on your security key: it is the link between the two, and what lets you generate your djis (Ɉ).*** 🚨
+
 ---
 
-***To discover the many uses you can make of these keys, we invite you to [consult our training courses](/course).***
+*To discover the many uses you can make of these keys, we invite you to [consult our training courses](/course).*

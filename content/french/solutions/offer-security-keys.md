@@ -7,7 +7,7 @@ bg_image: "images/backgrounds/Cartographie.jpg"
 description : "Comment foopgp fournit les clés matérielles à ses adhérents"
 ---
 
-L'association foopgp **ne vend pas** ses clés de sécurité physiques : elle les **fournit** à ses adhérents dès que leurs cotisations cumulées ont généré **6,42 Ɉ** (≈ 146 € en mai 2026).
+L'association foopgp **ne vend pas** ses clés de sécurité physiques : elle les **fournit** à ses adhérents dès que leurs cotisations cumulées ont généré **6,42 Ɉ** ({{< dji-threshold-now target="6.42" >}}).
 
 Modèles disponibles, au choix de l'adhérent et selon arrivage :
 
@@ -26,14 +26,14 @@ Parce que le palier exprimé en euros évolue automatiquement avec la **stingyna
 Sur la courbe ci-dessus, chaque mois qui passe rend la *même* quantité de djis plus chère en euros :
 
 - En **juillet 2025** (AGE de Pelleautier, introduction du paramètre) : ≈ 114 € pour 6,42 Ɉ.
-- En **mai 2027**: = 199,09 €.
-- En **avril 2028**: = 268,77 €.
+- En **mai 2027** : = 199,09 €.
+- En **avril 2028** : = 268,77 €.
 
-Alors économisez et faite fructifier votre pouvoir d'achat — **investissez dès maintenant** dans l'association foopgp :
+Alors économisez et faites fructifier votre pouvoir d'achat — **investissez dès maintenant** dans l'association foopgp :
 
 {{< helloasso-button >}}
 
-🚨 ***Renseignez sur HelloAsso l'adresse courriel que vous mettez dans votre identité numérique sur votre clé de sécurité : C'est elle qui fait le lien et vous permet de générer vos djis (Ɉ).*** 🚨
+🚨 ***Renseignez sur HelloAsso l'adresse courriel que vous mettez dans votre identité numérique sur votre clé de sécurité : c'est elle qui fait le lien et vous permet de générer vos djis (Ɉ).*** 🚨
 
 ---
 

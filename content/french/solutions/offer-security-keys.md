@@ -33,6 +33,8 @@ Alors économisez et faite fructifier votre pouvoir d'achat — **investissez d�
 
 {{< helloasso-button >}}
 
+🚨 ***Renseignez sur HelloAsso l'adresse courriel que vous mettez dans votre identité numérique sur votre clé de sécurité : C'est elle qui fait le lien et vous permet de générer vos djis (Ɉ).*** 🚨
+
 ---
 
 *Pour découvrir les nombreux usages que vous pouvez faire de ces clés, nous vous invitons à [consulter nos formations](/fr/course).*

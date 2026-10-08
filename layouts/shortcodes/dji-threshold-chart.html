@@ -77,6 +77,12 @@
     if (nowIdx >= 0 && nowIdx < labels.length) {
       todayData[nowIdx] = Math.round(threshold(nowMonthStart) * 100) / 100;
     }
+    // The amount in the legend itself: nobody should have to hover over a
+    // point to learn what the threshold is today.
+    var todayLabel = LANG === "fr" ? "aujourd'hui" : "today";
+    if (todayData[nowIdx] != null) {
+      todayLabel += (LANG === "fr" ? " : " : ": ") + fmtEur(todayData[nowIdx]);
+    }
 
     // Force a font stack that covers U+0248 (Ɉ). Chart.js draws to canvas
     // using its own default ("Helvetica Neue", Helvetica, Arial), which
@@ -104,7 +110,7 @@
             pointHoverRadius: 5
           },
           {
-            label: LANG === "fr" ? "aujourd'hui" : "today",
+            label: todayLabel,
             data: todayData,
             borderColor: "#D32F2F",
             backgroundColor: "#D32F2F",
@@ -130,6 +136,7 @@
             callbacks: {
               label: function (c) {
                 if (c.parsed.y === null) return null;
+                if (c.dataset.label === todayLabel) return todayLabel;
                 return c.dataset.label + " — " + fmtEur(c.parsed.y);
               }
             }

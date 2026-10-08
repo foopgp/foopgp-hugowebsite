@@ -1,1 +1,22 @@
-<iframe id="haWidgetButton" allowtransparency="true" src="https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/fr-2026-10/widget-bouton" style="width: 100%; height: 70px; border: none;"></iframe>
+{{- /*
+  helloasso-button — a button to this month's subscription campaign.
+
+  HelloAsso opens one campaign a month, named fr-YYYY-MM, and its own button
+  widget says "Contribuer" in French whatever the page's language. So the
+  button is ours: its word comes from i18n ("subscribe_button"), and its
+  address names the month -- the month this site was built in, then, in the
+  browser, the month it is read in: a page built on the 30th is still read on
+  the 2nd.
+*/ -}}
+{{- $base := "https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/fr-" -}}
+{{- $id := printf "helloassoButton-%d" .Ordinal -}}
+<p style="text-align:center;margin:1.5em 0;">
+  <a id="{{ $id }}" class="btn btn-primary" style="text-decoration:none;" target="_blank" rel="noopener" href="{{ $base }}{{ now.Format "2006-01" }}">{{ i18n "subscribe_button" }}</a>
+</p>
+<script>
+(function () {
+  var now = new Date();
+  var month = now.getFullYear() + "-" + ("0" + (now.getMonth() + 1)).slice(-2);
+  document.getElementById("{{ $id }}").href = "{{ $base }}" + month;
+})();
+</script>

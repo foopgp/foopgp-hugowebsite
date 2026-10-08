@@ -64,3 +64,5 @@
 - id: vote
   translation: vote
 
+- id: subscribe_button
+  translation: "Subscribe"

@@ -1,0 +1,19 @@
+{{- /*
+  dji-threshold-now — the cumulative subscription that reaches a target
+  amount of djis this month, in words: "≈ 166 € en octobre 2026".
+
+  Computed when the site is built, with the formula of dji-threshold-chart:
+  a figure written by hand in the page was five months old.
+
+  Params:
+    target  (float, default 6.42)  target amount in djis (Ɉ)
+*/ -}}
+{{- $target := float (.Get "target" | default "6.42") -}}
+{{- $months := add (mul (sub now.Year 2025) 12) (sub (int now.Month) 7) -}}
+{{- $sting := mul 1.06698620092382206660 (math.Pow 1.005 $months) -}}
+{{- $euros := math.Round (sub (math.Pow 2 (mul $target $sting)) 1) -}}
+{{- if eq .Page.Lang "fr" -}}
+≈ {{ $euros }} € en {{ now | time.Format "January 2006" }}
+{{- else -}}
+≈ €{{ $euros }} in {{ now | time.Format "January 2006" }}
+{{- end -}}

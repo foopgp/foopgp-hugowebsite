@@ -96,3 +96,6 @@
 
 - id: "white book"
   translation: "livre blanc"
+
+- id: subscribe_button
+  translation: "Cotiser"

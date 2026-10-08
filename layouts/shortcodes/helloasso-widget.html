@@ -14,10 +14,17 @@
   var frame = document.getElementById("{{ $id }}");
   var now = new Date();
   var month = now.getFullYear() + "-" + ("0" + (now.getMonth() + 1)).slice(-2);
-  // The form says how tall it is; it only ever grows.
+  // The form says how tall it is, and is believed while it loads only:
+  // past its first page it asks for a little more than it has, whatever
+  // it has, and would grow without end.
+  var SETTLE = 2000;
+  var settled = 0;
   window.addEventListener("message", function (e) {
     if (!/(^|\.)helloasso\.com$/.test(new URL(e.origin).hostname)) return;
     var height = e.data && e.data.height;
+    if (!height) return;
+    if (!settled) settled = Date.now() + SETTLE;
+    if (Date.now() > settled) return;
     var borders = frame.offsetHeight - frame.clientHeight;
     if (height + borders > frame.offsetHeight) frame.style.height = Math.ceil(height) + borders + "px";
   });

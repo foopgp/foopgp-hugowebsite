@@ -18,7 +18,8 @@
   window.addEventListener("message", function (e) {
     if (!/(^|\.)helloasso\.com$/.test(new URL(e.origin).hostname)) return;
     var height = e.data && e.data.height;
-    if (height > parseFloat(frame.style.height)) frame.style.height = height + "px";
+    var borders = frame.offsetHeight - frame.clientHeight;
+    if (height + borders > frame.offsetHeight) frame.style.height = Math.ceil(height) + borders + "px";
   });
   frame.src = "{{ $base }}" + month + "/widget";
 })();

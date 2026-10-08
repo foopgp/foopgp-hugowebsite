@@ -7,7 +7,9 @@ bg_image: "images/backgrounds/Cartographie.jpg"
 description : "Comment foopgp fournit les clés matérielles à ses adhérents"
 ---
 
-L'association foopgp **ne vend pas** ses clés de sécurité physiques : elle les **fournit** à ses adhérents dès que leurs cotisations cumulées ont généré **6,42 Ɉ** ({{< dji-threshold-now target="6.42" >}}).
+L'association foopgp **ne vend pas** ses clés de sécurité physiques : elle les **fournit** à ses adhérents dès que leurs cotisations cumulées ont généré **6,42 Ɉ**[^dji] ({{< dji-threshold-now target="6.42" >}}).
+
+[^dji]: *Pour en savoir plus sur le dji (Ɉ), voir [cette page](/fr/about/join/) ou [notre livre blanc](/fr/about/white-book/).*
 
 Modèles disponibles, au choix de l'adhérent et selon arrivage :
 

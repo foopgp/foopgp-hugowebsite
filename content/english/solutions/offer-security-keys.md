@@ -7,7 +7,9 @@ bg_image: "images/backgrounds/Cartographie.jpg"
 description : "How foopgp provides hardware security keys to its members"
 ---
 
-foopgp **does not sell** its physical security keys: it **provides** them to its members as soon as their cumulative subscriptions have generated **6.42 Ɉ** ({{< dji-threshold-now target="6.42" >}}).
+foopgp **does not sell** its physical security keys: it **provides** them to its members as soon as their cumulative subscriptions have generated **6.42 Ɉ**[^dji] ({{< dji-threshold-now target="6.42" >}}).
+
+[^dji]: *To learn more about the dji (Ɉ), see [this page](/about/join/) or [our white book](/about/white-book/).*
 
 Available models, at the member's choice and according to stock:
 

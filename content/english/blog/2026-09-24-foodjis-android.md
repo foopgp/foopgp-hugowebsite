@@ -14,7 +14,7 @@ type: "post"
 
 ***Note:*** *For what a **PGP ID** identity is and what it is for, [see the page devoted to it](/solutions/pgp-id/). To keep up, [join our mailing lists](/contact/).*
 
-***Updated on 9 October 2026:*** *version 1.3.8 is out; step ♥ of the home page leads to the page that explains how to receive a security key. Since 1.3.7, any file opens with foodjis from a file manager, to be encrypted or signed, or imported if it is a certificate. Since 1.3.4, the application checks a file against its detached signature — the APK below, for instance — and can sign a message without encrypting it. Version 1.3.5, which could no longer generate an identity, was withdrawn. [What changed since the first](#since).*
+***Updated on 12 October 2026:*** *version 1.3.9 is out; on the Encrypt / Decrypt page, each contact's picture goes with their name, a decrypted file opens directly, and the links in a message can be followed. Since 1.3.8, step ♥ of the home page leads to the page that explains how to receive a security key. Since 1.3.7, any file opens with foodjis from a file manager, to be encrypted or signed, or imported if it is a certificate. Since 1.3.4, the application checks a file against its detached signature — the APK below, for instance — and can sign a message without encrypting it. Version 1.3.5, which could no longer generate an identity, was withdrawn. [What changed since the first](#since).*
 
 **[foodjis](/solutions/pgp-id/) no longer asks for a computer.** The assistant
 that gives birth to a digital identity, writes it into a security key and lets
@@ -152,11 +152,11 @@ This is the Google Play version, signed with the same key: installed from here
 or from there, each updates the other, and phones that refuse applications
 signed with a development key accept it.
 
-- **[foodjis_1.3.8.apk](/largefiles/foodjis/foodjis_1.3.8.apk)** —
+- **[foodjis_1.3.9.apk](/largefiles/foodjis/foodjis_1.3.9.apk)** —
   Android 7 or newer, eleven languages, 4.7 MB.
-- The file's [fingerprint](/largefiles/foodjis/foodjis_1.3.8.apk.sha256):
-  `61bfe9e9ab83c073f8409b7c38381b229b1a4f59452ed60c850d37dd7b60c5d7`.
-- And its [detached signature](/largefiles/foodjis/foodjis_1.3.8.apk.asc),
+- The file's [fingerprint](/largefiles/foodjis/foodjis_1.3.9.apk.sha256):
+  `9566e8d86f9cce7cda7b5fa7bde410c42e8b96015b60e2dc5dad9a06357e4741`.
+- And its [detached signature](/largefiles/foodjis/foodjis_1.3.9.apk.asc),
   made by a PGP ID identity, which your usual OpenPGP tool will check against
   the published certificate for `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76` —
   and so will foodjis itself, since 1.3.4, on its Encrypt / decrypt page. That is exactly the use this

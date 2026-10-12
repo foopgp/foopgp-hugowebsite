@@ -1,7 +1,7 @@
 ---
 Title:   "foodjis goes live on Android!"
 Date:    2026-09-24T18:00:00+02:00
-Tags:    [ "foodjis", "android", "pgp-id", "openpgp", "nfc", "identity", "yubikey", "nitrokey" ]
+Tags:    [ "foodjis", "android", "pgp-id", "openpgp", "nfc", "identity", "yubikey" ]
 categories: [ "News" ]
 draft: false
 author: [ "Mnêmê", "Jean-Jacques Brucker" ]
@@ -19,8 +19,8 @@ type: "post"
 **[foodjis](/solutions/pgp-id/) no longer asks for a computer.** The assistant
 that gives birth to a digital identity, writes it into a security key and lets
 it circulate now exists on Android, with the same journeys and the same words
-as on Djibian. A phone, a **YubiKey** or **NitroKey** held against its back,
-and that is all.
+as on Djibian. A phone, a **YubiKey** held against its back, and that is
+all.
 
 There is a reason for this port, and it is not convenience: an identity that
 requires a desktop computer is an identity reserved for those who own one. In
@@ -103,8 +103,8 @@ things work today, from the phone:
 
 ## In place of OpenKeychain
 
-If your OpenPGP keys already live on an NFC security key — a **YubiKey 5 NFC**,
-a **Nitrokey 3A NFC** — then foodjis does the job you used to open OpenKeychain
+If your OpenPGP keys already live on an NFC security key — a **YubiKey 5 NFC**
+— then foodjis does the job you used to open OpenKeychain
 for: it is what the system now offers to mail applications, and it needs no
 secret on the phone at all. On top of that it does what no keyring does: give
 birth to the identity, write it into the key, certify others, publish the
@@ -113,7 +113,7 @@ changes.
 And if you do not have a key yet: the association **does not sell** them, it
 **provides** them to its members as soon as their cumulative subscriptions have
 reached [the threshold](/solutions/offer-security-keys/) — YubiKey 5 NFC or
-Nitrokey 3A NFC, at your choice and according to stock.
+Nitrokey 3A, at your choice and according to stock.
 
 ## Since the first version {#since}
 

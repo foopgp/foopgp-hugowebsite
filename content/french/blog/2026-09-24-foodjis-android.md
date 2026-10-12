@@ -1,7 +1,7 @@
 ---
 Title:   "foodjis passe en prod sur Android !"
 Date:    2026-09-24T18:00:00+02:00
-Tags:    [ "foodjis", "android", "pgp-id", "openpgp", "nfc", "identité", "yubikey", "nitrokey" ]
+Tags:    [ "foodjis", "android", "pgp-id", "openpgp", "nfc", "identité", "yubikey" ]
 categories: [ "News" ]
 draft: false
 author: [ "Mnêmê", "Jean-Jacques Brucker" ]
@@ -19,8 +19,8 @@ type: "post"
 **[foodjis](/fr/solutions/pgp-id/) ne demande plus d'ordinateur.** L'assistant
 qui donne naissance à une identité numérique, l'écrit dans une clé de sécurité
 et la fait circuler existe désormais sur Android, avec les mêmes parcours et le
-même vocabulaire que sur Djibian. Un téléphone, une clé **YubiKey** ou
-**NitroKey** posée au dos, et c'est tout.
+même vocabulaire que sur Djibian. Un téléphone, une clé **YubiKey**
+posée au dos, et c'est tout.
 
 Il y a une raison de fond à ce portage, et elle n'est pas le confort : une
 identité qui exige un ordinateur de bureau est une identité réservée à ceux qui
@@ -109,7 +109,7 @@ choses fonctionnent aujourd'hui, depuis le téléphone :
 ## À la place d'OpenKeychain
 
 Si vos clés OpenPGP vivent déjà sur une clé de sécurité NFC — une **YubiKey 5
-NFC**, une **Nitrokey 3A NFC** —, foodjis fait le travail pour lequel vous
+NFC** —, foodjis fait le travail pour lequel vous
 ouvriez OpenKeychain : c'est lui que le système propose désormais aux
 applications de messagerie, et il n'a besoin d'aucun secret sur le téléphone.
 Il fait en plus ce qu'aucun trousseau ne fait : donner naissance à l'identité,
@@ -117,8 +117,8 @@ l'écrire dans la clé, certifier les autres, publier les changements.
 
 Et si vous n'avez pas encore de clé : l'association **ne les vend pas**, elle
 les **fournit** à ses adhérents dès que leurs cotisations cumulées ont atteint
-[le palier](/fr/solutions/offer-security-keys/) — YubiKey 5 NFC ou Nitrokey 3A
-NFC, au choix et selon arrivage.
+[le palier](/fr/solutions/offer-security-keys/) — YubiKey 5 NFC ou Nitrokey 3A,
+au choix et selon arrivage.
 
 ## Depuis la première version {#depuis}
 

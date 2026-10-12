@@ -14,7 +14,7 @@ foopgp **does not sell** its physical security keys: it **provides** them to its
 Available models, at the member's choice and according to stock:
 
 - **YubiKey 5 NFC**
-- **Nitrokey 3A NFC**
+- **Nitrokey 3A**
 - *Soon*: **YubiKey 5C NFC**
 
 All at the same threshold — the association absorbs the margin differences.

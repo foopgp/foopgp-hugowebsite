@@ -14,7 +14,7 @@ L'association foopgp **ne vend pas** ses clés de sécurité physiques : elle le
 Modèles disponibles, au choix de l'adhérent et selon arrivage :
 
 - **YubiKey 5 NFC**
-- **Nitrokey 3A NFC**
+- **Nitrokey 3A**
 - *Bientôt* : **YubiKey 5C NFC**
 
 Toutes au même palier — l'association absorbe les différences de marge.

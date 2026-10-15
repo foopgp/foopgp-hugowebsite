@@ -14,7 +14,7 @@ type: "post"
 
 ***Note :*** *Pour ce qu'est une identité **PGP ID** et à quoi elle sert, [voir la page qui lui est consacrée](/fr/solutions/pgp-id/). Pour rester informé, [inscrivez-vous à nos listes de diffusion](/fr/contact/).*
 
-***Mise à jour du 12 octobre 2026 :*** *la version 1.3.9 est disponible ; sur la page Chiffrer / Déchiffrer, la photo de chaque contact accompagne son nom, un fichier déchiffré s'ouvre directement, et les liens d'un message se suivent. Depuis la 1.3.8, l'étape ♥ de l'accueil mène à la page qui explique comment recevoir une clé de sécurité. Depuis la 1.3.7, tout fichier s'ouvre avec foodjis depuis un explorateur de fichiers, pour être chiffré ou signé, ou importé si c'est un certificat. Depuis la 1.3.4, l'application vérifie un fichier contre sa signature détachée — l'APK ci-dessous par exemple — et sait signer un message sans le chiffrer. La 1.3.5, qui ne savait plus générer une identité, a été retirée. [Ce qui a changé depuis la première](#depuis).*
+***Mise à jour du 15 octobre 2026 :*** *la version 1.4.1 est disponible : thème sombre ou clair au choix, la page « Contacts » devient « Certificats », une seule présentation de la clé de sécurité ouvre ou signe toute une série de messages, et foodjis s'ouvre aux applications de sa famille, à commencer par foomms, notre messagerie SMS et MMS chiffrée, bientôt disponible. Depuis la 1.3.9, sur la page Chiffrer / Déchiffrer, la photo de chaque contact accompagne son nom, un fichier déchiffré s'ouvre directement, et les liens d'un message se suivent. Depuis la 1.3.8, l'étape ♥ de l'accueil mène à la page qui explique comment recevoir une clé de sécurité. Depuis la 1.3.7, tout fichier s'ouvre avec foodjis depuis un explorateur de fichiers, pour être chiffré ou signé, ou importé si c'est un certificat. Depuis la 1.3.4, l'application vérifie un fichier contre sa signature détachée — l'APK ci-dessous par exemple — et sait signer un message sans le chiffrer. La 1.3.5, qui ne savait plus générer une identité, a été retirée. [Ce qui a changé depuis la première](#depuis).*
 
 **[foodjis](/fr/solutions/pgp-id/) ne demande plus d'ordinateur.** L'assistant
 qui donne naissance à une identité numérique, l'écrit dans une clé de sécurité
@@ -160,11 +160,11 @@ C'est la version du magasin Google Play, signée par la même clé : installée
 d'ici ou de là, l'une met l'autre à jour, et les téléphones qui refusent les
 applications d'une clé de développement l'acceptent.
 
-- **[foodjis_1.3.9.apk](/largefiles/foodjis/foodjis_1.3.9.apk)** —
+- **[foodjis_1.4.1.apk](/largefiles/foodjis/foodjis_1.4.1.apk)** —
   Android 7 ou plus récent, onze langues, 4,7 Mo.
-- L'[empreinte](/largefiles/foodjis/foodjis_1.3.9.apk.sha256) du fichier :
-  `9566e8d86f9cce7cda7b5fa7bde410c42e8b96015b60e2dc5dad9a06357e4741`.
-- Et sa [signature détachée](/largefiles/foodjis/foodjis_1.3.9.apk.asc),
+- L'[empreinte](/largefiles/foodjis/foodjis_1.4.1.apk.sha256) du fichier :
+  `7be2b9ee2d77236cc767c9fefd62a16182308990a79e3e35db5f9e206e5f4a18`.
+- Et sa [signature détachée](/largefiles/foodjis/foodjis_1.4.1.apk.asc),
   faite par une identité PGP ID, que votre outil OpenPGP habituel vérifiera
   contre le certificat publié pour `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76` —
   foodjis lui-même aussi, depuis la 1.3.4, sur sa page Chiffrer / déchiffrer. C'est exactement l'usage

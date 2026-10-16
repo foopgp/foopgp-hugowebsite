@@ -160,10 +160,17 @@ weight = 3
     URL = "solutions/pgp-id"
     weight = 2
 
+  # The association's two applications, each on its own site.
   [[menu.main]]
     parent = "our activities"
-    name = "R&D"
-    URL = "solutions/activity-rd"
+    name = "foodjis"
+    URL = "https://foodjis.foopgp.org/"
+    weight = 3
+
+  [[menu.main]]
+    parent = "our activities"
+    name = "foomms"
+    URL = "https://foomms.foopgp.org/"
     weight = 3
 
   [[menu.main]]

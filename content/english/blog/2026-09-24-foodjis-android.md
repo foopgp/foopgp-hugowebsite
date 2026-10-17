@@ -14,7 +14,7 @@ type: "post"
 
 ***Note:*** *For what a **PGP ID** identity is and what it is for, [see the page devoted to it](/solutions/pgp-id/). To keep up, [join our mailing lists](/contact/).*
 
-***Updated on 15 October 2026:*** *version 1.4.1 is out: dark or light theme on choice, the "Contacts" page becomes "Certificates", a single presentation of the security key opens or signs a whole series of messages, and foodjis opens to the applications of its family, starting with foomms, our encrypted SMS and MMS messenger, coming soon. Since 1.3.9, on the Encrypt / Decrypt page, each contact's picture goes with their name, a decrypted file opens directly, and the links in a message can be followed. Since 1.3.8, step ♥ of the home page leads to the page that explains how to receive a security key. Since 1.3.7, any file opens with foodjis from a file manager, to be encrypted or signed, or imported if it is a certificate. Since 1.3.4, the application checks a file against its detached signature — the APK below, for instance — and can sign a message without encrypting it. Version 1.3.5, which could no longer generate an identity, was withdrawn. [What changed since the first](#since).*
+***Updated on 17 October 2026:*** *foodjis now has its own site, [foodjis.foopgp.org](https://foodjis.foopgp.org/), where each new version is downloaded from. [What changed since the first](#since), up to 1.4.1.*
 
 **[foodjis](/solutions/pgp-id/) no longer asks for a computer.** The assistant
 that gives birth to a digital identity, writes it into a security key and lets
@@ -148,37 +148,16 @@ back of the phone.
 
 ## Download
 
-This is the Google Play version, signed with the same key: installed from here
-or from there, each updates the other, and phones that refuse applications
-signed with a development key accept it.
+The application is downloaded from **[foodjis.foopgp.org](https://foodjis.foopgp.org/)**,
+from Google Play or directly: each version there comes with its fingerprint and
+its detached signature, made by a PGP ID identity. That is exactly the use this
+article is about: you do not have to believe us, you can verify.
 
-- **[foodjis_1.4.1.apk](/largefiles/foodjis/foodjis_1.4.1.apk)** —
-  Android 7 or newer, eleven languages, 4.7 MB.
-- The file's [fingerprint](/largefiles/foodjis/foodjis_1.4.1.apk.sha256):
-  `7be2b9ee2d77236cc767c9fefd62a16182308990a79e3e35db5f9e206e5f4a18`.
-- And its [detached signature](/largefiles/foodjis/foodjis_1.4.1.apk.asc),
-  made by a PGP ID identity, which your usual OpenPGP tool will check against
-  the published certificate for `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76` —
-  and so will foodjis itself, since 1.3.4, on its Encrypt / decrypt page. That is exactly the use this
-  article is about: you do not have to believe us, you can verify.
+To download the sources:
+**[foodjis-android-1.3.9.tar.gz.pgp](/largefiles/foodjis/foodjis-android-1.3.9.tar.gz.pgp)**
+— the archive signed by `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76`; your usual
+OpenPGP tool checks its signature and gives the archive back.
 
 A brand-new security key wants three seconds of power from any USB port before
 it will answer over radio — a charger will do. It is the one moment in the whole
 journey where another device is needed, and it asks for no software.
-
-## What comes next
-
-The store account is being verified. The version distributed there is a
-**different application** from this one: it carries its own name, as it carries
-its own signature, and will therefore install **beside** it — nothing to
-uninstall, and each keeps its own keyring. The caveat about signatures only
-holds between two builds of one application.
-
-The project is moving well, week after week:
-
-- First stage: the identity on paper, then on a security key ✅
-- Second stage: managing the certificate's data and the web of trust ✅
-- Third stage: [signing](/solutions/signature/), [encryption and
-  decryption](/solutions/encryption/), not least of
-  [mail](/solutions/theme-email/) ✅
-- Last stage: managing our Ɉ accounts 🔜

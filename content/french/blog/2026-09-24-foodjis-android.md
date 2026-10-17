@@ -14,7 +14,7 @@ type: "post"
 
 ***Note :*** *Pour ce qu'est une identité **PGP ID** et à quoi elle sert, [voir la page qui lui est consacrée](/fr/solutions/pgp-id/). Pour rester informé, [inscrivez-vous à nos listes de diffusion](/fr/contact/).*
 
-***Mise à jour du 15 octobre 2026 :*** *la version 1.4.1 est disponible : thème sombre ou clair au choix, la page « Contacts » devient « Certificats », une seule présentation de la clé de sécurité ouvre ou signe toute une série de messages, et foodjis s'ouvre aux applications de sa famille, à commencer par foomms, notre messagerie SMS et MMS chiffrée, bientôt disponible. Depuis la 1.3.9, sur la page Chiffrer / Déchiffrer, la photo de chaque contact accompagne son nom, un fichier déchiffré s'ouvre directement, et les liens d'un message se suivent. Depuis la 1.3.8, l'étape ♥ de l'accueil mène à la page qui explique comment recevoir une clé de sécurité. Depuis la 1.3.7, tout fichier s'ouvre avec foodjis depuis un explorateur de fichiers, pour être chiffré ou signé, ou importé si c'est un certificat. Depuis la 1.3.4, l'application vérifie un fichier contre sa signature détachée — l'APK ci-dessous par exemple — et sait signer un message sans le chiffrer. La 1.3.5, qui ne savait plus générer une identité, a été retirée. [Ce qui a changé depuis la première](#depuis).*
+***Mise à jour du 17 octobre 2026 :*** *foodjis a désormais son site, [foodjis.foopgp.org](https://foodjis.foopgp.org/fr/), d'où se télécharge chaque nouvelle version. [Ce qui a changé depuis la première](#depuis), jusqu'à la 1.4.1.*
 
 **[foodjis](/fr/solutions/pgp-id/) ne demande plus d'ordinateur.** L'assistant
 qui donne naissance à une identité numérique, l'écrit dans une clé de sécurité
@@ -156,39 +156,18 @@ quand la clé peut quitter le dos du téléphone.
 
 ## Télécharger
 
-C'est la version du magasin Google Play, signée par la même clé : installée
-d'ici ou de là, l'une met l'autre à jour, et les téléphones qui refusent les
-applications d'une clé de développement l'acceptent.
+L'application se télécharge sur **[foodjis.foopgp.org](https://foodjis.foopgp.org/fr/)**,
+depuis Google Play ou directement : chaque version y est accompagnée de son
+empreinte et de sa signature détachée, faite par une identité PGP ID. C'est
+exactement l'usage dont parle cet article : vous n'avez pas à nous croire,
+vous pouvez vérifier.
 
-- **[foodjis_1.4.1.apk](/largefiles/foodjis/foodjis_1.4.1.apk)** —
-  Android 7 ou plus récent, onze langues, 4,7 Mo.
-- L'[empreinte](/largefiles/foodjis/foodjis_1.4.1.apk.sha256) du fichier :
-  `7be2b9ee2d77236cc767c9fefd62a16182308990a79e3e35db5f9e206e5f4a18`.
-- Et sa [signature détachée](/largefiles/foodjis/foodjis_1.4.1.apk.asc),
-  faite par une identité PGP ID, que votre outil OpenPGP habituel vérifiera
-  contre le certificat publié pour `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76` —
-  foodjis lui-même aussi, depuis la 1.3.4, sur sa page Chiffrer / déchiffrer. C'est exactement l'usage
-  dont parle cet article : vous n'avez pas à nous croire, vous pouvez vérifier.
+Pour télécharger les sources :
+**[foodjis-android-1.3.9.tar.gz.pgp](/largefiles/foodjis/foodjis-android-1.3.9.tar.gz.pgp)**
+— l'archive signée par `u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76` ; votre outil
+OpenPGP habituel en vérifie la signature et en restitue l'archive.
 
 Une clé de sécurité neuve veut trois secondes d'alimentation sur n'importe quel
 port USB avant de répondre par les ondes — un chargeur suffit. C'est le seul
 moment de tout le parcours où un autre appareil est nécessaire, et il ne
 demande aucun logiciel.
-
-## Ce qui vient
-
-Le dépôt du magasin est en cours de validation. La version qui y sera
-distribuée est une **autre application** que celle-ci : elle porte son propre
-nom, comme elle porte sa propre signature, et s'installera donc **à côté** —
-rien à désinstaller, et chacune garde son trousseau. La réserve sur les
-signatures ne vaut qu'entre deux constructions d'une même application.
-
-Le projet avance bien, semaine après semaine :
-
-- Premier étage : l'identité sur papier, puis sur clé de sécurité ✅
-- Deuxième étage : gestion des données du certificat et de la toile de confiance ✅
-- Troisième étage : [signature](/fr/solutions/signature/), [chiffrement et
-  déchiffrement](/fr/solutions/encryption/), notamment des
-  [courriels](/fr/solutions/theme-email/) ✅
-- Dernier étage : gestion de nos comptes en Ɉ 🔜
-

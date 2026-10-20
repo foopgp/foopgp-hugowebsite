@@ -9,7 +9,7 @@ image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *(à compléter)*
+***Présents :*** *Laurent C, Jean-Jacques B.*
 
 ### Ordre du jour prochaine visio mardi 13 octobre 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
@@ -17,7 +17,6 @@ type: "meeting"
 
 - Points habituels : (revue de presse + déplacements + revue des travaux réalisés, en cours, ou à prévoir **pour l'association**).
 - Point sur la **certification** des membres par la Toile de Confiance (qui reste à certifier).
-- **foodjis 1.3.6** : retours des premiers téléphones, et où en est l'examen du magasin Google.
 
 ### Ordres du soir (mardi 6 octobre)
 
@@ -55,11 +54,11 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 ### Revue de presse
 
-*(à compléter)*
+Pas de revue de presse cette semaine.
 
 ### Au cœur de la réunion
 
-*(à compléter pendant la séance)*
+- retour sur **foodjis** : statuts sur les premiers téléphones, et où en est l'examen du magasin Google.
 
 ### Production de la semaine (29 septembre — 6 octobre)
 

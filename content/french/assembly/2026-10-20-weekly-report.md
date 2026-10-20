@@ -2,7 +2,7 @@
 title: "2026 S43 Rapport Hebdomadaire"
 lang: fr
 date: 2026-10-20T21:00:00+02:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/banner/foopgp+dji+djibian.png"

@@ -2,14 +2,14 @@
 title: "2026 S40 Rapport Hebdomadaire"
 lang: fr
 date: 2026-09-29T21:00:00+02:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *(à compléter)*
+***Présents :*** *Aveline G., Laurent C, François R, Jean-Jacques B.*
 
 ### Ordre du jour prochaine visio mardi 6 octobre 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
@@ -56,11 +56,20 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 ### Revue de presse
 
-*(à compléter)*
+- Les IA médicales génèrent des erreurs dans les diagnostics et les noms de médicaments
+
+  <https://next.ink/254301/les-ia-medicales-generent-des-erreurs-dans-les-diagnostics-et-les-noms-de-medicaments/>
+
+  Alors qu’un nombre croissant de médecins recourent à l’IA pour enregistrer et retranscrire leurs consultations, un organisme de surveillance du système de santé publique britannique alerte sur la propension de ces dispositifs à générer des erreurs. Ces dernières peuvent avoir de réelles répercussions sur la vie des patient·es. 
+
+  Non. Sans. Blague. Qui aurait pu prédire.
+
+  <https://mamot.fr/@Khrys/117206026550112683>
 
 ### Au cœur de la réunion
 
-*(à compléter pendant la séance)*
+- Démonstration de foodjis-android 0.1.0.
+- François R. aura moins de disponibilités les prochaines semaines.
 
 ### Production de la semaine (22 — 29 septembre)
 

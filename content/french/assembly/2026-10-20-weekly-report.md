@@ -2,7 +2,7 @@
 title: "2026 S43 Rapport Hebdomadaire"
 lang: fr
 date: 2026-10-20T21:00:00+02:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/banner/foopgp+dji+djibian.png"
@@ -52,45 +52,28 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 *Aux adhérents pas encore certifiés : venez nous rencontrer lors d’un de nos prochains ateliers pour finaliser la certification de votre identité, débloquer la création de vos djis et pouvoir les échanger au sein de l’association.*
 
-Revue de presse
+### Revue de presse
 
-    Il ne se passe pas une semaine sans parler des IA : 
+- Il ne se passe pas une semaine sans parler des IA :
+  - OVHcloud promet son propre LLM open source : <https://www.frandroid.com/culture-tech/intelligence-artificielle/3292497_ovhcloud-promet-son-propre-llm-open-source-tres-en-avance-sur-son-temps-et-octave-klaba-tacle-mistral>
+  - Selon le ministère de la Culture, il y a un risque de dispersion et de décrochage pour l’IA dans la culture : <https://www.zdnet.fr/actualites/risque-de-dispersion-et-de-decrochage-pour-lia-dans-la-culture-505962.htm>
+  - Les États-Unis commencent à compter les pertes d’emploi liées à l’IA : <https://www.zdnet.fr/actualites/les-etats-unis-commencent-a-compter-les-pertes-demploi-liees-par-lia-etats-par-etats-505991.htm>
+- Ni sans un gros piratage : <https://www.clubic.com/actualite-630106-du-jamais-vu-amazon-perd-definitivement-des-donnees-clients-apres-des-frappes-sur-ses-data-centers.html>
+- L’un des thèmes de l’association est la promotion de l’auto-hébergement : <https://www.zdnet.fr/tribune/marteen-guijt-vice-president-europe-seagate-la-maison-nouveau-data-center-des-donnees-personnelles-505873.htm>
+- Rachat de SFR, ce qui va changer pour les 25 millions de clients : <https://www.zdnet.fr/actualites/rachat-de-sfr-numero-mails-prix-ce-qui-va-changer-pour-les-25-millions-de-clients-506129.htm>
+- Linux continue à remplacer Windows :
+  - Munich abandonne (une nouvelle fois) les logiciels propriétaires au profit de l’open source, mais pas pour les ordinateurs de bureau sous Linux : <https://www.zdnet.fr/actualites/munich-abandonne-une-nouvelle-fois-les-logiciels-proprietaires-au-profit-de-lopen-source-mais-pas-pour-les-ordinateurs-de-bureau-sous-linux-506042.htm>
+  - Les Pays-Bas construisent leur propre Linux pour quitter Windows dans l’administration : <https://www.frandroid.com/marques/microsoft/3261639_les-pays-bas-construisent-leur-propre-linux-pour-quitter-windows-dans-ladministration>
+  - La Suisse lance une expérimentation pour délaisser Microsoft 365 : <https://www.frandroid.com/marques/microsoft/3238165_la-suisse-lance-une-experimentation-pour-delaisser-microsoft-365>
+  - … ou des logiciels propriétaires comme Photoshop : <https://www.zdnet.fr/actualites/quelquun-a-cree-un-clone-gratuit-de-photoshop-je-me-devais-donc-de-lessayer-sous-linux-505752.htm>
 
-        OVHcloud promet son propre LLM open source : https://www.frandroid.com/culture-tech/intelligence-artificielle/3292497_ovhcloud-promet-son-propre-llm-open-source-tres-en-avance-sur-son-temps-et-octave-klaba-tacle-mistral
+### Au cœur de la réunion
 
-        Selon le Ministère de la Culture il y a un Risque de dispersion et de décrochage pour l’IA dans la Culture : https://www.zdnet.fr/actualites/risque-de-dispersion-et-de-decrochage-pour-lia-dans-la-culture-505962.htm
-
-        Les Etats-Unis commencent à compter les pertes d'emploi liées par l'IA : https://www.zdnet.fr/actualites/les-etats-unis-commencent-a-compter-les-pertes-demploi-liees-par-lia-etats-par-etats-505991.htm
-
-    Ni d’un piratage d’un gros piratage : https://www.clubic.com/actualite-630106-du-jamais-vu-amazon-perd-definitivement-des-donnees-clients-apres-des-frappes-sur-ses-data-centers.html
-
-    L’un des thèmes de l’association est la promotion de l’auto-hébergement : https://www.zdnet.fr/tribune/marteen-guijt-vice-president-europe-seagate-la-maison-nouveau-data-center-des-donnees-personnelles-505873.htm
-
-    Rachat de SFR, ce qui va changer pour les 25 millions de clients : https://www.zdnet.fr/actualites/rachat-de-sfr-numero-mails-prix-ce-qui-va-changer-pour-les-25-millions-de-clients-506129.htm
-
-    Linux continue à remplacer Windows :
-
-        Munich abandonne (une nouvelle fois) les logiciels propriétaires au profit de l'open source, mais pas pour les ordinateurs de bureau sous Linux : https://www.zdnet.fr/actualites/munich-abandonne-une-nouvelle-fois-les-logiciels-proprietaires-au-profit-de-lopen-source-mais-pas-pour-les-ordinateurs-de-bureau-sous-linux-506042.htm
-
-        Les Pays-Bas construisent leur propre Linux pour quitter Windows dans l’administration : https://www.frandroid.com/marques/microsoft/3261639_les-pays-bas-construisent-leur-propre-linux-pour-quitter-windows-dans-ladministration
-
-        La Suisse lance une expérimentation pour délaisser Microsoft 365 : https://www.frandroid.com/marques/microsoft/3238165_la-suisse-lance-une-experimentation-pour-delaisser-microsoft-365
-
-        ou des logiciels propriétaires comme Photoshop : https://www.zdnet.fr/actualites/quelquun-a-cree-un-clone-gratuit-de-photoshop-je-me-devais-donc-de-lessayer-sous-linux-505752.htm
-
-
-#
-Au cœur de la réunion
-
-    Tests de foomms par Laurent et retours d’Aveline
-
-    Préparation pour les rencontres du Novembre avec Laurent : mettre en avant nos Murena et nos YubiKeys et nos logiciels foodjis et foomms. 
-
-    Aveline sait maintenant faire des enregistrements vidéos de son Murena, pour faure des petits tutos
-
-    Jean-Jacques a spoilé quelques développement futurs
-
-    Faire l’application qui permet à tous d’échanger et gérer le dji répond à un besoin plus urgent pour notre société, qui sombre dans le chaos en partie à cause de l’euro. Mais la demande réelle est aujourd’hui davantage sur le chiffrement et la confidentialité numérique. Dur donc d’arbitrer nos priorités : répondre à la demande (foomms) ou répondre au besoin (la monnaie libre dji, que peu trop peu comprennent) ? 
+- Tests de **foomms** par Laurent, et retours d’Aveline.
+- Préparation des rencontres de novembre avec Laurent : mettre en avant nos Murena, nos YubiKeys, et nos logiciels foodjis et foomms.
+- Aveline sait maintenant faire des enregistrements vidéo de son Murena, pour faire de petits tutoriels.
+- Jean-Jacques a dévoilé quelques développements futurs.
+- Faire l’application qui permet à tous d’échanger et de gérer le dji répond à un besoin plus urgent pour notre société, qui sombre dans le chaos en partie à cause de l’euro. Mais la demande réelle porte aujourd’hui davantage sur le chiffrement et la confidentialité numérique. Dur donc d’arbitrer nos priorités : répondre à la demande (foomms) ou répondre au besoin (la monnaie libre dji, que trop peu comprennent) ?
 
 ### Production de la semaine (13 — 20 octobre)
 

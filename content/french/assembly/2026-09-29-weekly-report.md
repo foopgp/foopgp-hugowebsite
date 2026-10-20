@@ -99,22 +99,22 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 Liste non-exhaustive des tâches à réaliser ou chantiers en cours :
 
-- **Comptabilité €** ([dépôt](https://codeberg.org/foopgp/foopgp-cashflow)     git non-public) — automatiser la chaîne HelloAsso : se rapprocher du    temps réel plutôt que d'une reprise manuelle, et remercier    automatiquement. L'essentiel est écrit et testé depuis juin ; ce qui    manque est une mise en service.
-- **Comptabilité Ɉ** — publier les deux certifications en    attente, puis faire passer le registre au format courant : l'outil de    promotion ne lit plus la version dans laquelle il est écrit.  Finaliser   par ailleurs [les innovations et concepts sous-jacents](https://foopgp.org/documents/en/)  , comme celui d'**arbres universels d'entités** ([spécifications](https://foopgp.org/documents/en/draft-foopgp-uetree-00.txt)     et [code](https://codeberg.org/foopgp/bash-libs/src/branch/main/bin/bl-uetree)    ). Et démarrer le frontend (dépot et paquet à créer).
-- **Bibliothèque d'identité pgpid** — les neuf catalogues de  traduction sont désormais complets ; restent quelques points de forme  dans le paquet avant de la présenter à une communauté extérieure  (Debian, LibrePGP).
+- **Comptabilité €** ([dépôt](https://codeberg.org/foopgp/foopgp-cashflow) git non-public) — automatiser la chaîne HelloAsso : se rapprocher du temps réel plutôt que d'une reprise manuelle, et remercier automatiquement. L'essentiel est écrit et testé depuis juin ; ce qui manque est une mise en service.
+- **Comptabilité Ɉ** — publier les deux certifications en attente, puis faire passer le registre au format courant : l'outil de promotion ne lit plus la version dans laquelle il est écrit. Finaliser par ailleurs [les innovations et concepts sous-jacents](https://foopgp.org/documents/en/), comme celui d'**arbres universels d'entités** ([spécifications](https://foopgp.org/documents/en/draft-foopgp-uetree-00.txt) et [code](https://codeberg.org/foopgp/bash-libs/src/branch/main/bin/bl-uetree)). Et démarrer le frontend (dépot et paquet à créer).
+- **Bibliothèque d'identité pgpid** — les neuf catalogues de traduction sont désormais complets ; restent quelques points de forme dans le paquet avant de la présenter à une communauté extérieure (Debian, LibrePGP).
 - **Moteur de chiffrement** — les paquets corrigés sont livrés dans nos dépôts ; reste à faire aboutir les correctifs en amont, auprès du projet d'origine.
-- **Serveur de certificats** ([onak-foopgp](https://codeberg.org/foopgp/onak)     → <https://keys.foopgp.org/>    ) — durcissement et redondance.
+- **Serveur de certificats** ([onak-foopgp](https://codeberg.org/foopgp/onak) → <https://keys.foopgp.org/>) — durcissement et redondance.
 - **Adresses de courriel** — publier les clés de `*@foopgp.org` par le mécanisme standard de découverte (WKD).
-- **Application mobile** — restent la signature avec la clé de   l'association, et la mise à jour de la fiche du magasin Google avec les   versions de cette semaine.
-- **Fournisseur OpenPGP pour Thunderbird** — Thunderbird lit,  signe, chiffre et déchiffre par foodjis ; reste à l'éprouver sur d'autres  téléphones et à le faire savoir.
-- **SSH par la clé de sécurité** — construire le paquet Debian de  sshwgpg avec son petit frère sshwfoodjis, et proposer à Termux de  reconnaître lui-même un agent SSH extérieur.
-- **Bibliothèque système** — reprendre la bibliothèque  bl-djibian qui crée les comptes sur les postes : trois fonctions, dont  une à   refaire entièrement. Elle aura son propre paquet.
-- **Infrastructure** — migrer la chaîne de construction   sur un serveur à jour, puis mettre nos deux serveurs en redondance, afin   qu'une panne de l'un ne coupe rien. La machine de construction  actuelle  n'a plus assez de mémoire pour la dernière version de  l'assistant.
-- **Djibian** (la plupart de [nos dépots git](https://codeberg.org/djibian)    ) — Maintenance continue : prise en compte des retours utilisateur,     préselection de logiciels pertinents, pré-configuration des logiciels     que nous mettons en avant (eg: xfce, evolution, thunderbird, …), etc.
+- **Application mobile** — restent la signature avec la clé de l'association, et la mise à jour de la fiche du magasin Google avec les versions de cette semaine.
+- **Fournisseur OpenPGP pour Thunderbird** — Thunderbird lit, signe, chiffre et déchiffre par foodjis ; reste à l'éprouver sur d'autres téléphones et à le faire savoir.
+- **SSH par la clé de sécurité** — construire le paquet Debian de sshwgpg avec son petit frère sshwfoodjis, et proposer à Termux de reconnaître lui-même un agent SSH extérieur.
+- **Bibliothèque système** — reprendre la bibliothèque bl-djibian qui crée les comptes sur les postes : trois fonctions, dont une à refaire entièrement. Elle aura son propre paquet.
+- **Infrastructure** — migrer la chaîne de construction sur un serveur à jour, puis mettre nos deux serveurs en redondance, afin qu'une panne de l'un ne coupe rien. La machine de construction actuelle n'a plus assez de mémoire pour la dernière version de l'assistant.
+- **Djibian** (la plupart de [nos dépots git](https://codeberg.org/djibian)) — Maintenance continue : prise en compte des retours utilisateur, préselection de logiciels pertinents, pré-configuration des logiciels que nous mettons en avant (eg: xfce, evolution, thunderbird, …), etc.
 
 ### Agenda
 
-- 11 septembre — 11 octobre : [Fête des Possibles](https://linuxfr.org/news/l-april-invite-a-participer-a-la-fete-des-possibles-2026-pour-toucher-de-nouveaux-publics)   2026, initiée et coordonnée par le Collectif pour une Transition   Citoyenne. Des centaines d'événements partout en France et en Belgique.
-- 14 & 15 novembre 2026 : [Capitole du Libre à Toulouse](https://capitoledulibre.org/)   (à priori nous n'irons pas, privilégiant le développement local).
+- 11 septembre — 11 octobre : [Fête des Possibles](https://linuxfr.org/news/l-april-invite-a-participer-a-la-fete-des-possibles-2026-pour-toucher-de-nouveaux-publics) 2026, initiée et coordonnée par le Collectif pour une Transition Citoyenne. Des centaines d'événements partout en France et en Belgique.
+- 14 & 15 novembre 2026 : [Capitole du Libre à Toulouse](https://capitoledulibre.org/) (à priori nous n'irons pas, privilégiant le développement local).
 - 9 et 10 décembre 2026 : [OSXP Paris — Porte de Versailles](https://www.opensource-experience.com/)
 - [… agenda du libre](https://www.agendadulibre.org)

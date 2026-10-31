@@ -35,4 +35,4 @@ So save money and make your purchasing power grow — **invest now** in the foop
 
 🚨 ***On HelloAsso, give the e-mail address you put in the digital identity held on your security key: it is the link between the two, and what lets you generate your djis (Ɉ).*** 🚨
 
-{{< helloasso-widget >}}
+{{< helloasso-button >}}

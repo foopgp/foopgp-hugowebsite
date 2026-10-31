@@ -1278,14 +1278,16 @@ document.getElementById("u4").addEventListener("input", scheduleLookup);
 // HelloAsso collects the contributor email itself ; we redirect without
 // query-string (decision 2026-05-29 : the u4 custom field broke the
 // funnel UX, and the bridge resolves u4 server-side via uetree-by-email
-// lookup). Pour la pédagogie inflation/stingynalty, JJB a publié 3
-// campagnes mensuelles : la fonction ci-dessous choisit la bonne selon
-// le mois courant côté navigateur (date locale du visiteur — c'est
-// assez bon pour le timezone-aware besoin ici).
+// lookup). One campaign a month and per language, named after both
+// (fr-2026-11, en-2026-11): French readers get the French one, everybody
+// else the English one, in the month the visitor's browser says it is.
+// The three summer campaigns this used to choose among (juin-2, juillet,
+// aout) sent every payment since September to a closed campaign.
 function pickHelloAssoURL() {
-  const m = new Date().getMonth() + 1;  // 1..12
-  const slug = m <= 6 ? "juin-2" : m === 7 ? "juillet" : "aout";
-  return "https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/" + slug;
+  const now = new Date();
+  const month = now.getFullYear() + "-" + String(now.getMonth() + 1).padStart(2, "0");
+  const lang = effectiveLang(getLang()) === "fr" ? "fr" : "en";
+  return "https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/" + lang + "-" + month;
 }
 
 // Toggle the email `required` HTML attribute based on the selected

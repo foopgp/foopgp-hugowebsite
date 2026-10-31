@@ -1,4 +1,27 @@
+{{- /*
+  helloasso-count -- the counter of this month's subscription campaign,
+  HelloAsso's own, in a frame. One campaign a month and per language, named
+  after both (fr-2026-11, en-2026-11): the page's language chooses, and the
+  month is the reader's, set by the script below rather than written when
+  the site is built -- a report read in December shows December's campaign.
+  No address until the script gives one, so that the frame loads once.
+*/ -}}
+{{- $base := print "https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/" (cond (eq .Page.Lang "fr") "fr" "en") "-" -}}
+{{- $id := printf "haWidgetCounter-%d" .Ordinal -}}
 <center>
-<iframe id="haWidgetCounter" allowtransparency="true" src="https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/fr-2026-11/widget-compteur" style="width:350px;border:none;" onload="window.addEventListener('message', function(e) { const dataHeight = e.data.height; const haWidgetElement = document.getElementById('haWidgetCounter');
-				 if (dataHeight > parseFloat(haWidgetElement.height || 0)) { haWidgetElement.height = dataHeight + 'px';}})"></iframe>
+<iframe id="{{ $id }}" allowtransparency="true" style="width:350px;border:none;"></iframe>
 </center>
+<script>
+(function () {
+  var frame = document.getElementById("{{ $id }}");
+  var now = new Date();
+  var month = now.getFullYear() + "-" + ("0" + (now.getMonth() + 1)).slice(-2);
+  // The counter says how tall it is; it is given that much, never less than it has.
+  window.addEventListener("message", function (e) {
+    if (e.source !== frame.contentWindow) return;
+    var height = e.data && e.data.height;
+    if (height > parseFloat(frame.height || 0)) frame.height = height + "px";
+  });
+  frame.src = "{{ $base }}" + month + "/widget-compteur";
+})();
+</script>

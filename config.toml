@@ -22,7 +22,14 @@ enableGitInfo = true
 #unsafe = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "llms"]
+# llms.txt at the root of the site, from layouts/index.llms.txt: a template, so
+# that the month's subscription campaigns it names follow the build.
+[outputFormats.llms]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
 ############################# Plugins ##############################
 
 # CSS Plugins

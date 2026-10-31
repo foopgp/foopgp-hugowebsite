@@ -1,3 +1,10 @@
+{{- /*
+  llms.txt -- what this site is, for language models, written at the root of
+  the site. A template rather than a static file for one reason: the month's
+  subscription campaigns, named after the month (fr-2026-11, en-2026-11), are
+  the month the site is built in, which the server does every time it updates.
+  Generated for each language like any home page output; the text is the same.
+*/ -}}
 # foopgp — Friends of OpenPGP
 
 > French non-profit association developing free-software tools and IETF-track
@@ -33,8 +40,8 @@ unless noted otherwise. The site itself is built with Hugo from
 - [Invest / Join — explanation (EN)](https://foopgp.org/about/join/) : what a foopgp token (dji, Ɉ) is, its expected value, the security-key threshold at 6.42 Ɉ, the stingynalty parameter.
 - [Djis emission — payment flow (FR only for now)](https://foopgp.org/djis-emission/) : standalone page where you choose IBAN transfer (with a normalised motif `foopgp [(u4=…)] <email>`) or HelloAsso (online card payment, redirected to the current month's campaign).
 - HelloAsso monthly campaigns, one a month and per language, named `fr-YYYY-MM` and `en-YYYY-MM` (the month's conditions follow the stingynalty) :
-  - [November 2026, French](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/fr-2026-11)
-  - [November 2026, English](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/en-2026-11)
+  - [{{ now.Format "January 2006" }}, French](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/fr-{{ now.Format "2006-01" }})
+  - [{{ now.Format "January 2006" }}, English](https://www.helloasso.com/associations/friends-of-openpgp-foopgp/collectes/en-{{ now.Format "2006-01" }})
 - [Membership form (PDF, FR)](https://foopgp.org/documents/fr/bulletin-adhesion-foopgp.pdf) : paper form, for those who prefer postal mail.
 
 ## Solutions and themes

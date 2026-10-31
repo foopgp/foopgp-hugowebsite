@@ -3,7 +3,9 @@
 # Deploy and refresh the foopgp hugo website. Run by cron as www-data, and
 # callable by the operator for an immediate build. On first run it bootstraps
 # the working clone (submodules included) ; afterwards it pulls and rebuilds
-# public/ only when the tracked HEAD or a submodule moved.
+# public/ only when the tracked HEAD or a submodule moved -- or when the last
+# build was in another month: the site names the month's subscription
+# campaigns (llms.txt), and the 1st of a month may come without a commit.
 
 ### CONFIG ###
 ROOTHUGO="${ROOTHUGO:-/var/www/foopgp-hugowebsite}"
@@ -45,9 +47,14 @@ fi
   head_root_after=$(git rev-parse HEAD)
   head_subs_after=$(git submodule status)
 
+  # The month of the last build, from a page hugo writes every time and git
+  # does not track ; none yet, and there is no month to match.
+  built_month=$(date -r public/index.html +%Y-%m 2>/dev/null)
+
   # hugo build only if needed
   if [[ "$head_root_before" != "$head_root_after" ]]\
-    || [[ "$head_subs_before" != "$head_subs_after" ]]; then
+    || [[ "$head_subs_before" != "$head_subs_after" ]]\
+    || [[ "$built_month" != "$(date +%Y-%m)" ]]; then
       hugo --minify
   fi
 } 2>&1 | tee -a "$LOGFILE"

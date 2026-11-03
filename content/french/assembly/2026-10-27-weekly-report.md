@@ -2,14 +2,14 @@
 title: "2026 S44 Rapport Hebdomadaire"
 lang: fr
 date: 2026-10-27T21:00:00+01:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *(à compléter)*
+***Présents :*** *Laurent C., Jean-Jacques B, Aveline Gau.*
 
 ### Ordre du jour prochaine visio mardi 3 novembre 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
@@ -17,6 +17,7 @@ type: "meeting"
 
 - Points habituels : (revue de presse + déplacements + revue des travaux réalisés, en cours, ou à prévoir **pour l’association**).
 - Préparation du **Forum de l’innovation à Tallard** du jeudi 12 novembre.
+- Eric Lepeix nous rejoint, pour le développement commercial
 
 ### Ordres du soir (mardi 27 octobre)
 
@@ -53,11 +54,24 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 ### Revue de presse
 
-- *(à compléter)*
+- Dans la série l’arroseur arrosé : 
+  - Cyberattaque DGFiP de l’été 2026 : <https://www.it-connect.fr/rapport-anssi-cyberattaque-dgfip/>
+  - l’ANSSI a également été piratée : <https://www.01net.com/actualites/nouvelle-fuite-donnees-frappe-etat-francais-anssi-fait-partie-victimes.html>  
+    <https://cyber.gouv.fr/actualites/lanssi-publie-le-rapport-dincident-sur-les-cyberattaques-ayant-touche-la-dgfip/>
+- Et le piratage hebdomadaire : <https://actu17.fr/faits-divers/nouvelle-cyberattaque-contre-la-federation-francaise-de-tir-un-pirate-revendique-les-donnees-de-pres-de-587-000-licencies.html>
+- Si on peut être méfiant sur l’IA il semblerait que cela permette d’accélérer le développement de logiciels Libres équivalents à des logiciels propriétaires : 
+  - Mieux que Gimp pour contrer Photoshop : <https://www.xda-developers.com/gimp-finally-has-open-source-rival-that-competes-on-its-level-feels-like-photoshop/>
+  - Modification des PDF : <https://www.zdnet.fr/actualites/jai-teste-le-clone-gratuit-dadobe-acrobat-et-je-dispose-enfin-dun-editeur-de-pdf-professionnel-sous-linux-506084.htm>  
+    <https://pdfcraft.devtoolcafe.com/fr/>
+  - Montage vidéo : <https://filmcraft.online/fr/>  
+    <https://sourceforge.net/projects/filmcraft.mirror/>
+  - Etc : <https://getartcraft.com/apps>
+- Les géants de l'IA se lancent dans la bataille du smartphone : <https://www.generation-nt.com/actualites/ia-smartphone-qualcomm-openai-bytedance-amon-2082735>
 
 ### Au cœur de la réunion
 
-- *(à compléter)*
+- présentation et discussions autour des nouvelles versions de foomms et foodjis
+- La **conférence de Peipin** du samedi 24 octobre a été annulé faute d’inscriptions en nombre suffisant.
 
 ### Production de la semaine (20 — 27 octobre)
 

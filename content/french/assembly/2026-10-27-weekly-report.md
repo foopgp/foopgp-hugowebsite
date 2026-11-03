@@ -9,7 +9,7 @@ image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *Laurent C., Jean-Jacques B, Aveline Gau.*
+***Présents :*** *Laurent C., Jean-Jacques B., Aveline Gau.*
 
 ### Ordre du jour prochaine visio mardi 3 novembre 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
@@ -17,7 +17,7 @@ type: "meeting"
 
 - Points habituels : (revue de presse + déplacements + revue des travaux réalisés, en cours, ou à prévoir **pour l’association**).
 - Préparation du **Forum de l’innovation à Tallard** du jeudi 12 novembre.
-- Eric Lepeix nous rejoint, pour le développement commercial
+- Eric L. nous rejoint, pour le développement commercial
 
 ### Ordres du soir (mardi 27 octobre)
 
@@ -59,7 +59,7 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
   - l’ANSSI a également été piratée : <https://www.01net.com/actualites/nouvelle-fuite-donnees-frappe-etat-francais-anssi-fait-partie-victimes.html>  
     <https://cyber.gouv.fr/actualites/lanssi-publie-le-rapport-dincident-sur-les-cyberattaques-ayant-touche-la-dgfip/>
 - Et le piratage hebdomadaire : <https://actu17.fr/faits-divers/nouvelle-cyberattaque-contre-la-federation-francaise-de-tir-un-pirate-revendique-les-donnees-de-pres-de-587-000-licencies.html>
-- Si on peut être méfiant sur l’IA il semblerait que cela permette d’accélérer le développement de logiciels Libres équivalents à des logiciels propriétaires : 
+- Si on peut être méfiant sur l’IA, il semblerait que cela permette d’accélérer le développement de logiciels Libres équivalents à des logiciels propriétaires : 
   - Mieux que Gimp pour contrer Photoshop : <https://www.xda-developers.com/gimp-finally-has-open-source-rival-that-competes-on-its-level-feels-like-photoshop/>
   - Modification des PDF : <https://www.zdnet.fr/actualites/jai-teste-le-clone-gratuit-dadobe-acrobat-et-je-dispose-enfin-dun-editeur-de-pdf-professionnel-sous-linux-506084.htm>  
     <https://pdfcraft.devtoolcafe.com/fr/>
@@ -71,7 +71,7 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 ### Au cœur de la réunion
 
 - présentation et discussions autour des nouvelles versions de foomms et foodjis
-- La **conférence de Peipin** du samedi 24 octobre a été annulé faute d’inscriptions en nombre suffisant.
+- La **conférence de Peipin** du samedi 24 octobre a été annulée faute d’inscriptions en nombre suffisant.
 
 ### Production de la semaine (20 — 27 octobre)
 

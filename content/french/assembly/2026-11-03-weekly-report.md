@@ -22,7 +22,7 @@ type: "meeting"
 
 - Points habituels : (revue de presse + déplacements et actions réalisés, en cours, ou à prévoir).
 - Préparation du **Forum de l’innovation à Tallard** du jeudi 12 novembre.
-- Eric Lepeix nous rejoint, pour le développement commercial.
+- Eric L. nous rejoint, pour le développement commercial.
 
 ### Stingynalty
 

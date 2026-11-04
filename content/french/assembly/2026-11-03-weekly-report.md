@@ -2,14 +2,14 @@
 title: "2026 S45 Rapport Hebdomadaire"
 lang: fr
 date: 2026-11-03T21:00:00+01:00
-draft: true
+draft: false
 bg_image: "images/backgrounds/puzzle.jpg"
 description : "Compte rendu du conseil du Mardi soir"
 image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *(à compléter)*
+***Présents :*** *Laurent C., Aveline G., Eric L., Jean-jacques B, Frédéric Z.*
 
 ### Ordre du jour prochaine visio mardi 10 novembre 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
@@ -52,11 +52,14 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 
 ### Revue de presse
 
-- *(à compléter)*
+- Pas de revue de presse cette semaine
 
 ### Au cœur de la réunion
 
-- *(à compléter)*
+- Présentations Éric L.
+- Discussion stratégie Marketing et communication
+- Préparation du [Forum de l’innovation à Tallard](https://www.digitalpesdusud.fr/evenements/forum-innovation-2026/) du jeudi 12 novembre.
+- Installation et découverte des dernières versions de foomms et foodjis.
 
 ### Production de la semaine (27 octobre — 3 novembre)
 

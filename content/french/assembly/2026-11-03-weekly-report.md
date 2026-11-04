@@ -9,7 +9,7 @@ image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *Laurent C., Aveline G., Eric L., Jean-jacques B, Frédéric Z.*
+***Présents :*** *Laurent C., Aveline G., Eric L., Jean-Jacques B., Frédéric Z.*
 
 ### Ordre du jour prochaine visio mardi 10 novembre 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 

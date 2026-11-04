@@ -16,6 +16,7 @@ type: "meeting"
 *Note : Si problème, on se retrouve sur notre salon JITSI : [https://meet.jit.si/foopgp](https://meet.jit.si/foopgp).*
 
 - Points habituels : (revue de presse + déplacements + revue des travaux réalisés, en cours, ou à prévoir **pour l’association**).
+- Revue du [flyer foodjis + foomms](https://foopgp.org/largefiles/flyers/2026/flyer_foomms-foodjis_fr_2026-11-04.pdf) (sans doute déjà parti en petite série)
 - Dernière préparation du **Forum de l’innovation à Tallard** du jeudi 12 novembre.
 
 ### Ordres du soir (mardi 3 novembre)
@@ -57,7 +58,7 @@ Confer [règlement intérieur](https://foopgp.org/fr/about/rules-of-procedures/)
 ### Au cœur de la réunion
 
 - Présentations Éric L.
-- Discussion stratégie Marketing et communication
+- Discussion stratégie Marketing et communication → Brouillon de flyers : [ici](https://foopgp.org/largefiles/flyers/2026/flyer_foomms-foodjis_fr_2026-11-04.pdf)
 - Préparation du [Forum de l’innovation à Tallard](https://www.digitalpesdusud.fr/evenements/forum-innovation-2026/) du jeudi 12 novembre.
 - Installation et découverte des dernières versions de foomms et foodjis.
 

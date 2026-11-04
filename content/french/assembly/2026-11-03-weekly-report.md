@@ -9,7 +9,7 @@ image: "images/banner/foopgp+dji+djibian.png"
 type: "meeting"
 ---
 
-***Présents :*** *Laurent C., Aveline G., Eric L., Jean-Jacques B., Frédéric Z.*
+***Présents :*** *Laurent C., Aveline G., Éric L., Jean-Jacques B., Frédéric Z.*
 
 ### Ordre du jour prochaine visio mardi 10 novembre 2026 à 21h sur NextCloud : <https://cloud.foopgp.org/call/yfomgu8q>
 
@@ -22,7 +22,7 @@ type: "meeting"
 
 - Points habituels : (revue de presse + déplacements et actions réalisés, en cours, ou à prévoir).
 - Préparation du **Forum de l’innovation à Tallard** du jeudi 12 novembre.
-- Eric L. nous rejoint, pour le développement commercial.
+- Éric L. nous rejoint, pour le développement commercial.
 
 ### Stingynalty
 

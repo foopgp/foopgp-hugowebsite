@@ -17,7 +17,7 @@ type: "meeting"
 
 - Points habituels : (revue de presse + déplacements + revue des travaux réalisés, en cours, ou à prévoir **pour l’association**).
 - Préparation du **Forum de l’innovation à Tallard** du jeudi 12 novembre.
-- Eric L. nous rejoint, pour le développement commercial
+- Éric L. nous rejoint, pour le développement commercial
 
 ### Ordres du soir (mardi 27 octobre)
 

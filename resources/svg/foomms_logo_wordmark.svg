@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="53.69mm" height="12.85mm" viewBox="0 0 53.69 12.85" version="1.1">
+<!-- foomms[PGP] — the name alone, on the house purple, its words as text: URW Gothic Demi Oblique (or TeX Gyre Adventor Bold Italic), PGP in Nimbus Sans Narrow Bold
+
+  The f is foopgp's and foodjis's: the barred J turned over, thickened to the
+  weight of the rest; the oo and PGP in the orange of the Ɉ, PGP narrow and upright.
+
+  Copyright 2026 Jean-Jacques Brucker (u4sRyUhEbNU5OwyLEjfSwaXAe_42.17-002.76) <jjbrucker@foopgp.org>
+  Copyright 2026 Mnêmê (u5001777236237.945e_43.30_005.38 claude-opus-5-5) <mneme@foopgp.org>
+  SPDX-License-Identifier: GPL-3.0-only -->
+<rect x="0" y="0" width="53.69" height="12.85" style="fill:#31264b" id="ground" />
+<g transform="translate(-1.6856,-0.6164)" id="wordmark">
+<path transform="translate(6.2,7.05) scale(0.359417652411283) rotate(180) translate(-92.95,-91.49000000000001)" d="M 88.429228 103.82557 C 90.413885 103.82557 92.168578 103.26133 93.421208 102.04847 C 94.67242 100.83697 95.426057 99.066238 95.865437 96.827885 L 95.865437 96.826448 L 96.841692 91.776956 L 99.04725 91.776956 L 99.945864 87.255131 L 97.728803 87.255131 L 99.291673 79.199237 L 94.304006 79.199237 L 92.739699 87.256569 L 90.535579 87.256569 L 89.636965 91.776956 L 91.855463 91.776956 L 90.974102 96.330413 C 90.703746 97.708903 90.29168 98.549669 90.056797 98.806274 C 89.799078 99.081185 89.439883 99.259175 88.650646 99.259175 L 86.849105 99.259175 L 85.963431 103.82557 L 88.429228 103.82557 z " style="fill:#ffffff"/>
+<text x="7.0" y="11" style="font-family:'URW Gothic';font-weight:600;font-style:oblique;font-size:10.6px;fill:#ffffff;letter-spacing:-0.3px"><tspan style="fill:#ff8012">oo</tspan>mms<tspan style="font-family:'Nimbus Sans Narrow';font-weight:bold;font-size:4.9px;font-style:normal;fill:#ff8012;letter-spacing:-0.05px;baseline-shift:4.1px" dx="1.5">PGP</tspan></text>
+</g>
+</svg>
